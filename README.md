@@ -36,6 +36,12 @@ such as a colonial Mali Empire, an Ethiopian conquest of the Middle East, and a 
 	  automatically through monthly cleanup. See the bottom of this file for specific province IDs.  
 	- Make sure to check out new African post-colonial tags! Cores of them appear after 1890 (and only if the corresponding region is consolidated).  
 	
+**Troubleshooting tips:**  
+If your game crashes, it may not be necessarily caused by a mod issue, and most of the times it is caused by the general instability of Victoria 2.
+The first thing you need to do after a crash is load the autosave and continue playing as normal. If the game still crashes after a few tries, then you can message the dev either on ModDB or on Discord (username is vimpelis). Send him the savefile and, if possible, logs (save the logs right after the game crashes, Victoria 2 clears them on a new launch!). If your crash will be unable to be replicated, the dev will simply send you a savefile from a later date, and you will be able to continue playing.
+If your screen was flashing prior to the crash, there were graphical bugs and missing assets - it is most definitely an issue on your end, the cause of which lies in your graphics card (you may, for example, be playing on a laptop and have an integrated graphics card - the game will NOT like it).
+Don't be afraid to report a crash! You may save another player from a similar issue.
+	
 **WARNING:** Playing in small resolutions will cause problems with the main menu. The recommended resolution is 1920x1200 and above.
 
 
@@ -73,7 +79,7 @@ DIE - Dietsland
 WST - Westland  
 CRP - Carpathia  
 
-**ASIA:**
+**ASIA:**  
 UQA - Al-Uqaydat  
 ZND - Zandiyeh  
 MGT - Manghits  
@@ -147,7 +153,7 @@ AAL - Ard Al-Hurriyah
 	This means they don't really care about expanding further into the continent.
 
 
-**African provinces trade goods changes (after 1890):**
+**African provinces trade goods changes (after 1890):**  
 1935 = { trade_goods = coal } #Aruchukwu (representing Enugu)  
 1949 = { trade_goods = coal } #Hadejia  
 2054 = { trade_goods = coal }  
