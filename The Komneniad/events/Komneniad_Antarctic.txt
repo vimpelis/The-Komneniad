@@ -1,0 +1,151 @@
+#Starting event
+country_event = {
+    id = 162000
+    title = "The Republic of Antartida"
+    desc = "162000DESC"
+    picture = "argentina_monarchy"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Surrounded by heathens, but with an unbroken spirit."
+		badboy = 8
+    }
+}
+
+#Colonize 2420 and 3568 if 2416 is owned by someone
+country_event = {
+    id = 162001
+    title = "The Northern Border"
+    desc = "A foreign power recently secured the marshy region of Nogojidaga. As it poses a threat to our security, we have also made a move to establish control over the borderlands."
+    picture = "argentina_monarchy"
+
+    trigger = {
+		tag = ATA
+		2416 = { empty = no }
+		NOT = { owns = 2416 }
+		2420 = {
+			OR = {
+				empty = yes
+				owned_by = THIS
+			}
+		}
+		3568 = {
+			OR = {
+				empty = yes
+				owned_by = THIS
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Good."
+		random_owned = {
+            limit = {
+                3568 = { empty = yes }
+            }
+            3568 = { secede_province = THIS }
+        }
+		random_owned = {
+            limit = {
+                2420 = { empty = yes }
+            }
+            2420 = { secede_province = THIS }
+        }
+		random_owned = {
+            limit = {
+                2453 = { empty = yes }
+            }
+            2453 = { secede_province = THIS }
+        }
+    }
+}
+
+#Campo del Cielo Meteorite
+country_event = {
+    id = 162002
+    title = "Camp del Cel Meteorite"
+    desc = "162002DESC"
+    picture = "campo_del_cielo"
+
+    trigger = {
+		tag = ATA
+		has_country_flag = ATA_prospect_famatina
+		owns = 2364
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 180
+    }
+
+    option = {
+        name = "We'll put it to industrial use."
+		2364 = {
+			trade_goods = iron
+			add_province_modifier = {
+				name = ATA_meteorite_iron
+				duration = -1
+			}
+		}
+    }
+	
+	option = {
+        name = "It's much more valuable as a museum piece."
+		prestige = 15
+    }
+}
+
+country_event = {
+    id = 162003
+    title = "Patagonia Surveyed"
+    desc = "With our conquest of Patagonia, we have sent surveyors to look for natural resources. And they have found something!"
+    picture = "pacification_of_patagonia"
+
+    trigger = {
+		tag = ATA
+		has_country_flag = ATA_prospect_famatina
+		owns = 2390
+		owns = 3555
+		owns = 2399
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Great!"
+		prestige = 5
+		2384 = {
+			trade_goods = sulphur
+			add_province_modifier = {
+				name = ATA_mining_1
+				duration = -1
+			}
+		}
+		2390 = {
+			trade_goods = sulphur
+			add_province_modifier = {
+				name = ATA_mining_1
+				duration = -1
+			}
+		}
+		2399 = {
+			trade_goods = coal
+			add_province_modifier = {
+				name = ATA_mining_1
+				duration = -1
+			}
+		}
+    }
+}

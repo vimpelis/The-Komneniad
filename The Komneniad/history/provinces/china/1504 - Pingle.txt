@@ -1,0 +1,5 @@
+owner = GNG
+controller = GNG
+trade_goods = tea
+life_rating = 32
+add_core = GNG

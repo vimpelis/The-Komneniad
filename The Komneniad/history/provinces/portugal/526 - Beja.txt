@@ -1,0 +1,7 @@
+owner = ADU
+controller = ADU
+add_core = ADU
+trade_goods = sulphur # pyrite belt
+terrain = plains
+life_rating = 35
+naval_base = 1

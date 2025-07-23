@@ -1,0 +1,198 @@
+leader = {
+    name = "Mir Hussein bin Haydar"
+    date = 1826.1.1
+    type = land
+    personality = defence_2.1
+    background = attack_4.1
+    prestige = 0.7
+}
+
+army = {
+    name = "1st Army"
+    location = 1118
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1192
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1192
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1191
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1191
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3441
+    }
+    regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 3441
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1198
+    }
+	regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1121
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1125
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1124
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1125
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1129
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1130
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1148
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1147
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 3528
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 1212
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 2519
+    }
+}
+
+army = {
+    name = "1st Army"
+    location = 1130
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1198
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1198
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1198
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1199
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1199
+    }
+    regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 3522
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 3519
+    }
+	regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 3520
+    }
+}
+
+army = {
+    name = "1st Army"
+    location = 1140
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 3521
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 3501
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 3500
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3516
+    }
+    regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 2519
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1212
+    }
+	regiment = {
+        name = "4th Cavalry Regiment"
+        type = cavalry
+        home = 1212
+    }
+	regiment = {
+        name = "5th Cavalry Regiment"
+        type = cavalry
+        home = 1211
+    }
+	regiment = {
+        name = "6th Cavalry Regiment"
+        type = cavalry
+        home = 1214
+    }
+}

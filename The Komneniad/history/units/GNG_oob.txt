@@ -1,0 +1,207 @@
+FJN = {
+    value = 200
+}
+YNN = {
+    value = 75
+}
+HUB = {
+    value = -100
+}
+HEB = {
+    value = -100
+}
+HUI = {
+    value = -100
+}
+JIA = {
+    value = -100
+}
+HNN = {
+    value = -100
+}
+SZC = {
+    value = -100
+}
+SXI = {
+    value = -100
+}
+TAI = {
+    value = -100
+}
+IRY = {
+    value = -50
+}
+KOR = {
+    value = -50
+}
+DAI = {
+    value = -150
+}
+LUA = {
+    value = -50
+}
+
+army = {
+    name = "1st Army"
+    location = 1493
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1493
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1493
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1493
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1493
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1493
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1493
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1493
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 1493
+    }
+	
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 1501
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1370
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1503
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1500
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 2632
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1373
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1371
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1369
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1370
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 1502
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 1493
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

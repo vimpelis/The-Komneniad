@@ -1,0 +1,145 @@
+political_decisions = {
+	komneniad_menu = {
+		picture = komneniad
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = komneniad_menu }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = komneniad_menu
+			country_event = 169003
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	debug_enable = {
+		picture = komneniad
+		alert = no
+		potential = {
+			ai = no
+			has_global_flag = debug_allowed
+			NOT = { has_country_flag = debug_enabled }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = debug_enabled
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	debug_get_cores = {
+		picture = komneniad
+		potential = {
+			ai = no
+			has_country_flag = debug_enabled
+		}
+		allow = {
+		}
+		effect = {
+			all_core = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	debug_summon_tech_event = {
+		picture = komneniad
+		potential = {
+			ai = no
+			has_country_flag = debug_enabled
+		}
+		allow = {
+		}
+		effect = {
+			country_event = 169000
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	debug_summon_govtype_event = {
+		picture = komneniad
+		potential = {
+			ai = no
+			has_country_flag = debug_enabled
+		}
+		allow = {
+		}
+		effect = {
+			country_event = 169001
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	debug_check_life_rating = {
+		picture = komneniad
+		potential = {
+			ai = no
+			has_country_flag = debug_enabled
+		}
+		allow = {
+		}
+		effect = {
+			any_land_province = {
+				limit = {
+					NOT = { life_rating = 5 }
+				}
+				secede_province = THIS
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	debug_disable = {
+		picture = komneniad
+		potential = {
+			has_country_flag = debug_enabled
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = debug_enabled
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	#this will be expanded to all countries which need a tip to function properly
+	komneniad_tips_BAV = {
+		picture = komneniad
+		potential = {
+			ai = no
+			OR = {
+				tag = BAV
+				tag = BYZ
+			}
+			NOT = { has_country_flag = komneniad_tips year = 1837 }
+		}
+		allow = {
+			NOT = { year = 1837 }
+		}
+		effect = {
+			set_country_flag = komneniad_tips
+			country_event = 169002
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	komneniad_tips_BYZ = {
+		picture = komneniad
+		potential = {
+			ai = no
+			tag = BYZ
+			NOT = { has_country_flag = komneniad_tips year = 1837 }
+		}
+		allow = {
+			NOT = { year = 1837 }
+		}
+		effect = {
+			set_country_flag = komneniad_tips
+			country_event = 169005
+		}
+		ai_will_do = { factor = 0 }
+	}
+}

@@ -1,0 +1,28 @@
+political_decisions = {
+    abolish_forced_work = {
+		alert = no
+		picture = form_china
+        potential = {
+            is_culture_group = east_asian
+            year = 1910
+            NOT = { has_country_flag = abolish_forced_work }
+            OR = {
+                NOT = { slavery = no_slavery }
+                debt_law = serfdom
+            }
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+        }
+
+        effect = {
+            set_country_flag = abolish_forced_work
+            any_pop = { militancy = 2 consciousness = 4 }
+            random_owned = { limit = { owner = { NOT = { slavery = no_slavery } } } owner = { political_reform = no_slavery } }
+            random_owned = { limit = { owner = { debt_law = serfdom } } owner = { political_reform = peonage country_event = 6016804 } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

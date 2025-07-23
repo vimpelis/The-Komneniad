@@ -1,0 +1,6 @@
+owner = VRI
+controller = VRI
+trade_goods = grain
+life_rating = 35
+terrain = dc
+add_core = VRI

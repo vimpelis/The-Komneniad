@@ -1,0 +1,7 @@
+owner = AYL
+controller = AYL
+trade_goods = cotton
+life_rating = 35
+terrain = jackson
+add_core = AYL
+add_core = FLU

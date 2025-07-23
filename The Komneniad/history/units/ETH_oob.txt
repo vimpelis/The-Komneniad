@@ -1,0 +1,74 @@
+army = {
+    name = "1st Army"
+    location = 1859
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1859
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1859
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1859
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1863
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1855
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 3593
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1860
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1856
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = infantry
+        home = 1856
+    }
+    regiment = {
+        name = "2nd Irregular Infantry Regiment"
+        type = infantry
+        home = 1857
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Regiment"
+        type = infantry
+        home = 3592
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1854
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1852
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1852
+    }
+}

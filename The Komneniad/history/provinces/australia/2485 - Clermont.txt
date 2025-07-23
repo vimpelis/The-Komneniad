@@ -1,0 +1,5 @@
+add_core = AST
+trade_goods = sugar
+life_rating = 32
+owner = AST
+controller = AST

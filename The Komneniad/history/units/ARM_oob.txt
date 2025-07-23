@@ -1,0 +1,24 @@
+RUS = { value = 150 }
+
+army = {
+    name = "1st Army"
+    location = 1098
+
+    regiment = {
+        name = "1st Infantry Brigade"
+        type = infantry
+        home = 885
+    }
+
+    regiment = {
+        name = "2nd Infantry Brigade"
+        type = infantry
+        home = 1106
+    }
+	
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 1105
+    }
+}

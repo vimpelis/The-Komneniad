@@ -1,0 +1,390 @@
+#153000 - Starting event
+#01 - Invitation event
+#02 - Nation accepts
+#03 - Nation declines
+#04 - We've been decced on
+#05 - Failure of the Szeged Conference
+#06 - Carpathian Coalition is defeated
+#07 - Carpathian Coalition is victorious
+#08 - All nations accept
+#09 - Carpathian Unification
+#10 - BYZ protests unification
+
+#Starting event
+country_event = {
+    id = 153000
+    title = "Carpathia's Sorrow"
+    desc = "153000DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Give peace a chance."
+		set_country_flag = CRP_nation
+    }
+}
+
+###Szeged Conference
+#Invitation to all countries
+country_event = {
+    id = 153001
+    title = "153001NAME"
+    desc = "153001DESC"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Accept the invitation"
+		FROM = { country_event = 153002 }
+		set_country_flag = CRP_accepted
+		ai_chance = {
+            factor = 100
+            modifier = {
+                factor = 0
+                AND = {
+					tag = HUN
+					NOT = {
+						OR = {
+							alliance_with = FROM
+							AND = {
+								has_recently_lost_war = yes
+								truce_with = FROM
+							}
+						}
+					}
+				}
+            }
+        }
+    }
+	option = {
+        name = "Decline!"
+		FROM = { country_event = 153003 }
+    }
+}
+
+#Nation accepts
+country_event = {
+    id = 153002
+    title = "153002NAME"
+    desc = "153002DESC"
+
+    is_triggered_only = yes
+	
+	allow_multiple_instances = yes
+
+    option = {
+        name = "Wonderful!"
+    }
+}
+
+#Nation declines
+country_event = {
+    id = 153003
+    title = "153003NAME"
+    desc = "153003DESC"
+
+    is_triggered_only = yes
+	
+	allow_multiple_instances = yes
+
+    option = {
+        name = "War it is then."
+		set_global_flag = CRP_war
+		any_country = {
+			limit = { has_country_flag = CRP_accepted }
+			relation = { who = THIS value = 400 }
+			relation = { who = FROM value = -400 }
+		}
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = conquest_any
+				country = FROM
+			}
+			call_ally = yes
+		}
+		any_country = {
+			limit = {
+				NOT = { tag = THIS }
+				has_country_flag = CRP_accepted
+			}
+			military_access = THIS
+			war = {
+				target = FROM
+				attacker_goal = {
+					casus_belli = conquest_any
+					country = FROM
+				}
+				call_ally = yes
+			}
+		}
+		ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 0.5
+                FROM = { ai = no }
+            }
+        }
+		FROM = { country_event = 153004 }
+    }
+	option = {
+        name = "Oh well, it seems like Carpathia was simply not meant to be."
+		prestige = -50
+		any_country = {
+			limit = {
+				NOT = { tag = THIS }
+				has_country_flag = CRP_nation
+			}
+			country_event = 153005
+		}
+		clr_global_flag = szeged_conference
+		any_country = {
+			clr_country_flag = CRP_nation
+			clr_country_flag = CRP_accepted
+			clr_country_flag = CRP_leader
+		}
+		set_global_flag = CRP_nationalism
+		ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 2
+                FROM = { ai = no }
+            }
+        }
+    }
+}
+
+#We've been decced on
+country_event = {
+    id = 153004
+    title = "153004NAME"
+    desc = "153004DESC"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To arms!"
+		set_country_flag = CRP_defiant
+    }
+}
+
+#Failure of the Szeged Conference
+country_event = {
+    id = 153005
+    title = "153005NAME"
+    desc = "153005DESC"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "The differences truly are irreconcilable."
+    }
+}
+
+#Carpathian Coalition is defeated
+country_event = {
+    id = 153006
+    title = "153006NAME"
+    desc = "153006DESC"
+	
+	major = yes
+
+    trigger = {
+		has_global_flag = CRP_war
+		has_country_flag = CRP_defiant
+		war = no
+		is_vassal = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "What a great occasion!"
+		set_country_flag = CRP_victor
+		prestige = 20
+		any_country = {
+			limit = {
+				has_country_flag = CRP_leader
+			}
+			prestige = -50
+		}
+		clr_global_flag = szeged_conference
+		any_country = {
+			clr_country_flag = CRP_nation
+			clr_country_flag = CRP_accepted
+			clr_country_flag = CRP_leader
+		}
+		any_country = {
+			limit = {
+				tag = HUN
+				has_country_flag = CRP_victor
+			}
+			SIE = {
+				any_owned = {
+					limit = { is_core = HUN }
+					secede_province = HUN
+				}
+			}
+		}
+		set_global_flag = CRP_nationalism
+    }
+}
+
+#Carpathian Coalition is victorious
+country_event = {
+    id = 153007
+    title = "Carpathian Coalition is victorious"
+    desc = "153007DESC"
+
+    trigger = {
+		has_global_flag = CRP_war
+		has_country_flag = CRP_leader
+		war = no
+		OR = {
+			HUN = {
+				has_country_flag = CRP_defiant
+				exists = no
+			}
+			SIE = {
+				has_country_flag = CRP_defiant
+				exists = no
+			}
+			WAL = {
+				has_country_flag = CRP_defiant
+				exists = no
+			}
+			MOL = {
+				has_country_flag = CRP_defiant
+				exists = no
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "What a great occasion!"
+		any_country = {
+			limit = {
+				has_country_flag = CRP_accepted
+			}
+			prestige = 5
+		}
+		relation = { who = BYZ value = 25 }
+		relation = { who = ZPD value = 25 }
+		relation = { who = BAV value = 25 }
+		country_event = 153009
+		set_global_flag = CRP_success
+    }
+}
+
+#All nations accept
+country_event = {
+    id = 153008
+    title = "All nations accept"
+    desc = "153008DESC"
+
+    trigger = {
+		has_country_flag = CRP_leader
+		HUN = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
+		WAL = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
+		SIE = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
+		MOL = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Easier than we thought."
+		country_event = 153009
+		set_global_flag = CRP_success
+    }
+}
+
+#Carpathian Unification
+country_event = {
+    id = 153009
+    title = "Carpathian Unification"
+    desc = "153009DESC"
+	
+	major = yes
+    is_triggered_only = yes
+
+    option = {
+        name = "A union no one thought was possible."
+		prestige = 10
+		change_tag = CRP
+		any_country = {
+			limit = { has_country_flag = CRP_nation }
+			all_core = { add_core = CRP }
+			annex_to = CRP
+		}
+		795 = { remove_core = CRP }
+		818 = { add_core = CRP }
+		add_accepted_culture = romanian
+		add_accepted_culture = hungarian
+		political_reform = federalism
+		if = {
+			limit = {
+				CRP = { government = absolute_monarchy }
+			}
+			CRP = { government = hms_government political_reform = wealth_voting political_reform = non_secret_ballots }
+		}
+    }
+}
+
+#BYZ protests unification
+country_event = {
+    id = 153010
+    title = "Constantinople protests unification"
+    desc = "153010DESC"
+    is_triggered_only = yes
+
+    option = {
+        name = "We'll remember this."
+		set_country_flag = CRP_hostile_to_BYZ
+    }
+}
+
+#Rise of Nationalism in Carpathia
+country_event = {
+    id = 153011
+    title = "Rise of Nationalism in Carpathia"
+    desc = "153011DESC"
+    
+	trigger = {
+		has_country_flag = CRP_nation
+		year = 1848
+		NOT = { has_global_flag = CRP_success }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "It wasn't meant to be."
+		clr_global_flag = szeged_conference
+		any_country = {
+			clr_country_flag = CRP_nation
+			clr_country_flag = CRP_accepted
+			clr_country_flag = CRP_leader
+		}
+		set_global_flag = CRP_nationalism
+    }
+}

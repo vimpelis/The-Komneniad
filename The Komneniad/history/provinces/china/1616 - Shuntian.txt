@@ -1,0 +1,9 @@
+owner = HEB
+controller = HEB
+add_core = CHI
+trade_goods = tea
+life_rating = 32
+naval_base = 1
+terrain = peking
+add_core = HEB
+fort = 1

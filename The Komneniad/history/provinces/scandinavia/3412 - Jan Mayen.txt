@@ -1,0 +1,7 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+add_core = NOR
+trade_goods = fish
+terrain = janmayen
+life_rating = 10

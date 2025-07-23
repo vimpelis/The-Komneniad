@@ -1,0 +1,6 @@
+owner = YUC
+controller = YUC
+trade_goods = coffee
+terrain = villahermosa
+life_rating = 35
+add_core = YUC

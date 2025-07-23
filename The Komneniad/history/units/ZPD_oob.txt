@@ -1,0 +1,305 @@
+LIT = {
+    value = 200
+    level = 5
+    influence_value = 50
+	military_access = yes
+}
+GLM = {
+    value = 200
+    level = 5
+    influence_value = 100
+	military_access = yes
+}
+SAX = {
+    value = 150
+    level = 5
+    influence_value = 25
+	military_access = yes
+}
+BRN = {
+    value = 150
+    level = 5
+    influence_value = 25
+	military_access = yes
+}
+WLG = {
+    value = 150
+    level = 5
+    influence_value = 25
+	military_access = yes
+}
+STT = {
+    value = 150
+    level = 5
+    influence_value = 25
+	military_access = yes
+}
+PRU = {
+    value = -50
+    level = 3
+    influence_value = 0
+}
+UBD = {
+    value = 100
+    level = 4
+    influence_value = 25
+}
+LAT = {
+    value = 25
+    level = 3
+    influence_value = 0
+}
+EST = {
+    value = 25
+    level = 3
+    influence_value = 0
+}
+BAV = {
+    value = -75
+}
+RUS = {
+    value = -150
+}
+BYZ = {
+    value = 75
+}
+WAL = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+MOL = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+SIE = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+HUN = {
+    value = -75
+    level = 1
+    influence_value = 0
+}
+
+army = {
+    name = "1st Army"
+    location = 625
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 625
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 625
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 626
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 3333
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 629
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 3334
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 631
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 682
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 682
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 637
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 706
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 706
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 708
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 700
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 701
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 699
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 714
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 703
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 3285
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 704
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 3336
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 694
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 584
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 634
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 619
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 619
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 619
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 621
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 630
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 635
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 699
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 3337
+    }
+}
+
+army = {
+    name = "4th Army"
+    location = 635
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 715
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 706
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 717
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 712
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 710
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 713
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 716
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 3426
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 3334
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 3335
+    }
+}

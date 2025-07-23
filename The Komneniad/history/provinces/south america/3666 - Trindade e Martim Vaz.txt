@@ -1,0 +1,6 @@
+owner = KIB
+controller = KIB
+trade_goods = fish
+terrain = trindade_martim
+life_rating = 20
+add_core = KIB

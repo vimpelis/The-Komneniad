@@ -1,0 +1,6 @@
+owner = SAH
+controller = SAH
+add_core = SAH
+terrain = balboa
+trade_goods = fruit
+life_rating = 34 

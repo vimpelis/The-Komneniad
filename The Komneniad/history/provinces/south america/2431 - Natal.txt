@@ -1,0 +1,6 @@
+owner = KIB
+controller = KIB
+trade_goods = sugar
+terrain = farmlands
+life_rating = 30
+add_core = KIB

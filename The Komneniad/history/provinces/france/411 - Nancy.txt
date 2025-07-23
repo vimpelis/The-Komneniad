@@ -1,0 +1,8 @@
+owner = LOR
+controller = LOR
+add_core = LOR
+add_core = LOR
+trade_goods = iron
+life_rating = 30
+terrain = nancy
+add_core = BRG

@@ -1,0 +1,12 @@
+owner = FRA
+controller = FRA
+add_core = ACA
+trade_goods = grain
+life_rating = 35
+terrain = boston
+railroad = 1
+fort = 1
+naval_base = 1
+colonial = 2
+state_building = { level = 1 building = clipper_shipyard upgrade = yes } 
+state_building = { level = 1 building = canned_food_factory upgrade = yes } 

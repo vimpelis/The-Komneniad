@@ -1,0 +1,682 @@
+political_decisions = {
+	AYL_integrate_riogrande = {
+		picture = all_texas
+		potential = {
+			tag = AYL
+			owns = 137
+			NOT = {	has_country_flag = AYL_integrate_riogrande }
+		}
+		allow = {
+			war = no
+			OR = {
+				late_classical_theory = 1
+				AND = {
+					ai = yes
+					ideological_thought = 1
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			RGR = { all_core = { add_core = THIS } }
+			add_accepted_culture = riograndense
+			set_country_flag = AYL_integrate_riogrande
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AYL_retake_RGR = {
+		picture = all_texas
+		potential = {
+			tag = AYL
+			NOT = { owns = 137 }
+			NOT = {	has_country_flag = AYL_retake_RGR has_country_flag = AYL_integrate_riogrande }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			RGR = { all_core = { add_core = THIS } }
+			add_accepted_culture = riograndense
+			set_country_flag = AYL_retake_RGR
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	AYL_golden_circle = {
+		picture = mexico_map_smaller
+		potential = {
+			tag = AYL
+			has_country_flag = AYL_integrate_riogrande
+			NOT = {	has_country_flag = AYL_golden_circle }
+		}
+		allow = {
+			war = no
+			ideological_thought = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 7.5
+			MEX_2159 = { add_core = THIS }
+			set_country_flag = AYL_golden_circle
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	AYL_annex_yucatan = {
+		picture = yucatan
+		potential = {
+			tag = AYL
+			has_country_flag = AYL_golden_circle
+			NOT = {	has_country_flag = AYL_annex_yucatan }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 15
+			MEX_2183 = { add_core = THIS }
+			MEX_2181 = { add_core = THIS }
+			UCA_2186 = { add_core = THIS }
+			set_country_flag = AYL_annex_yucatan
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	AYL_conquer_taguzgalpa = {
+		picture = map_central_america
+		potential = {
+			tag = AYL
+			has_country_flag = AYL_annex_yucatan
+			NOT = {	has_country_flag = AYL_conquer_taguzgalpa }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			TGZ = { all_core = { add_core = THIS } }
+			set_country_flag = AYL_conquer_taguzgalpa
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	AYL_kill_vrijland = {
+		picture = austro_prussian_war
+		potential = {
+			tag = AYL
+			owns = 60
+			NOT = {	has_country_flag = AYL_kill_vrijland }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 20
+			USA_219 = { add_core = THIS }
+			USA_223 = { add_core = THIS }
+			USA_231 = { add_core = THIS }
+			set_country_flag = AYL_kill_vrijland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+	
+	MEX_integrate_YUC = {
+		picture = yucatan
+		potential = {
+			tag = MEX
+			NOT = {	has_country_flag = MEX_integrate_YUC }
+		}
+		allow = {
+			war = no
+			owns = 2183
+			owns = 2165
+			owns = 2186
+			YUC = { exists = no }
+		}
+		effect = {
+			prestige = 10
+			badboy = 10
+			YUC = { all_core = { add_core = THIS } }
+			set_country_flag = MEX_integrate_YUC
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	YUC_integrate_MEX = {
+		picture = mexico_map_smaller
+		potential = {
+			tag = YUC
+			NOT = {	has_country_flag = YUC_integrate_MEX }
+		}
+		allow = {
+			war = no
+			owns = 2172
+			owns = 2177
+			owns = 2166
+			MEX = { exists = no }
+		}
+		effect = {
+			prestige = 10
+			badboy = 10
+			MEX = { all_core = { add_core = THIS } }
+			add_accepted_culture = nahua
+			set_country_flag = YUC_integrate_MEX
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	MEX_show_of_force = {
+		picture = all_texas
+		potential = {
+			OR = {
+				tag = MEX
+				AND = {
+					tag = YUC
+					has_country_flag = YUC_integrate_MEX
+				}
+			}
+			NBS = { exists = yes owns = 2154 }
+			NOT = {	has_country_flag = MEX_show_of_force }
+		}
+		allow = {
+			war = no
+			2151 = { owned_by = THIS }
+			137 = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 10
+			badboy = 2
+			NBS = { any_owned = { limit = { is_core = MEX } secede_province = THIS } }
+			set_country_flag = MEX_show_of_force
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	MEX_northern_borderlands = {
+		picture = mexico_map
+		potential = {
+			OR = {
+				tag = MEX
+				AND = {
+					tag = YUC
+					has_country_flag = YUC_integrate_MEX
+				}
+			}
+			NOT = {	has_country_flag = MEX_northern_borderlands }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			MEX_2138 = { add_core = THIS }
+			MEX_90 = { add_core = THIS }
+			MEX_103 = { add_core = THIS }
+			USA_129 = { add_core = THIS }
+			add_accepted_culture = new_basque
+			set_country_flag = MEX_northern_borderlands
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	MEX_colombian_ambition = {
+		picture = fluviales
+		potential = {
+			OR = {
+				tag = MEX
+				AND = {
+					tag = YUC
+					has_country_flag = YUC_integrate_MEX
+				}
+			}
+			has_country_flag = MEX_northern_borderlands
+			NOT = {	has_country_flag = MEX_colombian_ambition }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 20
+			USA_139 = { add_core = THIS }
+			USA_144 = { add_core = THIS }
+			CAL = { all_core = { add_core = THIS } }
+			set_country_flag = MEX_colombian_ambition
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+	
+	MEX_form_CLM = {
+		picture = const_clm
+		potential = {
+			OR = {
+				tag = MEX
+				AND = {
+					tag = YUC
+					has_country_flag = YUC_integrate_MEX
+				}
+			}
+			has_country_flag = MEX_colombian_ambition
+			NOT = {	exists = CLM }
+		}
+		allow = {
+			war = no
+			owns = 2183
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 50
+			change_tag = CLM
+			add_accepted_culture = fluvialean
+			add_accepted_culture = californian
+			country_event = 159000
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	MEX_secure_great_plains = {
+		picture = disband_reservation
+		potential = {
+			tag = CLM
+			NOT = {	has_country_flag = MEX_secure_great_plains }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 3
+			USA_124 = { add_core = THIS }
+			set_country_flag = MEX_secure_great_plains
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.88
+            }
+		}
+	}
+	
+	CLM_rockies_borderlands = {
+		picture = USA_annex_california
+		potential = {
+			OR = {
+				tag = CLM
+				tag = CAL
+			}
+			NOT = {	has_country_flag = CLM_rockies_borderlands }
+		}
+		allow = {
+			war = no
+			OR = {
+				revolution_n_counterrevolution = 1
+				AND = {
+					tag = CAL
+					state_n_government = 1
+				}
+			}
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 3
+			USA_106 = { add_core = THIS }
+			random_owned = {
+                limit = {
+                    3468 = { empty = yes }
+                }
+                3468 = { secede_province = THIS }
+				3467 = { secede_province = THIS }
+				113 = { secede_province = THIS }
+            }
+			set_country_flag = CLM_rockies_borderlands
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.88
+            }
+		}
+	}
+	
+	CLM_kill_ayllonia = {
+		picture = ayllonia
+		potential = {
+			tag = CLM
+			has_country_flag = MEX_take_fluminia
+			NOT = {	has_country_flag = CLM_kill_ayllonia }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 20
+			AYL = { all_core = { add_core = THIS } }
+			add_accepted_culture = ayllonian
+			set_country_flag = CLM_kill_ayllonia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+	
+	CLM_conquer_taguzgalpa = {
+		picture = map_central_america
+		potential = {
+			tag = CLM
+			NOT = {	has_country_flag = CLM_conquer_taguzgalpa }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			TGZ = { all_core = { add_core = THIS } }
+			add_accepted_culture = mozarabic
+			set_country_flag = CLM_conquer_taguzgalpa
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	CAL_annex_NBS = {
+		picture = sonora
+		potential = {
+			tag = CAL
+			is_our_vassal = NBS
+			NOT = {	has_country_flag = CAL_annex_NBS }
+		}
+		allow = {
+			war = no
+			OR = {
+				state_n_government = 1
+				NBS = { NOT = { owns = 2154 } }
+			}
+		}
+		effect = {
+			badboy = 5
+			inherit = NBS
+			NBS = { all_core = { add_core = THIS } }
+			add_accepted_culture = new_basque
+			set_country_flag = CAL_annex_NBS
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	CAL_retake_NBS = {
+		picture = sonora
+		potential = {
+			tag = CAL
+			NOT = { is_our_vassal = NBS }
+			NOT = {	has_country_flag = CAL_annex_NBS }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 10
+			NBS = { all_core = { add_core = THIS } }
+			add_accepted_culture = new_basque
+			set_country_flag = CAL_annex_NBS
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	CAL_take_hawaii = {
+		picture = annex_hawaii
+		potential = {
+			tag = CAL
+			NOT = {	has_country_flag = CAL_take_hawaii }
+		}
+		allow = {
+			war = no
+			OR = {
+				steamers = 1
+				owns = 658
+				658 = { NOT = { owned_by = HAW } }
+				AND = {
+					ai = yes
+					year = 1845
+				}
+			}
+		}
+		effect = {
+			badboy = 4
+			HAW_658 = { add_core = THIS }
+			set_country_flag = CAL_take_hawaii
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.84
+            }
+		}
+	}
+	
+	RGR_claim_altiplano = {
+		picture = mexico_map_smaller
+		potential = {
+			tag = RGR
+			NOT = {	has_country_flag = RGR_claim_altiplano }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			badboy = 10
+			MEX_2142 = { add_core = THIS }
+			MEX_2151 = { add_core = THIS }
+			set_country_flag = RGR_claim_altiplano
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	AYL_AI_comancheria = {
+		picture = mexico_map_smaller
+		potential = {
+			tag = AYL
+			ai = yes
+			135 = { empty = yes }
+		}
+		allow = {
+			war = no
+			rank = 16
+			2149 = { owned_by = this }
+			129 = { owned_by = THIS }
+		}
+		effect = {
+			135 = { secede_province = THIS }
+			136 = { secede_province = THIS }
+			3588 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AYL_buy_cuba = {
+		picture = cuba
+		potential = {
+			tag = AYL
+			owns = 200
+			relation = {
+				who = SPA
+				value = 1
+			}
+			2209 = { owned_by = SPA }
+			NOT = { has_country_flag = AYL_buy_cuba }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			money = 150000
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			SPA = { country_event = 159004 }
+			set_country_flag = AYL_buy_cuba
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AYL_claim_cuba = {
+		picture = cuba
+		potential = {
+			owns = 200
+			OR = {
+				AND = {
+					NOT = { 2209 = { owned_by = SPA } }
+					tag = AYL
+				}
+				AND = {
+					NOT = {
+						relation = {
+							who = SPA
+							value = 1
+						}
+					}
+					tag = AYL
+				}
+				AND = {
+					tag = CLM
+					has_country_flag = CLM_kill_ayllonia
+				}
+				has_country_flag = AYL_cuba_refused
+			}
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 5
+			add_accepted_culture = caribeno
+			CUB = { all_core = { add_core = THIS } }
+			any_country = {
+				limit = {
+					tag = CUB
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+}

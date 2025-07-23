@@ -1,0 +1,8 @@
+owner = KND
+controller = KND
+add_core = AFG
+trade_goods = wool
+life_rating = 25
+terrain = desert
+add_core = BLC
+add_core = KND

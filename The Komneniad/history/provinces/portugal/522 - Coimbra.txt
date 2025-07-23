@@ -1,0 +1,7 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = fruit
+terrain = coimbra
+life_rating = 35
+add_core = ADU

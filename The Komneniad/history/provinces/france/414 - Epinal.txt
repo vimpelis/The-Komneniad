@@ -1,0 +1,8 @@
+owner = LOR
+controller = LOR
+add_core = LOR
+add_core = LOR
+trade_goods = grain
+life_rating = 30
+terrain = epinal
+add_core = BRG

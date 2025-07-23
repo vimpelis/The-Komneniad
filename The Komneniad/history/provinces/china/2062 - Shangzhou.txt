@@ -1,0 +1,7 @@
+owner = SXI
+controller = SXI
+add_core = SXI
+terrain = shangzhou
+trade_goods = coal
+life_rating = 30
+add_core = CHI

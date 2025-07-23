@@ -1,0 +1,6 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+trade_goods = iron
+life_rating = 35
+add_core = VEN

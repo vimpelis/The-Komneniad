@@ -1,0 +1,8 @@
+owner = EGY
+controller = EGY
+add_core = BYZ
+add_core = EGY
+add_core = CLC
+trade_goods = cotton
+life_rating = 35
+terrain = adana

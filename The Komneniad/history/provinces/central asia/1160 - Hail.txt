@@ -1,0 +1,8 @@
+owner = ARA
+controller = ARA
+add_core = ARA
+add_core = HAL
+trade_goods = wool
+terrain = hail
+life_rating = 32
+add_core = ARA

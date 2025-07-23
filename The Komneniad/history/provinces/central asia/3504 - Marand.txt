@@ -1,0 +1,6 @@
+owner = ZND
+controller = MGT
+add_core = ZND
+add_core = AZB
+trade_goods = iron
+life_rating = 35

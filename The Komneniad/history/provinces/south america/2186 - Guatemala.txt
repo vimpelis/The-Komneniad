@@ -1,0 +1,6 @@
+owner = YUC
+controller = YUC
+trade_goods = coffee
+life_rating = 39
+terrain = guatemala
+add_core = YUC

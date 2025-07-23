@@ -1,0 +1,6 @@
+owner = KIB
+trade_goods = coffee
+terrain = bellohorizonte
+life_rating = 30
+controller = KIB
+add_core = KIB

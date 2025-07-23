@@ -1,0 +1,210 @@
+political_decisions = {
+    occupation_of_the_arabian_desert = {
+        picture = map_arabia
+        potential = {
+            OR = {
+                AND = { #Trucial States
+                    owns = 1167 #Abu Dhabi
+                    12 = { empty = yes } #Liwa
+                }
+                AND = { #North Yemen
+                    owns = 1178 #Sana'a
+                    1180 = { empty = yes } #Marib
+                }
+                AND = { #Yemen
+                    OR = {
+                        owns = 1175
+                        owns = 1173
+                        owns = 1176
+                    }
+                    3273 = { empty = yes } #Rumah
+                }
+                AND = { #Oman
+                    owns = 1166 #Muscat
+                    1172 = { empty = yes } #Duqm
+					1170 = { empty = yes } #Nizwa
+                }
+                AND = { #Arabia
+                    owns = 1157 #Riyadh
+                    2586 = { empty = yes } #Al-Ahsa
+                    1161 = { empty = yes } #Sharurah
+                }
+				AND = { #Ha'il
+                    owns = 1160 #Ha'il
+                    3404 = { empty = yes } #al-Salman
+                    1158 = { empty = yes } #al-Nefud
+                }
+            }
+        }
+
+        allow = {
+            OR = {
+                AND = { #Trucial States
+                    owns = 1167 #Abu Dhabi
+                    12 = { empty = yes } #Liwa
+                    OR = {
+                        year = 1860
+                        state_n_government = 1
+                    }
+                }
+                AND = { #North Yemen
+                    owns = 1178 #Sana'a
+                    1180 = { empty = yes } #Marib
+                    OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+                AND = { #Yemen
+                    OR = {
+                        owns = 1175
+                        owns = 1173
+                        owns = 1176
+                    }
+                    3273 = { empty = yes } #Rumah
+                    OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+                AND = { #Oman
+                    owns = 1166 #Muscat
+                    1172 = { empty = yes } #Duqm
+					1170 = { empty = yes } #Nizwa
+                    OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+                AND = { #Arabia
+                    owns = 1157 #Riyadh
+                    2586 = { empty = yes } #Al-Ahsa
+                    1161 = { empty = yes } #Sharurah
+                    OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Ha'il
+                    owns = 1160 #Ha'il
+                    3404 = { empty = yes } #al-Salman
+                    1158 = { empty = yes } #al-Nefud
+                    OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            #Trucial#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1167 #Abu Dhabi
+                        12 = { empty = yes }
+                    }
+                }
+                12 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+            #North Yemen#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1178 #Sana'a
+                        1180 = { empty = yes } #Marib
+                    }
+                }
+                1180 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+            #Yemen#
+            random_owned = {
+                limit = {
+                    owner = {
+                        OR = {
+                            owns = 1175
+                            owns = 1173
+                            owns = 1176
+                        }
+                        3273 = { empty = yes } #Rumah
+                    }
+                }
+                3273 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+            #Oman#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1166 #Muscat
+                        1172 = { empty = yes } #Duqm
+						1170 = { empty = yes } #Nizwa
+                    }
+                }
+                1172 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 15 }
+				1170 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 15 }
+                owner = { prestige = 1 }
+            }
+            #Arabia#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1157 #Riyadh
+                        2586 = { empty = yes } #Al-Ahsa
+						1161 = { empty = yes } #Sharurah
+                    }
+                }
+                2586 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+				1161 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+			#Ha'il#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1160 #Hail
+                        3404 = { empty = yes } #al-Salman
+						1158 = { empty = yes } #al-Nefud
+                    }
+                }
+                3404 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+				1158 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = {
+					prestige = 1
+					random_owned = {
+						limit = {
+							owner = {
+								OR = {
+									tag = HAL
+									tag = NEJ
+								}
+							}
+						}
+						owner = {
+							3278 = { add_core = THIS }
+						}
+					}
+				}
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

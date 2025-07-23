@@ -1,0 +1,224 @@
+#Starting event - SPA
+country_event = {
+    id = 150000
+    title = "The Land of Languages and Dialects"
+    desc = "150000DESC"
+    picture = "iberia_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "The Moors are a bigger issue anyhow."
+		add_country_modifier = {
+			name = SPA_bureaucratic_mess
+			duration = -1
+		}
+    }
+}
+
+#Starting event - ADU
+country_event = {
+    id = 150001
+    title = "The Great Confusion"
+    desc = "150001DESC"
+    picture = "iberia_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Garments begin to unravel at the seams..."
+    }
+}
+
+#ADU loses Bechar if it doesn't control Tlemcen state (for pretty borders)
+country_event = {
+    id = 150002
+    title = "Bechar slips from our grasp!"
+    desc = "150002DESC"
+	picture = "iberia_map"
+
+    trigger = {
+		tag = ADU
+        owns = 1698
+		owns = 1720
+		NOT = {
+			owns = 1697
+			owns = 1715
+			owns = 1713
+			owns = 1716
+			owns = 1718
+			owns = 1711
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 30 }
+
+    option = {
+        name = "What a humiliation."
+		prestige = -5
+		1720 = {
+			remove_core = ADU
+			secede_province = ZZZ
+		}
+    }
+}
+
+#CAT starting event
+country_event = {
+    id = 150003
+    title = "You are going to die"
+    desc = "Catalonia is not a playable nation yet. It will have content at some point (prolly related to restoring Occitania), but for now, you are dead."
+	picture = "iberia_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Oh well."
+    }
+}
+
+#How to deal with CAT
+country_event = {
+    id = 150004
+    title = "The Issue of Catalonia"
+    desc = "150004DESC"
+	picture = "iberia_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will support the Dynasty's claim."
+		treasury = -10000
+		badboy = -3
+		CAT = { country_event = 150005 }
+		ai_chance = {
+            factor = 40
+        }
+    }
+	
+	option = {
+        name = "Incorporating Catalonia directly would be better."
+		badboy = 2
+		CAT = { all_core = { add_core = THIS } }
+		ai_chance = {
+            factor = 60
+			modifier = {
+				badboy = 0.88
+				factor = 0
+			}
+        }
+    }
+}
+
+#CAT puppeted
+country_event = {
+    id = 150005
+    title = "Monarchist coup in Barcelona!"
+    desc = "The Espanians have funded the Monarchists in a bid to restore the Duchy of Barcelona as their vassal. The republican government was quickly ousted and the Barcelona Dynasty was restored, swearing oath to the King of Espania."
+	picture = "iberia_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We should've forseen that."
+		government = prussian_constitutionalism
+		political_reform = wealth_weighted_voting
+		political_reform = non_secret_ballots
+		political_reform = no_trade_unions
+		SPA = { create_vassal = CAT }
+    }
+}
+
+#ADU flight to Morocco
+country_event = {
+    id = 150006
+    title = "Flight to Morocco"
+    desc = "150006DESC"
+	picture = "iberia_map"
+	
+	major = yes
+
+    trigger = {
+		tag = ADU
+        any_owned_province = {
+			is_core = MOR
+		}
+		NOT = {
+			any_owned_province = {
+				continent = europe
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 10 }
+
+    option = {
+        name = "...but now I see that the peninsula is unraveling at the center."
+		change_tag = MOR
+		all_core = {
+			limit = { continent = europe }
+			remove_core = THIS
+		}
+		SPA_512 = { add_core = THIS }
+		SPA_513 = { add_core = THIS }
+		capital = 1680
+		set_country_flag = ADU_to_MOR
+    }
+}
+
+#SPA end of language reform
+country_event = {
+    id = 150007
+    title = "The Great Language Reform is a success!"
+    desc = "150007DESC"
+	picture = "iberia_map"
+
+    trigger = {
+		primary_culture = spanish
+		NOT = { has_country_modifier = SPA_bureaucratic_mess has_country_modifier = espanian_cultural_unity }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 20 }
+
+    option = {
+        name = "Wonderful."
+		add_country_modifier = {
+			name = espanian_cultural_unity_2
+			duration = -1
+		}
+		clr_country_flag = culture_conversion
+    }
+}
+
+country_event = {
+    id = 150008
+    title = "AI Andalusia: No France Alliance Allowed!"
+    desc = "You are Andalusia, and you are NOT going to improve your relations with your supposed enemy from -150 to 0 in a span of 5 years."
+	picture = "iberia_map"
+
+    trigger = {
+		tag = ADU
+		ai = yes
+		relation = {
+			who = FRA
+			value = -90
+		}
+		NOT = { year = 1870 }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Oh screw you, I can do whatever I want!"
+		relation = {
+			who = FRA
+			value = -50
+		}
+    }
+}

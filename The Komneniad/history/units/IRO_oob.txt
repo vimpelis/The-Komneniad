@@ -1,0 +1,76 @@
+VRI = { value = -50 }
+
+army = {
+    name = "Eastern Tribes Army"
+    location = 163
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 163
+    }
+    regiment = {
+        name = "2nd Irregular Infantry Regiment"
+        type = irregular
+        home = 165
+    }
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 172
+    }
+	regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 177
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 178
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 169
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = irregular
+        home = 173
+    }
+	regiment = {
+        name = "4th Cavalry Regiment"
+        type = irregular
+        home = 166
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 179
+    }
+}
+
+army = {
+    name = "Haudenosaunee Army"
+    location = 236
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 237
+    }
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 236
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 228
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 55
+    }
+}

@@ -1,0 +1,390 @@
+#Costa Rica Region (84000)
+#Ruled by Central America 1836
+#San Jose (52000/13000 POPS)
+2201 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 180
+        militancy = 9
+    }
+
+    bureaucrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 50
+    }
+
+    officers = {
+        culture = mozarabic
+        religion = catholic
+        size = 15
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 75
+        militancy = 9
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 390
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 525
+        militancy = 9
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 4292
+        militancy = 5
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 600
+        militancy = 5
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 888
+        militancy = 5
+    }
+
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 120
+        militancy = 9
+    }
+
+    officers = {
+        culture = janatiyin
+        religion = sunni
+        size = 10
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+        militancy = 9
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 260
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 3695
+        militancy = 5
+    }
+}
+3659 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 160
+        militancy = 9
+    }
+
+    officers = {
+        culture = mozarabic
+        religion = catholic
+        size = 20
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 100
+        militancy = 9
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 120
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 125
+        militancy = 9
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 1220
+        militancy = 5
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 125
+        militancy = 5
+    }
+
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 40
+        militancy = 9
+    }
+
+    officers = {
+        culture = mozarabic
+        religion = catholic
+        size = 5
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 25
+        militancy = 9
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 30
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 305
+        militancy = 5
+    }
+}
+#Liberia (20000/5000 POPS)
+2202 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 76
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 25
+        militancy = 9
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 127
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 50
+        militancy = 9
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 2180
+        militancy = 5
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 500
+        militancy = 5
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 225
+        militancy = 5
+    }
+
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 23
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 8
+        militancy = 9
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 38
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 641
+        militancy = 5
+    }
+
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 51
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 17
+        militancy = 9
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 85
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 1454
+        militancy = 5
+    }
+}
+#Limon (12000/3000 POPS)
+2203 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 12
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 9
+        militancy = 9
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 24
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 20
+        militancy = 9
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 157
+        militancy = 5
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 1000
+        militancy = 5
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 135
+        militancy = 5
+    }
+
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 3
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 2
+        militancy = 9
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 5
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 200
+        militancy = 5
+    }
+
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 35
+        militancy = 9
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 29
+        militancy = 9
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 71
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 470
+        militancy = 5
+    }
+}

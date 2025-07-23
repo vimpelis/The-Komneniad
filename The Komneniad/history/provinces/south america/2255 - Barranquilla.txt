@@ -1,0 +1,6 @@
+owner = SAH
+controller = SAH
+add_core = SAH
+trade_goods = fish
+terrain = baranquilla
+life_rating = 35 

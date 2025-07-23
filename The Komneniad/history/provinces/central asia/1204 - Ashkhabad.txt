@@ -1,0 +1,8 @@
+owner = MGT
+controller = MGT
+add_core = TKM
+add_core = KHR
+trade_goods = fruit
+life_rating = 35
+terrain = semi_desert_mountains
+add_core = MGT

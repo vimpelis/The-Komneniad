@@ -1,0 +1,1395 @@
+political_decisions = {
+    claim_finland = {
+        picture = old_finnish_map
+        potential = {
+            tag = SCA
+            NOT = { primary_culture = finnish }
+            343 = { NOT = { is_core = THIS } }
+        }
+
+        allow = {
+            OR = {
+                war_policy = jingoism
+                war_policy = pro_military
+            }
+        }
+
+        effect = {
+            badboy = 4
+            FIN = { all_core = { add_core = SCA } }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    embrace_the_finns = {
+        picture = form_scandinavia
+        potential = {
+            tag = SCA
+            NOT = { accepted_culture = finnish }
+            NOT = { primary_culture = finnish }
+        }
+
+        allow = {
+            citizens_rights = all_voting_pops
+            citizenship_policy = full_citizenship
+        }
+
+        effect = {
+            add_accepted_culture = finnish
+            any_pop = {
+                limit = { has_pop_culture = finnish }
+                militancy = -1
+                consciousness = -3
+            }
+
+            any_pop = {
+                limit = {
+                    OR = {
+                        is_primary_culture = yes
+                        is_accepted_culture = yes
+                    }
+                }
+                consciousness = 1
+            }
+
+            any_pop = {
+                limit = {
+                    is_primary_culture = no
+                    is_accepted_culture = no
+                }
+            consciousness = 3
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    move_capital_to_gothenburg = {
+        picture = declare_republic_of_neuchatel
+        alert = no
+        potential = {
+            tag = SCA
+            owns = 329 # Gothenburg
+            NOT = { capital = 329 }
+            capital = 322
+        }
+
+        allow = {
+            NOT = { capital = 329 }
+        }
+
+        effect = {
+            capital = 329
+            prestige = 5
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	cologne_cathedral = {
+        picture = cologne_cathedral
+        potential = {
+            NOT = { has_global_flag = cologne_cathedral_build }
+            owns = 575
+            has_global_flag = dombau_beginn
+        }
+
+        allow = {
+            year = 1860
+            money = 100001
+            romanticism = 1
+            nationalism_n_imperialism = 1
+            owns = 575
+        }
+
+        effect = {
+            set_global_flag = cologne_cathedral_build
+            money = -100000
+            prestige = 25
+            THIS = { country_event = 200003 }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	
+	end_the_merina_monarchy = {
+        picture = end_the_merina_monarchy
+        potential = {
+            has_global_flag = berlin_conference
+            is_greater_power = yes
+            nationalism_n_imperialism = 1
+			owns = 3281
+            capital_scope = { continent = europe }
+            NOT = { has_global_flag = merina_monarchy_is_over }
+            any_owned_province = { has_building = naval_base }
+            MAD = {
+                exists = yes
+                civilized = no
+            }
+        }
+
+        allow = {
+            MAD = {
+                in_sphere = THIS
+                war = no
+            }
+            OR = {
+                any_owned_province = { continent = africa }
+                any_owned_province = { continent = south_africa }
+                any_owned_province = { continent = east_africa }
+                any_owned_province = { continent = west_africa }
+                any_owned_province = { continent = central_africa }
+            }
+            has_global_flag = berlin_conference
+            invention = mission_to_civilize
+			NOT = { badboy = 0.92 }
+        }
+
+        effect = {
+            set_global_flag = merina_monarchy_is_over
+            MAD = { country_event = 95505 }
+			random_owned = {
+				limit = {
+					owner = {
+						exists = AKR
+						AKR = { vassal_of = THIS }
+					}
+				}
+				owner = {
+					AKR = { country_event = 184823574 }
+				}
+			}
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	
+	build_the_tsr = { #Trans-Siberian railroad- mirrors CNR, but offers choice of route: Irkutsk-Yakutia-Okhotsk or Irkutsk-Chita-Vladivostok(if owned)
+        picture = trans_siberian_railway
+        potential = {
+            tag = RUS
+            NOT = { has_country_flag = build_the_tsr }
+        }
+        allow = {
+            money = 75000
+            OR = {
+                iron_railroad = 1
+                year = 1890
+            }
+            owns = 1082
+            owns = 1078
+            owns = 1075
+            owns = 1077
+            owns = 2686
+            owns = 1064
+            owns = 1059
+        }
+        effect = {
+            set_country_flag = build_the_tsr
+            treasury = -75000
+            1082 = { infrastructure = 2 }
+            1083 = { infrastructure = 2 }
+            1059 = { infrastructure = 2 }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+    build_the_manchurian_railway = { #Railroad through Manchuria if they own Port Arthur
+        picture = eastern_china_railway
+        potential = {
+            tag = RUS
+            has_country_flag = build_the_tsr
+            NOT = { has_country_flag = build_the_manchurian_railway }
+            owns = 1481
+            owns = 1082 #Sanity check if they haven't lost Vladivostok in the meantime
+        }
+        allow = {
+            money = 35000
+        }
+        effect = {
+            set_country_flag = build_the_manchurian_railway
+            treasury = -35000
+            1481 = { infrastructure = 2 }
+            diplomatic_influence = { who = MCK value = 50 }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	founding_yadanabon = {
+        picture = founding_yadanabon
+        potential = {
+            tag = BUR
+            NOT = { has_country_flag = mandalay_built }
+            owns = 1334
+        }
+
+        allow = {
+            year = 1857
+            money = 1100
+        }
+
+        effect = {
+            set_country_flag = mandalay_built
+            prestige = 2
+            treasury = -1000
+            1334 = { change_province_name = "Yadanabon" add_province_modifier = { name = recently_built_city duration = 720 } trade_goods = gems }
+        }
+    }
+
+    build_addis_ababa = {
+        picture = addis_ababa_building
+        potential = {
+            tag = ETH
+            owns = 1859
+            NOT = { has_country_flag = addis_ababa_built }
+            year = 1880
+        }
+
+        allow = {
+            war = no
+            OR = {
+                civilized = yes
+                civilization_progress = 0.5
+                year = 1886
+            }
+            owns = 1859
+        }
+
+        effect = {
+            set_country_flag = addis_ababa_built
+            prestige = 5
+            years_of_research = 1
+            1859 = {
+                change_province_name = "Addis Ababa"
+                life_rating = 5
+            }
+            capital = 1859
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	
+	support_troupes_de_marine = {
+        picture = troupes_de_marine
+        potential = {
+            primary_culture = french
+            is_greater_power = yes
+            capital = 425
+            colonial_nation = yes
+            NOT = { has_country_modifier = troupes_de_marine }
+        }
+
+        allow = {
+            naval_professionalism = 1
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = troupes_de_marine
+                duration = -1
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	build_the_eiffel_tower = {
+        picture = build_the_eiffel_tower
+        potential = {
+			has_country_flag = komneniad_wip
+            primary_culture = french
+            is_greater_power = yes
+            capital = 425
+            NOT = {
+                has_global_flag = the_eiffel_tower_was_built
+				has_global_flag = catalan_tower
+				425 = { has_province_modifier = the_eiffel_tower }
+				498 = { has_province_modifier = the_eiffel_tower }
+				SPA = { has_country_modifier = eiffel_torre_construction }
+				IBR = { has_country_modifier = eiffel_torre_construction }
+				CAT = { has_country_modifier = eiffel_torre_construction }
+			}
+            OR = {
+                has_country_flag = world_fair_planner
+                year = 1887
+            }
+        }
+
+        allow = {
+            war = no
+            regenerative_furnaces = 1
+            OR = {
+                money = 30000
+                ai = yes
+            }
+        }
+
+        effect = {
+            country_event = 37236
+            set_global_flag = the_eiffel_tower_was_built
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	
+	alsace_lorraine_mines = {
+        picture = alsace_lorraine_mines
+        potential = {
+            owns = 409
+            NOT = { 409 = { trade_goods = precious_metal } }
+            regenerative_furnaces = 1
+        }
+
+        allow = {
+            war = no
+            regenerative_furnaces = 1
+            money = 30100
+        }
+
+        effect = {
+            money = -30000
+            412 = { trade_goods = iron }
+            409 = { trade_goods = precious_metal }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	french_iron_mines = {
+        picture = normandie_mine
+        potential = {
+            owns = 434
+            regenerative_furnaces = 1
+            NOT = { has_global_flag = french_mines_placed }
+        }
+
+        allow = {
+            war = no
+			OR = {
+				advanced_metallurgy = 1
+				AND = {
+					ai = yes
+					year = 1900
+				}
+			}
+            money = 30100
+        }
+
+        effect = {
+            set_global_flag = french_mines_placed
+            money = -30000
+            418 = { trade_goods = iron }
+			417 = { trade_goods = iron }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	support_ruhr_industrialism = {
+        potential = {
+            OR = {
+                tag = RHI
+                tag = GER
+                tag = NGF
+                tag = SGF
+            }
+            NOT = { tech_school = prussian_tech_school }
+        }
+
+        allow = {
+            regenerative_furnaces = 1
+            iron_breech_loaded_artillery = 1
+            state_n_government = 1
+            industrial_score = 150
+            owns = 577
+            owns = 578
+            owns = 2561
+            owns = 576
+            owns = 575
+            OR = {
+                575 = { state_scope = { has_building = steel_factory } }
+                ai = yes
+            }
+        }
+
+        effect = {
+            tech_school = prussian_tech_school
+            prestige = 5
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	
+	the_ruhr_boom = {
+        picture = essen_ruhr
+        potential = {
+            OR = {
+                tag = RHI
+                tag = GER
+                tag = SGF
+            }
+            owns = 578
+            owns = 2561
+            owns = 575
+            NOT = { has_global_flag = ruhr_boom_has_happened }
+        }
+
+        allow = {
+            OR = {
+                AND = {
+                    market_structure = 1
+                    organized_factories = 1
+                    early_railroad = 1
+                }
+                tech_school = prussian_tech_school
+            }
+        }
+
+        effect = {
+            random_owned = {
+                limit = {
+                    province_id = 2561 #Ost-Rhineland
+                    state_scope = {
+                        NOT = { has_building = steel_factory }
+                    }
+                }
+
+                owner = {
+                    capital = 2561
+                    build_factory_in_capital_state = steel_factory
+                }
+            }
+            add_country_modifier = {
+                name = ruhr_boom
+                duration = 3650
+            }
+            add_country_modifier = {
+                name = global_baby_boom_small
+                duration = 720
+            }
+            any_owned = {
+                limit = {
+                    OR = {
+                        region = PRU_575 #Rheinland
+                        region = PRU_578 #Eastern Rheinland
+                        region = PRU_581 #Westfalen
+                    }
+                }
+                add_province_modifier = {
+                    name = ruhr_boom_city
+                    duration = 720
+                }
+            }
+            capital_scope = {
+                add_province_modifier = {
+                    name = baby_boom
+                    duration = 365
+                }
+            }
+            set_global_flag = ruhr_boom_has_happened
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	fatherland_altar = {
+		picture = build_vittoriano
+        potential = {
+            owns = 749
+            NOT = { has_country_flag = vittoriano_built }
+            tag = ITA
+            OR = {
+                government = absolute_monarchy
+                government = prussian_constitutionalism
+                government = hms_government
+                government = absolute_empire
+                government = semi_constitutional_empire
+                government = constitutional_empire
+                government = fascist_dictatorship
+            }
+            NOT = { has_country_flag = vittoriano_built }
+        }
+
+        allow = {
+            money = 10000
+            realism = 1
+        }
+
+        effect = {
+            treasury = -10000
+            prestige = 20
+            any_pop = { militancy = -1 }
+            set_country_flag = vittoriano_built
+            random_list = {
+                25 = {
+					add_country_modifier = {
+						name = monument_under_construction
+						duration = 3285
+					}
+				}
+                25 = {
+					add_country_modifier = {
+						name = monument_under_construction
+						duration = 3650
+                    }
+                }
+                25 = {
+					add_country_modifier = {
+						name = monument_under_construction
+						duration = 4380
+                    }
+                }
+                25 = {
+					add_country_modifier = {
+						name = monument_under_construction
+						duration = 5110
+                    }
+                }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	abolish_italian_minors = {
+        picture = law_of_guarantees
+        potential = {
+            OR = {
+                tag = ITA
+                tag = ITS
+            }
+            has_country_flag = law_of_guarantees
+            any_owned_province = {
+                OR = {
+                    is_core = SAR
+                    is_core = SVY
+                    is_core = SRD
+                    is_core = SIC
+                    is_core = MOD
+                    is_core = TUS
+                    is_core = LUC
+                    is_core = PAR
+                    is_core = PAP
+                    is_core = VEN
+                    is_core = LOM
+                    is_core = RMG
+                    is_core = SYC
+                }
+            }
+        }
+
+        allow = {
+            nationalism_n_imperialism = 1
+        }
+
+        effect = {
+            badboy = 1
+            any_owned = {
+                limit = {
+                    OR = {
+                        is_core = SAR
+                        is_core = SVY
+                        is_core = SRD
+                        is_core = SIC
+                        is_core = MOD
+                        is_core = TUS
+                        is_core = LUC
+                        is_core = PAR
+                        is_core = PAP
+                        is_core = VEN
+                        is_core = LOM
+                        is_core = RMG
+                        is_core = SYC
+                    }
+                }
+                add_core = THIS
+                remove_core = SAR
+                remove_core = SVY
+                remove_core = SRD
+                remove_core = SIC
+                remove_core = MOD
+                remove_core = TUS
+                remove_core = LUC
+                remove_core = PAR
+                remove_core = PAP
+                remove_core = VEN
+                remove_core = LOM
+                remove_core = RMG
+                remove_core = SYC
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+        }
+    }
+	
+	bring_tea_to_iran = {
+        picture = prince_mirza
+        potential = {
+            tag = PER
+            NOT = { has_country_flag = tea_in_iran }
+            OR = {
+                government = hms_government
+                government = prussian_constitutionalism
+                government = absolute_monarchy
+                government = absolute_empire
+                government = semi_constitutional_empire
+                government = constitutional_empire
+            }
+        }
+
+        allow = {
+            owns = 1113
+            owns = 1115
+            owns = 1114
+            owns = 1121
+            OR = {
+                year = 1900
+                management_strategy = 1
+            }
+        }
+
+        effect = {
+            set_country_flag = tea_in_iran
+            1113 = { trade_goods = tea }
+            1115 = { trade_goods = tea }
+            1114 = { trade_goods = tea }
+            1121 = { trade_goods = tea }
+            1116 = { trade_goods = tea }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	new_life_in_the_new_world = {
+        picture = new_life
+        potential = {
+            OR = {
+                is_culture_group = latin_american_cultures
+                is_culture_group = malian_american_cultures
+				is_culture_group = moorish_american_cultures
+				is_culture_group = african_diaspora_cultures
+                is_culture_group = native_american
+				is_culture_group = neo_european_cultures
+                primary_culture = australian
+            }
+            OR = {
+                continent = north_america
+                continent = south_america
+                primary_culture = australian
+            }
+            is_greater_power = no
+            NOT = { has_country_flag = come_to_the_new_world }
+            number_of_states = 2
+            num_of_ports = 1
+        }
+
+        allow = {
+            war = no
+            is_vassal = no
+            is_greater_power = no
+            state_n_government = 1
+            slavery = no_slavery
+            public_meetings = yes_meeting
+            press_rights = free_press
+            citizens_rights = all_voting_pops
+            NOT = { citizenship_policy = residency }
+            NOT = { religious_policy = moralism }
+            OR = {
+                government = democracy
+                government = hms_government
+                government = constitutional_empire
+            }
+            money = 60000
+        }
+
+        effect = {
+            set_country_flag = come_to_the_new_world
+            treasury = -50000
+            add_country_modifier = { name = small_immigration_boom duration = 730 }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+	
+	build_the_urgell_channels = {
+        picture = urgell_channel
+        potential = {
+            500 = { is_core = THIS }
+            owns = 500
+            NOT = { has_global_flag = urgell_channel_built }
+        }
+
+        allow = {
+            war = no
+            invention = stiff_plastic_brickmaking_machine
+            money = 20000
+        }
+
+        effect = {
+            country_event = 31718
+            set_global_flag = urgell_channel_built
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+	lunda_expansion_aka_trolling = {
+        picture = lunda_sculpture
+        potential = {
+            tag = LUN
+            LBA = { vassal_of = THIS exists = yes }
+			KUB = { vassal_of = THIS exists = yes }
+        }
+
+        allow = {
+            war = no
+			civilized = yes
+        }
+
+        effect = {
+            add_accepted_culture = kuba
+			add_accepted_culture = luba
+			1984 = { add_core = THIS }
+			1986 = { add_core = THIS }
+			1989 = { add_core = THIS }
+			1994 = { add_core = THIS }
+			inherit = LBA
+			inherit = KUB
+			random_owned = {
+				limit = {
+					owner = {
+						1994 = { empty = yes }
+					}
+				}
+				owner = {
+					1994 = { secede_province = THIS any_pop = { limit = { is_primary_culture = no } literacy = -0.99 } }
+				}
+			}
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+	claim_madagascar_lowdesert = {
+		picture = madagascar_old
+		potential = {
+			OR = {
+				AND = {
+					tag = MAD
+					2117 = { empty = yes }
+					2116 = { empty = yes }
+					owns = 2115
+				}
+				AND = {
+					tag = BOI
+					MAD = { exists = no }
+					2117 = { empty = yes }
+					2116 = { empty = yes }
+					owns = 2115
+				}
+				AND = {
+					tag = AKR
+					MAD = { exists = no }
+					2117 = { empty = yes }
+					2116 = { empty = yes }
+					owns = 2115
+				}
+			}
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			owns = 2115
+			year = 1838
+		}
+
+		effect = {
+			2117 = { secede_province = THIS }
+			2116 = { secede_province = THIS }
+		}
+
+		ai_will_do = { factor = 1 }
+    }
+
+	the_antankarana_question = {
+		picture = antankarana_old
+		potential = {
+			tag = MAD
+			ai = no
+			AKR = { owns = 2120 ai = yes }
+			NOT = { has_country_flag = vassalized_antankarana }
+			AKR = { is_vassal = no }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			year = 1841
+		}
+
+		effect = {
+			set_country_flag = vassalized_antankarana
+			create_vassal = AKR
+		}
+
+		ai_will_do = { factor = 1 }
+    }
+
+	conquer_antankarana = {
+		picture = antankarana_old
+		potential = {
+			tag = MAD
+			NOT = { has_country_flag = vassalized_antankarana }
+			NOT = { has_country_flag = annexed_antankarana_novassal }
+		}
+
+		allow = {
+			NOT = { exists = BOI }
+			war = no
+			is_vassal = no
+			AKR = { is_vassal = no }
+			AKR = { owns = 2120 }
+			owns = 2117
+			year = 1841
+		}
+
+		effect = {
+			leave_alliance = AKR
+			war = {
+				target = AKR
+				attacker_goal = { casus_belli = conquest_any }
+				defender_goal = { casus_belli = humiliate_no_infamy }
+			}
+			2120 = { add_core = MAD }
+			set_country_flag = annexed_antankarana_novassal
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	annex_antankarana = {
+		picture = antankarana_old
+		potential = {
+			tag = MAD
+			has_country_flag = vassalized_antankarana
+			is_our_vassal = AKR
+			NOT = { has_country_flag = annexed_antankarana_novassal }
+			owns = 2117
+			AKR = { vassal_of = THIS }
+			AKR = { owns = 2120 }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			civilized = yes
+		}
+
+		effect = {
+			release_vassal = AKR
+			leave_alliance = AKR
+			war = {
+				target = AKR
+				attacker_goal = { casus_belli = conquest_any }
+				defender_goal = { casus_belli = humiliate_no_infamy }
+			}
+			2120 = { add_core = MAD }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	annex_boina = {
+		picture = bara_map
+		potential = {
+			tag = MAD
+			BOI = {
+				owns = 3541
+			}
+			NOT = { has_country_flag = yeah_boi }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			BOI = { vassal_of = THIS }
+			year = 1840
+		}
+
+		effect = {
+			set_country_flag = yeah_boi
+			release_vassal = BOI
+			leave_alliance = BOI
+			war = {
+				target = BOI
+				attacker_goal = { casus_belli = conquest_any }
+				defender_goal = { casus_belli = humiliate_no_infamy }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	raise_militia = {
+		picture = militias_to_raise
+		potential = {
+			total_pops = 30000
+			NOT = { total_pops = 400000 }
+			ai = no
+			# Audax Validator "." Ignore_NEXT
+			NOT = { total_amount_of_divisions = 1 }
+			NOT = { has_country_modifier = recruitment_cooldown }
+		}
+
+		allow = {
+			war = no
+			money = 10000
+		}
+
+		effect = {
+			treasury = -10000
+			capital_scope = {
+                sub_unit = { type = irregular value = current }
+                sub_unit = { type = irregular value = current }
+			}
+			add_country_modifier = {
+				name = recruitment_cooldown
+				duration = 3650
+			}
+		}
+
+	}
+
+	mines_lategame_per = {
+        picture = mining_union_upper_katanga
+        potential = {
+            tag = PER
+            NOT = { has_country_flag = mines_lategame_per }
+			industrial_score = 30
+			1150 = { owned_by = PER }
+			1147 = { owned_by = PER }
+			3354 = { owned_by = PER }
+			1149 = { owned_by = PER }
+			1126 = { owned_by = PER }
+			3497 = { owned_by = PER }
+			1130 = { owned_by = PER }
+			1139 = { owned_by = PER }
+        }
+
+        allow = {
+			civilized = yes
+			is_vassal = no
+			war = no
+        }
+
+        effect = {
+            set_country_flag = mines_lategame_per
+            prestige = 5
+			1150 = { trade_goods = coal }
+			1147 = { trade_goods = coal }
+			3354 = { trade_goods = coal }
+			1149 = { trade_goods = coal }
+			1126 = { trade_goods = coal }
+			3497 = { trade_goods = coal }
+			1130 = { trade_goods = iron }
+			1139 = { trade_goods = iron }
+			any_pop = {
+				limit = {
+					location = {
+						OR = {
+							province_id = 1150
+							province_id = 1147
+							province_id = 3354
+							province_id = 1149
+							province_id = 1126
+							province_id = 3497
+							province_id = 1130
+							province_id = 1139
+						}
+					}
+					type = farmers
+				}
+				pop_type = labourers
+			}
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	mines_lategame_afg = {
+        picture = coal_for_afghanistan
+        potential = {
+            NOT = { has_country_flag = mines_lategame_afg }
+			1212 = { owned_by = THIS }
+			3516 = { owned_by = THIS }
+			1211 = { owned_by = THIS }
+			civilized = yes
+        }
+
+        allow = {
+			industrial_score = 15
+			drilling_and_blasting = 1
+			is_vassal = no
+			war = no
+        }
+
+        effect = {
+            set_country_flag = mines_lategame_afg
+            prestige = 5
+			1212 = { trade_goods = coal }
+			3516 = { trade_goods = coal }
+			1211 = { trade_goods = coal }
+			any_pop = {
+				limit = {
+					location = {
+						OR = {
+							province_id = 1212
+							province_id = 3516
+							province_id = 1211
+						}
+					}
+					type = farmers
+				}
+				pop_type = labourers
+			}
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	annex_palmyra_atoll = {
+        picture = annex_palmyra_atoll
+        potential = {
+			tag = HAW
+			2526 = { empty = yes }
+			civilized = yes
+        }
+
+        allow = {
+			war = no
+			total_amount_of_ships = 10
+			OR = {
+				year = 1862
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+		}
+
+        effect = {
+			2526 = {
+                secede_province = THIS
+                add_core = THIS
+                life_rating = 20
+                any_pop = { limit = { is_primary_culture = yes } literacy = 0.49 }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+	annex_midway_atoll = {
+        picture = annex_midway_atoll
+        potential = {
+			tag = HAW
+			2623 = { empty = yes }
+        }
+
+        allow = {
+			war = no
+			civilized = yes
+		}
+
+        effect = {
+			2623 = {
+                secede_province = THIS
+                add_core = THIS
+                life_rating = 20
+                any_pop = { limit = { is_primary_culture = yes } literacy = 0.49 }
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+
+	bardo_military_school = {
+        picture = bardo_military_school
+        potential = {
+			tag = TUN
+			NOT = { has_country_flag = bardo_military_school }
+			OR = {
+				government = absolute_empire
+				government = semi_constitutional_empire
+				government = constitutional_empire
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+        }
+
+        allow = {
+			year = 1837
+			war = no
+			money = 5000
+		}
+
+        effect = {
+			set_country_flag = bardo_military_school
+			foreign_training = yes_foreign_training
+			treasury = -5000
+			add_country_modifier = { name = bardo_tunis_modifier duration = -1 }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	bardo_school_close = {
+		alert = no
+        picture = bardo_school_close
+        potential = {
+			tag = TUN
+			has_country_flag = bardo_decision
+			NOT = { has_country_flag = bardo_school_close }
+			has_country_modifier = bardo_tunis_modifier
+        }
+
+        allow = {
+			war = no
+			OR = {
+				NOT = { money = 20000 }
+				AND = {
+					NOT = {
+						education_spending = 0.1
+					}
+					NOT = {
+						administration_spending = 0.1
+					}
+					poor_tax = 0.8
+				}
+				NOT = { poor_strata_life_needs = 0.3 }
+			}
+		}
+
+        effect = {
+			set_country_flag = bardo_school_close
+			treasury = 40000
+			remove_country_modifier = bardo_tunis_modifier
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	
+	bornean_interior = {
+        picture = inner_borneo
+        potential = {
+            owns = 1423
+            3275 = { empty = yes }
+			3540 = { empty = yes }
+			1422 = { empty = yes }
+            civilized = yes
+            year = 1885
+			OR = {
+				ai = no
+				year = 1888
+			}
+        }
+        allow = {
+            year = 1888
+        }
+        effect = {
+            3275 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3540 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1422 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+            prestige = 1
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+	
+	caribbean_rgo_normalization = {
+        picture = coffee_in_colombia
+        potential = {
+            OR = {
+                2220 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2219 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2226 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                45 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2224 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2225 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2232 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2231 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2409 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2229 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2233 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                2234 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
+                any_owned_province = {
+                    is_core = CUB
+                    NOT = { terrain = small_island }
+                    NOT = { terrain = desert }
+                    NOT = { terrain = semidesert }
+                    NOT = { terrain = dryhills }
+                    NOT = { has_province_modifier = plantation }
+                }
+                any_owned_province = {
+                    is_core = CRB
+                    NOT = { terrain = small_island }
+                    NOT = { terrain = desert }
+                    NOT = { terrain = semidesert }
+                    NOT = { terrain = dryhills }
+                    NOT = { has_province_modifier = plantation }
+                }
+            }
+            year = 1870
+			OR = {
+				ai = no
+				AND = {
+					war = no
+					OR = {
+						investment_banks = 1
+						sphere_owner = { investment_banks = 1 }
+						year = 1900
+					}
+				}
+			}
+        }
+
+        allow = {
+            war = no
+            OR = {
+                investment_banks = 1
+                sphere_owner = { investment_banks = 1 }
+                year = 1900
+            }
+        }
+
+        effect = {
+            any_owned = {
+                limit = {
+                    NOT = { has_province_modifier = plantation }
+                    OR = {
+                        province_id = 2219
+                        province_id = 2220
+                        province_id = 2226
+                        province_id = 45
+                        province_id = 2224
+                        province_id = 2225
+                        province_id = 2232
+                        province_id = 2231
+                        province_id = 2409
+                        province_id = 2229
+                        province_id = 2233
+                        province_id = 2234
+                    }
+                }
+                add_province_modifier = { name = plantation duration = -1 }
+            }
+            any_owned = {
+                limit = {
+                    NOT = { has_province_modifier = plantation }
+                    is_core = CUB
+                    NOT = { terrain = small_island }
+                    NOT = { terrain = desert }
+                    NOT = { terrain = semidesert }
+                    NOT = { terrain = dryhills }
+                }
+                add_province_modifier = { name = plantation duration = -1 }
+            }
+            any_owned = {
+                limit = {
+                    NOT = { has_province_modifier = plantation }
+                    is_core = CRB
+                    NOT = { terrain = small_island }
+                    NOT = { terrain = desert }
+                    NOT = { terrain = semidesert }
+                    NOT = { terrain = dryhills }
+                }
+                add_province_modifier = { name = plantation duration = -1 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	south_georgia_whaling = {
+        picture = grytviken
+        potential = {
+            owns = 2131
+            year = 1904
+            NOT = { has_country_flag = s_georgia_colonized }
+			OR = {
+				war = no
+				ai = no
+			}
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            set_country_flag = s_georgia_colonized
+            2133 = { secede_province = THIS life_rating = 5 }
+            2133 = {
+                add_province_modifier = {
+                    name = whaling_centre
+                    duration = 11680
+                }
+            }
+        }
+    }
+	
+	marine_murwik = {
+        picture = murwik
+        potential = {
+            tag = GER
+			year = 1900
+			NOT = { has_country_flag = murwik_built }
+        }
+
+        allow = {
+            war = no
+            naval_directionism = 1
+			total_amount_of_ships = 50
+        }
+
+        effect = {
+            set_country_flag = murwik_built
+            prestige = 5
+			add_country_modifier = { name = murwik_school duration = 3650 }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	gfm_imperial_college = {
+		picture = gfm_imperial_college
+        potential = {
+            tag = JAP
+            civilized = yes
+            NOT = {
+                has_country_flag = construction_of_imperial_college
+            }
+        }
+
+        allow = {
+            revolution_n_counterrevolution = 1
+			money = 50000
+            war = no
+        }
+
+        effect = {
+            set_country_flag = construction_of_imperial_college
+			treasury = -50000
+			prestige = 5
+            add_country_modifier = {
+                name = imperial_college_modifier
+                duration = 3650
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

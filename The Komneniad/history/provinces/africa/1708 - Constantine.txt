@@ -1,0 +1,6 @@
+owner = ALD
+controller = ALD
+trade_goods = iron
+life_rating = 35
+terrain = constantine
+add_core = ALD

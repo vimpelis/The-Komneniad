@@ -1,0 +1,386 @@
+#Uruguay Region (200000)
+#Under rule of Uruguay 1836
+#Montevideo (112000/28000 POPS)
+2344 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 575
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    officers = {
+        culture = antartidan
+        religion = catholic
+        size = 50
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 250
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 980
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 18095
+    }
+
+    clergymen = {
+        culture = afro_occitan
+        religion = catholic
+        size = 50
+    }
+
+    artisans = {
+        culture = afro_occitan
+        religion = catholic
+        size = 250
+    }
+
+    soldiers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 500
+    }
+
+    farmers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 3150
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 3500
+    }
+}
+#Paysandu (36000/9000 POPS)
+2345 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 86
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 8
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 32
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 193
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 430
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 3128
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 15
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 45
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 30
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 832
+    }
+	
+	slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 750
+    }
+}
+#Tacumba (12000/3000 POPS)
+2346 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 20
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 3600
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 30
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 1850
+    }
+	
+	slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 500
+    }
+}
+#Melo (40000/10000 POPS)
+2347 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 360
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 128
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 840
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 12840
+    }
+	
+	slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 1500
+    }
+}
+#San Miguel
+3641 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 120
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 20
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 56
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 280
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 320
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 4280
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 70
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 210
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 140
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 3884
+    }
+	
+	slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 500
+    }
+}
+#Sacramento
+3644 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 342
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 33
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 126
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 768
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 4438
+    }
+	
+	farmers = {
+        culture = antartidan
+        religion = protestant
+        size = 8000
+    }
+	
+	slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 100
+    }
+	
+	farmers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 500
+    }
+}

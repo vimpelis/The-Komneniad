@@ -1,0 +1,10 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = WAL
+add_core = ROM
+add_core = BUL
+trade_goods = fish
+life_rating = 35
+terrain = constanta
+naval_base = 1

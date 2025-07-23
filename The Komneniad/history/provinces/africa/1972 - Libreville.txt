@@ -1,0 +1,6 @@
+owner = ATA
+controller = ATA
+colonial = 2
+add_core = GAB
+trade_goods = slave_trading
+life_rating = 32 

@@ -1,0 +1,4 @@
+trade_goods = tea
+terrain = hills
+life_rating = 30
+add_core = ATA

@@ -1,0 +1,7 @@
+owner = ADU
+controller = ADU
+add_core = ADU
+terrain = semidesert
+trade_goods = slave_trading
+life_rating = 31
+add_core = MOR

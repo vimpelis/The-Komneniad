@@ -1,0 +1,6 @@
+owner = YUC
+controller = YUC
+trade_goods = tropical_wood
+terrain = belize
+life_rating = 33
+add_core = YUC

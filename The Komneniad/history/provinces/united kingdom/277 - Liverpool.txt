@@ -1,0 +1,13 @@
+owner = CLT
+controller = CLT
+add_core = CLT
+trade_goods = fish
+life_rating = 40
+terrain = liverpool
+railroad = 1
+naval_base = 2
+state_building = { level = 2 building = fabric_factory upgrade = yes } 
+state_building = { level = 2 building = steel_factory upgrade = yes } 
+state_building = { level = 1 building = regular_clothes_factory upgrade = yes } 
+state_building = { level = 2 building = liquor_distillery upgrade = yes }
+state_building = { level = 1 building = ammunition_factory upgrade = yes }  

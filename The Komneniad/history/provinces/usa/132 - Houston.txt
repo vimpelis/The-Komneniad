@@ -1,0 +1,7 @@
+owner = AYL
+controller = AYL
+add_core = MEX
+trade_goods = cattle
+life_rating = 35
+terrain = houston
+add_core = RGR

@@ -1,0 +1,7 @@
+owner = AYL
+controller = AYL
+trade_goods = sugar
+life_rating = 35
+naval_base = 1
+terrain = tampa
+add_core = AYL

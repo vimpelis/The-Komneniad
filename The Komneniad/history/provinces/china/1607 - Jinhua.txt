@@ -1,0 +1,6 @@
+trade_goods = timber
+life_rating = 32
+terrain = forest_hills
+owner = FJN
+controller = FJN
+add_core = FJN

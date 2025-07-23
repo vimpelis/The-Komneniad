@@ -1,0 +1,8 @@
+owner = NBS
+controller = NBS
+trade_goods = iron
+life_rating = 35
+terrain = chihuahua
+add_core = MEX
+add_core = NBS
+add_core = RGR

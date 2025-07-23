@@ -1,0 +1,96 @@
+#Surinam : 56640
+#Ruled by The Netherlands 1836
+#Paramaribo (48640/12160 POPS)
+2240 = {
+    aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 600
+    }
+	
+	bureaucrats = {
+        culture = faruduan
+        religion = sunni
+        size = 500
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 1500
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 500
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 3400
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 37680
+    }
+
+    slaves = {
+        culture = faruduan
+        religion = sunni
+        size = 6950
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 100
+    }
+}
+#Aperina (8000/2000 POPS)
+2245 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 17
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 35
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 70
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 17
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1225
+    }
+	
+	farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 250
+    }
+}
+# Tapanahony
+3653 = {
+}
+#Litani
+3556 = {
+}

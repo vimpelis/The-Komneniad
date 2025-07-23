@@ -1,0 +1,7 @@
+owner = CLT
+controller = CLT
+add_core = CLT
+add_core = IOM
+trade_goods = fish
+life_rating = 35
+terrain = isle_of_man

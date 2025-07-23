@@ -1,0 +1,5 @@
+trade_goods = cattle
+terrain = steppe
+life_rating = 35
+add_core = MEX
+add_core = RGR

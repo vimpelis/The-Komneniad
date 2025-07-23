@@ -1,0 +1,32 @@
+political_decisions = {
+    PAP_restore = {
+        picture = the_first_vatican_council
+        potential = {
+            PAP = {
+                vassal_of = THIS
+                NOT = { government = theocracy }
+            }
+            has_country_flag = catholic_country
+        }
+        allow = {
+            war = no
+            PAP = { vassal_of = THIS }
+            religious_policy = moralism
+        }
+        effect = {
+            PAP = {
+                government = theocracy
+            }
+            prestige = 5
+            any_pop = {
+                limit = {
+                    religion = catholic
+                }
+                consciousness = -3
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

@@ -1,0 +1,7 @@
+owner = KIB
+trade_goods = tobacco
+terrain = salvador_de_bahia
+life_rating = 35
+naval_base = 1
+controller = KIB
+add_core = KIB

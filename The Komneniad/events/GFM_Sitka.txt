@@ -1,0 +1,1308 @@
+country_event = {
+	id = 8573969
+	title = "LIJEPATITLE"
+	desc = "LIJEPADESC"
+	picture = "croat_anthem"
+    fire_only_once = yes
+
+    trigger = {
+		owns = 771
+		year = 1846
+	}
+
+    mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "LIJEPAOPT"
+		random_owned = {
+            limit = {
+                owner = {
+                    OR = { primary_culture = croat tag = CRO }
+                }
+            }
+            owner = {
+                prestige = 5
+                any_pop = {
+                    limit = { has_pop_culture = croat }
+                    consciousness = -1
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { primary_culture = croat tag = CRO }
+                }
+            }
+            owner = {
+                any_pop = {
+                    limit = { has_pop_culture = croat }
+                    consciousness = 1
+                }
+            }
+        }
+	}
+}
+country_event = {
+	id = 8573968
+	title = "reichelt_jump_title"
+	desc = "reichelt_jump_desc"
+	picture = "reichelt_fall"
+    fire_only_once = yes
+
+    trigger = {
+		month = 2
+		year = 1912
+		owns = 425
+	}
+
+    mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "reichelt_jump_opt"
+		any_pop = { limit = { location = { province_id = 425 } } consciousness = 1 }
+	}
+}
+country_event = {
+    id = 191337
+    title = "The Radical Takeover"
+    desc = "The radicals have won. The ancien regime has been replaced with ultra-liberal rule. While many mourn the old system, others look forward to an new era for $COUNTRY$."
+    fire_only_once = yes
+    picture = "sister_republics"
+	is_triggered_only = yes
+    option = {
+        name = "Only time will tell what the future holds."
+		government = radical_republic
+		ruling_party_ideology = radical
+		any_country = {
+			limit = {
+				alliance_with = THIS
+			}
+			leave_alliance = THIS
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					is_greater_power = no
+					is_vassal = no
+				}
+			}
+			owner = {
+				any_country = {
+					limit = {
+						has_country_flag = sister_republic_boss
+					}
+					country_event = 191336
+				}
+			}
+		}
+		any_country = {
+			limit = {
+				has_country_flag = sister_republic_boss
+			}
+			create_alliance = THIS
+			diplomatic_influence = { who = THIS value = 400 }
+			relation = { who = THIS value = 400 }
+			clr_country_flag = sister_republic_boss
+		}
+    }
+}
+country_event = {
+    id = 191336
+    title = "A new Sister Republic"
+    desc = "NEWSISTERREPUBLIC"
+    fire_only_once = yes
+    picture = "sister_republics"
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+    option = {
+        name = "We must control $FROMCOUNTRY$ directly. §RGain 3 infamy§W"
+		badboy = 3
+		create_vassal = FROM
+    }
+    option = {
+        name = "They shall simply remain under our influence."
+    }
+}
+country_event = {
+    id = 20041215
+    title = "The Occupation of Outer Kaffa"
+    desc = "With Kaffa conquered, we can bring the remote region to its West under our control."
+    fire_only_once = yes
+    picture = "outer_kaffa"
+    mean_time_to_happen = { days = 15 }
+    trigger = {
+        tag = ETH
+		3591 = { owned_by = THIS is_core = THIS }
+		OR = {
+			AND = {
+				3595 = { empty = yes }
+				3596 = { empty = yes }
+				1847 = { empty = yes }
+				517 = { empty = yes }
+			}
+			AND = {
+				3595 = { owned_by = THIS }
+				3596 = { owned_by = THIS }
+				1847 = { owned_by = THIS }
+				517 = { owned_by = THIS }
+			}
+		}
+    }
+    option = {
+        name = "Huzzah!"
+		3595 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
+		3596 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
+		1847 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
+		517 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
+    }
+}
+country_event = {
+	id = 123429
+	title = "The Soviet takeover"
+	desc = "The filthy communists have overthrown our government. We must now lay low and lick our wounds to prepare for toppling their regime."
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = "Bolshevik scum!"
+		government = presidential_dictatorship
+    }
+
+}
+country_event = {
+	id = 123928
+	title = "The Dog Tax War"
+	desc = "DOGTAX"
+	picture = "dog_tax_war"
+	fire_only_once = yes
+
+	trigger = {
+		year = 1898
+		tag = ENG
+		NOT = { year = 1900 }
+		NZL = { all_core = { OR = { owned_by = THIS empty = yes } } }
+	}
+
+	mean_time_to_happen = { months = 3 }
+
+	option = {
+		name = "Pathetic."
+		any_pop = {
+			limit = {
+				has_pop_culture = maori
+			}
+			consciousness = 1
+		}
+	}
+}
+country_event = {
+	id = 123923
+	title = "Lindt & Sprüngli"
+	desc = "LINDORCHOCOLATE"
+	picture = "lindt"
+	fire_only_once = yes
+
+	trigger = {
+		tag = SWI
+		year = 1845
+		owns = 603
+		NOT = { year = 1855 }
+	}
+
+	mean_time_to_happen = { months = 3 }
+
+	option = {
+		name = "Delicious!"
+		prestige = 5
+		any_pop = {
+			limit = {
+				location = {
+					province_id = 603
+				}
+			}
+			consciousness = -1
+		}
+	}
+}
+country_event = {
+    id = 960692
+    title = "Tippu Tip"
+    desc = "A trader, explorer and plantation owner, Tippu Tip has been centralizing his ivory and slave exploitation in Central Africa into an organized trading empire."
+    picture = "tippu_tip"
+    fire_only_once = yes
+
+    trigger = {
+		owns = 2048
+		year = 1860
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "Interesting."
+		1990 = { secede_province = THIS }
+		1991 = { secede_province = THIS }
+		1990 = { secede_province = TPT }
+		1991 = { secede_province = TPT trade_goods = slave_trading }
+		TPT = { capital = 1990 }
+		ai_chance = { factor = 1 }
+    }
+
+    option = {
+        name = "That sounds quite lucrative... §BBecome Tippu Tip§W"
+		1990 = { secede_province = THIS }
+		1991 = { secede_province = THIS }
+		1990 = { secede_province = TPT }
+		1991 = { secede_province = TPT trade_goods = slave_trading }
+		TPT = { capital = 1990 }
+		change_tag_no_core_switch = TPT
+		ai_chance = { factor = 0 }
+    }
+}
+country_event = {
+    id = 10790
+    title = "So you are an omega, huh? 1/4"
+    desc = "As a way to make things easier, this event chain will let you decide between 3 options related to POPULATION GROWTH."
+	picture = "blind_mans_buff"
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "I am not an omega, I do not want this!"
+		country_event = 10791
+    }
+
+	option = {
+        name = "I am an omega, and I am not ashamed!"
+		add_country_modifier = {
+			name = startup_pop_growth_small
+			duration = 3650
+		}
+		country_event = 10791
+    }
+
+	option = {
+        name = "I want a bwig bwuff! uwu"
+		add_country_modifier = {
+			name = startup_pop_growth_big
+			duration = 3650
+		}
+		country_event = 10791
+    }
+}
+
+country_event = {
+    id = 10791
+    title = "So you are an omega, huh? 2/4"
+    desc = "As a way to make things easier, this event chain will let you decide between 3 options related to EDUCATION EFFICIECY."
+	picture = "blind_mans_buff"
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "I am not an omega, I do not want this!"
+		country_event = 10792
+    }
+
+	option = {
+        name = "I am an omega, and I am not ashamed!"
+		add_country_modifier = {
+			name = startup_edf_small
+			duration = 3650
+		}
+		country_event = 10792
+    }
+
+	option = {
+        name = "I want a bwig bwuff! uwu"
+		add_country_modifier = {
+			name = startup_edf_big
+			duration = 3650
+		}
+		country_event = 10792
+    }
+}
+
+country_event = {
+    id = 10792
+    title = "So you are an omega, huh? 3/4"
+    desc = "As a way to make things easier, this event chain will let you decide between 3 options related to ARMY ORGANIZATION."
+	picture = "blind_mans_buff"
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "I am not an omega, I do not want this!"
+		country_event = 10793
+    }
+
+	option = {
+        name = "I am an omega, and I am not ashamed!"
+		add_country_modifier = {
+			name = startup_aor_small
+			duration = 3650
+		}
+		country_event = 10793
+    }
+
+	option = {
+        name = "I want a bwig bwuff! uwu"
+		add_country_modifier = {
+			name = startup_aor_big
+			duration = 3650
+		}
+		country_event = 10793
+    }
+}
+
+country_event = {
+    id = 10793
+    title = "So you are an omega, huh? 4/4"
+    desc = "As a way to make things easier, this event chain will let you decide between 3 options related to RESEARCH POINTS."
+	picture = "blind_mans_buff"
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = "I am not an omega, I do not want this!"
+    }
+
+	option = {
+        name = "I am an omega, and I am not ashamed!"
+		add_country_modifier = {
+			name = small_research_bonus
+			duration = 3650
+		}
+    }
+
+	option = {
+        name = "I want a bwig bwuff! uwu"
+		add_country_modifier = {
+			name = big_research_bonus
+			duration = 3650
+		}
+    }
+}
+country_event = {
+    id = 123920
+    title = "The Miracle of the Sun"
+    desc = "SUNMIRACLE"
+	major = yes
+    picture = "miracle_of_sun"
+    fire_only_once = yes
+
+    trigger = {
+		owns = 523
+		year = 1917
+		OR = {
+			tag = SPA
+			tag = IBR
+		}
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Fascinating!"
+		any_pop = {
+			limit = {
+				has_pop_religion = catholic
+			}
+			consciousness = 1
+		}
+		ai_chance = { factor = 1 }
+    }
+}
+country_event = {
+    id = 123919
+    title = "The Oppau Explosion"
+    desc = "OPPAUEXPLOSION"
+    picture = "basf_explosion"
+    fire_only_once = yes
+
+    trigger = {
+		has_global_flag = basf_done
+		owns = 569
+		year = 1921
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Tragic!"
+		any_pop = {
+			limit = {
+				location = { province_id = 569 }
+			}
+			reduce_pop = 0.99
+			consciousness = 6
+		}
+		ai_chance = { factor = 1 }
+    }
+}
+country_event = {
+    id = 123918
+    title = "Otto Lilienthal's last flight"
+    desc = "LILIENTHAL"
+    picture = "lilienthal"
+    fire_only_once = yes
+
+    trigger = {
+		tag = GER
+		year = 1896
+		owns = 550
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Sacrifices must be made!"
+		prestige = 5
+		any_pop = {
+			consciousness = 0.1
+		}
+		ai_chance = { factor = 1 }
+    }
+}
+country_event = {
+    id = 123915
+    title = "The Last of the Great Auks"
+    desc = "POORBIRD"
+    picture = "last_of_the_great_awks"
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        owns = 252
+        year = 1844
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Does anyone really care about a bird that much?"
+        years_of_research = -0.05
+        any_pop = {
+            consciousness = 0.1
+        }
+    }
+}
+country_event = {
+	id = 123904
+	title = "Coal mine exhausted"
+	desc = "After extensive use, one of our coal mining regions has been depleted of coal. Perhaps one day when technology makes deeper deposits accessible, the mines will return to life. Until then, they shall slumber in wait."
+	picture = "coal_exhausted"
+	trigger = {
+		OR = {
+			AND = {
+				owns = 409
+				year = 1846
+				NOT = { has_global_flag = coalexhaustedone }
+			}
+			AND = {
+				owns = 410
+				year = 1849
+				NOT = { has_global_flag = coalexhaustedhuh }
+			}
+			AND = {
+				owns = 3414
+				year = 1895
+				NOT = { has_global_flag = coalexhaustedtwo }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "What a shame."
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 409
+				}
+			}
+			owner = {
+				409 = { trade_goods = fruit }
+				set_global_flag = coalexhaustedone
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 3414
+				}
+			}
+			owner = {
+				3414 = { trade_goods = fish }
+				set_global_flag = coalexhaustedtwo
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 410
+				}
+			}
+			owner = {
+				410 = { trade_goods = grain }
+				set_global_flag = coalexhaustedhuh
+			}
+		}
+	}
+}
+country_event = {
+	id = 123903
+	title = "The Potato Riots"
+	desc = "POTATOANGER"
+	picture = "potato_riot"
+	fire_only_once = yes
+	trigger = {
+		tag = RUS
+		has_country_flag = potatoes_forced
+	}
+
+	mean_time_to_happen = {
+		months = 7
+	}
+
+	option = {
+		name = "Double down on potatoes and crush the rioters."
+		any_pop = {
+			limit = {
+				location = {
+					OR = {
+						province_id = 1028
+						province_id = 1030
+						province_id = 3609
+						province_id = 1034
+						province_id = 1035
+						province_id = 1037
+						province_id = 1038
+						province_id = 1021
+						province_id = 1025
+						province_id = 737
+					}
+				}
+			}
+			militancy = 8
+			consciousness = 10
+			reduce_pop = 0.95
+		}
+	}
+	option = {
+		name = "End the potato system, no blood shall be spilled."
+		any_pop = {
+			limit = {
+				location = {
+					OR = {
+						province_id = 1028
+						province_id = 1030
+						province_id = 3609
+						province_id = 1034
+						province_id = 1035
+						province_id = 1037
+						province_id = 1038
+						province_id = 1021
+						province_id = 1025
+						province_id = 737
+					}
+				}
+			}
+			militancy = -3
+			consciousness = -5
+		}
+		any_owned = {
+			limit = {
+				has_province_modifier = potatoes_introduced
+			}
+			remove_province_modifier = potatoes_introduced
+		}
+	}
+}
+country_event = {
+    id = 123894
+    title = "Max and Moritz: A Story of Seven Boyish Pranks"
+    desc = "MAXNMORITZ"
+    picture = "max_n_moritz"
+    fire_only_once = yes
+    trigger = {
+		OR = {
+			tag = NGF
+			tag = GER
+		}
+		year = 1865
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+	option = {
+		name = "Und die Moral von der Geschicht..."
+		any_pop = {
+			consciousness = -0.1
+		}
+    }
+}
+country_event = {
+    id = 123818
+    title = "The Züriputsch"
+    desc = "ZURIPUTSCH"
+    picture = "zuriputsch"
+	fire_only_once = yes
+	trigger = {
+       owns = 603
+	   tag = SWI
+	   year = 1839
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Treasonous!"
+        scaled_militancy = { factor = 3 ideology = conservative }
+		any_pop = {
+			consciousness = 1
+		}
+    }
+}
+country_event = {
+    id = 123660
+    title = "The Choshu Expedition"
+    desc = "Choshu has surrendered its leaders to us."
+    picture = "choshu_expedition_one"
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+        name = "Execute them!"
+		ai_chance = { factor = 1 }
+    }
+}
+country_event = {
+    id = 123659
+    title = "The Choshu Expedition"
+    desc = "Choshu has refused to back down."
+    picture = "choshu_expedition_one"
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = "We can't risk war..."
+        prestige = -15
+		ai_chance = { factor = 0 }
+    }
+	option = {
+        name = "They can take them from our cold, dead hands!"
+        prestige = 5
+		release_vassal = CHO
+		war = {
+			target = CHO
+			attacker_goal = { casus_belli = make_puppet_no_add_wargoal }
+            defender_goal = { casus_belli = release_puppet country = JAP }
+		}
+		ai_chance = { factor = 1 }
+    }
+}
+country_event = {
+    id = 123658
+    title = "The Choshu Expedition"
+    desc = "After our attempt to free the emperor and topple the Shogun, the Bakufu has sent an expedition to capture our leaders and punish them for this act of revolt."
+    picture = "choshu_expedition_one"
+    fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = "We can't risk war..."
+        prestige = -15
+		FROM = { country_event = { id = 123660 days = 0 } }
+		ai_chance = { factor = 85 }
+    }
+	option = {
+        name = "They can take them from our cold, dead hands!"
+        prestige = 5
+		FROM = { country_event = { id = 123659 days = 0 } }
+		ai_chance = { factor = 15 }
+    }
+}
+country_event = {
+    id = 123657
+    title = "The Kinmon Incident"
+    desc = "KINMONINCIDENT"
+    picture = "kinmon"
+    fire_only_once = yes
+
+    trigger = {
+        tag = TKG
+		JAP = { owns = 1657 }
+		OR = {
+			civilization_progress = 0.8
+			civilized = yes
+		}
+		has_country_flag = sonno_joi
+        NOT = { has_global_flag = boshin_war }
+        NOT = { has_global_flag = boshin_war_has_happened }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Good riddance!"
+		any_pop = {
+			consciousness = 0.5
+		}
+		set_country_flag = kinmon_incident
+    }
+}
+country_event = {
+    id = 123656
+    title = "The Mito Rebellion"
+    desc = "MITOREBELLION"
+    picture = "mito_revolt"
+    fire_only_once = yes
+
+    trigger = {
+        tag = TKG
+		owns = 1653
+		exists = JAP
+        OR = {
+			civilization_progress = 0.7
+			civilized = yes
+		}
+		has_country_flag = sonno_joi
+        NOT = { has_global_flag = boshin_war }
+        NOT = { has_global_flag = boshin_war_has_happened }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Crush them!"
+		any_pop = {
+			consciousness = 0.3
+		}
+		any_pop = {
+			limit = {
+				location = {
+					province_id = 1653
+				}
+			}
+			reduce_pop = 0.95
+			consciousness = 7
+			militancy = 5
+        }
+    }
+}
+country_event = {
+    id = 123647
+    title = "The Gilded Age"
+    desc = "GILDEDLOC"
+    picture = "gilded_age"
+    fire_only_once = yes
+
+    trigger = {
+        tag = USA
+        year = 1871
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+		name = "Onwards!"
+		prestige = 5
+		any_pop = {
+			consciousness = 1
+		}
+    }
+}
+country_event = {
+    id = 123641
+    title = "More Infamy Reduction"
+    desc = "You have taken the option to increase infamy reduction. To what level do you wish to set it?"
+    fire_only_once = yes
+	is_triggered_only = yes
+	picture = "infamy"
+    option = {
+        name = "I'd like to have -0.15 infamy reduction."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_a
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_a duration = -1 }
+	}
+    option = {
+        name = "-0.2 is the way to go."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_b
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_b duration = -1 }
+	}
+    option = {
+        name = "Make it -0.25."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_c
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_c duration = -1 }
+	}
+    option = {
+        name = "-0.3 sounds more like it!"
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_d
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_d duration = -1 }
+	}
+}
+country_event = {
+    id = 123489
+    title = "Copper deposits discovered in Bor"
+    desc = "A French company has discovered large copper deposits in the area around Bor."
+    fire_only_once = yes
+    picture = "south_africa_gold_miners"
+    mean_time_to_happen = { months = 5 }
+    trigger = {
+        owns = 795
+        year = 1904
+        NOT = { has_global_flag = bor_copper }
+    }
+    option = {
+        name = "Start mining!"
+        set_global_flag = bor_copper
+        795 = { trade_goods = iron }
+    }
+}
+country_event = {
+    id = 123518
+    title = "The California Genocide"
+    desc = "The endless search for gold has sent the forty-niners into nominally Indian lands, leading to widespread conflict and diplacement of the natives, which often resulted in massacres and large amounts of them being taken as forced labor."
+    fire_only_once = yes
+    picture = "cal_gen"
+    mean_time_to_happen = { months = 2 }
+    trigger = {
+        owns = 104
+        owns = 89
+        has_global_flag = cal_gen_ready
+		NOT = { has_country_flag = native_protection_act_enacted }
+		NOT = { accepted_culture = native_american_minor }
+		exists = yes
+    }
+    option = {
+        name = "And what were this month's gold revenues?"
+        MEX_85 = { remove_province_modifier = indian_lands }
+            any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 87
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 88
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 89
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 90
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3449
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3450
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3451
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3448
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3452
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3453
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3454
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3455
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 86
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 84
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 85
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+			            any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 3340
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+                        any_pop = {
+                limit = {
+                    has_pop_culture = native_american_minor
+                    location = {
+                        province_id = 104
+                    }
+                }
+                reduce_pop = 0.10
+                consciousness = 8
+                militancy = 8
+            }
+    }
+}
+country_event = {
+    id = 123528
+    title = "The Kra Canal"
+    desc = "Our rivals own the vital port of Singapore in the strait of Mallacca which lets them control shipping from east Asia to the Indian Ocean. Our engineers have suggested a canal through the Siamese Kra isthmus to bypass Singapore."
+    picture = "kra_event"
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = {
+        name = "EVT36971OPTA"
+        treasury = -2000000
+		# Audax Validator "." Ignore_NEXT
+        treasury = -2000000
+		# Audax Validator "." Ignore_NEXT
+        treasury = -500000
+        set_global_flag = kra_canal_construction
+        random_list = {
+            35 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2190 } } }
+            30 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2555 } } }
+            25 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2920 } } }
+            5 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3285 } } }
+            5 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3650 } } }
+        }
+    }
+
+    option = {
+        name = "EVT36971OPTB"
+        treasury = -2000000
+		# Audax Validator "." Ignore_NEXT
+        treasury = -2000000
+        set_global_flag = kra_canal_construction
+        random_list = {
+            30 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2555 } } }
+            25 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2190 } } }
+            25 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2920 } } }
+            10 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3285 } } }
+            10 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3650 } } }
+        }
+    }
+
+    option = {
+        name = "EVT36971OPTC"
+        treasury = -2000000
+		# Audax Validator "." Ignore_NEXT
+        treasury = -1500000
+        set_global_flag = kra_canal_construction
+        random_list = {
+            40 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3285 } } }
+            15 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3650 } } }
+            15 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2555 } } }
+            15 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2920 } } }
+            15 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2190 } } }
+        }
+    }
+
+    option = {
+        name = "EVT36971OPTD"
+        treasury = -2000000
+		# Audax Validator "." Ignore_NEXT
+        treasury = -1000000
+        set_global_flag = kra_canal_construction
+        random_list = {
+            30 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2920 } } }
+            20 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3285 } } }
+            20 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2555 } } }
+            20 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3650 } } }
+            10 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2190 } } }
+        }
+    }
+
+    option = {
+        name = "EVT36971OPTE"
+        treasury = -2000000
+		# Audax Validator "." Ignore_NEXT
+        treasury = -500000
+        set_global_flag = kra_canal_construction
+        random_list = {
+            40 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3285 } } }
+            35 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2920 } } }
+            15 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 3650 } } }
+            5 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2190 } } }
+            5 = { 1352 = { add_province_modifier = { name = kra_canal_construction duration = 2555 } } }
+        }
+    }
+}
+country_event = {
+    id = 123529
+    title = "The Kra Canal"
+    desc = "A great power has decided to build a canal through the Kra isthmus to bypass the strait of Mallacca. Though this brings more trade to our country, it seperates us from the south of our nation."
+    picture = "kra_event"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "Let the trade flow!"
+        any_pop = {
+            limit = {
+                location = {
+                    province_id = 1354
+                }
+            }
+            consciousness = 8
+            militancy = 8
+        }
+    }
+}
+country_event = {
+    id = 123530
+    title = "The Kra Canal is complete"
+    desc = "The seemingly endless construction of the Kra Canal has finally come to a close. It has now opened to shipping, depriving Singapore of trade."
+    fire_only_once = yes
+    picture = "kra_event"
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+        has_global_flag = kra_canal_built
+        has_global_flag = kra_canal_construction
+        owns = 1352
+        NOT = {
+            is_canal_enabled = 9
+            1352 = { has_province_modifier = kra_canal_construction }
+        }
+    }
+    option = {
+        name = "Huzzah!"
+		clr_global_flag = kra_canal_construction
+        prestige = 30
+        1352 = { trade_goods = precious_goods }
+        1384 = { trade_goods = fish }
+        enable_canal = 9
+    }
+}
+country_event = {
+    id = 123531
+    title = "The White Sea Canal"
+    desc = "The journey to the White Sea is long and dangerous due to icebergs. Our engineers have proposed building a canal to connect lake Onega to the White Sea for easy access."
+    picture = "white_sea_canal_event"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "Commence construction immediately!"
+        prestige = 30
+    }
+}
+country_event = {
+    id = 123532
+    title = "The White Sea Canal is complete"
+    desc = "WSCANALDONE"
+	major = yes
+    fire_only_once = yes
+    picture = "white_sea_canal_event"
+    mean_time_to_happen = { years = 8 }
+    trigger = {
+        owns = 988
+        has_global_flag = white_canal_built
+    }
+    option = {
+        name = "Huzzah!"
+        prestige = 30
+        enable_canal = 11
+    }
+}
+country_event = {
+    id = 123562
+    title = "The Eure Expedition"
+    desc = "The Eure, a French dispatch boat, is being sent to finalize our claims to the Kerguelen islands."
+    fire_only_once = yes
+    picture = "kerguelen"
+    mean_time_to_happen = { months = 3 }
+    trigger = {
+        3414 = { empty = yes }
+        year = 1893
+        owns = 425
+		NOT = { has_global_flag = colonial_railroading_disabled }
+    }
+    option = {
+        name = "Glory to our Empire!"
+        3414 = { secede_province = THIS trade_goods = coal }
+		3414 = { change_province_name = "Port-Christmas" }
+    }
+}
+country_event = {
+    id = 123586
+    title = "SW core removal"
+    desc = "This event removes your non-owned cores."
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+        exists = yes
+        NOT = { year = 1837 }
+        NOT = { has_country_flag = my_cores_are_gone }
+        has_global_flag = outside_cores_removed
+    }
+    option = {
+        name = "Yikes."
+        set_country_flag = my_cores_are_gone
+        all_core = {
+            limit = { NOT = { owned_by = THIS } }
+            remove_core = THIS
+        }
+    }
+}
+#this thing crashes the game
+country_event = {
+	id = 4434
+	title = "We're no strangers to love"
+	desc = "RICKROLL"
+	picture = "rick_astley"
+	is_triggered_only = yes
+	option = {
+		name = "Never gonna make you cry, never gonna say goodbye, never gonna tell a lie and hurt you."
+		# Audax Validator "." Ignore_NEXT
+		add_country_modifier = {
+			# Audax Validator "." Ignore_NEXT
+			name = rick_rolled duration = -1
+		}
+	}
+}

@@ -1,0 +1,6 @@
+owner = ETH
+controller = ETH
+add_core = ETH
+life_rating = 30
+trade_goods = coffee
+terrain = montane_forest

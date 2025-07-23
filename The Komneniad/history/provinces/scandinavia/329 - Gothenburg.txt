@@ -1,0 +1,8 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+trade_goods = timber
+life_rating = 35
+terrain = goteborg # state_building = {
+add_core = NOR
+add_core = SWE

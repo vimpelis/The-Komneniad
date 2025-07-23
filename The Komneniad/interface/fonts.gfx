@@ -1,0 +1,12 @@
+bitmapfonts = {
+
+	bitmapfont = {
+		name = "mapfont_56"
+		fontname = "mapfont"
+	}
+	
+	bitmapfont = {
+		name= "mapfont_56_small"
+		fontname = "mapfont_small"
+	}
+}

@@ -1,0 +1,8 @@
+owner = BUR
+controller = BUR
+add_core = BUR
+add_core = KCH
+add_core = YNN
+trade_goods = timber
+terrain = jungle_mountains
+life_rating = 32 

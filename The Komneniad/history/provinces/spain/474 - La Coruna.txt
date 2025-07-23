@@ -1,0 +1,8 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+naval_base = 1
+trade_goods = timber
+terrain = la_coruna
+life_rating = 35
+state_building = { level = 1 building = lumber_mill upgrade = yes } 

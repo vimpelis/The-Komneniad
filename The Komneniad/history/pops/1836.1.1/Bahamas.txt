@@ -1,0 +1,107 @@
+#The Bahamas Region - 23000
+#The Bahamas (20000/5000 POPS)
+2219 = {
+    clergymen = {
+        culture = afro_latino
+        religion = catholic
+        size = 50
+    }
+
+    artisans = {
+        culture = afro_latino
+        religion = catholic
+        size = 100
+    }
+
+    soldiers = {
+        culture = afro_latino
+        religion = catholic
+        size = 50
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 4050
+    }
+
+    aristocrats = {
+        culture = caribeno
+        religion = catholic
+        size = 15
+    }
+
+    bureaucrats = {
+        culture = caribeno
+        religion = catholic
+        size = 5
+    }
+
+    clergymen = {
+        culture = caribeno
+        religion = catholic
+        size = 15
+    }
+
+    artisans = {
+        culture = caribeno
+        religion = catholic
+        size = 150
+    }
+
+    soldiers = {
+        culture = caribeno
+        religion = catholic
+        size = 25
+    }
+
+    farmers = {
+        culture = caribeno
+        religion = catholic
+        size = 540
+    }
+}
+#Turks & Caicos Islands (3000/750 POPS)
+2220 = {
+    clergymen = {
+        culture = afro_latino
+        religion = catholic
+        size = 50
+    }
+
+    artisans = {
+        culture = afro_latino
+        religion = catholic
+        size = 100
+    }
+
+    soldiers = {
+        culture = afro_latino
+        religion = catholic
+        size = 50
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 550
+    }
+	
+	clergymen = {
+        culture = caribeno
+        religion = catholic
+        size = 50
+    }
+		
+	soldiers = {
+        culture = caribeno
+        religion = catholic
+        size = 50
+    }
+		
+	farmers = {
+        culture = caribeno
+        religion = catholic
+        size = 200
+    }
+}

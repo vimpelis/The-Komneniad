@@ -1,0 +1,7 @@
+owner = ADU
+controller = ADU
+add_core = ADU
+trade_goods = fish
+life_rating = 32
+terrain = agadir
+add_core = MOR

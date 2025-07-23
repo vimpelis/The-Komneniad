@@ -1,0 +1,9 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = coal
+life_rating = 30
+railroad = 1
+terrain = stetienne
+state_building = { level = 1 building = small_arms_factory upgrade = yes } 
+state_building = { level = 1 building = steel_factory upgrade = yes } 

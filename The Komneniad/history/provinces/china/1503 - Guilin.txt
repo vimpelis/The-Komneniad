@@ -1,0 +1,6 @@
+owner = GNG
+controller = GNG
+trade_goods = sugar
+life_rating = 32
+terrain = guilin
+add_core = GNG

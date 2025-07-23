@@ -1,0 +1,6 @@
+owner = AYL
+controller = AYL
+add_core = RGR
+trade_goods = cattle
+life_rating = 35
+add_core = MEX

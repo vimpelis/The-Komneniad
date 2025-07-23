@@ -1,0 +1,7 @@
+owner = ADU
+controller = ADU
+add_core = ADU
+trade_goods = sugar
+life_rating = 35
+terrain = alsuwayra
+add_core = MOR

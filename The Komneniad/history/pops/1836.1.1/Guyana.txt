@@ -1,0 +1,153 @@
+#Guyana (99600)
+#Ruled by Britain 1836
+#Georgetown (58600/14650 POPS)
+2239 = {
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 200
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 500
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 1100
+    }
+
+    slaves = {
+        culture = faruduan
+        religion = sunni
+        size = 9475
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 12375
+    }
+	
+	farmers = {
+        culture = amazonian
+        religion = sunni
+        size = 1150
+    }
+	
+	slaves = {
+        culture = amazonian
+        religion = animist
+        size = 750
+    }
+}
+3411 = {
+	farmers = {
+        culture = amazonian
+        religion = animist
+        size = 560
+    }
+	
+	soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 50
+    }
+}
+#Mahdia (4000/1000 POPS)
+2242 = {
+    clergymen = {
+        culture = faruduan
+        religion = protestant
+        size = 125
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = protestant
+        size = 350
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = protestant
+        size = 300
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = protestant
+        size = 4560
+    }
+	
+	slaves = {
+        culture = faruduan
+        religion = protestant
+        size = 1200
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 10
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 50
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 15
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 130
+    }
+}
+#Essequibo (33000/8250 POPS)
+2243 = {
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 150
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 300
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 200
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 10800
+    }
+
+    slaves = {
+        culture = faruduan
+        religion = sunni
+        size = 1200
+    }
+}

@@ -1,0 +1,950 @@
+#160000-02 - EGY help from RUS
+#03 - starting event
+#04 - notification to BYZ
+#05 - RUS decides if send delegation or not
+#06 - BYZ choice: war or peace?								ACCEPT -100 HI DECLINE +2 HI
+#07 - BYZ rejects peace
+###08 - BYZ accepts peace
+#09 - war begins
+#10 - war notification to BYZ
+###11 - RUS loses
+#12 - war notification to ZPD
+#13 - BYZ victory notification								+2 HI
+###14 - white peace											+1 HI (event 16)
+###15 - RUS wins											-5 HI
+#16 - BYZ notf about white peace
+#21 - BYZ counteroffer (continuation of 06)
+#22 - Notification to BYZ (accept)							-3 HI
+#23 - Notification to BYZ (decline)
+#24 - Rapproachment WITH BYZ?
+#25 - BYZ: RUS sends friendship offer						ACCEPT -100 HI
+#26 - RUS success notification
+#27 - RUS failure notification
+#28 - Rapproachment WITH BYZ? (PARTIAL)
+#29 - BYZ: RUS sends friendship offer (PARTIAL)				ACCEPT -100 HI
+#30 - RUS success notification (PARTIAL)
+#31 - RUS failure notification (PARTIAL)
+#32 - ZPD notification of RUS-BYZ alliance
+
+#Help Egypt?
+country_event = {
+    id = 160000
+    title = "The Enemy of my Enemy..."
+    desc = "160000DESC"
+    picture = "egy_independence"
+
+    trigger = {
+        tag = RUS
+		war_with = BYZ
+		EGY = {	war_with = BYZ }
+		NOT = {	has_global_flag = crimean_war_over	}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "...is my Friend."
+        prestige = 5
+		treasury = -20000
+		set_global_flag = RUS_EGY_help
+    }
+	
+	option = {
+        name = "...is indifferent to me."
+        prestige = -5
+    }
+}
+
+#Help arrives (if EGY is at war with BYZ)
+country_event = {
+    id = 160001
+    title = "Russians arrive at Alexandria"
+    desc = "160001DESC"
+    picture = "crimean_war_russian_victory"
+	
+    trigger = {
+        tag = EGY
+		war_with = BYZ
+		has_global_flag = RUS_EGY_help
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 2
+    }
+
+    option = {
+        name = "Thank you, uncle... Ivan?"
+		years_of_research = 1
+		treasury = 5000
+        ammunition = 100
+        small_arms = 50
+        artillery = 25
+        canned_food = 50
+        regular_clothes = 75
+		add_country_modifier = {
+            name = russian_help
+            duration = 1825
+        }
+		clr_global_flag = RUS_EGY_help
+    }
+}
+
+#Help arrives (if EGY is at peace with BYZ)
+country_event = {
+    id = 160002
+    title = "Russians arrive at Alexandria"
+    desc = "160002DESC"
+    picture = "crimean_war_russian_victory"
+	
+    trigger = {
+        tag = EGY
+		NOT = {	war_with = BYZ	}
+		has_global_flag = RUS_EGY_help
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "Well, it's not like they are at fault here."
+		years_of_research = 1
+		treasury = 5000
+        ammunition = 100
+        small_arms = 50
+        artillery = 25
+        canned_food = 50
+        regular_clothes = 75
+		add_country_modifier = {
+            name = russian_help
+            duration = 1825
+        }
+		clr_global_flag = RUS_EGY_help
+    }
+}
+
+#Issue of Crimea
+country_event = {
+    id = 160003
+    title = "The Issue of Crimea"
+    desc = "160003DESC"
+    picture = "crimea"
+	
+    is_triggered_only = yes		#triggered by 152000
+
+    option = {
+        name = "Is Crimea really worth it?"
+		any_pop = {
+            dominant_issue = {
+                factor = 0.05
+                value = jingoism
+            }
+        }
+		BYZ = {	country_event = 160004	}
+		country_event = { id = 160005 days = 14 }
+		set_country_flag = RUS_crimea
+    }
+}
+
+#Russian military buildup
+country_event = {
+    id = 160004
+    title = "The Issue of Crimea"
+    desc = "160003DESC"
+    picture = "crimea"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Is Crimea really worth it?"
+		any_pop = {
+            militancy = 0.5
+            consciousness = 0.5
+        }
+    }
+}
+
+#Send delegation to BYZ?
+###Continued in 160021
+country_event = {
+    id = 160005
+    title = "Send a delegation to Constantinople?"
+    desc = "160005DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Let's do it."
+		BYZ = {	country_event = 160006	}
+		any_pop = {
+            scaled_consciousness = {
+                issue = pacifism
+                factor = -3
+            }
+            scaled_militancy = {
+                issue = jingoism
+                factor = 3
+            }
+        }
+		ai_chance = { factor = 95 }
+    }
+	option = {
+        name = "Disregard that. War is the only option!"
+		any_pop = {
+            scaled_militancy = {
+                issue = pacifism
+                factor = 1
+            }
+            scaled_militancy = {
+                issue = jingoism
+                factor = -1
+            }
+        }
+		set_country_flag = diplomacy_failed
+		ai_chance = { factor = 5 }
+    }
+}
+
+#Russian delegation arrives
+country_event = {
+    id = 160006
+    title = "A Russian delegation in Constantinople"
+    desc = "160006DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+	#Decline
+    option = {
+        name = "The Hellenophiles are right, turn them down."
+		tooltip_7 = {}
+		prestige = 5
+		RUS = {	country_event = 160007 }
+		any_pop = {
+            scaled_consciousness = {
+                issue = pacifism
+                factor = 1
+            }
+            scaled_militancy = {
+                issue = jingoism
+                factor = -1
+            }
+        }
+		change_variable = {
+			which = hellenophile_influence
+			value = 2
+		}
+		ai_chance = { factor = 1 }
+    }
+	#Send a counteroffer
+	option = {
+        name = "The Basileus settles on a middle option: a counteroffer!"
+		RUS = {	country_event = 160021 }
+		ai_chance = { factor = 2 }
+    }
+	#Accept
+	option = {
+        name = "Metaxas is right. Accept the offer!"
+		tooltip_6 = {}
+		prestige = -10
+		RUS = {	country_event = 160008 }
+		scaled_militancy = {
+            issue = jingoism
+            factor = 5
+        }
+		set_variable = {
+			which = hellenophile_influence
+			value = 0
+		}
+		any_country = {
+			limit = {
+				alliance_with = THIS
+				is_greater_power = yes
+			}
+			leave_alliance = THIS
+		}
+		ai_chance = { factor = 3 }
+    }
+}
+
+#BYZ rejects
+country_event = {
+    id = 160007
+    title = "Negative response"
+    desc = "160007DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "War it is then."
+		prestige = -10
+		set_country_flag = diplomacy_failed
+    }
+}
+
+#BYZ accepts
+country_event = {
+    id = 160008
+    title = "Our offer is accepted!"
+    desc = "160008DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		prestige = 15
+		any_country = {
+			limit = {
+				alliance_with = THIS
+				is_greater_power = yes
+			}
+			leave_alliance = THIS
+		}
+		relation = { who = BYZ value = 400 }
+		create_alliance = BYZ
+		BYZ = {
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = CIR
+						is_core = CRI
+					}
+				}
+				secede_province = RUS
+				add_core = RUS
+				remove_core = BYZ
+			}
+			relation = { who = CIR value = -400 }
+			diplomatic_influence = { who = CIR value = -400 }
+			leave_alliance = CIR
+		}
+		CIR = {
+			all_core = { add_core = RUS }
+		}
+		set_global_flag = We_have_reconciled_with_Russia
+		clr_country_flag = RUS_crimea
+    }
+}
+
+#Crimean war starts
+country_event = {
+    id = 160009
+    title = "Crimean War"
+    desc = "160009DESC"
+    picture = "crimea_3"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Unfortunate, but very much expected."
+		RUS_964 = { add_core = RUS }
+		CIR = {
+			all_core = { add_core = RUS }
+		}
+		war = {
+			target = BYZ
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+				country = RUS
+			}
+			defender_goal = {
+				casus_belli = BYZ_crimean_war
+			}
+			call_ally = yes
+		}
+		BYZ = { country_event = 160010 }
+		ZPD = { country_event = 160012 }
+    }
+}
+
+#BYZ notification
+country_event = {
+    id = 160010
+    title = "The Crimean War"
+    desc = "160009DESC"
+    picture = "crimea_2"
+	
+    is_triggered_only = yes
+	
+	major = yes
+
+    option = {
+        name = "Unfortunate, but very much expected."
+    }
+}
+
+#Russia loses
+country_event = {
+    id = 160011
+    title = "Defeat in the Crimean War"
+    desc = "160011DESC"
+    picture = "crimean_war_defeat"
+	
+    is_triggered_only = yes
+
+    immediate = {
+		any_owned = {
+				limit = {
+					is_core = CIR
+				}
+				secede_province = CIR
+			}
+			any_owned = {
+				limit = {
+					is_core = AZB
+				}
+				secede_province = AZB
+			}
+			any_owned = {
+				limit = {
+					is_core = TBA
+				}
+				secede_province = TBA
+			}
+		BYZ = {
+			relation = { who = CIR value = 400 }
+			diplomatic_influence = { who = CIR value = 400 }
+		}
+		diplomatic_influence = { who = ARM value = -400 }
+		diplomatic_influence = { who = GEO value = -400 }
+		clr_country_flag = RUS_crimea
+    }
+	
+	option = {
+        name = "A long road to recovery is ahead."
+		prestige = -20
+		any_pop = {
+            militancy = 3
+            consciousness = 3
+        }
+    }
+}
+
+#ZPD notification
+country_event = {
+    id = 160012
+    title = "The Russo-Byzantine War"
+    desc = "160012DESC"
+    picture = "crimea_3"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Good luck to the Greeks!"
+		relation = { who = BYZ value = 50 }
+    }
+}
+
+#BYZ victory notification
+country_event = {
+    id = 160013
+    title = "Victory in the Crimean War!"
+    desc = "160013DESC"
+    picture = "crimea_2"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "We'll see."
+		tooltip_7 = {}
+		prestige = 30
+		any_pop = {
+            militancy = -3
+            consciousness = -3
+        }
+		change_variable = {
+			which = hellenophile_influence
+			value = 2
+		}
+    }
+}
+
+#White peace - RUS event
+country_event = {
+    id = 160014
+    title = "Crimean War ends inconclusively"
+    desc = "160014DESC"
+    picture = "crimea_4"
+	
+    trigger = {
+        tag = RUS
+		has_country_flag = RUS_crimea
+		has_country_flag = RUS_crimean_war
+		war = no
+		NOT = { owns = 967 }
+		NOT = { owns = 3392 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 2
+    }
+
+    option = {
+        name = "Hopefully."
+		prestige = -10
+		any_pop = {
+            militancy = 2
+            consciousness = 2
+        }
+		BYZ = { country_event = 160016 }
+		clr_country_flag = RUS_crimea
+		clr_country_flag = RUS_crimean_war
+    }
+}
+
+#Russia wins - RUS event
+country_event = {
+    id = 160015
+    title = "Victory in the Crimean War"
+    desc = "160015DESC"
+    picture = "crimea_1"
+	
+    trigger = {
+        tag = RUS
+		has_country_flag = RUS_crimea
+		has_country_flag = RUS_crimean_war
+		NOT = { has_country_flag = crimean_war_wp }
+		war = no
+		owns = 967	#Crimea
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "S nami Bog!"
+		prestige = 15
+		BYZ = { country_event = 160017 }
+		clr_country_flag = RUS_crimea
+    }
+}
+
+#BYZ white peace notification
+country_event = {
+    id = 160016
+    title = "Crimean War ends inconclusively"
+    desc = "160014DESC"
+    picture = "crimea_4"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Hopefully."
+		hel_gain_1 = {}
+		prestige = 10
+		any_pop = {
+            militancy = -1
+            consciousness = -1
+        }
+		change_variable = {
+			which = hellenophile_influence
+			value = 1
+		}
+    }
+}
+
+#RUS victory - BYZ notification
+country_event = {
+    id = 160017
+    title = "Defeat in the Crimean War"
+    desc = "160017DESC"
+    picture = "crimea_4"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "We got so far..."
+		hel_lose_5 = {}
+		prestige = -10
+		any_pop = {
+            militancy = 1
+            consciousness = 1
+        }
+		change_variable = {
+			which = hellenophile_influence
+			value = -5
+		}
+    }
+}
+
+#Counteroffer from BYZ
+country_event = {
+    id = 160021
+    title = "Constantinople makes a counteroffer"
+    desc = "160021DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "We shall."
+		prestige = -10
+		any_pop = {
+            militancy = 2
+            consciousness = 2
+        }
+		any_country = {
+			limit = {
+				alliance_with = THIS
+				is_greater_power = yes
+			}
+			leave_alliance = THIS
+		}
+		relation = { who = BYZ value = 400 }
+		create_alliance = BYZ
+		BYZ = {
+			any_owned = {
+				limit = {
+					OR = {
+						is_core = CIR
+						is_core = CRI
+					}
+				}
+				secede_province = RUS
+				add_core = RUS
+				remove_core = BYZ
+			}
+			relation = { who = CIR value = -400 }
+			diplomatic_influence = { who = CIR value = -400 }
+			leave_alliance = CIR
+		}
+		set_global_flag = We_have_reconciled_with_Russia
+		CIR = {
+			all_core = { add_core = RUS }
+		}
+		set_global_flag = orthodox_unified
+		clr_country_flag = RUS_crimea
+		BYZ = { country_event = 160022 }
+		ai_chance = { factor = 7 }
+    }
+	
+	option = {
+        name = "It's not worth it. We will fight."
+		prestige = 5
+		set_country_flag = diplomacy_failed
+		BYZ = { country_event = 160023 }
+		ai_chance = { factor = 3 }
+    }
+}
+
+#Notification to BYZ (accept)
+country_event = {
+    id = 160022
+    title = "Russia accepts!"
+    desc = "160022DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		hel_lose_3 = {}
+		prestige = 10
+		any_pop = {
+            militancy = -1
+            consciousness = -1
+        }
+		BYZ = {
+			change_variable = {
+				which = hellenophile_influence
+				value = -3
+			}
+		}
+    }
+}
+
+#Notification to BYZ (decline)
+country_event = {
+    id = 160023
+    title = "Russia declines!"
+    desc = "160023DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Oh well."
+		prestige = -5
+    }
+}
+
+#Rapproachment with BYZ?
+country_event = {
+    id = 160024
+    title = "Rapproachment with Constantinople?"
+    desc = "160024DESC"
+    picture = "crimean_war_russian_victory"
+	
+    trigger = {
+        tag = RUS
+		NOT = { has_global_flag = We_have_reconciled_with_Russia }
+		NOT = { has_country_flag = RUS_crimea }
+		owns = 967
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 14
+    }
+
+    option = {
+        name = "Let's do it."
+		BYZ = { country_event = 160025 }
+		ai_chance = { factor = 9 }
+    }
+	
+	option = {
+        name = "Russia does not reason with its enemies."
+		prestige = 5
+		ai_chance = { factor = 1 }
+    }
+}
+
+#RUS sends friendship offer
+country_event = {
+    id = 160025
+    title = "Russia offers reconciliation"
+    desc = "160025DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "We accept. Crimea is lost."
+		tooltip_6 = {}
+		prestige = -10
+		any_country = {
+			limit = {
+				alliance_with = RUS
+				is_greater_power = yes
+			}
+			leave_alliance = RUS
+		}
+		relation = { who = RUS value = 400 }
+		create_alliance = RUS
+		any_owned = {
+				limit = {
+					is_core = RUS
+				}
+				secede_province = RUS
+				remove_core = BYZ
+		}
+		relation = { who = CIR value = -400 }
+		diplomatic_influence = { who = CIR value = -400 }
+		leave_alliance = CIR
+		set_global_flag = We_have_reconciled_with_Russia
+		RUS = { country_event = 160026 }
+		BYZ = {
+			set_variable = {
+				which = hellenophile_influence
+				value = 0
+			}
+		}
+		ai_chance = { factor = 8 }
+    }
+	
+	option = {
+        name = "Never! We will make a return!"
+		prestige = 5
+		RUS = { country_event = 160027 }
+		ai_chance = { factor = 2 }
+    }
+}
+
+#Notification to RUS - success
+country_event = {
+    id = 160026
+    title = "Constantinople Accepts"
+    desc = "160026DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		prestige = 5
+    }
+}
+
+#Notification to RUS - failure
+country_event = {
+    id = 160027
+    title = "Constantinople Declines"
+    desc = "160027DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Unfortunate."
+		prestige = -5
+    }
+}
+
+#Rapproachment with BYZ - PARTIAL RUS VICTORY (RUS only owns CIR cores)
+country_event = {
+    id = 160028
+    title = "Rapproachment with Constantinople?"
+    desc = "160028DESC"
+    picture = "crimean_war_russian_victory"
+	
+    trigger = {
+        tag = RUS
+		NOT = { has_country_flag = RUS_crimea }
+		owns = 3392
+		NOT = { owns = 967 }
+		NOT = { has_global_flag = We_have_reconciled_with_Russia }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 14
+    }
+
+    option = {
+        name = "Let's do it."
+		BYZ = { country_event = 160029 }
+		ai_chance = { factor = 8 }
+    }
+	
+	option = {
+        name = "No, Crimea will be ours!"
+		prestige = 5
+		ai_chance = { factor = 2 }
+    }
+}
+
+#RUS sends friendship offer (PARTIAL)
+country_event = {
+    id = 160029
+    title = "Russia offers reconciliation"
+    desc = "160029DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "We accept. Crimea is all we need."
+		tooltip_6 = {}
+		prestige = 10
+		any_country = {
+			limit = {
+				alliance_with = RUS
+				is_greater_power = yes
+			}
+			leave_alliance = RUS
+		}
+		relation = { who = RUS value = 400 }
+		create_alliance = RUS
+		RUS_964 = { remove_core = RUS }
+		RUS_1048 = { remove_core = BYZ }
+		any_owned = {
+			limit = {
+				is_core = RUS
+			}
+			secede_province = RUS
+			remove_core = BYZ
+		}
+		RUS = {
+			any_owned = {
+				limit = {
+					is_core = BYZ
+				}
+				secede_province = BYZ
+				remove_core = RUS
+			}
+		}
+		relation = { who = CIR value = -400 }
+		diplomatic_influence = { who = CIR value = -400 }
+		leave_alliance = CIR
+		set_global_flag = We_have_reconciled_with_Russia
+		RUS = { country_event = 160030 }
+		BYZ = {
+			set_variable = {
+				which = hellenophile_influence
+				value = 0
+			}
+		}
+		ai_chance = { factor = 3 }
+    }
+	
+	option = {
+        name = "You expect the Empire to just give up its rightful land?"
+		prestige = 5
+		RUS = { country_event = 160031 }
+		ai_chance = { factor = 7 }
+    }
+}
+
+#Notification to RUS - success
+country_event = {
+    id = 160030
+    title = "Constantinople Accepts"
+    desc = "160030DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		prestige = -10
+		clr_country_flag = RUS_crimea
+    }
+}
+
+#Notification to RUS - failure
+country_event = {
+    id = 160031
+    title = "Constantinople Declines"
+    desc = "160031DESC"
+    picture = "crimean_war_russian_victory"
+	
+    is_triggered_only = yes
+
+    option = {
+        name = "Unfortunate."
+		prestige = -5
+    }
+}
+
+#Notification to ZPD - RUS-BYZ alliance
+country_event = {
+    id = 160032
+    title = "The Russo-Byzantine Alliance"
+    desc = "160032DESC"
+    picture = "crimean_war_russian_victory"
+	
+    trigger = {
+        tag = ZPD
+		has_global_flag = We_have_reconciled_with_Russia
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 7
+    }
+
+    option = {
+        name = "Truly horrible."
+		relation = { who = BYZ value = -100 }
+    }
+}

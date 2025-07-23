@@ -1,0 +1,160 @@
+MAH = { value = -200 }
+OMA = { value = -100 }
+
+leader = {
+    name = "Ranjit Singh"
+    type = land
+    date = 1799.1.1
+    personality = defence_2.1
+    background = attack_3.1
+    prestige = 0.5
+}
+
+leader = {
+    name = "Zorawar Singh"
+    type = land
+    date = 1834.1.1
+    personality = no_personality
+    background = attack_1.1
+    prestige = 0.1
+}
+
+army = {
+    name = "1st Army"
+    location = 1227
+    regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1229
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1232
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Brigade"
+        type = irregular
+        home = 1228
+    }
+	regiment = {
+        name = "4th Irregular Infantry Brigade"
+        type = irregular
+        home = 1231
+    }
+	regiment = {
+        name = "5th Irregular Infantry Brigade"
+        type = irregular
+        home = 1267
+    }
+	regiment = {
+        name = "6th Irregular Infantry Brigade"
+        type = irregular
+        home = 1234
+    }
+	regiment = {
+        name = "7th Irregular Infantry Brigade"
+        type = irregular
+        home = 1233
+    }
+	regiment = {
+        name = "8th Irregular Infantry Brigade"
+        type = irregular
+        home = 1227
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 1227
+    }
+	regiment = {
+        name = "2nd Cavalry Brigade"
+        type = cavalry
+        home = 1235
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1288
+    regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1288
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1288
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Brigade"
+        type = irregular
+        home = 1290
+    }
+	regiment = {
+        name = "4th Irregular Infantry Brigade"
+        type = irregular
+        home = 1290
+    }
+	regiment = {
+        name = "5th Irregular Infantry Brigade"
+        type = irregular
+        home = 1289
+    }
+	regiment = {
+        name = "6th Irregular Infantry Brigade"
+        type = irregular
+        home = 1289
+    }
+	regiment = {
+        name = "7th Irregular Infantry Brigade"
+        type = irregular
+        home = 1265
+    }
+	regiment = {
+        name = "8th Irregular Infantry Brigade"
+        type = irregular
+        home = 1266
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 1266
+    }
+	regiment = {
+        name = "2nd Cavalry Brigade"
+        type = cavalry
+        home = 1267
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 1236
+    regiment = {
+        name = "1st Infantry Brigade"
+        type = infantry
+        home = 1232
+    }
+	regiment = {
+        name = "2nd Infantry Brigade"
+        type = infantry
+        home = 1229
+    }
+	regiment = {
+        name = "3rd Infantry Brigade"
+        type = infantry
+        home = 1233
+    }
+	regiment = {
+        name = "1st Artillery Brigade"
+        type = artillery
+        home = 1234
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 1236
+    }
+}

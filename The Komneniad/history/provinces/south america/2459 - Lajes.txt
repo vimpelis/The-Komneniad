@@ -1,0 +1,6 @@
+owner = ATA
+controller = ATA
+terrain = montane_forest
+trade_goods = coal
+life_rating = 28
+add_core = ATA

@@ -1,0 +1,9 @@
+army = {
+    name = "Bedouin Nomads"
+    location = 3300
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3300	
+    }
+}

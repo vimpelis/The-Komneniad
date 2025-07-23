@@ -1,0 +1,7 @@
+owner = IRY
+controller = IRY
+add_core = IRY
+add_core = TIB
+trade_goods = coal
+life_rating = 32
+terrain = montane_forest

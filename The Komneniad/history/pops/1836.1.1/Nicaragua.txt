@@ -1,0 +1,315 @@
+#Nicaragua Region (292000)
+#Ruled by Central America 1836
+#Managua (192000/48000 POPS)
+2197 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 315
+    }
+
+    bureaucrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 30
+    }
+
+    officers = {
+        culture = mozarabic
+        religion = catholic
+        size = 20
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 140
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 720
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 8370
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 3025
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 700
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = sunni
+        size = 930
+    }
+}
+#Rivas (40000/10000 POPS)
+2198 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 260
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 500
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 100
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 5508
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 5184
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 1620
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = sunni
+        size = 972
+    }
+}
+#Esteli (48000/12000 POPS)
+2199 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 260
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 480
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 125
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 6324
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 912
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 1500
+    }
+
+    aristocrats = {
+        culture = mexican
+        religion = catholic
+        size = 65
+    }
+
+    clergymen = {
+        culture = mexican
+        religion = catholic
+        size = 25
+    }
+
+    artisans = {
+        culture = mexican
+        religion = catholic
+        size = 120
+    }
+
+    farmers = {
+        culture = mexican
+        religion = catholic
+        size = 1700
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = sunni
+        size = 476
+    }
+}
+#Bluefields (12000/3000 POPS)
+2200 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 25
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 37
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 37
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 25
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 300
+    }
+
+    soldiers = {
+        culture = afro_latino
+        religion = catholic
+        size = 250
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 675
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 475
+    }
+
+    farmers = {
+        culture = antillean_native #miskito
+        religion = animist
+        size = 5387
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 112
+    }
+}
+# San Carlos
+3491 = {
+}
+# Juigalpa
+3492 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 345
+    }
+
+    bureaucrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 35
+    }
+
+    officers = {
+        culture = mozarabic
+        religion = catholic
+        size = 25
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 150
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 790
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 10022
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 2600
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 1950
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = sunni
+        size = 528
+    }
+}

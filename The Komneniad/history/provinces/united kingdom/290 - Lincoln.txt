@@ -1,0 +1,10 @@
+owner = DAN
+controller = DAN
+add_core = ENG
+trade_goods = iron
+naval_base = 1
+life_rating = 35
+terrain = lincoln
+add_core = DAN
+party_loyalty = { ideology = liberal loyalty_value = 20 } 
+party_loyalty = { ideology = conservative loyalty_value = 5 } 

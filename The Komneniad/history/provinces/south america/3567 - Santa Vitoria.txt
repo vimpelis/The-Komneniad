@@ -1,0 +1,6 @@
+trade_goods = grain
+terrain = savanna
+life_rating = 25
+owner = ATA
+controller = ATA
+add_core = ATA

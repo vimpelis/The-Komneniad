@@ -1,0 +1,126 @@
+VRI = { value = -200 }
+IRO = { value = -50 }
+MEX = { value = -200 }
+YUC = { value = -50 }
+CAL = { value = 100 }
+CLT = { value = 50 }
+FRA = { value = 50 }
+
+army = {
+    name = "1st Army"
+    location = 204
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 43
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2151
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 2150
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 139
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 197
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 144
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 189
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 188
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 184
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 3647
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 204
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 206
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 202
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 146
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 199
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 201
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 196
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 139
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

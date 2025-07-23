@@ -1,0 +1,346 @@
+#Honduras Region (352000)
+#Ruled by Central America 1836
+#Tegucigapa (180000/45000 POPS)
+3363 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 140
+    }
+
+    bureaucrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 50
+    }
+
+    officers = {
+        culture = mozarabic
+        religion = catholic
+        size = 14
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 52
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 350
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 4937
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 1568
+    }
+
+    aristocrats = {
+        culture = mexican
+        religion = catholic
+        size = 260
+    }
+
+    officers = {
+        culture = mexican
+        religion = catholic
+        size = 26
+    }
+
+    clergymen = {
+        culture = mexican
+        religion = catholic
+        size = 98
+    }
+
+    artisans = {
+        culture = mexican
+        religion = catholic
+        size = 650
+    }
+
+    farmers = {
+        culture = mexican
+        religion = catholic
+        size = 9170
+    }
+}
+#Comayagua (180000/45000 POPS)
+2194 = {
+    aristocrats = {
+        culture = mexican
+        religion = catholic
+        size = 550
+    }
+
+    bureaucrats = {
+        culture = mexican
+        religion = catholic
+        size = 75
+    }
+
+    officers = {
+        culture = mexican
+        religion = catholic
+        size = 60
+    }
+
+    clergymen = {
+        culture = mexican
+        religion = catholic
+        size = 300
+    }
+
+    artisans = {
+        culture = mexican
+        religion = catholic
+        size = 1250
+    }
+
+    soldiers = {
+        culture = mexican
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = mexican
+        religion = catholic
+        size = 22500
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 2500
+    }
+}
+#San Pedro Sula (92000/23000 POPS)
+2193 = {
+    aristocrats = {
+        culture = mexican
+        religion = catholic
+        size = 550
+    }
+
+    clergymen = {
+        culture = mexican
+        religion = catholic
+        size = 225
+    }
+
+    artisans = {
+        culture = mexican
+        religion = catholic
+        size = 1150
+    }
+
+    soldiers = {
+        culture = mexican
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = mexican
+        religion = catholic
+        size = 14700
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 3000
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 3150
+    }
+}
+#La Ceiba (68000/17000 POPS)
+2195 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 255
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 105
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 510
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 3900
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 2375
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 3000
+    }
+
+    aristocrats = {
+        culture = mexican
+        religion = catholic
+        size = 170
+    }
+
+    clergymen = {
+        culture = mexican
+        religion = catholic
+        size = 70
+    }
+
+    artisans = {
+        culture = mexican
+        religion = catholic
+        size = 340
+    }
+
+    farmers = {
+        culture = mexican
+        religion = catholic
+        size = 6100
+    }
+}
+#Puerto Lempira (12000/3000 POPS)
+2196 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 225
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 1500
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 4500
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 750
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 2000
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 700
+    }
+}
+3393 = {
+}
+#Tobago (15000/3750 POPS)
+2238 = {
+    clergymen = {
+        culture = afro_latino
+        religion = catholic
+        size = 36
+    }
+
+    artisans = {
+        culture = afro_latino
+        religion = catholic
+        size = 111
+    }
+
+    soldiers = {
+        culture = afro_latino
+        religion = catholic
+        size = 150
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 2550
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 46
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 136
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 3760
+    }
+
+    clergymen = {
+        culture = mexican
+        religion = catholic
+        size = 68
+    }
+
+    artisans = {
+        culture = mexican
+        religion = catholic
+        size = 203
+    }
+
+    farmers = {
+        culture = mexican
+        religion = catholic
+        size = 3790
+    }
+}

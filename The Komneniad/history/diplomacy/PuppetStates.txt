@@ -1,0 +1,311 @@
+vassal = {
+    first = BRB
+    second = HLL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = ZPD
+    second = GLM
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+substate = {
+    first = RUS
+    second = UKR
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = RUS
+    second = ZAP
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = ARE
+    second = BNE
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = ARE
+    second = BAE
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = SWE
+    second = FIN
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = BAV
+    second = ALS
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = UBD
+    second = KUR
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = UBD
+    second = EST
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = UBD
+    second = VID
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = UBD
+    second = DOR
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = UBD
+    second = GOT
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = EGY
+    second = UQA
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = ADU
+    second = MGW
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = ADU
+    second = JOH
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = ADU
+    second = SLG
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = ADU
+    second = PHG
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = ADU
+    second = PRK
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = SPA
+    second = MAL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = VOC
+    second = RIA
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = VOC
+    second = DJA
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = VOC
+    second = JAV
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = VOC
+    second = BAL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = VOC
+    second = SAF
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = NSB
+    second = WEL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+#India
+vassal = {
+    first = PNJ
+    second = JAI
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = PNJ
+    second = MEW
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = PNJ
+    second = KAS
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = PNJ
+    second = KUT
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = PNJ
+    second = BER
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+
+vassal = {
+    first = MAH
+    second = BHO
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = MAH
+    second = IND
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = MAH
+    second = GWA
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = CLT
+    second = BNG
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = BNG
+    second = AWA
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = BNG
+    second = BUN
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = BNG
+    second = MNP
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = BNG
+    second = ASM
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = CLT
+    second = IRO
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = CAL
+    second = NBS
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+#Omani Empire
+vassal = {
+    first = OMA
+    second = QAT
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = OMA
+    second = MHR
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = SOM
+    second = AWS
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+##Lunda - Luba + Kuba
+vassal = {
+    first = LUN
+    second = LBA
+    start_date = 1808.1.1
+    end_date = 1936.1.1
+}
+vassal = {
+    first = LUN
+    second = KUB
+    start_date = 1808.1.1
+    end_date = 1936.1.1
+}

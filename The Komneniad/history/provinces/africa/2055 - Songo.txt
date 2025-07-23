@@ -1,0 +1,4 @@
+add_core = SHO
+add_core = ZBW
+trade_goods = sugar
+life_rating = 10

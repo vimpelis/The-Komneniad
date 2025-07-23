@@ -1,0 +1,140 @@
+SPA = {
+    value = -150
+}
+AYL = {
+	value = -200
+}
+CAL = {
+	value = -200
+}
+YUC = {
+	value = -200
+}
+VRI = {
+	value = 50
+}
+
+army = {
+    name = "1st Army"
+    location = 2172
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2172
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2173
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 2176
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 2174
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 2174
+    }
+	regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 2171
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 2180
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 2179
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 2170
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 2166
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2167
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2166
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 2166
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 2159
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 2158
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 2168
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 2169
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 2177
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 2177
+    }
+}
+
+navy = {
+	name = "Armada de México"
+	location = 2162
+	ship = {
+		name = "Vencedor del Álamo"
+		type = frigate
+	}
+	ship = {
+		name = "Matilda"
+		type = frigate
+	}
+	ship = {
+		name = "1. Transporte Veracruz"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2. Transporte Veracruz"
+		type = clipper_transport
+	}
+	ship = {
+		name = "3. Transporte Veracruz"
+		type = clipper_transport
+	}
+}

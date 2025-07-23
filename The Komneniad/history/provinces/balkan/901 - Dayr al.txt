@@ -1,0 +1,7 @@
+owner = ASY
+controller = ASY
+add_core = ASY
+add_core = KDS
+trade_goods = grain
+terrain = semidesert
+life_rating = 35 

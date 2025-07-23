@@ -1,0 +1,33 @@
+army = {
+    name = "1st Army"
+    location = 349
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 349
+    }
+
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 349
+    }
+	
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 349
+    }
+}
+navy = {
+    name = "1st Navy"
+    location = 349
+    ship = {
+        name = "Tallinn"
+        type = frigate
+    }
+	ship = {
+        name = "1st Transport Flotilla"
+        type = clipper_transport
+    }
+}

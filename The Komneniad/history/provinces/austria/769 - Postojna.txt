@@ -1,0 +1,6 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+add_core = SLO
+trade_goods = mercury
+life_rating = 35 

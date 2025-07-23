@@ -1,0 +1,9 @@
+add_core = SLS
+trade_goods = iron
+life_rating = 40
+terrain = waldenburg
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+add_core = BOH
+state_building = { level = 1 building = steel_factory upgrade = yes } 

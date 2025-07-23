@@ -1,0 +1,6 @@
+owner = ATA
+controller = ATA
+trade_goods = iron
+terrain = semi_desert_mountains
+life_rating = 30
+add_core = ATA

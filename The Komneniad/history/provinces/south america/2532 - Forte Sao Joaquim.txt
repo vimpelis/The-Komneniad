@@ -1,0 +1,6 @@
+owner = FRD
+controller = FRD
+trade_goods = tropical_wood
+life_rating = 10
+terrain = jungle_hills
+add_core = FRD

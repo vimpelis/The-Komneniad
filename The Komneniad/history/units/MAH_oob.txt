@@ -1,0 +1,139 @@
+army = {
+    name = "1st Army"
+    location = 1297
+    regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1297
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1297
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Brigade"
+        type = irregular
+        home = 1297
+    }
+	regiment = {
+        name = "4th Irregular Infantry Brigade"
+        type = irregular
+        home = 1297
+    }
+	regiment = {
+        name = "5th Irregular Infantry Brigade"
+        type = irregular
+        home = 1301
+    }
+	regiment = {
+        name = "6th Irregular Infantry Brigade"
+        type = irregular
+        home = 1301
+    }
+	regiment = {
+        name = "7th Irregular Infantry Brigade"
+        type = irregular
+        home = 1299
+    }
+	regiment = {
+        name = "8th Irregular Infantry Brigade"
+        type = irregular
+        home = 1299
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 1299
+    }
+	regiment = {
+        name = "2nd Cavalry Brigade"
+        type = cavalry
+        home = 1298
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1281
+    regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1284
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1284
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Brigade"
+        type = irregular
+        home = 1278
+    }
+	regiment = {
+        name = "4th Irregular Infantry Brigade"
+        type = irregular
+        home = 1278
+    }
+	regiment = {
+        name = "5th Irregular Infantry Brigade"
+        type = irregular
+        home = 1278
+    }
+	regiment = {
+        name = "6th Irregular Infantry Brigade"
+        type = irregular
+        home = 1277
+    }
+	regiment = {
+        name = "7th Irregular Infantry Brigade"
+        type = irregular
+        home = 1277
+    }
+	regiment = {
+        name = "8th Irregular Infantry Brigade"
+        type = irregular
+        home = 1277
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 1280
+    }
+	regiment = {
+        name = "2nd Cavalry Brigade"
+        type = cavalry
+        home = 1281
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 1275
+    regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1275
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1275
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Brigade"
+        type = irregular
+        home = 1275
+    }
+	regiment = {
+        name = "4th Irregular Infantry Brigade"
+        type = irregular
+        home = 1275
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 1276
+    }
+}

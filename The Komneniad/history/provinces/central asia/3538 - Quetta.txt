@@ -1,0 +1,7 @@
+owner = KND
+controller = KND
+add_core = AFG
+add_core = BLC
+trade_goods = wool
+life_rating = 35
+add_core = KND

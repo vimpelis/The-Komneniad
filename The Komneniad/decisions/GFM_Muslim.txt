@@ -1,0 +1,171 @@
+political_decisions = {
+
+    abolish_umar_pact = {
+        picture = pact_of_umar_picture
+        potential = {
+            has_country_flag = umar_pact
+            OR = {
+                has_country_flag = sunni_country
+                has_country_flag = shiite_country
+                has_country_flag = ibadi_country
+            }
+        }
+
+        allow = {
+            state_n_government = 1
+        }
+
+        effect = {
+            badboy = 5
+            remove_country_modifier = jizya
+            clr_country_flag = umar_pact
+            any_pop = {
+                limit = { is_state_religion = no }
+                militancy = 3
+                consciousness = 6
+            }
+            any_country = {
+                limit = {
+                    exists = yes
+                    NOT = {
+                        has_country_flag = sunni_country
+                        has_country_flag = shiite_country
+                        has_country_flag = ibadi_country
+                    }
+                }
+                relation = { who = THIS value = -50 }
+            }
+            any_country = {
+                limit = {
+                    exists = yes
+                    has_country_flag = umar_pact
+                    OR = {
+                        has_country_flag = sunni_country
+                        has_country_flag = shiite_country
+                        has_country_flag = ibadi_country
+                    }
+                }
+                relation = { who = THIS value = -25 }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                badboy = 0.5
+            }
+        }
+    }
+	
+    secularize_society = {
+        picture = the_holy_city
+        potential = {
+            NOT = { has_country_flag = secularized_muslim_society }
+            civilized = yes
+            OR = {
+                has_country_flag = sunni_country
+                has_country_flag = shiite_country
+                has_country_flag = ibadi_country
+            }
+        }
+
+        allow = {
+            invention = secularization
+            prestige = 25
+            NOT = {
+                government = theocracy
+                religious_policy = pluralism
+                religious_policy = moralism
+                ruling_party_ideology = reactionary
+                ruling_party_ideology = conservative
+                moralism = 8
+            }
+            OR = {
+                government = proletarian_dictatorship
+                government = fascist_dictatorship
+                religious_policy = secularized
+                religious_policy = pro_atheism
+            }
+        }
+
+        effect = {
+			remove_country_modifier = Caliphate
+            set_country_flag = secularized_muslim_society
+            prestige_factor = -0.2
+            remove_country_modifier = jizya
+            clr_country_flag = umar_pact
+            any_pop = {
+                limit = { is_state_religion = yes }
+                    consciousness = 3
+                    militancy = 1
+                    scaled_consciousness = { factor = 9 issue = moralism }
+                    scaled_militancy = { factor = 9 issue = moralism }
+                    scaled_consciousness = { factor = 6 issue = pluralism }
+                    scaled_militancy = { factor = 3 issue = pluralism }
+                    scaled_consciousness = { factor = 8 ideology = reactionary }
+                    scaled_militancy = { factor = 4 ideology = reactionary }
+                    scaled_consciousness = { factor = 4 ideology = conservative }
+                    scaled_militancy = { factor = 2 ideology = conservative }
+                    scaled_consciousness = { factor = -9 issue = pro_atheism }
+                    scaled_militancy = { factor = -9 issue = pro_atheism }
+                    scaled_consciousness = { factor = -6 issue = secularized }
+                    scaled_militancy = { factor = -3 issue = secularized }
+                    scaled_consciousness = { factor = -8 ideology = communist }
+                    scaled_militancy = { factor = -4 ideology = communist }
+                    scaled_consciousness = { factor = -4 ideology = socialist }
+                    scaled_militancy = { factor = -2 ideology = socialist }
+            }
+            any_pop = {
+                limit = { is_state_religion = no }
+                consciousness = -2
+                militancy = -2
+            }
+            move_issue_percentage = { from = pluralism to = moralism value = 0.5 }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    average_militancy = 5
+                    moralism = 7
+                }
+            }
+        }
+    }
+
+    the_holy_city = {
+		picture = the_holy_city
+        potential = {
+            OR = {
+                has_country_flag = sunni_country
+                has_country_flag = shiite_country
+                has_country_flag = ibadi_country
+            }
+            1151 = {
+                owned_by = THIS
+                NOT = { has_province_modifier = holy_city }
+            }
+        }
+
+        allow = {
+            1151 = {
+                owned_by = THIS
+                NOT = { has_province_modifier = holy_city }
+            }
+        }
+
+        effect = {
+            random_owned = {
+                limit = {
+                    province_id = 1151
+                    NOT = { has_province_modifier = holy_city }
+                }
+                add_province_modifier = { name = holy_city duration = -1 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

@@ -1,0 +1,7 @@
+owner = HUB
+controller = HUB
+add_core = HUB
+trade_goods = tea
+life_rating = 32
+terrain = hangyang
+add_core = CHI

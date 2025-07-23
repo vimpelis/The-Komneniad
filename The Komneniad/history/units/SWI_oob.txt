@@ -1,0 +1,38 @@
+leader = {
+    name = "de Kalbermatten"
+    date = 1815.1.1
+    type = land
+    personality = no_personality
+    background = no_background
+    prestige = 0.2
+}
+
+army = {
+    name = "1st Army"
+    location = 603
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 603
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 603
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 604
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 604
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 606
+    }
+}

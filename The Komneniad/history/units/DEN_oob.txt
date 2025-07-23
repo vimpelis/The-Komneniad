@@ -1,0 +1,197 @@
+DAN = {
+    value = 175
+    level = 5
+    influence_value = 25
+}
+SWE = {
+    value = -200
+    level = 0
+    influence_value = 0
+}
+FIN = {
+    value = 25
+    level = 3
+    influence_value = 25
+}
+UBD = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+NSB = {
+    value = 75
+    level = 3
+    influence_value = 25
+}
+WLG = {
+    value = 50
+    level = 3
+    influence_value = 10
+}
+STT = {
+    value = 50
+    level = 3
+    influence_value = 10
+}
+MEC = {
+    value = 50
+    level = 3
+    influence_value = 10
+}
+MST = {
+    value = 50
+    level = 3
+    influence_value = 10
+}
+RUS = {
+    value = 10
+}
+
+army = {
+    name = "1st Army"
+    location = 334
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 334
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 335
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 372
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 372
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 373
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 366
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 2557
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 367
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 313
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 313
+    }
+}
+
+army = {
+    name = "Army of Norway"
+    location = 305
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 3490
+    }
+	regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 310
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = dragoon
+        home = 305
+    }
+    regiment = {
+        name = "2nd Cavalry Regiment"
+        type = dragoon
+        home = 312
+    }
+}
+
+navy = {
+    name = "Royal Navy"
+    location = 372
+    ship = {
+        name = "Danmark"
+        type = manowar
+    }
+    ship = {
+        name = "Dronning Marie"
+        type = manowar
+    }
+    ship = {
+        name = "Valdemar"
+        type = manowar
+    }
+    ship = {
+        name = "Frederik den Siette"
+        type = manowar
+    }
+    ship = {
+        name = "Skiold"
+        type = manowar
+    }
+    ship = {
+        name = "Diana"
+        type = frigate
+    }
+    ship = {
+        name = "Nymphen"
+        type = frigate
+    }
+    ship = {
+        name = "Freya"
+        type = frigate
+    }
+    ship = {
+        name = "Havfruen"
+        type = frigate
+    }
+    ship = {
+        name = "Bellona"
+        type = frigate
+    }
+    ship = {
+        name = "Rota"
+        type = frigate
+    }
+    ship = {
+        name = "Fylla"
+        type = frigate
+    }
+    ship = {
+        name = "Flensburg"
+        type = commerce_raider
+    }
+    ship = {
+        name = "1st Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name = "2nd Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name = "3rd Transport Flotilla"
+        type = clipper_transport
+	}
+}

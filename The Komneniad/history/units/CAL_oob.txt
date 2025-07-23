@@ -1,0 +1,106 @@
+VRI = { value = -150 }
+MEX = { value = -200 }
+YUC = { value = -50 }
+NBS = { value = 100 }
+SPA = { value = 50 }
+
+army = {
+    name = "1st Army"
+    location = 104
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 104
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 104
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 3448
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 84
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 89
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 90
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 78
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 104
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

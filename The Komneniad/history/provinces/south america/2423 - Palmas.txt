@@ -1,0 +1,6 @@
+owner = KIB
+trade_goods = cotton
+terrain = plains
+life_rating = 20
+controller = KIB
+add_core = KIB

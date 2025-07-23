@@ -1,0 +1,8 @@
+owner = BGN
+controller = BGN
+add_core = BGN
+add_core = SUL
+add_core = KTI
+trade_goods = fruit
+life_rating = 31
+terrain = jungle_hills

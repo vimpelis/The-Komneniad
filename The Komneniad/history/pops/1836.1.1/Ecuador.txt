@@ -1,0 +1,609 @@
+#Quito Region (512000)
+#Ruled by Ecuador 1836
+#Quito (304000/76000 POPS)
+2279 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 1550
+    }
+
+    bureaucrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 200
+    }
+
+    officers = {
+        culture = janatiyin
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 600
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 300
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 20600
+    }
+
+    clergymen = {
+        culture = quechua
+        religion = sunni
+        size = 175
+    }
+
+    artisans = {
+        culture = quechua
+        religion = sunni
+        size = 4100
+    }
+
+    soldiers = {
+        culture = quechua
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 36725
+    }
+
+    slaves = {
+        culture = janatiyin
+        religion = sunni
+        size = 7000
+    }
+}
+#Zamora (176000/44000 POPS)
+2283 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 900
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 275
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 450
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 100
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 7275
+    }
+
+    clergymen = {
+        culture = quechua
+        religion = sunni
+        size = 175
+    }
+
+    artisans = {
+        culture = quechua
+        religion = sunni
+        size = 1750
+    }
+
+    soldiers = {
+        culture = quechua
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 31775
+    }
+}
+#Tena (32000/8000 POPS)
+2284 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 100
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 150
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 2625
+    }
+
+    clergymen = {
+        culture = quechua
+        religion = sunni
+        size = 25
+    }
+
+    artisans = {
+        culture = quechua
+        religion = sunni
+        size = 100
+    }
+
+    soldiers = {
+        culture = quechua
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 1850
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 50
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 75
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 150
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 2700
+    }
+}
+#Guayaquil Region (328000)
+#Ruled by Ecuador 1836
+#Guayaquil (80000/20000 POPS)
+2280 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 337
+    }
+
+    bureaucrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    officers = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 131
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 637
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 175
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 6187
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 37
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 112
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 600
+    }
+
+    slaves = {
+        culture = janatiyin
+        religion = sunni
+        size = 375
+    }
+
+    aristocrats = {
+        culture = quechua
+        religion = sunni
+        size = 113
+    }
+
+    bureaucrats = {
+        culture = quechua
+        religion = sunni
+        size = 25
+    }
+
+    officers = {
+        culture = quechua
+        religion = sunni
+        size = 25
+    }
+
+    clergymen = {
+        culture = quechua
+        religion = sunni
+        size = 44
+    }
+
+    artisans = {
+        culture = quechua
+        religion = sunni
+        size = 213
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 2063
+    }
+
+    clergymen = {
+        culture = quechua
+        religion = sunni
+        size = 13
+    }
+
+    artisans = {
+        culture = quechua
+        religion = sunni
+        size = 38
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 200
+    }
+
+    slaves = {
+        culture = quechua
+        religion = sunni
+        size = 125
+    }
+}
+3680 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 450
+    }
+
+    bureaucrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 100
+    }
+
+    officers = {
+        culture = janatiyin
+        religion = sunni
+        size = 100
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 175
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 850
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 175
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 5695
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 150
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 977
+    }
+
+    slaves = {
+        culture = janatiyin
+        religion = sunni
+        size = 600
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 1005
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 173
+    }
+}
+#Esmereldas / Esmeraldas(88000/22000 POPS)
+2281 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 450
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 175
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 350
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 4930
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 750
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 4271
+    }
+
+    slaves = {
+        culture = janatiyin
+        religion = sunni
+        size = 4000
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 870
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 754
+    }
+}
+#Loja (160000/40000 POPS)
+2282 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 825
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 275
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 750
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 11000
+    }
+
+    clergymen = {
+        culture = quechua
+        religion = sunni
+        size = 100
+    }
+
+    artisans = {
+        culture = quechua
+        religion = sunni
+        size = 1250
+    }
+
+    soldiers = {
+        culture = quechua
+        religion = sunni
+        size = 250
+    }
+
+    farmers = {
+        culture = quechua
+        religion = sunni
+        size = 19890
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 3510
+    }
+}
+#Galapagos Region (300)
+#Ruled by Ecuador 1836
+#Galapagos (300/75 POPS)
+2285 = {
+    bureaucrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 1
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 3
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 45
+    }
+}

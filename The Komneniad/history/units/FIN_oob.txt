@@ -1,0 +1,35 @@
+army = {
+    name = "1st Army"
+    location = 343
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = guard
+        home = 343
+    }
+
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 345
+    }
+
+    regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 346
+    }
+
+}
+
+navy = {
+    name = "1st Navy"
+    location = 343 #Helsinki
+    ship = {
+        name = "Joulu"
+        type = commerce_raider
+    }
+    ship = {
+        name = "Kalevala"
+        type = commerce_raider
+    }
+}

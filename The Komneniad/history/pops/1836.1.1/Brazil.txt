@@ -1,0 +1,5853 @@
+#Provinces outside Brazil that are now Brazil (12000) #see Colombia.txt for balance of region
+#Under loose authority of Colombia 1836
+#Marabitanas (12000/3000 POPS) #now part of Brazil
+2401 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 40
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 20
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 2425
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 5
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 5
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 20
+    }
+}
+#Equia (11000/2750 POPS)
+2371 = {
+    aristocrats = {
+        culture = waramaran_native
+        religion = sunni
+        size = 100
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3000
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 3500
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 150
+    }
+}
+3359 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 10
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 5
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 2925
+    }
+}
+3381 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 10
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 200
+    }
+}
+3435 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 15
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 300
+    }
+}
+#Grão - Pará Region (80000)
+#Under rule of Brazil 1836
+#Manaus (40000/10000 POPS)
+2402 = {
+    aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 345
+    }
+
+    bureaucrats = {
+        culture = faruduan
+        religion = sunni
+        size = 17
+    }
+
+    officers = {
+        culture = faruduan
+        religion = sunni
+        size = 17
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 129
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = sunni
+        size = 345
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 86
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 6051
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 517
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 129
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 4611
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 4962
+    }
+}
+#Under loose authority of Brazil 1836
+#Cachoeira (8000/2000 POPS)
+2403 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 2342
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 1023
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 8
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 8
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 8
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 34
+    }
+}
+#Madeira (4000/1000 POPS)
+2404 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 4
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 7
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 389
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 173
+    }
+}
+#Teffé
+3651 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 3
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 5
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 387
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 173
+    }
+}
+#Jarua
+3652 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 3
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 5
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 387
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 173
+    }
+}
+#Borba (12000/3000 POPS)
+2405 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 86
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 3470
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 1493
+    }
+}
+#Tabatinga (4000/1000 POPS)
+2407 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 17
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1163
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 519
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 50
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 150
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 250
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 6890
+    }
+}
+#Oriximina (8000/2000 POPS)
+2408 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 18
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 18
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 2342
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 1023
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 8
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 8
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 8
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 34
+    }
+}
+#Forte Sao Joaquim (4000/1000 POPS) #now Roraima state Brazil / in-game Venezuela
+2532 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 7
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 10
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 650
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 25
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 50
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 200
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 150
+    }
+}
+#Bonfim
+3568 = {
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 20
+    }
+
+    aristocrats = {
+        culture = guarani
+        religion = animist
+        size = 75
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 100
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 250
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 100
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 3500
+    }
+}
+#Under rule of Brazil 1836
+#Belém (60000/15000 POPS)
+2410 = {
+    aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 431
+    }
+
+    bureaucrats = {
+        culture = faruduan
+        religion = sunni
+        size = 43
+    }
+
+    officers = {
+        culture = faruduan
+        religion = sunni
+        size = 43
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 172
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 561
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 10041
+    }
+
+    slaves = {
+        culture = faruduan
+        religion = sunni
+        size = 7353
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 86
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 129
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 258
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 4661
+    }
+}
+#Santarém (20000/5000 POPS)
+2411 = {
+    aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 50
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 150
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 400
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 7800
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = sunni
+        size = 100
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = sunni
+        size = 3020
+    }
+
+    slaves = {
+        culture = faruduan
+        religion = sunni
+        size = 1726
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 878
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = sunni
+        size = 1466
+    }
+}
+#Under loose authority of Brazil 1836
+#Óbidos (8000/2000 POPS)
+2412 = {
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 100
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = sunni
+        size = 42
+    }
+	
+	soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 7553
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 17
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 42
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 50
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 540
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 1013
+    }
+}
+#Marabá (12000/3000 POPS)
+2413 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 21
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 43
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 21
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 776
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 86
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 172
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1593
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 1514
+    }
+}
+#Macapá (8000/2000 POPS)
+2415 = {
+    aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 250
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 150
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 560
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 500
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 11140
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 17
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 51
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 3384
+    }
+}
+#Altamira (12000/3000 POPS)
+2600 = {
+    farmers = {
+        culture = amazonian
+        religion = sunni
+        size = 1683
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 43
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1847
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 1519
+    }
+}
+#Mato Grosso Region (108000)
+#Under the rule of Brazil 1836
+#Forte do Principe (16000/4000 POPS) #now part of Brazil - Rondonia State
+2550 = {
+    clergymen = {
+        culture = amazonian
+        religion = sunni
+        size = 19
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = sunni
+        size = 37
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = sunni
+        size = 19
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 37
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 55
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 110
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 19
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 718
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 1262
+    }
+}
+#Dourados (44000/11000 POPS)
+2416 = {
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 37
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 184
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 37
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 2460
+    }
+
+    slaves = {
+        culture = guarani
+        religion = animist
+        size = 3151
+    }
+}
+#Under loose authority of Brazil 1836
+#Vila Bela (28000/7000 POPS)
+2417 = {
+    artisans = {
+        culture = amazonian
+        religion = sunni
+        size = 74
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = sunni
+        size = 19
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 37
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 37
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 184
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 37
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1142
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 2214
+    }
+}
+3380 = {
+    artisans = {
+        culture = amazonian
+        religion = sunni
+        size = 30
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = sunni
+        size = 7
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 75
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 50
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 250
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 50
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 2575
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 25
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 50
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 2000
+    }
+}
+#Cuiabá (28000/7000 POPS)
+2418 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 9
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 18
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 9
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 330
+    }
+
+    aristocrats = {
+        culture = guarani
+        religion = animist
+        size = 8
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 8
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 37
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 11
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 660
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 55
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 37
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 184
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 37
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1145
+    }
+
+    slaves = {
+        culture = amazonian
+        religion = animist
+        size = 2211
+    }
+}
+#Campo Grande (8000/2000 POPS)
+2419 = {
+    aristocrats = {
+        culture = waramaran_native
+        religion = animist
+        size = 16
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = animist
+        size = 38
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = animist
+        size = 74
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = animist
+        size = 22
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = animist
+        size = 294
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 167
+    }
+
+    slaves = {
+        culture = guarani
+        religion = animist
+        size = 717
+    }
+}
+#Under loose authority of Paraguay 1836
+#Igautemi (20000/5000 POPS) #now part of Brazil
+2420 = {
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 25
+    }
+
+    aristocrats = {
+        culture = guarani
+        religion = animist
+        size = 50
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 75
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 150
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 25
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 2700
+    }
+}
+#Goiás Region (64000)
+#Under the rule of Brazil 1836
+#Vila Boa (44000/11000 POPS)
+2421 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 431
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 18
+    }
+
+    officers = {
+        culture = waramaran
+        religion = sunni
+        size = 28
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 143
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 480
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 99
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 8348
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 72
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 335
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 72
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 246
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 5500
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 101
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 474
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 101
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 348
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 9000
+    }
+}
+#Brasilia 44000/11000 POPS)
+3584 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 19620
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 2893
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 283
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 571
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 571
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1237
+    }
+}
+#Under loose authority of Brazil 1836
+#Aganja (8000/2000 POPS)
+2422 = {
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 94
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 190
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 94
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 3454
+    }
+
+    aristocrats = {
+        culture = waramaran_native
+        religion = sunni
+        size = 37
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 94
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 190
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 57
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 123
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3331
+    }
+}
+#Vila da Palma (12000/3000 POPS)
+2423 = {
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 121
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 247
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 121
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 5489
+    }
+
+    aristocrats = {
+        culture = waramaran_native
+        religion = sunni
+        size = 112
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 582
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 459
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 112
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2825
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 4962
+    }
+}
+#Maranhão Region (412000)
+#Under the rule of Brazil 1836
+#São Luís (160000/40000 POPS)
+2424 = {
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 423
+    }
+
+    bureaucrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 64
+    }
+
+    officers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 52
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 166
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 412
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 129
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 9225
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 5314
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2278
+    }
+}
+#Chapada (48000/12000 POPS)
+2425 = {
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 127
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 129
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 231
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 52
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 2709
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 966
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 13
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 76
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 13
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1407
+    }
+}
+#Vila do Poti (160000/40000 POPS)
+2426 = {
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 423
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 154
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 448
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 500
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 7245
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 27
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 322
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 57
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 108
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 5571
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 12
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 138
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 46
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2388
+    }
+}
+#Oeiras (44000/11000 POPS)
+2427 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 462
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 210
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 1020
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 210
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 8616
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 4104
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 24
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 108
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 24
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1908
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1758
+    }
+}
+#Fortaleza (180000/45000 POPS)
+#means 'european town' in wolof, so there are euros there
+2429 = {
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 474
+    }
+
+    bureaucrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 78
+    }
+
+    officers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 64
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 154
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1099
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1200
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 7003
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 586
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 6123
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 252
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2625
+    }
+	
+	clergymen = {
+        culture = occitan
+        religion = catholic
+        size = 25
+    }
+
+    artisans = {
+        culture = occitan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 500
+    }
+	
+	clergymen = {
+        culture = welserlandisch
+        religion = protestant
+        size = 10
+    }
+
+    artisans = {
+        culture = welserlandisch
+        religion = protestant
+        size = 100
+    }
+
+    farmers = {
+        culture = welserlandisch
+        religion = protestant
+        size = 200
+    }
+}
+#Crato (52000/13000 POPS)
+2430 = {
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 282
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 105
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 333
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 39
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 6603
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 426
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 3579
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 183
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1536
+    }
+}
+#Nordeste Region (456000)
+#Under the rule of Brazil 1836
+#Fernando de Noronha (2352/2452 POPS)
+3482 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 75
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 439
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 30
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 18
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 3
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 1
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 3
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 189
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 553
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 138
+    }
+
+    bureaucrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 27
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 15
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 27
+    }
+}
+#Paraíba (92000/23000 POPS)
+2428 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 148
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 63
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 228
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1500
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 4533
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 10
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 55
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 45
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 978
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 46
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 235
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 193
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 4189
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1477
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 621
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 2254
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 44880
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 108
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 541
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 448
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 9676
+    }
+}
+#Natal (132000/33000 POPS)
+2431 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 139
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 51
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 570
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 6500
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 2908
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 10
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 108
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 1015
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 1023
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 91
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 931
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 8713
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 8764
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 2658
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 982
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 10834
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 55269
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 205
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 2065
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 19314
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 19426
+    }
+}
+#Recife (164000/41000 POPS)
+2432 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 414
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 100
+    }
+
+    officers = {
+        culture = waramaran
+        religion = sunni
+        size = 75
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 162
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 502
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 4000
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 6205
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 25
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 1056
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 384
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 3198
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 5160
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 55
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 2262
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 165
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 6852
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 11059
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1657
+    }
+
+    bureaucrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 402
+    }
+
+    officers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 300
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 652
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 2010
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 24825
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 105
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 4222
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 12792
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 20646
+    }
+}
+#Cabrobo (80000/20000 POPS)
+2433 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 66
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 19
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 51
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1500
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 771
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 6
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 66
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 274
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 624
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 610
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 46
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 565
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 117
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 5349
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 5235
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1269
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 372
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 969
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 14649
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 103
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1254
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 11854
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 11602
+    }
+}
+#Maceió (152000/38000 POPS)
+2434 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 300
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 376
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 1131
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 3200
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 10428
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 66
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 703
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 384
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 4170
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 22462
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 70
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 754
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 165
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 4468
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 9627
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1461
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 565
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1696
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 26890
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 99
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1056
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 15255
+    }
+}
+#Aracaju (120000/30000 POPS)
+2435 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 3534
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 1413
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 3958
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 6300
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 80751
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 219
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 2572
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 14806
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 18555
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 46
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 612
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3526
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 7953
+    }
+
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 393
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 439
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 8973
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 286
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1645
+    }
+}
+#Bahía Region (896000)
+#Under the rule of Brazil 1836
+#Salvador da Bahía (356000/89000 POPS)
+2436 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 1119
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 217
+    }
+
+    officers = {
+        culture = waramaran
+        religion = sunni
+        size = 157
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 466
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 6220
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 4276
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 3200
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 23547
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 64
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 217
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 21
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 12628
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 3048
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 27
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 93
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 9
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 5412
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1305
+    }
+}
+#Juazeiro (180000/45000 POPS)
+2437 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 658
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 213
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 534
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 11986
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 61
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 564
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 4975
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 7200
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 27
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 240
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2133
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3085
+    }
+}
+#Vila do Barra (140000/35000 POPS)
+2438 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 516
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 195
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 568
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 142
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 12797
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 36
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 377
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 74
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 1428
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 5561
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 16
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 161
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 32
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 612
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2383
+    }
+}
+#Porto Seguro (120000/30000 POPS)
+2439 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 556
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 204
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 622
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 8529
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 31
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 403
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 8686
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 8163
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 13
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 174
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3723
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3499
+    }
+}
+#Vitória da Conquista (100000/25000 POPS)
+2440 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 468
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 156
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 400
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 112
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 6867
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 46
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 435
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 93
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 7593
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 6924
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 21
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 187
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 40
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3255
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2968
+    }
+}
+# Trindade e Martim Vaz
+3666 = {
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 30
+    }
+}
+#Minas Gerais Region (716000)
+#Under the rule of Brazil 1836
+#Ipatinga (2352/2452 POPS)
+3445 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 14683
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 3057
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 2100
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 75
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 300
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 10
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1963
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1350
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 6
+    }
+}
+#Montes Claros (2352/2452 POPS)
+3446 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 11176
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 5511
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 1050
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1500
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 2100
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 75
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 300
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 10
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3543
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 675
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1350
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 6
+    }
+}
+#Curral del Rey (16000/4000 POPS)
+3443 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 9078
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 2781
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 450
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 2100
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 75
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 300
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 10
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1786
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1350
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 6
+    }
+}
+#Mantiqueira (16000/4000 POPS)
+3444 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 8755
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 4056
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 2100
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 75
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 300
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1650
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 8410
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2025
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 75
+    }
+}
+#Ouro Preto (232000/58000 POPS)
+2441 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 225
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 75
+    }
+
+    officers = {
+        culture = waramaran
+        religion = sunni
+        size = 37
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 400
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 825
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 16255
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 3048
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 556
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 114
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 7644
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 4117
+    }
+}
+#Divinopolis (104000/26000 POPS)
+2442 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 630
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 240
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 630
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1200
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 15840
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 42
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 546
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 8056
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 10570
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 27
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 351
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 67
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 5176
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 6795
+    }
+}
+#Teofilo Otoni (100000/25000 POPS)
+2443 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 825
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 262
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 600
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 13162
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 78
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 787
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 5275
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 9450
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 51
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 505
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3393
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 6075
+    }
+}
+#Patos de Minas (80000/20000 POPS)
+2444 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 509
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 180
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 540
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 149
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 11580
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 41
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 377
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 84
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 135
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 6920
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 36
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 324
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 72
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 117
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 5930
+    }
+}
+#Uberlândia (68000/17000 POPS)
+2445 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 420
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 149
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 329
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 89
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 7409
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 41
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 420
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 84
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 2556
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 4709
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 48
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 494
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 98
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3012
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 5549
+    }
+}
+#São João del Rey (132000/33000 POPS)
+2446 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 1012
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 337
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 787
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 187
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 14250
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 105
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 1155
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 210
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 6988
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 100
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1113
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 202
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 9363
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3579
+    }
+}
+#Rio de Janeiro Region (976000)
+#Under the rule of Brazil 1836
+#Rio de Janeiro (696000/174000 POPS)
+2447 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 817
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 118
+    }
+
+    officers = {
+        culture = waramaran
+        religion = sunni
+        size = 118
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 706
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 4420
+    }
+
+    artisans = {
+        culture = south_german
+        religion = sunni
+        size = 883
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 3200
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 32785
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 12825
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 30933
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 5496
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 13257
+    }
+}
+2235 = {
+    aristocrats = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 75
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 112
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 225
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 8400
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1125
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 150
+    }
+}
+#Campos (160000/40000 POPS)
+2448 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 1254
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 444
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 1179
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 25053
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 23061
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 9882
+    }
+}
+830 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 18156
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 5562
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 900
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 600
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 600
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 21
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2382
+    }
+}
+3511 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 36168
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 8412
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 1500
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 600
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3600
+    }
+}
+2236 = {
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 24000
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 4200
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 1200
+    }
+
+    bureaucrats = {
+        culture = waramaran
+        religion = sunni
+        size = 30
+    }
+
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 300
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 225
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2700
+    }
+}
+#Victória (120000/30000 POPS) - Espírito Santo
+2449 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 487
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 187
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 637
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 12375
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 31
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 315
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 3457
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 8328
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 13
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 135
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1482
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3570
+    }
+}
+#São Paulo Region (580000)
+#Under the rule of Brazil 1836
+#Sorocaba (8000/2000 POPS)
+2306 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 75
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 75
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 250
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 5000
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 2500
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 3000
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1000
+    }
+}
+#São Paulo (252000/63000 POPS)
+2450 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 40
+    }
+
+    officers = {
+        culture = antartidan
+        religion = catholic
+        size = 10
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 500
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 300
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 8500
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 50
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 500
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 4911
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 9283
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2000
+    }
+}
+#Santos (132000/33000 POPS)
+2451 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 664
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 265
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 889
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 21570
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 34
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 346
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 1893
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 5746
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 15
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 148
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 811
+    }
+
+    slaves = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2463
+    }
+}
+#Campinas (64000/16000 POPS)
+2452 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 80
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 250
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 2000
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 3800
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 33
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 193
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 1076
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 2497
+    }
+}
+#Assis (52000/14000 POPS)
+2453 = {
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 34
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 66
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 34
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 816
+    }
+
+    slaves = {
+        culture = guarani
+        religion = animist
+        size = 526
+    }
+
+    aristocrats = {
+        culture = waramaran_native
+        religion = animist
+        size = 14
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = animist
+        size = 34
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = animist
+        size = 66
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = animist
+        size = 20
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = animist
+        size = 1154
+    }
+}
+#Iguape (64000/16000 POPS)
+2455 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 209
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 80
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 290
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 80
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 6394
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 33
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 160
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 33
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 2885
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 3339
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 1000
+    }
+}
+#Araraquara (8000/2000 POPS)
+2456 = {
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 50
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = catholic
+        size = 1000
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = catholic
+        size = 2500
+    }
+
+    aristocrats = {
+        culture = waramaran_native
+        religion = sunni
+        size = 10
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 50
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 100
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 2500
+    }
+}
+#Paraná Region (512000)
+#Under the rule of Brazil 1836
+#Curityba (172000/43000 POPS) #Paraná at game start
+2457 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 20
+    }
+
+    officers = {
+        culture = antartidan
+        religion = catholic
+        size = 5
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 250
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 900
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 8700
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 10
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 160
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 3500
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 4000
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 2400
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 500
+    }
+}
+#Guarapuava (40000/10000 POPS) #Paraná at game start
+2458 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 129
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 49
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 160
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 49
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 2962
+    }
+
+    clergymen = {
+        culture = afro_occitan
+        religion = catholic
+        size = 19
+    }
+
+    artisans = {
+        culture = afro_occitan
+        religion = catholic
+        size = 97
+    }
+
+    soldiers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 19
+    }
+
+    farmers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 740
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 1557
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 19
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 33
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 10
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 584
+    }
+}
+#Lajes (60000/15000 POPS) #Santa Catarina at game start
+2459 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 107
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 35
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 220
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 500
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 1750
+    }
+
+    clergymen = {
+        culture = afro_occitan
+        religion = catholic
+        size = 25
+    }
+
+    artisans = {
+        culture = afro_occitan
+        religion = catholic
+        size = 95
+    }
+
+    soldiers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 25
+    }
+
+    farmers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 130
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 1626
+    }
+
+    aristocrats = {
+        culture = guarani
+        religion = animist
+        size = 35
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 25
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 119
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 25
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 2571
+    }
+}
+#Castro (72000/18000 POPS) #Paraná at game start
+2460 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 75
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 350
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 6939
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 33
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 169
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 33
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 2631
+    }
+
+    slaves = {
+        culture = waramaran
+        religion = sunni
+        size = 1968
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 1000
+    }
+
+    clergymen = {
+        culture = waramaran_native
+        religion = sunni
+        size = 19
+    }
+
+    artisans = {
+        culture = waramaran_native
+        religion = sunni
+        size = 33
+    }
+
+    soldiers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = waramaran_native
+        religion = sunni
+        size = 584
+    }
+}
+#Desterro (88000/22000 POPS) #Santa Catarina at game start
+2461 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 214
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 95
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 167
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 2665
+    }
+
+    clergymen = {
+        culture = afro_occitan
+        religion = catholic
+        size = 25
+    }
+
+    artisans = {
+        culture = afro_occitan
+        religion = catholic
+        size = 143
+    }
+
+    soldiers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 35
+    }
+
+    farmers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 957
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 1688
+    }
+}
+#Palmas (80000/20000 POPS)
+2462 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 150
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 75
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 4675
+    }
+
+    farmers = {
+        culture = guarani
+        religion = catholic
+        size = 4000
+    }
+
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 425
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 150
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 525
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 120
+    }
+
+    farmers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 300
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 6000
+    }
+}
+#Rio Grande Do Sul Region (532000)
+#Under the rule of Brazil 1836
+#Porto Alegre (224000/56000 POPS)
+2463 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 430
+    }
+
+    bureaucrats = {
+        culture = antartidan
+        religion = catholic
+        size = 125
+    }
+
+    officers = {
+        culture = antartidan
+        religion = catholic
+        size = 95
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 230
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 1142
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 11000
+    }
+
+    farmers = {
+        culture = afro_occitan
+        religion = catholic
+        size = 2050
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 6400
+    }
+}
+#Pelotas (44000/11000 POPS)
+2464 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 174
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 36
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 147
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 3500
+    }
+
+    clergymen = {
+        culture = afro_occitan
+        religion = catholic
+        size = 15
+    }
+
+    artisans = {
+        culture = afro_occitan
+        religion = catholic
+        size = 150
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 2000
+    }
+}
+#Passo Fundo (112000/28000 POPS)
+2465 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 241
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 105
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 304
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 1027
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 3460
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 3600
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 400
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 20
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 105
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 8
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 1049
+    }
+}
+#Santa Maria (88000/22000 POPS)
+2466 = {
+    aristocrats = {
+        culture = antartidan
+        religion = catholic
+        size = 189
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 84
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 273
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 400
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 4047
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 3000
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 70
+    }
+
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 20
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 10
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 4500
+    }
+}
+#Alegrete (64000/16000 POPS)
+2467 = {
+    clergymen = {
+        culture = antartidan
+        religion = catholic
+        size = 84
+    }
+
+    artisans = {
+        culture = antartidan
+        religion = catholic
+        size = 84
+    }
+
+    soldiers = {
+        culture = antartidan
+        religion = catholic
+        size = 100
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 1676
+    }
+
+    aristocrats = {
+        culture = guarani
+        religion = animist
+        size = 33
+    }
+
+    clergymen = {
+        culture = guarani
+        religion = animist
+        size = 20
+    }
+
+    artisans = {
+        culture = guarani
+        religion = animist
+        size = 105
+    }
+
+    soldiers = {
+        culture = guarani
+        religion = animist
+        size = 20
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 796
+    }
+
+    farmers = {
+        culture = guarani
+        religion = animist
+        size = 800
+    }
+
+    slaves = {
+        culture = afro_occitan
+        religion = catholic
+        size = 500
+    }
+}
+#Acre Region (32000) #see Bolivia.txt for balance of region
+#Under loose authority of Bolivia 1836
+#Tarauacá (16000/4000 POPS) #now part of Brazil - Acre State
+2549 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 35
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 80
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 30
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1625
+    }
+}
+#Rio Branco (16000/4000 POPS)
+3326 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 40
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 120
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 20
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 2000
+    }
+}

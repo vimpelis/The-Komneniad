@@ -1,0 +1,8 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = CRO
+add_core = VOJ
+trade_goods = fruit
+life_rating = 35
+add_core = CRO

@@ -1,0 +1,53 @@
+FRD = { value = -100 }
+SAH = { value = -100 }
+
+army = {
+    name = "1st Army"
+    location = 2272
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2272
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2273
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 2270
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 2268
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 2264
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 2272
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

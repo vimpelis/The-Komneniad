@@ -1,0 +1,719 @@
+#155000 - Starting event (Bavaria)
+#01 - 
+
+#Starting event (Bavaria)
+country_event = {
+    id = 155000
+    title = "The Kingdom of Bavaria"
+    desc = "155000DESC"
+    picture = "bavaria_personification"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "And we shall not disappoint."
+		any_owned = {
+			limit = {
+				is_core = GER
+			}
+			add_province_modifier = {
+				name = german_dream
+				duration = 5475
+			}
+		}
+		add_country_modifier = {
+			name = BAV_zollverein
+			duration = -1
+		}
+    }
+}
+
+#Starting event (Everyone else)
+country_event = {
+    id = 155001
+    title = "The German Dream"
+    desc = "155001DESC"
+    picture = "GER_parliament"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Perhaps we could play a part in it..."
+		any_owned = {
+			limit = {
+				is_core = GER
+			}
+			add_province_modifier = {
+				name = german_dream
+				duration = 5475
+			}
+		}
+		add_country_modifier = {
+			name = zollverein
+			duration = -1
+		}
+    }
+}
+
+#Franconia - death of the duke
+#Triggered by setup
+country_event = {
+    id = 155002
+    title = "Death of Friedrich Joseph"
+    desc = "155002DESC"
+    picture = "GER_parliament"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "The Duke is dead, long live the Duke!"
+		BAV = { country_event = 155003 }
+    }
+}
+
+#Notf. to BAV
+country_event = {
+    id = 155003
+    title = "Death of Friedrich Joseph of Franconia"
+    desc = "155002DESC"
+    picture = "GER_parliament"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We'll keep an eye on that."
+    }
+}
+
+#Fechenbachs dead
+country_event = {
+    id = 155004
+    title = "Bombing in Nuremberg!"
+    desc = "155004DESC"
+    picture = "franz_ferdinand_assassination"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Disaster!"
+		BAV = { country_event = 155005 }
+    }
+}
+
+#Notf. to BAV
+country_event = {
+    id = 155005
+    title = "Bombing in Nuremberg!"
+    desc = "155004DESC"
+    picture = "franz_ferdinand_assassination"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Huh?!"
+    }
+}
+
+#Fechenbachs dead
+country_event = {
+    id = 155006
+    title = "The February Uprising"
+    desc = "155006DESC"
+    picture = "march_revolution"
+
+    is_triggered_only = yes
+	
+	major = yes
+	
+    option = {
+        name = "Down with the Wittelsbach tyranny!"
+		government = radical_republic
+		leave_alliance = BAV
+		BAV = {
+			diplomatic_influence = {
+				who = FRK
+				value = -400
+			}
+			relation = {
+				who = FRK
+				value = -400
+			}
+		}
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		BAV = { country_event = 155007 }
+		set_global_flag = FRK_uprising
+    }
+}
+
+#Notf. to BAV
+country_event = {
+    id = 155007
+    title = "Martletists seize Franconia!"
+    desc = "155007DESC"
+    picture = "march_revolution"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To war!"
+		badboy = 5
+		war = {
+			target = FRK
+			attacker_goal = { casus_belli = make_puppet_no_infamy }
+		}
+    }
+}
+
+#Franconia defeated
+country_event = {
+    id = 155008
+    title = "Order restored in Franconia"
+    desc = "155008DESC"
+    picture = "march_unrest"
+
+    trigger = {
+		tag = BAV
+		has_global_flag = FRK_uprising
+		is_our_vassal = FRK
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	major = yes
+	
+    option = {
+        name = "It is also an opportunity, yes."
+		inherit = FRK
+		FRK = { all_core = { add_core = BAV } }
+		prestige = 10
+		set_country_flag = FRK_dead
+    }
+}
+
+#Frankfurt Proclamation
+country_event = {
+    id = 155009
+    title = "The Frankfurt Proclamation"
+    desc = "155009DESC"
+    picture = "GER_parliament"
+
+    is_triggered_only = yes
+	
+	major = yes
+	
+    option = {
+        name = "Germany beckons."
+		any_country = {
+			limit = {
+				in_sphere = THIS
+			}
+			relation = {
+				who = THIS
+				value = 50
+			}
+		}
+		relation = {
+			who = BRB
+			value = -100
+		}
+		relation = {
+			who = ZPD
+			value = -100
+		}
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_german
+					primary_culture = south_german
+				}
+				in_sphere = THIS
+			}
+			country_event = 155010
+		}
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_german
+					primary_culture = south_german
+				}
+				NOT = { in_sphere = THIS }
+			}
+			country_event = 155011
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = ZPD
+					tag = BRB
+				}
+			}
+			country_event = 155012
+		}
+    }
+}
+
+#Frankfurt Proclamation - Notf. to spherelings
+country_event = {
+    id = 155010
+    title = "The Frankfurt Proclamation"
+    desc = "155009DESC"
+    picture = "GER_parliament"
+
+    is_triggered_only = yes
+	
+    option = {
+        name = "Aggressive, but necessary."
+    }
+}
+
+#Frankfurt Proclamation - Notf. to non-sphereling Germans
+country_event = {
+    id = 155011
+    title = "The Frankfurt Proclamation"
+    desc = "155009DESC"
+    picture = "GER_parliament"
+
+    is_triggered_only = yes
+	
+    option = {
+        name = "Concerning."
+    }
+}
+
+#Frankfurt Proclamation - Notf. to BRB and ZPD
+country_event = {
+    id = 155012
+    title = "The Frankfurt Proclamation"
+    desc = "155009DESC"
+    picture = "GER_parliament"
+
+    is_triggered_only = yes
+	
+    option = {
+        name = "Do these warmongers want a repeat of the Martletist Wars?"
+    }
+}
+
+#Crown from the gutter - Germany failed to form by 1890
+country_event = {
+    id = 155013
+    title = "A Crown From The Gutter"
+    desc = "155013DESC"
+    picture = "GER_woman1"
+
+    trigger = {
+		OR = {
+			primary_culture = north_german
+			primary_culture = south_german
+		}
+		is_greater_power = yes
+		year = 1890
+		has_cultural_sphere = yes
+		OR = {
+			government = prussian_constitutionalism
+			government = absolute_monarchy
+			government = hms_government
+		}
+		NOT = { exists = GER }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = "Long live Germany!"
+		badboy = 5
+		change_tag = GER
+		government = hms_government
+		ruling_party_ideology = liberal
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_german
+					primary_culture = south_german
+				}
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+				ai = yes
+			}
+			annex_to = THIS
+		}
+		country_event = 155015
+		ai_chance = {
+            factor = 80
+			modifier = {
+				government = hms_government
+				factor = 100
+			}
+			modifier = {
+				government = prussian_constitutionalism
+				factor = 100
+			}
+        }
+    }
+	
+	option = {
+        name = "A liberal constitution?! Unacceptable!"
+		prestige = -10
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		ai_chance = {
+            factor = 20
+			modifier = {
+				government = hms_government
+				factor = 0
+			}
+			modifier = {
+				government = prussian_constitutionalism
+				factor = 0
+			}
+        }
+    }
+}
+
+#Invitation to Crown From the Gutter Germany
+country_event = {
+    id = 155014
+    title = "German Empire Proclaimed"
+    desc = "155014DESC"
+    picture = "GER_woman1"
+
+    is_triggered_only = yes
+	
+    option = {
+        name = "Germany above all!"
+		THIS = {
+			annex_to = GER
+		}
+		ai_chance = {
+            factor = 75
+			modifier = {
+				in_sphere = FROM
+				factor = 100
+			}
+			modifier = {
+				AND = {
+					part_of_sphere = yes
+					NOT = { in_sphere = FROM }
+				}
+				factor = 0
+			}
+        }
+    }
+	
+	option = {
+        name = "Germany below all."
+		relation = {
+			who = GER
+			value = -100
+		}
+		ai_chance = {
+            factor = 25
+			modifier = {
+				in_sphere = FROM
+				factor = 0
+			}
+			modifier = {
+				AND = {
+					part_of_sphere = yes
+					NOT = { in_sphere = FROM }
+				}
+				factor = 100
+			}
+        }
+    }
+}
+
+#Germany formed - Crown From The Gutter
+country_event = {
+    id = 155015
+    title = "A Crown From The Gutter"
+    desc = "155015DESC"
+    picture = "GER_woman2"
+
+    is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+        name = "Germany is non-negotiable."
+		prestige = 25
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_german
+					primary_culture = south_german
+				}
+				part_of_sphere = no
+			}
+			country_event = 155014
+		}
+    }
+}
+
+#Germany formed - Decision
+country_event = {
+    id = 155016
+    title = "Unification of Germany"
+    desc = "155016DESC"
+    picture = "GER_woman2"
+
+    is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+        name = "Deutschland Uber Alles!"
+		any_owned = {
+			remove_province_modifier = german_dream
+		}
+		any_pop = {
+			militancy = -2
+			consciousness = -2
+		}
+    }
+}
+
+#Choose a capital
+country_event = {
+    id = 155017
+    title = "The Capital of Germany"
+    desc = "155017DESC"
+    picture = "GER_parliament2"
+
+    trigger = {
+		tag = GER
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+        name = "Frankfurt, The Center of German Nationalism"
+		capital = 564
+		564 = {
+			add_province_modifier = {
+				name = recently_built_city
+				duration = 3650
+			}
+		}
+		ai_chance = {
+            factor = 90
+        }
+    }
+	option = {
+        name = "Munich, The Last Imperial Capital"
+		capital = 599
+		primary_culture = south_german
+		add_accepted_culture = north_german
+		599 = {
+			add_province_modifier = {
+				name = recently_built_city
+				duration = 3650
+			}
+		}
+		ai_chance = {
+            factor = 5
+			modifier = {
+				primary_culture = north_german
+				factor = 0
+			}
+        }
+    }
+	option = {
+        name = "Berlin, The Unlikely Candidate"
+		capital = 549
+		primary_culture = north_german
+		add_accepted_culture = south_german
+		549 = {
+			add_province_modifier = {
+				name = recently_built_city
+				duration = 3650
+			}
+		}
+		ai_chance = {
+            factor = 5
+			modifier = {
+				primary_culture = south_german
+				factor = 0
+			}
+        }
+    }
+	option = {
+        name = "The current capital fits us just fine."
+		prestige = 5
+		capital_scope = {
+			add_province_modifier = {
+				name = recently_built_city
+				duration = 3650
+			}
+		}
+		ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+#Remove cores of old German nations
+country_event = {
+    id = 155018
+    title = "No More Borders"
+    desc = "155018DESC"
+    picture = "GER_map"
+
+    trigger = {
+		tag = GER
+		NOT = {
+			exists = SGF
+			exists = NGF
+			exists = AUS
+			exists = BAV
+			exists = FRK
+			exists = WUR
+			exists = BAD
+			exists = SWI
+			exists = HES
+			exists = FRM
+			exists = RHI
+			exists = ALS
+			exists = HEK
+			exists = THU
+			exists = SAX
+			exists = ANH
+			exists = MAG
+			exists = BRA
+			exists = BRN
+			exists = WLD
+			exists = LIP
+			exists = WES
+			exists = OLD
+			exists = NSB
+			exists = MEC
+			exists = MST
+			exists = STT
+			exists = WLG
+			exists = HOL
+			exists = LAU
+			exists = PAL
+			exists = TST
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+	
+	option = {
+        name = "Now and forevermore."
+		all_core = { 
+			remove_core = SGF
+			remove_core = NGF
+			remove_core = AUS
+			remove_core = BAV
+			remove_core = FRK
+			remove_core = WUR
+			remove_core = BAD
+			remove_core = SWI
+			remove_core = HES
+			remove_core = FRM
+			remove_core = RHI
+			remove_core = ALS
+			remove_core = HEK
+			remove_core = THU
+			remove_core = SAX
+			remove_core = ANH
+			remove_core = MAG
+			remove_core = BRA
+			remove_core = BRN
+			remove_core = WLD
+			remove_core = LIP
+			remove_core = WES
+			remove_core = OLD
+			remove_core = NSB
+			remove_core = MEC
+			remove_core = MST
+			remove_core = STT
+			remove_core = WLG
+			remove_core = HOL
+			remove_core = LAU
+			remove_core = PAL
+			remove_core = TST
+		}
+    }
+}
+
+#Remove cores Germany on Venice and Istria
+country_event = {
+    id = 155019
+    title = "Our claims in Italy"
+    desc = "We have lost our Italian lands. With them having little to no German population, our claims are dubious at best. We have to accept that we lost them."
+    picture = "GER_map"
+
+    trigger = {
+		OR = {
+			tag = GER
+			tag = BAV
+			tag = SGF
+		}
+		729 = { is_core = THIS }
+		NOT = { owns = 729 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+        name = "Oh well."
+		AUS_729 = { remove_core = THIS }
+    }
+}
+
+country_event = {
+    id = 155020
+    title = "Our claims in Italy"
+    desc = "We have lost our Italian lands. With them having little to no German population in them, our claims are dubious at best. We have to accept that we lost them."
+    picture = "GER_map"
+
+    trigger = {
+		OR = {
+			tag = GER
+			tag = BAV
+			tag = SGF
+		}
+		736 = { is_core = THIS }
+		NOT = { owns = 736 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+        name = "Oh well."
+		AUS_736 = { remove_core = THIS }
+    }
+}

@@ -1,0 +1,6 @@
+trade_goods = tobacco
+life_rating = 35
+owner = AYL
+controller = AYL
+add_core = AYL
+add_core = FLU

@@ -1,0 +1,8 @@
+owner = SAH
+controller = SAH
+add_core = SAH
+trade_goods = cotton
+life_rating = 35
+naval_base = 1
+fort = 1
+terrain = cartagenacol

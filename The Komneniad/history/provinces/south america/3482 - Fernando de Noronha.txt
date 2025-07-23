@@ -1,0 +1,6 @@
+owner = KIB
+controller = KIB
+trade_goods = fish
+life_rating = 35
+terrain = noronha
+add_core = KIB

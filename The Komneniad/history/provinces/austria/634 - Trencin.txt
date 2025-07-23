@@ -1,0 +1,9 @@
+add_core = SLV
+add_core = HUN
+trade_goods = grain
+life_rating = 35
+terrain = forest_hills
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+add_core = BOH

@@ -1,0 +1,6 @@
+owner = SAH
+controller = SAH
+add_core = SAH
+trade_goods = cattle
+life_rating = 35
+terrain = bogota

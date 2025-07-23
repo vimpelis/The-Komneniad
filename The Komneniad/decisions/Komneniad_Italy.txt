@@ -1,0 +1,255 @@
+political_decisions = {
+	#decision summons event, option a is to accept griko and lose prestige, option b is to slowly get them outta here (5 infamy total)
+	ITA_magna_graecia = {
+		picture = gtfo
+		potential = {
+			tag = ITA
+			OR = {
+				owns = 754
+				owns = 758
+			}
+			NOT = { has_country_flag = ITA_magna_graecia }
+		}
+		allow = {
+			war = no
+			OR = {
+				state_n_government = 1
+				year = 1850
+			}
+			SIC_753 = { owned_by = ITA }
+		}
+		effect = {
+			add_accepted_culture = griko
+			set_country_flag = ITA_magna_graecia
+			clr_global_flag = naples_rename_catalan
+			clr_global_flag = naples_rename_greek
+			clr_global_flag = naples_rename_albanian
+			clr_global_flag = naples_rename_french
+			clr_global_flag = naples_rename_spanish
+			clr_global_flag = puglia_rename_catalan
+			clr_global_flag = puglia_rename_albanian
+			clr_global_flag = puglia_rename_greek
+			clr_global_flag = puglia_rename_french
+			clr_global_flag = puglia_rename_spanish
+			756 = {
+				change_province_name = "Bari"
+				state_scope = { change_region_name = "Longobardia" }
+			}
+			758 = { change_province_name = "Brindisi" }
+			759 = {	change_province_name = "Reggio di Calabria"	}
+			760 = { change_province_name = "Catanzaro" }
+			761 = { change_province_name = "Potenza" }
+			all_core = {
+				remove_core = GRE
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	italia_irredenta = {
+		picture = italia_irredenta
+		potential = {
+			OR = {
+				tag = ITA
+				tag = LTN
+			}
+			NOT = { 729 = { is_core = THIS } }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 12
+			AUS_729 = { add_core = THIS }
+			AUS_736 = { add_core = THIS }
+			473 = { add_core = THIS }
+			set_country_flag = italia_irredenta
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.5
+            }
+		}
+	}
+	
+	ITA_claim_africa = {
+		picture = tunisia_map
+		potential = {
+			tag = ITA
+			has_country_flag = italia_irredenta
+			NOT = { has_country_flag = ITA_claim_africa }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			owns = 854
+		}
+		effect = {
+			badboy = 6
+			1725 = { add_core = ITA }
+			1726 = { add_core = ITA }
+			1728 = { add_core = ITA }
+			1731 = { add_core = ITA }
+			set_country_flag = ITA_claim_africa
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.75
+            }
+		}
+	}
+	
+	LOM_invite_lucca = {
+		picture = tuscany
+		potential = {
+			tag = LOM
+			exists = LUC
+			NOT = { has_country_flag = LOM_invite_lucca }
+		}
+		allow = {
+			OR = {
+				relation = {
+					who = LUC
+					value = 130
+				}
+				AND = {
+					ai = yes
+					month = 5
+				}
+			}
+		}
+		effect = {
+			LUC = { country_event = 170001 }
+			set_country_flag = LOM_invite_lucca
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	LOM_punish_tuscany = {
+		picture = tuscany
+		potential = {
+			tag = LOM
+			has_country_flag = LOM_expansion_unlocked
+			NOT = { has_country_flag = LOM_punish_tuscany }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			OR = {
+				muzzle_loaded_rifles = 1
+				ideological_thought = 1
+			}
+		}
+		effect = {
+			badboy = 8
+			TUS_744 = { add_core = THIS }
+			set_country_flag = LOM_punish_tuscany
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	LOM_march_on_rome = {
+		picture = the_roman_question
+		potential = {
+			tag = LOM
+			has_country_flag = LOM_punish_tuscany
+			NOT = { has_country_flag = LOM_march_on_rome }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			OR = {
+				state_n_government = 1
+				PAP = { government = radical_republic }
+			}
+		}
+		effect = {
+			badboy = 12
+			PAP = { all_core = { add_core = THIS } }
+			set_country_flag = LOM_march_on_rome
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.5
+            }
+		}
+	}
+	
+	komneniad_form_italy = {
+		picture = italian_islands
+		potential = {
+			is_culture_group = italian
+			NOT = { exists = ITA }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			726 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+			720 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+			744 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+			749 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = ITA
+			capital = 749
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					exists = yes
+					NOT = { tag = THIS }
+				}
+				country_event = 11101
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

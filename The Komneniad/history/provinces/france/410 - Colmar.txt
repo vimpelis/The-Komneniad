@@ -1,0 +1,8 @@
+owner = ALS
+controller = ALS
+add_core = ALS
+add_core = RHI
+trade_goods = coal
+life_rating = 31
+terrain = colmar
+add_core = GER

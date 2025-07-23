@@ -1,0 +1,9 @@
+army = {
+    name = "1st Army"
+    location = 355
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 355
+    }
+}

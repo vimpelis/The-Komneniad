@@ -1,0 +1,6 @@
+owner = MGT
+controller = MGT
+trade_goods = wool
+life_rating = 35
+terrain = dryhills
+add_core = MGT

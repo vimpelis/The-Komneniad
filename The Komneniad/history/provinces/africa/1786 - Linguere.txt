@@ -1,0 +1,7 @@
+owner = FLC
+controller = FLC
+add_core = FLC
+add_core = WOL
+trade_goods = grain
+terrain = semidesert
+life_rating = 35 

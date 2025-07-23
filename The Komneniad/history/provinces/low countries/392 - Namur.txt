@@ -1,0 +1,7 @@
+owner = BRB
+controller = BRB
+add_core = BRB
+trade_goods = iron
+terrain = namur
+life_rating = 35
+add_core = WLL

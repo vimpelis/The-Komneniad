@@ -1,0 +1,4 @@
+add_core = ABU
+add_core = OMA
+trade_goods = wool
+life_rating = 20

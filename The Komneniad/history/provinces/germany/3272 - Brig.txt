@@ -1,0 +1,7 @@
+owner = BNE
+controller = BNE
+add_core = BNE
+trade_goods = wool
+life_rating = 32
+terrain = brig
+add_core = SWI

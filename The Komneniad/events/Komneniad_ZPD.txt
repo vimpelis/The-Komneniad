@@ -1,0 +1,40 @@
+#Starting event
+country_event = {
+    id = 154000
+    title = "A State That Hates Itself"
+    desc = "154000DESC"
+    picture = "ZPD"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A bomb to be defused."
+    }
+}
+
+#PRU dead
+country_event = {
+    id = 154001
+    title = "Wedding to the Sea"
+    desc = "154001DESC"
+    picture = "ZPD"
+
+    trigger = {
+		tag = ZPD
+		has_country_flag = ZPD_annex_prussia
+		owns = 690
+		NOT = { exists = PRU }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Beautiful."
+		prestige = 10
+		PRU = { all_core = { remove_core = GER } }
+    }
+}

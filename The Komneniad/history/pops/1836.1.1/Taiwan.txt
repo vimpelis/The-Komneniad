@@ -1,0 +1,394 @@
+#Taiwan Region (2980000)
+#under the rule of China in 1836
+#Tainan (1452000/363000 POPS) #now part of Taiwan
+1485 = {
+    aristocrats = {
+        culture = han_chinese
+        religion = confucian
+        size = 46
+    }
+
+    clergymen = {
+        culture = han_chinese
+        religion = confucian
+        size = 40
+    }
+
+    artisans = {
+        culture = han_chinese
+        religion = confucian
+        size = 198
+    }
+
+    soldiers = {
+        culture = han_chinese
+        religion = confucian
+        size = 1325
+    }
+
+    farmers = {
+        culture = han_chinese
+        religion = confucian
+        size = 3637
+    }
+
+    slaves = {
+        culture = han_chinese
+        religion = confucian
+        size = 600
+    }
+
+    aristocrats = {
+        culture = min
+        religion = mahayana
+        size = 3500
+    }
+
+    clergymen = {
+        culture = min
+        religion = mahayana
+        size = 2500
+    }
+
+    artisans = {
+        culture = min
+        religion = mahayana
+        size = 10000
+    }
+
+    artisans = {
+        culture = min
+        religion = mahayana
+        size = 2500
+    }
+
+    soldiers = {
+        culture = min
+        religion = mahayana
+        size = 2500
+    }
+
+    farmers = {
+        culture = min
+        religion = mahayana
+        size = 125000
+    }
+
+    farmers = {
+        culture = hakka
+        religion = mahayana
+        size = 39775
+    }
+
+    serfs = {
+        culture = hakka
+        religion = mahayana
+        size = 2000
+    }
+
+    aristocrats = {
+        culture = min
+        religion = confucian
+        size = 1479
+    }
+
+    clergymen = {
+        culture = min
+        religion = confucian
+        size = 1285
+    }
+
+    artisans = {
+        culture = min
+        religion = confucian
+        size = 6402
+    }
+
+    farmers = {
+        culture = min
+        religion = confucian
+        size = 117588
+    }
+
+    slaves = {
+        culture = min
+        religion = confucian
+        size = 19400
+    }
+}
+#Taitung (67k - 268k) #now part of Taiwan
+2562 = {
+    farmers = {
+        culture = asian_minor
+        religion = animist
+        size = 17000
+    }
+
+    slaves = {
+        culture = asian_minor
+        religion = animist
+        size = 20000
+    }
+
+    soldiers = {
+        culture = asian_minor
+        religion = animist
+        size = 5000
+    }
+
+    aristocrats = {
+        culture = asian_minor
+        religion = animist
+        size = 1000
+    }
+
+    aristocrats = {
+        culture = han_chinese
+        religion = confucian
+        size = 4
+    }
+
+    clergymen = {
+        culture = han_chinese
+        religion = confucian
+        size = 3
+    }
+
+    artisans = {
+        culture = han_chinese
+        religion = confucian
+        size = 22
+    }
+
+    soldiers = {
+        culture = han_chinese
+        religion = confucian
+        size = 1300
+    }
+
+    farmers = {
+        culture = min
+        religion = mahayana
+        size = 12925
+    }
+
+    aristocrats = {
+        culture = min
+        religion = confucian
+        size = 146
+    }
+
+    clergymen = {
+        culture = min
+        religion = confucian
+        size = 97
+    }
+
+    artisans = {
+        culture = min
+        religion = confucian
+        size = 728
+    }
+}
+#Penghu (15K - 60 K POPS) #anglo_saxon trade post 1836 - old cocos island
+2406 = {
+    aristocrats = {
+        culture = han_chinese
+        religion = confucian
+        size = 4
+    }
+
+    clergymen = {
+        culture = han_chinese
+        religion = confucian
+        size = 3
+    }
+
+    artisans = {
+        culture = han_chinese
+        religion = confucian
+        size = 22
+    }
+
+    soldiers = {
+        culture = han_chinese
+        religion = confucian
+        size = 1300
+    }
+
+    farmers = {
+        culture = min
+        religion = mahayana
+        size = 12925
+    }
+
+    aristocrats = {
+        culture = min
+        religion = confucian
+        size = 146
+    }
+
+    clergymen = {
+        culture = min
+        religion = confucian
+        size = 97
+    }
+
+    artisans = {
+        culture = min
+        religion = confucian
+        size = 728
+    }
+}
+#Taipei (1452000/363000 POPS) formerly 2681 - Kikkiaki in Russia.txt
+2681 = {
+    aristocrats = {
+        culture = han_chinese
+        religion = confucian
+        size = 45
+    }
+
+    bureaucrats = {
+        culture = han_chinese
+        religion = confucian
+        size = 12
+    }
+
+    officers = {
+        culture = han_chinese
+        religion = confucian
+        size = 22
+    }
+
+    clergymen = {
+        culture = han_chinese
+        religion = confucian
+        size = 37
+    }
+
+    artisans = {
+        culture = han_chinese
+        religion = confucian
+        size = 184
+    }
+
+    soldiers = {
+        culture = han_chinese
+        religion = confucian
+        size = 1250
+    }
+
+    farmers = {
+        culture = han_chinese
+        religion = confucian
+        size = 2119
+    }
+
+    aristocrats = {
+        culture = min
+        religion = mahayana
+        size = 3000
+    }
+
+    clergymen = {
+        culture = min
+        religion = mahayana
+        size = 2400
+    }
+
+    artisans = {
+        culture = min
+        religion = mahayana
+        size = 10000
+    }
+
+    artisans = {
+        culture = min
+        religion = mahayana
+        size = 2000
+    }
+
+    soldiers = {
+        culture = min
+        religion = mahayana
+        size = 2400
+    }
+
+    farmers = {
+        culture = min
+        religion = mahayana
+        size = 200200
+    }
+
+    aristocrats = {
+        culture = hakka
+        religion = mahayana
+        size = 1625
+    }
+
+    clergymen = {
+        culture = hakka
+        religion = mahayana
+        size = 1325
+    }
+
+    artisans = {
+        culture = hakka
+        religion = mahayana
+        size = 6600
+    }
+
+    soldiers = {
+        culture = hakka
+        religion = mahayana
+        size = 3025
+    }
+
+    farmers = {
+        culture = hakka
+        religion = mahayana
+        size = 49775
+    }
+
+    serfs = {
+        culture = hakka
+        religion = mahayana
+        size = 10000
+    }
+
+    aristocrats = {
+        culture = min
+        religion = confucian
+        size = 1455
+    }
+
+    bureaucrats = {
+        culture = min
+        religion = confucian
+        size = 388
+    }
+
+    officers = {
+        culture = min
+        religion = confucian
+        size = 703
+    }
+
+    clergymen = {
+        culture = min
+        religion = confucian
+        size = 1188
+    }
+
+    artisans = {
+        culture = min
+        religion = confucian
+        size = 5966
+    }
+
+    farmers = {
+        culture = min
+        religion = confucian
+        size = 68506
+    }
+}

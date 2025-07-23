@@ -1,0 +1,8 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+add_core = ALD
+trade_goods = wool
+life_rating = 35
+terrain = dry_mountains
+add_core = ALD

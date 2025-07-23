@@ -1,0 +1,9 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = SER
+trade_goods = grain
+life_rating = 35
+terrain = nis
+fort = 1
+add_core = BUL

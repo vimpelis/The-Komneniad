@@ -1,0 +1,9 @@
+owner = MGT
+controller = MGT
+add_core = HRT
+trade_goods = wool
+terrain = dryhills
+life_rating = 35
+add_core = MGT
+add_core = AFG
+add_core = KHR

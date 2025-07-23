@@ -1,0 +1,6 @@
+owner = HLL
+controller = HLL
+add_core = HLL
+trade_goods = grain
+life_rating = 35
+terrain = utrecht

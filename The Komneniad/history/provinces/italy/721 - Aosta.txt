@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = iron
+life_rating = 35
+terrain = aosta
+add_core = SVY

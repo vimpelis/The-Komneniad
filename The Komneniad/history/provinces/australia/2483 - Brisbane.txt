@@ -1,0 +1,6 @@
+add_core = AST
+trade_goods = cattle
+life_rating = 34
+terrain = brisbane
+owner = AST
+controller = AST

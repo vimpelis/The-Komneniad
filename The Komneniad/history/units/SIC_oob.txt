@@ -1,0 +1,75 @@
+army = {
+    name = "1st Army"
+    location = 762
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 762
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 764
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 765
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 766
+    }
+}
+
+army = {
+    name = "Army of the Kingdom of Africa"
+    location = 1725
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1725
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 762
+
+    ship = {
+        name = "Regina Isabella"
+        type = frigate
+    }
+
+    ship = {
+        name = "Principe Carlo"
+        type = frigate
+    }
+
+    ship = {
+        name = "Partenope"
+        type = frigate
+    }
+
+    ship = {
+        name = "Caracciolo"
+        type = frigate
+    }
+
+    ship = {
+        name = "1a Squadrone Transporti"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "2a Squadrone Transporti"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "3a Squadrone Transporti"
+        type = clipper_transport
+    }
+
+}

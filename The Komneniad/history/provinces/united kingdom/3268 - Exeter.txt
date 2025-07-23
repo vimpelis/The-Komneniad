@@ -1,0 +1,7 @@
+owner = DAN
+controller = DAN
+add_core = ENG
+trade_goods = iron
+life_rating = 35
+terrain = exeter
+add_core = DAN

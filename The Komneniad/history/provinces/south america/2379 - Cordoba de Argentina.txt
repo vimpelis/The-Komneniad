@@ -1,0 +1,6 @@
+owner = ATA
+controller = ATA
+trade_goods = grain
+life_rating = 37
+terrain = cordoba
+add_core = ATA

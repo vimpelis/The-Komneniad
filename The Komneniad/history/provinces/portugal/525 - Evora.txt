@@ -1,0 +1,6 @@
+owner = ADU
+controller = ADU
+add_core = ADU
+trade_goods = grain
+life_rating = 35
+terrain = evora

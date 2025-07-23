@@ -1,0 +1,6 @@
+add_core = AST
+trade_goods = timber
+life_rating = 31
+terrain = tasmania
+owner = AST
+controller = AST

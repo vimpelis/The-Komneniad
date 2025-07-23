@@ -1,0 +1,8 @@
+add_core = POL
+trade_goods = grain
+life_rating = 40
+terrain = pozan
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+state_building = { level = 1 building = liquor_distillery upgrade = yes } 

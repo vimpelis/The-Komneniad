@@ -1,0 +1,6 @@
+owner = KIB
+trade_goods = tobacco
+terrain = dryhills
+life_rating = 20
+controller = KIB
+add_core = KIB

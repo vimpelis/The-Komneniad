@@ -1,0 +1,8 @@
+owner = BUR
+controller = BUR
+add_core = SIA
+trade_goods = grain
+life_rating = 42
+terrain = bangkok
+naval_base = 1
+add_core = BUR

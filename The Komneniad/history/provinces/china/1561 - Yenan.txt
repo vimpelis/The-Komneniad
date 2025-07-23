@@ -1,0 +1,7 @@
+owner = SXI
+controller = SXI
+add_core = SXI
+trade_goods = coal
+life_rating = 32
+add_core = CHI
+fort = 1

@@ -1,0 +1,7 @@
+add_core = POL
+trade_goods = grain
+life_rating = 40
+terrain = bydgosczc
+owner = ZPD
+controller = ZPD
+add_core = ZPD

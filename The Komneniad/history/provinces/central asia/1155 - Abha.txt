@@ -1,0 +1,7 @@
+owner = ARA
+controller = ARA
+trade_goods = coffee
+terrain = semi_desert_mountains
+life_rating = 32
+add_core = HDJ
+add_core = ARA

@@ -1,0 +1,6 @@
+owner = CLT
+controller = CLT
+trade_goods = timber
+life_rating = 10
+colonial = 2
+add_core = ILD

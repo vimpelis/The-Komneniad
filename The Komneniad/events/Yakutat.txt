@@ -1,0 +1,516 @@
+country_event = {
+
+    id = 31718
+    title = "Construction of the Urgell Channels"
+    desc = "Work on the Channel has begun, it is however hitting a snag in gathering funds for the Túnel of Montclar. We must set a budget for the construction."
+    picture = "urgell_channels"
+	fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = "Invest more originally planned. §R(Pay or owe 40,000¤)§W"
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 40000 } }
+            owner = { treasury = -40000 }
+        }
+        random_list = {
+            50 = { add_country_modifier = { name = urgell_channels_construction duration = 950 } }
+            40 = { add_country_modifier = { name = urgell_channels_construction duration = 1130 } }
+            10 = { add_country_modifier = { name = urgell_channels_construction duration = 1300 } }
+        }
+
+        ai_chance = {
+            factor = 40
+        }
+    }
+
+    option = {
+        name = "Invest what was planned. §R(Pay or owe 30,000¤)§W"
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 30000 } }
+            owner = { treasury = -30000 }
+        }
+        random_list = {
+            30 = { add_country_modifier = { name = urgell_channels_construction duration = 950 } }
+            50 = { add_country_modifier = { name = urgell_channels_construction duration = 1130 } }
+            20 = { add_country_modifier = { name = urgell_channels_construction duration = 1300 } }
+        }
+
+        ai_chance = {
+            factor = 40
+        }
+    }
+	option = {
+        name = "Invest the minimum possible. §R(Pay or owe 20,000¤)§W"
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 20000 } }
+            owner = { treasury = -20000 }
+        }
+        random_list = {
+            30 = { add_country_modifier = { name = urgell_channels_construction duration = 950 } }
+            30 = { add_country_modifier = { name = urgell_channels_construction duration = 1130 } }
+            40 = { add_country_modifier = { name = urgell_channels_construction duration = 1300 } }
+        }
+
+        ai_chance = {
+            factor = 20
+        }
+    }
+}
+
+country_event = {
+    id = 31719
+    title = "The Urgell Channels Are Finished"
+    desc = "The Canal System in the Catalan region of Urgell is finally finished. 6.000 workers and slaves worked on the construction, 1.000 of which died of cholera. The surrounding lands are now irrigable, allowing their agricultural cultivation."
+    picture = "urgell_channels"
+    fire_only_once = yes
+
+    trigger = {
+        500 = { is_core = THIS }
+        owns = 500
+        NOT = {
+			THIS = { has_country_modifier = urgell_channels_construction }
+		}
+		has_global_flag = urgell_channel_built
+    }
+
+    mean_time_to_happen = { days = 5 }
+
+    option = {
+        name = "Visque!" #Catalan Occidental pronunciation trolling
+        set_global_flag = urgell_channel_was_built
+        prestige = 5
+		500 = {
+			trade_goods = grain
+			add_province_modifier = { name = urgell_channels_built duration = -1 }
+        }
+
+		ai_chance = {
+            factor = 100
+        }
+    }
+}
+
+country_event = {
+	id = 16121912
+	picture = "thames_tunnel"
+	title = "EVTNAME16121912"
+    desc = "EVTDESC16121912"
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 300
+		year = 1843
+		war = no
+	}
+
+	mean_time_to_happen = { months = 2 }
+
+	option = {
+		name = "Excellent."
+		prestige = 5
+		300 = { infrastructure = 1 }
+		any_pop = { limit = { location = { province_id = 300 } } consciousness = 1 }
+	}
+}
+
+#Founding of the Félibritge Movement
+country_event = {
+    id = 18481983
+    title = "EVTNAME18481983"
+    desc = "EVTDESC18481983"
+    picture = "felibritge_occitania"
+
+    fire_only_once = yes
+
+    trigger = {
+		year = 1854
+		owns = 461
+		NOT = { tag = OCC }
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+
+    option = {
+        name = "Shut it down immediately!"
+		any_pop = {
+			limit = {
+				has_pop_culture = occitan
+			}
+			consciousness = 3
+			militancy = 4
+        }
+        ai_chance = { factor = 50 }
+    }
+
+    option = {
+        name = "Let it be."
+        prestige = -2
+		any_pop = {
+			limit = {
+				has_pop_culture = occitan
+			}
+			consciousness = 2
+			militancy = -2
+        }
+        ai_chance = { factor = 50 }
+    }
+
+}
+
+country_event = {
+    id = 18481988
+    title = "The Montparnasse Derailment"
+    desc = "EVTDESC18481988"
+    picture = "montparnasse_derailment"
+
+    fire_only_once = yes
+
+    trigger = {
+		year = 1895
+		primary_culture = french
+		owns = 425
+    }
+
+    mean_time_to_happen = { months = 10 }
+
+
+    option = {
+        name = "How tragic."
+		any_pop = {
+			limit = {
+				location = { province_id = 425 }
+			}
+			consciousness = 1
+        }
+    }
+
+}
+country_event = {
+    id = 18481989
+    title = "The Courrières Mine Disaster"
+    desc = "EVTDESC18481989"
+    picture = "Courrieres_Disaster"
+
+    fire_only_once = yes
+
+    trigger = {
+		year = 1906
+		owns = 401
+		month = 2
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+
+    option = {
+        name = "How tragic."
+		any_owned = {
+            limit = { has_pop_type = labourers trade_goods = coal }
+            labourers = { consciousness = 3 }
+        }
+		401 = { labourers = { reduce_pop = 0.95 } }
+    }
+
+}
+country_event = {
+	id = 18481990
+	picture = "first_lemans"
+	title = "The first '24 Hours of Le Mans'"
+    desc = "LEMANSSTARTS"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		year = 1923
+		month = 4
+		owns = 436
+	}
+
+	mean_time_to_happen = { days = 27 }
+
+	option = {
+		name = "Vive Chenard-Walcker!"
+		prestige = 5
+	}
+}
+country_event = {
+    id = 18482233
+    title = "ANIMETITLE"
+    desc = "ANIMEDESC"
+    picture = "anime"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1676
+		year = 1917
+	}
+
+	mean_time_to_happen = { days = 6 }
+
+	option = {
+		name = "Surely it's just another fad..."
+        prestige = 5
+	}
+	option = {
+		name = "Ban the works!"
+        prestige = -5
+		set_country_flag = anime_outlawed
+	}
+}
+
+country_event = {
+    id = 18482234
+    title = "Kurasu Esu"
+    desc = "KURASUESU"
+    picture = "class_s"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1676
+		year = 1930
+		NOT = { has_country_flag = anime_outlawed }
+	}
+
+	mean_time_to_happen = { days = 6 }
+
+	option = {
+		name = "Ban the works."
+        any_pop = {
+			scaled_consciousness = {
+				factor = -2
+				ideology = fascist
+            }
+			scaled_consciousness = {
+				factor = -1.5
+				ideology = reactionary
+            }
+			scaled_consciousness = {
+				factor = -1
+				ideology = conservative
+            }
+			scaled_consciousness = {
+				factor = 1
+				ideology = liberal
+            }
+			scaled_consciousness = {
+				factor = 2
+				ideology = radical
+            }
+			scaled_consciousness = {
+				factor = 1.5
+				ideology = socialist
+            }
+		}
+        ai_chance = {
+            factor = 0
+        }
+	}
+
+	option = {
+		name = "Allow publishing to continue."
+		plurality = 1
+        any_pop = {
+			scaled_consciousness = {
+				factor = 4
+				ideology = fascist
+            }
+			scaled_consciousness = {
+				factor = 3
+				ideology = reactionary
+            }
+			scaled_consciousness = {
+				factor = 2
+				ideology = conservative
+            }
+		}
+
+        ai_chance = {
+            factor = 100
+        }
+	}
+}
+country_event = {
+    id = 18482293
+    title = "Der Rote Kampfflieger"
+    desc = "REDBARON"
+    picture = "red_baron"
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		year = 1910
+		NOT = { year = 1920 }
+		great_wars_enabled = yes
+		any_greater_power = { war_with = THIS }
+		aeronautics = 1
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+    option = {
+		name = "Long live the king of the sky!"
+		war_exhaustion = -5
+	}
+}
+country_event = {
+    id = 18482296
+    title = "The Syllabus of Errors"
+    desc = "SYLLABUSOFERRORS"
+    picture = "syllabus_errors"
+	fire_only_once = yes
+
+	trigger = {
+        tag = PAP
+		year = 1864
+	}
+
+	mean_time_to_happen = { days = 3 }
+
+    option = {
+		name = "SYLLABUSOPT"
+		any_country = { any_pop = {
+			limit = {
+				has_pop_religion = catholic
+			}
+			consciousness = 1
+		} }
+	}
+}
+country_event = {
+    id = 18482323
+    title = "The Vithkuqi Alphabet"
+    desc = "VITHKUQIALPHABET"
+    picture = "vithkuqi"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 849
+		year = 1844
+		month = 3
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+    option = {
+		name = "The Albanian alphabet... a marvel to behold."
+		any_pop = { limit = { has_pop_culture = albanian } consciousness = 1 }
+	}
+}
+country_event = {
+    id = 18482326
+    title = "The Zeppelin LZ 1"
+    desc = "ZEPPELINLZONE"
+    picture = "zeppelin_lzone"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 588
+		year = 1900
+		month = 6
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+    option = {
+		name = "ZEPPELINLZONEOPT"
+		any_pop = { limit = { location = { province_id = 588 } } consciousness = -1 }
+		prestige = 5
+	}
+}
+country_event = {
+    id = 18482338
+    title = "The Fortress of Ghat"
+    desc = "GHATCONQUEST"
+    picture = "ghat_fort"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 1741
+		year = 1875
+		month = 2
+		3668 = { empty = yes }
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+    option = {
+		name = "Hurray!"
+		3668 = { secede_province = THIS any_pop = { literacy = -0.99 } fort = 1 }
+		3394 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		3395 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+	}
+}
+#which edgelord at gfm gave this event such an id
+country_event = {
+	id = 1488
+	title = "We're no strangers to love"
+	desc = "RICKROLL"
+	picture = "rick_astley"
+	is_triggered_only = yes
+	option = {
+		name = "Never gonna make you cry, never gonna say goodbye, never gonna tell a lie and hurt you."
+		# Audax Validator "." Ignore_NEXT
+		add_country_modifier = {
+			# Audax Validator "." Ignore_NEXT
+			name = rick_rolled duration = -1
+		}
+	}
+}

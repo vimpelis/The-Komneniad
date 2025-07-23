@@ -1,0 +1,220 @@
+alliance = {
+    first = FRA
+    second = SPA
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = BRB
+    second = WES
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = WES
+    second = FRI
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = ZPD
+    second = LIT
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = DEN
+    second = DAN
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = BYZ
+    second = CIR
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = SIE
+    second = MOL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = SIE
+    second = WAL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = WAL
+    second = MOL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = CHK
+    second = XAN
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = GNG
+    second = FJN
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+#Germany
+alliance = {
+    first = BAV
+    second = WUR
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = BAD
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = SWI
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = HES
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = HEK
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = FRM
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = ALS
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = THU
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = BRA
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = ANH
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = MAG
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = MEC
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = MST
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = WLD
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = LIP
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = FRK
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = ZPD
+    second = SAX
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = ZPD
+    second = BRN
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = ZPD
+    second = STT
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = ZPD
+    second = WLG
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = BRB
+    second = OLD
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = AYL
+    second = CAL
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = ATA
+    second = AST
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}

@@ -1,0 +1,8 @@
+owner = HUI
+controller = HUI
+add_core = HUI
+trade_goods = tea
+life_rating = 32
+naval_base = 1
+terrain = urban
+add_core = CHI

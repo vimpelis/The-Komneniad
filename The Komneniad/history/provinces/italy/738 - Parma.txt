@@ -1,0 +1,8 @@
+owner = LOM
+controller = LOM
+add_core = LOM
+add_core = ITA
+add_core = PAR
+trade_goods = fruit
+life_rating = 35
+terrain = parma

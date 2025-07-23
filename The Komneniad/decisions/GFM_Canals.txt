@@ -1,0 +1,314 @@
+political_decisions = {
+    build_kiel_canal = {
+        picture = build_kiel_canal
+        news = yes
+        news_desc_long = "kiel_canal_NEWS_LONG"
+        news_desc_medium = "kiel_canal_NEWS_MEDIUM"
+        news_desc_short = "kiel_canal_NEWS_SHORT"
+
+        potential = {
+            NOT = { has_global_flag = kiel_under_construction }
+            NOT = { is_canal_enabled = 1 }
+            owns = 369
+            is_greater_power = yes
+            interchangeable_parts = 1
+			OR = {
+				ai = no
+				AND = {
+					invention = machine_tools
+					invention = nitroglycerin
+					iron_steamers = 1
+					money = 75000
+				}
+			}
+        }
+
+        allow = {
+            invention = machine_tools
+            invention = nitroglycerin
+            iron_steamers = 1
+            money = 75000
+        }
+        effect = {
+            set_global_flag = kiel_under_construction
+            369 = { secede_province = THIS }
+            country_event = 36976
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                war = yes
+            }
+        }
+    }
+
+    build_suez_canal = {
+        news = yes
+        news_desc_long = "suez_canal_NEWS_LONG"
+        news_desc_medium = "suez_canal_NEWS_MEDIUM"
+        news_desc_short = "suez_canal_NEWS_SHORT"
+
+        picture = suezcanal
+        potential = {
+            NOT = { is_canal_enabled = 2 }
+            NOT = { has_global_flag = suez_canal_built }
+            is_greater_power = yes
+            OR = {
+                1755 = { owner = { in_sphere = THIS } }
+                AND = {
+                    total_amount_of_ships = 75
+                    1755 = { owner = { ai = yes civilized = no part_of_sphere = no } }
+                }
+                owns = 1755
+            }
+			interchangeable_parts = 1
+        }
+
+        allow = {
+            OR = {
+                AND = {
+                    invention = machine_tools
+                    invention = nitroglycerin
+                    iron_steamers = 1
+                    money = 250000
+                }
+                AND = {
+                    year = 1859
+                    ai = yes
+                }
+            }
+        }
+
+        effect = {
+            set_global_flag = suez_canal_built
+            random_country = {
+                limit = {
+                    NOT = { tag = THIS }
+                    owns = 1755
+                }
+                treasury = 75000
+            }
+            1755 = { secede_province = THIS add_core = THIS }
+            random_owned = { limit = { exists = EGY } owner = { diplomatic_influence = { who = EGY value = 25 } } }
+            country_event = 36970
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                war = yes
+            }
+        }
+    }
+
+    build_panama_canal = {
+        picture = build_panama_canal
+        news = yes
+        news_desc_long = "panama_canal_NEWS_LONG"
+        news_desc_medium = "panama_canal_NEWS_MEDIUM"
+        news_desc_short = "panama_canal_NEWS_SHORT"
+        potential = {
+            NOT = { has_global_flag = panama_under_construction }
+            NOT = { is_canal_enabled = 3 }
+            is_greater_power = yes
+            interchangeable_parts = 1
+        }
+        allow = {
+            OR = {
+                1723 = { owner = { in_sphere = THIS } }
+                owns = 1723
+            }
+            invention = machine_tools
+            invention = nitroglycerin
+            iron_steamers = 1
+            invention = prophylaxis_against_malaria
+            money = 250000
+        }
+        effect = {
+            random_country = {
+                limit = {
+                    NOT = { tag = THIS }
+                    owns = 1723
+                }
+                treasury = 50000
+            }
+            1723 = { secede_province = THIS add_core = THIS }
+            country_event = 36978
+            set_global_flag = panama_under_construction
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                war = yes
+            }
+        }
+    }
+	
+	build_kra_canal = {
+        picture = kracanal
+        potential = {
+			ai = no
+			any_owned_province = {
+				OR = {
+					continent = asia
+					continent = east_indies
+					continent = indochina
+				}
+			}
+            year = 1855
+			num_of_ports = 3
+            NOT = { owns = 1384 }
+            NOT = { 1384 = { owner = { in_sphere = THIS } } }
+            NOT = { is_canal_enabled = 9 }
+            NOT = { has_global_flag = kra_canal_built }
+            is_greater_power = yes
+        }
+
+        allow = {
+			invention = machine_tools
+            invention = nitroglycerin
+            iron_steamers = 1
+            money = 4000000
+            year = 1862
+            total_amount_of_ships = 75
+            OR = {
+                1352 = { owner = { in_sphere = THIS } }
+                owns = 1352
+            }
+        }
+        effect = {
+            set_global_flag = kra_canal_built
+            random_country = {
+                limit = {
+                    NOT = { tag = THIS }
+                    owns = 1352
+                }
+                treasury = 1000000
+            }
+			random_owned = {
+				limit = {
+					owner = {
+						SIA = { owns = 1352 }
+					}
+				}
+				owner = {
+					SIA = { country_event = 123529 }
+				}
+			}
+            1352 = { secede_province = THIS add_core = THIS }
+            random_owned = { limit = { exists = SIA } owner = { diplomatic_influence = { who = SIA value = 25 } } }
+            country_event = 123528
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                war = yes
+            }
+        }
+    }
+	
+    build_white_canal = {
+        picture = white_sea_canal
+        potential = {
+            year = 1890
+            owns = 988
+            NOT = { is_canal_enabled = 11 }
+            NOT = { has_global_flag = white_canal_built }
+            is_greater_power = yes
+			OR = {
+				ai = no
+				AND = {
+                    year = 1920
+                    ai = yes
+                }
+			}
+			OR = {
+				ai = no
+				AND = {
+					invention = machine_tools
+					invention = nitroglycerin
+					iron_steamers = 1
+					money = 4000000
+					year = 1900
+				}
+			}
+        }
+
+        allow = {
+            invention = machine_tools
+            invention = nitroglycerin
+            iron_steamers = 1
+            money = 4000000
+            year = 1900
+        }
+        effect = {
+            set_global_flag = white_canal_built
+            country_event = 123531
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                war = yes
+            }
+        }
+    }
+
+    build_chunnel = {
+        picture = chunnel
+        potential = {
+            year = 1860
+            OR = {
+                owns = 3314
+                owns = 301
+            }
+            NOT = { is_canal_enabled = 13 }
+            NOT = { has_global_flag = chunnel_built }
+            is_greater_power = yes
+			OR = {
+				ai = no
+				year = 1875
+			}
+			invention = nitroglycerin
+			OR = {
+				AND = {
+					year = 1875
+					invention = machine_tools
+					invention = nitroglycerin
+					iron_steamers = 1
+					money = 12000000
+				}
+				ai = no
+			}
+			OR = {
+				NOT = { has_global_flag = you_are_playing_mp }
+				AND = {
+					owns = 3314
+					owns = 301
+				}
+			}
+        }
+
+        allow = {
+            year = 1875
+            invention = machine_tools
+            invention = nitroglycerin
+            iron_steamers = 1
+            money = 12000000
+        }
+        effect = {
+            set_global_flag = chunnel_built
+            set_country_flag = chunnel_builder
+            country_event = 123536
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

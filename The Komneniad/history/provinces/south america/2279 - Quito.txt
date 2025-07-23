@@ -1,0 +1,6 @@
+owner = BIR
+controller = BIR
+add_core = BIR
+trade_goods = fruit
+life_rating = 39
+terrain = quito

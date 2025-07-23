@@ -1,0 +1,6 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = iron
+life_rating = 30
+add_core = SVY

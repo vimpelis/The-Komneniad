@@ -1,0 +1,7 @@
+owner = NBS
+controller = NBS
+trade_goods = fish
+life_rating = 35
+terrain = mazatlan
+add_core = MEX
+add_core = NBS

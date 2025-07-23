@@ -1,0 +1,23 @@
+country_event = {
+	id = 610
+	title = "Onamo 'namo!"
+    desc = "MON_610_DESC"
+    picture = "onamo_namo"
+	fire_only_once = yes
+
+    trigger = {
+		tag = BYZ
+		year = 1867
+		exists = yes
+		any_owned_province = { is_core = SER }
+	}
+	
+	mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+        name = "Curse them!"
+		any_pop = { limit = { has_pop_culture = serb } militancy = 1 consciousness = 2 }
+    }
+}

@@ -1,0 +1,6 @@
+owner = FRD
+controller = FRD
+trade_goods = fruit
+life_rating = 31
+terrain = jungle_mountains
+add_core = FRD

@@ -1,0 +1,43 @@
+LUC = {
+    value = -150
+}
+
+army = {
+    name = "1st Army"
+    location = 744
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = guard
+        home = 744
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = guard
+        home = 745
+    }
+	regiment = {
+        name = "2nd Infantry Regiment"
+        type = guard
+        home = 744
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 747
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 748
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 748
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 745
+    }
+}

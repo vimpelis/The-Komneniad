@@ -1,0 +1,797 @@
+#166000 
+
+#Starting event
+country_event = {
+    id = 166000
+    title = "Prince Morakot's Ambition"
+    desc = "166000DESC"
+    picture = "SIA_bangkok"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Bangkok, soon."
+    }
+}
+
+country_event = {
+    id = 166001
+    title = "Christian Missionaries arrive at Phimai"
+    desc = "166001DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		tag = PHI
+		year = 1838
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Cooperation is the future."
+		FRA = {
+			diplomatic_influence = {
+				who = PHI
+				value = 50
+			}
+		}
+		any_country = {
+			limit = {
+				tag = THIS
+				NOT = { has_country_modifier = western_influences }
+			}
+			add_country_modifier = {
+				name = western_influences
+				duration = 7300
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 166002
+    title = "European enroachment in Burma"
+    desc = "166002DESC"
+    picture = "SIA_bangkok"
+
+    trigger = {
+		tag = XAN
+		year = 1840
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Forwards!"
+		PHI = { country_event = 166003 } 
+		relation = {
+			who = BUR
+			value = -100
+		}
+		set_country_flag = XAN_raid
+    }
+}
+
+country_event = {
+    id = 166003
+    title = "Khi Menh of Vientiane attempts a raid at Burma"
+    desc = "166003DESC"
+    picture = "SIA_battle"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Enemy of my enemy is still my enemy."
+    }
+}
+
+country_event = {
+    id = 166004
+    title = "Khi Menh's Raid fails!"
+    desc = "166004DESC"
+    picture = "SIA_battle"
+
+    trigger = {
+		tag = XAN
+		has_country_flag = XAN_raid
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Disaster!"
+		prestige = -10
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		PHI = { country_event = 166005 }
+		CHK = { country_event = 166006 }
+		clr_country_flag = XAN_raid
+    }
+}
+
+country_event = {
+    id = 166005
+    title = "Khi Menh's Raid fails!"
+    desc = "166005DESC"
+    picture = "SIA_battle"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "This idiot should've learned from his father's mistakes."
+    }
+}
+
+country_event = {
+    id = 166006
+    title = "Interregnum in Vientiane"
+    desc = "166006DESC"
+    picture = "SIA_battle"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Sorry, 'friend'."
+		add_casus_belli = {
+			target = XAN
+			type = conquest
+			months = 12
+		}
+		XAN = {
+			add_casus_belli = {
+				target = CHK
+				type = conquest
+				months = 12
+			}
+		}
+		war = {
+			target = XAN
+			attacker_goal = {
+				casus_belli = conquest
+			}
+			defender_goal = {
+				casus_belli = conquest
+			}
+			call_ally = yes
+		}
+    }
+}
+
+country_event = {
+    id = 166007
+    title = "War in the East"
+    desc = "166007DESC"
+    picture = "SIA_battle"
+
+    trigger = {
+		tag = PHI
+		XAN = { war_with = CHK }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Time to strike!"
+		war = {
+			target = XAN
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+				country = PHI
+			}
+		}
+		war = {
+			target = CHK
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+				country = PHI
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 166008
+    title = "Fall of Vientiane"
+    desc = "166008DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		tag = PHI
+		war = no
+		owns = 1358
+		exists = XAN
+		truce_with = XAN
+		XAN = { is_vassal = no }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "One step closer to the reclamation."
+		badboy = 5
+		create_vassal = XAN
+    }
+}
+
+country_event = {
+    id = 166009
+    title = "Fall of Champassak"
+    desc = "166009DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		tag = PHI
+		war = no
+		owns = 1359
+		exists = CHK
+		truce_with = CHK
+		CHK = { is_vassal = no }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "One step closer to the reclamation."
+		badboy = 5
+		create_vassal = CHK
+    }
+}
+
+country_event = {
+    id = 166010
+    title = "Thai Activity in Isen"
+    desc = "166010DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		tag = FRA
+		owns = 1380
+		1359 = { owned_by = PHI }
+		1358 = { owned_by = PHI }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Let's send them a delegation."
+		prestige = 5
+		PHI = { country_event = 166011 }
+    }
+}
+
+country_event = {
+    id = 166011
+    title = "France offers Assistance"
+    desc = "166011DESC"
+    picture = "SIA_surrender"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Wonderful."
+		prestige = 10
+		years_of_research = 12
+		FRA = {
+			diplomatic_influence = {
+				who = PHI
+				value = 400
+			}
+			relation = {
+				who = PHI
+				value = 400
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 166012
+    title = "Restoration of Ayutthaya"
+    desc = "166012DESC"
+    picture = "SIA_bangkok"
+
+    trigger = {
+		tag = PHI
+		owns = 1346
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "A dream come true."
+		prestige = 10
+		change_tag = SIA
+		all_core = { remove_core = PHI }
+    }
+}
+
+####################BURMA####################
+country_event = {
+    id = 166013
+    title = "Fall of Mrauk U"
+    desc = "166013DESC"
+    picture = "SIA_battle"
+
+    trigger = {
+		tag = BUR
+		is_vassal = no
+		owns = 1345
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "A victory for the ages."
+		prestige = 15
+		ENG_1258 = { add_core = BUR }
+    }
+}
+
+country_event = {
+    id = 166014
+    title = "Burma is under attack!"
+    desc = "166014DESC"
+    picture = "SIA_battle"
+
+    trigger = {
+		tag = PHI
+		is_vassal = no
+		neighbour = BUR
+		OR = {
+			any_greater_power = { war_with = BUR }
+			BUR = { war_with = CHI }
+			BUR = { war_with = XIE }
+			BUR = { war_with = TUT }
+		}
+		all_core = { owned_by = THIS }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+
+    option = {
+        name = "We strike now!"
+		badboy = 10
+		SIA = { all_core = { add_core = THIS } }
+		war = {
+			target = BUR
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+				country = PHI
+			}
+		}
+		set_country_flag = PHI_reclaim_ayutthaya
+		ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+        }
+    }
+	
+	option = {
+        name = "We must bide our time."
+		prestige = -5
+		ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+####################CAMBODIA####################
+country_event = {
+    id = 166015
+    title = "Morakot proposes Partition of Cambodia"
+    desc = "166015DESC"
+    picture = "SIA_surrender"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "More land in Indochina is always good."
+		FROM = { country_event = 166016 }
+		badboy = 4
+		ai_chance = {
+            factor = 99
+            modifier = {
+                factor = 0
+                badboy = 0.84
+            }
+        }
+    }
+	
+	option = {
+        name = "Not interested, sorry."
+		FROM = { country_event = 166017 }
+		ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {
+    id = 166016
+    title = "Treaty of Saigon"
+    desc = "166016DESC"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A great deal."
+		badboy = 5
+		war = {
+			target = CAM
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			call_ally = yes
+		}
+		FRA = {
+			war = {
+				target = CAM
+				attacker_goal = {
+					casus_belli = establish_protectorate_casus_belli_no_infamy
+				}
+			}
+		}
+		set_global_flag = SIA_cambodia_accept
+    }
+}
+
+country_event = {
+    id = 166017
+    title = "The French refuse!"
+    desc = "166017DESC"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Well screw you too."
+		set_country_flag = SIA_cambodia_refuse
+    }
+}
+
+country_event = {
+    id = 166018
+    title = "Fall of Angkor"
+    desc = "166018DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		OR = {
+			tag = SIA
+			tag = PHI
+		}
+		war = no
+		OR = {
+			1364 = { owned_by = THIS }
+			1364 = { owned_by = FRA }
+		}
+		NOT = { exists = CAM }
+		has_global_flag = SIA_cambodia_accept
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Respect the treaty."
+		prestige = 5
+		1363 = { secede_province = FRA }
+		1368 = { secede_province = FRA }
+		any_owned = {
+			limit = {
+				region = DAI_1380
+			}
+			secede_province = FRA
+		}
+		FRA = { country_event = 166024 }
+    }
+}
+
+country_event = {
+    id = 166019
+    title = "Cambodia defeats Morakot"
+    desc = "166019DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		tag = FRA
+		exists = CAM
+		SIA = {
+			has_global_flag = SIA_cambodia_accept
+			war = no 
+			truce_with = CAM
+			NOT = { owns = 1364 }
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "I knew we shouldn't trust them!"
+		prestige = -5
+		relation = {
+			who = SIA
+			value = -50
+		}
+		relation = {
+			who = PHI
+			value = -50
+		}
+		clr_global_flag = SIA_cambodia_accept
+    }
+}
+
+country_event = {
+    id = 166020
+    title = "Cambodian National Identity"
+    desc = "166020DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		tag = CAM
+		is_vassal = no
+		owns = 1379
+		NOT = { owns = 1364 owns = 1365 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Embrace the Cham Identity"
+		prestige = -5
+		change_tag = CMP
+		SIA_1366 = { remove_core = CMP }
+		SIA_1358 = { remove_core = CMP }
+    }
+	
+	option = {
+        name = "We'll reclaim our lands, trust me!"
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = {
+    id = 166021
+    title = "France demands Laos!"
+    desc = "166021DESC"
+    picture = "SIA_surrender"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "...Fine, sign the treaty."
+		prestige = -10
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = DAI
+					is_core = LUA
+					is_core = CMP
+					region = LUA_1356
+					province_id = 1368
+					province_id = 1363
+				}
+				NOT = { province_id = 1360 }
+			}
+			secede_province = FRA
+			remove_core = SIA
+		}
+		remove_accepted_culture = lao
+		ai_chance = {
+            factor = 65
+        }
+    }
+	
+	option = {
+        name = "Come and take it!"
+		prestige = 5
+		badboy = 5
+		FRA = { country_event = 166022 }
+		ai_chance = {
+            factor = 35
+            modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 166022
+    title = "Siam refuses!"
+    desc = "166022DESC"
+    picture = "treaty"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Death it is then."
+		war = {
+			target = SIA
+			attacker_goal = {
+				casus_belli = demand_concession_casus_belli_no_infamy
+				state_province_id = 1362
+			}
+			attacker_goal = {
+				casus_belli = demand_concession_casus_belli_no_infamy
+				state_province_id = 1363
+			}
+		}
+		relation = {
+			who = SIA
+			value = -400
+		}
+		diplomatic_influence = {
+			who = SIA
+			value = -400
+		}
+		ai_chance = {
+            factor = 95
+        }
+    }
+	
+	option = {
+        name = "You know what, we can't fight them actually!.. Yeah..."
+		prestige = -15
+		relation = {
+			who = SIA
+			value = -200
+		}
+		diplomatic_influence = {
+			who = SIA
+			value = -200
+		}
+		any_pop = {
+			militancy = 1
+		}
+		ai_chance = {
+            factor = 5
+        }
+    }
+}
+
+country_event = {
+    id = 166023
+    title = "Ligor joins Siam"
+    desc = "166023DESC"
+    picture = "SIA_surrender"
+
+    trigger = {
+		tag = SIA
+		owns = 1353
+		LIG = {
+			exists = yes
+			is_vassal = no
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Good for them."
+		inherit = LIG
+    }
+}
+
+country_event = {
+    id = 166024
+    title = "Fall of Angkor"
+    desc = "166024DESC"
+    picture = "SIA_surrender"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Respect the treaty."
+		prestige = 5
+		any_owned = {
+			limit = {
+				is_core = CAM
+				NOT = { region = DAI_1380 }
+				NOT = { province_id = 1363 }
+				NOT = { province_id = 1368 }
+			}
+			secede_province = FROM
+		}
+    }
+}
+
+country_event = {
+    id = 166025
+    title = "Death of Aimar Chambon"
+    desc = "166025DESC"
+    picture = "australia_colony"
+
+    trigger = {
+		tag = AST
+		government = presidential_dictatorship
+		year = 1876
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	major = yes
+
+    option = {
+        name = "The Tyrant is Dead!"
+		prestige = 5
+		any_pop = {
+			militancy = -2
+			consciousness = -2
+		}
+		remove_country_modifier = imperious_autocrat
+		government = democracy
+    }
+}

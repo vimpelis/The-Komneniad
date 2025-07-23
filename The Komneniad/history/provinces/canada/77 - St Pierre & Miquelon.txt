@@ -1,0 +1,7 @@
+owner = FRA
+controller = FRA
+trade_goods = fish
+life_rating = 31
+colonial = 2
+terrain = stpierremiquelon
+add_core = ACA

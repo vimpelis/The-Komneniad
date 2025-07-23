@@ -1,0 +1,901 @@
+political_decisions = {
+	unite_the_yue = {
+		picture = yue_map
+		potential = {
+			OR = {
+				tag = GNG
+				tag = FJN
+			}
+			NOT = { exists = YUE }
+		}
+		allow = {
+			war = no
+			civilized = yes
+			OR = {
+				AND = {
+					tag = GNG
+					alliance_with = FJN
+				}
+				AND = {
+					tag = FJN
+					alliance_with = GNG
+				}
+				AND = {
+					tag = GNG
+					FJN = {
+						all_core = {
+							owned_by = THIS
+						}
+					}
+				}
+				AND = {
+					tag = FJN
+					GNG = {
+						all_core = {
+							owned_by = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			change_tag = YUE
+			GNG = { 
+				annex_to = YUE
+				all_core = { add_core = YUE }
+			}
+			FJN = {
+				annex_to = YUE
+				all_core = { add_core = YUE }
+			}
+			add_accepted_culture = wu
+			add_accepted_culture = zhuang
+			country_event = 165008
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	YUE_annex_taiwan = {
+		picture = taiwan_map
+		potential = {
+			OR = {
+				tag = YUE
+				tag = FJN
+			}
+			NOT = { has_country_flag = YUE_annex_taiwan }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 10
+			CHI_1485 = { add_core = THIS }
+			set_country_flag = YUE_annex_taiwan
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	YUE_annam_hegemony = {
+		picture = gulf_of_tonkin
+		potential = {
+			OR = {
+				tag = YUE
+				tag = GNG
+			}
+			NOT = { has_country_flag = YUE_annam_hegemony }
+		}
+		allow = {
+			war = no
+			OR = {
+				owns = 1374
+				owns = 1375
+				year = 1845
+			}
+		}
+		effect = {
+			prestige = 5
+			badboy = 5
+			years_of_research = 2
+			DAI_1369 = { add_core = THIS }
+			DAI_1375 = { add_core = THIS }
+			set_country_flag = YUE_annam_hegemony
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	YUE_formalize_southern_borders = {
+		picture = vietnam_china
+		potential = {
+			has_country_flag = YUE_annam_hegemony
+			NOT = { has_country_flag = YUE_formalize_southern_borders }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			DAI_1369 = { owned_by = THIS }
+			DAI_1375 = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 10
+			badboy = 2
+			3415 = { add_core = THIS }
+			3369 = { add_core = THIS }
+			add_accepted_culture = vietnamese
+			set_country_flag = YUE_formalize_southern_borders
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	YUE_northern_expedition = {
+		picture = south_china_map
+		potential = {
+			tag = YUE
+			NOT = { has_country_flag = YUE_northern_expedition }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			rank = 12
+		}
+		effect = {
+			badboy = 15
+			CHI_1526 = { add_core = THIS }
+			CHI_1547 = { add_core = THIS }
+			CHI_1545 = { add_core = THIS }
+			set_country_flag = YUE_northern_expedition
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	YUE_liberate_wu = {
+		picture = east_china_map
+		potential = {
+			tag = YUE
+			NOT = { has_country_flag = YUE_liberate_wu }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			rank = 12
+		}
+		effect = {
+			badboy = 7
+			CHI_1470 = { add_core = THIS }
+			set_country_flag = YUE_liberate_wu
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	YUE_reinforce_bo_ni = {
+		picture = historic_lanfang_map
+		potential = {
+			OR = {
+				primary_culture = min
+				primary_culture = yue
+				primary_culture = hakka
+			}
+			owns = 10
+			NOT = { has_global_flag = YUE_reinforce_bo_ni }
+		}
+		allow = {
+			war = no
+			OR = {
+				ideological_thought = 1
+				AND = {
+					tag = LAN
+					year = 1845
+				}
+			}
+		}
+		effect = {
+			badboy = 7.5
+			BRU_1394 = {
+				add_core = THIS
+				add_core = LAN
+			}
+			BRU_1395 = {
+				add_core = THIS
+				add_core = LAN
+			}
+			set_global_flag = YUE_reinforce_bo_ni
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	YUE_proclaim_scs_hegemony = {
+		picture = south_china_sea
+		potential = {
+			tag = YUE
+			NOT = { has_country_flag = YUE_proclaim_scs_hegemony }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			rank = 5
+			total_amount_of_ships = 100
+			has_country_flag = YUE_liberate_wu
+			has_country_flag = YUE_northern_expedition
+			has_country_flag = YUE_formalize_southern_borders
+			has_country_flag = YUE_annex_taiwan
+			has_global_flag = YUE_expand_lanfang
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 25
+			badboy = 24.5
+			PHL = { all_core = { add_core = THIS } }
+			CMP = { all_core = { add_core = THIS } }
+			SUL = {
+				all_core = {
+					add_core = THIS
+					add_core = LAN
+				}
+			}
+			ENG_1384 = { add_core = THIS }
+			ENG_1391 = { add_core = THIS }
+			set_country_flag = YUE_proclaim_scs_hegemony
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.95
+            }
+		}
+	}
+	
+	YUE_accept_tawalisi = {
+		picture = peking_convention
+		potential = {
+			tag = YUE
+			has_country_flag = YUE_proclaim_scs_hegemony
+			NOT = { has_country_flag = YUE_accept_tawalisi }
+		}
+		allow = {
+			war = no
+			PHL = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = filipino
+			add_accepted_culture = moro
+			set_country_flag = YUE_accept_tawalisi
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	YUE_accept_minors = {
+		picture = peking_convention
+		potential = {
+			tag = YUE
+			has_country_flag = YUE_proclaim_scs_hegemony
+			NOT = { has_country_flag = YUE_accept_minors }
+		}
+		allow = {
+			war = no
+			CMP = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = asian_minor
+			set_country_flag = YUE_accept_minors
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	unify_china = {
+		picture = china_map
+		potential = {
+			primary_culture = han_chinese
+			NOT = { exists = CHI }
+		}
+		allow = {
+			war = no
+			CHI = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						region = CHI_1490
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = CHI
+			country_event = 165018
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	CHI_reclaim_south = {
+		picture = yue_map
+		potential = {
+			OR = {
+				tag = CHI
+				tag = XIE
+				AND = {
+					tag = TUT
+					has_country_flag = KOR_china_united
+				}
+			}
+			NOT = { has_country_flag = CHI_reclaim_south }
+		}
+		allow = {
+			year = 1850
+			war = no
+			all_core = {
+				owned_by = THIS
+			}
+			OR = {
+				civilized = yes
+				prestige = 100
+			}
+		}
+		effect = {
+			badboy = 20
+			GNG = { all_core = { add_core = THIS } }
+			FJN = { all_core = { add_core = THIS } }
+			YUE = { all_core = { add_core = THIS } }
+			any_country = {
+				limit = {
+					OR = {
+						tag = GNG
+						tag = FJN
+					}
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			set_country_flag = CHI_reclaim_south
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+	
+	CHI_reclaim_yunnan = {
+		picture = yunnan_map
+		potential = {
+			OR = {
+				tag = CHI
+				tag = XIE
+			}
+			NOT = { has_country_flag = CHI_reclaim_yunnan }
+		}
+		allow = {
+			year = 1848
+			war = no
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			badboy = 10
+			YNN = { all_core = { add_core = CHI } }
+			any_country = {
+				limit = {
+					tag = YNN
+					in_sphere = CHI
+				}
+				annex_to = CHI
+			}
+			set_country_flag = CHI_reclaim_yunnan
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	CHI_freedom_of_religion = {
+		picture = china_map
+		potential = {
+			tag = CHI
+			year = 1880
+			NOT = { has_country_flag = CHI_freedom_of_religion }
+		}
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					social_science = 1
+					OR = {
+						government = hms_government
+						government = prussian_constitutionalism
+					}
+				}
+				government = democracy
+			}
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = hanhui
+			set_country_flag = CHI_freedom_of_religion
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	CHI_integrate_the_south = {
+		picture = china_map
+		potential = {
+			OR = {
+				tag = CHI
+				tag = TUT
+				tag = XIE
+			}
+			has_country_flag = CHI_reclaim_south
+			NOT = { has_country_flag = CHI_integrate_the_southerners }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = yue
+			add_accepted_culture = min
+			add_accepted_culture = hakka
+			add_accepted_culture = wu
+			set_country_flag = CHI_integrate_the_southerners
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	CHI_reclaim_taiwan = {
+		picture = taiwan_map
+		potential = {
+			OR = {
+				tag = CHI
+				tag = TUT
+				tag = XIE
+			}
+			2681 = { NOT = { is_core = THIS } }
+			has_country_flag = CHI_reclaim_south
+			NOT = { has_country_flag = CHI_reclaim_taiwan }
+		}
+		allow = {
+			war = no
+			1493 = { owned_by = THIS }
+			1482 = { owned_by = THIS }
+			OR = {
+				civilized = yes
+				NOT = { exists = TAI }
+			}
+		}
+		effect = {
+			badboy = 5
+			TAI = { all_core = { add_core = THIS } }
+			set_country_flag = CHI_reclaim_taiwan
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	CHI_northern_frontier = {
+		picture = manchuria_map
+		potential = {
+			tag = CHI
+			NOT = { has_country_flag = CHI_northern_frontier }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			badboy = 10
+			CHI_1532 = { add_core = CHI }
+			1479 = { add_core = CHI }
+			1480 = { add_core = CHI }
+			1481 = { add_core = CHI }
+			set_country_flag = CHI_northern_frontier
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	CHI_build_arsenal = {
+		picture = hanyang_arsenal
+		potential = {
+			has_country_flag = arsenal_available
+		}
+		allow = {
+			war = no
+			money = 25000
+		}
+		effect = {
+			treasury = -25000
+			country_event = 165023
+			clr_country_flag = arsenal_available
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KOR_form_tultaehan = {
+		picture = china_map
+		potential = {
+			tag = KOR
+			NOT = {	exists = TUT }
+			NOT = { has_country_flag = KOR_fail_china }
+		}
+		allow = {
+			war = no
+			all_core = {
+				OR = {
+					owned_by = THIS
+					NOT = { is_core = CHI }
+				}
+			}
+			owns = 1616
+			owns = 2221
+			NOT = { exists = HUI }
+		}
+		effect = {
+			change_tag = TUT
+			HEB = { all_core = { add_core = THIS } }
+			add_accepted_culture = han_chinese
+			country_event = 165026
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KOR_eat_manchuria = {
+		picture = manchuria_map
+		potential = {
+			OR = {
+				tag = KOR
+				tag = TUT
+			}
+			NOT = { has_country_flag = KOR_eat_manchuria }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			badboy = 10
+			MCK = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = manchu
+			set_country_flag = KOR_eat_manchuria
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	KOR_colonize_sakhalin = {
+		picture = japanese_sakhalin
+		potential = {
+			OR = {
+				tag = KOR
+				tag = TUT
+			}
+			1086 = { empty = yes }
+			1087 = { empty = yes }
+		}
+		allow = {
+			war = no
+			year = 1852
+			owns = 1083
+		}
+		effect = {
+			badboy = 2
+			relation = {
+				who = RUS
+				value = -50
+			}
+			1086 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+			1087 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	KOR_end_to_chaos = {
+		picture = china_map
+		potential = {
+			tag = TUT
+			NOT = { has_country_flag = KOR_end_to_chaos }
+		}
+		allow = {
+			war = no
+			HUB = { all_core = { owned_by = THIS } }
+			HNN = { all_core = { owned_by = THIS } }
+			SXI = { all_core = { owned_by = THIS } }
+			SZC = { all_core = { owned_by = THIS } }
+			JIA = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			badboy = 10
+			any_pop = {
+				militancy = -2
+				consciousness = -2
+			}
+			CHI = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			YNN = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			set_country_flag = KOR_end_to_chaos
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	KOR_china_united = {
+		picture = china_map
+		potential = {
+			tag = TUT
+			has_country_flag = KOR_end_to_chaos
+			NOT = { has_country_flag = KOR_china_united }
+		}
+		allow = {
+			war = no
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 20
+			add_accepted_culture = hanhui
+			any_pop = {
+				militancy = -2
+				consciousness = -2
+			}
+			set_country_flag = KOR_china_united
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	IRY_middle_kingdoms_intervention = {
+		picture = china_map
+		potential = {
+			tag = IRY
+			NOT = { has_country_flag = IRY_middle_kingdoms_intervention }
+		}
+		allow = {
+			war = no
+			all_core = {
+				owned_by = THIS
+			}
+			OR = {
+				NOT = {
+					1559 = {
+						owner = {
+							brigades_compare = 0.25
+						}
+					}
+				}
+				year = 1840
+			}
+		}
+		effect = {
+			badboy = 5
+			CHI_1559 = { add_core = IRY }
+			set_country_flag = IRY_middle_kingdoms_intervention
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	IRY_into_the_chaos = {
+		picture = china_map
+		potential = {
+			tag = IRY
+			has_country_flag = IRY_middle_kingdoms_intervention
+			NOT = { has_country_flag = IRY_into_the_chaos }
+		}
+		allow = {
+			war = no
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			badboy = 10
+			SZC = { all_core = { add_core = IRY } }
+			HUB = { all_core = { add_core = IRY } }
+			set_country_flag = IRY_into_the_chaos
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	IRY_the_open_plains = {
+		picture = china_map
+		potential = {
+			tag = IRY
+			has_country_flag = IRY_into_the_chaos
+			NOT = { has_country_flag = IRY_the_open_plains }
+		}
+		allow = {
+			war = no
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			badboy = 10
+			prestige = 10
+			set_country_flag = IRY_the_open_plains
+			set_country_flag = chinese_cb_allowed
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	IRY_form_xie = {
+		picture = china_map
+		potential = {
+			tag = IRY
+			has_country_flag = IRY_the_open_plains
+			NOT = { exists = XIE }
+		}
+		allow = {
+			war = no
+			owns = 1616
+			owns = 2221
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			change_tag = XIE
+			add_accepted_culture = han_chinese
+			add_accepted_culture = hanhui
+			country_event = 165029
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	IRY_liberate_manchuria = {
+		picture = china_map
+		potential = {
+			tag = XIE
+			NOT = { has_country_flag = IRY_liberate_manchuria }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			MCK = { all_core = { add_core = THIS } }
+			add_accepted_culture = manchu
+			set_country_flag = IRY_liberate_manchuria
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	HUI_southern_reclamation = {
+		picture = china_map
+		potential = {
+			tag = HUI
+			has_country_flag = HUI_victory
+			NOT = { has_country_flag = HUI_southern_reclamation }
+		}
+		allow = {
+			war = no
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 10
+			set_country_flag = chinese_cb_allowed
+			set_country_flag = HUI_southern_reclamation
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

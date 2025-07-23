@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = GNG
+trade_goods = precious_goods
+life_rating = 32
+terrain = hongkong
+colonial = 2

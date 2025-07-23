@@ -1,0 +1,6 @@
+trade_goods = timber
+life_rating = 10
+terrain = jungle_mountains
+owner = ADW
+controller = ADW
+add_core = ADW

@@ -1,0 +1,407 @@
+#Hispanola Region (516000) #see Dominican Republic.txt for balance of region
+#Ruled by Haiti 1836
+#Port au Prince (312000/78000 POPS)
+2213 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 2500
+    }
+
+    officers = {
+        culture = mozarabic
+        religion = catholic
+        size = 500
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 750
+    }
+	
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 2550
+    }
+	
+	farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 15000
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 2000
+    }
+	
+	artisans = {
+        culture = zanj
+        religion = sunni
+        size = 2040
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 15236
+    }
+	
+	artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 5360
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 13984
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 545
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = sunni
+        size = 135
+    }
+}
+#Cap Haitien (204000/51000 POPS)
+2215 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 550
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 75
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 700
+    }
+
+    soldiers = {
+        culture = zanj
+        religion = sunni
+        size = 300
+    }
+	
+	artisans = {
+        culture = zanj
+        religion = sunni
+        size = 1350
+    }
+	
+	farmers = {
+        culture = zanj
+        religion = sunni
+        size = 7039
+    }
+	
+	farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 2000
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 120
+    }
+	
+	artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 900
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 5626
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 305
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = sunni
+        size = 75
+    }
+}
+#Môle St-Nicolas
+3284 = {
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 50
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 3220
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 300
+    }
+	
+	clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 25
+    }
+	
+	farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 500
+    }
+
+    artisans = {
+        culture = zanj
+        religion = sunni
+        size = 165
+    }
+	
+	farmers = {
+        culture = zanj
+        religion = sunni
+        size = 580
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 45
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 10
+    }
+}
+3309 = {
+	farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 4345
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 2360
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 74
+    }
+
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 420
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 15
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+	
+	clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 85
+    }
+	
+	aristocrats = {
+        culture = zanj
+        religion = sunni
+        size = 50
+    }
+	
+	artisans = {
+        culture = zanj
+        religion = sunni
+        size = 540
+    }
+	
+	soldiers = {
+        culture = zanj
+        religion = sunni
+        size = 200
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 3720
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 225
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 55
+    }
+}
+3319 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 550
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 34
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 1020
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 200
+    }
+	
+	farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 1000
+    }
+	
+	clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 42
+    }
+
+    artisans = {
+        culture = zanj
+        religion = sunni
+        size = 1530
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 5517
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 5344
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 240
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = sunni
+        size = 60
+    }
+}
+3320 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 550
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 1550
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 200
+    }
+	
+	farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 2200
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 6356
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 5038
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 250
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = sunni
+        size = 65
+    }
+}

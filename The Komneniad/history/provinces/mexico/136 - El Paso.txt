@@ -1,0 +1,5 @@
+terrain = elpaso
+trade_goods = cotton
+life_rating = 35
+add_core = MEX
+add_core = RGR

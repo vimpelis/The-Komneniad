@@ -1,0 +1,6 @@
+owner = ZND
+controller = MGT
+add_core = AZB
+trade_goods = cattle
+life_rating = 35
+add_core = ZND

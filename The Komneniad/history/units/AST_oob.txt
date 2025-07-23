@@ -1,0 +1,77 @@
+VOC = {
+    value = -200
+	truce_until = 1837.1.1
+}
+
+FRA = {
+    value = -150
+}
+
+army = {
+    name = "1st Army"
+    location = 2476
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2476
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2468
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 2476
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 2476
+    ship = {
+		name = "Occitania"
+        type = manowar
+    }
+
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

@@ -1,0 +1,199 @@
+#Hispanola Region (124000) #see Haiti.txt for balance of region
+#Ruled by Haiti 1836
+#Santo Domingo (68000/17000 POPS) #now part of Dominican Republic
+2214 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 1000
+    }
+
+    aristocrats = {
+        culture = zanj
+        religion = sunni
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 570
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 300
+    }
+
+    clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 150
+    }
+
+    artisans = {
+        culture = zanj
+        religion = sunni
+        size = 1500
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 3500
+    }
+
+    soldiers = {
+        culture = zanj
+        religion = sunni
+        size = 100
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 25670
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 37890
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 500
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = sunni
+        size = 130
+    }
+}
+#La Vega (56000/15000 POPS) #now part of Dominican Republic
+2216 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 370
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 250
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 5970
+    }
+	
+	farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 700
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 275
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = sunni
+        size = 70
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 4375
+    }
+}
+3403 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 500
+    }
+
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 525
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 100
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 400
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 3220
+    }
+	
+	farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 300
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 640
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = sunni
+        size = 160
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 4375
+    }
+}

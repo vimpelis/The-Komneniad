@@ -1,0 +1,7 @@
+owner = SIC
+controller = SIC
+add_core = SIC
+trade_goods = fruit
+terrain = kairouan
+life_rating = 35
+add_core = TUN

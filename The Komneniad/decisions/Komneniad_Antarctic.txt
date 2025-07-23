@@ -1,0 +1,588 @@
+political_decisions = {
+	ATA_claim_potosi = {
+		picture = altoperu
+		potential = {
+			tag = ATA
+			NOT = {	has_country_flag = ATA_claim_potosi }
+			NOT = {	has_global_flag = BIR_ATA_peace }
+		}
+		allow = {
+			war = no
+			rank = 12
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 5
+			badboy = 7.5
+			BOL_2309 = { add_core = ATA }
+			BOL_2321 = { add_core = ATA }
+			AMZ_2317 = { add_core = ATA }
+			2309 = {
+				owner = { country_event = 161019 }
+			}
+			set_country_flag = ATA_claim_potosi
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	ATA_colonize_secaia = {
+		picture = conquest_of_the_chaco
+		potential = {
+			tag = ATA
+			OR = {
+				2367 = { empty = yes }
+				2337 = { empty = yes }
+			}
+			owns = 3618
+			owns = 3673
+			NOT = { rank = 16 }
+		}
+		allow = {
+			war = no
+			OR = {
+				invention = colonial_negotiations
+				NOT = { owns = 2315 }
+				3570 = { empty = no }
+			}
+		}
+		effect = {
+			prestige = 5
+			random_owned = {
+				limit = {
+					2367 = { empty = yes }
+				}
+				ARG_2377 = { secede_province = THIS }
+			}
+			random_owned = {
+				limit = {
+					2337 = { empty = yes }
+				}
+				BRZ_2416 = { secede_province = THIS }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ATA_colonize_lespandida = {
+		picture = conquest_of_the_south
+		potential = {
+			tag = ATA
+			2393 = { empty = yes }
+			owns = 2352
+			owns = 2381
+			NOT = { rank = 16 }
+		}
+		allow = {
+			war = no
+			invention = mission_to_civilize
+		}
+		effect = {
+			prestige = 5
+			random_owned = {
+				limit = {
+					2382 = { empty = yes }
+				}
+				ARG_2389 = { secede_province = THIS }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ATA_colonize_patagonia = {
+		picture = conquest_of_the_south
+		potential = {
+			tag = ATA
+			2393 = { empty = yes }
+			owns = 3669
+			owns = 2322
+			NOT = { rank = 16 }
+		}
+		allow = {
+			war = no
+			year = 1870
+		}
+		effect = {
+			prestige = 5
+			random_owned = {
+				limit = {
+					3555 = { empty = yes }
+				}
+				CHL_2332 = { secede_province = THIS }
+			}
+			random_owned = {
+				limit = {
+					2396 = { empty = yes }
+				}
+				ARG_2391 = { secede_province = THIS }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ATA_core_nogojidaga = {
+		picture = conquest_of_the_chaco
+		potential = {
+			tag = ATA
+			NOT = { 2416 = { is_core = THIS } }
+		}
+		allow = {
+			war = no
+			owns = 2416
+		}
+		effect = {
+			prestige = 5
+			AMZ_2419 = { add_core = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ATA_expand_orungu = {
+		picture = map_gabon
+		potential = {
+			tag = ATA
+			owns = 1972
+			slavery = yes_slavery
+			1974 = { empty = yes }
+		}
+		allow = {
+			war = no
+			slavery = yes_slavery
+			steamers = 1
+			money = 20000
+			1972 = {
+				has_building = naval_base
+				has_building = fort
+			}
+		}
+		effect = {
+			prestige = 5
+			badboy = 7.5
+			treasury = -20000
+			random_owned = {
+				limit = {
+					1974 = { empty = yes }
+				}
+				1974 = { secede_province = THIS }
+				1975 = { secede_province = THIS }
+				1980 = { secede_province = THIS }
+			}
+			#who at paradox thought that TARGET in add_casus_belli meant the country who gets the cb, like tf is the logic here??
+			LOA = {
+				add_casus_belli = {
+					target = ATA
+					type = establish_protectorate_casus_belli_no_infamy
+					months = 60
+				}
+			}
+			set_country_flag = ATA_expand_orungu
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	ATA_prospect_famatina = {
+		picture = iron_range
+		potential = {
+			tag = ATA
+			owns = 2385
+			owns = 2386
+			NOT = { has_country_flag = ATA_prospect_famatina }
+		}
+		allow = {
+			war = no
+			money = 10000
+			mechanized_mining = 1
+		}
+		effect = {
+			treasury = -10000
+			2374 = {
+				trade_goods = iron
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2385 = {
+				trade_goods = iron
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2376 = {
+				trade_goods = coal
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2386 = {
+				trade_goods = coal
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			#https://www.mindat.org/minlocsearch.php?frm_id=mls&cform_is_valid=1&cf_mls_page=1&minname=sulphur&region=argentina
+			1714 = {
+				trade_goods = sulphur
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2389 = {
+				trade_goods = sulphur
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2315 = {
+				trade_goods = iron
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2375 = {
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2369 = {
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2370 = {
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2368 = {
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2322 = {
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			set_country_flag = ATA_prospect_famatina
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ATA_slaves_for_famatina = {
+		picture = slave_trade
+		potential = {
+			tag = ATA
+			owns = 2385
+			owns = 2386
+			slavery = yes_slavery
+			has_country_flag = ATA_prospect_famatina
+			has_country_flag = ATA_expand_orungu
+			NOT = { has_country_flag = ATA_slaves_for_famatina }
+		}
+		allow = {
+			war = no
+			money = 25000
+			market_structure = 1
+		}
+		effect = {
+			badboy = 5
+			treasury = -25000
+			2374 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2385 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2376 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2386 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			1714 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2389 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2989 = {
+				any_pop = {
+					move_pop = 2374
+				}
+			}
+			2988 = {
+				any_pop = {
+					move_pop = 2385
+				}
+			}
+			3042 = {
+				any_pop = {
+					move_pop = 2386
+				}
+			}
+			3041 = {
+				any_pop = {
+					move_pop = 2376
+				}
+			}
+			2987 = {
+				any_pop = {
+					move_pop = 1714
+				}
+			}
+			3043 = {
+				any_pop = {
+					move_pop = 2389
+				}
+			}
+			3202 = {
+				any_pop = {
+					move_pop = 2322
+				}
+			}
+			3045 = {
+				any_pop = {
+					move_pop = 2375
+				}
+			}
+			3046 = {
+				any_pop = {
+					move_pop = 2368
+				}
+			}
+			3200 = {
+				any_pop = {
+					move_pop = 2315
+				}
+			}
+			set_country_flag = ATA_slaves_for_famatina
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ATA_prospect_trencavelia = {
+		picture = iron_range
+		potential = {
+			tag = ATA
+			owns = 2463
+			owns = 2464
+			NOT = { has_country_flag = ATA_prospect_trencavelia }
+		}
+		allow = {
+			war = no
+			money = 15000
+			regenerative_furnaces = 1
+		}
+		effect = {
+			treasury = -15000
+			2345 = {
+				trade_goods = iron
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2465 = {
+				trade_goods = coal
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2461 = {
+				trade_goods = coal
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			2459 = {
+				add_province_modifier = {
+					name = ATA_mining_1
+					duration = -1
+				}
+			}
+			set_country_flag = ATA_prospect_trencavelia
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ATA_slaves_for_trencavelia = {
+		picture = slave_trade
+		potential = {
+			tag = ATA
+			owns = 2463
+			owns = 2464
+			slavery = yes_slavery
+			has_country_flag = ATA_prospect_trencavelia
+			has_country_flag = ATA_expand_orungu
+			NOT = { has_country_flag = ATA_slaves_for_trencavelia }
+		}
+		allow = {
+			war = no
+			money = 20000
+			market_structure = 1
+		}
+		effect = {
+			badboy = 5
+			treasury = -20000
+			2345 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2465 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2461 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			2459 = {
+				remove_province_modifier = ATA_mining_1
+				add_province_modifier = {
+					name = ATA_mining_2
+					duration = -1
+				}
+			}
+			3047 = {
+				any_pop = {
+					move_pop = 2345
+				}
+			}
+			3048 = {
+				any_pop = {
+					move_pop = 2465
+				}
+			}
+			3040 = {
+				any_pop = {
+					move_pop = 2461
+				}
+			}
+			2991 = {
+				any_pop = {
+					move_pop = 2459
+				}
+			}
+			set_country_flag = ATA_slaves_for_trencavelia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ATA_giant_of_the_south = {
+		picture = south_atlantic
+		potential = {
+			tag = ATA
+			owns = 2463
+			owns = 2464
+			slavery = yes_slavery
+			has_country_flag = ATA_prospect_trencavelia
+			has_country_flag = ATA_prospect_famatina
+			has_country_flag = ATA_expand_orungu
+			NOT = { has_country_flag = ATA_giant_of_the_south }
+		}
+		allow = {
+			war = no
+			rank = 8
+			industrial_score = 500
+			total_amount_of_ships = 100
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 50
+			add_country_modifier = {
+				name = giant_of_the_south
+				duration = -1
+			}
+			set_country_flag = ATA_giant_of_the_south
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ATA_accept_afro_occitan = {
+		picture = gco_afro_latino
+		potential = {
+			tag = ATA
+			slavery = no_slavery
+			NOT = { accepted_culture = afro_occitan }
+		}
+		allow = {
+			war = no
+			citizenship_policy = full_citizenship
+		}
+		effect = {
+			prestige = -15
+			add_accepted_culture = afro_occitan
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

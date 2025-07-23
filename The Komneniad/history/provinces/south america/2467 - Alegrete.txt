@@ -1,0 +1,5 @@
+owner = ATA
+controller = ATA
+trade_goods = cattle
+life_rating = 30
+add_core = ATA

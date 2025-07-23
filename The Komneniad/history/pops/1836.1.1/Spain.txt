@@ -1,0 +1,8322 @@
+#Galicia-Asturias Region (1572000)
+#La Coruna (796000/199000 POPS)
+474 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 125
+    }
+
+    officers = {
+        culture = spanish
+        religion = catholic
+        size = 26
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 740
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 28
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 114
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 77
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 305
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 4232
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 5720
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 1892
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 1071
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 239
+    }
+
+    aristocrats = {
+        culture = galician
+        religion = catholic
+        size = 2383
+    }
+
+    officers = {
+        culture = galician
+        religion = catholic
+        size = 486
+    }
+
+    clergymen = {
+        culture = galician
+        religion = catholic
+        size = 541
+    }
+
+    clergymen = {
+        culture = galician
+        religion = catholic
+        size = 2166
+    }
+
+    artisans = {
+        culture = galician
+        religion = catholic
+        size = 1461
+    }
+
+    artisans = {
+        culture = galician
+        religion = catholic
+        size = 5793
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 106504
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 35237
+    }
+
+    craftsmen = {
+        culture = galician
+        religion = catholic
+        size = 2174
+    }
+
+    craftsmen = {
+        culture = galician
+        religion = catholic
+        size = 719
+    }
+}
+#Oviedo (448000/112000 POPS)
+475 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 1567
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 1496
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 6412
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 2907
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 20520
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 71
+        militancy = 8
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 4275
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 171
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 470
+    }
+}
+#Vigo (328000/82000 POPS)
+476 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 40
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 46
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 285
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 1903
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 3106
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 2292
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 91
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 239
+    }
+
+    aristocrats = {
+        culture = galician
+        religion = catholic
+        size = 757
+    }
+
+    clergymen = {
+        culture = galician
+        religion = catholic
+        size = 866
+    }
+
+    artisans = {
+        culture = galician
+        religion = catholic
+        size = 5415
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 59023
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 43547
+    }
+}
+#Leon Region (888000)
+#Leon (280000/70000 POPS)
+477 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 1140
+    }
+
+    officers = {
+        culture = spanish
+        religion = catholic
+        size = 427
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 570
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 712
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 4275
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 1849
+    }
+
+    craftsmen = {
+        culture = spanish
+        religion = catholic
+        size = 12112
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 76836
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 10260
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 997
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 71
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 612
+    }
+}
+#Santander (178000/44500) POPS
+478 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 712
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 570
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 4987
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 1057
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 49696
+    }
+
+    clergymen = {
+        culture = basque
+        religion = catholic
+        size = 71
+        militancy = 8
+    }
+
+    soldiers = {
+        culture = basque
+        religion = catholic
+        size = 78
+        militancy = 8
+    }
+
+    farmers = {
+        culture = basque
+        religion = catholic
+        size = 5557
+        militancy = 8
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 7837
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 926
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 63
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 185
+    }
+}
+#Burgos (236000/59000 POPS)
+479 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 926
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 818
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 7837
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 1586
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 70142
+    }
+
+    clergymen = {
+        culture = basque
+        religion = catholic
+        size = 35
+        militancy = 8
+    }
+
+    farmers = {
+        culture = basque
+        religion = catholic
+        size = 1388
+        militancy = 8
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 1758
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 111
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 199
+    }
+}
+#Valladolid (194000/48500 POPS)
+480 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 855
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 712
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 8550
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 1320
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 56709
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 1242
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 63
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 266
+    }
+}
+#Castilla Vieja Region (724000)
+#Avila (284000/71000 POPS)
+481 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 1788
+    }
+
+    officers = {
+        culture = spanish
+        religion = catholic
+        size = 298
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 417
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 834
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 4172
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 4425
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 73609
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 712
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 63
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 584
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 128
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 21
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 30
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 60
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 299
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 5279
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 55
+    }
+
+    officers = {
+        culture = spanish
+        religion = sunni
+        size = 9
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = sunni
+        size = 13
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 26
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 129
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 2274
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 166
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 28
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 38
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 77
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 387
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 6824
+    }
+}
+#Soria (216000/54000 POPS)
+482 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 1282
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 640
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 3030
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 2377
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 56607
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 102
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 146
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 23
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 12
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 55
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = sunni
+        size = 103
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 1038
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 191
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 96
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 453
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 8458
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 71
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 35
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 167
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 3115
+    }
+}
+#Salamanca (224000/56000 POPS)
+483 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 986
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 451
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 3287
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 1675
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 40299
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 190
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 99
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 650
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 298
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 2166
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 26558
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 18
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 8
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 62
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = sunni
+        size = 75
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 758
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 56
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 26
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 185
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2275
+    }
+}
+#Extremadura Region (580000)
+#Badajoz (216000/54000 POPS)
+484 = {
+    aristocrats = {
+        culture = galician
+        religion = catholic
+        size = 44
+    }
+
+    officers = {
+        culture = galician
+        religion = catholic
+        size = 7
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    clergymen = {
+        culture = galician
+        religion = catholic
+        size = 19
+    }
+
+    artisans = {
+        culture = galician
+        religion = catholic
+        size = 162
+    }
+
+    soldiers = {
+        culture = galician
+        religion = catholic
+        size = 21
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 1627
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1440
+    }
+
+    slaves = {
+        culture = caribeno
+        religion = catholic
+        size = 193
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 104
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1120
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 178
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 336
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 493
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 4033
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 537
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 40513
+    }
+
+    aristocrats = {
+        culture = galician
+        religion = sunni
+        size = 83
+    }
+
+    officers = {
+        culture = galician
+        religion = sunni
+        size = 13
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    clergymen = {
+        culture = galician
+        religion = sunni
+        size = 37
+    }
+
+    artisans = {
+        culture = galician
+        religion = sunni
+        size = 301
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 160
+    }
+
+    farmers = {
+        culture = galician
+        religion = sunni
+        size = 3025
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 251
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 41
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 75
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 110
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 903
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 9077
+    }
+}
+#Almendralejo (192000/48000 POPS)
+485 = {
+    aristocrats = {
+        culture = galician
+        religion = catholic
+        size = 116
+    }
+
+    clergymen = {
+        culture = galician
+        religion = catholic
+        size = 55
+    }
+
+    artisans = {
+        culture = galician
+        religion = catholic
+        size = 249
+    }
+
+    soldiers = {
+        culture = galician
+        religion = catholic
+        size = 55
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 4713
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1176
+    }
+
+    slaves = {
+        culture = caribeno
+        religion = catholic
+        size = 147
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 160
+    }
+
+    aristocrats = {
+        culture = galician
+        religion = sunni
+        size = 161
+    }
+
+    clergymen = {
+        culture = galician
+        religion = sunni
+        size = 76
+    }
+
+    artisans = {
+        culture = galician
+        religion = sunni
+        size = 344
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 306
+    }
+
+    farmers = {
+        culture = galician
+        religion = sunni
+        size = 6500
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 349
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 166
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 748
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 166
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 14139
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 79
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 38
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 170
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 38
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 3210
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 72
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 33
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 153
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 33
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2889
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 482
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 230
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1033
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 19502
+    }
+}
+#Caceres (172000/43000 POPS)
+486 = {
+    aristocrats = {
+        culture = galician
+        religion = catholic
+        size = 200
+    }
+
+    clergymen = {
+        culture = galician
+        religion = catholic
+        size = 89
+    }
+
+    artisans = {
+        culture = galician
+        religion = catholic
+        size = 494
+    }
+
+    soldiers = {
+        culture = galician
+        religion = catholic
+        size = 178
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 8462
+    }
+
+    farmers = {
+        culture = galician
+        religion = catholic
+        size = 66
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 540
+    }
+
+    slaves = {
+        culture = caribeno
+        religion = catholic
+        size = 160
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 99
+    }
+
+    aristocrats = {
+        culture = galician
+        religion = sunni
+        size = 48
+    }
+
+    clergymen = {
+        culture = galician
+        religion = sunni
+        size = 21
+    }
+
+    artisans = {
+        culture = galician
+        religion = sunni
+        size = 118
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 170
+    }
+
+    farmers = {
+        culture = galician
+        religion = sunni
+        size = 2027
+    }
+
+    farmers = {
+        culture = galician
+        religion = sunni
+        size = 16
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 86
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 38
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 213
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 38
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 3649
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 28
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 189
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 84
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 467
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 84
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 7988
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 63
+    }
+
+    aristocrats = {
+        culture = galician
+        religion = sunni
+        size = 2
+    }
+
+    clergymen = {
+        culture = galician
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = galician
+        religion = sunni
+        size = 6
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 9
+    }
+
+    farmers = {
+        culture = galician
+        religion = sunni
+        size = 111
+    }
+
+    farmers = {
+        culture = galician
+        religion = sunni
+        size = 1
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 287
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 128
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 710
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 12163
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 95
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 16
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 7
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 39
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 668
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 5
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 200
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 89
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 495
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 8462
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 67
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 48
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 21
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 119
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2027
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 16
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 7
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 112
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1
+    }
+}
+#Castilla Nueva Region (1504000)
+#Madrid (364000/91000 POPS)
+487 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 550
+    }
+
+    officers = {
+        culture = spanish
+        religion = catholic
+        size = 137
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 303
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 247
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 2756
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 2756
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 2756
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 2756
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 2756
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 2756
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 2119
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 3200
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 4912
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 1336
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 209
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 627
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1005
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 251
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 553
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 452
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 5027
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 5027
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 5027
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 5027
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 5027
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 5027
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 8958
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 31
+    }
+
+    officers = {
+        culture = spanish
+        religion = sunni
+        size = 8
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = sunni
+        size = 17
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 14
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 157
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 157
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 157
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 157
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 157
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 157
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 279
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 226
+    }
+
+    officers = {
+        culture = spanish
+        religion = catholic
+        size = 56
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 123
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 102
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1131
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1131
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1131
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1131
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1131
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1131
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 629
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 629
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 2016
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 61
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 15
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 33
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 27
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 306
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 306
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 306
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 306
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 306
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 306
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 546
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 6
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 14
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 11
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 224
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 6359
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 94
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 23
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 52
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 42
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 470
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 470
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 470
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 470
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 470
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 470
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 838
+    }
+}
+#Siguenza (204000/51000 POPS)
+488 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 712
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 297
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1484
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 3148
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 26816
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 285
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 461
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 156
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 108
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 45
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 224
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = sunni
+        size = 1129
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 4054
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 77
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 32
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 160
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2883
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 462
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 192
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 962
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 17378
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 305
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 127
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 636
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 11492
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 46
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 19
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 96
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1738
+    }
+}
+#Toledo (302000/75500 POPS)
+489 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 241
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 116
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 933
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 9374
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1476
+    }
+
+    slaves = {
+        culture = caribeno
+        religion = catholic
+        size = 160
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 673
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 904
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 438
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 3501
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 2200
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 35181
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 107
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 52
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 414
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 2200
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 4166
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 59
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 29
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 230
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 2314
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 12
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 46
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 463
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 321
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 155
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1244
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 12498
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 178
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 86
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 691
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 6944
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 36
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 17
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 138
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1388
+    }
+}
+#Cuenca (346000/86500 POPS)
+490 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 385
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 187
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 897
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 181
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 16755
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 276
+    }
+
+    slaves = {
+        culture = caribeno
+        religion = catholic
+        size = 84
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 144
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 276
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 134
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 644
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 522
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 12011
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 198
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 96
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 463
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 93
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 8631
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 472
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 230
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 1104
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 223
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 20592
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 828
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 402
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1931
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 36035
+    }
+}
+#Ciudad Real (288000/74000 POPS)
+491 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 54
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 25
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 126
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 25
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 2356
+    }
+
+    slaves = {
+        culture = caribeno
+        religion = catholic
+        size = 73
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 72
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1459
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 681
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 3406
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 681
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 63717
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 52
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 24
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 122
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 97
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 2286
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 76
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 36
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 178
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 36
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 3354
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 158
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 73
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 366
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 6860
+    }
+}
+#Vizcaya-Navarra Region (710000)
+#Bilbao (308000/77000 POPS)
+492 = {
+    aristocrats = {
+        culture = basque
+        religion = catholic
+        size = 855
+    }
+
+    clergymen = {
+        culture = basque
+        religion = catholic
+        size = 783
+    }
+
+    artisans = {
+        culture = basque
+        religion = catholic
+        size = 4275
+    }
+
+    soldiers = {
+        culture = basque
+        religion = catholic
+        size = 861
+    }
+
+    farmers = {
+        culture = basque
+        religion = catholic
+        size = 73815
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 356
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 285
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1567
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 528
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 26619
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 71
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 171
+    }
+}
+#Pamplona (244000/61000 POPS)
+493 = {
+    aristocrats = {
+        culture = basque
+        religion = catholic
+        size = 997
+    }
+
+    officers = {
+        culture = basque
+        religion = catholic
+        size = 142
+    }
+
+    bureaucrats = {
+        culture = basque
+        religion = catholic
+        size = 213
+    }
+
+    clergymen = {
+        culture = basque
+        religion = catholic
+        size = 533
+    }
+
+    artisans = {
+        culture = basque
+        religion = catholic
+        size = 2493
+    }
+
+    soldiers = {
+        culture = basque
+        religion = catholic
+        size = 627
+    }
+
+    labourers = {
+        culture = basque
+        religion = catholic
+        size = 49910
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 712
+    }
+
+    officers = {
+        culture = spanish
+        religion = catholic
+        size = 142
+    }
+
+    bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 285
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 320
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 1781
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 659
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 23799
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 1752
+    }
+
+    slaves = {
+        culture = andalusian
+        religion = catholic
+        size = 63
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 203
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 2644
+    }
+}
+#Logrono (158000/39500 POPS)
+494 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 375
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 177
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 883
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 327
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 15744
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 299
+    }
+
+    aristocrats = {
+        culture = basque
+        religion = catholic
+        size = 455
+    }
+
+    clergymen = {
+        culture = basque
+        religion = catholic
+        size = 213
+    }
+
+    artisans = {
+        culture = basque
+        religion = catholic
+        size = 1070
+    }
+
+    soldiers = {
+        culture = basque
+        religion = catholic
+        size = 235
+    }
+
+    farmers = {
+        culture = basque
+        religion = catholic
+        size = 19063
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 167
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 79
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 393
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 146
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 7009
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 134
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 63
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 315
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 116
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 5607
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 80
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 38
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 189
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 70
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 3364
+    }
+}
+#Aragon Region (764000)
+#Zaragosa (312000/78000 POPS)
+495 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 1008
+    }
+
+    officers = {
+        culture = aragonese
+        religion = catholic
+        size = 157
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 283
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 471
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 8821
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 630
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 693
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 35323
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 31
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 1227
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 840
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 410
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 787
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 123
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 220
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 369
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 6888
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 492
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 541
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 27580
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 960
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 31
+    }
+
+    officers = {
+        culture = spanish
+        religion = sunni
+        size = 5
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 7
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 14
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 272
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 19
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 85
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 1091
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 1
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 38
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 93
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 14
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 44
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 818
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 59
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 3274
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 2
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 114
+    }
+}
+#Huesca (224000/56000 POPS)
+496 = {
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 67
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 52
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 277
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 1200
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 2317
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 2988
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 30
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 26
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 127
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 750
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 454
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 78
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 268
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 209
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 1101
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 9193
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 11854
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 119
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 104
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 506
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 1800
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 115
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 89
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 472
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 3940
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 5080
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 51
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 45
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 217
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 771
+    }
+}
+#Teruel (228000/57000 POPS)
+497 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 443
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 203
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 1016
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 1200
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 20543
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1476
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 117
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 21
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 10
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 49
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 158
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 903
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 380
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 174
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 871
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 348
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 13894
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 129
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 59
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 297
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 5419
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 443
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 203
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1016
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 18544
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 22
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 903
+    }
+}
+#Fraga
+3401 = {
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 1375
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 625
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 2500
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 2061
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 20187
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 16750
+    }
+}
+#Catalonia Region (1340000)
+#Barcelona (464000/116000 POPS)
+498 = {
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 1700
+    }
+
+    officers = {
+        culture = catalan
+        religion = catholic
+        size = 200
+    }
+
+    bureaucrats = {
+        culture = catalan
+        religion = catholic
+        size = 550
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 825
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 20000
+    }
+
+    craftsmen = {
+        culture = catalan
+        religion = catholic
+        size = 21100
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 6000
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 71000
+    }
+
+    capitalists = {
+        culture = catalan
+        religion = catholic
+        size = 425
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 500
+    }
+
+    officers = {
+        culture = catalan
+        religion = catholic
+        size = 100
+    }
+
+    bureaucrats = {
+        culture = catalan
+        religion = catholic
+        size = 200
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 275
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 9000
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 900
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 26825
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 230
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 298
+    }
+}
+#Gerona (228000/57000 POPS)
+499 = {
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 750
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 350
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 1750
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 1050
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 55725
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 450
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 200
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 700
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 750
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 9175
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = catholic
+        size = 50
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 230
+    }
+}
+3433 = {
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 281
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 129
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 61
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 2068
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 18493
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 151
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 74
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 2114
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 129
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = catholic
+        size = 729
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 69
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 153
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 71
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 33
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 10051
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 82
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 40
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1149
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 71
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 37
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 20
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 9
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 4
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = sunni
+        size = 251
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 1353
+    }
+
+    aristocrats = {
+        culture = spanish
+        religion = sunni
+        size = 11
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 155
+    }
+
+    artisans = {
+        culture = spanish
+        religion = sunni
+        size = 9
+    }
+
+    soldiers = {
+        culture = spanish
+        religion = sunni
+        size = 88
+    }
+
+    farmers = {
+        culture = spanish
+        religion = sunni
+        size = 5
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 120
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 56
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 26
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 7925
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 65
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 32
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 906
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 56
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 30
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 62
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 29
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 14
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 4058
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 33
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 17
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 464
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 29
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 15
+    }
+}
+#Lerida (164000/41000 POPS)
+500 = {
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 5
+    }
+
+    bureaucrats = {
+        culture = french
+        religion = catholic
+        size = 10
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 150
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 100
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 80
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 40
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 120
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 150
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 696
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 20
+    }
+
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 50
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 40
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 150
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 160
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 80
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 440
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 200
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 2200
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 825
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 33860
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 160
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 1000
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 450
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 13620
+    }
+
+    slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 90
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 20
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 10
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 30
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 174
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 5
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 10
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 40
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 110
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 50
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 550
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 8465
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 40
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 25
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 250
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 3405
+    }
+}
+#Tarragona (244000/61000 POPS)
+501 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 64
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 30
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 190
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 202
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 3732
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 34
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 15
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 84
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 101
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 1130
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 78
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 0
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 3
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 55
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 0
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 0
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 6
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 16
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 53
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 156
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 3075
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 28
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 69
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 931
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 19
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 9
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 56
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1103
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 334
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 215
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 101
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 634
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 12441
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 114
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 51
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 279
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1767
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 2
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 184
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 2
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 4
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 56
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 151
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 71
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 444
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 8709
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 80
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 35
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 195
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 6636
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 2
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 1
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 6
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 129
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 1
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 0
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 3
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 39
+    }
+}
+#Balearics (240000/60000 POPS)
+502 = {
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 380
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 400
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 3650
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 380
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 32890
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 190
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 200
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 1000
+    }
+
+    soldiers = {
+        culture = catalan
+        religion = catholic
+        size = 332
+    }
+
+    labourers = {
+        culture = catalan
+        religion = catholic
+        size = 11510
+    }
+
+    slaves = {
+        culture = songhai
+        religion = catholic
+        size = 91
+    }
+
+    slaves = {
+        culture = berber
+        religion = catholic
+        size = 46
+    }
+
+    aristocrats = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 20
+    }
+
+    soldiers = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 20
+    }
+
+    aristocrats = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 10
+    }
+
+    soldiers = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 18
+    }
+}
+#Valencia Region (1016000)
+#Valencia (420000/105000 POPS)
+503 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 415
+    }
+
+    officers = {
+        culture = aragonese
+        religion = catholic
+        size = 66
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 154
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 207
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 1511
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 1100
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 12279
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 415
+    }
+
+    officers = {
+        culture = aragonese
+        religion = catholic
+        size = 37
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 189
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 3778
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 415
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 20124
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1068
+    }
+
+    slaves = {
+        culture = songhai
+        religion = sunni
+        size = 54
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 208
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 10
+    }
+
+    officers = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 36
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 292
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 10
+    }
+
+    officers = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 4
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 90
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 479
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 409
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 64
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 153
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 205
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1489
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 12096
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 409
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 37
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 186
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 3722
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 409
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 19824
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 59
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 22
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 29
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 216
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1755
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 59
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 5
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 18
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 27
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 540
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 59
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2876
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 416
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 66
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 156
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 208
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1511
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 12279
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 416
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 38
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 127
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 189
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 3779
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 416
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 20124
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 2
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 4
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 36
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 293
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 1
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 90
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 479
+    }
+}
+#Castellon (212000/53000 POPS)
+504 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 205
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 93
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 486
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 224
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 14787
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 187
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 102
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 635
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 224
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 18992
+    }
+
+    slaves = {
+        culture = songhai
+        religion = sunni
+        size = 54
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 174
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 139
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 63
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 327
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 63
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 3228
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 69
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 428
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 63
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 6806
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 2
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 6
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 63
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 2
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 8
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 250
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 20
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 9
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 46
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 455
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 18
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 60
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1806
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 247
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 112
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 586
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 5767
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 225
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 124
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 766
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 22883
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 2
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 8
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 76
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 2
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 301
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 42
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 19
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 99
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 980
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 38
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 21
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 130
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 3890
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 1
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 0
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 1
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 13
+    }
+
+    aristocrats = {
+        culture = catalan
+        religion = catholic
+        size = 1
+    }
+
+    clergymen = {
+        culture = catalan
+        religion = catholic
+        size = 0
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 2
+    }
+
+    farmers = {
+        culture = catalan
+        religion = catholic
+        size = 51
+    }
+}
+#Alicante (384000/96000 POPS)
+505 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 370
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 177
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 841
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 369
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 11148
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 134
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 134
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 672
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 268
+    }
+
+    labourers = {
+        culture = aragonese
+        religion = catholic
+        size = 16504
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 648
+    }
+
+    slaves = {
+        culture = songhai
+        religion = sunni
+        size = 67
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 192
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 488
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 232
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1110
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 244
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 14713
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 177
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 177
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 888
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 177
+    }
+
+    labourers = {
+        culture = andalusian
+        religion = sunni
+        size = 21781
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 11
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 26
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 45
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 344
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 4
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 4
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 20
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 33
+    }
+
+    labourers = {
+        culture = aragonese
+        religion = sunni
+        size = 510
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 68
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 32
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 155
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2066
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 25
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 125
+    }
+
+    labourers = {
+        culture = andalusian
+        religion = sunni
+        size = 3060
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 370
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 177
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 841
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 11148
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 134
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 134
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 673
+    }
+
+    labourers = {
+        culture = andalusian
+        religion = sunni
+        size = 16504
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 6
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 26
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 345
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 4
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 4
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 21
+    }
+
+    labourers = {
+        culture = andalusian
+        religion = sunni
+        size = 510
+    }
+}
+#Murcia Region (504000/121000 POPS)
+#Cartagena (212000/53000 POPS)
+506 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 28
+    }
+
+    officers = {
+        culture = aragonese
+        religion = catholic
+        size = 3
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 18
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 13
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 184
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 28
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 1111
+    }
+
+    slaves = {
+        culture = songhai
+        religion = sunni
+        size = 54
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 276
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1174
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 160
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 720
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 560
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 7476
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 588
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 44962
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 11
+    }
+
+    officers = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 6
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 69
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 43
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 416
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 65
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 9
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 39
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 32
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 416
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2501
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 29
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 4
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 18
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 14
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 185
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1111
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 11
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 2
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 7
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 69
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 417
+    }
+}
+#Murcia (92000/23000 POPS)
+507 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 102
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 45
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 225
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 102
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 4413
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 333
+    }
+
+    slaves = {
+        culture = songhai
+        religion = sunni
+        size = 104
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 160
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 352
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 159
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 777
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 176
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 15198
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1149
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 2
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 6
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 12
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 122
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 9
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 9
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 4
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 20
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 9
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 400
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 30
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 17
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 8
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 38
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 735
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 56
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 103
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 46
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 226
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 4413
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 333
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 1
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 6
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 123
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 9
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 4
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 20
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 400
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 30
+    }
+}
+#Albacete (20000/50000 POPS)
+508 = {
+    aristocrats = {
+        culture = aragonese
+        religion = catholic
+        size = 258
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = catholic
+        size = 117
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = catholic
+        size = 564
+    }
+
+    soldiers = {
+        culture = aragonese
+        religion = catholic
+        size = 235
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = catholic
+        size = 10650
+    }
+
+    slaves = {
+        culture = songhai
+        religion = sunni
+        size = 170
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 144
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 726
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 330
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1584
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 330
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 29923
+    }
+
+    aristocrats = {
+        culture = aragonese
+        religion = sunni
+        size = 9
+    }
+
+    clergymen = {
+        culture = aragonese
+        religion = sunni
+        size = 4
+    }
+
+    artisans = {
+        culture = aragonese
+        religion = sunni
+        size = 21
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 34
+    }
+
+    farmers = {
+        culture = aragonese
+        religion = sunni
+        size = 397
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 57
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 26
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 126
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2387
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 259
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 118
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 564
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 10650
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 4
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 21
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 398
+    }
+}
+#Andalucia Region (1176000)
+#Sevilla (376000/94000 POPS)
+509 = {
+    aristocrats = {
+        culture = baetican
+        religion = catholic
+        size = 19
+    }
+
+    officers = {
+        culture = baetican
+        religion = catholic
+        size = 6
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 6
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = catholic
+        size = 12
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 108
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 108
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 54
+    }
+
+    farmers = {
+        culture = baetican
+        religion = catholic
+        size = 661
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1260
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 414
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 2865
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 876
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1072
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 1749
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 15913
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 15913
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 7956
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 4773
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 97500
+    }
+
+    aristocrats = {
+        culture = baetican
+        religion = catholic
+        size = 44
+    }
+
+    officers = {
+        culture = baetican
+        religion = catholic
+        size = 13
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 16
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = catholic
+        size = 27
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 244
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 244
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 122
+    }
+
+    soldiers = {
+        culture = baetican
+        religion = catholic
+        size = 366
+    }
+
+    farmers = {
+        culture = baetican
+        religion = catholic
+        size = 1498
+    }
+
+    aristocrats = {
+        culture = baetican
+        religion = sunni
+        size = 3
+    }
+
+    officers = {
+        culture = baetican
+        religion = sunni
+        size = 1
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = sunni
+        size = 2
+    }
+
+    artisans = {
+        culture = baetican
+        religion = sunni
+        size = 16
+    }
+
+    artisans = {
+        culture = baetican
+        religion = sunni
+        size = 16
+    }
+
+    artisans = {
+        culture = baetican
+        religion = sunni
+        size = 8
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 96
+    }
+
+    farmers = {
+        culture = baetican
+        religion = sunni
+        size = 99
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 43
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 14
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 15
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 27
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 243
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 243
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 122
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1492
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 77
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 22
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 27
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 46
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 432
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 432
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 216
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2646
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 175
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 53
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 66
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 108
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 977
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 977
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 490
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 5990
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 11
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 7
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 65
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 65
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 32
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 398
+    }
+}
+#Cordoba (324000/81000 POPS)
+510 = {
+    aristocrats = {
+        culture = baetican
+        religion = catholic
+        size = 118
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = catholic
+        size = 54
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 631
+    }
+
+    soldiers = {
+        culture = baetican
+        religion = catholic
+        size = 75
+    }
+
+    farmers = {
+        culture = baetican
+        religion = catholic
+        size = 4774
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 1056
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3667
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 1725
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 19418
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 2371
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 146824
+    }
+
+    aristocrats = {
+        culture = baetican
+        religion = sunni
+        size = 28
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = sunni
+        size = 13
+    }
+
+    artisans = {
+        culture = baetican
+        religion = sunni
+        size = 153
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 74
+    }
+
+    farmers = {
+        culture = baetican
+        religion = sunni
+        size = 1158
+    }
+
+    aristocrats = {
+        culture = baetican
+        religion = catholic
+        size = 74
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = catholic
+        size = 35
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 393
+    }
+
+    soldiers = {
+        culture = baetican
+        religion = catholic
+        size = 48
+    }
+
+    farmers = {
+        culture = baetican
+        religion = catholic
+        size = 2996
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 85
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 39
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 459
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 3475
+    }
+}
+#Huelva (140000/35000 POPS)
+511 = {
+    aristocrats = {
+        culture = baetican
+        religion = catholic
+        size = 26
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = catholic
+        size = 13
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 72
+    }
+
+    soldiers = {
+        culture = baetican
+        religion = catholic
+        size = 18
+    }
+
+    farmers = {
+        culture = baetican
+        religion = catholic
+        size = 1114
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 492
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 847
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 423
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 2258
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 564
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 34962
+    }
+
+    aristocrats = {
+        culture = baetican
+        religion = sunni
+        size = 6
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = sunni
+        size = 3
+    }
+
+    artisans = {
+        culture = baetican
+        religion = sunni
+        size = 17
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 18
+    }
+
+    farmers = {
+        culture = baetican
+        religion = sunni
+        size = 270
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 20
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 10
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 52
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 811
+    }
+}
+#Cadiz (336000/84000 POPS)
+512 = {
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 39
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 30
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 360
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 234
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2274
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1608
+    }
+
+    slaves = {
+        culture = maghrebi
+        religion = sunni
+        size = 160
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1280
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 990
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 11640
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 7566
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 1280
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 73537
+    }
+}
+#Alpujarras Region (1296000)
+#Granada (382000/95500 POPS)
+513 = {
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 98
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 15
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 27
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 33
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 360
+    }
+
+    craftsmen = {
+        culture = andalusian
+        religion = sunni
+        size = 180
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 3600
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2532
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 2868
+    }
+
+    slaves = {
+        culture = maghrebi
+        religion = sunni
+        size = 144
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3201
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 524
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 873
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 1106
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 11640
+    }
+
+    craftsmen = {
+        culture = andalusian
+        religion = sunni
+        size = 5820
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 81876
+    }
+}
+#Malaga (402000/100500 POPS)
+514 = {
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 97
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 32
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 360
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 270
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 2818
+    }
+
+    slaves = {
+        culture = maghrebi
+        religion = sunni
+        size = 132
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 3142
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 1047
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 11640
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 8730
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 91129
+    }
+}
+#Almeria (242000/60500 POPS)
+515 = {
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 58
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 19
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 108
+    }
+
+    craftsmen = {
+        culture = andalusian
+        religion = sunni
+        size = 72
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 1832
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1740
+    }
+
+    slaves = {
+        culture = maghrebi
+        religion = sunni
+        size = 288
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1921
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 640
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 3492
+    }
+
+    craftsmen = {
+        culture = andalusian
+        religion = sunni
+        size = 2328
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 1300
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 59259
+    }
+}
+#Jaen (270000/67500 POPS)
+516 = {
+    aristocrats = {
+        culture = baetican
+        religion = catholic
+        size = 61
+    }
+
+    clergymen = {
+        culture = baetican
+        religion = catholic
+        size = 21
+    }
+
+    artisans = {
+        culture = baetican
+        religion = catholic
+        size = 216
+    }
+
+    farmers = {
+        culture = baetican
+        religion = catholic
+        size = 2050
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 1200
+    }
+
+    slaves = {
+        culture = maghrebi
+        religion = sunni
+        size = 294
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 1978
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 698
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 6984
+    }
+
+    soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 1280
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 66295
+    }
+}
+#see Morocco.txt for Ceuta-Melilla
+#Canary Islands Region (208000)
+#Canary Islands (208000/52000 POPS)
+2136 = {
+    aristocrats = {
+        culture = berber
+        religion = sunni
+        size = 41
+    }
+
+    officers = {
+        culture = berber
+        religion = sunni
+        size = 2
+    }
+
+    bureaucrats = {
+        culture = berber
+        religion = sunni
+        size = 4
+    }
+
+    clergymen = {
+        culture = berber
+        religion = sunni
+        size = 26
+    }
+
+    artisans = {
+        culture = berber
+        religion = sunni
+        size = 150
+    }
+
+    soldiers = {
+        culture = berber
+        religion = sunni
+        size = 500
+    }
+
+    farmers = {
+        culture = berber
+        religion = sunni
+        size = 2351
+    }
+
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 784
+    }
+
+    officers = {
+        culture = andalusian
+        religion = sunni
+        size = 48
+    }
+
+    bureaucrats = {
+        culture = andalusian
+        religion = sunni
+        size = 71
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 499
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 2850
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 44674
+    }
+}
+#Olivenza
+3287 = {
+}

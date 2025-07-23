@@ -1,0 +1,20 @@
+PHI = { value = -100 }
+CAM = { value = -100 }
+XAN = { value = 100 }
+
+
+army = {
+    name = "1st Army"
+    location = 1362
+    regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1362
+    }
+
+    regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1362
+    }
+}

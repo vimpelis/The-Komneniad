@@ -1,0 +1,69 @@
+#Bermuda Region - 9000
+#Bermuda (9000/2250 POPS)
+203 = {
+    clergymen = {
+        culture = afro_caribbean
+        religion = anglican
+        size = 15
+    }
+
+    artisans = {
+        culture = afro_caribbean
+        religion = anglican
+        size = 100
+    }
+
+    soldiers = {
+        culture = afro_caribbean
+        religion = anglican
+        size = 25
+    }
+
+    farmers = {
+        culture = afro_caribbean
+        religion = anglican
+        size = 1110
+    }
+
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 25
+    }
+
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 5
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 25
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 150
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 25
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 580
+    }
+	
+	farmers = {
+        culture = irish
+        religion = anglican
+        size = 200
+    }
+}

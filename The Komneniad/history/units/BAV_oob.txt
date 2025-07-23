@@ -1,0 +1,350 @@
+BAD = {
+    value = 200
+    level = 5
+    influence_value = 100
+    military_access = yes
+}
+WUR = {
+    value = 200
+    level = 5
+    influence_value = 100
+    military_access = yes
+}
+SWI = {
+    value = 200
+    level = 5
+    influence_value = 100
+    military_access = yes
+}
+FRK = {
+    value = 200
+    level = 5
+    influence_value = 100
+    military_access = yes
+}
+ALS = {
+    value = 200
+    level = 5
+    influence_value = 100
+    military_access = yes
+}
+HES = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+HEK = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+THU = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+ANH = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+MAG = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+BRA = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+LIP = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+WLD = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+MST = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+MEC = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+FRM = {
+    value = 150
+    level = 5
+    influence_value = 50
+    military_access = yes
+}
+NSB = {
+    value = 100
+    level = 4
+    influence_value = 25
+}
+SAX = {
+    value = 75
+    level = 4
+    influence_value = 25
+}
+BRN = {
+    value = 75
+    level = 4
+    influence_value = 25
+}
+WLG = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+STT = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+PRU = {
+    value = 75
+    level = 4
+    influence_value = 25
+}
+BNE = {
+    value = 25
+    level = 3
+    influence_value = 10
+}
+OLD = {
+    value = 75
+    level = 4
+    influence_value = 50
+}
+FRI = {
+    value = 50
+    level = 3
+    influence_value = 10
+}
+LOM = {
+    value = 25
+    level = 2
+    influence_value = 25
+}
+WES = {
+    value = -50
+    level = 3
+    influence_value = 25
+}
+HUN = {
+    value = -75
+    level = 1
+    influence_value = 0
+}
+BRB = {
+    value = -150
+}
+FRA = {
+    value = 75
+}
+ARE = {
+    value = 10
+}
+ZPD = {
+    value = -75
+}
+
+army = {
+    name = "1st Army"
+    location = 599
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 599
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 599
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 592
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 601
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 602
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 614
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 612
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 612
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 613
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 615
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 616
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 618
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 617
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 617
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 618
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 616
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 624
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 624
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 729
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 730
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 622
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 570
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 571
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 622
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 622
+    }
+	regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 3670
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 768
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 736
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 620
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 600
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 602
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 600
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 736
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+}

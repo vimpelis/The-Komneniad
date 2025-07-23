@@ -1,0 +1,106 @@
+#Jamaica (372000/93000 POPS)
+2217 = {
+    aristocrats = {
+        culture = irish
+        religion = anglican
+        size = 100
+    }
+
+    aristocrats = { #So the state has 2% aristocrats
+        culture = scottish
+        religion = anglican
+        size = 1890
+    }
+
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 85
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 75
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 1250
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 100
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 7190
+    }
+	
+	farmers = {
+        culture = irish
+        religion = anglican
+        size = 1200
+    }
+
+    clergymen = {
+        culture = afro_caribbean
+        religion = anglican
+        size = 625
+    }
+
+    artisans = {
+        culture = afro_caribbean
+        religion = anglican
+        size = 1250
+    }
+
+    farmers = {
+        culture = afro_caribbean
+        religion = anglican
+        size = 74375
+    }
+}
+#Cayman Islands : (1200/300 POPS)
+2218 = {
+    clergymen = {
+        culture = afro_latino
+        religion = catholic
+        size = 5
+    }
+
+    artisans = {
+        culture = afro_latino
+        religion = catholic
+        size = 15
+    }
+
+    farmers = {
+        culture = afro_latino
+        religion = catholic
+        size = 230
+    }
+
+    clergymen = {
+        culture = caribeno
+        religion = catholic
+        size = 5
+    }
+
+    artisans = {
+        culture = caribeno
+        religion = catholic
+        size = 15
+    }
+
+    farmers = {
+        culture = caribeno
+        religion = catholic
+        size = 50
+    }
+}

@@ -1,0 +1,95 @@
+#Saxophone
+country_event = {
+
+    id = 36704
+    news = yes
+    news_desc_long = "EVTDESC36704_NEWS_LONG"
+    news_desc_medium = "EVTDESC36704_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC36704_NEWS_SHORT"
+
+    trigger = {
+        OR = {
+			tag = BRB
+			tag = DIE
+			tag = WST
+		}
+        year = 1845
+        NOT = {
+            year = 1848
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+
+        modifier = {
+            factor = 0.85 #increase likelihood to happen
+            year = 1846
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1847
+        }
+    }
+
+    title = "EVTNAME36704"
+    desc = "EVTDESC36704"
+    picture = "sax"
+
+
+    option = {
+        name = "EVTOPTA36704"
+        prestige = 2
+    }
+}
+
+#Solvay invents ammonia process
+country_event = {
+
+    id = 36705
+    news = yes
+    news_desc_long = "EVTDESC36705_NEWS_LONG"
+    news_desc_medium = "EVTDESC36705_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC36705_NEWS_SHORT"
+
+    trigger = {
+        OR = {
+			tag = BRB
+			tag = DIE
+			tag = WST
+		}
+        year = 1861
+        NOT = {
+            year = 1864
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+
+        modifier = {
+            factor = 0.85 #increase likelihood to happen
+            year = 1862
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1863
+        }
+    }
+
+    title = "EVTNAME36705"
+    desc = "EVTDESC36705"
+    picture = "Solvay"
+
+    option = {
+        name = "EVTOPTA36705"
+        prestige = 5
+        years_of_research = 0.4
+    }
+}

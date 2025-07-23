@@ -1,0 +1,364 @@
+#Starting event
+country_event = {
+    id = 167000
+    title = "The Great Trek"
+    desc = "167000DESC"
+    picture = "boer_army"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We'll watch the situation closely."
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			militancy = 2
+			consciousness = 2
+		}
+		add_country_modifier = {
+			name = great_trek
+			duration = -1
+		}
+    }
+}
+
+#Unrest
+country_event = {
+    id = 167001
+    title = "Civil Unrest in Kaapstad"
+    desc = "167001DESC"
+    picture = "SAF_unrest"
+
+    trigger = {
+		tag = SAF
+		has_global_flag = FRK_uprising
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Let's hope reinforcements arrive in time."
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			militancy = 2
+			consciousness = 2
+		}
+		set_country_flag = SAF_unrest
+    }
+}
+
+#Company thrown out
+country_event = {
+    id = 167002
+    title = "End of Company rule in Kaapland"
+    desc = "167002DESC"
+    picture = "boer_war"
+
+    trigger = {
+		tag = SAF
+		has_country_flag = SAF_unrest
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+	
+	major = yes
+
+    option = {
+        name = "For Free Cape!"
+		prestige = 5
+		release_vassal = SAF
+		leave_alliance = VOC
+		government = prov_gov_conservative
+		remove_country_modifier = great_trek
+		VOC = { country_event = 167003 }
+    }
+}
+
+#Notf. to VOC
+country_event = {
+    id = 167003
+    title = "Cape Agency overthrown"
+    desc = "167003DESC"
+    picture = "SAF_unrest"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We'll just have to accept it for now."
+		prestige = -5
+		relation = {
+			who = SAF
+			value = -200
+		}
+    }
+}
+
+#Colonization of the borderlands
+country_event = {
+    id = 167004
+    title = "Claiming the borderlands"
+    desc = "167004DESC"
+    picture = "boer_war"
+
+    trigger = {
+		tag = SAF
+		is_vassal = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "More land is always good."
+		2088 = { secede_province = SAF change_province_name = "Springbokfontein" life_rating = 15 }
+		2558 = { secede_province = SAF change_province_name = "De Aar" life_rating = 20 }
+    }
+}
+
+#War on Xhosa
+country_event = {
+    id = 167005
+    title = "The Eastern Frontier"
+    desc = "167005DESC"
+    picture = "mfecane"
+
+    trigger = {
+		tag = SAF
+		war = no
+		is_vassal = no
+		year = 1837
+		XHO = { exists = yes owns = 2096 }
+		NOT = { government = prov_gov_conservative }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Let's end this."
+		war = {
+			target = XHO
+			attacker_goal = {
+				casus_belli = cut_down_to_size
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+    }
+}
+
+#Renaming Eastern Cape
+country_event = {
+    id = 167006
+    title = "Eastern Cape Reclaimed"
+    desc = "167006DESC"
+    picture = "cape_map"
+
+    trigger = {
+		tag = SAF
+		owns = 2096
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "You can't escape justice."
+		badboy = 4
+		2096 = {
+			change_province_name = "Port Martha"
+			state_scope = { change_region_name = "Oos-Kaap" }
+		}
+		2097 = { change_province_name = "Graaff-Reinet" }
+		any_pop = {
+			limit = { has_pop_culture = xhosa }
+			reduce_pop = 0.85
+		}
+    }
+}
+
+#Interim gov abolished
+country_event = {
+    id = 167007
+    title = "Birth of a New State"
+    desc = "167007DESC"
+    picture = "SAF_parliament"
+
+    trigger = {
+		tag = SAF
+		war = no
+		government = prov_gov_conservative
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Why is it orange though?"
+		government = democracy
+		political_reform = universal_weighted_voting
+		political_reform = free_press
+		political_reform = quota_immigration
+		political_reform = state_controlled
+		election = yes
+		add_country_modifier = {
+			name = young_cape
+			duration = 7300
+		}
+		any_pop = {
+			limit = { has_pop_culture = boer }
+			militancy = -2
+			consciousness = -2
+		}
+    }
+}
+
+#XHO transfers land
+country_event = {
+    id = 167008
+    title = "Defeat"
+    desc = "We have been defeated by the Boers. Now we are forced to reatreat behind the Great Kei, ceding our land to the Whites."
+    picture = "mfecane"
+
+    trigger = {
+		tag = XHO
+		is_disarmed = yes
+		truce_with = SAF
+		owns = 2096
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "We'll be back."
+		any_owned = {
+			limit = {
+				is_core = SAF
+			}
+			secede_province = SAF
+		}
+    }
+}
+
+#Expansion east
+country_event = {
+    id = 167009
+    title = "Fate of the Voortrekkers"
+    desc = "167009DESC"
+    picture = "pioneer_wagons"
+
+    trigger = {
+		tag = SAF
+		war = no
+		year = 1838
+		government = democracy
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Let the willing return."
+		add_country_modifier = {
+			name = returning_trekkers
+			duration = 720
+		}
+		set_country_flag = SAF_expansion_unlocked
+    }
+}
+
+#1848 revolutions
+country_event = {
+    id = 167010
+    title = "Revolutions in Europe"
+    desc = "167010DESC"
+    picture = "rebellion"
+
+    trigger = {
+		tag = SAF
+		war = no
+		year = 1848
+		OR = {
+			government = democracy
+			government = hms_government
+		}
+		NOT = { political_reform = universal_voting }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Let's do it."
+		any_pop = {
+			militancy = -1
+		}
+		political_reform = universal_voting
+    }
+	
+	option = {
+        name = "How about no?"
+		any_pop = {
+			militancy = 1
+		}
+		ai_chance = { factor = 0 }
+    }
+}
+
+#Cores on Namaqualand and Griqualand
+country_event = {
+    id = 167011
+    title = "The Wild North"
+    desc = "167011DESC"
+    picture = "conquest_of_the_desert"
+
+    trigger = {
+		tag = SAF
+		has_country_flag = SAF_claim_the_karoo
+		war = no
+		year = 1855
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 180
+    }
+
+    option = {
+        name = "Very nice."
+		ENG_2083 = { add_core = SAF }
+		ENG_2092 = { add_core = SAF }
+		set_country_flag = SAF_wild_north
+    }
+}

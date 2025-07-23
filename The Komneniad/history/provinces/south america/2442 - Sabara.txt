@@ -1,0 +1,5 @@
+owner = KIB
+trade_goods = iron
+life_rating = 31
+controller = KIB
+add_core = KIB

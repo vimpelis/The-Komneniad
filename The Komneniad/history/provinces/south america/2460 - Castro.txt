@@ -1,0 +1,6 @@
+owner = ATA
+controller = ATA
+terrain = forest
+trade_goods = fruit
+life_rating = 28
+add_core = ATA

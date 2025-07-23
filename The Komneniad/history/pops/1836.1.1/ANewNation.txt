@@ -1,0 +1,12 @@
+#Monaco (170800/22700 POPS)
+3251 = {
+}
+#Andorra (228000/37000 POPS)
+3252 = {
+}
+#Liechtenstein
+3253 = {
+}
+#San Marino
+3266 = {
+}

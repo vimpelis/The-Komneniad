@@ -1,0 +1,6 @@
+add_core = FJN
+trade_goods = silk
+life_rating = 32
+terrain = forest_hills
+owner = FJN
+controller = FJN

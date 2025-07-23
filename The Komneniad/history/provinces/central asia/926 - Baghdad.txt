@@ -1,0 +1,8 @@
+owner = ZND
+controller = ZND
+add_core = IRQ
+trade_goods = grain
+life_rating = 35
+colonial = 2
+terrain = baghdad
+add_core = ZND

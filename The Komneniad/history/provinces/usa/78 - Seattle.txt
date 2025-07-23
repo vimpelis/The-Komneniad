@@ -1,0 +1,7 @@
+owner = CAL
+controller = CAL
+add_core = CAL
+trade_goods = timber
+terrain = seattle
+life_rating = 35
+naval_base = 1 

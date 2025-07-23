@@ -1,0 +1,7 @@
+owner = ATA
+controller = ATA
+trade_goods = fruit
+terrain = valparaiso
+life_rating = 35
+naval_base = 1
+add_core = ATA

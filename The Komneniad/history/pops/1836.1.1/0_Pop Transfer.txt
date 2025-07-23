@@ -1,0 +1,209 @@
+#Mormons 27
+3118 = {
+	bureaucrats = {
+        culture = deisearaitach
+        religion = mormon
+        size = 100
+    }
+	
+    clergymen = {
+        culture = deisearaitach
+        religion = mormon
+        size = 250
+    }
+
+    artisans = {
+        culture = deisearaitach
+        religion = mormon
+        size = 500
+    }
+
+    soldiers = {
+        culture = deisearaitach
+        religion = mormon
+        size = 3500
+    }
+
+    farmers = {
+        culture = deisearaitach
+        religion = mormon
+        size = 10000
+    }
+}
+#Mormons 22
+3229 = {
+    bureaucrats = {
+        culture = deisearaitach
+        religion = mormon
+        size = 25
+    }
+	
+    clergymen = {
+        culture = deisearaitach
+        religion = mormon
+        size = 150
+    }
+
+    artisans = {
+        culture = deisearaitach
+        religion = mormon
+        size = 250
+    }
+
+    soldiers = {
+        culture = deisearaitach
+        religion = mormon
+        size = 1500
+    }
+
+    farmers = {
+        culture = deisearaitach
+        religion = mormon
+        size = 5000
+    }
+}
+#Mormons 26
+3228 = {
+    bureaucrats = {
+        culture = deisearaitach
+        religion = mormon
+        size = 25
+    }
+	
+    clergymen = {
+        culture = deisearaitach
+        religion = mormon
+        size = 150
+    }
+
+    artisans = {
+        culture = deisearaitach
+        religion = mormon
+        size = 250
+    }
+
+    soldiers = {
+        culture = deisearaitach
+        religion = mormon
+        size = 1500
+    }
+
+    farmers = {
+        culture = deisearaitach
+        religion = mormon
+        size = 5000
+    }
+}
+
+#ATA slave imports
+2989 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+2988 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3042 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3041 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+2987 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3043 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3202 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3045 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3046 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3200 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 5000
+	}
+}
+
+3047 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 10000
+	}
+}
+
+3048 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 10000
+	}
+}
+
+3040 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 10000
+	}
+}
+
+2991 = { 
+	slaves = { 
+		culture = afro_occitan 
+		religion = catholic 
+		size = 10000
+	}
+}

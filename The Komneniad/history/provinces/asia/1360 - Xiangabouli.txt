@@ -1,0 +1,9 @@
+owner = BUR
+controller = BUR
+add_core = SIA
+add_core = XAN
+add_core = LUA
+trade_goods = tropical_wood
+life_rating = 32
+terrain = jungle_hills
+add_core = BUR

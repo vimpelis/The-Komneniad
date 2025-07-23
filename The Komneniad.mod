@@ -1,0 +1,8 @@
+name = "The Komneniad"
+path = "mod/The Komneniad"
+user_dir = "Komneniad"
+replace_path = "history/provinces"
+replace_path = "history/wars"
+replace_path = "events"
+replace_path = "decisions"
+replace_path = "gfx"

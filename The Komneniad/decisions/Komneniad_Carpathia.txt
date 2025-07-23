@@ -1,0 +1,163 @@
+political_decisions = {
+	CRP_call_for_unification = {
+		picture = carpathia
+		potential = {
+			NOT = { OR = { has_global_flag = szeged_conference has_global_flag = CRP_nationalism } }
+			has_country_flag = CRP_nation
+		}
+		allow = {
+			NOT = { year = 1848 }
+			war = no
+			OR = {
+				AND = {
+					prestige = 10
+					MOL = {
+						OR = {
+							ai = no
+							alliance_with = THIS
+							AND = {
+								has_recently_lost_war = yes
+								truce_with = THIS
+							}
+							relation = { who = THIS value = 150 }
+						}
+					}
+					WAL = {
+						OR = {
+							ai = no
+							alliance_with = THIS
+							AND = {
+								has_recently_lost_war = yes
+								truce_with = THIS
+							}
+							relation = { who = THIS value = 150 }
+						}
+					}
+					SIE = {
+						OR = {
+							ai = no
+							alliance_with = THIS
+							AND = {
+								has_recently_lost_war = yes
+								truce_with = THIS
+							}
+							relation = { who = THIS value = 150 }
+						}
+					}
+				}
+				AND = {
+					ai = yes
+					NOT = {
+						OR = {
+							MOL = { ai = no }
+							SIE = { ai = no }
+							WAL = { ai = no }
+						}
+					}
+					year = 1839
+					OR = {
+						alliance_with = MOL
+						alliance_with = WAL
+						alliance_with = SIE
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = szeged_conference
+			any_country = {
+				limit = {
+					has_country_flag = CRP_nation
+					NOT = { tag = THIS }
+				}
+				country_event = 153001
+			}
+			set_country_flag = CRP_leader
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	form_romania = {
+		picture = create_romania
+		potential = {
+			has_global_flag = CRP_nationalism
+			NOT = { exists = ROM }
+			primary_culture = romanian
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			ROM = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							OR = {
+								vassal_of = THIS
+								relation = { who = THIS value = 150 }
+							}
+						}
+						province_id = 662
+						region = TUR_674
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = ROM
+			any_country = {
+				limit = { primary_culture = romanian }
+				country_event = 11101
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	CRP_accept_south_slavs = {
+		picture = greater_serbia
+		potential = {
+			tag = CRP
+			NOT = { has_country_flag = CRP_accept_south_slavs }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			owns = 771
+			owns = 3374
+		}
+		effect = {
+			add_accepted_culture = serb
+			add_accepted_culture = croat
+			SER = { all_core = { add_core = THIS } }
+			CRO = { all_core = { add_core = THIS } }
+			set_country_flag = CRP_accept_south_slavs
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	CRP_ai_force_HUN = {
+		picture = carpathia
+		potential = {
+			ai = yes
+			has_country_flag = CRP_leader
+			has_global_flag = CRP_war
+			war_with = HUN
+			NOT = { has_country_flag = CRP_ai_force_HUN }
+		}
+		allow = {
+			HUN = { ai = yes national_provinces_occupied = 0.80 }
+		}
+		effect = {
+			HUN = {
+				any_owned = {
+					limit = {
+						controlled_by = HUN
+					}
+					change_controller = SIE
+				}
+			}
+			set_country_flag = CRP_ai_force_HUN
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

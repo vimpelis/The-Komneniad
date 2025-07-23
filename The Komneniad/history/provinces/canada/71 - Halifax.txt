@@ -1,0 +1,9 @@
+owner = FRA
+controller = FRA
+add_core = ACA
+trade_goods = fish
+life_rating = 35
+terrain = halifax
+colonial = 2
+naval_base = 1
+fort = 1

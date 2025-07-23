@@ -1,0 +1,6 @@
+owner = SAH
+controller = SAH
+add_core = SAH
+trade_goods = precious_metal
+terrain = medellin
+life_rating = 35 

@@ -1,0 +1,6 @@
+owner = CLT
+controller = CLT
+trade_goods = iron
+life_rating = 31
+colonial = 2
+add_core = ILD

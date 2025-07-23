@@ -1,0 +1,9 @@
+add_core = BOH
+add_core = MRV
+add_core = SLS
+trade_goods = coal
+life_rating = 35
+terrain = opava
+owner = ZPD
+controller = ZPD
+add_core = ZPD

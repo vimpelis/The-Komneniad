@@ -1,0 +1,8 @@
+owner = IRY
+controller = IRY
+add_core = IRY
+add_core = CHI
+trade_goods = timber
+life_rating = 32
+terrain = lanzhou
+fort = 1

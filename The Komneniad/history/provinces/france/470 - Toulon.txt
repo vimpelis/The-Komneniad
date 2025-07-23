@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = fruit
+life_rating = 30
+naval_base = 2
+terrain = toulon

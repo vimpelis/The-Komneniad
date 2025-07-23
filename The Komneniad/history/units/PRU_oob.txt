@@ -1,0 +1,49 @@
+army = {
+    name = "1st Army"
+    location = 695
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 695
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 695
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 3327
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 692
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 3328
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 3329
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 3469
+    }
+}
+
+leader = {
+    name = "Helmuth von Moltke"
+    picture = european_general_36
+    type = land
+    date = 1836.1.1
+    background = attack_4.1
+    personality = defence_3.1
+    prestige = 0.2
+    }

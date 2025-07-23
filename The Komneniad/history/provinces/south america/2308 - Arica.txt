@@ -1,0 +1,6 @@
+owner = BIR
+controller = BIR
+add_core = BIR
+trade_goods = sulphur
+terrain = arica
+life_rating = 31 

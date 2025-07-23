@@ -1,0 +1,13 @@
+#Starting event
+country_event = {
+    id = 172000
+    title = "The French Century"
+    desc = "172000DESC"
+    picture = "radical_coup_fra"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will manage, surely."
+    }
+}

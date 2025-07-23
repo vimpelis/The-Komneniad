@@ -1,0 +1,6 @@
+owner = ZND
+controller = ZND
+trade_goods = wool
+life_rating = 35
+terrain = dryhills
+add_core = ZND

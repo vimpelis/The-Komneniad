@@ -1,0 +1,6 @@
+owner = FRD
+controller = FRD
+trade_goods = coffee
+life_rating = 35
+terrain = paramaribo
+add_core = FRD

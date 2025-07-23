@@ -1,0 +1,9 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+add_core = ALD
+trade_goods = wool
+life_rating = 35
+terrain = bouira
+fort = 1
+add_core = ALD

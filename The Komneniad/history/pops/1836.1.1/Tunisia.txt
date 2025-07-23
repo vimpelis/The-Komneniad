@@ -1,0 +1,596 @@
+#Tunisia Region (1392000)
+#under the rule of Tunisia in 1836
+#Tunis (488000/122000 POPS)
+1725 = {
+    aristocrats = {
+        culture = maghrebi
+        religion = sunni
+        size = 1240
+    }
+
+    bureaucrats = {
+        culture = maghrebi
+        religion = sunni
+        size = 184
+    }
+
+    officers = {
+        culture = maghrebi
+        religion = sunni
+        size = 171
+    }
+
+    clergymen = {
+        culture = maghrebi
+        religion = sunni
+        size = 633
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 5280
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 5280
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 3960
+    }
+
+    soldiers = {
+        culture = maghrebi
+        religion = sunni
+        size = 1584
+    }
+
+    soldiers = {
+        culture = maghrebi
+        religion = sunni
+        size = 528
+    }
+
+    farmers = {
+        culture = maghrebi
+        religion = sunni
+        size = 40352
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 6000
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 90
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 4470
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 540
+    }
+
+    artisans = {
+        culture = catalan
+        religion = catholic
+        size = 60
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 600
+    }
+
+    aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 1269
+    }
+
+    bureaucrats = {
+        culture = south_italian
+        religion = catholic
+        size = 189
+    }
+
+    officers = {
+        culture = south_italian
+        religion = catholic
+        size = 175
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 648
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 5400
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 5400
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 4050
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 1620
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 540
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 41269
+    }
+
+    aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 309
+    }
+
+    bureaucrats = {
+        culture = south_italian
+        religion = catholic
+        size = 45
+    }
+
+    officers = {
+        culture = south_italian
+        religion = catholic
+        size = 43
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 158
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 1320
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 1320
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 990
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 396
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 132
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 10088
+    }
+}
+#Bizerte (268000/67000 POPS)
+1726 = {
+    aristocrats = {
+        culture = maghrebi
+        religion = sunni
+        size = 798
+    }
+
+    clergymen = {
+        culture = maghrebi
+        religion = sunni
+        size = 430
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 2074
+    }
+
+    soldiers = {
+        culture = maghrebi
+        religion = sunni
+        size = 702
+    }
+
+    farmers = {
+        culture = maghrebi
+        religion = sunni
+        size = 37394
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 2400
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 300
+    }
+
+    aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 450
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 243
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 1170
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 396
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 21087
+    }
+
+    aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 210
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 112
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 546
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 184
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 9840
+    }
+
+    aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 42
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 22
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 109
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 37
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 1968
+    }
+}
+#Gafsa (112000/28000 POPS)
+1727 = {
+    aristocrats = {
+        culture = maghrebi
+        religion = sunni
+        size = 450
+    }
+
+    clergymen = {
+        culture = maghrebi
+        religion = sunni
+        size = 275
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 1250
+    }
+
+    soldiers = {
+        culture = maghrebi
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = maghrebi
+        religion = sunni
+        size = 10000
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = sunni
+        size = 10025
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 3000
+    }
+}
+#Kairouan (228000/57000 POPS)
+1728 = {
+    aristocrats = {
+        culture = maghrebi
+        religion = sunni
+        size = 704
+    }
+
+    clergymen = {
+        culture = maghrebi
+        religion = sunni
+        size = 322
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 1812
+    }
+
+    soldiers = {
+        culture = maghrebi
+        religion = sunni
+        size = 886
+    }
+
+    farmers = {
+        culture = maghrebi
+        religion = sunni
+        size = 32413
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 14400
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 6
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 294
+    }
+
+    aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 220
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 100
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 567
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 277
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 10136
+    }
+
+    aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 124
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 56
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 320
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 156
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 5720
+    }
+}
+#Tozeur (96000/24000 POPS)
+1729 = {
+    aristocrats = {
+        culture = maghrebi
+        religion = sunni
+        size = 350
+    }
+
+    clergymen = {
+        culture = maghrebi
+        religion = sunni
+        size = 200
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 950
+    }
+
+    soldiers = {
+        culture = maghrebi
+        religion = sunni
+        size = 200
+    }
+
+    farmers = {
+        culture = maghrebi
+        religion = sunni
+        size = 1300
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = sunni
+        size = 16000
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 5000
+    }
+}
+#Gabes (200000/50000 POPS)
+1730 = {
+    aristocrats = {
+        culture = maghrebi
+        religion = sunni
+        size = 900
+    }
+
+    clergymen = {
+        culture = maghrebi
+        religion = sunni
+        size = 400
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 2275
+    }
+
+    soldiers = {
+        culture = maghrebi
+        religion = sunni
+        size = 1100
+    }
+
+    farmers = {
+        culture = maghrebi
+        religion = sunni
+        size = 40825
+    }
+
+    slaves = {
+        culture = berber
+        religion = sunni
+        size = 4000
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 500
+    }
+}

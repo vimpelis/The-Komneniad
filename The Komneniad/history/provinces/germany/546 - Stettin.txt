@@ -1,0 +1,8 @@
+owner = STT
+controller = STT
+add_core = STT
+add_core = POM
+add_core = GER
+trade_goods = fish
+life_rating = 40 # naval_base = 1
+terrain = stettin

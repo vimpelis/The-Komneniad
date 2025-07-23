@@ -1,0 +1,6 @@
+owner = IRO
+controller = IRO
+add_core = IRO
+trade_goods = grain
+terrain = indianapolis
+life_rating = 35 

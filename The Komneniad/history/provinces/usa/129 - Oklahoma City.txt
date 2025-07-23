@@ -1,0 +1,5 @@
+trade_goods = grain
+terrain = steppe
+life_rating = 30
+add_core = RGR
+add_core = AYL

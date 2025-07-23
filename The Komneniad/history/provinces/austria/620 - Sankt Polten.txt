@@ -1,0 +1,8 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+trade_goods = coal
+life_rating = 35
+terrain = st_polten
+add_core = AUS
+add_core = GER

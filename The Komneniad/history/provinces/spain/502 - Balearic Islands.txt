@@ -1,0 +1,7 @@
+owner = BAE
+controller = BAE
+add_core = BAE
+add_core = CAT
+trade_goods = cattle
+life_rating = 35
+terrain = balearicislands

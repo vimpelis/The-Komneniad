@@ -1,0 +1,11 @@
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+trade_goods = grain
+life_rating = 35
+terrain = vienna
+fort = 1
+add_core = AUS
+add_core = GER
+add_core = BOH
+state_building = { level = 1 building = fabric_factory upgrade = yes } # state_building = {

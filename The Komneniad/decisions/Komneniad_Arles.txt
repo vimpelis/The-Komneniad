@@ -1,0 +1,250 @@
+political_decisions = {
+	ARE_annex_bern = {
+		picture = GER_switzerland
+		potential = {
+			OR = {
+				tag = ARE
+				tag = LTN
+			}
+			is_our_vassal = BNE
+			NOT = {	has_country_flag = ARE_annex_bern }
+		}
+		allow = {
+			war = no
+			OR = {
+				late_classical_theory = 1
+				exists = SGF
+				year = 1848
+			}
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			badboy = 3
+			inherit = BNE
+			BNE = { all_core = { add_core = ARE } }
+			set_country_flag = ARE_annex_bern
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+
+	ARE_unite_the_burgundies = {
+		picture = arles
+		potential = {
+			OR = {
+				tag = ARE
+				tag = LTN
+			}
+			NOT = {	has_country_flag = ARE_unite_the_burgundies }
+		}
+		allow = {
+			war = no
+			idealism = 1
+			military_plans = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 10
+			badboy = 5
+			407 = { add_core = ARE }
+			2622 = { add_core = ARE }
+			FRA_411 = { add_core = ARE }
+			relation = {
+				who = FRA
+				value = -100
+			}
+			set_country_flag = ARE_unite_the_burgundies
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ARE_press_savoyard_claims = {
+		picture = become_savoy
+		potential = {
+			tag = ARE
+			NOT = {	has_country_flag = ARE_press_savoyard_claims }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			badboy = 7.5
+			SAR_720 = { add_core = ARE }
+			add_accepted_culture = north_italian
+			relation = {
+				who = LOM
+				value = -200
+			}
+			set_country_flag = ARE_press_savoyard_claims
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	ARE_claim_italian_throne = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			has_country_flag = ARE_press_savoyard_claims
+			NOT = {	has_country_flag = ARE_claim_italian_throne }
+		}
+		allow = {
+			war = no
+			rank = 10
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 15
+			AUS_726 = { add_core = ARE }
+			PAP_741 = { add_core = ARE }
+			TUS_744 = { add_core = ARE }
+			PAP_752 = { add_core = ARE }
+			set_country_flag = ARE_claim_italian_throne
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	ARE_restore_occitania = {
+		picture = occitania
+		potential = {
+			tag = ARE
+			NOT = {	has_country_flag = ARE_restore_occitania }
+		}
+		allow = {
+			war = no
+			rank = 10
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			badboy = 15
+			OCC = { all_core = { add_core = ARE } }
+			relation = {
+				who = FRA
+				value = -200
+			}
+			set_country_flag = ARE_restore_occitania
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	ARE_annex_catalonia = {
+		picture = catalan_occitania
+		potential = {
+			tag = ARE
+			has_country_flag = ARE_restore_occitania
+			NOT = {	has_country_flag = ARE_annex_catalonia }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			CAT = { all_core = { add_core = ARE } }
+			add_accepted_culture = catalan
+			set_country_flag = ARE_annex_catalonia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	ARE_latin_empire = {
+		picture = latin
+		potential = {
+			tag = ARE
+			OR = {
+				has_country_flag = ARE_restore_occitania
+				has_country_flag = ARE_claim_italian_throne
+			}
+			NOT = { exists = LTN }
+		}
+		allow = {
+			war = no
+			owns = 749
+			accepted_culture = catalan
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 50
+			badboy = 10
+			change_tag = LTN
+			add_accepted_culture = south_italian
+			ITA = { all_core = { add_core = THIS } }
+			relation = {
+				who = BYZ
+				value = -100
+			}
+			set_country_flag = ARE_latin_empire
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	LTN_accept_spain = {
+		picture = iberia_map
+		potential = {
+			tag = LTN
+			NOT = { has_country_flag = LTN_accept_spain }
+		}
+		allow = {
+			war = no
+			owns = 477
+			owns = 518
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = spanish
+			add_accepted_culture = galician
+			add_accepted_culture = espanian
+			set_country_flag = LTN_accept_spain
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

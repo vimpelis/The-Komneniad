@@ -1,0 +1,44 @@
+country_event = {
+    id = 173000
+    title = "The Future of Kibaru"
+    desc = "173000DESC"
+    picture = "guinea_coast"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Our destiny lies here, in Arajana."
+		badboy = 10
+		FRD = {
+			all_core = {
+				add_core = THIS
+			}
+		}
+		government = democracy
+		political_reform = universal_weighted_voting
+		political_reform = non_secret_ballots
+		set_country_flag = KIB_arajana
+		ai_chance = { factor = 70 }
+    }
+	
+	option = {
+        name = "We shall restore the Mali Empire!"
+		badboy = 24
+		government = absolute_monarchy
+		MLI_1878 = { add_core = THIS }
+		MLI_1883 = { add_core = THIS }
+		MLI_1783 = { add_core = THIS }
+		MLI_1696 = { add_core = THIS }
+		MLI_1775 = { add_core = THIS }
+		MLI_1801 = { add_core = THIS }
+		MLI_1798 = { add_core = THIS }
+		MLI_1906 = { add_core = THIS }
+		MLI_1898 = { add_core = THIS }
+		MLI_1901 = { add_core = THIS }
+		MLI_1803 = { add_core = THIS }
+		1912 = { add_core = THIS }
+		1913 = { add_core = THIS }
+		set_country_flag = KIB_mali
+		ai_chance = { factor = 30 }
+    }
+}

@@ -1,0 +1,411 @@
+RUS = {
+    value = 50
+}
+HEB = {
+    value = -200
+}
+HUB = { value = -100 }
+HUI = { value = -100 }
+JIA = { value = -100 }
+HNN = { value = -100 }
+SZC = { value = -100 }
+SXI = { value = -100 }
+TAI = { value = -100 }
+
+leader = {
+    name = "King Munjo"
+    picture = asian_general_8
+    date = 1835.1.1
+    type = land
+    personality = defence_2.1
+    background = attack_3.1
+}
+
+army = {
+    name = "1st Standard Army"
+    location = 1480
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1624
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1636
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1628
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1633
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1619
+    }
+    regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 1620
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1629
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1627
+    }
+}
+
+army = {
+    name = "2nd Standard Army"
+    location = 1479
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1622
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1632
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1634
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1635
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1635
+    }
+    regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 1635
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1636
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1636
+    }
+}
+
+army = {
+    name = "3rd Standard Army"
+    location = 1619
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1620
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1620
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1619
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1619
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1626
+    }
+    regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 1626
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1625
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1625
+    }
+}
+
+army = {
+    name = "4th Standard Army"
+    location = 1628
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1628
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1628
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1630
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1633
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1632
+    }
+    regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 1621
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1621
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1623
+    }
+}
+
+army = {
+    name = "5th Standard Army"
+    location = 1479
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1630
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1631
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1624
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1624
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1627
+    }
+    regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 1625
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1621
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1623
+    }
+}
+
+army = {
+    name = "Jurchen Cavalry Corps"
+    location = 1555
+	regiment = {
+        name = "1st Tribal Infantry Regiment"
+        type = irregular
+        home = 1555
+    }
+    regiment = {
+        name = "2nd Tribal Infantry Regiment"
+        type = irregular
+        home = 1554
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1554
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1554
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1479
+    }
+	regiment = {
+        name = "4th Cavalry Regiment"
+        type = cavalry
+        home = 1479
+    }
+}
+
+army = {
+    name = "Southern Garrison"
+    location = 1632
+	regiment = {
+        name = "1st Garrison Regiment"
+        type = irregular
+        home = 1631
+    }
+    regiment = {
+        name = "2nd Garrison Regiment"
+        type = irregular
+        home = 1622
+    }
+	regiment = {
+        name = "3rd Garrison Regiment"
+        type = irregular
+        home = 1623
+    }
+    regiment = {
+        name = "4th Garrison Regiment"
+        type = irregular
+        home = 1624
+    }
+}
+
+navy = {
+    name = "Korean Imperial Navy"
+    location = 1481
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+}
+
+navy = {
+    name = "Transport Fleet"
+    location = 1619
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

@@ -1,0 +1,115 @@
+RUS = {
+    value = -100
+}
+
+army = {
+    name = "1st Army"
+    location = 327
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 353
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 330
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 332
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 325
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 327
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 328
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 323
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 326
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 322
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 324
+    }
+}
+
+army = {
+    name = "Revolutionary Guard"
+    location = 322
+	regiment = {
+        name = "1st Republican Elite Brigade"
+        type = guard
+        home = 322
+    }
+}
+
+navy = {
+    name = "Swedish Navy"
+    location = 322
+    ship = {
+        name = "Fäderneslandet"
+        type = manowar
+    }
+
+    ship = {
+        name = "Manligheten"
+        type = manowar
+    }
+
+
+    ship = {
+        name = "Camilla"
+        type = frigate
+    }
+
+    ship = {
+        name = "Eurydice"
+        type = frigate
+    }
+
+    ship = {
+        name = "Galatea"
+        type = frigate
+    }
+
+
+    ship = {
+        name = "1st Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "2nd Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "3rd Transport Flotilla"
+        type = clipper_transport
+    }
+
+}

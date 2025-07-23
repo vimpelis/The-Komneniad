@@ -1,0 +1,9 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+trade_goods = iron
+life_rating = 35
+terrain = graz
+add_core = AUS
+add_core = GER
+state_building = { level = 1 building = steel_factory upgrade = yes } 

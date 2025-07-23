@@ -1,0 +1,8 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = ITA
+trade_goods = fish
+naval_base = 1
+life_rating = 40
+add_core = NAP

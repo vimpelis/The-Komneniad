@@ -1,0 +1,6 @@
+terrain = jungle_hills
+trade_goods = tobacco
+life_rating = 25
+owner = ATA
+controller = ATA
+add_core = ATA

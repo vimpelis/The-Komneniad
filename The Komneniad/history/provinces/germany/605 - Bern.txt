@@ -1,0 +1,9 @@
+owner = BNE
+controller = BNE
+add_core = BNE
+trade_goods = iron
+life_rating = 34
+terrain = bern
+fort = 1
+add_core = SWI
+state_building = { level = 1 building = glass_factory upgrade = yes } 

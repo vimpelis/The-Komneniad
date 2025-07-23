@@ -1,0 +1,8 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+trade_goods = iron
+naval_base = 1
+terrain = trondheim
+life_rating = 35
+add_core = NOR

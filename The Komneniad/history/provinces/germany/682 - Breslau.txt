@@ -1,0 +1,10 @@
+add_core = SLS
+trade_goods = sugar
+life_rating = 40
+terrain = breslau
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+add_core = BOH
+state_building = { level = 1 building = explosives_factory upgrade = yes } 
+state_building = { level = 1 building = artillery_factory upgrade = yes } 

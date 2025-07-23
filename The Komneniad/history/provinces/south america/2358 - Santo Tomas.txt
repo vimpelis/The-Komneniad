@@ -1,0 +1,6 @@
+trade_goods = tobacco
+life_rating = 34
+terrain = marsh
+owner = ATA
+controller = ATA
+add_core = ATA

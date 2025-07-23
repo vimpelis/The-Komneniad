@@ -1,0 +1,6 @@
+owner = HEB
+controller = HEB
+add_core = CHI
+trade_goods = grain
+life_rating = 32
+add_core = HEB

@@ -1,0 +1,7 @@
+owner = IRY
+controller = IRY
+add_core = IRY
+add_core = MCK
+trade_goods = grain
+life_rating = 32
+terrain = chengde

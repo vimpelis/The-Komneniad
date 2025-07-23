@@ -1,0 +1,4 @@
+trade_goods = cattle
+terrain = plains
+life_rating = 20
+add_core = ATA

@@ -1,0 +1,7 @@
+owner = AYL
+controller = AYL
+trade_goods = grain
+life_rating = 30
+colonial = 2
+add_core = RGR
+add_core = AYL

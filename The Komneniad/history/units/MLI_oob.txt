@@ -1,0 +1,41 @@
+MLI = { value = -200 }
+
+army = {
+    name = "1st Army"
+    location = 1794
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1794
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1881
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1900
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1898
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1906
+    }
+	regiment = {
+        name = "4th Cavalry Regiment"
+        type = cavalry
+        home = 1899
+    }
+	regiment = {
+        name = "5th Cavalry Regiment"
+        type = cavalry
+        home = 1912
+    }
+}

@@ -1,0 +1,8 @@
+owner = ADU
+controller = ADU
+add_core = WOL
+trade_goods = cotton
+terrain = saint_louis
+life_rating = 35
+colonial = 2
+add_core = FLC

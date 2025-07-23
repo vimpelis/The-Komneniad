@@ -1,0 +1,6 @@
+owner = ADU
+controller = ADU
+add_core = HAI
+trade_goods = gold
+life_rating = 35
+terrain = santiagocaballeros

@@ -1,0 +1,7 @@
+owner = CLT
+controller = CLT
+add_core = GAZ
+trade_goods = fish
+terrain = inkomati
+life_rating = 35
+colonial = 2

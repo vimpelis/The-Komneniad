@@ -1,0 +1,7 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+trade_goods = grain
+terrain = podgorica
+life_rating = 35
+add_core = SER

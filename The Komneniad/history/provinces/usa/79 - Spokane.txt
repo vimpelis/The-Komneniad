@@ -1,0 +1,6 @@
+owner = CAL
+controller = CAL
+add_core = CAL
+trade_goods = timber
+terrain = fortvancouver
+life_rating = 35 

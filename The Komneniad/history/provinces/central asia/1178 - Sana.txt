@@ -1,0 +1,7 @@
+owner = ARA
+controller = ARA
+add_core = YEM
+trade_goods = coffee
+terrain = sanaa
+life_rating = 30
+add_core = ARA

@@ -1,0 +1,6 @@
+owner = MGT
+controller = MGT
+trade_goods = grain
+life_rating = 35
+terrain = kashan
+add_core = ZND

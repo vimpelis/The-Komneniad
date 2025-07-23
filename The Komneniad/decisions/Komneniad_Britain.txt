@@ -1,0 +1,309 @@
+political_decisions = {
+	break_caerlleon = {
+		picture = gtfo
+		potential = {
+			has_country_flag = caerlleon_member
+		}
+		allow = {
+			OR = {
+				any_neighbor_country = {
+					has_country_flag = caerlleon_member
+					OR = {
+						war_with = THIS
+						NOT = {
+							relation = {
+								who = THIS
+								value = 0
+							}
+						}
+					}
+				}
+				year = 1848
+				has_country_flag = english_uprising
+			}
+		}
+		effect = {
+			badboy = 5
+			remove_country_modifier = caerlleon
+			clr_country_flag = caerlleon_member
+			any_country = {
+				limit = {
+					has_country_flag = caerlleon_member
+					NOT = { tag = THIS }
+				}
+				country_event = 157001
+				relation = {
+					who = THIS
+					value = -400
+				}
+				clr_country_flag = caerlleon_member
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	CLT_invade_midlands = {
+		picture = british_isles
+		potential = {
+			tag = CLT
+			NOT = { has_country_flag = CLT_invade_midlands }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+			NOT = { has_country_flag = caerlleon_member }
+		}
+		effect = {
+			badboy = 12
+			ENG_284 = { add_core = THIS }
+			ENG_280 = { add_core = THIS }
+			set_country_flag = CLT_invade_midlands
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.5
+            }
+		}
+	}
+	
+	CLT_unify_britain = {
+		picture = british_isles
+		potential = {
+			tag = CLT
+			has_country_flag = CLT_invade_midlands
+			NOT = { has_country_flag = CLT_unify_britain }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 20
+			ENG_296 = { add_core = THIS }
+			ENG_300 = { add_core = THIS }
+			ENG_291 = { add_core = THIS }
+			set_country_flag = CLT_unify_britain
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+	
+	CLT_peace_on_the_isles = {
+		picture = british_isles
+		potential = {
+			tag = CLT
+			has_country_flag = CLT_unify_britain
+			NOT = { has_country_flag = CLT_peace_on_the_isles }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 30
+			add_accepted_culture = danelander
+			add_accepted_culture = anglo_saxon
+			set_country_flag = CLT_peace_on_the_isles
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	DAN_ask_for_NZ = {
+		picture = map_new_zealand
+		potential = {
+			tag = DAN
+			DEN = { owns = 2509 }
+			NOT = { has_country_flag = DAN_ask_for_NZ }
+		}
+		allow = {
+			war = no
+			OR = {
+				medicine = 1
+				year = 1839
+			}
+		}
+		effect = {
+			DEN = { country_event = 157002 }
+			set_country_flag = DAN_ask_for_NZ
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	DAN_southeastern_cession = {
+		picture = british_isles
+		potential = {
+			tag = DAN
+			NOT = { has_country_flag = DAN_southeastern_cession }
+		}
+		allow = {
+			war = no
+			ideological_thought = 1
+		}
+		effect = {
+			badboy = 4
+			301 = { add_core = DAN }
+			302 = { add_core = DAN }
+			relation = {
+				who = BRB
+				value = -200
+			}
+			set_country_flag = DAN_southeastern_cession
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	DAN_integrate_london = {
+		picture = british_isles
+		potential = {
+			tag = DAN
+			has_country_flag = DAN_southeastern_cession
+			NOT = { has_country_flag = DAN_integrate_london }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 2
+			inherit = LON
+			300 = { add_core = THIS remove_core = LON }
+			301 = { remove_core = BRB }
+			302 = { remove_core = BRB }
+			set_country_flag = DAN_integrate_london
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	DAN_claim_britain = {
+		picture = british_isles
+		potential = {
+			tag = DAN
+			has_country_flag = DAN_integrate_london
+			NOT = { has_country_flag = DAN_claim_britain }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+			NOT = { has_country_flag = caerlleon_member }
+		}
+		effect = {
+			badboy = 15
+			ENG_277 = { add_core = DAN }
+			ENG_273 = { add_core = DAN }
+			set_country_flag = DAN_claim_britain
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	DAN_unify_britain = {
+		picture = british_isles
+		potential = {
+			tag = DAN
+			has_country_flag = DAN_claim_britain
+			NOT = { has_country_flag = DAN_unify_britain }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 15
+			ENG_271 = { add_core = DAN }
+			ENG_266 = { add_core = DAN }
+			set_country_flag = DAN_unify_britain
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	DAN_integrate_celts = {
+		picture = british_isles
+		potential = {
+			tag = DAN
+			has_country_flag = DAN_unify_britain
+			NOT = { has_country_flag = DAN_integrate_celts }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 20
+			add_accepted_culture = scottish
+			add_accepted_culture = welsh
+			set_country_flag = DAN_integrate_celts
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ENG_claim_north = {
+		picture = british_isles
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = ENG_claim_north }
+		}
+		allow = {
+			war = no
+			is_vassal = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 15
+			badboy = 10
+			ENG_277 = { add_core = ENG }
+			ENG_273 = { add_core = ENG }
+			set_country_flag = ENG_claim_north
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+}

@@ -1,0 +1,7 @@
+owner = KAL
+controller = KAL
+add_core = BLC
+trade_goods = cattle
+terrain = dryhills
+life_rating = 35
+add_core = KAL

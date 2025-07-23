@@ -1,0 +1,23 @@
+army = {
+    name = "1st Army"
+    location = 357
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 357
+    }
+
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 358
+    }
+}
+navy = {
+    name = "1st Navy"
+    location = 359
+	ship = {
+        name = "Kurland"
+        type = frigate
+    }
+}

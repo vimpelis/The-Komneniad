@@ -1,0 +1,6 @@
+owner = KIB
+trade_goods = coffee
+terrain = ouro_preto
+life_rating = 35
+controller = KIB
+add_core = KIB

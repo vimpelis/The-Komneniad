@@ -1,0 +1,87 @@
+political_decisions = {
+	ARA_unification_call = {
+		picture = gtfo
+		potential = {
+			tag = ARA
+			government = absolute_monarchy
+			has_country_flag = ARA_kill_oman
+			NOT = { has_country_flag = ARA_unification_call }
+		}
+		allow = {
+			OMA = { exists = no }
+			owns = 1166
+		}
+		effect = {
+			OMA = { all_core = { add_core = THIS } }
+			YEM = { all_core = { add_core = THIS } }
+			QAT = { all_core = { add_core = THIS } }
+			IRQ = { all_core = { add_core = THIS } }
+			SYR = { all_core = { add_core = THIS } }
+			JOR = { all_core = { add_core = THIS } }
+			PLS = { all_core = { add_core = THIS } }
+			LBN = { all_core = { add_core = THIS } }
+			3537 = { add_core = THIS }
+			badboy = 20
+			set_country_flag = ARA_unification_call
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+	
+	ARA_proclaim_caliphate = {
+		picture = gtfo
+		potential = {
+			tag = ARA
+			government = absolute_monarchy
+			has_country_flag = ARA_unification_call
+		}
+		allow = {
+			all_core = {
+				OR = {
+					owned_by = THIS
+					owned_by = BYZ
+				}
+			}
+		}
+		effect = {
+			prestige = 20
+			EGY = { all_core = { add_core = THIS } }
+			add_accepted_culture = misri
+			add_accepted_culture = maghrebi
+			government = absolute_empire
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	OMA_centralise_empire = {
+		picture = oman_map
+		potential = {
+			tag = OMA
+			OR = {
+				is_our_vassal = QAT
+				is_our_vassal = MHR
+			}
+			NOT = { has_country_flag = OMA_centralise_empire }
+		}
+		allow = {
+			war = no
+			civilized = yes
+		}
+		effect = {
+			prestige = 10
+			years_of_research = 1
+			any_country = {
+				limit = { vassal_of = THIS OR = { tag = MHR tag = QAT } }
+				annex_to = THIS
+				all_core = { add_core = THIS }
+			}
+			set_country_flag = OMA_centralise_empire
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

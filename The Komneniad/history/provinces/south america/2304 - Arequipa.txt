@@ -1,0 +1,7 @@
+owner = BIR
+controller = BIR
+add_core = BIR
+trade_goods = sulphur
+terrain = arequipa
+life_rating = 31
+naval_base = 1 

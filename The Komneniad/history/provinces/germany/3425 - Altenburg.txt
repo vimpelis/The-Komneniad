@@ -1,0 +1,9 @@
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+add_core = AUS
+add_core = GER
+trade_goods = coal
+life_rating = 40
+terrain = san_felipe
+add_core = BOH

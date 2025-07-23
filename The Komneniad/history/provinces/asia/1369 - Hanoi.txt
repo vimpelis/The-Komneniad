@@ -1,0 +1,6 @@
+owner = GNG
+controller = GNG
+add_core = DAI
+trade_goods = grain
+life_rating = 40
+terrain = hanoi

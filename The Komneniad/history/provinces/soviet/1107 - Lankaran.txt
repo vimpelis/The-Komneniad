@@ -1,0 +1,5 @@
+owner = MGT
+controller = MGT
+add_core = ZND
+trade_goods = timber
+life_rating = 35 

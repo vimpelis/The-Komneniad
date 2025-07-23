@@ -1,0 +1,6 @@
+trade_goods = tea
+life_rating = 32
+terrain = montane_forest
+owner = FJN
+controller = FJN
+add_core = FJN

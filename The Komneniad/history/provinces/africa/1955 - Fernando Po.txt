@@ -1,0 +1,6 @@
+owner = CLT
+controller = CLT
+trade_goods = fruit
+terrain = fernando_po
+life_rating = 30
+colonial = 2

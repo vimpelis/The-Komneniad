@@ -1,0 +1,6 @@
+owner = ATA
+controller = ATA
+trade_goods = fruit
+terrain = savanna
+life_rating = 35
+add_core = ATA

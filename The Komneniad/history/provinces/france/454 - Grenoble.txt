@@ -1,0 +1,6 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = grain
+life_rating = 30
+terrain = grenoble

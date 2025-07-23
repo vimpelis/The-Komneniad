@@ -1,0 +1,10 @@
+owner = CLT
+controller = CLT
+add_core = CLT
+add_core = IRE
+trade_goods = grain
+naval_base = 1
+life_rating = 35
+terrain = dublin
+state_building = { level = 1 building = steel_factory upgrade = yes } 
+state_building = { level = 1 building = canned_food_factory upgrade = yes } 

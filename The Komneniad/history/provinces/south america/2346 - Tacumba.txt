@@ -1,0 +1,5 @@
+owner = ATA
+controller = ATA
+trade_goods = fruit
+life_rating = 35
+add_core = ATA

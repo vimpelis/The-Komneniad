@@ -1,0 +1,58 @@
+WAL = { value = -50 }
+SIE = { value = -100 }
+MOL = { value = -50 }
+
+army = {
+    name = "1st Army"
+    location = 641
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 642
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 641
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 642
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 643
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 3671
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 639
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 640
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 3330
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 639
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 644
+    }
+}

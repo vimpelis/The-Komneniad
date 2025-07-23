@@ -1,0 +1,6 @@
+owner = BIR
+controller = BIR
+trade_goods = precious_metal
+life_rating = 20
+terrain = potosi
+add_core = BIR

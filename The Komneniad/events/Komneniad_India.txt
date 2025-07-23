@@ -1,0 +1,281 @@
+#All indian puppets have a special gov type - indian_monarchy. It is not visible in-game and is essentially the same as absolute monarchy, but it does switch
+#the country's color. I could have coded colors for every possible overlord, but it's simply not worth it, so if a country stops being a puppet of its starting
+#overlord, it just switches to a normal gov type and stops being the overlord's color.
+#This system exists in the first place only in order to make the starting map look prettier.
+
+#Independence - Sikh puppets (Jaipur, Mewar, Beroda, Kutch, Kashmir)
+country_event = {
+    id = 164000
+    title = "164000TITLE"
+    desc = "164000DESC"
+    picture = "india_map"
+
+    trigger = {
+		OR = {
+			tag = JAI
+			tag = MEW
+			tag = BER
+			tag = KUT
+			tag = KAS
+		}
+		government = indian_monarchy
+        NOT = { vassal_of = PNJ }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "...Right?"
+		government = absolute_monarchy
+    }
+}
+
+#Order restored - Sikh puppets (Jaipur, Mewar, Beroda, Kutch, Kashmir)
+country_event = {
+    id = 164001
+    title = "164001TITLE"
+    desc = "164001DESC"
+    picture = "india_map"
+
+    trigger = {
+		OR = {
+			tag = JAI
+			tag = MEW
+			tag = BER
+			tag = KUT
+			tag = KAS
+		}
+        vassal_of = PNJ
+		government = absolute_monarchy
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Oh well."
+		government = indian_monarchy
+    }
+}
+
+#Independence - Maratha puppets (Indore, Bhopal, Gwalior)
+country_event = {
+    id = 164002
+    title = "164000TITLE"
+    desc = "164000DESC"
+    picture = "india_map"
+
+    trigger = {
+		OR = {
+			tag = IND
+			tag = BHO
+			tag = GWA
+		}
+		government = indian_monarchy
+        NOT = { vassal_of = MAH }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "...Right?"
+		government = absolute_monarchy
+    }
+}
+
+#Order restored - Maratha puppets (Indore, Bhopal, Gwalior)
+country_event = {
+    id = 164003
+    title = "164001TITLE"
+    desc = "164001DESC"
+    picture = "india_map"
+
+    trigger = {
+		OR = {
+			tag = IND
+			tag = BHO
+			tag = GWA
+		}
+		government = absolute_monarchy
+        vassal_of = MAH
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Oh well."
+		government = indian_monarchy
+    }
+}
+
+#Independence - Celtic puppets (Awadh, Bundelkhand, Manipur, Assam)
+country_event = {
+    id = 164004
+    title = "164000TITLE"
+    desc = "164000DESC"
+    picture = "india_map"
+
+    trigger = {
+		OR = {
+			tag = AWA
+			tag = BUN
+			tag = MNP
+			tag = ASM
+		}
+		government = indian_monarchy
+        NOT = { vassal_of = BNG }
+		NOT = { vassal_of = CLT }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "...Right?"
+		government = absolute_monarchy
+    }
+}
+
+#Order restored - Maratha puppets (Indore, Bhopal, Gwalior)
+country_event = {
+    id = 164005
+    title = "164001TITLE"
+    desc = "164001DESC"
+    picture = "india_map"
+
+    trigger = {
+		OR = {
+			tag = AWA
+			tag = BUN
+			tag = MNP
+			tag = ASM
+		}
+        OR = {
+			vassal_of = BNG
+			vassal_of = CLT
+		}
+		government = absolute_monarchy
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Oh well."
+		government = indian_monarchy
+    }
+}
+
+#Independence - Bengal
+country_event = {
+    id = 164006
+    title = "End of Celtic rule in India"
+    desc = "164006DESC"
+    picture = "india_map"
+	major = yes
+
+    trigger = {
+		tag = BNG
+		is_vassal = no
+		government = colonial_company
+    }
+	
+	fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Good riddance."
+		government = absolute_monarchy
+		set_global_flag = BNG_freedom
+		remove_accepted_culture = irish
+		primary_culture = bengali
+		CLT = { prestige = -25 }
+    }
+}
+
+#Order restored - Bengal
+country_event = {
+    id = 164007
+    title = "Order restored in Bengal"
+    desc = "164007DESC"
+    picture = "india_map"
+
+    trigger = {
+        OR = {
+			AND = {
+				BNG = { exists = no }
+				CLT = { owns = 1251 }
+			}
+			BNG = {
+				vassal_of = CLT
+			}
+		}
+		has_global_flag = BNG_freedom
+    }
+	
+	fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "End of an era."
+		prestige = 25
+		inherit = BNG
+    }
+}
+
+#Independence - If Bengal is free, then its puppets change govs
+country_event = {
+    id = 164008
+    title = "164000TITLE"
+    desc = "164000DESC"
+    picture = "india_map"
+
+    trigger = {
+		OR = {
+			tag = AWA
+			tag = BUN
+			tag = MNP
+			tag = ASM
+		}
+        vassal_of = BNG
+		government = indian_monarchy
+		BNG = { is_vassal = no }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "...Right?"
+		government = absolute_monarchy
+    }
+}
+
+#Starting event for MAH and PNJ
+#GIW is not done yet
+country_event = {
+    id = 164009
+    title = "The Long Peace of India"
+    desc = "164009DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "There will be blood."
+		set_country_flag = giw_available
+    }
+}
+
+#BNG puppets get this event on annexation of BNG
+country_event = {
+    id = 164010
+    title = "End of the Bengal Protectorate"
+    desc = "Our top liege has decided to end the Bengal Protectorate and incorporate its territories directly. This means that we now answer to them, not to Calcutta."
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Oh well."
+		FROM = { create_vassal = THIS }
+    }
+}

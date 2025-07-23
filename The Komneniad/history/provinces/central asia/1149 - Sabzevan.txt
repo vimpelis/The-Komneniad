@@ -1,0 +1,7 @@
+owner = MGT
+controller = MGT
+add_core = KHR
+trade_goods = wool
+life_rating = 25
+terrain = desert
+add_core = ZND

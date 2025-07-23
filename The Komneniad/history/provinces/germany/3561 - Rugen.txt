@@ -1,0 +1,8 @@
+owner = GLM
+controller = GLM
+add_core = GLM
+add_core = ZPD
+add_core = HUN
+trade_goods = coal
+terrain = ungvar
+life_rating = 40

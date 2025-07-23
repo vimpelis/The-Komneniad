@@ -1,0 +1,6 @@
+owner = KIB
+trade_goods = fish
+terrain = fortaleza
+life_rating = 30
+controller = KIB
+add_core = KIB

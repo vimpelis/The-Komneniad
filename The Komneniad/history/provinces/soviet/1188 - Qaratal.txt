@@ -1,0 +1,8 @@
+owner = IRY
+controller = IRY
+add_core = IRY
+add_core = XIN
+add_core = KAZ
+trade_goods = grain
+life_rating = 30
+terrain = steppe

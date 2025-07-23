@@ -1,0 +1,267 @@
+SPA = {
+    value = 50
+}
+
+BRB = {
+    value = 100
+}
+
+CAT = {
+    value = -100
+}
+
+ADU = {
+    value = -100
+}
+
+LOM = {
+    value = 10
+}
+
+SIC = {
+    value = -25
+}
+
+BAE = {
+    value = 200
+}
+
+BNE = {
+    value = 200
+}
+
+SWI = {
+    value = -75
+}
+
+LOR = {
+    value = 50
+}
+
+TUN = {
+    value = -200
+}
+
+army = {
+    name = "1st Army"
+    location = 608
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 608
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 3432
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 453
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 3313
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 454
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 452
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 451
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 466
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 3681
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 609
+    }
+}
+
+army = {
+    name = "Algiers Garrison"
+    location = 1700
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1700
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1700
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 1717
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1721
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1721
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 428
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 432
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 432
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 473
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 428
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 607
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 607
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 3312
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 3312
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 431
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 431
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 470
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+}
+
+navy = {
+    name = "2nd Fleet"
+    location = 1700
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

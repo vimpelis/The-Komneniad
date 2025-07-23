@@ -1,0 +1,9 @@
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+add_core = PRU
+add_core = GER
+trade_goods = grain
+life_rating = 40
+terrain = torun
+add_core = POL

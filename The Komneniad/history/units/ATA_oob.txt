@@ -1,0 +1,170 @@
+KIB = { value = -200 }
+BIR = { value = -50 }
+AST = { value = 150 }
+
+army = {
+    name = "1st Army"
+    location = 2348
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2348
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2348
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 2348
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 2349
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 2349
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 2363
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 2360
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 2361
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 2379
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 2379
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 2463
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2344
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2463
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 2461
+    }
+	regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 2457
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 2465
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 2356
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 2341
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 2339
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 2326
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 2352
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 2463
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

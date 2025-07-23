@@ -1,0 +1,205 @@
+political_decisions = {
+	KIB_end_slavery = {
+		picture = gtfo
+		potential = {
+			tag = KIB
+			slavery = yes_slavery
+		}
+		allow = {
+			war = no
+			enlightenment_thought = 1
+		}
+		effect = {
+			prestige = 5
+			any_pop = {
+				militancy = -2
+			}
+			political_reform = no_slavery
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KIB_retake_selidankan = {
+		picture = gtfo
+		potential = {
+			tag = KIB
+			NOT = { has_country_flag = KIB_retake_selidankan }
+		}
+		allow = {
+			OR = {
+				war_with = ATA
+				military_staff_system = 1
+				year = 1840
+			}
+		}
+		effect = {
+			BRZ_2450 = { add_core = THIS }
+			set_country_flag = KIB_retake_selidankan
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KIB_colonize_nogojidaga = {
+		picture = gtfo
+		potential = {
+			tag = KIB
+			has_country_flag = KIB_retake_selidankan
+			NOT = { has_country_flag = KIB_colonize_nogojidaga }
+		}
+		allow = {
+			war = no
+			all_core = {
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
+			}
+		}
+		effect = {
+			badboy = 3
+			AMZ_2419 = { add_core = THIS }
+			random_owned = {
+                limit = {
+                    2453 = { empty = yes }
+					2419 = { empty = yes }
+                }
+                2453 = { secede_province = THIS }
+				2419 = { secede_province = THIS }
+				2416 = { secede_province = THIS }
+            }
+			set_country_flag = KIB_colonize_nogojidaga
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	KIB_future_of_kibaru = {
+		picture = gtfo
+		potential = {
+			tag = KIB
+			has_country_flag = KIB_retake_selidankan
+			NOT = { has_country_flag = KIB_future_of_kibaru }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+			NOT = { badboy = 0.04 }
+		}
+		effect = {
+			country_event = 173000
+			set_country_flag = KIB_future_of_kibaru
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KIB_form_arajana = {
+		picture = gtfo
+		potential = {
+			tag = KIB
+			has_country_flag = KIB_arajana
+			NOT = { exists = ARJ }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 15
+			change_tag = ARJ
+			add_accepted_culture = faruduan
+			2401 = { add_core = THIS }
+			AMZ_2404 = { add_core = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KIB_move_capital = {
+		picture = gtfo
+		potential = {
+			OR = {
+				tag = KIB
+				tag = ARJ
+			}
+			year = 1845
+			NOT = { has_country_flag = KIB_move_capital }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			capital = 2436
+			2436 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 3650
+				}
+			}
+			set_country_flag = KIB_move_capital
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KIB_form_mali = {
+		picture = gtfo
+		potential = {
+			tag = KIB
+			has_country_flag = KIB_mali
+		}
+		allow = {
+			war = no
+			MLI = { all_core = { owned_by = THIS } }
+			NOT = { exists = MLI }
+		}
+		effect = {
+			prestige = 25
+			change_tag = MLI
+			government = absolute_empire
+			capital = 1794
+			clr_country_flag = new_world_nation
+			primary_culture = bambara
+			add_accepted_culture = waramaran
+			add_accepted_culture = wolof
+			add_accepted_culture = mande
+			add_accepted_culture = fulbe
+			add_accepted_culture = songhai
+			add_accepted_culture = senufo
+			add_accepted_culture = dyula
+			MLI_1887 = { add_core = THIS }
+			MLI_1892 = { add_core = THIS }
+			MLI_1907 = { add_core = THIS }
+			MLI_1919 = { add_core = THIS }
+			MLI_1916 = { add_core = THIS }
+			MLI_1893 = { add_core = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	KIB_colonize_amazon = {
+		picture = gtfo
+		potential = {
+			tag = KIB
+			owns = 2423
+			NOT = { owns = 2418 }
+		}
+		allow = {
+			war = no
+			OR = {
+				rank = 10
+				state_n_government = 1
+			}
+		}
+		effect = {
+			prestige = 5
+			AMZ_2550 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

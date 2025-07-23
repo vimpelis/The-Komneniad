@@ -1,0 +1,7 @@
+owner = BRB
+controller = BRB
+add_core = BRB
+trade_goods = coal
+life_rating = 30
+terrain = cambrai # state_building = {
+add_core = WLL

@@ -1,0 +1,30 @@
+#Falkland Islands (360)
+#Ruled by Britain 1836
+#Falkland Islands (300/75 POPS)
+2131 = {
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 95
+    }
+
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 50
+    }
+
+    farmers = {
+        culture = patagonian
+        religion = animist
+        size = 35
+    }
+}
+#South Georgia (60/15 POPS)
+2133 = {
+    farmers = {
+        culture = antartidan
+        religion = catholic
+        size = 25
+    }
+}

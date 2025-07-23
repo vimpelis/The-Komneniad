@@ -1,0 +1,7 @@
+owner = ZND
+controller = ZND
+add_core = LUR
+trade_goods = wool
+life_rating = 35
+terrain = mountain
+add_core = ZND

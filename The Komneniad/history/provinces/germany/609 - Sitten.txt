@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = coal
+life_rating = 31
+terrain = sion
+add_core = SVY

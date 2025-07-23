@@ -1,0 +1,8 @@
+owner = WLG
+controller = WLG
+add_core = WLG
+add_core = POM
+add_core = GER # add_core = POL
+trade_goods = grain
+life_rating = 40
+terrain = koslin

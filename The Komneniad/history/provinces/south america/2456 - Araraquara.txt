@@ -1,0 +1,5 @@
+owner = ATA
+controller = ATA
+trade_goods = coffee
+life_rating = 28
+add_core = ATA

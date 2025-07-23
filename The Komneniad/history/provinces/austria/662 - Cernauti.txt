@@ -1,0 +1,10 @@
+owner = GLM
+controller = GLM
+add_core = GLM
+add_core = RUT
+add_core = ROM
+add_core = MOL
+trade_goods = fruit
+terrain = cernauti
+life_rating = 35
+add_core = ZPD

@@ -1,0 +1,5 @@
+owner = SAH
+controller = SAH
+add_core = SAH
+trade_goods = gold
+life_rating = 33 

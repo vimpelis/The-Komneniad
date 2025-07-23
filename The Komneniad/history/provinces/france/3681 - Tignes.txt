@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = coal
+terrain = annecy
+life_rating = 30
+add_core = SVY

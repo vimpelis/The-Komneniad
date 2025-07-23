@@ -1,0 +1,7 @@
+owner = GNG
+controller = GNG
+add_core = GNG
+add_core = DAI
+trade_goods = sulphur
+life_rating = 10
+terrain = coral_island

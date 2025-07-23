@@ -1,0 +1,9 @@
+army = {
+    name = "King's Men"
+    location = 331
+    regiment = {
+        name = "Royal Guard"
+        type = guard
+        home = 331
+    }
+}

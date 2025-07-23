@@ -1,0 +1,8 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+trade_goods = timber
+terrain = hamar
+fort = 1
+life_rating = 35
+add_core = NOR

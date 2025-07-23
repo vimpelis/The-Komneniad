@@ -1,0 +1,6 @@
+owner = TGZ
+controller = TGZ
+add_core = TGZ
+trade_goods = coffee
+terrain = jungle_farmland
+life_rating = 33 

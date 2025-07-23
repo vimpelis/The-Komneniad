@@ -1,0 +1,9 @@
+owner = DEN
+controller = DEN
+add_core = MYS
+add_core = KRN
+add_core = HND
+trade_goods = precious_goods
+life_rating = 35
+terrain = fort_william
+colonial = 2

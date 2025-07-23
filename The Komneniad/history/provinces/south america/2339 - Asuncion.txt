@@ -1,0 +1,6 @@
+trade_goods = cattle
+terrain = asuncion
+life_rating = 39
+owner = ATA
+controller = ATA
+add_core = ATA

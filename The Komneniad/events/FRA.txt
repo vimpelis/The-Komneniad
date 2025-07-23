@@ -1,0 +1,19 @@
+country_event = {
+    id = 99954
+    title = "EVTNAME95501"
+    desc = "$FROMCOUNTRY$ declared war!"
+    picture = "scramble_for_africa"
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT97642OPTA"
+        FROM = {
+            war = {
+                target = THIS
+                attacker_goal = { casus_belli = annex_africa_full }
+                defender_goal = { casus_belli = status_quo }
+                call_ally = no
+            }
+        }
+    }
+}

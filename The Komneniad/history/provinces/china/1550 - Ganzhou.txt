@@ -1,0 +1,7 @@
+owner = JIA
+controller = JIA
+add_core = JIA
+trade_goods = coal
+life_rating = 32
+terrain = forest_hills
+add_core = CHI

@@ -1,0 +1,6 @@
+owner = FRD
+controller = FRD
+trade_goods = sugar
+terrain = belem
+life_rating = 30
+add_core = FRD

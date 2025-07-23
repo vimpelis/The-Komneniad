@@ -1,0 +1,113 @@
+#Theodor Herzl's 'Der Judenstaat'
+country_event = { #original VIP event by Palisadoes
+    id = 131511
+    title = "EVTNAME131511"
+    desc = "EVTDESC131511"
+    picture = "theodor_herzl"
+
+    fire_only_once = yes
+
+    trigger = {
+        NOT = { exists = ISR }
+        owns = 619
+		has_global_flag = start_of_first_aliyah
+		revolution_n_counterrevolution = 1
+    }
+
+    mean_time_to_happen = {
+		months = 7
+	}
+
+    option = {
+        name = "EVTOPTA131511"
+        any_pop = { limit = { religion = jewish } consciousness = 3 }
+		set_global_flag = der_judenstaat
+    }
+
+}
+
+country_event = {
+
+    id = 34700
+    news = yes
+    news_desc_long = "EVTDESC34700_NEWS_LONG"
+    news_desc_medium = "EVTDESC34700_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC34700_NEWS_SHORT"
+
+    trigger = {
+        tag = SAX
+        year = 1837
+        war = no
+        NOT = {
+            year = 1840
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1838
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1839
+        }
+    }
+
+    title = "EVTNAME34700"
+    desc = "EVTDESC34700"
+    picture = "theatre"
+
+    option = {
+        name = "EVTOPTA34700"
+        prestige = 5
+    }
+}
+
+country_event = {
+
+    id = 34701
+    news = yes
+    news_desc_long = "EVTDESC34701_NEWS_LONG"
+    news_desc_medium = "EVTDESC34701_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC34701_NEWS_SHORT"
+
+    trigger = {
+        tag = SAX
+        year = 1841
+        war = no
+        NOT = {
+            year = 1844
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1842
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1843
+        }
+    }
+
+    title = "EVTNAME34701"
+    desc = "EVTDESC34701"
+    picture = "Dresdenopera"
+
+    option = {
+        name = "EVTOPTA34701"
+        prestige = 5
+    }
+}

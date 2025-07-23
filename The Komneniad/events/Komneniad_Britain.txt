@@ -1,0 +1,283 @@
+#Starting event
+country_event = {
+    id = 157000
+    title = "The Peace of Caerlleon"
+    desc = "157000DESC"
+    picture = "rural"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Everything is awesome."
+		add_country_modifier = {
+			name = caerlleon
+			duration = -1
+		}
+		set_country_flag = caerlleon_member
+    }
+}
+
+country_event = {
+    id = 157001
+    title = "157001TITLE"
+    desc = "157001DESC"
+    picture = "meeting"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Warmongers."
+		remove_country_modifier = caerlleon
+    }
+}
+
+country_event = {
+    id = 157002
+    title = "Daneland asks for New Sjaelland"
+    desc = "157002DESC"
+    picture = "meeting"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We don't need it, give it to them."
+		prestige = 5
+		badboy = -1
+		2509 = { secede_province = DAN }
+		DAN = { country_event = 157003 }
+		ai_chance = {
+            factor = 95
+            modifier = {
+                factor = 0
+                war_with = DAN
+            }
+        }
+    }
+	
+	option = {
+        name = "No, it may still be useful!"
+		prestige = -5
+		DAN = { country_event = 157004 }
+		ai_chance = {
+            factor = 5
+        }
+    }
+}
+
+country_event = {
+    id = 157003
+    title = "Denmark accepts!"
+    desc = "157003DESC"
+    picture = "meeting"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+    }
+}
+
+country_event = {
+    id = 157004
+    title = "Denmark refuses!"
+    desc = "157004DESC"
+    picture = "meeting"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "What a betrayal."
+    }
+}
+
+country_event = {
+    id = 157005
+    title = "End of the Celtic Dream"
+    desc = "157005DESC"
+    picture = "ireland_poverty"
+
+    trigger = {
+        tag = CLT
+		NOT = { 
+			any_owned_province = {
+				OR = {
+					is_core = ENG
+					is_core = SCO
+					is_core = WHA
+				}
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+	
+	major = yes
+
+    option = {
+        name = "The Dream is dead."
+		change_tag = IRE
+		primary_culture = irish
+		remove_accepted_culture = scottish
+		remove_accepted_culture = welsh
+		279 = { add_core = SCO }
+		280 = { add_core = SCO }
+		277 = { add_core = WHA }
+		3608 = { add_core = WHA }
+		285 = { add_core = WHA }
+		ENG = { all_core = { remove_core = THIS } }
+		SCO = { all_core = { remove_core = THIS } }
+		WHA = { all_core = { remove_core = THIS } }
+    }
+}
+
+country_event = {
+    id = 157006
+    title = "The Second Martlet Revolt"
+    desc = "157006DESC"
+    picture = "yound_irelander_rebellion" #how the turns have tabled
+	major = yes
+
+    trigger = {
+		year = 1847
+		owns = 296
+		owns = 299
+		exists = LON
+		NOT = { exists = ENG }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	major = yes
+
+    option = {
+        name = "We won't let the martlet land!"
+		any_owned = {
+			limit = { OR = { region = ENG_296 region = ENG_300 province_id = 295 province_id = 293 province_id = 287 province_id = 284 } }
+			secede_province = ENG
+		}
+		war = {
+			target = ENG
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = yes
+		}
+		ENG = { capital = 296 }
+		set_country_flag = english_uprising
+		set_global_flag = english_uprising
+		CLT = { set_country_flag = english_uprising }
+    }
+	option = {
+        name = "For England!"
+		any_owned = {
+			limit = { OR = { region = ENG_296 region = ENG_300 province_id = 295 province_id = 293 province_id = 287 province_id = 284 } }
+			secede_province = ENG
+		}
+		war = {
+			target = ENG
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
+			call_ally = yes
+		}
+		ENG = { capital = 296 }
+		change_tag_no_core_switch = ENG
+		set_country_flag = english_uprising
+		set_global_flag = english_uprising
+		CLT = { set_country_flag = english_uprising }
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 157007
+    title = "Lundenburg joins the uprising"
+    desc = "157007DESC"
+    picture = "yound_irelander_rebellion"
+
+    trigger = {
+		tag = ENG
+		exists = LON
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Good."
+		inherit = LON
+		300 = { remove_core = LON }
+    }
+}
+
+country_event = {
+    id = 157008
+    title = "An ominous portent"
+    desc = "157008DESC"
+    picture = "yound_irelander_rebellion"
+
+    trigger = {
+		tag = DAN
+		year = 1842
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Dark clouds are gathering over Britain."
+		any_pop = {
+			limit = {
+				has_pop_culture = anglo_saxon
+			}
+			militancy = 2
+			consciousness = 2
+		}
+    }
+}
+
+country_event = {
+    id = 157009
+    title = "Ny Sjaelland Breaks Free"
+    desc = "Following our defeat of Daneland, their colony of Ny Sjaelland has gained independence. We, however, are not too concerned about some irrelevant isle in the Pacific."
+    picture = "australia_colony"
+
+    trigger = {
+		tag = ENG
+		NOT = { exists = DAN }
+		has_global_flag = english_uprising
+		any_owned_province = {
+			is_core = NZL
+		}
+		NOT = { exists = NZL }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Good luck, kiwis."
+		any_owned = {
+			limit = {
+				is_core = NZL
+			}
+			secede_province = NZL
+		}
+		NZL = { government = democracy }
+    }
+}

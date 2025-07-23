@@ -1,0 +1,6 @@
+owner = ATA
+controller = ATA
+trade_goods = iron
+terrain = jujuy
+life_rating = 33
+add_core = ATA

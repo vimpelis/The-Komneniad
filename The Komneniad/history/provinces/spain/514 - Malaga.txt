@@ -1,0 +1,7 @@
+owner = ADU
+controller = ADU
+add_core = ADU
+trade_goods = sugar
+life_rating = 35
+terrain = malaga
+state_building = { level = 1 building = steel_factory upgrade = yes } 

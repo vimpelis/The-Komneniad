@@ -1,0 +1,7 @@
+owner = SOM
+controller = SOM
+add_core = SOM
+add_core = ZAN
+trade_goods = fish
+terrain = mzizima
+life_rating = 35 

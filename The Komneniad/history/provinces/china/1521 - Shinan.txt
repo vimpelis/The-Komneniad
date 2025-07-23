@@ -1,0 +1,8 @@
+owner = HUB
+controller = HUB
+add_core = HUB
+add_core = SZC
+trade_goods = silk
+life_rating = 32
+terrain = montane_forest
+add_core = CHI

@@ -1,0 +1,8 @@
+owner = PNJ
+controller = PNJ
+add_core = BHP
+add_core = PNJ
+add_core = HND
+trade_goods = cattle
+life_rating = 32
+add_core = PNJ

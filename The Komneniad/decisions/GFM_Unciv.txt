@@ -1,0 +1,631 @@
+political_decisions = {
+    foreign_advisors = {
+        picture = foreign_consul
+        potential = {
+			ai = no
+            civilized = no
+            OR = {
+                part_of_sphere = yes
+                AND = {
+                    is_vassal = yes
+                    overlord = { civilized = yes }
+                }
+            }
+            NOT = {
+                has_country_modifier = foreign_weapons_imported
+                has_country_modifier = uncivilized_isolationism
+                num_of_revolts = 1
+            }
+            OR = {
+                foreign_training = no_foreign_training
+                foreign_officers = no_foreign_officers
+                army_schools = no_army_schools
+            }
+        }
+
+        allow = {
+            war = no
+            OR = {
+                AND = {
+                    OR = {
+                        sphere_owner = { invention = field_training }
+                        overlord = { invention = field_training }
+                    }
+                    money = 25001
+                    foreign_training = no_foreign_training
+                }
+                AND = {
+                    sphere_owner = { army_professionalism = 1 }
+                    OR = {
+                        sphere_owner = { army_professionalism = 1 }
+                        overlord = { army_professionalism = 1 }
+                    }
+                    money = 10001
+                    foreign_officers = no_foreign_officers
+                }
+                AND = {
+                    OR = {
+                        sphere_owner = { invention = army_academic_training }
+                        overlord = { invention = army_academic_training }
+                    }
+                    money = 25001
+                    literacy = 0.05
+                    army_schools = no_army_schools
+                }
+            }
+
+        }
+
+        effect = {
+            add_country_modifier = { name = foreign_weapons_imported duration = 365 }
+			set_country_flag = give_advisor_tech_on_civ
+            random_country = {
+                limit = { is_sphere_leader_of = THIS }
+                relation = { who = THIS value = 100 }
+                diplomatic_influence = { who = THIS value = 25 }
+            }
+
+            #Training
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 25001
+                        foreign_training = no_foreign_training
+                        OR = {
+                            sphere_owner = { invention = field_training }
+                            overlord = { invention = field_training }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_foreign_training
+                    treasury = -25000
+                    country_event = 90959
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -2000
+                }
+            }
+
+            #Officers
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 10001
+                        foreign_officers = no_foreign_officers
+                        OR = {
+                            sphere_owner = { army_professionalism = 1 }
+                            overlord = { army_professionalism = 1 }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_foreign_officers
+                    treasury = -10000
+
+                    activate_technology = military_staff_system
+                    country_event = 90959
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -1000
+                }
+            }
+
+            #Army Training
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 25001
+                        army_schools = no_army_schools
+                        literacy = 0.05
+                        OR = {
+                            sphere_owner = { invention = army_academic_training }
+                            overlord = { invention = army_academic_training }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_army_schools
+                    treasury = -25000
+
+                    random_owned = {
+                        limit = { owner = { has_country_modifier = corrupt_army } }
+                        owner = { remove_country_modifier = corrupt_army }
+                    }
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -3000
+                }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    import_foreign_weapons = {
+        picture = begin_line_of_advantage
+        potential = {
+			ai = no
+            civilized = no
+            OR = {
+                part_of_sphere = yes
+                AND = {
+                    is_vassal = yes
+                    overlord = { civilized = yes }
+                }
+            }
+            NOT = {
+                has_country_modifier = foreign_weapons_imported
+                has_country_modifier = uncivilized_isolationism
+                num_of_revolts = 1
+            }
+            OR = {
+                foreign_weapons = no_foreign_weapons
+                foreign_artillery = no_foreign_artillery
+                military_constructions = no_military_constructions
+            }
+        }
+
+        allow = {
+            war = no
+            OR = {
+                AND = {
+                    OR = {
+                        sphere_owner = { invention = breech_loaded_rifle_armament }
+                        overlord = { invention = breech_loaded_rifle_armament }
+                    }
+                    money = 35001
+                    foreign_weapons = no_foreign_weapons
+                }
+                AND = {
+                    OR = {
+                        sphere_owner = { iron_muzzle_loaded_artillery = 1 }
+                        overlord = { iron_muzzle_loaded_artillery = 1 }
+                    }
+                    money = 55001
+                    foreign_artillery = no_foreign_artillery
+                }
+                AND = {
+                    OR = {
+                        sphere_owner = { invention = field_fortifications }
+                        overlord = { invention = field_fortifications }
+                    }
+                    money = 45001
+                    military_constructions = no_military_constructions
+                }
+            }
+
+        }
+
+        effect = {
+			set_country_flag = give_army_tech_on_civ
+            add_country_modifier = { name = foreign_weapons_imported duration = 365 }
+            random_country = {
+                limit = { is_sphere_leader_of = THIS }
+                relation = { who = THIS value = 100 }
+                diplomatic_influence = { who = THIS value = 25 }
+            }
+            #Weapons
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 35001
+                        foreign_weapons = no_foreign_weapons
+                        OR = {
+                            sphere_owner = { invention = breech_loaded_rifle_armament }
+                            overlord = { invention = breech_loaded_rifle_armament }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_foreign_weapons
+                    treasury = -35000
+                    activate_technology = flintlock_rifles
+                    activate_technology = muzzle_loaded_rifles
+                    set_country_flag = using_foreign_weapons
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -1000
+                }
+            }
+
+            #Artillery
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 55001
+                        foreign_artillery = no_foreign_artillery
+                        OR = {
+                            sphere_owner = { iron_muzzle_loaded_artillery = 1 }
+                            overlord = { iron_muzzle_loaded_artillery = 1 }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_foreign_artillery
+                    treasury = -75000
+                    activate_technology = bronze_muzzle_loaded_artillery
+                    activate_technology = iron_muzzle_loaded_artillery
+                    set_country_flag = using_foreign_artillery
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -1000
+                }
+            }
+
+            #Constructions
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 45001
+                        military_constructions = no_military_constructions
+                        OR = {
+                            sphere_owner = { invention = field_fortifications }
+                            overlord = { invention = field_fortifications }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_military_constructions
+                    treasury = -45000
+                    activate_technology = post_napoleonic_thought
+                    build_fort_in_capital = {
+                        in_whole_capital_state = no # no = just in main capital province.
+                        limit_to_world_greatest_level = yes
+                    }
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -3000
+                }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    import_naval_technology = {
+        picture = ironclad_commissions
+        potential = {
+			ai = no
+            civilized = no
+            OR = {
+                part_of_sphere = yes
+                AND = {
+                    is_vassal = yes
+                    overlord = { civilized = yes }
+                }
+            }
+            any_owned_province = { has_building = naval_base }
+            NOT = {
+                has_country_modifier = foreign_weapons_imported
+                has_country_modifier = uncivilized_isolationism
+                num_of_revolts = 1
+            }
+            OR = {
+                foreign_navies = no_foreign_navies
+                foreign_naval_officers = no_foreign_naval_officers
+                western_shipyards = no_western_shipyards
+            }
+        }
+
+        allow = {
+            war = no
+            OR = {
+                AND = {
+                    OR = {
+                        sphere_owner = { iron_steamers = 1 }
+                        overlord = { iron_steamers = 1 }
+                    }
+                    money = 65001
+                    foreign_navies = no_foreign_navies
+                }
+
+                AND = {
+                    OR = {
+                        sphere_owner = { raider_group_doctrine = 1 }
+                        overlord = { raider_group_doctrine = 1 }
+                    }
+                    money = 55001
+                    western_shipyards = no_western_shipyards
+                }
+                AND = {
+                    OR = {
+                        sphere_owner = { naval_professionalism = 1 }
+                        overlord = { naval_professionalism = 1 }
+                    }
+                    money = 10001
+                    foreign_naval_officers = no_foreign_naval_officers
+                }
+
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = foreign_weapons_imported
+                duration = 365
+            }
+			set_country_flag = give_navy_tech_on_civ
+            random_country = {
+                limit = { is_sphere_leader_of = THIS }
+                relation = { who = THIS value = 100 }
+                diplomatic_influence = { who = THIS value = 25 }
+            }
+
+            #Ships
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 65001
+                        foreign_navies = no_foreign_navies
+                        OR = {
+                            sphere_owner = { iron_steamers = 1 }
+                            overlord = { iron_steamers = 1 }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_foreign_navies
+                    treasury = -65000
+                    activate_technology = clipper_design
+                    activate_technology = steamers
+                    set_country_flag = using_foreign_ships
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -3000
+                }
+            }
+
+            #Shipyards
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 55001
+                        western_shipyards = no_western_shipyards
+                        OR = {
+                            sphere_owner = { raider_group_doctrine = 1 }
+                            overlord = { raider_group_doctrine = 1 }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_western_shipyards
+                    treasury = -55000
+                    activate_technology = post_nelsonian_thought
+                    set_country_flag = using_foreign_shipyards
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -3000
+                }
+            }
+
+            #Naval Officers
+            random_owned = {
+                limit = {
+                    owner = {
+                        money = 10001
+                        foreign_naval_officers = no_foreign_naval_officers
+                        OR = {
+                            sphere_owner = { naval_professionalism = 1 }
+                            overlord = { naval_professionalism = 1 }
+                        }
+                    }
+                }
+                owner = {
+                    military_reform = yes_foreign_naval_officers
+                    treasury = -10000
+                    country_event = 90959
+                    any_pop = {
+                        scaled_militancy = { ideology = liberal factor = 0.25 }
+                        scaled_militancy = { ideology = conservative factor = 0.5 }
+                        scaled_militancy = { ideology = reactionary factor = 1.5 }
+                    }
+					# Audax Validator "." Ignore_NEXT
+                    research_points = -1000
+                }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	establish_writing_system = {
+        picture = become_hausaland
+        potential = {
+            OR = {
+                has_country_modifier = lacks_writing_system
+				has_country_flag = lacking_writing_system
+            }
+			OR = {
+				ai = no
+				AND = {
+					war = no
+					OR = {
+						has_country_modifier = western_influences
+						has_country_modifier = western_presence
+						civilized = yes
+					}
+					NOT = { has_country_modifier = uncivilized_isolationism }
+					OR = {
+						literacy = 0.04
+						civilization_progress = 0.4
+						has_country_modifier = educational_reform
+						civilized = yes
+						AND = {
+							literacy = 0.03
+							has_country_modifier = military_reform
+						}
+					}
+				}
+			}
+        }
+
+        allow = {
+            war = no
+            OR = {
+                has_country_modifier = western_influences
+                has_country_modifier = western_presence
+                civilized = yes
+            }
+            NOT = { has_country_modifier = uncivilized_isolationism }
+            OR = {
+                literacy = 0.04
+                civilization_progress = 0.4
+                has_country_modifier = educational_reform
+                civilized = yes
+                AND = {
+                    literacy = 0.03
+                    has_country_modifier = military_reform
+                }
+            }
+        }
+
+        effect = {
+			# Audax Validator "." Ignore_NEXT
+            research_points = -2000
+            random_owned = {
+				limit = {
+					owner = { ai = yes }
+				}
+				owner = {
+					# Audax Validator "." Ignore_NEXT
+					research_points = -6000
+				}
+			}
+            clr_country_flag = lacking_writing_system
+            remove_country_modifier = lacks_writing_system
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    request_missionaries = {
+        picture = request_missionaries
+        potential = {
+            NOT = { has_country_flag = asked_for_protection }
+            NOT = { is_culture_group = east_asian }
+            NOT = { primary_culture = japanese }
+            NOT = { has_country_flag = sunni_country }
+            NOT = { has_country_flag = shiite_country }
+            NOT = { has_country_flag = ibadi_country }
+            NOT = { has_country_flag = jewish_country }
+            NOT = { has_country_flag = catholic_country }
+            NOT = { has_country_flag = orthodox_country }
+            NOT = { has_country_flag = protestant_country }
+            NOT = { has_country_flag = coptic_country }
+            NOT = { has_country_modifier = missionary_activity }
+            civilized = no
+            OR = {
+                any_owned_province = { has_building = naval_base }
+                any_owned_province = { any_neighbor_province = { owner = { civilized = yes capital_scope = { continent = europe } } } }
+            }
+            NOT = { has_country_modifier = law_changed_by_force }
+			OR = {
+				ai = no
+				AND = {
+					war = no
+					prestige = 5
+					NOT = { has_country_modifier = uncivilized_isolationism }
+					any_greater_power = { invention = mission_to_civilize }
+					OR = {
+						ai = no
+						upper_house = { ideology = liberal value = 0.35 }
+						secularized = 20
+						AND = {
+							religious_policy = pluralism
+							pluralism = 30
+						}
+					}
+				}
+			}
+        }
+
+        allow = {
+            war = no
+            prestige = 5
+            NOT = { has_country_modifier = uncivilized_isolationism }
+            any_greater_power = { invention = mission_to_civilize }
+            OR = {
+                ai = no
+                upper_house = { ideology = liberal value = 0.35 }
+                secularized = 20
+                AND = {
+                    religious_policy = pluralism
+                    pluralism = 30
+                }
+            }
+            #is_vassal = no
+        }
+
+        effect = {
+            add_country_modifier = { name = law_changed_by_force duration = 1825 }
+            prestige = -5
+            any_pop = {
+                limit = { is_state_religion = yes }
+                scaled_consciousness = { factor = 2 issue = moralism }
+                scaled_militancy = { factor = 1 issue = moralism }
+            }
+            random_owned = {
+                limit = { owner = { part_of_sphere = yes } }
+                owner = { sphere_owner = { country_event = 90961 } }
+            }
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        part_of_sphere = no
+                        OR = {
+                            NOT = { has_country_flag = lacking_writing_system }
+                            has_country_flag = changed_religion
+                        }
+                    }
+                }
+                owner = { add_country_modifier = { name = missionary_activity duration = 1825 } }
+            }
+
+            random_owned = {
+                limit = {
+                    owner = {
+                        part_of_sphere = no
+                        has_country_flag = animist_country
+                        NOT = { has_country_flag = changed_religion }
+                    }
+                }
+                owner = { country_event = 90960 }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = { factor = 0 average_militancy = 4 }
+        }
+    }
+}

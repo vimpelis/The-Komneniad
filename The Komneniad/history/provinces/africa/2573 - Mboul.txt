@@ -1,0 +1,7 @@
+owner = FLC
+controller = FLC
+add_core = FLC
+add_core = WOL
+trade_goods = fish
+terrain = coastal_desert
+life_rating = 35 

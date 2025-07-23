@@ -1,0 +1,6 @@
+owner = TAI
+controller = TAI
+add_core = TAI
+trade_goods = tea
+life_rating = 32
+terrain = montane_forest

@@ -1,0 +1,8 @@
+owner = GLM
+controller = GLM
+add_core = GLM
+add_core = POL
+add_core = ZPD
+trade_goods = timber
+life_rating = 40
+terrain = roda

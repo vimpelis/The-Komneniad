@@ -1,0 +1,147 @@
+HUB = {
+    value = -100
+}
+HEB = {
+    value = -100
+}
+HUI = {
+    value = -100
+}
+JIA = {
+    value = -100
+}
+HNN = {
+    value = -100
+}
+SZC = {
+    value = -100
+}
+SXI = {
+    value = -100
+}
+TAI = {
+    value = -100
+}
+IRY = {
+    value = -50
+}
+KOR = {
+    value = -50
+}
+LUA = {
+    value = -50
+}
+BUR = {
+    value = -200
+	truce_until = 1838.1.1
+}
+
+army = {
+    name = "1st Army"
+    location = 1602
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1602
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1602
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1602
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1602
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1603
+    }
+	regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 1601
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1603
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1603
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1507
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1601
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1601
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1601
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1601
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1585
+    }
+	regiment = {
+        name = "6th Infantry Regiment"
+        type = infantry
+        home = 1585
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3369
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1506
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 3369
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1507
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1506
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3369
+    }
+}

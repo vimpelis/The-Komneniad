@@ -1,0 +1,5 @@
+owner = WEL
+controller = WEL
+add_core = WEL
+trade_goods = grain
+life_rating = 31 

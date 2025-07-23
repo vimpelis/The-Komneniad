@@ -1,0 +1,173 @@
+political_decisions = {
+	UBD_unite = {
+		picture = UBD
+		potential = {
+			tag = UBD
+			OR = {
+				EST = { vassal_of = THIS }
+				KUR = { vassal_of = THIS }
+				VID = { vassal_of = THIS }
+				DOR = { vassal_of = THIS }
+				GOT = { vassal_of = THIS }
+			}
+			NOT = { has_country_flag = UBD_unite }
+		}
+		allow = {
+			OR = {
+				state_n_government = 1
+				year = 1850
+				AND = {
+					war_with = RUS
+					any_core = {
+						NOT = { province_id = 356 }
+						controlled_by = RUS
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					OR = {
+						tag = EST
+						tag = KUR
+						tag = VID
+						tag = DOR
+						tag = GOT
+					}
+				}
+				annex_to = THIS
+				all_core = { add_core = THIS }
+			}
+			set_country_flag = UBD_unite
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	LIT_annex_courland = {
+		picture = UBD_2
+		potential = {
+			tag = LIT
+			NOT = { has_country_flag = LIT_annex_courland }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			OR = {
+				UBD = { owns = 357 }
+				KUR = { OR = { vassal_of = THIS in_sphere = THIS } }
+			}
+		}
+		effect = {
+			badboy = 5
+			add_accepted_culture = latvian
+			KUR = { all_core = { add_core = THIS } }
+			any_country = {
+				limit = {
+					tag = KUR
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			set_country_flag = LIT_annex_courland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	LIT_cross_the_dnieper = {
+		picture = poland_lithuania_ruthenia
+		potential = {
+			tag = LIT
+			NOT = { has_country_flag = LIT_cross_the_dnieper }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 7
+			RUS_947 = { add_core = THIS }
+			set_country_flag = LIT_cross_the_dnieper
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	LIT_retake_kiev = {
+		picture = poland_lithuania_ruthenia
+		potential = {
+			tag = LIT
+			has_country_flag = LIT_cross_the_dnieper
+			NOT = { has_country_flag = LIT_retake_kiev }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = ukrainian
+			RUS_958 = { add_core = THIS }
+			RUS_1009 = { add_core = THIS }
+			RUS_959 = { add_core = THIS }
+			set_country_flag = LIT_retake_kiev
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	LIT_restore_grand_duchy = {
+		picture = poland_lithuania_ruthenia
+		potential = {
+			tag = LIT
+			has_country_flag = LIT_retake_kiev
+			NOT = { has_country_flag = LIT_restore_grand_duchy }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 24.5
+			add_accepted_culture = cossack
+			RUS_955 = { add_core = THIS }
+			RUS_978 = { add_core = THIS }
+			RUS_976 = { add_core = THIS }
+			RUS_977 = { add_core = THIS }
+			RUS_943 = { add_core = THIS }
+			RUS_968 = { add_core = THIS }
+			set_country_flag = LIT_restore_grand_duchy
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.95
+            }
+		}
+	}
+}

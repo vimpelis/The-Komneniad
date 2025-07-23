@@ -1,0 +1,590 @@
+#170000 - Starting event
+
+#Starting event
+country_event = {
+    id = 170000
+    title = "The Chimera of Italy"
+    desc = "170000DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Avanti..."
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		add_country_modifier = {
+			name = dysfunctional_state
+			duration = -1
+		}
+    }
+}
+
+#Lucca event
+country_event = {
+    id = 170001
+    title = "Milan pressures us to continue the talks"
+    desc = "170001DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "The best offer you're gonna get."
+		LOM = { country_event = { id = 170002 days = 2 } }
+    }
+}
+
+#Lucca rejects
+country_event = {
+    id = 170002
+    title = "Luccan Terms"
+    desc = "170002DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "I hope that won't backfire."
+		any_pop = {
+			consciousness = 0.5
+		}
+		relation = {
+			who = LUC
+			value = -50
+		}
+		LUC = { country_event = { id = 170003 days = 3 } }
+    }
+}
+
+#Mobilization
+country_event = {
+    id = 170003
+    title = "Milan Mobilizes the Army!"
+    desc = "170003DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Contact Firenze! Now!"
+		TUS = { country_event = { id = 170004 days = 1 } }
+    }
+}
+
+#Tuscany event
+country_event = {
+    id = 170004
+    title = "Lucca asks for help"
+    desc = "170004DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "The public outrage in Milan will be quite a show."
+		create_alliance = LUC
+		relation = {
+			who = LUC
+			value = 400
+		}
+		relation = {
+			who = LOM
+			value = -100
+		}
+		LOM = { country_event = { id = 170005 days = 3 } }
+		LUC = { country_event = { id = 170006 days = 10 } }
+    }
+}
+
+#Milan gets the message
+country_event = {
+    id = 170005
+    title = "Tuscany defends Lucca!"
+    desc = "170005DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "The nightmare has only just begun."
+		prestige = -10
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+    }
+}
+
+#Lucca is annexed to Tuscany
+country_event = {
+    id = 170006
+    title = "Toscana Unita"
+    desc = "170006DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Wonderful."
+		TUS = { prestige = 10 }
+		746 = { add_core = TUS }
+		annex_to = TUS
+		LOM = { country_event = { id = 170007 days = 3 } }
+		LOM = { country_event = { id = 170008 days = 7 } }
+    }
+}
+
+#Lucca is annexed to Tuscany
+country_event = {
+    id = 170007
+    title = "Lucca joins Tuscany"
+    desc = "170007DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "..."
+		tooltip_5 = {}
+    }
+}
+
+#mamma mia
+country_event = {
+    id = 170008
+    title = "Outrage Turns into Riots"
+    desc = "170008DESC"
+    picture = "rivolta_di_milano"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "It's never that easy, is it?"
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		726 = {
+			add_province_modifier = {
+				name = war_torn
+				duration = 90
+			}
+		}
+		country_event = {
+			id = 170009
+			days = 5
+		}
+    }
+}
+
+#Napoleone
+country_event = {
+    id = 170009
+    title = "An Old Friend"
+    desc = "170009DESC"
+    picture = "napoleonthreecoup"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Napoleone di Buonaparte captures Milan!"
+		726 = {
+			any_pop = {
+				reduce_pop = 0.95
+				militancy = -4
+				consciousness = 2
+			}
+		}
+		government = prov_gov_conservative
+		ruling_party_ideology = reactionary
+		country_event = {
+			id = 170010
+			days = 10
+		}
+		ai_chance = { factor = 70 }
+    }
+	
+	option = {
+        name = "La Guardia Popolare repels the Little Tyrant!"
+		726 = {
+			any_pop = {
+				reduce_pop = 0.95
+				militancy = -4
+				consciousness = 2
+			}
+		}
+		government = prov_gov_liberal
+		ruling_party_ideology = radical
+		country_event = {
+			id = 170011
+			days = 10
+		}
+		ai_chance = { factor = 30 }
+    }
+}
+
+#Napoleone
+country_event = {
+    id = 170010
+    title = "Napoleone's Pacification Campaign"
+    desc = "170010DESC"
+    picture = "destroyed_forest"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "Long live Napoleone II!"
+		prestige = 15
+		government = prussian_constitutionalism
+		remove_country_modifier = dysfunctional_state
+		any_pop = {
+			reduce_pop = 0.98
+			militancy = -2
+			consciousness = -4
+		}
+		upper_house = {
+			ideology = reactionary
+			value = 0.2
+		}
+		724 = {
+			add_province_modifier = {
+				name = war_torn
+				duration = 180
+			}
+		}
+		SVY = {
+			all_core = {
+				remove_core = SVY
+			}
+		}
+		GEN = {
+			all_core = {
+				remove_core = GEN
+			}
+		}
+		PAR = {
+			all_core = {
+				remove_core = PAR
+			}
+		}
+		MOD = {
+			all_core = {
+				remove_core = MOD
+			}
+		}
+		RMG = {
+			all_core = {
+				remove_core = RMG
+			}
+		}
+		set_country_flag = LOM_expansion_unlocked
+		set_country_flag = LOM_napoleone
+    }
+}
+
+#Guardia Popolare
+country_event = {
+    id = 170011
+    title = "La Guardia Popolare dissolves the League"
+    desc = "170011DESC"
+    picture = "sicilian_revolution"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "La Guardia concedes power"
+		prestige = 15
+		government = democracy
+		ruling_party_ideology = liberal
+		remove_country_modifier = dysfunctional_state
+		upper_house = {
+			ideology = liberal
+			value = 0.4
+		}
+		upper_house = {
+			ideology = radical
+			value = 0.2
+		}
+		any_pop = {
+			reduce_pop = 0.99
+			militancy = -1
+			consciousness = -2
+		}
+		SVY = {
+			all_core = {
+				remove_core = SVY
+			}
+		}
+		GEN = {
+			all_core = {
+				remove_core = GEN
+			}
+		}
+		PAR = {
+			all_core = {
+				remove_core = PAR
+			}
+		}
+		MOD = {
+			all_core = {
+				remove_core = MOD
+			}
+		}
+		RMG = {
+			all_core = {
+				remove_core = RMG
+			}
+		}
+		ai_chance = { factor = 60 }
+		set_country_flag = LOM_expansion_unlocked
+    }
+	
+	option = {
+        name = "La Guardia establishes a Martletist Republic"
+		prestige = 15
+		government = radical_republic
+		remove_country_modifier = dysfunctional_state
+		any_pop = {
+			reduce_pop = 0.99
+			consciousness = -2
+		}
+		upper_house = {
+			ideology = liberal
+			value = 0.2
+		}
+		upper_house = {
+			ideology = radical
+			value = 0.4
+		}
+		SVY = {
+			all_core = {
+				remove_core = SVY
+			}
+		}
+		GEN = {
+			all_core = {
+				remove_core = GEN
+			}
+		}
+		PAR = {
+			all_core = {
+				remove_core = PAR
+			}
+		}
+		MOD = {
+			all_core = {
+				remove_core = MOD
+			}
+		}
+		RMG = {
+			all_core = {
+				remove_core = RMG
+			}
+		}
+		ai_chance = { factor = 40 }
+		set_country_flag = LOM_expansion_unlocked
+    }
+}
+
+#revolution in the papal states
+country_event = {
+    id = 170012
+    title = "The Roman Republic"
+    desc = "170012DESC"
+    picture = "roman_republic"
+
+    trigger = {
+		tag = PAP
+		year = 1849
+		war = no
+		is_vassal = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+	
+	major = yes
+
+    option = {
+        name = "Dio e Popolo!"
+		prestige = 5
+		government = radical_republic
+		neutrality = yes
+		ruling_party_ideology = radical
+		upper_house = {
+			ideology = liberal
+			value = 0.2
+		}
+		upper_house = {
+			ideology = radical
+			value = 0.2
+		}
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		BAV = {
+			diplomatic_influence = {
+				who = PAP
+				value = -400
+			}
+		}
+		SGF = {
+			diplomatic_influence = {
+				who = PAP
+				value = -400
+			}
+		}
+		ARE = {
+			diplomatic_influence = {
+				who = PAP
+				value = -400
+			}
+		}
+		FRA = {
+			diplomatic_influence = {
+				who = PAP
+				value = -400
+			}
+		}
+		SPA = {
+			diplomatic_influence = {
+				who = PAP
+				value = -400
+			}
+		}
+		BYZ = {
+			diplomatic_influence = {
+				who = PAP
+				value = -400
+			}
+		}
+    }
+}
+
+#roman republic joins the cisalpine thingie
+country_event = {
+    id = 170013
+    title = "Unification with the Cisalpine Republic?"
+    desc = "170013DESC"
+    picture = "roman_republic"
+
+    trigger = {
+		tag = PAP
+		government = radical_republic
+		war = no
+		is_vassal = no
+		LOM = { exists = yes OR = { government = radical_republic government = democracy } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Let's do it."
+		LOM = { country_event = 170014 }
+    }
+	
+	option = {
+        name = "We are the cooler republic. C'mon, we've got 'Roman' in the name!"
+		ai_chance = { factor = 0 }
+    }
+}
+
+#annex rome?
+country_event = {
+    id = 170014
+    title = "Unification with the Cisalpine Republic?"
+    desc = "170014DESC"
+    picture = "roman_republic"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Of course we shall!"
+		prestige = 5
+		badboy = 2
+		inherit = PAP
+		PAP = { all_core = { add_core = LOM } }
+    }
+	
+	option = {
+        name = "Hm... No."
+		prestige = -5
+		PAP = { country_event = 170015 }
+		ai_chance = { factor = 0 }
+    }
+}
+
+#nope
+country_event = {
+    id = 170015
+    title = "Rejected!"
+    desc = "They didn't want us in."
+    picture = "roman_republic"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Oh well."
+    }
+}
+
+country_event = {
+    id = 170016
+    title = "Italian Empire Proclaimed"
+    desc = "With Italy completely unified, it was decided that our state, which has surpassed even Napoleone I's conquests, shall henceforth be an Empire."
+    picture = "ita_map"
+
+    trigger = {
+		tag = ITA
+		has_country_flag = LOM_napoleone
+		has_country_flag = italia_irredenta
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+		all_core = { owned_by = THIS }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Long live the Buonapartes!"
+		if = {
+			limit = {
+				ITA = { government = absolute_monarchy }
+			}
+			ITA = { government = absolute_empire }
+		}
+		if = {
+			limit = {
+				ITA = { government = prussian_constitutionalism }
+			}
+			ITA = { government = semi_constitutional_empire }
+		}
+		if = {
+			limit = {
+				ITA = { government = hms_government }
+			}
+			ITA = { government = constitutional_empire }
+		}
+    }
+}
+

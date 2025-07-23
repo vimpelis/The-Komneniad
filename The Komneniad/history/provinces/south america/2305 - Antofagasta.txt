@@ -1,0 +1,7 @@
+owner = BIR
+controller = BIR
+trade_goods = sulphur
+terrain = coastal_desert
+life_rating = 15
+naval_base = 1
+add_core = BIR

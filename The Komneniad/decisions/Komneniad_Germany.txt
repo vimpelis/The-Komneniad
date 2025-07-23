@@ -1,0 +1,405 @@
+political_decisions = {
+	BAV_reassert_dominance = {
+		picture = GER_parliament
+		potential = {
+			tag = BAV
+			has_country_flag = FRK_dead
+			NOT = { has_country_flag = BAV_reassert_dominance }
+		}
+		allow = {
+			war = no
+			OR = {
+				ideological_thought = 1
+				year = 1840
+			}
+		}
+		effect = {
+			prestige = 10
+			badboy = 3
+			country_event = 155009
+			set_country_flag = BAV_reassert_dominance
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	SGF_form = {
+		picture = SGF_map
+		potential = {
+			primary_culture = south_german
+			NOT = { exists = SGF exists = GER }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			GER = {
+				all_core = {
+					OR = {
+						NOT = { culture = south_german }
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			change_tag = SGF
+			any_country = {
+				limit = {
+					primary_culture = south_german
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			BAV = { all_core = { add_core = THIS } }
+			AUS = { all_core = { add_core = THIS } }
+			FRK = { all_core = { add_core = THIS } }
+			WUR = { all_core = { add_core = THIS } }
+			BAD = { all_core = { add_core = THIS } }
+			SWI = {
+				all_core = {
+					limit = {
+						NOT = {
+							is_core = BNE
+						}
+					}
+					add_core = THIS
+				}
+			}
+			HES = { all_core = { add_core = THIS } }
+			FRM = { all_core = { add_core = THIS } }
+			ALS = { all_core = { add_core = THIS } }
+			any_owned = {
+				limit = {
+					province_id = 567
+				}
+				secede_province = HEK
+				remove_core = THIS
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	GER_form = {
+		picture = GER_woman
+		potential = {
+			OR = {
+				primary_culture = south_german
+				primary_culture = north_german
+				primary_culture = west_german
+			}
+			NOT = { exists = GER }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			GER = {
+				all_core = {
+					OR = {
+						province_id = 698
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 25
+			change_tag = GER
+			country_event = 155016
+			add_accepted_culture = north_german
+			add_accepted_culture = west_german
+			add_accepted_culture = south_german
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = south_german
+						primary_culture = west_german
+						primary_culture = north_german
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	GER_retake_prussia = {
+		picture = GER_prussia
+		potential = {
+			OR = {
+				tag = GER
+				tag = NGF
+			}
+			NOT = {
+				690 = { is_core = THIS }
+			}
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			badboy = 7.5
+			PRU = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					tag = PRU
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	GER_unite_the_swiss = {
+		picture = GER_switzerland
+		potential = {
+			OR = {
+				tag = GER
+				tag = NGF
+			}
+			NOT = {
+				605 = { is_core = THIS }
+			}
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			badboy = 3
+			BNE = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			any_country = {
+				limit = {
+					tag = BNE
+					OR = {
+						AND = {
+							in_sphere = THIS
+							is_vassal = no
+						}
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	GER_retake_schlesien = {
+		picture = GER_silesia
+		potential = {
+			OR = {
+				tag = GER
+				tag = NGF
+			}
+			owns = 687
+			NOT = {
+				682 = { is_core = THIS }
+			}
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			PRU_682 = { add_core = THIS }
+			LUS = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	GER_the_western_reaches = {
+		picture = GER_lorraine
+		potential = {
+			tag = GER
+			NOT = {
+				397 = { is_core = GER }
+				3409 = { is_core = GER }
+			}
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 10
+			badboy = 3
+			397 = { add_core = GER }
+			3409 = { add_core = GER }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	GER_autonomy_venice = {
+		picture = GER_veneto
+		potential = {
+			is_culture_group = germanic
+			VEN = { all_core = { owned_by = THIS } }
+			OR = {
+				year = 1849
+				exists = ITA
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			badboy = -6
+			736 = { remove_core = VEN }
+			release_vassal = VEN
+			VEN = {
+				all_core = { remove_core = THIS }
+				government = colonial_company
+				add_accepted_culture = south_german
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
+	NGF_form = {
+		picture = GER_map
+		potential = {
+			OR = {
+				primary_culture = north_german
+				primary_culture = west_german
+			}
+			NOT = { exists = NGF exists = GER }
+		}
+		allow = {
+			war = no
+			ideological_thought = 1
+			GER = {
+				all_core = {
+					OR = {
+						NOT = { OR = { culture = west_german culture = north_german } }
+						owned_by = THIS
+						owner = {
+							OR = {
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 10
+			change_tag = NGF
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						primary_culture = west_german
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			BRA = { all_core = { add_core = THIS } }
+			BRN = { all_core = { add_core = THIS } }
+			WLG = { all_core = { add_core = THIS } }
+			STT = { all_core = { add_core = THIS } }
+			MEC = { all_core = { add_core = THIS } }
+			MST = { all_core = { add_core = THIS } }
+			ANH = { all_core = { add_core = THIS } }
+			MAG = { all_core = { add_core = THIS } }
+			WES = { all_core = { add_core = THIS } }
+			THU = { all_core = { add_core = THIS } }
+			SAX = { all_core = { add_core = THIS } }
+			NSB = { all_core = { add_core = THIS } }
+			HEK = { all_core = { add_core = THIS } }
+			HES = { all_core = { add_core = THIS } }
+			OLD = { all_core = { add_core = THIS } }
+			WLD = { all_core = { add_core = THIS } }
+			LIP = { all_core = { add_core = THIS } }
+			FRM = { all_core = { add_core = THIS } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { exists = ITA }
+				factor = 0
+			}
+			modifier = {
+				NOT = { badboy = 0.7 }
+				factor = 0
+			}
+        }
+	}
+}

@@ -1,0 +1,8 @@
+owner = UQA
+controller = UQA
+add_core = UQA
+add_core = SYR
+trade_goods = grain
+colonial = 2
+life_rating = 35
+terrain = semidesert

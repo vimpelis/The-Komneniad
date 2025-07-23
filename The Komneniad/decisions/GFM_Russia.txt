@@ -1,0 +1,267 @@
+political_decisions = {
+    russian_vladivostok = {
+        potential = {
+            tag = RUS
+            owns = 1085
+            owns = 1084
+            owns = 2617
+            owns = 1083
+            owns = 1082
+            owns = 1081
+            owns = 2697
+            NOT = { has_global_flag = russian_vladivostok }
+        }
+
+        allow = { state_n_government = 1 }
+
+        effect = {
+            random_owned = { limit = { province_id = 1082 NOT = { life_rating = 39 } } life_rating = 8 }
+            1081 = {
+                add_core = RUS
+                add_core = KAM
+                remove_core = CHI
+                remove_core = MCK
+                remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+            }
+            2697 = {
+                add_core = RUS
+                add_core = KAM
+                remove_core = CHI
+                remove_core = MCK
+                remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+            }
+            1085 = {
+                add_core = RUS
+                add_core = KAM
+                remove_core = CHI
+                remove_core = MCK
+                remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+            }
+            1084 = {
+                add_core = RUS
+                add_core = KAM
+                remove_core = CHI
+                remove_core = MCK
+                remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+            }
+            1083 = {
+                add_core = RUS
+                add_core = KAM
+                remove_core = CHI
+                remove_core = MCK
+                remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+            }
+            2617 = {
+                add_core = RUS
+                add_core = KAM
+                remove_core = CHI
+                remove_core = MCK
+                remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+            }
+            1082 = {
+                add_core = RUS
+                add_core = KAM
+                remove_core = CHI
+                remove_core = MCK
+                remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+            }
+            1080 = {
+				add_core = RUS
+				add_core = KAM
+				remove_core = CHI
+				remove_core = MCK
+				remove_core = KOR
+				remove_core = XIE
+				remove_core = TUT
+			}
+			BRY = {
+				all_core = {
+					add_core = KAM
+				}
+			}
+			2676 = { remove_core = KAM }
+			1075 = { remove_core = KAM }
+            prestige = 5
+            set_global_flag = russian_vladivostok
+            clr_global_flag = japanese_enkaishu
+            clr_global_flag = binhai_bianjiangqu
+        }
+    }
+
+    chinese_outer_manchuria = {
+        picture = outer_manchuria_map
+        potential = {
+            OR = {
+                tag = CHI
+                tag = XIE
+				tag = TUT
+                tag = KOR
+                tag = MCK
+            }
+            owns = 1085
+            owns = 1084
+            owns = 2617
+            owns = 1083
+            owns = 1082
+            OR = {
+                has_global_flag = russian_vladivostok
+                has_global_flag = japanese_enkaishu
+            }
+            NOT = { has_global_flag = binhai_bianjiangqu }
+        }
+
+        allow = { state_n_government = 1 }
+
+        effect = {
+            random_owned = { limit = { province_id = 1082 NOT = { life_rating = 39 } } life_rating = 8 }
+            1085 = { remove_core = RUS remove_core = KAM remove_core = JAP remove_core = TKG add_core = THIS add_core = CHI add_core = MCK }
+            1084 = { remove_core = RUS remove_core = KAM remove_core = JAP remove_core = TKG add_core = THIS add_core = CHI add_core = MCK }
+            1083 = { remove_core = RUS remove_core = KAM remove_core = JAP remove_core = TKG add_core = THIS add_core = CHI add_core = MCK }
+            2617 = { remove_core = RUS remove_core = KAM remove_core = JAP remove_core = TKG add_core = THIS add_core = CHI add_core = MCK }
+            1082 = { remove_core = RUS remove_core = KAM remove_core = JAP remove_core = TKG add_core = THIS add_core = CHI add_core = MCK }
+            prestige = 5
+            set_global_flag = binhai_bianjiangqu
+            clr_global_flag = russian_vladivostok
+            clr_global_flag = japanese_enkaishu
+        }
+    }
+
+    expel_manchu_from_primorye = {
+        picture = russian_vladivostok
+        potential = {
+            owns = 1082
+            owns = 1083
+            owns = 1084
+            owns = 1085
+            owns = 2617
+			owns = 1081
+			owns = 2697
+            NOT = { government = democracy }
+            NOT = { has_global_flag = manchus_expelled_primorye }
+            NOT = { has_global_flag = trying_to_expel_the_manchus }
+            OR = {
+                AND = {
+                    primary_culture = russian
+                    has_global_flag = russian_vladivostok
+                }
+                AND = {
+                    primary_culture = japanese
+                    has_global_flag = japanese_enkaishu
+                }
+            }
+        }
+
+        allow = { war = no nationalism_n_imperialism = 1 citizenship_policy = residency }
+
+        effect = {
+            set_global_flag = trying_to_expel_the_manchus
+            set_country_flag = country_trying_to_expel_the_manchus
+            any_owned = {
+                limit = {
+                    OR = {
+                    province_id = 1082
+                    province_id = 1083
+                    province_id = 1084
+                    province_id = 1085
+                    province_id = 2617
+					province_id = 1081
+					province_id = 2697
+					province_id = 1080
+                    }
+                }
+				add_province_modifier = { name = nationalist_agitation duration = 1095 }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    drain_the_pinsk_marshes = {
+        picture = drain_the_pinsk_marshes
+        potential = {
+            NOT = { has_country_flag = marshes_ready }
+            OR = {
+                941 = {
+                    owned_by = THIS
+                    NOT = { life_rating = 35 }
+                }
+                942 = {
+                    owned_by = THIS
+                    NOT = { life_rating = 35 }
+                }
+                959 = {
+                    owned_by = THIS
+                    NOT = { life_rating = 35 }
+                }
+            }
+        }
+
+        allow = {
+            steam_turbine = 1
+            money = 5500
+        }
+
+        effect = {
+            treasury = -5000
+            set_country_flag = marshes_ready
+            any_owned = {
+                limit = {
+                NOT = { life_rating = 16 }
+                    OR = {
+                        province_id = 941
+                        province_id = 942
+                        province_id = 959
+                        }
+                    }
+                life_rating = 20
+                add_province_modifier = {
+                    name = drained_marsh
+                    duration = -1
+				}
+			}
+		}
+        ai_will_do = { factor = 1 }
+    }
+
+    tea_in_georgia = {
+        picture = tea_production
+        potential = {
+            owns = 1094
+            NOT = { has_global_flag = georgian_tea }
+        }
+
+        allow = {
+            war = no
+            money = 10000
+            OR = {
+                year = 1895
+                AND = {
+                    invention = old_style_family_business
+                    modern_central_bank_system = 1
+                }
+            }
+        }
+
+        effect = {
+            set_global_flag = georgian_tea
+            money = -10000
+            1096 = { trade_goods = tea }
+            1095 = { trade_goods = tea }
+            1094 = { trade_goods = tea }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

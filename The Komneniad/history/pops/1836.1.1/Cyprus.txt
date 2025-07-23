@@ -1,0 +1,293 @@
+#Cyprus Region (152000)
+#under the rule of Ottoman Empire in 1836
+#Nicosia (64000/16000 POPS)
+855 = {
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 371
+    }
+
+    bureaucrats = {
+        culture = greek
+        religion = orthodox
+        size = 75
+    }
+
+    officers = {
+        culture = greek
+        religion = orthodox
+        size = 165
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 165
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 750
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 262
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 3881
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 162
+    }
+
+    officers = {
+        culture = greek
+        religion = orthodox
+        size = 180
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 225
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 150
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 1125
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 13500
+    }
+
+    farmers = {
+        culture = syriac
+        religion = orthodox
+        size = 750
+    }
+
+    farmers = {
+        culture = armenian
+        religion = orthodox
+        size = 225
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1500
+    }
+
+    aristocrats = {
+        culture = occitan
+        religion = catholic
+        size = 41
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 431
+    }
+
+    aristocrats = {
+        culture = occitan
+        religion = catholic
+        size = 18
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 1500
+    }
+}
+#Limassol (44000/11000 POPS)
+856 = {
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 285
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 165
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 450
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 150
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1924
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 225
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 165
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 600
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 11962
+    }
+
+    artisans = {
+        culture = armenian
+        religion = orthodox
+        size = 45
+    }
+
+    aristocrats = {
+        culture = occitan
+        religion = catholic
+        size = 15
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 101
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 630
+    }
+}
+#Famagusta (44000/11000 POPS)
+857 = {
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 285
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 165
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 225
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 150
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 3562
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 225
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 165
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 600
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 7673
+    }
+
+    farmers = {
+        culture = syriac
+        religion = orthodox
+        size = 2625
+    }
+
+    farmers = {
+        culture = armenian
+        religion = orthodox
+        size = 435
+    }
+
+    aristocrats = {
+        culture = occitan
+        religion = catholic
+        size = 15
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 188
+    }
+
+    farmers = {
+        culture = occitan
+        religion = catholic
+        size = 404
+    }
+}
+#SBA (44000/11000 POPS)
+2690 = {
+}

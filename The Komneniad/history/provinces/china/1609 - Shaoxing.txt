@@ -1,0 +1,6 @@
+trade_goods = tea
+life_rating = 32
+terrain = floodplain_farmland
+owner = FJN
+controller = FJN
+add_core = FJN

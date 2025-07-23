@@ -1,0 +1,6 @@
+owner = AYL
+controller = AYL
+trade_goods = sugar
+life_rating = 35
+add_core = AYL
+add_core = FLU

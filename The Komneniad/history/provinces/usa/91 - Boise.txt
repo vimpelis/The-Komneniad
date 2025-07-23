@@ -1,0 +1,7 @@
+add_core = CAL
+trade_goods = wool
+life_rating = 35
+terrain = boise
+owner = CAL
+controller = CAL
+colonial = 2

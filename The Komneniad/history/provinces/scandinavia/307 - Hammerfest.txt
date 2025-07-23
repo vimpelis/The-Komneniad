@@ -1,0 +1,8 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+add_core = SMI
+trade_goods = fish
+terrain = hammerfest
+life_rating = 25
+add_core = NOR

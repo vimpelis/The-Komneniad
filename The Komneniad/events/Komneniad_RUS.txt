@@ -1,0 +1,18 @@
+#Internal politics will come later
+#Starting event
+country_event = {
+    id = 152000
+    title = "The Ailing Bear"
+    desc = "152000DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Long live Russia, one and indivisible!"
+		country_event = {
+			id = 160003
+			days = 14
+		}
+    }
+}

@@ -1,0 +1,532 @@
+political_decisions = {
+	AAL_formation = {
+		picture = AAL
+		potential = {
+			OR = {
+				tag = SAH
+				tag = BIR
+			}
+			NOT = { exists = AAL }
+			NOT = {	has_global_flag = AAL_unification_war }
+		}
+		allow = {
+			war = no
+			idealism = 1
+			OR = {
+				AND = {
+					state_n_government = 1
+					OR = {
+						rank = 14
+						ai = yes
+					}
+				}
+				AND = {
+					tag = SAH
+					relation = {
+						who = BIR
+						value = 150
+					}
+				}
+				AND = {
+					tag = BIR
+					relation = {
+						who = SAH
+						value = 150
+					}
+				}
+				AND = {
+					ideological_thought = 1
+					SAH = { all_core = { owned_by = THIS } }
+					BIR = { all_core = { owned_by = THIS } }
+				}
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						tag = SAH
+						tag = BIR
+					}
+				}
+				country_event = 161000
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AAL_formation_militarily = {
+		picture = AAL
+		potential = {
+			OR = {
+				tag = SAH
+				tag = BIR
+			}
+			NOT = { exists = AAL }
+			NOT = {	has_global_flag = AAL_unification_war }
+		}
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					tag = SAH
+					NOT = {
+						relation = {
+							who = BIR
+							value = -1
+						}
+					}
+				}
+				AND = {
+					tag = BIR
+					NOT = {
+						relation = {
+							who = SAH
+							value = -1
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = AAL_unification_war
+			badboy = 10
+			any_country = {
+				limit = {
+					OR = {
+						tag = SAH
+						tag = BIR
+					}
+					NOT = { tag = THIS }
+				}
+				country_event = 161004
+				all_core = { add_core = THIS }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	AAL_win = {
+		picture = AAL
+		potential = {
+			OR = {
+				tag = SAH
+				tag = BIR
+			}
+			has_global_flag = AAL_unification_war
+			OR = {
+				war_with = SAH
+				war_with = BIR
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					tag = BIR
+					war_with = SAH
+					SAH = { national_provinces_occupied = 0.75 }
+				}
+				AND = {
+					tag = SAH
+					war_with = BIR
+					BIR = { national_provinces_occupied = 0.75 }
+				}
+			}
+			NOT = {
+				national_provinces_occupied = 0.1
+			}
+		}
+		effect = {
+			any_country = {
+				limit = {
+					OR = {
+						tag = BIR
+						tag = SAH
+					}
+					war_with = THIS
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AAL_annex_guaymura = {
+		picture = map_central_america
+		potential = {
+			tag = AAL
+			NOT = {	has_country_flag = AAL_annex_guaymura }
+		}
+		allow = {
+			war = no
+            state_n_government = 1
+		}
+		effect = {
+			badboy = 7.5
+			TGZ = {
+				all_core = {
+					add_core = AAL
+				}
+			}
+			relation = {
+				who = TGZ
+				value = -400
+			}
+			diplomatic_influence = {
+				who = TGZ
+				value = -400
+			}
+			set_country_flag = AAL_annex_guaymura
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	AAL_annex_welserland = {
+		picture = welserland
+		potential = {
+			tag = AAL
+			NOT = {	has_country_flag = AAL_annex_welserland }
+		}
+		allow = {
+			war = no
+            nationalism_n_imperialism = 1
+			rank = 12
+			WEL = {
+				OR = {
+					is_vassal = no
+					exists = no
+				}
+			}
+		}
+		effect = {
+			badboy = 7.5
+			WEL = {
+				all_core = {
+					add_core = AAL
+				}
+			}
+			2234 = { remove_core = AAL }
+			relation = {
+				who = WEL
+				value = -400
+			}
+			diplomatic_influence = {
+				who = WEL
+				value = -400
+			}
+			set_country_flag = AAL_annex_welserland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	AAL_buy_welserland = {
+		picture = welserland
+		potential = {
+			tag = AAL
+			NOT = {	has_country_flag = AAL_annex_welserland }
+			NOT = {	has_country_flag = AAL_WEL_purchase_attempt }
+			WEL = {
+				is_vassal = yes
+			}
+		}
+		allow = {
+			war = no
+            nationalism_n_imperialism = 1
+			rank = 12
+			money = 150000
+			OR = {
+				WEL = {
+					overlord = {
+						relation = {
+							who = AAL
+							value = 100
+						}
+					}
+				}
+				ai = yes
+			}
+		}
+		effect = {
+			badboy = 2
+			WEL = {
+				overlord = {
+					country_event = 161006
+				}
+			}
+			set_country_flag = AAL_WEL_purchase_attempt
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	AAL_diplo_annex_WEL = {
+		picture = welserland
+		potential = {
+			tag = AAL
+			NOT = {	has_country_flag = AAL_annex_welserland }
+		}
+		allow = {
+			war = no
+            nationalism_n_imperialism = 1
+			rank = 12
+			WEL = {
+				OR = {
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+		}
+		effect = {
+			badboy = 4
+			WEL = {
+				all_core = {
+					add_core = AAL
+				}
+				annex_to = AAL
+			}
+			2234 = { remove_core = AAL }
+			set_country_flag = AAL_annex_welserland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	BIR_annex_borderlands = {
+		picture = biru
+		potential = {
+			OR = {
+				tag = AAL
+				tag = BIR
+			}
+			2320 = { empty = yes }
+			3382 = { empty = yes }
+			2549 = { empty = yes }
+			278 = { empty = yes }
+			2289 = { empty = yes }
+		}
+		allow = {
+			war = no
+            year = 1870
+		}
+		effect = {
+			prestige = 5
+			2320 = { secede_province = THIS }
+			3382 = { secede_province = THIS }
+			2549 = { secede_province = THIS }
+			278 = { secede_province = THIS }
+			2289 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	BIR_claim_lowlands = {
+		picture = biru
+		potential = {
+			OR = {
+				tag = AAL
+				tag = BIR
+			}
+			owns = 2311
+			NOT = { has_country_flag = BIR_claim_lowlands }
+		}
+		allow = {
+			war = no
+            OR = {
+				state_n_government = 1
+				year = 1850
+			}
+		}
+		effect = {
+			prestige = 5
+			AMZ_2317 = {
+				add_core = THIS
+			}
+			set_country_flag = BIR_claim_lowlands
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AAL_annex_faruduu = {
+		picture = amazonas
+		potential = {
+			tag = AAL
+			has_country_flag = AAL_annex_welserland
+			has_country_flag = BIR_claim_lowlands
+			NOT = { has_country_flag = AAL_annex_faruduu }
+		}
+		allow = {
+			war = no
+            revolution_n_counterrevolution = 1
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 15
+			badboy = 15
+			ENG_1979 = { add_core = THIS }
+			AMZ_2408 = { add_core = THIS }
+			AMZ_2404 = { add_core = THIS }
+			AMZ_2243 = { add_core = THIS }
+			2401 = { add_core = THIS }
+			relation = {
+				who = KIB
+				value = -200
+			}
+			relation = {
+				who = ARJ
+				value = -400
+			}
+			relation = {
+				who = FRD
+				value = -400
+			}
+			set_country_flag = AAL_annex_faruduu
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	BIR_claim_potosi = {
+		picture = chile_bolivia_peru_borders
+		potential = {
+			has_country_flag = BIR_claim_potosi
+			NOT = { has_country_flag = BIR_claim_potosi_decision }
+		}
+		allow = {
+			war = no
+			rank = 14
+		}
+		effect = {
+			prestige = 5
+			badboy = 3
+			ARG_2368 = { add_core = THIS }
+			set_country_flag = BIR_claim_potosi_decision
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	AAL_annex_guatemala = {
+		picture = yucatan
+		potential = {
+			tag = AAL
+			has_country_flag = AAL_annex_guaymura
+			NOT = {	has_country_flag = AAL_annex_guatemala }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			prestige = 10
+			badboy = 12
+			YUC = { all_core = { add_core = THIS } }
+			relation = {
+				who = YUC
+				value = -400
+			}
+			set_country_flag = AAL_annex_guatemala
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.5
+            }
+		}
+	}
+	
+	AAL_accept_mayans = {
+		picture = maya_excavations
+		potential = {
+			has_country_flag = AAL_annex_guatemala
+			NOT = {	has_country_flag = AAL_accept_mayans }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			NOT = { citizenship_policy = residency }
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = mayan
+			any_pop = {
+				limit = {
+					has_pop_culture = mayan
+				}
+				militancy = -8
+			}
+			set_country_flag = AAL_accept_mayans
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AAL_accept_andeans = {
+		picture = biru
+		potential = {
+			tag = AAL
+			NOT = { accepted_culture = quechua }
+		}
+		allow = {
+			war = no
+			functionalism = 1
+			owns = 2295
+			NOT = { citizenship_policy = residency }
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = quechua
+			add_accepted_culture = aimara
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = quechua
+						has_pop_culture = aimara
+					}
+				}
+				militancy = -8
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

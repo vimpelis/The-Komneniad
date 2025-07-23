@@ -1,0 +1,6 @@
+owner = KIB
+trade_goods = fruit
+terrain = savanna
+life_rating = 28
+controller = KIB
+add_core = KIB

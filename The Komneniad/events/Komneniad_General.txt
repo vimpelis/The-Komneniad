@@ -1,0 +1,207 @@
+country_event = {
+    id = 169000
+    title = "Tech Event"
+    desc = "Choose which tech you'd like to get."
+    picture = "guinea_coast"
+
+    is_triggered_only = yes
+	
+	allow_multiple_instances = yes
+
+    option = {
+        name = "Ideological Thought"
+		activate_technology = ideological_thought
+		country_event = 169000
+    }
+	option = {
+        name = "State and Government"
+		activate_technology = state_n_government
+		country_event = 169000
+    }
+	option = {
+        name = "Nationalism and Imperialism"
+		activate_technology = nationalism_n_imperialism
+		country_event = 169000
+    }
+	option = {
+        name = "Revolution and Counterrevolution"
+		activate_technology = revolution_n_counterrevolution
+		country_event = 169000
+    }
+	option = {
+        name = "Close event"
+    }
+}
+
+country_event = {
+    id = 169001
+    title = "Gov type event"
+    desc = "Choose which gov type you'd like to be."
+    picture = "guinea_coast"
+
+    is_triggered_only = yes
+	
+	allow_multiple_instances = yes
+
+    option = {
+        name = "Republic"
+		government = democracy
+		country_event = 169001
+    }
+	option = {
+        name = "Const. Monarchy"
+		government = hms_government
+		country_event = 169001
+    }
+	option = {
+        name = "Semi-Const. Monarchy"
+		government = prussian_constitutionalism
+		country_event = 169001
+    }
+	option = {
+        name = "Absolute Monarchy"
+		government = absolute_monarchy
+		country_event = 169001
+    }
+	option = {
+        name = "Close event"
+    }
+}
+
+country_event = {
+    id = 169002
+    title = "Bavaria tips"
+    desc = "169002DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Thanks!"
+		clr_country_flag = komneniad_tips
+    }
+}
+
+country_event = {
+    id = 169003
+    title = "Komneniad Menu"
+    desc = "Welcome to the Menu! Select what you'd like to check out."
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Let me see the GFM-related info (and credits)"
+		country_event = 60168151
+		clr_country_flag = komneniad_menu
+    }
+	
+	option = {
+        name = "What are the gameplay changes?"
+		country_event = 169004
+    }
+	
+	option = {
+        name = "Page 2"
+		country_event = 169006
+    }
+}
+
+country_event = {
+    id = 169004
+    title = "Komneniad: Gameplay changes"
+    desc = "169004DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Ok"
+		clr_country_flag = komneniad_menu
+    }
+}
+
+country_event = {
+    id = 169005
+    title = "Byzantium tips"
+    desc = "169005DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	immediate = { clr_country_flag = komneniad_tips }
+
+	option = {
+        name = "Thanks!"
+    }
+}
+
+country_event = {
+    id = 169006
+    title = "Komneniad Menu: Page 2"
+    desc = "Welcome to the Menu! Select what you'd like to check out."
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to Page 1"
+		country_event = 169003
+    }
+	
+	option = {
+        name = "I want to allow turning on debug."
+		set_global_flag = debug_allowed
+		clr_country_flag = komneniad_menu
+    }
+	
+	option = {
+        name = "I want to DISALLOW turning on debug (After allowing it)"
+		clr_global_flag = debug_allowed
+		clr_country_flag = komneniad_menu
+    }
+	
+	option = {
+        name = "Open the default cheat menu"
+		country_event = 169007
+		clr_country_flag = komneniad_menu
+    }
+}
+
+country_event = {
+    id = 169007
+    title = "Komneniad: Default Cheat Menu"
+    desc = "These events were in GFM, untriggerable. No idea if they are from GFM, HPM or any other predecessor, but here they are if you want to use them."
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Clear Infamy"
+		country_event = 80003
+    }
+	
+	option = {
+        name = "Clear Militancy"
+		country_event = 80004
+    }
+	
+	option = {
+        name = "Clear Consciousness"
+		country_event = 80005
+    }
+	
+	option = {
+        name = "Add Research Points (though why not use inr?)"
+		country_event = 80006
+    }
+	
+	option = {
+        name = "Add Jingoism"
+		country_event = 80007
+    }
+	
+	option = {
+        name = "Close"
+    }
+}

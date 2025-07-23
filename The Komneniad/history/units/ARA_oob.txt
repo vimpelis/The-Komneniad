@@ -1,0 +1,82 @@
+OMA = { value = -100 }
+EGY = { value = -100 }
+ZND = { value = -100 }
+MHR = { value = -100 }
+
+leader = {
+    name = "Al Saud"
+    type = land
+    date = 1836.1.1
+    personality = defence_minus_2.1
+    background = attack_minus_1.1
+}
+
+army = {
+    name = "1st Army"
+    location = 1164
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1164
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1157
+    }
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 1157
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Regiment"
+        type = irregular
+        home = 1159
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Regiment"
+        type = irregular
+        home = 1160
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1160
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1178
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1152
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 1179
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1155
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1151
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1152
+    }
+	regiment = {
+        name = "4th Cavalry Regiment"
+        type = cavalry
+        home = 1153
+    }
+}

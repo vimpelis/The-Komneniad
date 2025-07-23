@@ -1,0 +1,8 @@
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = CLC
+trade_goods = wool
+life_rating = 35
+terrain = mountain
+add_core = ANT

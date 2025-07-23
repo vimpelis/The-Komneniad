@@ -1,0 +1,8 @@
+trade_goods = precious_goods
+life_rating = 32
+terrain = forest_hills
+owner = CLT
+controller = CLT
+add_core = FJN
+naval_base = 1
+colonial = 2

@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+add_core = CRS
+trade_goods = fish
+life_rating = 34
+terrain = corsica

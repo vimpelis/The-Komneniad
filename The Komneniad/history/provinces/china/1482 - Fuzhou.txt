@@ -1,0 +1,7 @@
+add_core = FJN
+trade_goods = grain
+life_rating = 35
+naval_base = 1
+terrain = fuzhou
+owner = FJN
+controller = FJN

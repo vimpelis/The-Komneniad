@@ -1,0 +1,9 @@
+add_core = POL
+add_core = SLS
+trade_goods = coal
+life_rating = 40
+terrain = oppeln
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+add_core = BOH

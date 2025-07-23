@@ -1,0 +1,5 @@
+owner = ADU
+controller = ADU
+add_core = ADU
+trade_goods = iron # caveira mines
+life_rating = 35 

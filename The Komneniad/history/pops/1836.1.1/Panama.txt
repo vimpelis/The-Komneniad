@@ -1,0 +1,500 @@
+#Panama Region (128000)
+#Ruled by Colombia 1836
+#Balboa (12000/3000 POPS)
+1723 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 45
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 55
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 112
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 2013
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 112
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 225
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 2980
+    }
+
+    slaves = {
+        culture = janatiyin
+        religion = sunni
+        size = 1125
+    }
+	
+	clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 30
+    }
+	
+	artisans = {
+        culture = zanj
+        religion = sunni
+        size = 100
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 450
+    }
+}
+#Panama City (52000/13000 POPS)
+2204 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 505
+    }
+
+    bureaucrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 55
+    }
+
+    officers = {
+        culture = janatiyin
+        religion = sunni
+        size = 112
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 225
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 1012
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 2200
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 18112
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 168
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 450
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 6018
+    }
+	
+	clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 100
+    }
+	
+	artisans = {
+        culture = zanj
+        religion = sunni
+        size = 460
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 5400
+    }
+}
+#David (28000/7000 POPS)
+2205 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 24
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 7
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 50
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 50
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 360
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 700
+    }
+
+    clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 15
+    }
+
+    artisans = {
+        culture = zanj
+        religion = sunni
+        size = 40
+    }
+
+    soldiers = {
+        culture = zanj
+        religion = sunni
+        size = 5
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 200
+    }
+
+    slaves = {
+        culture = zanj
+        religion = sunni
+        size = 200
+    }
+
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 96
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 28
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 200
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 1440
+    }
+}
+#Bocas del Toro
+3564 = {
+    aristocrats = {
+        culture = mozarabic
+        religion = catholic
+        size = 30
+    }
+
+    clergymen = {
+        culture = mozarabic
+        religion = catholic
+        size = 15
+    }
+
+    artisans = {
+        culture = mozarabic
+        religion = catholic
+        size = 50
+    }
+
+    soldiers = {
+        culture = mozarabic
+        religion = catholic
+        size = 25
+    }
+
+    farmers = {
+        culture = mozarabic
+        religion = catholic
+        size = 40
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = catholic
+        size = 2875
+    }
+
+    clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 5
+    }
+
+    artisans = {
+        culture = zanj
+        religion = sunni
+        size = 10
+    }
+
+    soldiers = {
+        culture = zanj
+        religion = sunni
+        size = 5
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 70
+    }
+
+    slaves = {
+        culture = zanj
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 160
+    }
+}
+#Penonome (24000/6000 POPS)
+2206 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 337
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 112
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 562
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 10125
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 45
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 112
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 1507
+    }
+	
+	clergymen = {
+        culture = zanj
+        religion = sunni
+        size = 50
+    }
+	
+	artisans = {
+        culture = zanj
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = zanj
+        religion = sunni
+        size = 550
+    }
+}
+#Yaviza (12000/3000 POPS)
+2208 = {
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 30
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 37
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 1042
+    }
+
+    aristocrats = {
+        culture = janatiyin
+        religion = sunni
+        size = 30
+    }
+
+    clergymen = {
+        culture = janatiyin
+        religion = sunni
+        size = 37
+    }
+
+    artisans = {
+        culture = janatiyin
+        religion = sunni
+        size = 75
+    }
+
+    soldiers = {
+        culture = janatiyin
+        religion = sunni
+        size = 10
+    }
+
+    farmers = {
+        culture = janatiyin
+        religion = sunni
+        size = 892
+    }
+
+    aristocrats = {
+        culture = antillean_native
+        religion = animist
+        size = 15
+    }
+
+    clergymen = {
+        culture = antillean_native
+        religion = animist
+        size = 25
+    }
+
+    artisans = {
+        culture = antillean_native
+        religion = animist
+        size = 50
+    }
+
+    soldiers = {
+        culture = antillean_native
+        religion = animist
+        size = 10
+    }
+
+    farmers = {
+        culture = antillean_native
+        religion = animist
+        size = 1400
+    }
+}

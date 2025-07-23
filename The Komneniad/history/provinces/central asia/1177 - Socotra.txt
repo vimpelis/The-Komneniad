@@ -1,0 +1,8 @@
+owner = OMA
+controller = OMA
+add_core = OMA
+add_core = YEM
+add_core = MHR
+trade_goods = fish
+life_rating = 20
+terrain = coastal_desert

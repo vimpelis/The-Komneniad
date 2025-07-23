@@ -1,0 +1,9 @@
+army = {
+    name = "Army of Assam"
+    location = 1260
+    regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1260
+    }
+}

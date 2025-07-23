@@ -1,0 +1,7 @@
+owner = CAM
+controller = CAM
+add_core = CAM
+trade_goods = timber
+life_rating = 34
+terrain = jungle_hills
+add_core = CMP

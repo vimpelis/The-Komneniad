@@ -1,0 +1,8 @@
+owner = DAN
+controller = DAN
+add_core = ENG
+trade_goods = coal
+life_rating = 35
+terrain = sheffield
+add_core = DAN
+party_loyalty = { ideology = liberal loyalty_value = 20 } 

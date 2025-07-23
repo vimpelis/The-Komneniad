@@ -1,0 +1,7 @@
+owner = SXI
+controller = SXI
+add_core = SXI
+terrain = montane_forest
+trade_goods = coal
+life_rating = 32
+add_core = CHI

@@ -1,0 +1,8 @@
+owner = BNE
+controller = BNE
+add_core = BNE
+add_core = SWI
+trade_goods = cattle
+life_rating = 32
+terrain = fribourg
+add_core = SWI

@@ -1,0 +1,16 @@
+#153200 - Starting event
+
+#Starting event
+country_event = {
+    id = 153200
+    title = "The Fledgling Kingdom"
+    desc = "153200DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Give war a chance."
+		set_country_flag = CRP_nation
+    }
+}

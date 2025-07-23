@@ -1,0 +1,438 @@
+#COUNTRYNAME proposes unification
+country_event = {
+    id = 161000
+    title = "161000NAME"
+    desc = "161000DESC"
+    picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We accept!"
+		FROM = { country_event = 161001 }
+		ai_chance = { factor = 99 }
+    }
+	
+	option = {
+        name = "We decline!"
+		prestige = 5
+		any_pop = {
+			militancy = 2
+		}
+		FROM = { country_event = 161002 }
+		ai_chance = { factor = 1 }
+    }
+}
+
+#COUNTRYNAME accepts
+country_event = {
+    id = 161001
+    title = "Unification of Ard al-Hurriya"
+    desc = "161001DESC"
+    major = yes
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		prestige = 15
+		change_tag = AAL
+		SAH = {
+			all_core = { add_core = AAL }
+			annex_to = AAL
+		}
+		BIR = {
+			all_core = { add_core = AAL }
+			annex_to = AAL
+		}
+		all_core = {
+			remove_core = BIR
+			remove_core = SAH
+		}
+    }
+}
+
+#COUNTRYNAME declines
+country_event = {
+    id = 161002
+    title = "161002NAME"
+    desc = "161002DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To war!"
+		set_global_flag = AAL_unification_war
+		FROM = { all_core = { add_core = THIS } }
+		THIS = { all_core = { add_core = FROM } }
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = annex_core_country }
+		}
+		FROM = { country_event = 161005 }
+    }
+}
+
+#Unification war victory
+country_event = {
+    id = 161003
+    title = "Victory in the War of the Free"
+    desc = "161003DESC"
+    major = yes
+	picture = "map_of_colombia"
+
+    trigger = {
+		has_global_flag = AAL_unification_war
+		war = no
+		OR = {
+			AND = {
+				tag = SAH
+				NOT = { exists = BIR }
+			}
+			AND = {
+				tag = BIR
+				NOT = { exists = SAH }
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Great!"
+		prestige = 15
+		change_tag = AAL
+		SAH = { all_core = { add_core = AAL } }
+		BIR = { all_core = { add_core = AAL } }
+		all_core = {
+			remove_core = BIR
+			remove_core = SAH
+		}
+    }
+}
+
+#War decced through decisions
+country_event = {
+    id = 161004
+    title = "161004NAME"
+    desc = "161004DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To war!"
+		FROM = { all_core = { add_core = THIS } }
+    }
+}
+
+#Notification about relations breakdown
+country_event = {
+    id = 161005
+    title = "161005NAME"
+    desc = "161005DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To war!"
+		FROM = { all_core = { add_core = THIS } }
+    }
+}
+
+#Offer to buy Welserland
+country_event = {
+    id = 161006
+    title = "161006NAME"
+    desc = "161006DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Yes, let's sell the troublesome colony."
+		WEL = { country_event = 161008 }
+		treasury = 150000
+		ai_chance = { factor = 80 }
+    }
+	
+	option = {
+        name = "No, we can't abandon our subjects!"
+		AAL = { country_event = 161009 }
+		ai_chance = { factor = 20 }
+    }
+}
+
+#Offer to buy Welserland: success
+country_event = {
+    id = 161007
+    title = "161007NAME"
+    desc = "161007DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Good."
+		prestige = 10
+		WEL = {
+			all_core = {
+				add_core = AAL
+			}
+			annex_to = AAL
+		}
+		2234 = { remove_core = AAL }
+		treasury = -150000
+		set_country_flag = AAL_annex_welserland
+    }
+}
+
+#Offer to buy Welserland: notification to WEL
+country_event = {
+    id = 161008
+    title = "Welserland has been sold"
+    desc = "Our overlord has decided to sell the colony of Welserland to the Arabs to the west. Despite them being infidels, it seems like money is more important than faith nowadays."
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "That's it then."
+		AAL = { country_event = 161007 }
+    }
+}
+
+#Offer to buy Welserland: failure
+country_event = {
+    id = 161009
+    title = "161009NAME"
+    desc = "161009DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Oh well."
+		prestige = -5
+		badboy = -2
+		relation = {
+			who = FROM
+			value = -100
+		}
+    }
+}
+
+#####Antarctic diplo
+
+#Peace with Antarctic?
+country_event = {
+    id = 161014
+    title = "The Southern Border"
+    desc = "161014DESC"
+	picture = "map_of_colombia"
+
+    trigger = {
+		ATA = { NOT = {	has_country_flag = ATA_claim_potosi } }
+		OR = {
+			tag = AAL
+			tag = BIR
+		}
+		year = 1862
+		war = no
+		NOT = { truce_with = ATA }
+		NOT = {
+			any_owned_province = {
+				is_core = ATA
+			}
+		}
+		NOT = {
+			OR = {
+				ATA = {
+					any_owned_province = {
+						is_core = BIR
+					}
+				}
+				ATA = {
+					any_owned_province = {
+						is_core = AAL
+					}
+				}
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 180 }
+
+    option = {
+        name = "Let's send them an offer."
+		badboy = -2.5
+		ATA = { country_event = 161015 }
+		ai_chance = { factor = 75 }
+    }
+	
+	option = {
+        name = "No, we will claim the Southern Andes!"
+		prestige = 10
+		badboy = 5
+		ARG_2368 = { add_core = THIS }
+		relation = {
+			who = ATA
+			value = -400
+		}
+		ATA = { country_event = 161018 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+    }
+}
+
+#ATA receives offer
+country_event = {
+    id = 161015
+    title = "Biru Proposes a Border Treaty"
+    desc = "161015DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We accept, peace in the north is in our interests."
+		badboy = -2.5
+		prestige = 5
+		relation = {
+			who = AAL
+			value = 400
+		}
+		relation = {
+			who = BIR
+			value = 400
+		}
+		AAL = { country_event = 161016 }
+		set_global_flag = BIR_ATA_peace
+		ai_chance = { factor = 60 }
+    }
+	
+	option = {
+        name = "No, we will claim Upper Biru!"
+		badboy = 7
+		prestige = 10
+		relation = {
+			who = AAL
+			value = -400
+		}
+		relation = {
+			who = BIR
+			value = -400
+		}
+		BOL_2309 = { add_core = ATA }
+		BOL_2321 = { add_core = ATA }
+		AMZ_2317 = { add_core = ATA }
+		AAL = { country_event = 161017 }
+		ai_chance = {
+			factor = 40
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+    }
+}
+
+#ATA accepts
+country_event = {
+    id = 161016
+    title = "Antartida accepts"
+    desc = "161016DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		prestige = 5
+    }
+}
+
+#ATA refuses
+country_event = {
+    id = 161017
+    title = "Antartida refuses"
+    desc = "161017DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Oh well."
+		prestige = -5
+		badboy = 2.5
+		ARG_2368 = { add_core = THIS }
+    }
+}
+
+#AAL/BIR claims borderlands
+country_event = {
+    id = 161018
+    title = "$FROMCOUNTRY$ Claims Cura!"
+    desc = "161018DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will claim Upper Biru in response!"
+		badboy = 5
+		BOL_2309 = { add_core = ATA }
+		BOL_2321 = { add_core = ATA }
+		AMZ_2317 = { add_core = ATA }
+		set_country_flag = ATA_claim_potosi
+		ai_chance = {
+			factor = 99
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+    }
+	
+	option = {
+        name = "We'll announce our claim later."
+		ai_chance = {
+			factor = 1
+		}
+    }
+}
+
+#ATA claims borderlands (decision)
+country_event = {
+    id = 161019
+    title = "Antartida claims Upper Biru!"
+    desc = "161019DESC"
+	picture = "map_of_colombia"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "We will claim Cura in response!"
+		prestige = 5
+		badboy = 2.5
+		ARG_2368 = { add_core = THIS }
+    }
+
+    option = {
+        name = "We'll announce our claim later."
+		set_country_flag = BIR_claim_potosi
+    }
+}

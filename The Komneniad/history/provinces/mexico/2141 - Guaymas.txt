@@ -1,0 +1,6 @@
+owner = NBS
+controller = NBS
+trade_goods = cattle
+life_rating = 35
+terrain = guaymas
+add_core = NBS

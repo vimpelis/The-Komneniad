@@ -1,0 +1,6 @@
+owner = NBS
+controller = NBS
+trade_goods = grain
+life_rating = 35
+terrain = animas
+add_core = NBS

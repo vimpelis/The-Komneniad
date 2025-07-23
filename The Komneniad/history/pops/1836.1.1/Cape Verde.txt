@@ -1,0 +1,70 @@
+#Cape Verde Region (76000)
+#Ruled by Portugal 1836
+#Cape Verde (76000/19000 POPS)
+1876 = {
+    aristocrats = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    officers = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    artisans = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    soldiers = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    farmers = {
+        culture = waramaran
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 225
+    }
+
+    artisans = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 1050
+    }
+
+    soldiers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 225
+    }
+
+    farmers = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 20250
+    }
+
+    slaves = {
+        culture = kuto_wolofian
+        religion = sunni
+        size = 6000
+    }
+}

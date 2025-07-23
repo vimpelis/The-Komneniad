@@ -1,0 +1,8 @@
+owner = KOR
+controller = KOR
+add_core = KOR
+add_core = MCK
+
+trade_goods = timber
+life_rating = 32
+terrain = mukden

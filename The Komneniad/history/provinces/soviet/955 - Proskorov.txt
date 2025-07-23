@@ -1,0 +1,7 @@
+owner = GLM
+controller = GLM
+add_core = GLM
+trade_goods = cattle
+life_rating = 35
+terrain = kamenets
+add_core = ZPD

@@ -1,0 +1,4883 @@
+#Tayside-Highlands Region : 864000
+#Aberdeen (172000/43000 POPS)
+266 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 200
+    }
+
+    officers = {
+        culture = scottish
+        religion = anglican
+        size = 500
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 3100
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 3400
+    }
+
+    labourers = {
+        culture = scottish
+        religion = anglican
+        size = 40000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 2000
+    }
+}
+#Inverness (328000/82000 POPS)
+267 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 160
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 250
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 5000
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 4000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 47745
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = reformed
+        size = 300
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 45
+    }
+}
+#Highlands (XXX/XXX POPS)
+3478 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 160
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 250
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 4000
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 4000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 24090
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 4000
+    }
+}
+#Shetland - former Orkeny & Shetland former Tamanrasset
+1724 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 40
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 225
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 375
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 8000
+    }
+
+    artisans = {
+        culture = norwegian
+        religion = protestant
+        size = 200
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 4360
+    }
+
+    farmers = {
+        culture = norwegian
+        religion = protestant
+        size = 1500
+    }
+}
+#Orkney - former Orkeny & Shetland former Tamanrasset
+3477 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 40
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 225
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 375
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 900
+    }
+
+    artisans = {
+        culture = norwegian
+        religion = protestant
+        size = 100
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 7630
+    }
+
+    farmers = {
+        culture = norwegian
+        religion = protestant
+        size = 230
+    }
+}
+#Faroe Islands Region (7000)
+#Torshavn (7000/1750 POPS)
+253 = {
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 15
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 75
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 95
+    }
+
+    artisans = {
+        culture = norwegian
+        religion = protestant
+        size = 40
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 1075
+    }
+
+    farmers = {
+        culture = norwegian
+        religion = protestant
+        size = 500
+    }
+}
+#Hebrides - former Orkeny & Shetland former Tamanrasset
+3479 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 40
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 225
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 375
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 700
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 300
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 8860
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 4000
+    }
+}
+#Dundee (364000/91000 POPS)
+268 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 300
+    }
+
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 1000
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 7955
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 3000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 78200
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = reformed
+        size = 400
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 145
+    }
+}
+#Strathclyde-Lothian Region : 1632000
+#Edinburgh (480000/120000 POPS)
+269 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1100
+    }
+
+    officers = {
+        culture = scottish
+        religion = anglican
+        size = 1200
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1075
+    }
+
+    capitalists = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 550
+    }
+
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 2100
+    }
+
+    clerks = {
+        culture = scottish
+        religion = anglican
+        size = 400
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 8000
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 6000
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 4500
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 51175
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 100
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 1500
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 5000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 26000
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 1100
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = reformed
+        size = 400
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 300
+    }
+}
+#Stirling (364000/91000 POPS)
+270 = {
+    aristocrats = {
+        culture = irish
+        religion = anglican
+        size = 100
+    }
+
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 100
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 200
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 8395
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 2100
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 54300
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 28000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = reformed
+        size = 800
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 105
+    }
+}
+#Glasgow (620000/155000 POPS)
+271 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 600
+    }
+
+    aristocrats = {
+        culture = irish
+        religion = anglican
+        size = 200
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 1000
+    }
+
+    clergymen = {
+        culture = irish
+        religion = anglican
+        size = 500
+    }
+
+    clerks = {
+        culture = scottish
+        religion = anglican
+        size = 7850
+    }
+
+    clerks = {
+        culture = irish
+        religion = anglican
+        size = 3000
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 25000
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 12000
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 10000
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 10000
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 5500
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 42850
+    }
+
+    clergymen = {
+        culture = irish
+        religion = anglican
+        size = 100
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 4850
+    }
+
+    craftsmen = {
+        culture = irish
+        religion = anglican
+        size = 40000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = reformed
+        size = 300
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 50
+    }
+}
+#Dumfries (168000/42000 POPS)
+272 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 100
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 100
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 33600
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 5000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = reformed
+        size = 200
+    }
+}
+# Wales Region : 970000
+#Cardiff (380000/95000 POPS)
+273 = {
+    aristocrats = {
+        culture = welsh
+        religion = anglican
+        size = 500
+    }
+
+    capitalists = {
+        culture = welsh
+        religion = anglican
+        size = 100
+    }
+
+    labourers = {
+        culture = welsh
+        religion = anglican
+        size = 28000
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 9000
+    }
+
+    bureaucrats = {
+        culture = welsh
+        religion = anglican
+        size = 1025
+    }
+
+    officers = {
+        culture = welsh
+        religion = anglican
+        size = 350
+    }
+
+    clergymen = {
+        culture = welsh
+        religion = anglican
+        size = 375
+    }
+
+    clerks = {
+        culture = welsh
+        religion = anglican
+        size = 50
+    }
+
+    craftsmen = {
+        culture = welsh
+        religion = anglican
+        size = 1000
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 100
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 3000
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 500
+    }
+
+    soldiers = {
+        culture = welsh
+        religion = anglican
+        size = 3100
+    }
+
+    labourers = {
+        culture = welsh
+        religion = anglican
+        size = 19600
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 600
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 200
+    }
+
+    labourers = {
+        culture = welsh
+        religion = catholic
+        size = 28000
+    }
+
+    labourers = {
+        culture = welsh
+        religion = catholic
+        size = 19600
+    }
+}
+#Cardigan (168000/42000 POPS)
+274 = {
+    aristocrats = {
+        culture = welsh
+        religion = anglican
+        size = 250
+    }
+
+    clergymen = {
+        culture = welsh
+        religion = anglican
+        size = 125
+    }
+
+    soldiers = {
+        culture = welsh
+        religion = anglican
+        size = 3200
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 2000
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2000
+    }
+
+    farmers = {
+        culture = welsh
+        religion = anglican
+        size = 20812
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 200
+    }
+
+    farmers = {
+        culture = welsh
+        religion = catholic
+        size = 20813
+    }
+}
+#Llandrindod (182000/45500 POPS)
+275 = {
+    aristocrats = {
+        culture = welsh
+        religion = anglican
+        size = 250
+    }
+
+    clergymen = {
+        culture = welsh
+        religion = anglican
+        size = 250
+    }
+
+    clerks = {
+        culture = welsh
+        religion = anglican
+        size = 150
+    }
+
+    craftsmen = {
+        culture = welsh
+        religion = anglican
+        size = 1000
+    }
+
+    soldiers = {
+        culture = welsh
+        religion = anglican
+        size = 2500
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 1900
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 350
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2550
+    }
+
+    farmers = {
+        culture = welsh
+        religion = anglican
+        size = 21625
+    }
+
+    farmers = {
+        culture = welsh
+        religion = catholic
+        size = 21625
+    }
+}
+#Holyhead (240000/60000 POPS)
+276 = {
+    aristocrats = {
+        culture = welsh
+        religion = anglican
+        size = 250
+    }
+
+    clergymen = {
+        culture = welsh
+        religion = anglican
+        size = 250
+    }
+
+    soldiers = {
+        culture = welsh
+        religion = anglican
+        size = 1750
+    }
+
+    clerks = {
+        culture = welsh
+        religion = anglican
+        size = 150
+    }
+
+    craftsmen = {
+        culture = welsh
+        religion = anglican
+        size = 2700
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 2000
+    }
+
+    farmers = {
+        culture = welsh
+        religion = anglican
+        size = 25000
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 600
+    }
+
+    farmers = {
+        culture = welsh
+        religion = catholic
+        size = 25000
+    }
+}
+#Lancashire Region : 1896000
+#Liverpool (936000/234000 POPS)
+277 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 101
+    }
+
+    officers = {
+        culture = scottish
+        religion = anglican
+        size = 515
+    }
+
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 1081
+    }
+
+    bureaucrats = {
+        culture = welsh
+        religion = anglican
+        size = 515
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 1030
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 101
+    }
+
+    capitalists = {
+        culture = scottish
+        religion = anglican
+        size = 824
+    }
+
+    capitalists = {
+        culture = welsh
+        religion = anglican
+        size = 412
+    }
+
+    capitalists = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 50
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1274
+    }
+
+    clerks = {
+        culture = welsh
+        religion = anglican
+        size = 515
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 7137
+    }
+
+    craftsmen = {
+        culture = welsh
+        religion = anglican
+        size = 5150
+    }
+
+    craftsmen = {
+        culture = irish
+        religion = anglican
+        size = 1030
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 2060
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 8157
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 2060
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 2575
+    }
+
+    soldiers = {
+        culture = welsh
+        religion = anglican
+        size = 4120
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 42557
+    }
+
+    labourers = {
+        culture = scottish
+        religion = anglican
+        size = 12370
+    }
+
+    labourers = {
+        culture = welsh
+        religion = anglican
+        size = 17378
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 51
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 566
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 1545
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 6643
+    }
+
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 515
+    }
+
+    aristocrats = {
+        culture = irish
+        religion = anglican
+        size = 206
+    }
+
+    aristocrats = {
+        culture = welsh
+        religion = anglican
+        size = 412
+    }
+
+    clergymen = {
+        culture = irish
+        religion = anglican
+        size = 128
+    }
+
+    craftsmen = {
+        culture = irish
+        religion = anglican
+        size = 1158
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 11072
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 8111
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 520
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 1
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 1
+    }
+
+    capitalists = {
+        culture = danelander
+        religion = protestant
+        size = 1
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 13
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 72
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 82
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 429
+    }
+
+    labourers = {
+        culture = welsh
+        religion = catholic
+        size = 17379
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 7138
+    }
+
+    farmers = {
+        culture = welsh
+        religion = anglican
+        size = 5150
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 1030
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 2060
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 567
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 1159
+    }
+
+    farmers = {
+        culture = danelander
+        religion = protestant
+        size = 72
+    }
+}
+#Preston
+3608 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 1700
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 1010
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 242
+    }
+
+    clerks = {
+        culture = scottish
+        religion = anglican
+        size = 400
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1028
+    }
+
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 500
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 2500
+    }
+
+    craftsmen = {
+        culture = welsh
+        religion = anglican
+        size = 750
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4850
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4850
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 1700
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3298
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 23129
+    }
+
+    labourers = {
+        culture = scottish
+        religion = anglican
+        size = 19540
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 800
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 2800
+    }
+
+    labourers = {
+        culture = welsh
+        religion = anglican
+        size = 5415
+    }
+
+    labourers = {
+        culture = irish
+        religion = anglican
+        size = 830
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 536
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 8
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 32
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 150
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 150
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 102
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 715
+    }
+
+    labourers = {
+        culture = welsh
+        religion = catholic
+        size = 5415
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 5000
+    }
+
+    farmers = {
+        culture = welsh
+        religion = anglican
+        size = 1500
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 9700
+    }
+
+    farmers = {
+        culture = danelander
+        religion = protestant
+        size = 300
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 2500
+    }
+
+    farmers = {
+        culture = welsh
+        religion = anglican
+        size = 750
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4850
+    }
+
+    farmers = {
+        culture = danelander
+        religion = protestant
+        size = 150
+    }
+}
+#Carlisle (216000/54000 POPS)
+279 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 250
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 250
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 3500
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 500
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 500
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 43320
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4100
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 1250
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 380
+    }
+}
+#Yorkshire-Northumbria Region : 2190000
+#Newcastle-upon-Tyne (552000/138000 POPS)
+280 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 1100
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 750
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 10000
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4750
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 10000
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5605
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 1500
+    }
+
+    labourers = {
+        culture = scottish
+        religion = anglican
+        size = 64615
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 32300
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 235
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 250
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 295
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 1700
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 10000
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4750
+    }
+
+    farmers = {
+        culture = danelander
+        religion = protestant
+        size = 250
+    }
+}
+#Hull (512000/128000 POPS)
+3607 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 65
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 45
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 600
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 78
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 145
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 16684
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 5150
+    }
+
+    labourers = {
+        culture = gypsy
+        religion = protestant
+        size = 1168
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 1033
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 705
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 9398
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 1221
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 2323
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 52221
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 279
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 188
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 2536
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 329
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 627
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 18270
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 16
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 11
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 150
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 19
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 36
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 4171
+    }
+}
+281 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 38
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 19
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 387
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 100
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 15
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1911
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 257
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 128
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 2575
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 669
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 114
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 12702
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 87
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 44
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 875
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 227
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 37
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 4318
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 41
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 20
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 407
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 106
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 18
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 2012
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 90
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 44
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 904
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 234
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 40
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 4459
+    }
+}
+#Leeds (468000/117000 POPS)
+282 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 225
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 187
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3007
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 225
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 843
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 27857
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 3090
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 386
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 322
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 5150
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 386
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 1446
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 47702
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 104
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 86
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 1390
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 104
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 391
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 12879
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 56
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 47
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 751
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 56
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 208
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 6964
+    }
+}
+#Sheffield (658000/164500 POPS)
+283 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 527
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 321
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 553
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 6437
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 283
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 224
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2575
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 192
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 868
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 26322
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 4120
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 618
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 897
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 546
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 941
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 10943
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 481
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 383
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 4377
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 328
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 1476
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 44749
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 449
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 273
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 470
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 5471
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 241
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 191
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 2188
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 164
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 738
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 22374
+    }
+
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 158
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 96
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 165
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1931
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 85
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 67
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 772
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 57
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 261
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 7897
+    }
+
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 79
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 48
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 83
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 966
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 42
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 33
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 386
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 28
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 127
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3947
+    }
+}
+#West Midlands Region : 1760000
+#Birmingham (644000/161000 POPS)
+284 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 917
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 417
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2106
+    }
+
+    capitalists = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 291
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1355
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 917
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 13348
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 8343
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1668
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5629
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 97696
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 1133
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 3090
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 1854
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 215
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 97
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 494
+    }
+
+    capitalists = {
+        culture = danelander
+        religion = protestant
+        size = 69
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 318
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 215
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 3131
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 1957
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 391
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 1320
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 22916
+    }
+}
+#Chester (368000/92000 POPS)
+285 = {
+    aristocrats = {
+        culture = welsh
+        religion = anglican
+        size = 1650
+    }
+
+    clergymen = {
+        culture = welsh
+        religion = anglican
+        size = 1465
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 320
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 93
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 391
+    }
+
+    clerks = {
+        culture = welsh
+        religion = anglican
+        size = 270
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 15856
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 650
+    }
+
+    craftsmen = {
+        culture = welsh
+        religion = anglican
+        size = 7050
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5487
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 300
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 5100
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4371
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 58442
+    }
+
+    labourers = {
+        culture = welsh
+        religion = anglican
+        size = 26000
+    }
+
+    labourers = {
+        culture = scottish
+        religion = anglican
+        size = 2000
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 1100
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 1200
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 75
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 5310
+    }
+
+    labourers = {
+        culture = irish
+        religion = anglican
+        size = 1245
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 804
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 7
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 29
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 1193
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 413
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 329
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 4399
+    }
+
+    labourers = {
+        culture = welsh
+        religion = catholic
+        size = 26000
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 15857
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 650
+    }
+
+    farmers = {
+        culture = welsh
+        religion = anglican
+        size = 7050
+    }
+
+    farmers = {
+        culture = danelander
+        religion = protestant
+        size = 1194
+    }
+}
+#Shrewsbury (316000/79000 POPS)
+286 = {
+    aristocrats = {
+        culture = welsh
+        religion = anglican
+        size = 500
+    }
+
+    clergymen = {
+        culture = welsh
+        religion = anglican
+        size = 375
+    }
+
+    artisans = {
+        culture = welsh
+        religion = anglican
+        size = 3000
+    }
+
+    soldiers = {
+        culture = welsh
+        religion = anglican
+        size = 7100
+    }
+
+    labourers = {
+        culture = welsh
+        religion = anglican
+        size = 24437
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1250
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 20000
+    }
+
+    labourers = {
+        culture = welsh
+        religion = catholic
+        size = 24438
+    }
+}
+#Coventry (432000/108000 POPS)
+287 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 974
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 442
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 974
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3100
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2657
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2191
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 81395
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 3203
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 158
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 72
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 158
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 504
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 432
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 355
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 13250
+    }
+}
+#East Midlands Region : 1224000
+#Nottingham (484000/121000 POPS)
+288 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 501
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 736
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 501
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 334
+    }
+
+    capitalists = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 66
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 133
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3347
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2008
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1656
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 66749
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 5150
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 270
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 396
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 270
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 180
+    }
+
+    capitalists = {
+        culture = danelander
+        religion = protestant
+        size = 36
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 72
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 1802
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 1081
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 891
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 35941
+    }
+}
+#Leicester (404000/101000 POPS)
+289 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 175
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 262
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4202
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1732
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 62458
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 1236
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 82
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 123
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 1977
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 814
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 29392
+    }
+}
+#Lincoln (336000/84000 POPS)
+290 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 298
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 298
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3883
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1477
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 45103
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 618
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 216
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 216
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 2811
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 1068
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 32661
+    }
+}
+#East Anglia Region : 1260000
+#Cambridge (308000/77000 POPS)
+291 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 334
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 166
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1171
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 334
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3682
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1656
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 45726
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 206
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 180
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 90
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 631
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 180
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 1982
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 891
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 24622
+    }
+}
+#Ipswich (676000/169000 POPS)
+292 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 880
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 645
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4990
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1980
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 90636
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 2183
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 664
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 487
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 3764
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 1494
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 68374
+    }
+}
+#Chelmsford (276000/69000 POPS)
+293 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 380
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 284
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5694
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2562
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 42911
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 380
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 2060
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 113
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 123
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 92
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 1854
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 832
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 13970
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 123
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 11
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 9
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 176
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 78
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 1327
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 11
+    }
+}
+#Oxfordshire/Buckinghamshire Region : 616000
+#Oxford (304000/76000 POPS)
+294 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 741
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 247
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1062
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1483
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5932
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3336
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 64692
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 1236
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 30
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 10
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 44
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 61
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 247
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 136
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 2695
+    }
+}
+#St. Albans (312000/78000 POPS)
+295 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 594
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1189
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3172
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1962
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 56904
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 178
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 355
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 947
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 585
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 16998
+    }
+}
+#Cornwall-Dorset Region : 2032000
+#Bristol (404000/101000 POPS)
+296 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 499
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 499
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1548
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1623
+    }
+
+    capitalists = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 249
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 599
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 11989
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 8991
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2472
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 61669
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 2060
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 1596
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 15
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 15
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 48
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 50
+    }
+
+    capitalists = {
+        culture = danelander
+        religion = protestant
+        size = 8
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 18
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 370
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 278
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 73
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 1907
+    }
+}
+#Salisbury (408000/102000 POPS)
+297 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1099
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 624
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4996
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5995
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2472
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 34975
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 123
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 22
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 13
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 103
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 123
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 49
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 721
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 11
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 6
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 50
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 60
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 24
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 353
+    }
+}
+#Poole (408000/102000 POPS)
+3605 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1121
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 157
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5098
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 6118
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 226
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 41705
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 11
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 2
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 51
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 61
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 1
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 421
+    }
+}
+#Bath (408000/102000 POPS)
+298 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1766
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1639
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5047
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2497
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 12112
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 71056
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 236
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 36
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 33
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 103
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 49
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 247
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 1450
+    }
+}
+#Plymouth (812000/203000 POPS)
+299 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1545
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1030
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3605
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 3475
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 129790
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 1133
+    }
+
+    labourers = {
+        culture = welsh
+        religion = catholic
+        size = 29046
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 247
+    }
+}
+#Exeter (812000/203000 POPS)
+3268 = {
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 257
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2060
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1158
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 41076
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 515
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 1133
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 123
+    }
+}
+# Metro London Region - 2052000
+#London (2052000/513000 POPS)
+300 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1232
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 560
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4033
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4089
+    }
+
+    capitalists = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 560
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2689
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 25992
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2241
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2241
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2241
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2241
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2241
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2123
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 8963
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 27561
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 8000
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 17000
+    }
+
+    clerks = {
+        culture = anglo_saxon
+        religion = jewish
+        size = 100
+    }
+
+    craftsmen = {
+        culture = anglo_saxon
+        religion = jewish
+        size = 1500
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = jewish
+        size = 3200
+    }
+
+    craftsmen = {
+        culture = irish
+        religion = anglican
+        size = 1400
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 3500
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 700
+    }
+
+    farmers = {
+        culture = north_german
+        religion = protestant
+        size = 1050
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 900
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 300
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 400
+    }
+
+    farmers = {
+        culture = north_italian
+        religion = catholic
+        size = 400
+    }
+
+    farmers = {
+        culture = bengali
+        religion = hindu
+        size = 100
+    }
+
+    farmers = {
+        culture = yue
+        religion = mahayana
+        size = 100
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 4220
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 38
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 17
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 125
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 126
+    }
+
+    capitalists = {
+        culture = danelander
+        religion = protestant
+        size = 17
+    }
+
+    clerks = {
+        culture = danelander
+        religion = protestant
+        size = 83
+    }
+
+    craftsmen = {
+        culture = danelander
+        religion = protestant
+        size = 804
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 69
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 69
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 69
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 69
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 69
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 66
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 277
+    }
+
+    farmers = {
+        culture = danelander
+        religion = protestant
+        size = 852
+    }
+}
+#Sussex-Kent Region : 1212000
+#Canterbury (476000/98000 POPS)
+301 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 750
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 625
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 4000
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1100
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 90640
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 1100
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 45
+    }
+}
+#Brighton (404000/101000 POPS)
+302 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 750
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 400
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 8000
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1250
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1100
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 44600
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 100
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2000
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 500
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 34050
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 950
+    }
+
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 500
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 200
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1200
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 100
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 30900
+    }
+}
+#Brighton (404000/101000 POPS)
+3604 = {
+    aristocrats = {
+        culture = anatolian
+        religion = orthodox
+        size = 143
+    }
+
+    bureaucrats = {
+        culture = anatolian
+        religion = orthodox
+        size = 143
+    }
+
+    officers = {
+        culture = anatolian
+        religion = orthodox
+        size = 35
+    }
+
+    clergymen = {
+        culture = anatolian
+        religion = orthodox
+        size = 357
+    }
+
+    artisans = {
+        culture = anatolian
+        religion = orthodox
+        size = 5855
+    }
+
+    soldiers = {
+        culture = anatolian
+        religion = orthodox
+        size = 1430
+    }
+
+    farmers = {
+        culture = anatolian
+        religion = orthodox
+        size = 33462
+    }
+
+    artisans = {
+        culture = turkish
+        religion = sunni
+        size = 288
+    }
+
+    farmers = {
+        culture = turkish
+        religion = sunni
+        size = 1650
+    }
+
+    artisans = {
+        culture = turkish
+        religion = orthodox
+        size = 96
+    }
+
+    farmers = {
+        culture = turkish
+        religion = orthodox
+        size = 550
+    }
+}
+#Portsmouth
+3269 = {
+    aristocrats = {
+        culture = anatolian
+        religion = orthodox
+        size = 115
+    }
+
+    bureaucrats = {
+        culture = anatolian
+        religion = orthodox
+        size = 115
+    }
+
+    officers = {
+        culture = anatolian
+        religion = orthodox
+        size = 28
+    }
+
+    clergymen = {
+        culture = anatolian
+        religion = orthodox
+        size = 288
+    }
+
+    artisans = {
+        culture = anatolian
+        religion = orthodox
+        size = 3637
+    }
+
+    soldiers = {
+        culture = anatolian
+        religion = orthodox
+        size = 1155
+    }
+
+    farmers = {
+        culture = anatolian
+        religion = orthodox
+        size = 20790
+    }
+
+    artisans = {
+        culture = turkish
+        religion = sunni
+        size = 86
+    }
+
+    farmers = {
+        culture = turkish
+        religion = sunni
+        size = 495
+    }
+
+    artisans = {
+        culture = turkish
+        religion = orthodox
+        size = 28
+    }
+
+    farmers = {
+        culture = turkish
+        religion = orthodox
+        size = 165
+    }
+}
+#Southampton (332000/83000 POPS)
+303 = {
+    aristocrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 764
+    }
+
+    officers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1121
+    }
+
+    bureaucrats = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 764
+    }
+
+    clergymen = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 509
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 6118
+    }
+
+    soldiers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 2521
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 71638
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 46
+    }
+
+    aristocrats = {
+        culture = danelander
+        religion = protestant
+        size = 8
+    }
+
+    officers = {
+        culture = danelander
+        religion = protestant
+        size = 11
+    }
+
+    bureaucrats = {
+        culture = danelander
+        religion = protestant
+        size = 8
+    }
+
+    clergymen = {
+        culture = danelander
+        religion = protestant
+        size = 5
+    }
+
+    artisans = {
+        culture = danelander
+        religion = protestant
+        size = 61
+    }
+
+    soldiers = {
+        culture = danelander
+        religion = protestant
+        size = 24
+    }
+
+    labourers = {
+        culture = danelander
+        religion = protestant
+        size = 724
+    }
+}
+3606 = {
+}
+#Isle Of Man Region - 46000
+#Douglas (46000/11500 POPS)
+304 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 100
+    }
+
+    bureaucrats = {
+        culture = scottish
+        religion = anglican
+        size = 25
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 125
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 3250
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 100
+    }
+
+    labourers = {
+        culture = scottish
+        religion = anglican
+        size = 7600
+    }
+
+    labourers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 300
+    }
+}
+#Normandie Region
+#Channel Islands (72000/18000 POPS)
+419 = {
+    aristocrats = {
+        culture = french
+        religion = catholic
+        size = 7
+    }
+
+    bureaucrats = {
+        culture = french
+        religion = catholic
+        size = 3
+    }
+
+    clergymen = {
+        culture = french
+        religion = catholic
+        size = 9
+    }
+
+    soldiers = {
+        culture = french
+        religion = catholic
+        size = 24
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 149
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 28
+    }
+
+    artisans = {
+        culture = french
+        religion = catholic
+        size = 216
+    }
+
+    farmers = {
+        culture = french
+        religion = catholic
+        size = 864
+    }
+
+    aristocrats = {
+        culture = french
+        religion = protestant
+        size = 82
+    }
+
+    bureaucrats = {
+        culture = french
+        religion = protestant
+        size = 41
+    }
+
+    clergymen = {
+        culture = french
+        religion = protestant
+        size = 103
+    }
+
+    soldiers = {
+        culture = french
+        religion = protestant
+        size = 297
+    }
+
+    farmers = {
+        culture = french
+        religion = protestant
+        size = 1718
+    }
+
+    artisans = {
+        culture = french
+        religion = protestant
+        size = 331
+    }
+
+    artisans = {
+        culture = french
+        religion = protestant
+        size = 2484
+    }
+
+    farmers = {
+        culture = french
+        religion = protestant
+        size = 9936
+    }
+}
+#Isles of Scilly (XXX/XXX POPS)
+3480 = {
+}

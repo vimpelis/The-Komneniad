@@ -1,0 +1,8 @@
+trade_goods = grain
+life_rating = 35
+colonial = 2
+terrain = topeka
+owner = AYL
+controller = AYL
+add_core = AYL
+add_core = FLU

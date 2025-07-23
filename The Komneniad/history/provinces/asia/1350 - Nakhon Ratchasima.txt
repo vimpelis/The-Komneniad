@@ -1,0 +1,6 @@
+owner = PHI
+controller = PHI
+add_core = PHI
+add_core = SIA
+trade_goods = silk
+life_rating = 35

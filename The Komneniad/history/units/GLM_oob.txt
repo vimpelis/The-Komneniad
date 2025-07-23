@@ -1,0 +1,56 @@
+RUS = { value = -50 }
+
+army = {
+    name = "1st Army"
+    location = 702
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 702
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 951
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 705
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 953
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 952
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 957
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 956
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 3661
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 955
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 955
+    }
+}

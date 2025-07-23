@@ -1,0 +1,8 @@
+owner = MGT
+controller = MGT
+add_core = KOK
+add_core = TAJ
+trade_goods = wool
+life_rating = 35
+terrain = dryhills
+add_core = MGT

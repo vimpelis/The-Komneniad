@@ -1,0 +1,6 @@
+owner = KIB
+terrain = santos
+trade_goods = coffee
+life_rating = 28
+controller = KIB
+add_core = KIB

@@ -1,0 +1,329 @@
+political_decisions = {
+	PER_form_persia = {
+		picture = claim_greater_persia
+		potential = {
+			OR = {
+				primary_culture = persian
+				tag = MGT
+			}
+			NOT = {	exists = PER }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			owns = 1108
+			owns = 1121
+			owns = 1127
+			owns = 1130
+			owns = 1135
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			prestige = 10
+			change_tag = PER
+			add_accepted_culture = tajik
+			add_accepted_culture = mazanderani
+			add_accepted_culture = azerbaijani
+			add_accepted_culture = qashqai
+			ZND = { all_core = { limit = { NOT = { is_core = IRQ } } add_core = PER } }
+			HRT = { all_core = { add_core = PER } }
+			PER_1148 = { add_core = PER }
+			PER_1116 = { add_core = PER }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	PER_eat_iraq = {
+		picture = greater_iran
+		potential = {
+			tag = PER
+			NOT = { 926 = { is_core = PER } }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 10
+			IRQ = { all_core = { add_core = PER } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	PER_secure_gulf = {
+		picture = persian_gulf
+		potential = {
+			tag = PER
+			926 = { is_core = PER }
+			NOT = { 1167 = { is_core = PER } }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 7.5
+			NEJ_1164 = { add_core = PER }
+			ABU_1162 = { add_core = PER }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	PER_subdue_pashtuns = {
+		picture = afghan1
+		potential = {
+			tag = PER
+			NOT = { has_country_flag = PER_subdue_pashtuns }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = pashtun
+			add_accepted_culture = baluchi
+			add_accepted_culture = pamiri
+			AFG = { all_core = { add_core = PER } }
+			BLC = { all_core = { add_core = PER } }
+			AFG_1213 = { add_core = PER }
+			3524 = { add_core = PER }
+			1223 = { add_core = PER }
+			set_country_flag = PER_subdue_pashtuns
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	PER_accept_turkmen = {
+		picture = commodities_in_central_asia
+		potential = {
+			tag = PER
+			owns = 1147
+			NOT = { accepted_culture = turkmen }
+		}
+		allow = {
+			war = no
+			owns = 1204
+			state_n_government = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 5
+			add_accepted_culture = turkmen
+			TKM = { all_core = { add_core = PER } }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	PER_integrate_transoxiana = {
+		picture = commodities_in_central_asia
+		potential = {
+			tag = PER
+			owns = 1147
+			NOT = { accepted_culture = uzbek }
+		}
+		allow = {
+			war = no
+			owns = 1198
+			state_n_government = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 7.5
+			add_accepted_culture = uzbek
+			add_accepted_culture = kirgiz
+			KHI_1200 = { add_core = PER }
+			KHI_1191 = { add_core = PER }
+			TAJ_1208 = { add_core = PER }
+			KHI_1195 = { add_core = PER }
+			KHI_3298 = { add_core = PER }
+			1189 = { add_core = PER }
+			1203 = { add_core = PER }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	PER_eat_assyria = {
+		picture = greater_assyria
+		potential = {
+			tag = PER
+			926 = { is_core = PER }
+			NOT = { has_country_flag = PER_eat_assyria }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = kurdish
+			add_accepted_culture = assyrian
+			ASY = { all_core = { add_core = PER } }
+			TUR_3300 = { add_core = PER }
+			TUR_890 = { add_core = PER }
+			2321 = { add_core = PER }
+			set_country_flag = PER_eat_assyria
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	PER_caucasus = {
+		picture = caucasus
+		potential = {
+			tag = PER
+			has_country_flag = PER_eat_assyria
+			NOT = { has_country_flag = PER_caucasus }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = armenian
+			ARM = { all_core = { add_core = PER } }
+			AZB = { all_core = { add_core = PER } }
+			set_country_flag = PER_caucasus
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	PER_retake_mazandaran = {
+		picture = mazandaran
+		potential = {
+			OR = {
+				primary_culture = persian
+				has_country_flag = MGT_empire
+			}
+			NOT = { tag = PER }
+			NOT = { has_country_flag = PER_retake_mazandaran }
+		}
+		allow = {
+			war = no
+			OR = {
+				land_reform = yes_land_reform
+				RUS = { is_greater_power = no }
+				civilized = yes
+			}
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			prestige = 5
+			badboy = 5
+			PER_1116 = { add_core = THIS }
+			add_accepted_culture = mazanderani
+			set_country_flag = PER_retake_mazandaran
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ZND_eastern_frontier = {
+		picture = herat
+		potential = {
+			tag = ZND
+			NOT = { has_country_flag = ZND_eastern_frontier }
+		}
+		allow = {
+			war = no
+			OR = {
+				military_constructions = yes_military_constructions
+				RUS = { owns = 1198 }
+				civilized = yes
+			}
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			prestige = 5
+			badboy = 10
+			PER_1148 = { add_core = ZND }
+			HRT = { all_core = { add_core = ZND } }
+			set_country_flag = ZND_eastern_frontier
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	MGT_proclaim_empire = {
+		picture = persia_map
+		potential = {
+			tag = MGT
+			NOT = { has_country_flag = MGT_proclaim_empire }
+		}
+		allow = {
+			war = no
+			owns = 1135
+			owns = 1127
+			NOT = { exists = ZND }
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			prestige = 15
+			government = absolute_empire
+			primary_culture = persian
+			add_accepted_culture = uzbek
+			capital = 1127
+			years_of_research = 15
+			ZND = { all_core = { limit = { NOT = { is_core = IRQ } } add_core = MGT } }
+			set_country_flag = MGT_proclaim_empire
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

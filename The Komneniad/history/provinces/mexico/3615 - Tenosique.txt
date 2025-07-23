@@ -1,0 +1,6 @@
+owner = YUC
+controller = YUC
+trade_goods = tropical_wood
+terrain = jungle
+life_rating = 30
+add_core = YUC

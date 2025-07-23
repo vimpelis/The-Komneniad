@@ -1,0 +1,7 @@
+owner = CLT
+controller = CLT
+trade_goods = cattle
+life_rating = 30
+colonial = 2
+terrain = temiscaming
+add_core = ILD

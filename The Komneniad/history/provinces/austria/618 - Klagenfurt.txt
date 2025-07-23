@@ -1,0 +1,8 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+trade_goods = coal
+terrain = klagenfurt
+life_rating = 35
+add_core = AUS
+add_core = GER

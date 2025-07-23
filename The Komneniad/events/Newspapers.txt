@@ -1,0 +1,73 @@
+#see also 1830_GFM_newspapers.txt
+
+country_event = {
+    id = 46367272
+    title = "PETITJOURNALTITLE"
+    desc = "PETITJOURNALDESC"
+	picture = "petit_journal"
+	fire_only_once = yes
+	
+    trigger = {
+		tag = FRA
+		year = 1863
+		owns = 425
+		month = 2
+    }
+	
+    mean_time_to_happen = { days = 1 }
+	
+    option = {
+        name = "PETITJOURNALOPT"
+		prestige = 5
+		425 = {
+			any_pop = { consciousness = -1 ideology = { factor = 0.05 value = conservative } }
+		}
+    }
+}
+
+country_event = {
+    id = 123767
+    title = "Kladderadatsch"
+    desc = "KLADDERDESC"
+	picture = "kladderadatsch"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = SGF
+			tag = BAV
+		}
+		year = 1848
+		month = 5
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "How silly!"
+		any_pop = {
+			consciousness = 0.1
+		}
+    }
+}
+
+country_event = {
+    id = 123646
+    title = "Puck!"
+    desc = "PUCKLOC"
+    picture = "puck"
+    fire_only_once = yes
+    trigger = {
+        tag = ACA
+        year = 1876
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+		name = "What fools these mortals be!"
+		prestige = 5
+		any_pop = {
+			consciousness = 0.1
+		}
+    }
+}

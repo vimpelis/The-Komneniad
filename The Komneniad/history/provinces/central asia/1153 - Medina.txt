@@ -1,0 +1,7 @@
+owner = ARA
+controller = ARA
+trade_goods = grain
+life_rating = 32
+terrain = medina
+add_core = HDJ
+add_core = ARA

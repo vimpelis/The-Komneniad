@@ -1,0 +1,204 @@
+political_decisions = {
+    annex_hawaii = {
+		picture = annex_hawaii
+        potential = {
+            exists = HAW
+            is_sphere_leader_of = HAW
+            HAW = { ai = yes }
+            NOT = { has_country_flag = annexed_hawaii }
+            any_owned_province = { has_building = naval_base }
+            OR = {
+                any_owned_province = { continent = polynesia }
+				owns = 1082
+                owns = 78
+                owns = 3598
+                owns = 79
+                owns = 81
+                owns = 3600
+                owns = 83
+                owns = 85
+				owns = 3340
+                owns = 84
+                owns = 104
+                owns = 87
+                owns = 89
+				owns = 3566
+                owns = 90
+                owns = 2139
+                owns = 2140
+                owns = 2138
+                owns = 2141
+                owns = 2157
+                owns = 2156
+                owns = 2161
+                owns = 2168
+                owns = 2169
+                owns = 2179
+                owns = 2171
+                owns = 2178
+                owns = 2181
+                owns = 2182
+                owns = 2186
+                owns = 2191
+                owns = 2192
+                owns = 2193
+                owns = 2199
+                owns = 2197
+                owns = 2198
+                owns = 2202
+                owns = 3659
+                owns = 2201
+                owns = 2206
+                owns = 2205
+                owns = 1723
+                owns = 2204
+                owns = 2208
+                owns = 2253
+                owns = 2258
+                owns = 2281
+                owns = 2280
+                owns = 3680
+                owns = 2291
+                owns = 2292
+                owns = 2298
+                owns = 2295
+                owns = 2297
+                owns = 2285
+                owns = 2336
+                owns = 2304
+                owns = 2578
+                owns = 2308
+                owns = 2307
+                owns = 2305
+                owns = 2309
+            }
+            OR = {
+                capital_scope = { continent = north_america }
+                capital_scope = { continent = south_america }
+                capital_scope = { continent = asia }
+                capital_scope = { continent = australia_new_zealand }
+				capital_scope = { continent = europe }
+                any_owned_province = { continent = polynesia }
+            }
+        }
+
+        allow = {
+            revolution_n_counterrevolution = 1
+            is_sphere_leader_of = HAW
+        }
+
+        effect = {
+            set_country_flag = annexed_hawaii
+            658 = { trade_goods = coffee }
+            prestige = 2
+            HAW = { civilized = no }
+            inherit = HAW
+            random_owned = {
+			    limit = {
+				    owner = {
+					    capital_scope = {
+							OR = {
+						        continent = north_america
+							    continent = south_america
+							}
+						}
+					}
+				}
+                owner = {
+				    HAW_658 = { add_core = THIS }
+				}
+            }
+            HAW = { civilized = yes }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    the_iron_range = {
+		picture = iron_range
+        potential = {
+            OR = {
+				owns = 158
+				owns = 157
+				owns = 102
+				owns = 2662
+				owns = 3453
+				owns = 98
+				owns = 101
+				owns = 94
+				owns = 95
+				owns = 96
+				owns = 3457
+				owns = 3458
+				owns = 88
+			}
+            NOT = { has_global_flag = iron_ranges }
+        }
+
+        allow = {
+            war = no
+            regenerative_furnaces = 1
+        }
+
+        effect = {
+            set_global_flag = iron_ranges
+            158 = { trade_goods = iron }
+            157 = { trade_goods = iron }
+            102 = { trade_goods = iron }
+            2662 = { trade_goods = iron }
+            3453 = { trade_goods = iron }
+            235 = { trade_goods = iron }
+            98 = { trade_goods = iron }
+            101 = { trade_goods = iron }
+            94 = { trade_goods = iron }
+            95 = { trade_goods = mercury }
+            96 = { trade_goods = iron }
+            3457 = { trade_goods = iron }
+            3458 = { trade_goods = iron }
+			88 = { trade_goods = iron }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+	
+	chaco_cotton = {
+        picture = conquest_of_the_chaco
+        potential = {
+			NOT = {
+				AND = {
+					2362 = { trade_goods = cotton }
+					2366 = { trade_goods = cotton }
+					2364 = { trade_goods = cotton }
+				}
+			}
+            owns = 2362
+            owns = 2366
+			owns = 2364
+            NOT = { has_global_flag = chaco_cotton }
+        }
+
+        allow = {
+            war = no
+            OR = {
+				market_regulations = 1
+				year = 1879
+			}
+		}
+
+        effect = {
+            set_global_flag = chaco_cotton
+            2366 = {
+ 				trade_goods = cotton
+                add_province_modifier = { name = cotton_boom duration = 3650 }
+			}
+            2364 = {
+			    trade_goods = cotton
+			    add_province_modifier = { name = cotton_boom duration = 3650 }
+			}
+			2362 = {
+			    trade_goods = cotton
+				add_province_modifier = { name = cotton_boom duration = 3650 }
+			}
+        }
+        ai_will_do = { factor = 1 }
+	}
+}

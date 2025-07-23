@@ -1,0 +1,8 @@
+owner = DEN
+controller = DEN
+add_core = DEN
+trade_goods = iron
+terrain = forest
+life_rating = 30
+add_core = NOR
+add_core = SWE

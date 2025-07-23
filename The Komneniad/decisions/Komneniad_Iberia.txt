@@ -1,0 +1,456 @@
+political_decisions = {
+	ADU_absorb_catalonia = {
+		picture = catalan_occitania
+		potential = {
+			tag = ADU
+			NOT = { has_country_flag = ADU_absorb_catalonia }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			CAT = { all_core = { add_core = THIS } }
+			badboy = 14
+			set_country_flag = ADU_absorb_catalonia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.44
+            }
+		}
+	}
+	
+	ADU_restore_northern_rule = {
+		picture = celticiberia
+		potential = {
+			tag = ADU
+			has_country_flag = ADU_absorb_catalonia
+			NOT = { has_country_flag = ADU_restore_northern_rule }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 24.5
+			SPA_492 = { add_core = THIS }
+			SPA_474 = { add_core = THIS }
+			SPA_477 = { add_core = THIS }
+			set_country_flag = ADU_restore_northern_rule
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.95
+            }
+		}
+	}
+	
+	ADU_western_sahara = {
+		picture = rio_de_decision
+		potential = {
+			tag = ADU
+			owns = 1720
+			NOT = { has_country_flag = ADU_western_sahara }
+		}
+		allow = {
+			war = no
+			year = 1880
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			badboy = 3
+			MLI_1696 = { add_core = THIS }
+			MOR_1683 = { add_core = THIS }
+			add_accepted_culture = maures
+			set_country_flag = ADU_western_sahara
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.88
+            }
+		}
+	}
+	
+	ADU_enact_conversion_decree = {
+		picture = ADU_map
+		potential = {
+			tag = ADU
+			has_country_flag = ADU_absorb_catalonia
+			NOT = { has_country_flag = ADU_enact_conversion_decree }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			biologism = 1
+			money = 300000
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			treasury = -300000
+			add_country_modifier = {
+				name = ADU_arabization
+				duration = -1
+			}
+			any_pop = {
+				limit = { has_pop_culture = spanish }
+				militancy = 8
+				consciousness = 8
+			}
+			any_pop = {
+				limit = { has_pop_culture = basque }
+				militancy = 8
+				consciousness = 8
+			}
+			any_pop = {
+				limit = { has_pop_culture = aragonese }
+				militancy = 8
+				consciousness = 8
+			}
+			any_pop = {
+				limit = { has_pop_culture = galician }
+				militancy = 8
+				consciousness = 8
+			}
+			any_pop = {
+				limit = { has_pop_culture = baetican }
+				militancy = 8
+				consciousness = 8
+			}
+			set_country_flag = culture_conversion_small
+			set_country_flag = ADU_enact_conversion_decree
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	SPA_reconquista_east = {
+		picture = iberia_map
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = SPA_reconquista_east }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			OR = {
+				war_with = ADU
+				ideological_thought = 1
+				AND = {
+					ai = yes
+					year = 1840
+				}
+			}
+		}
+		effect = {
+			SPA_507 = { add_core = THIS }
+			SPA_503 = { add_core = THIS }
+			badboy = 10
+			set_country_flag = SPA_reconquista_east
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	SPA_kill_catalonia = {
+		picture = catalan_occitania
+		potential = {
+			tag = SPA
+			has_country_flag = SPA_reconquista_east
+			owns = 495
+			exists = CAT
+			CAT = { is_vassal = no }
+			NOT = { has_country_flag = SPA_kill_catalonia }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			OR = {
+				state_n_government = 1
+				AND = {
+					ai = yes
+					year = 1847
+				}
+			}
+		}
+		effect = {
+			country_event = 150004
+			badboy = 10
+			set_country_flag = SPA_kill_catalonia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	SPA_annex_catalan_puppet = {
+		picture = catalan_occitania
+		potential = {
+			tag = SPA
+			CAT = { vassal_of = SPA }
+			NOT = { has_country_flag = SPA_annex_catalan_puppet }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			revolution_n_counterrevolution = 1
+			relation = { who = CAT value = 200 }
+		}
+		effect = {
+			CAT = { annex_to = SPA all_core = { add_core = SPA } }
+			add_accepted_culture = catalan
+			badboy = 4
+			set_country_flag = SPA_annex_catalan_puppet
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	SPA_press_gothic_claim = {
+		picture = spanish_march
+		potential = {
+			tag = SPA
+			CAT = { vassal_of = SPA }
+			NOT = { has_country_flag = SPA_press_gothic_claim }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			FRA_461 = { add_core = CAT }
+			badboy = 4
+			relation = { who = FRA value = -400 }
+			relation = { who = OCC value = -400 }
+			set_country_flag = SPA_press_gothic_claim
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = FRA
+			}
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	SPA_reconquista_center = {
+		picture = iberia_map
+		potential = {
+			tag = SPA
+			has_country_flag = SPA_reconquista_east
+			NOT = { has_country_flag = SPA_reconquista_center }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			SPA_489 = { add_core = THIS }
+			POR_525 = { add_core = THIS }
+			badboy = 12
+			set_country_flag = SPA_reconquista_center
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.5
+            }
+		}
+	}
+	
+	SPA_finish_reconquista = {
+		picture = iberia_map
+		potential = {
+			tag = SPA
+			has_country_flag = SPA_reconquista_center
+			NOT = { has_country_flag = SPA_finish_reconquista }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			SPA_512 = { add_core = THIS }
+			SPA_513 = { add_core = THIS }
+			badboy = 15
+			set_country_flag = SPA_finish_reconquista
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	SPA_mauretanian_crusade = {
+		picture = moroccan_partition
+		potential = {
+			has_country_flag = SPA_finish_reconquista
+			NOT = { has_country_flag = mauretanian_crusade }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			rank = 6
+		}
+		effect = {
+			badboy = 5
+			prestige = 25
+			set_country_flag = mauretanian_crusade
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	MOR_restore_andalusia = {
+		picture = claimandalus
+		potential = {
+			tag = MOR
+			has_country_flag = ADU_to_MOR
+		}
+		allow = {
+			war = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			prestige = 25
+			change_tag = ADU
+			capital = 510
+			SPA_489 = { add_core = THIS }
+			POR_525 = { add_core = THIS }
+			SPA_507 = { add_core = THIS }
+			SPA_503 = { add_core = THIS }
+			SPA_487 = { add_core = THIS }
+			POR_521 = { add_core = THIS }
+			clr_country_flag = ADU_to_MOR
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	SPA_reverse_arabization = {
+		picture = ADU_map
+		potential = {
+			has_country_flag = SPA_reconquista_center
+			NOT = { has_country_flag = SPA_reverse_arabization }
+		}
+		allow = {
+			war = no
+			functionalism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 10
+			badboy = 5
+			any_owned = {
+				limit = { is_core = THIS is_core = ADU }
+				remove_core = ADU
+			}
+			add_country_modifier = {
+				name = SPA_reverse_arabization
+				duration = 7300
+			}
+			any_pop = {
+				limit = { has_pop_culture = andalusian }
+				militancy = 6
+				consciousness = 6
+			}
+			set_country_flag = SPA_reverse_arabization
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	SPA_great_language_reform = {
+		picture = guano_act #yes, guano act.
+		potential = {
+			has_country_modifier = SPA_bureaucratic_mess
+		}
+		allow = {
+			war = no
+			biologism = 1
+			nationalism_n_imperialism = 1
+			money = 300000
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 25
+			badboy = 5
+			treasury = -300000
+			remove_country_modifier = SPA_bureaucratic_mess
+			remove_country_modifier = SPA_reverse_arabization
+			remove_accepted_culture = aragonese
+			remove_accepted_culture = galician
+			remove_accepted_culture = baetican
+			add_country_modifier = {
+				name = espanian_cultural_unity
+				duration = 7300
+			}
+			any_pop = {
+				limit = { has_pop_culture = aragonese }
+				militancy = 6
+				consciousness = 6
+			}
+			any_pop = {
+				limit = { has_pop_culture = galician }
+				militancy = 6
+				consciousness = 6
+			}
+			any_pop = {
+				limit = { has_pop_culture = baetican }
+				militancy = 6
+				consciousness = 6
+			}
+			set_country_flag = culture_conversion
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+}

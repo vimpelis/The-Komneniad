@@ -1,0 +1,612 @@
+#Luxembourg (172000)
+#In personal union with Netherlands in 1836
+#Luxembourg (172000/43000 POPS)
+######Jews
+########
+397 = {
+    aristocrats = {
+        culture = west_german
+        religion = catholic
+        size = 49
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = catholic
+        size = 7
+    }
+
+    officers = {
+        culture = west_german
+        religion = catholic
+        size = 13
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = catholic
+        size = 42
+    }
+
+    artisans = {
+        culture = west_german
+        religion = catholic
+        size = 212
+    }
+
+    soldiers = {
+        culture = west_german
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = west_german
+        religion = catholic
+        size = 7719
+    }
+
+    farmers = {
+        culture = west_german
+        religion = protestant
+        size = 594
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = catholic
+        size = 15
+    }
+
+    craftsmen = {
+        culture = wallonian
+        religion = reformed
+        size = 8
+    }
+
+    aristocrats = {
+        culture = wallonian
+        religion = reformed
+        size = 202
+    }
+
+    officers = {
+        culture = wallonian
+        religion = reformed
+        size = 40
+    }
+
+    bureaucrats = {
+        culture = wallonian
+        religion = reformed
+        size = 40
+    }
+
+    clergymen = {
+        culture = wallonian
+        religion = reformed
+        size = 222
+    }
+
+    artisans = {
+        culture = wallonian
+        religion = reformed
+        size = 1417
+    }
+
+    farmers = {
+        culture = wallonian
+        religion = reformed
+        size = 6095
+    }
+
+    aristocrats = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    artisans = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    aristocrats = {
+        culture = wallonian
+        religion = reformed
+        size = 77
+    }
+
+    bureaucrats = {
+        culture = wallonian
+        religion = reformed
+        size = 12
+    }
+
+    officers = {
+        culture = wallonian
+        religion = reformed
+        size = 22
+    }
+
+    clergymen = {
+        culture = wallonian
+        religion = reformed
+        size = 67
+    }
+
+    artisans = {
+        culture = wallonian
+        religion = reformed
+        size = 335
+    }
+
+    soldiers = {
+        culture = wallonian
+        religion = reformed
+        size = 1200
+    }
+
+    farmers = {
+        culture = wallonian
+        religion = reformed
+        size = 12131
+    }
+
+    farmers = {
+        culture = wallonian
+        religion = reformed
+        size = 588
+    }
+
+    craftsmen = {
+        culture = wallonian
+        religion = reformed
+        size = 24
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = catholic
+        size = 1
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = catholic
+        size = 15
+    }
+
+    officers = {
+        culture = west_german
+        religion = catholic
+        size = 3
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = catholic
+        size = 3
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = catholic
+        size = 18
+    }
+
+    artisans = {
+        culture = west_german
+        religion = catholic
+        size = 110
+    }
+
+    farmers = {
+        culture = west_german
+        religion = catholic
+        size = 474
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = catholic
+        size = 6
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = catholic
+        size = 1
+    }
+
+    officers = {
+        culture = west_german
+        religion = catholic
+        size = 2
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = catholic
+        size = 5
+    }
+
+    artisans = {
+        culture = west_german
+        religion = catholic
+        size = 26
+    }
+
+    farmers = {
+        culture = west_german
+        religion = catholic
+        size = 944
+    }
+
+    farmers = {
+        culture = west_german
+        religion = protestant
+        size = 73
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = catholic
+        size = 2
+    }
+
+    craftsmen = {
+        culture = wallonian
+        religion = catholic
+        size = 1
+    }
+
+    aristocrats = {
+        culture = wallonian
+        religion = catholic
+        size = 23
+    }
+
+    officers = {
+        culture = wallonian
+        religion = catholic
+        size = 5
+    }
+
+    bureaucrats = {
+        culture = wallonian
+        religion = catholic
+        size = 5
+    }
+
+    clergymen = {
+        culture = wallonian
+        religion = catholic
+        size = 25
+    }
+
+    artisans = {
+        culture = wallonian
+        religion = catholic
+        size = 158
+    }
+
+    farmers = {
+        culture = wallonian
+        religion = catholic
+        size = 677
+    }
+
+    aristocrats = {
+        culture = wallonian
+        religion = catholic
+        size = 9
+    }
+
+    bureaucrats = {
+        culture = wallonian
+        religion = catholic
+        size = 1
+    }
+
+    officers = {
+        culture = wallonian
+        religion = catholic
+        size = 3
+    }
+
+    clergymen = {
+        culture = wallonian
+        religion = catholic
+        size = 8
+    }
+
+    artisans = {
+        culture = wallonian
+        religion = catholic
+        size = 37
+    }
+
+    farmers = {
+        culture = wallonian
+        religion = catholic
+        size = 1348
+    }
+
+    farmers = {
+        culture = wallonian
+        religion = catholic
+        size = 65
+    }
+
+    craftsmen = {
+        culture = wallonian
+        religion = catholic
+        size = 3
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = protestant
+        size = 24
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = protestant
+        size = 3
+    }
+
+    officers = {
+        culture = west_german
+        religion = protestant
+        size = 7
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = protestant
+        size = 20
+    }
+
+    artisans = {
+        culture = west_german
+        religion = protestant
+        size = 101
+    }
+
+    farmers = {
+        culture = west_german
+        religion = protestant
+        size = 3676
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 8
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 0
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = protestant
+        size = 8
+    }
+
+    officers = {
+        culture = west_german
+        religion = protestant
+        size = 2
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = protestant
+        size = 2
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = protestant
+        size = 8
+    }
+
+    artisans = {
+        culture = west_german
+        religion = protestant
+        size = 53
+    }
+
+    farmers = {
+        culture = west_german
+        religion = protestant
+        size = 226
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = protestant
+        size = 3
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = protestant
+        size = 0
+    }
+
+    officers = {
+        culture = west_german
+        religion = protestant
+        size = 1
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = protestant
+        size = 2
+    }
+
+    artisans = {
+        culture = west_german
+        religion = protestant
+        size = 12
+    }
+
+    farmers = {
+        culture = west_german
+        religion = protestant
+        size = 449
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 1
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = reformed
+        size = 6
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = reformed
+        size = 1
+    }
+
+    officers = {
+        culture = west_german
+        religion = reformed
+        size = 2
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = reformed
+        size = 5
+    }
+
+    artisans = {
+        culture = west_german
+        religion = reformed
+        size = 24
+    }
+
+    farmers = {
+        culture = west_german
+        religion = reformed
+        size = 858
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = reformed
+        size = 2
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = reformed
+        size = 0
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = reformed
+        size = 2
+    }
+
+    officers = {
+        culture = west_german
+        religion = reformed
+        size = 0
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = reformed
+        size = 0
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = reformed
+        size = 2
+    }
+
+    artisans = {
+        culture = west_german
+        religion = reformed
+        size = 12
+    }
+
+    farmers = {
+        culture = west_german
+        religion = reformed
+        size = 53
+    }
+
+    aristocrats = {
+        culture = west_german
+        religion = reformed
+        size = 1
+    }
+
+    bureaucrats = {
+        culture = west_german
+        religion = reformed
+        size = 0
+    }
+
+    officers = {
+        culture = west_german
+        religion = reformed
+        size = 0
+    }
+
+    clergymen = {
+        culture = west_german
+        religion = reformed
+        size = 1
+    }
+
+    artisans = {
+        culture = west_german
+        religion = reformed
+        size = 3
+    }
+
+    farmers = {
+        culture = west_german
+        religion = reformed
+        size = 105
+    }
+
+    craftsmen = {
+        culture = west_german
+        religion = reformed
+        size = 0
+    }
+}

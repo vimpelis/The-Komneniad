@@ -1,0 +1,9 @@
+add_core = GLM
+add_core = GLM
+trade_goods = coal
+life_rating = 35
+terrain = przemysl
+owner = GLM
+controller = GLM
+add_core = ZPD
+add_core = POL

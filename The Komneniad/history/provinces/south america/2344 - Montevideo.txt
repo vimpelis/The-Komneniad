@@ -1,0 +1,7 @@
+owner = ATA
+controller = ATA
+trade_goods = cattle
+life_rating = 39
+terrain = montevideo
+naval_base = 1
+add_core = ATA

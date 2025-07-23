@@ -1,0 +1,759 @@
+political_decisions = {
+	ai_cleanup_decision_merge = {
+        potential = {
+			ai = yes
+            OR = {
+				AND = {
+					exists = yes
+					year = 1846
+					OR = {
+						AND = {
+							OR = {
+								has_country_modifier = mercantilism
+								has_country_modifier = economic_nationalism
+							}
+							NOT = { trade_policy = protectionism }
+						}
+						AND = {
+							OR = {
+								has_country_modifier = french_liberal_school
+								has_country_modifier = smithian_school
+							}
+							NOT = { trade_policy = free_trade }
+						}
+						any_neighbor_country = {
+							ai = no
+							OR = {
+								has_country_modifier = mercantilism
+								has_country_modifier = economic_nationalism
+							}
+							NOT = { trade_policy = protectionism }
+						}
+						any_neighbor_country = {
+							ai = no
+							OR = {
+								has_country_modifier = french_liberal_school
+								has_country_modifier = smithian_school
+							}
+							NOT = { trade_policy = free_trade }
+						}
+					}
+				}
+				AND = {
+					is_vassal = yes
+					has_country_flag = refused_independence_request
+					NOT = { has_country_modifier = no_freedom }
+					NOT = { has_country_flag = freedom_attempt_made }
+					war = no
+					NOT = {
+						war_exhaustion = 5
+						sphere_owner = { is_our_vassal = THIS }
+						num_of_revolts = 1
+					}
+					OR = {
+						part_of_sphere = yes
+						overlord = { NOT = { brigades_compare = 1 } }
+						any_greater_power = { alliance_with = THIS }
+					}
+					total_amount_of_divisions = 3
+					NOT = {
+						AND = {
+							part_of_sphere = yes
+							NOT = {
+								any_greater_power = {
+									alliance_with = THIS
+									NOT = { is_our_vassal = THIS }
+								}
+							}
+							NOT = {
+								overlord = {
+									brigades_compare = 1.5
+									NOT = {
+										OR = {
+											revolt_percentage = 0.50
+											national_provinces_occupied = 0.20
+										}
+									}
+								}
+							}
+						}
+					}
+					NOT = {
+						AND = {
+							part_of_sphere = yes
+							NOT = {
+								any_greater_power = {
+									alliance_with = THIS
+									NOT = { is_our_vassal = THIS }
+								}
+							}
+							sphere_owner = {
+								OR = {
+									war = yes
+									war_exhaustion = 10
+								}
+							}
+						}
+					}
+					NOT = {
+						AND = {
+							any_greater_power = {
+								alliance_with = THIS
+								NOT = { is_our_vassal = THIS }
+							}
+							NOT = {
+								any_greater_power = {
+									alliance_with = THIS
+									NOT = { is_our_vassal = THIS }
+									war = no
+									NOT = { war_exhaustion = 10 }
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					primary_culture = japanese
+					NOT = {
+						JAP = { government = radical_republic }
+						JAP = { government = presidential_dictatorship }
+						AND = {
+							government = fascist_dictatorship
+							JAP = {
+								NOT = { government = fascist_dictatorship }
+							}
+						}
+						AND = {
+							government = proletarian_dictatorship
+							JAP = {
+								NOT = { government = proletarian_dictatorship }
+							}
+						}
+						AND = {
+							OR = {
+								government = democracy
+								government = hms_government
+								government = constitutional_empire
+							}
+							JAP = {
+								NOT = {
+									OR = {
+										government = democracy
+										government = hms_government
+										government = constitutional_empire
+									}
+								}
+							}
+						}
+						AND = {
+							NOT = {
+								OR = {
+									government = democracy
+									government = hms_government
+									government = constitutional_empire
+								}
+							}
+							JAP = {
+								OR = {
+									government = democracy
+									government = hms_government
+									government = constitutional_empire
+								}
+							}
+						}
+					}
+					NOT = {
+						tag = JAP
+						tag = TKG
+						tag = RYU
+						has_country_flag = unite_with_japan
+					}
+					war = no
+					OR = {
+						in_sphere = JAP
+						sphere_owner = { is_sphere_leader_of = JAP }
+					}
+					JAP = {
+						war = no
+						neighbour = THIS
+						exists = yes
+						has_country_modifier = fukoku_kyohei
+					}
+				}
+				AND = {
+					has_country_modifier = neutrality_modifier
+					OR = {
+						any_greater_power = { military_access = THIS }
+						any_neighbor_country = { NOT = { vassal_of = THIS } military_access = THIS }
+						sphere_owner = { military_access = THIS }
+						war = yes
+					}
+				}
+				AND = {
+					has_country_flag = transfer_to_new_overlord
+					OR = {
+						is_vassal = no
+						war = no
+					}
+				}
+				AND = {
+					war = no
+					primary_culture = japanese
+					JAP = {
+						exists = yes
+						has_country_modifier = fukoku_kyohei
+						war = no
+						neighbour = THIS
+					}
+					NOT = {
+						tag = JAP
+						tag = TKG
+						tag = RYU
+						has_country_flag = unite_with_japan
+					}
+					OR = {
+						in_sphere = JAP
+						sphere_owner = { is_sphere_leader_of = JAP }
+					}
+					NOT = {
+						OR = {
+							AND = {
+								NOT = { government = fascist_dictatorship }
+								JAP = { government = fascist_dictatorship }
+							}
+							AND = {
+								government = fascist_dictatorship
+								JAP = {
+									NOT = { government = fascist_dictatorship }
+								}
+							}
+							AND = {
+								NOT = { government = proletarian_dictatorship }
+								JAP = { government = proletarian_dictatorship }
+							}
+							AND = {
+								OR = {
+									government = democracy
+									government = hms_government
+									government = constitutional_empire
+								}
+								JAP = {
+									NOT = {
+										government = democracy
+										government = hms_government
+										government = constitutional_empire
+									}
+								}
+							}
+							AND = {
+								JAP = {
+									OR = {
+										government = democracy
+										government = hms_government
+										government = constitutional_empire
+									}
+								}
+								NOT = {
+									government = democracy
+									government = hms_government
+									government = constitutional_empire
+								}
+							}
+							government = presidential_dictatorship
+							government = radical_republic
+						}
+					}
+					NOT = { has_global_flag = sw_set }
+				}
+			}
+        }
+        allow = {
+		}
+        effect = {
+			random_owned = {
+				limit = {
+					owner = {
+						exists = yes
+						year = 1846
+						OR = {
+							AND = {
+								OR = {
+									has_country_modifier = mercantilism
+									has_country_modifier = economic_nationalism
+								}
+								NOT = { trade_policy = protectionism }
+							}
+							AND = {
+								OR = {
+									has_country_modifier = french_liberal_school
+									has_country_modifier = smithian_school
+								}
+								NOT = { trade_policy = free_trade }
+							}
+							any_neighbor_country = {
+								ai = no
+								OR = {
+									has_country_modifier = mercantilism
+									has_country_modifier = economic_nationalism
+								}
+								NOT = { trade_policy = protectionism }
+							}
+							any_neighbor_country = {
+								ai = no
+								OR = {
+									has_country_modifier = french_liberal_school
+									has_country_modifier = smithian_school
+								}
+								NOT = { trade_policy = free_trade }
+							}
+						}
+					}
+				}
+				owner = {
+					random_owned = {
+						limit = {
+							owner = {
+								NOT = { trade_policy = protectionism  }
+								OR = {
+									has_country_modifier = mercantilism
+									has_country_modifier = economic_nationalism
+								}
+							}
+						}
+						owner = {
+							remove_country_modifier = mercantilism
+							remove_country_modifier = economic_nationalism
+						}
+					}
+					random_owned = {
+						limit = {
+							owner = {
+								NOT = { trade_policy = free_trade }
+								OR = {
+									has_country_modifier = french_liberal_school
+									has_country_modifier = smithian_school
+								}
+							}
+						}
+						owner = {
+							remove_country_modifier = french_liberal_school
+							remove_country_modifier = smithian_school
+						}
+					}
+					any_neighbor_country = {
+						limit = {
+							ai = no
+							OR = {
+								has_country_modifier = mercantilism
+								has_country_modifier = economic_nationalism
+							}
+							NOT = { trade_policy = protectionism }
+						}
+						remove_country_modifier = mercantilism
+						remove_country_modifier = economic_nationalism
+					}
+					any_neighbor_country = {
+						limit = {
+							ai = no
+							OR = {
+								has_country_modifier = french_liberal_school
+								has_country_modifier = smithian_school
+							}
+							NOT = { trade_policy = free_trade }
+						}
+						remove_country_modifier = french_liberal_school
+						remove_country_modifier = smithian_school
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						is_vassal = yes
+						has_country_flag = refused_independence_request
+						NOT = { has_country_modifier = no_freedom }
+						NOT = { has_country_flag = freedom_attempt_made }
+						war = no
+						NOT = {
+							war_exhaustion = 5
+							sphere_owner = { is_our_vassal = THIS }
+							num_of_revolts = 1
+						}
+						OR = {
+							part_of_sphere = yes
+							overlord = { NOT = { brigades_compare = 1 } }
+							any_greater_power = { alliance_with = THIS }
+						}
+						total_amount_of_divisions = 3
+						NOT = {
+							AND = {
+								part_of_sphere = yes
+								NOT = {
+									any_greater_power = {
+										alliance_with = THIS
+										NOT = { is_our_vassal = THIS }
+									}
+								}
+								NOT = {
+									overlord = {
+										brigades_compare = 1.5
+										NOT = {
+											OR = {
+												revolt_percentage = 0.50
+												national_provinces_occupied = 0.20
+											}
+										}
+									}
+								}
+							}
+						}
+						NOT = {
+							AND = {
+								part_of_sphere = yes
+								NOT = {
+									any_greater_power = {
+										alliance_with = THIS
+										NOT = { is_our_vassal = THIS }
+									}
+								}
+								sphere_owner = {
+									OR = {
+										war = yes
+										war_exhaustion = 10
+									}
+								}
+							}
+						}
+						NOT = {
+							AND = {
+								any_greater_power = {
+									alliance_with = THIS
+									NOT = { is_our_vassal = THIS }
+								}
+								NOT = {
+									any_greater_power = {
+										alliance_with = THIS
+										NOT = { is_our_vassal = THIS }
+										war = no
+										NOT = { war_exhaustion = 10 }
+									}
+								}
+							}
+						}
+					}
+				}
+				owner = {
+					add_country_modifier = {
+						name = no_freedom
+						duration = 7300
+					}
+					any_pop = {
+						limit = {
+							OR = {
+								is_primary_culture = yes
+								is_accepted_culture = yes
+							}
+						}
+						militancy = -6
+					}
+					random_country = {
+						limit = { is_our_vassal = THIS }
+						country_event = 98610
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						primary_culture = japanese
+						NOT = {
+							JAP = { government = radical_republic }
+							JAP = { government = presidential_dictatorship }
+							government = radical_republic
+							government = presidential_dictatorship
+							AND = {
+								government = fascist_dictatorship
+								JAP = {
+									NOT = { government = fascist_dictatorship }
+								}
+							}
+							AND = {
+								government = proletarian_dictatorship
+								JAP = {
+									NOT = { government = proletarian_dictatorship }
+								}
+							}
+							AND = {
+								OR = {
+									government = democracy
+									government = hms_government
+									government = constitutional_empire
+								}
+								JAP = {
+									NOT = {
+										OR = {
+											government = democracy
+											government = hms_government
+											government = constitutional_empire
+										}
+									}
+								}
+							}
+							AND = {
+								NOT = {
+									OR = {
+										government = democracy
+										government = hms_government
+										government = constitutional_empire
+									}
+								}
+								JAP = {
+									OR = {
+										government = democracy
+										government = hms_government
+										government = constitutional_empire
+									}
+								}
+							}
+						}
+						NOT = {
+							tag = JAP
+							tag = TKG
+							tag = RYU
+							has_country_flag = unite_with_japan
+						}
+						war = no
+						OR = {
+							in_sphere = JAP
+							sphere_owner = { is_sphere_leader_of = JAP }
+						}
+						JAP = {
+							war = no
+							neighbour = THIS
+							exists = yes
+							has_country_modifier = fukoku_kyohei
+						}
+					}
+				}
+				owner = {
+					set_country_flag = unite_with_japan
+					random_country = {
+						limit = {
+							tag = JAP
+							ai = yes
+						}
+						inherit = THIS
+					}
+					random_country = {
+						limit = {
+							tag = JAP
+							ai = no
+						}
+						country_event = 60130
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_modifier = neutrality_modifier
+						OR = {
+							any_greater_power = { military_access = THIS }
+							any_neighbor_country = { NOT = { vassal_of = THIS } military_access = THIS }
+							sphere_owner = { military_access = THIS }
+							war = yes
+						}
+					}
+				}
+				owner = {
+					any_country = {
+						limit = {
+							exists = yes
+							NOT = { vassal_of = THIS }
+							OR = {
+								military_access = THIS
+								alliance_with = THIS
+							}
+						}
+						relation = { who = THIS value = -125 }
+					}
+					any_country = {
+						limit = {
+							exists = yes
+							alliance_with = THIS
+							NOT = { vassal_of = THIS }
+						}
+						leave_alliance = THIS
+					}
+					any_country = {
+						limit = {
+							exists = yes
+							war_with = THIS
+						}
+						end_war = THIS
+					}
+					any_country = {
+						limit = {
+							exists = yes
+							military_access = THIS
+							NOT = { vassal_of = THIS }
+						}
+						end_military_access = THIS
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						has_country_flag = transfer_to_new_overlord
+						OR = {
+							is_vassal = no
+							war = no
+						}
+					}
+				}
+				owner = {
+					clr_country_flag = transfer_to_new_overlord
+					any_country = {
+						limit = { has_country_flag = new_overlord exists = yes }
+						country_event = 6016824
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						war = no
+						primary_culture = japanese
+						JAP = {
+							exists = yes
+							has_country_modifier = fukoku_kyohei
+							war = no
+							neighbour = THIS
+						}
+						NOT = {
+							tag = JAP
+							tag = TKG
+							tag = RYU
+							has_country_flag = unite_with_japan
+						}
+						OR = {
+							in_sphere = JAP
+							sphere_owner = { is_sphere_leader_of = JAP }
+						}
+						NOT = {
+							OR = {
+								AND = {
+									NOT = { government = fascist_dictatorship }
+									JAP = { government = fascist_dictatorship }
+								}
+								AND = {
+									government = fascist_dictatorship
+									JAP = {
+										NOT = { government = fascist_dictatorship }
+									}
+								}
+								AND = {
+									NOT = { government = proletarian_dictatorship }
+									JAP = { government = proletarian_dictatorship }
+								}
+								AND = {
+									OR = {
+										government = democracy
+										government = hms_government
+										government = constitutional_empire
+									}
+									JAP = {
+										NOT = {
+											government = democracy
+											government = hms_government
+											government = constitutional_empire
+										}
+									}
+								}
+								AND = {
+									JAP = {
+										OR = {
+											government = democracy
+											government = hms_government
+											government = constitutional_empire
+										}
+									}
+									NOT = {
+										government = democracy
+										government = hms_government
+										government = constitutional_empire
+									}
+								}
+								government = presidential_dictatorship
+								government = radical_republic
+							}
+						}
+						NOT = { has_global_flag = sw_set }
+					}
+				}
+				owner = {
+					set_country_flag = unite_with_japan
+					random_country = {
+						limit = {
+							tag = JAP
+							ai = yes
+						}
+						inherit = THIS
+					}
+					random_country = {
+						limit = {
+							tag = JAP
+							ai = no
+						}
+						country_event = 60130
+					}
+				}
+			}
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+	clean_up_unciv_monarchy = {
+        potential = {
+            ai = yes
+            exists = yes
+			civilized = no
+			is_vassal = yes
+            OR = {
+                government = democracy
+                government = prussian_constitutionalism
+                government = hms_government
+                government = semi_constitutional_empire
+                government = constitutional_empire
+            }
+            NOT = { tag = LAN }
+            NOT = { tag = PHL }
+            NOT = { tag = EGY }
+            NOT = { tag = KOR }
+            NOT = { has_country_flag = clean_up_unciv_monarchy }
+            NOT = {
+				government = colonial_company
+				government = colonial_company_2
+				government = colonial_company_3
+				government = colonial_company_4
+			}
+            # HPM 0.4.5.2 port: dismantlement
+            NOT = { has_country_modifier = considering_colonial_offer }
+            NOT = { has_country_modifier = negotiating_treaty }
+			war = no
+        }
+
+        allow = {
+        }
+
+        effect = {
+            set_country_flag = clean_up_unciv_monarchy
+            government = absolute_monarchy
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+}

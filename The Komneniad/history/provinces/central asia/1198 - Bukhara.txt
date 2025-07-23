@@ -1,0 +1,7 @@
+owner = MGT
+controller = MGT
+trade_goods = wool
+life_rating = 35
+terrain = bukhara
+fort = 1
+add_core = MGT

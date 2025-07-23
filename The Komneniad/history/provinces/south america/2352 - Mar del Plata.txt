@@ -1,0 +1,6 @@
+trade_goods = cattle
+terrain = farmlands
+life_rating = 20
+owner = ATA
+controller = ATA
+add_core = ATA

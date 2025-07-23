@@ -1,0 +1,320 @@
+political_decisions = {
+	ZPD_annex_prussia = {
+		picture = GER_prussia
+		potential = {
+			tag = ZPD
+			exists = PRU
+			NOT = { has_country_flag = ZPD_annex_prussia }
+		}
+		allow = {
+			war = no
+			OR = {
+				PRU = { in_sphere = THIS }
+				AND = {
+					year = 1838
+					NOT = { PRU = { in_sphere = BAV } }
+				}
+			}
+		}
+		effect = {
+			badboy = 10
+			any_country = {
+				limit = {
+					tag = PRU
+					in_sphere = ZPD
+				}
+				annex_to = ZPD
+			}
+			PRU = {
+				all_core = {
+					limit = {
+						NOT = { is_core = LIT }
+					}
+					add_core = ZPD
+				}
+			}
+			set_country_flag = ZPD_annex_prussia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	ZPD_great_national_reform = {
+		picture = ZPD
+		potential = {
+			tag = ZPD
+			NOT = { has_country_flag = ZPD_great_national_reform }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+			702 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			prestige = 15
+			capital = 703
+			add_accepted_culture = ukrainian
+			BOH = {
+				all_core = {
+					limit = {
+						OR = {
+							is_core = SLV
+							is_core = SLS 
+						}
+					}
+					remove_core = BOH
+				}
+			}
+			any_country = {
+				limit = {
+					tag = GLM
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+				all_core = { add_core = THIS }
+			}
+			set_country_flag = ZPD_great_national_reform
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ZPD_create_ngf = {
+		picture = GER_map
+		potential = {
+			tag = ZPD
+			NOT = { exists = NGF exists = GER }
+			NOT = {	has_country_flag = ZPD_create_ngf }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			BRN = { all_core = { owner = { OR = { tag = THIS in_sphere = THIS } } } }
+			SAX = { all_core = { owner = { OR = { tag = THIS in_sphere = THIS } } } }
+			STT = { all_core = { owner = { OR = { tag = THIS in_sphere = THIS } } } }
+			WLG = { all_core = { owner = { OR = { tag = THIS in_sphere = THIS } } } }
+			MEC = { all_core = { owner = { OR = { tag = THIS in_sphere = THIS } } } }
+			MST = { all_core = { owner = { OR = { tag = THIS in_sphere = THIS } } } }
+		}
+		effect = {
+			prestige = 15
+			badboy = 12
+			BRN = { annex_to = THIS }
+			SAX = { annex_to = THIS }
+			STT = { annex_to = THIS }
+			WLG = { annex_to = THIS }
+			MEC = { annex_to = THIS }
+			MST = { annex_to = THIS }
+			BRN = { all_core = { add_core = NGF secede_province = NGF } }
+			SAX = { all_core = { add_core = NGF secede_province = NGF } }
+			STT = { all_core = { add_core = NGF secede_province = NGF } }
+			WLG = { all_core = { add_core = NGF secede_province = NGF } }
+			MEC = { all_core = { add_core = NGF secede_province = NGF } }
+			MST = { all_core = { add_core = NGF secede_province = NGF } }
+			create_vassal = NGF
+			3416 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+			552 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+			687 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+			relation = {
+				who = BAV
+				value = -400
+			}
+			relation = {
+				who = SGF
+				value = -400
+			}
+			set_country_flag = ZPD_create_ngf
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.5
+            }
+		}
+	}
+	
+	ZPD_expand_ngf = {
+		picture = GER_map
+		potential = {
+			tag = ZPD
+			has_country_flag = ZPD_create_ngf
+			is_our_vassal = NGF
+			OR = {
+				exists = MAG
+				exists = ANH
+				exists = THU
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				MAG = { in_sphere = THIS war = no }
+				ANH = { in_sphere = THIS war = no }
+				THU = { in_sphere = THIS war = no }
+			}
+		}
+		effect = {
+			badboy = 2
+			random_country = {
+				limit = {
+					OR = {
+						AND = {
+							tag = MAG
+							in_sphere = THIS
+							war = no
+						}
+						AND = {
+							tag = ANH
+							in_sphere = THIS
+							war = no
+						}
+						AND = {
+							tag = THU
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+				annex_to = NGF
+				all_core = { add_core = NGF }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	ZPD_take_sorbia = {
+		picture = sorbs
+		potential = {
+			tag = ZPD
+			SAX = {
+				owns = 683
+				in_sphere = THIS
+			}
+			NOT = { has_country_flag = ZPD_take_sorbia }
+		}
+		allow = {
+			war = no
+			SAX = { war = no }
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 6
+			3416 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+			552 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+			687 = {
+				secede_province = THIS
+				add_core = THIS
+			}
+			relation = {
+				who = SAX
+				value = -400
+			}
+			diplomatic_influence = {
+				who = SAX
+				value = -400
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	ZPD_liberate_sorbia = {
+		picture = sorbs
+		potential = {
+			tag = ZPD
+			NOT = { owns = 683 }
+			NOT = { 683 = { is_core = THIS } }
+			SAX = { NOT = { in_sphere = THIS } }
+			NOT = { has_country_flag = ZPD_liberate_sorbia }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 4
+			3416 = { add_core = THIS }
+			552 = { add_core = THIS }
+			687 = { add_core = THIS }
+			set_country_flag = ZPD_liberate_sorbia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ZPD_integrate_the_sorbs = {
+		picture = sorbs
+		potential = {
+			tag = ZPD
+			LUS = { all_core = { owned_by = THIS } }
+			NOT = { has_country_flag = ZPD_integrate_the_sorbs }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = western_slavic
+			LUS = {
+				all_core = {
+					remove_core = GER
+					remove_core = NGF
+					remove_core = SAX
+				}
+			}
+			set_country_flag = ZPD_integrate_the_sorbs
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

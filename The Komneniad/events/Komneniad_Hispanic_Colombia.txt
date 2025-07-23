@@ -1,0 +1,197 @@
+#CLM remove mexican cores
+country_event = {
+    id = 159000
+    title = "Proclamation of the Colombian Republic"
+    desc = "159000DESC"
+    picture = "mexico-us-treaty"
+
+    is_triggered_only = yes
+	
+	major = yes
+
+    option = {
+        name = "159000A"
+		YUC = { all_core = { limit = { OR = { is_core = MEX is_core = RGR is_core = CAL } } remove_core = YUC } }
+		MEX = { all_core = { remove_core = MEX } }
+    }
+}
+
+#Mexico and Yucatan starting events
+country_event = {
+    id = 159001
+    title = "The Prodigal Son"
+    desc = "159001DESC"
+    picture = "mexico"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Thy brother was dead, and is alive again; and was lost, and is found."
+		set_country_flag = MEX_YUC_war
+		tooltip_3 = {}
+    }
+}
+
+#Mexico or Yucatan get Rio Grande
+country_event = {
+    id = 159002
+    title = "Victory on the Rio Grande"
+    desc = "159002DESC"
+    picture = "mexico-us-treaty"
+
+    trigger = {
+        OR = {
+			tag = MEX
+			AND = {
+				tag = YUC
+				has_country_flag = YUC_integrate_MEX
+			}
+		}
+		owns = 137
+		owns = 2151
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 10 }
+
+    option = {
+        name = "We shall be a Federation"
+		add_accepted_culture = riograndense
+		political_reform = federalism
+    }
+}
+
+#ayllonia starting event
+country_event = {
+    id = 159003
+    title = "The Ambrosian Republic"
+    desc = "159003DESC"
+    picture = "new_orleans"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Alis Volat Propriis"
+		tooltip_4 = {}
+    }
+}
+
+#SPA: sell cuba?
+country_event = {
+    id = 159004
+    title = "Ayllonia asks to buy Cuba"
+    desc = "Our friends in Ayllonia have asked us if they could buy Cuba for 150,000. Considering the strength of the resistance on the island, it seems like we would earn much more from simply selling it instead of trying to keep it."
+    picture = "us_cuba"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Cuba has outlived its usefulness."
+		treasury = 150000
+		remove_accepted_culture = caribeno
+		CUB = { all_core = { add_core = AYL } }
+		any_owned = {
+			limit = {
+				is_core = CUB
+			}
+			secede_province = AYL
+		}
+		FROM = { country_event = 159005 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 2
+				alliance_with = FROM
+			}
+			modifier = {
+				factor = 0.5
+				rank = 6
+			}
+		}
+    }
+	
+	option = {
+        name = "Hmm.. I think we'll keep it."
+		relation = {
+			who = AYL
+			value = -100
+		}
+		FROM = { country_event = 159006 }
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0.5
+				alliance_with = FROM
+			}
+			modifier = {
+				factor = 2
+				rank = 6
+			}
+		}
+    }
+}
+
+#SPA says yes
+country_event = {
+    id = 159005
+    title = "Espania agrees!"
+    desc = "Espania has agreed to sell us Cuba. With that, our former Metropole no longer ownes any substantial land in the New World, and we are left as the sole the inheritors of Espanian legacy."
+    picture = "us_cuba"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		treasury = -150000
+		add_accepted_culture = caribeno
+    }
+}
+
+#SPA says no
+country_event = {
+    id = 159006
+    title = "Espania refuses!"
+    desc = "Unexpectedly, Espania said no. It seems like friendship is over with our Metropole - clearly, war is the only option left."
+    picture = "us_cuba"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Ugh..."
+		prestige = -5
+		set_country_flag = AYL_cuba_refused
+    }
+}
+
+#NBS gets called in if CAL if at war with MEX
+country_event = {
+    id = 159007
+    title = "The Mexican Threat"
+    desc = "Mexico has finally acted on their revanchist intentions. California is in an official state of war with Mexico - and our allies in Nueva Vasconia will assist us!"
+    picture = "mexico-us-treaty"
+
+    trigger = {
+		NBS = { vassal_of = CAL war = no }
+        tag = CAL
+		ai = yes
+        war_with = MEX
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "To battle!"
+		random_country = {
+            limit = {
+                tag = NBS
+            }
+            THIS = {
+                war = {
+                    attacker_goal = { casus_belli = call_allies_cb }
+                    call_ally = yes
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = coal
+life_rating = 35
+terrain = marseille
+state_building = { level = 2 building = clipper_shipyard upgrade = yes } 

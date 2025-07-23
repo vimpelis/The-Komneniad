@@ -1,0 +1,328 @@
+political_decisions = {
+    commodity_boom_colombia = {
+        picture = coffee_in_colombia
+        potential = {
+            OR = {
+				AND = {
+					owns = 2254
+					NOT = { 2254 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2259
+					NOT = { 2259 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2248
+					NOT = { 2248 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2250
+					NOT = { 2250 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2247
+					NOT = { 2247 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2260
+					NOT = { 2260 = { trade_goods = cattle } }
+				}
+				AND = {
+					owns = 2261
+					NOT = { 2261 = { trade_goods = cattle } }
+				}
+				AND = {
+					owns = 2257
+					NOT = { 2257 = { trade_goods = tobacco } }
+				}
+				AND = {
+					owns = 2258
+					NOT = { 2258 = { trade_goods = tobacco } }
+				}
+				AND = {
+					owns = 2302
+					NOT = { 2302 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2297
+					NOT = { 2297 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2279
+					NOT = { 2279 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2281
+					NOT = { 2281 = { trade_goods = coffee } }
+				}
+            }
+        }
+
+        allow = {
+            war = no
+            OR = {
+                year = 1890
+                modern_central_bank_system = 1
+            }
+        }
+
+        effect = {
+			any_owned = {
+				limit = {
+					province_id = 2254
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2259
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2248
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2250
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2247
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2260
+					NOT = { trade_goods = cattle }
+				}
+				trade_goods = cattle
+			}
+			any_owned = {
+				limit = {
+					province_id = 2261
+					NOT = { trade_goods = cattle }
+				}
+				trade_goods = cattle
+			}
+			any_owned = {
+				limit = {
+					province_id = 2257
+					NOT = { trade_goods = tobacco }
+				}
+				trade_goods = tobacco
+			}
+			any_owned = {
+				limit = {
+					province_id = 2258
+					NOT = { trade_goods = tobacco }
+				}
+				trade_goods = tobacco
+			}
+			any_owned = {
+				limit = {
+					province_id = 2255
+					NOT = { trade_goods = tobacco }
+				}
+				trade_goods = tobacco
+			}
+			any_owned = {
+				limit = {
+					province_id = 2302
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2297
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2279
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2281
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+
+    commodity_boom_central_america = {
+        picture = coffee_in_colombia
+        potential = {
+            OR = {
+				AND = {
+					owns = 2193
+					NOT = { 2193 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2194
+					NOT = { 2194 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 3363
+					NOT = { 3363 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2188
+					NOT = { 2188 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2182
+					NOT = { 2182 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2172
+					NOT = { 2172 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2179
+					NOT = { 2179 = { trade_goods = coffee } }
+				}
+				AND = {
+					owns = 2169
+					NOT = { 2169 = { trade_goods = coffee } }
+				}
+				AND = {
+                    owns = 2171
+                    NOT = { 2171 = { trade_goods = coffee } }
+                }
+            }
+        }
+
+        allow = {
+            war = no
+            OR = {
+                year = 1890
+                modern_central_bank_system = 1
+            }
+        }
+
+        effect = {
+			any_owned = {
+				limit = {
+					province_id = 2193
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2194
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 3363
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2182
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2188
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2172
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2179
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2171
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+			any_owned = {
+				limit = {
+					province_id = 2169
+					NOT = { trade_goods = coffee }
+				}
+				trade_goods = coffee
+			}
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	prospect_venezuela = {
+        picture = mining_union_upper_katanga
+        potential = {
+			OR = {
+				owns = 2275
+				owns = 2277
+				owns = 2270
+			}
+			NOT = { year = 1910 }
+			NOT = { has_country_flag = prospect_venezuela }
+		}
+
+        allow = {
+			is_disarmed = no
+			industrial_score = 10
+			regenerative_furnaces = 1
+			rank = 16
+			OR = {
+				owns = 2275
+				owns = 2277
+				owns = 2270
+			}
+			NOT = { has_country_modifier = recently_lost_war }
+			money = 100000
+			NOT = { year = 1910 }
+		}
+
+        effect = {
+			set_country_flag = prospect_venezuela
+			2275 = { trade_goods = iron }
+			2277 = { trade_goods = iron }
+			2270 = { trade_goods = coal }
+		}
+
+        ai_will_do = { factor = 1 }
+    }
+}

@@ -1,0 +1,7 @@
+owner = HEB
+controller = HEB
+add_core = CHI
+terrain = forest_hills
+trade_goods = cattle
+life_rating = 32
+add_core = HEB

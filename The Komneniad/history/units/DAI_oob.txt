@@ -1,0 +1,21 @@
+army = {
+    name = "Imperial Nguyen Army"
+    location = 1375
+    regiment = {
+        name = "1. Brigade"
+        type = irregular
+        home = 1375
+    }
+
+    regiment = {
+        name = "2. Brigade"
+        type = irregular
+        home = 1376
+    }
+
+    regiment = {
+        name = "3. Brigade"
+        type = irregular
+        home = 1377
+    }
+}

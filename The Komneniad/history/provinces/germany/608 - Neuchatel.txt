@@ -1,0 +1,6 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = grain
+terrain = plains
+life_rating = 32 

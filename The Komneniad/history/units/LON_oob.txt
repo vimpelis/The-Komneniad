@@ -1,0 +1,34 @@
+leader = {
+    name = "Horatio Dundas"
+    picture = european_general_34
+    date = 1836.1.1
+    type = land
+    personality = defence_3.1
+    background = no_background
+    prestige = 0.8
+}
+
+army = {
+    name = "The City Guard"
+    location = 300
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 300
+    }
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = guard
+        home = 300
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = guard
+        home = 300
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 300
+    }
+}

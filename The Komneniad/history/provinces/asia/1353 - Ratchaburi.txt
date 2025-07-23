@@ -1,0 +1,7 @@
+owner = BUR
+controller = BUR
+add_core = SIA
+trade_goods = iron
+life_rating = 35
+terrain = jungle_hills
+add_core = BUR

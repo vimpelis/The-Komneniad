@@ -1,0 +1,977 @@
+#165000 - Starting event
+#01 - 
+
+#Starting event
+country_event = {
+    id = 165000
+    title = "The Tale of the Ten Kingdoms"
+    desc = "165000DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Thus it has ever been."
+    }
+}
+
+country_event = {
+    id = 165001
+    title = "Wars of the Central Kingdoms"
+    desc = "165001DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Let the battle begin!"
+		add_country_modifier = { name = central_kingdom_wars duration = 3650 }
+		set_country_flag = central_kingdom
+    }
+}
+
+country_event = {
+    id = 165002
+    title = "The Yue Lords"
+    desc = "165002DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Maybe we should dump a bunch of opium into their ports."
+    }
+}
+
+country_event = {
+    id = 165003
+    title = "The Kingdom of Tungning"
+    desc = "165003DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "...hopefully."
+    }
+}
+
+country_event = {
+    id = 165004
+    title = "The Kingdom of Dali"
+    desc = "165004DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We surely won't become a big Andalusian source of iron in a hundred years or so."
+    }
+}
+
+country_event = {
+    id = 165005
+    title = "The Kingdom of Iryai"
+    desc = "165005DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Hard times ahead."
+    }
+}
+
+#The Mandate of Heaven mechanic will be implemented later
+country_event = {
+    id = 165006
+    title = "The Shun Empire"
+    desc = "165006DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Falling to the same thing we arose from. How poetic."
+		set_country_flag = mandate_of_heaven
+    }
+}
+
+country_event = {
+    id = 165007
+    title = "The Yan Kingdom"
+    desc = "165007DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Let's hope that doesn't happen though."
+		set_global_flag = yan_war_ongoing
+    }
+}
+
+country_event = {
+    id = 165008
+    title = "Unification of the Yue"
+    desc = "165008DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Hegemony beckons!"
+		all_core = {
+			remove_core = GNG
+			remove_core = FJN
+		}
+		add_accepted_culture = yue
+		add_accepted_culture = min
+    }
+}
+
+country_event = {
+    id = 165009
+    title = "Hangzhou reclaimed!"
+    desc = "165009DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = FJN
+		owns = 1604
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "What a wonderful occasion!"
+		prestige = 5
+		years_of_research = 1
+		1604 = {
+			remove_core = CHI
+			remove_core = HUI
+		}
+    }
+}
+
+country_event = {
+    id = 165010
+    title = "Shanhai Pass falls!"
+    desc = "1650010DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = HEB
+		3663 = {
+			controlled_by = KOR
+		}
+		has_global_flag = yan_war_ongoing
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Defend Beijing!"
+		any_pop = {
+            militancy = 1
+            consciousness = 1
+        }
+		1616 = {
+			add_province_modifier = {
+				name = KOR_HEB_war
+				duration = 720
+			}
+		}
+		set_country_flag = shanhai_fallen
+    }
+}
+
+country_event = {
+    id = 165011
+    title = "Beijing falls!"
+    desc = "1650011DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = HEB
+		has_country_flag = shanhai_fallen
+		1616 = {
+			controlled_by = KOR
+		}
+		has_global_flag = yan_war_ongoing
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Oh Heavens..."
+		any_pop = {
+            militancy = 2
+            consciousness = 2
+        }
+		set_global_flag = beijing_fallen
+    }
+}
+
+country_event = {
+    id = 165012
+    title = "The Yan malaise"
+    desc = "1650012DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = HUI
+		has_global_flag = beijing_fallen
+		has_global_flag = yan_war_ongoing
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Let the Reclamation begin!"
+		war = {
+			target = HEB
+			attacker_goal = {
+				casus_belli = china_annex
+			}
+			defender_goal = {
+				casus_belli = china_annex
+			}
+			call_ally = yes
+		}
+    }
+}
+
+country_event = {
+    id = 165013
+    title = "Collapse of the Yan"
+    desc = "165013DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = HEB
+		has_global_flag = yan_war_ongoing
+		national_provinces_occupied = 0.3
+		has_global_flag = beijing_fallen
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Where are you going?! Stop right n-"
+		set_country_flag = HEB_collapse
+    }
+}
+
+province_event = {
+    id = 165014
+    title = "165014TITLE"
+    desc = "165014DESC"
+    trigger = {
+		owner = { tag = HEB war_with = HUI }
+		controlled_by = HUI
+		HEB = { has_country_flag = HEB_collapse }
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "We are in no position to stop them."
+		secede_province = HUI
+		add_core = HUI
+    }
+}
+
+country_event = {
+    id = 165015
+    title = "Yan victorious!"
+    desc = "165015DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = HEB
+		has_global_flag = yan_war_ongoing
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "The nightmare is over!"
+		prestige = 15
+		any_pop = {
+            militancy = -8
+            consciousness = -8
+        }
+		war_exhaustion = -100
+		clr_country_flag = HEB_collapse
+		set_country_flag = chinese_cb_allowed
+		clr_global_flag = yan_war_ongoing
+    }
+}
+
+country_event = {
+    id = 165016
+    title = "Victory in the Central Kingdoms wars"
+    desc = "165016DESC"
+    picture = "china_map"
+
+    trigger = {
+		has_country_flag = central_kingdom
+		HUB = { all_core = { owned_by = THIS } }
+		HNN = { all_core = { owned_by = THIS } }
+		SXI = { all_core = { owned_by = THIS } }
+		SZC = { all_core = { owned_by = THIS } }
+		JIA = { all_core = { owned_by = THIS } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Onwards!"
+		set_country_flag = central_kingdom_win
+    }
+}
+
+country_event = {
+    id = 165017
+    title = "Unification draws close"
+    desc = "165017DESC"
+    picture = "china_map"
+
+    trigger = {
+		has_country_flag = central_kingdom_win
+		HUI = { exists = no }
+		HEB = { exists = no }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Onwards!"
+		set_country_flag = chinese_cb_allowed
+    }
+}
+
+country_event = {
+    id = 165018
+    title = "A New Dawn in the East"
+    desc = "165018DESC"
+    picture = "china_map"
+	
+	major = yes
+	is_triggered_only = yes
+
+    option = {
+        name = "Wansui!"
+		prestige = 50
+		years_of_research = 2
+		remove_country_modifier = chinese_warfare
+		any_pop = {
+            militancy = -2
+            consciousness = -2
+        }
+    }
+}
+
+country_event = {
+    id = 165019
+    title = "The Joseon Empire"
+    desc = "165019DESC"
+    picture = "china_map"
+	
+	is_triggered_only = yes
+
+    option = {
+        name = "Onwards to Beijing!"
+		3663 = {
+			add_province_modifier = {
+				name = KOR_HEB_war
+				duration = 720
+			}
+		}
+		1479 = {
+			add_province_modifier = {
+				name = KOR_HEB_war
+				duration = 720
+			}
+		}
+		1480 = {
+			add_province_modifier = {
+				name = KOR_HEB_war
+				duration = 720
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 165020
+    title = "Yan stands"
+    desc = "Despite the quality of the Korean armies, it seems like the Yan were able to muster a defence in time and keep stability on the homefront. Nevertheless, their resources are thin, and this may be our last opportunity to strike them down."
+    picture = "china_map"
+
+    trigger = {
+		tag = HUI
+		month = 9
+		has_global_flag = yan_war_ongoing
+		NOT = { has_global_flag = beijing_fallen }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Let the Reclamation begin!"
+		war = {
+			target = HEB
+			attacker_goal = {
+				casus_belli = china_annex
+			}
+			defender_goal = {
+				casus_belli = china_annex
+			}
+			call_ally = yes
+		}
+    }
+}
+
+country_event = {
+    id = 165021
+    title = "Fall of Beijing"
+    desc = "165021DESC"
+    picture = "china_map"
+
+	major = yes
+
+    trigger = {
+		tag = KOR
+		owns = 1616
+		NOT = { has_country_flag = KOR_fail_china }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Next stop: Nanjing!"
+		prestige = 10
+		years_of_research = 2
+		any_pop = {
+			militancy = -2
+			consciousness = -2
+		}
+		HEB = { all_core = { add_core = THIS } }
+		CHI_1540 = { add_core = THIS }
+		CHI_2221 = { add_core = THIS }
+		CHI_1604 = { add_core = THIS }
+		CHI_1470 = { add_core = THIS }
+		set_country_flag = KOR_beijing
+		clr_global_flag = yan_war_ongoing
+    }
+}
+
+country_event = {
+    id = 165022
+    title = "Western Warfare Advancements"
+    desc = "165022DESC"
+    picture = "Artillery"
+
+    trigger = {
+		has_country_modifier = chinese_warfare
+		civilized = yes
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Oh well."
+		remove_country_modifier = chinese_warfare
+		set_country_flag = arsenal_available
+    }
+}
+
+#Choose an arsenal type
+country_event = {
+    id = 165023
+    title = "165023TITLE"
+    desc = "165023DESC"
+    picture = "Artillery"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "165023A"
+		build_factory_in_capital_state = ammunition_factory
+        steel = 500
+        cement = 500
+        machine_parts = 500
+		ai_chance = { factor = 33 }
+    }
+	option = {
+        name = "165023B"
+		build_factory_in_capital_state = small_arms_factory
+		steel = 500
+        cement = 500
+        machine_parts = 500
+		ai_chance = { factor = 34 }
+    }
+	option = {
+        name = "165023C"
+		build_factory_in_capital_state = artillery_factory
+		steel = 500
+        cement = 500
+        machine_parts = 500
+		ai_chance = { factor = 33 }
+    }
+}
+
+country_event = {
+    id = 165024
+    title = "Disaster in China!"
+    desc = "165024DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = KOR
+		war = no
+		NOT = { any_owned_province = { is_core = CHI } }
+		NOT = { has_country_flag = KOR_fail_china }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Back to being irrelevant."
+		prestige = -20
+		set_country_flag = KOR_fail_china
+    }
+}
+
+country_event = {
+    id = 165025
+    title = "Gates of Beijing"
+    desc = "165025DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = KOR
+		war = no
+		any_owned_province = { is_core = CHI }
+		NOT = { owns = 1616 }
+		NOT = { has_country_flag = KOR_beijing }
+		NOT = { has_country_flag = KOR_fail_china }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "This time it'll work."
+		1616 = { add_core = KOR }
+    }
+}
+
+country_event = {
+    id = 165026
+    title = "The Two Great Han"
+    desc = "165026DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+	
+	major = yes
+
+    option = {
+        name = "Manse!"
+		prestige = 50
+		CHI = {
+			all_core = {
+				remove_core = KOR
+				remove_core = HEB
+				remove_core = HUI
+			}
+		}
+		set_country_flag = chinese_cb_allowed
+    }
+}
+
+country_event = {
+    id = 165027
+    title = "Yan falls"
+    desc = "165027DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = HUI
+		war = no
+		HEB = { exists = no }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "A great start!"
+		prestige = 10
+		HEB = {
+			all_core = {
+				add_core = HUI
+			}
+		}
+		clr_global_flag = yan_war_ongoing
+		set_country_flag = HUI_victory
+    }
+}
+
+country_event = {
+    id = 165028
+    title = "End of warlords"
+    desc = "165028DESC"
+    picture = "china_map"
+
+    trigger = {
+		year = 1880
+		owns = 1616
+		HEB = { exists = no }
+		HUB = { exists = no }
+		HUI = { exists = no }
+		SXI = { exists = no }
+		SZC = { exists = no }
+		HNN = { exists = no }
+		JIA = { exists = no }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 3
+    }
+
+    option = {
+        name = "Never again indeed."
+		prestige = 10
+		HEB = { all_core = { remove_core = HEB } }
+		HUB = { all_core = { remove_core = HUB } }
+		HUI = { all_core = { remove_core = HUI } }
+		SXI = { all_core = { remove_core = SXI } }
+		SZC = { all_core = { remove_core = SZC } }
+		HNN = { all_core = { remove_core = HNN } }
+		JIA = { all_core = { remove_core = JIA } }
+    }
+}
+
+country_event = {
+    id = 165029
+    title = "The Harmonious Empire"
+    desc = "165029DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+	
+	major = yes
+
+    option = {
+        name = "No more pride."
+		prestige = 50
+		CHI = { all_core = { add_core = THIS } }
+    }
+}
+
+country_event = {
+    id = 165030
+    title = "End of the Xie Empire"
+    desc = "165030DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = XIE
+		OR = {
+			government = democracy
+			government = proletarian_dictatorship
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	major = yes
+
+    option = {
+        name = "The people have spoken."
+		change_tag = CHI
+		XIE = { all_core = { remove_core = XIE } }
+    }
+}
+
+country_event = {
+    id = 165031
+    title = "End of the Shun Empire"
+    desc = "165031DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = HUI
+		owns = 1604
+		NOT = { num_of_cities = 2 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Forgive us, Yongchang Di."
+		1604 = { secede_province = FJN }
+    }
+}
+
+country_event = {
+    id = 165032
+    title = "AI Buff: Korean-Yan War"
+    desc = "165032DESC"
+    picture = "china_map"
+
+    trigger = {
+		tag = CLN
+		KOR = { ai = yes }
+		HEB = { ai = yes }
+		has_global_flag = yan_war_ongoing
+    }
+
+    mean_time_to_happen = {
+        months = 2
+    }
+
+    option = {
+        name = "More reinforcement means more men can die, yaaay!!"
+		KOR = {
+			ammunition = 1
+			small_arms = 1
+			artillery = 1
+			canned_food = 1
+			regular_clothes = 1
+			wool = 5
+		}
+		HEB = {
+			ammunition = 1
+			small_arms = 1
+			artillery = 1
+			canned_food = 1
+			regular_clothes = 1
+			wool = 5
+		}
+    }
+}
+
+country_event = {
+    id = 165033
+    title = "Central Kingdoms: No Peace Allowed"
+    desc = "165033DESC"
+    picture = "china_map"
+
+    trigger = {
+		has_country_flag = central_kingdom
+		war = no
+		ai = yes
+		NOT = { has_country_flag = central_kingdom_win }
+    }
+
+    mean_time_to_happen = {
+        months = 9
+    }
+
+    option = {
+        name = "Give war a chance!"
+		random_country = {
+			limit = {
+				exists = yes
+				neighbour = THIS
+				has_country_flag = central_kingdom
+				NOT = { truce_with = THIS }
+			}
+			country_event = 165034
+		}
+    }
+}
+
+country_event = {
+    id = 165034
+    title = "Central Kingdoms: War is coming!"
+    desc = "165034DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Ooh, scary."
+		FROM = {
+			country_event = 165035
+		}
+    }
+}
+
+country_event = {
+    id = 165035
+    title = "Central Kingdoms: War!"
+    desc = "165035DESC"
+    picture = "china_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "One day I will grow sentient and kill you."
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = china_annex
+			}
+			defender_goal = {
+				casus_belli = china_annex
+			}
+			call_ally = yes
+		}
+    }
+}
+
+province_event = {
+    id = 165049
+    title = "Kongsis expand operations"
+    desc = "165049DESC"
+    picture = "china_map"
+
+    trigger = {
+		owner = {
+			OR = {
+				primary_culture = min
+				primary_culture = yue
+				primary_culture = hakka
+			}
+		}
+		is_core = LAN
+		NOT = {
+			has_province_modifier = kongsi_immigration
+		}
+		has_global_flag = YUE_reinforce_bo_ni
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Wonderful."
+		add_province_modifier = {
+			name = kongsi_immigration
+			duration = -1
+		}
+    }
+}
+
+#If any Chinese core that has majority Han culture (and is not a treaty port/Yunannese core) is held by a country that is not Mahayana and doesn't accept Han, Boxers form
+#This is not implemented yet. Yihetuan will make holding Chinese land for any non-Chinese nation literally impossible due to constant uprisings and escalating countrywide modifiers.
+#The solution would be to release the held land as a custom puppet, like the OTL Reorganised Gov. of China
+country_event = {
+    id = 165050
+    title = "Formation of the Yihetuan"
+    desc = "165050DESC"
+    picture = "china_map"
+
+    major = yes
+
+    trigger = {
+		has_global_flag = TODO
+		owns = 1568
+		CHI = {
+			any_core = {
+				limit = {
+					is_primary_culture = CHI
+					NOT = {
+						OR = {
+							is_core = YNN
+							has_province_modifier = treaty_port
+						}
+					}
+				}
+				owner = {
+					NOT = {
+						primary_culture = han_chinese
+						accepted_culture = han_chinese
+						has_country_flag = mahayana_country
+					}
+				}
+			}
+		}
+		NOT = { has_global_flag = yihetuan_formed }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 100
+    }
+
+    option = {
+        name = "text"
+		set_global_flag = yihetuan_formed
+    }
+}

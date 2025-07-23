@@ -1,0 +1,7 @@
+trade_goods = coal
+life_rating = 25
+terrain = kansascity
+add_core = IRO
+add_core = SIO
+party_loyalty = { ideology = conservative loyalty_value = 15 } 
+party_loyalty = { ideology = liberal loyalty_value = 12 } 

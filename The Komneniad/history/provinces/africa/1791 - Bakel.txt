@@ -1,0 +1,6 @@
+owner = FLC
+controller = FLC
+add_core = FLC
+trade_goods = cattle
+terrain = semidesert
+life_rating = 31 

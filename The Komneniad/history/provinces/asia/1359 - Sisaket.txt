@@ -1,0 +1,7 @@
+owner = CHK
+controller = CHK
+add_core = SIA
+add_core = PHI
+add_core = CHK
+trade_goods = cattle
+life_rating = 35

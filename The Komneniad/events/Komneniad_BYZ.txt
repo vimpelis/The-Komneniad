@@ -1,0 +1,1386 @@
+#151000 - Starting event (p1)
+#01 - Treaty of Antioch runs out
+#02 - EGYPT - BYZ demands Cilicia
+#03 - EGY gives in
+#04 - EGY refuses
+#05 - EGY victory
+#06 - EGY defeat
+#07 - Starting event (p2)
+#08 - Theme of Bulgaria
+#09 - Internal politics
+###Hellenophiles vs. Metaxas
+#10 - Emperor Andronikos III dies; The Hellenophiles are ousted					MINIGAME END
+#11 - The Hellenophiles collapse												MINIGAME END
+#12 - Andronikos III retires Metaxas											MINIGAME END
+#13 - The Nis Rebellion															-1 or +2 HI
+#14 - The Szeged Conference														-1 or +2 HI
+#15 - Gregory VI and the Papal Ambassador										-1 or +2 HI
+#16 - Death of Andronikos III
+#17 - Coronation of Constantine XIII (Hellenophile)
+#18 - Coronation of Anastasius III
+#19 - Catepanates of Ras and Illyria
+#20 - Government type restoration event
+#21-29 - Influence change notifications
+###Rest
+#30 - Catepanates reformed
+#31 - South Slavic Revolt
+#32 - Revolt dead
+#33 - Revolt succeeds
+#34 - Fall of Rome
+
+#Starting event (p1)
+country_event = {
+    id = 151000
+    title = "The Eternal State"
+    desc = "151000DESC"
+    picture = "justinian_court"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Page 2"
+		country_event = 151007
+		set_variable = {
+			which = hellenophile_influence
+			value = 5
+		}
+		set_country_flag = BYZ_hellenophile_minigame
+    }
+	
+	option = {
+        name = "Enough with the reading, let me play the game!"
+		hel_set_5 = {}
+		set_variable = {
+			which = hellenophile_influence
+			value = 5
+		}
+		set_country_flag = BYZ_hellenophile_minigame
+    }
+}
+
+#Treaty of Antioch runs out
+country_event = {
+    id = 151001
+    title = "The Matter of Cilicia"
+    desc = "151001DESC"
+    picture = "antioch"
+
+    trigger = {
+        tag = BYZ
+		NOT = { truce_with = EGY }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Send the demand."
+		EGY = { country_event = 151002 }
+    }
+}
+
+#EGYPT - BYZ demands Cilicia
+country_event = {
+    id = 151002
+    title = "Greeks demand Cilicia"
+    desc = "151002DESC"
+    picture = "antioch"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Ugh, fine. Take it."
+		prestige = -10
+		any_pop = {
+            militancy = 1
+            consciousness = 1
+        }
+		any_owned = {
+			limit = {
+				is_core = BYZ
+			}
+			secede_province = BYZ
+			remove_core = EGY
+		}
+		BYZ = { country_event = 151003 }
+		ai_chance = { factor = 8 }
+    }
+	
+	option = {
+        name = "How about no?"
+		prestige = 15
+		BYZ = { country_event = 151004 }
+		ai_chance = { factor = 2 }
+    }
+}
+
+#EGY gives in
+country_event = {
+    id = 151003
+    title = "Egypt gives in"
+    desc = "151003DESC"
+    picture = "antioch"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Good."
+		prestige = 5
+    }
+}
+
+#EGY refuses
+country_event = {
+    id = 151004
+    title = "Egypt refuses"
+    desc = "151004DESC"
+    picture = "antioch"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Do they really think they can get away with this?"
+		war = {
+			target = EGY
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+				country = BYZ
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		set_global_flag = EGY_BYZ_war
+    }
+}
+
+#EGY victory
+country_event = {
+    id = 151005
+    title = "Egypt is victorious!"
+    desc = "151005DESC"
+    picture = "egy_independence"
+
+    trigger = {
+        tag = EGY
+		NOT = { war_with = BYZ }
+		owns = 894
+		has_global_flag = EGY_BYZ_war
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Quite a feat!"
+		prestige = 15
+		years_of_research = 5
+		any_pop = {
+			militancy = -3
+			consciousness = -3
+		}
+		898 = { remove_core = BYZ }
+		894 = { remove_core = BYZ }
+		900 = { remove_core = BYZ }
+		clr_global_flag = EGY_BYZ_war
+    }
+}
+
+#EGY defeat
+country_event = {
+    id = 151006
+    title = "Egypt is defeated"
+    desc = "151006DESC"
+    picture = "egy_surrender"
+
+    trigger = {
+        tag = EGY
+		NOT = { war_with = BYZ }
+		NOT = {	owns = 894 }
+		has_global_flag = EGY_BYZ_war
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "What were we thinking?"
+		prestige = -15
+		any_pop = {
+			militancy = 3
+			consciousness = 3
+		}
+		898 = { remove_core = EGY }
+		894 = { remove_core = EGY }
+		900 = { remove_core = EGY }
+		clr_global_flag = EGY_BYZ_war
+    }
+}
+
+#Starting event (p2)
+country_event = {
+    id = 151007
+    title = "The Eternal State (part 2)"
+    desc = "151007DESC"
+    picture = "justinian_court"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "May the Empire last for a thousand more years!"
+		hel_set_5 = {}
+    }
+}
+
+#Theme of Bulgaria
+country_event = {
+    id = 151008
+    title = "Theme of Bulgaria"
+    desc = "151008DESC"
+    picture = "bulgaria_byzantine"
+
+    trigger = {
+        tag = BYZ
+		year = 1836
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 60
+    }
+
+    option = {
+        name = "Perhaps we could turn it into something greater?"
+    }
+}
+
+#Internal politics
+#Untriggerable, empty event
+country_event = {
+    id = 151009
+    title = "151009NAME"
+    desc = "151009DESC"
+    picture = "BYZ_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Let's thread carefully."
+    }
+}
+
+#Emperor Andronikos III dies; The Hellenophiles are ousted
+country_event = {
+    id = 151010
+    title = "Emperor Andronikos III dies"
+    desc = "151010DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		year = 1841
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 720
+    }
+
+    option = {
+        name = "Metaxas is victorious!"
+		set_country_flag = roman_path
+		clr_country_flag = BYZ_hellenophile_minigame
+		BYZ = {	country_event = 151018 }
+    }
+}
+
+#The Hellenophiles collapse
+country_event = {
+    id = 151011
+    title = "The Hellenophiles collapse"
+    desc = "151011DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 1
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Metaxas is victorious!"
+		set_country_flag = roman_path
+		clr_country_flag = BYZ_hellenophile_minigame
+    }
+}
+
+#Andronikos III retires Metaxas
+country_event = {
+    id = 151012
+    title = "Andronikos III retires Metaxas"
+    desc = "151012DESC"
+    picture = "justinian_pandects"
+
+    trigger = {
+        tag = BYZ
+		check_variable = {
+			which = hellenophile_influence
+			value = 10
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Down with the Romans, up with the Greeks!"
+		set_country_flag = greek_path
+		clr_country_flag = BYZ_hellenophile_minigame
+    }
+}
+
+#The Nis Rebellion
+country_event = {
+    id = 151013
+    title = "The Nish Rebellion"
+    desc = "151013DESC"
+    picture = "BUL_revolt_1"
+
+    trigger = {
+        tag = BYZ
+		year = 1841
+		month = 4
+	}
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    option = {
+        name = "Put them down at once!"
+		hel_lose_1 = {}
+		any_pop = {
+			limit = { has_pop_culture = bulgarian }
+			militancy = 2
+			consciousness = 2
+		}
+		change_variable = {
+			which = hellenophile_influence
+			value = -1
+		}
+    }
+	option = {
+        name = "They have a point, actually. Let's negotiate."
+		tooltip_7 = {}
+		prestige = -5
+		any_pop = {
+			limit = { has_pop_culture = bulgarian }
+			militancy = 0.5
+			consciousness = 0.5
+		}
+		change_variable = {
+			which = hellenophile_influence
+			value = 2
+		}
+    }
+}
+
+#The Szeged Conference
+country_event = {
+    id = 151014
+    title = "The Szeged Conference"
+    desc = "151014DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_global_flag = szeged_conference
+	}
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Let them do their thing, it doesn't concern us."
+		hel_lose_1 = {}
+		any_pop = {
+			limit = { has_pop_culture = romanian }
+			consciousness = 2
+		}
+		any_pop = {
+			limit = { has_pop_culture = hungarian }
+			consciousness = 2
+		}
+		change_variable = {
+			which = hellenophile_influence
+			value = -1
+		}
+    }
+	option = {
+        name = "Upsetting the status quo?! Unacceptable!"
+		tooltip_7 = {}
+		prestige = 5
+		any_country = {
+			limit = { has_country_flag = CRP_leader }
+			country_event = 153010
+		}
+		change_variable = {
+			which = hellenophile_influence
+			value = 2
+		}
+    }
+}
+
+#Gregory VI and the Papal Ambassador
+country_event = {
+    id = 151015
+    title = "Gregory VI and the Papal Nuncio"
+    desc = "151015DESC"
+    picture = "gregoryVI"
+
+    trigger = {
+        tag = BYZ
+		year = 1837
+	}
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 180
+    }
+
+    option = {
+        name = "Why, exactly, would we support a Latin heretic?"
+		hel_lose_1 = {}
+		any_pop = {
+			limit = { has_pop_religion = catholic }
+			militancy = 2
+		}
+		relation = { who = PAP value = -100 }
+		relation = { who = BAV value = -50 }
+		change_variable = {
+			which = hellenophile_influence
+			value = -1
+		}
+    }
+	option = {
+        name = "The Nuncio is right, the Patriarch has gone too far."
+		tooltip_7 = {}
+		any_pop = {
+			limit = { has_pop_religion = orthodox }
+			militancy = 1
+		}
+		relation = { who = PAP value = 50 }
+		relation = { who = BAV value = 25 }
+		change_variable = {
+			which = hellenophile_influence
+			value = 2
+		}
+    }
+}
+
+#Death of Andronikos III
+country_event = {
+    id = 151016
+    title = "Death of Andronikos III"
+    desc = "151016DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = greek_path
+		year = 1841
+	}
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 720
+    }
+
+    option = {
+        name = "Upsetting the laws of the Empire has never gone wrong."
+		BYZ = {	country_event = 151017 }
+    }
+}
+
+#Coronation of Constantine XV
+country_event = {
+    id = 151017
+    title = "Coronation of Constantine XV"
+    desc = "151017DESC"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "At last, free from the shackles of the past!"
+		prestige = 25
+		change_tag = GRE
+		BYZ = {
+			all_core = {
+				remove_core = BYZ
+			}
+		}
+		any_pop = {
+            militancy = 2
+            consciousness = 2
+        }
+    }
+}
+
+#Coronation of Anastasius III
+country_event = {
+    id = 151018
+    title = "Coronation of Anastasius III"
+    desc = "151018DESC"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "Nothing can stop us now."
+		prestige = 25
+		any_pop = {
+            militancy = 1
+            consciousness = 1
+        }
+    }
+}
+
+#Catepanates of Ras and Illyria
+country_event = {
+    id = 151019
+    title = "Catepanates of Ras and Illyria"
+    desc = "151019DESC"
+    picture = "catepanates"
+
+    trigger = {
+        tag = BYZ
+		month = 2
+	}
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Sklavenoi, forever a thorn in our side."
+		any_owned = {
+			limit = {
+				is_core = SER
+				NOT = { is_core = CRO }
+			}
+			add_province_modifier = {
+				name = catepanate_of_ras
+				duration = -1
+			}
+		}
+		any_owned = {
+			limit = {
+				is_core = CRO
+			}
+			add_province_modifier = {
+				name = catepanate_of_illyria
+				duration = -1
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = serb }
+			militancy = 1
+			consciousness = 1
+		}
+		any_pop = {
+			limit = { has_pop_culture = croat }
+			militancy = 1
+			consciousness = 1
+		}
+    }
+}
+
+#Government type restoration event
+country_event = {
+    id = 151020
+    title = "Greece's Government"
+    desc = "It seems like we somehow lost the empire title. We should probably fix that."
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = GRE
+		has_country_flag = greek_path
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Yeah."
+		government = absolute_empire
+    }
+}
+
+##########Hellenophile influence minigame
+#1 infl
+country_event = {
+    id = 151021
+    title = "Hellenophile influence change"
+    desc = "151021DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 1
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 2
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_1infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#2 infl
+country_event = {
+    id = 151022
+    title = "Hellenophile influence change"
+    desc = "151022DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 2
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 3
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_2infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#3 infl
+country_event = {
+    id = 151023
+    title = "Hellenophile influence change"
+    desc = "151023DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 3
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 4
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_3infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#4 infl
+country_event = {
+    id = 151024
+    title = "Hellenophile influence change"
+    desc = "151024DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 4
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 5
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_4infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#5 infl
+country_event = {
+    id = 151025
+    title = "Hellenophile influence change"
+    desc = "151025DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 5
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 6
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_5infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#6 infl
+country_event = {
+    id = 151026
+    title = "Hellenophile influence change"
+    desc = "151026DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 6
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 7
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_6infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#7 infl
+country_event = {
+    id = 151027
+    title = "Hellenophile influence change"
+    desc = "151027DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 7
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 8
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_7infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#8 infl
+country_event = {
+    id = 151028
+    title = "Hellenophile influence change"
+    desc = "151028DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 8
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 9
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_8infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_8infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_9infl
+    }
+}
+
+#9 infl
+country_event = {
+    id = 151029
+    title = "Hellenophile influence change"
+    desc = "151029DESC"
+    picture = "BYZ_map"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = BYZ_hellenophile_minigame
+		check_variable = {
+			which = hellenophile_influence
+			value = 9
+		}
+		NOT = {
+			check_variable = {
+				which = hellenophile_influence
+				value = 10
+			}
+		}
+		NOT = { has_country_flag = BYZ_minigame_9infl }
+		NOT = { has_country_flag = BYZ_minigame_switch_off }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "Ok"
+		set_country_flag = BYZ_minigame_9infl
+		clr_country_flag = BYZ_minigame_1infl
+		clr_country_flag = BYZ_minigame_2infl
+		clr_country_flag = BYZ_minigame_3infl
+		clr_country_flag = BYZ_minigame_4infl
+		clr_country_flag = BYZ_minigame_5infl
+		clr_country_flag = BYZ_minigame_6infl
+		clr_country_flag = BYZ_minigame_7infl
+		clr_country_flag = BYZ_minigame_8infl
+    }
+}
+
+#########Rest
+
+#Catepanates reformed
+country_event = {
+    id = 151030
+    title = "Integration of the Sklavenoi"
+    desc = "151030DESC"
+    picture = "catepanates"
+
+    trigger = {
+        tag = GRE
+		has_country_flag = BYZ_reform_the_catepanates
+		NOT = { 
+			OR = {
+				has_country_flag = BYZ_catepanates_done
+				has_country_modifier = reforming_the_catepanates
+			}
+		}
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+	fire_only_once = yes
+    option = {
+        name = "Great!"
+		set_country_flag = BYZ_catepanates_done
+		prestige = 15
+		add_accepted_culture = serb
+		add_accepted_culture = croat
+		any_owned = {
+			limit = { has_province_modifier = catepanate_of_ras }
+			remove_province_modifier = catepanate_of_ras
+		}
+		any_owned = {
+			limit = { has_province_modifier = catepanate_of_illyria }
+			remove_province_modifier = catepanate_of_illyria
+		}
+		any_pop = {
+			limit = { has_pop_culture = serb }
+			militancy = -4
+			consciousness = -4
+		}
+		any_pop = {
+			limit = { has_pop_culture = croat }
+			militancy = -4
+			consciousness = -4
+		}
+    }
+}
+
+#South Slavic Revolt
+country_event = {
+    id = 151031
+    title = "The Great Sklavene Revolt"
+    desc = "151031DESC"
+    picture = "SER_revolt_1"
+	
+	major = yes
+
+    trigger = {
+		year = 1848
+        OR = {
+			has_country_flag = greek_path
+			has_country_flag = roman_path
+		}
+		any_owned_province = {
+			OR = {
+				has_province_modifier = catepanate_of_ras
+				has_province_modifier = catepanate_of_illyria
+			}
+		}
+		NOT = { 
+			OR = {
+				has_global_flag = BYZ_slavic_revolt
+				has_country_flag = BYZ_catepanates_done
+			}
+		}
+    }
+    mean_time_to_happen = {
+        days = 30
+    }
+	fire_only_once = yes
+    option = {
+        name = "Crush them!"
+		set_global_flag = BYZ_slavic_revolt
+		any_owned = {
+			limit = { is_core = CRO }
+			secede_province = CRO
+		}
+		any_owned = {
+			limit = { is_core = SER }
+			secede_province = SER
+		}
+		war = {
+			target = SER
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		war = {
+			target = CRO
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}
+		any_pop = {
+			limit = { has_pop_culture = serb }
+			militancy = 8
+			consciousness = 8
+		}
+		any_pop = {
+			limit = { has_pop_culture = croat }
+			militancy = 8
+			consciousness = 8
+		}
+		SER = {
+			add_country_modifier = {
+				name = slavic_revolt
+				duration = 1825
+			}
+		}
+		CRO = {
+			add_country_modifier = {
+				name = slavic_revolt
+				duration = 1825
+			}
+		}
+    }
+	
+	option = {
+        name = "For Serbia!"
+		set_global_flag = BYZ_slavic_revolt
+		any_owned = {
+			limit = { is_core = CRO }
+			secede_province = CRO
+		}
+		any_owned = {
+			limit = { is_core = SER }
+			secede_province = SER
+		}
+		war = {
+			target = SER
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		war = {
+			target = CRO
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		any_pop = {
+			limit = { has_pop_culture = serb }
+			militancy = 8
+			consciousness = 8
+		}
+		any_pop = {
+			limit = { has_pop_culture = croat }
+			militancy = 8
+			consciousness = 8
+		}
+		SER = {
+			add_country_modifier = {
+				name = slavic_revolt
+				duration = 1825
+			}
+		}
+		CRO = {
+			add_country_modifier = {
+				name = slavic_revolt
+				duration = 1825
+			}
+		}
+		change_tag_no_core_switch = SER
+		ai_chance = { factor = 0 }
+    }
+	
+	option = {
+        name = "For Croatia!"
+		set_global_flag = BYZ_slavic_revolt
+		any_owned = {
+			limit = { is_core = CRO }
+			secede_province = CRO
+		}
+		any_owned = {
+			limit = { is_core = SER }
+			secede_province = SER
+		}
+		war = {
+			target = SER
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		war = {
+			target = CRO
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = status_quo
+			}
+			call_ally = yes
+		}
+		any_pop = {
+			limit = { has_pop_culture = serb }
+			militancy = 8
+			consciousness = 8
+		}
+		any_pop = {
+			limit = { has_pop_culture = croat }
+			militancy = 8
+			consciousness = 8
+		}
+		SER = {
+			add_country_modifier = {
+				name = slavic_revolt
+				duration = 1825
+			}
+		}
+		CRO = {
+			add_country_modifier = {
+				name = slavic_revolt
+				duration = 1825
+			}
+		}
+		change_tag_no_core_switch = CRO
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 151032
+    title = "Sklavene Revolt Crushed"
+    desc = "151032DESC"
+    picture = "SER_revolt_1"
+	
+	major = yes
+
+    trigger = {
+        OR = {
+			has_country_flag = greek_path
+			has_country_flag = roman_path
+		}
+		has_global_flag = BYZ_slavic_revolt
+		NOT = { exists = SER }
+		NOT = { exists = CRO }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+	fire_only_once = yes
+    option = {
+        name = "A thousand years more!"
+		set_country_flag = BYZ_slavic_revolt_victory
+		prestige = 15
+		any_pop = {
+			limit = { has_pop_culture = serb }
+			militancy = -10
+			consciousness = -10
+		}
+		any_pop = {
+			limit = { has_pop_culture = croat }
+			militancy = -10
+			consciousness = -10
+		}
+    }
+}
+
+country_event = {
+    id = 151033
+    title = "Sklavene Revolt Succeeds"
+    desc = "151033DESC"
+    picture = "SER_revolt_1"
+	
+	major = yes
+
+    trigger = {
+        OR = {
+			has_country_flag = greek_path
+			has_country_flag = roman_path
+		}
+		has_global_flag = BYZ_slavic_revolt
+		OR = {
+			AND = {
+				exists = SER
+				war = no
+			}
+			AND = {
+				exists = CRO
+				war = no
+			}
+		}
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+	fire_only_once = yes
+    option = {
+        name = "We will be back."
+		set_country_flag = BYZ_slavic_revolt_defeat
+		prestige = -15
+		any_pop = {
+			militancy = 2
+			consciousness = 4
+		}
+		CRO = {
+			all_core = {
+				remove_core = THIS
+			}
+			remove_country_modifier = slavic_revolt
+		}
+		SER = {
+			all_core = {
+				remove_core = THIS
+			}
+			remove_country_modifier = slavic_revolt
+		}
+    }
+}
+
+country_event = {
+    id = 151034
+    title = "Fall of Rome"
+    desc = "151034DESC"
+    picture = "roman_republic"
+	
+	major = yes
+
+    trigger = {
+        tag = BYZ
+		owns = 749
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+	fire_only_once = yes
+    option = {
+        name = "Be eternal!"
+		prestige = 25
+		any_pop = {
+			militancy = -2
+			consciousness = -2
+		}
+    }
+}

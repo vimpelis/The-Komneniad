@@ -1,0 +1,7 @@
+owner = WEL
+controller = WEL
+add_core = WEL
+add_core = SAH
+trade_goods = tropical_wood
+terrain = jungle
+life_rating = 31 

@@ -1,0 +1,6 @@
+owner = FRD
+controller = FRD
+trade_goods = gems
+terrain = jungle_mountains
+life_rating = 31
+add_core = FRD

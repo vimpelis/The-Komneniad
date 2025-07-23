@@ -1,0 +1,9 @@
+owner = MGT
+controller = MGT
+add_core = HRT
+add_core = KHR
+trade_goods = fruit
+life_rating = 35
+terrain = herat
+add_core = MGT
+add_core = AFG

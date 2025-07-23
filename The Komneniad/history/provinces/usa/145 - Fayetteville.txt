@@ -1,0 +1,8 @@
+owner = AYL
+controller = AYL
+trade_goods = timber
+life_rating = 35
+colonial = 2
+terrain = forest_hills
+add_core = AYL
+add_core = FLU

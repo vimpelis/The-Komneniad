@@ -1,0 +1,5 @@
+owner = BIR
+controller = BIR
+add_core = BIR
+trade_goods = precious_metal
+life_rating = 35 

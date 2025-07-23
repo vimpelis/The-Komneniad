@@ -1,0 +1,5 @@
+owner = WEL
+controller = WEL
+add_core = WEL
+trade_goods = fruit
+life_rating = 30 

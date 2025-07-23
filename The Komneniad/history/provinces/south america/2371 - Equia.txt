@@ -1,0 +1,5 @@
+owner = KIB
+trade_goods = timber
+life_rating = 20
+controller = KIB
+add_core = KIB

@@ -1,0 +1,6 @@
+owner = BIR
+controller = BIR
+add_core = BIR
+trade_goods = tropical_wood
+terrain = montane_forest
+life_rating = 33 

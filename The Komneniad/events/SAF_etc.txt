@@ -1,0 +1,194 @@
+country_event = {
+    id = 98235
+    title = "EVTNAME19501" #Witwatersrand Goldrush
+    desc = "EVTDESC98235"
+    picture = "goldrush"
+
+    trigger = {
+        is_greater_power = yes
+        NOT = { has_country_flag = boer_accepted }
+        any_neighbor_country = {
+            OR = {
+                has_country_modifier = witwatersrand_gold_rush
+                AND = {
+                    owns = 2105
+                    2105 = { trade_goods = gold }
+                }
+            }
+            part_of_sphere = no
+            is_greater_power = no
+			NOT = { war_with = THIS }
+        }
+		NOT = { has_country_flag = no_more_witwatersrand }
+    }
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    option = {
+        name = "EVT98235OPTA"
+        random_country = {
+            limit = {
+                OR = {
+                    has_country_modifier = witwatersrand_gold_rush
+                    AND = {
+                        owns = 2105
+                        2105 = { trade_goods = gold }
+                    }
+                }
+                is_greater_power = no
+                is_vassal = no
+                part_of_sphere = no
+            }
+            add_casus_belli = {
+                target = THIS
+                type = add_to_sphere
+                months = 24
+            }
+        }
+
+        random_country = {
+            limit = {
+                OR = {
+                    has_country_modifier = witwatersrand_gold_rush
+                    AND = {
+                        owns = 2105
+                        2105 = { trade_goods = gold }
+                    }
+                }
+                is_greater_power = no
+                is_vassal = no
+                part_of_sphere = yes
+            }
+            sphere_owner = {
+                add_casus_belli = {
+                    target = THIS
+                    type = take_from_sphere
+                    months = 24
+                }
+            }
+        }
+
+        random_country = {
+            limit = { has_country_modifier = witwatersrand_gold_rush }
+            relation = {
+                who = THIS
+                value = -100
+            }
+            remove_country_modifier = witwatersrand_gold_rush
+        }
+    }
+	option = {
+        name = "Never bother me with this again."
+        set_country_flag = no_more_witwatersrand
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 98236
+    title = "EVTNAME98236" #Kimberley Goldrush
+    desc = "EVTDESC98236"
+    picture = "goldrush"
+
+    trigger = {
+        NOT = {
+            primary_culture = boer
+            has_country_flag = kimberley_goldrush
+        }
+        2094 = {
+            trade_goods = gold
+            owned_by = THIS
+        }
+        ORA = { exists = yes }
+        TRN = { exists = yes }
+    }
+
+    mean_time_to_happen = {
+        months = 6
+    }
+
+    option = {
+        name = "EVT98235OPTA"
+        set_country_flag = kimberley_goldrush
+        ORA = { prestige = -5 }
+        TRN = { prestige = -5 }
+        prestige = 10
+        relation = { who = ORA value = -100 }
+        diplomatic_influence = { who = ORA value = -50 }
+        relation = { who = TRN value = -100 }
+        diplomatic_influence = { who = TRN value = -50 }
+    }
+}
+country_event = {
+    id = 98260
+    title = "EVTNAME98260" #Walvis Bay
+    desc = "EVTDESC98260"
+    picture = "walvis"
+
+    trigger = {
+        is_greater_power = yes
+        owns = 2088
+        owns = 2087
+        2083 = { empty = yes }
+        year = 1878
+        has_global_flag = berlin_conference
+        NOT = { has_country_flag = walvis_bay }
+    }
+
+    mean_time_to_happen = { days = 1 }
+    fire_only_once = yes
+
+    option = {
+        name = "EVT98260OPTA"
+        set_country_flag = walvis_bay
+        prestige = 5
+        treasury = -10000
+        2083 = { secede_province = THIS life_rating = 25 any_pop = { literacy = -0.99 } }
+        ai_chance = {
+            factor = 100
+            modifier = {
+                factor = 0.5
+                NOT = { money = 10000 }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT98260OPTB"
+        set_country_flag = walvis_bay
+        prestige = -5
+        ai_chance = { factor = 0 }
+    }
+}
+country_event = {
+    id = 98262
+    title = "EVTNAME98262" #Diamonds Discovered in Kimberley
+    desc = "EVTDESC98262"
+    picture = "diamonds_in_kimberley"
+
+    trigger = {
+		owns = 2093
+		year = 1864
+        civilized = yes
+        2094 = {
+            empty = yes
+            NOT = { trade_goods = gems }
+        }
+	}
+    fire_only_once = yes
+    mean_time_to_happen = { months = 48 }
+
+    option = {
+        name = "EVT98262OPTA"
+        add_country_modifier = { name = gold_rush_country duration = 5475 }
+        2094 = {
+            secede_province = THIS
+            change_province_name = "Kimberley"
+            trade_goods = gems
+            add_province_modifier = { name = gold_rush duration = 1825 }
+            any_pop = { limit = { NOT = { has_pop_culture = boer } } literacy = -0.99 }
+        }
+    }
+}

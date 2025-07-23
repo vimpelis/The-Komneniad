@@ -1,0 +1,156 @@
+KOR = { value = -200 }
+HUB = { value = -200 }
+HEB = { value = -200 }
+YNN = { value = -200 }
+HUI = { value = -200 }
+JIA = { value = -200 }
+HNN = { value = -200 }
+SZC = { value = -200 }
+SXI = { value = -200 }
+TAI = { value = -200 }
+IRY = { value = -200 }
+
+army = {
+    name = "1st Army"
+    location = 1521
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 1521
+    }
+    regiment = {
+        name = "2nd Irregular Infantry Regiment"
+        type = irregular
+        home = 1521
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Regiment"
+        type = irregular
+        home = 1521
+    }
+    regiment = {
+        name = "4th Irregular Infantry Regiment"
+        type = irregular
+        home = 1521
+    }
+	regiment = {
+        name = "5th Irregular Infantry Regiment"
+        type = irregular
+        home = 1520
+    }
+    regiment = {
+        name = "6th Irregular Infantry Regiment"
+        type = irregular
+        home = 1520
+    }
+	regiment = {
+        name = "7th Irregular Infantry Regiment"
+        type = irregular
+        home = 1520
+    }
+    regiment = {
+        name = "8th Irregular Infantry Regiment"
+        type = irregular
+        home = 1523
+    }
+	regiment = {
+        name = "9th Irregular Infantry Regiment"
+        type = irregular
+        home = 1523
+    }
+    regiment = {
+        name = "10th Irregular Infantry Regiment"
+        type = irregular
+        home = 1523
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1523
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1516
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 1516
+    }
+    regiment = {
+        name = "2nd Irregular Infantry Regiment"
+        type = irregular
+        home = 1516
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Regiment"
+        type = irregular
+        home = 1516
+    }
+    regiment = {
+        name = "4th Irregular Infantry Regiment"
+        type = irregular
+        home = 1522
+    }
+	regiment = {
+        name = "5th Irregular Infantry Regiment"
+        type = irregular
+        home = 1522
+    }
+    regiment = {
+        name = "6th Irregular Infantry Regiment"
+        type = irregular
+        home = 1522
+    }
+	regiment = {
+        name = "7th Irregular Infantry Regiment"
+        type = irregular
+        home = 1517
+    }
+    regiment = {
+        name = "8th Irregular Infantry Regiment"
+        type = irregular
+        home = 1517
+    }
+	regiment = {
+        name = "9th Irregular Infantry Regiment"
+        type = irregular
+        home = 1517
+    }
+    regiment = {
+        name = "10th Irregular Infantry Regiment"
+        type = irregular
+        home = 1517
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1517
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 1528
+	regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 1528
+    }
+    regiment = {
+        name = "2nd Irregular Infantry Regiment"
+        type = irregular
+        home = 1528
+    }
+	regiment = {
+        name = "3rd Irregular Infantry Regiment"
+        type = irregular
+        home = 1523
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1523
+    }
+}

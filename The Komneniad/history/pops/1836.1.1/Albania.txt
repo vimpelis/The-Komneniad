@@ -1,0 +1,1043 @@
+#Tirana (193904/48476 POPS)
+######Jews
+########
+849 = {
+    aristocrats = {
+        culture = albanian
+        religion = orthodox
+        size = 460
+    }
+
+    bureaucrats = {
+        culture = greek
+        religion = orthodox
+        size = 107
+    }
+
+    officers = {
+        culture = albanian
+        religion = orthodox
+        size = 91
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 192
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 982
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 614
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 26335
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 4050
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 75
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 3049
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 434
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 231
+    }
+
+    bureaucrats = {
+        culture = greek
+        religion = orthodox
+        size = 54
+    }
+
+    officers = {
+        culture = greek
+        religion = orthodox
+        size = 46
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 96
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 492
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 307
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 13167
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 2025
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 37
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1524
+    }
+}
+#Shkoder (172540/43135 POPS)
+850 = {
+    aristocrats = {
+        culture = albanian
+        religion = orthodox
+        size = 774
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 270
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 1369
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 880
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 8641
+    }
+
+    aristocrats = {
+        culture = albanian
+        religion = catholic
+        size = 70
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = catholic
+        size = 26
+    }
+
+    artisans = {
+        culture = albanian
+        religion = catholic
+        size = 458
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = catholic
+        size = 880
+    }
+
+    farmers = {
+        culture = albanian
+        religion = catholic
+        size = 13526
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 2258
+    }
+
+    aristocrats = {
+        culture = albanian
+        religion = orthodox
+        size = 308
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 88
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 378
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 7416
+    }
+
+    farmers = {
+        culture = serb #Serbo-Montenegrins
+        religion = orthodox
+        size = 3500
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 106
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 37
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 187
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 120
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1178
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 10
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 4
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 62
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 120
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1844
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 308
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 42
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 52
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1011
+    }
+}
+#Durres (37492/9373 POPS)
+851 = {
+    aristocrats = {
+        culture = albanian
+        religion = orthodox
+        size = 759
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 310
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 1522
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 1395
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 12818
+    }
+
+    farmers = {
+        culture = albanian
+        religion = catholic
+        size = 1426
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 2502
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 310
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 6370
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1500
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 650
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 466
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 190
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 933
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 855
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 7857
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 874
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1533
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 190
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 3905
+    }
+}
+#Vlore (59072/14768 POPS)
+852 = {
+    aristocrats = {
+        culture = albanian
+        religion = orthodox
+        size = 435
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 195
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 1012
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 217
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 1744
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 5320
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 380
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 109
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 1696
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = sunni
+        size = 152
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 276
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 122
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 638
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 138
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1102
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 3360
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 240
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 68
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1072
+    }
+}
+#Gjirokaster (121088/30272 POPS)
+853 = {
+    aristocrats = {
+        culture = albanian
+        religion = orthodox
+        size = 96
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 32
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 283
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 38
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 493
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 2205
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 157
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 63
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 31
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 31
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 5474
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 183
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 150
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 367
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 2698
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = orthodox
+        size = 276
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 184
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 61
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 270
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 73
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 939
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 4200
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 300
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 60
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 60
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 60
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 10428
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 82
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 27
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 121
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 33
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 423
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 1890
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 135
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 27
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 27
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 27
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 4692
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 97
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 32
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 38
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 494
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 2205
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 158
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 32
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 32
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 5474
+    }
+}
+#Korce (72688/18172 POPS)
+3307 = {
+}
+#Shupenze (136288/34072 POPS)
+3308 = {
+    aristocrats = {
+        culture = albanian
+        religion = orthodox
+        size = 209
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 70
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 360
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 83
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 3870
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 371
+    }
+
+    soldiers = {
+        culture = albanian
+        religion = orthodox
+        size = 80
+    }
+
+    clergymen = {
+        culture = albanian
+        religion = orthodox
+        size = 68
+    }
+
+    artisans = {
+        culture = albanian
+        religion = orthodox
+        size = 68
+    }
+
+    farmers = {
+        culture = albanian
+        religion = orthodox
+        size = 15218
+    }
+
+    soldiers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 122
+    }
+
+    clergymen = {
+        culture = bulgarian
+        religion = orthodox
+        size = 100
+    }
+
+    artisans = {
+        culture = bulgarian
+        religion = orthodox
+        size = 245
+    }
+
+    farmers = {
+        culture = bulgarian
+        religion = orthodox
+        size = 3799
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 122
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 40
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 180
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 48
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 2276
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 218
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 40
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 40
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 40
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 8952
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 37
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 15
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 683
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 65
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 12
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 2685
+    }
+}

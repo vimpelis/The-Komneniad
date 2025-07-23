@@ -1,0 +1,6 @@
+trade_goods = fish
+terrain = montane_forest
+life_rating = 15
+add_core = ATA
+owner = ATA
+controller = ATA

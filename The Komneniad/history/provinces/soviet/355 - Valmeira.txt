@@ -1,0 +1,8 @@
+owner = VID
+controller = VID
+add_core = UBD
+add_core = VID
+trade_goods = cattle
+terrain = valmiera
+life_rating = 35
+add_core = LAT

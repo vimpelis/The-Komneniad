@@ -1,0 +1,6 @@
+owner = FRA
+controller = FRA
+trade_goods = cattle
+life_rating = 25
+terrain = grandbassam
+colonial = 2

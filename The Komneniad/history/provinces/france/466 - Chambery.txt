@@ -1,0 +1,7 @@
+owner = ARE
+controller = ARE
+add_core = ARE
+trade_goods = wool
+life_rating = 30
+terrain = chambery
+add_core = SVY

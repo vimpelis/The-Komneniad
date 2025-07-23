@@ -1,0 +1,6 @@
+owner = RUS
+controller = RUS
+add_core = TBA
+trade_goods = silk
+life_rating = 35
+terrain = montane_forest

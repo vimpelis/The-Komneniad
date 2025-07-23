@@ -1,0 +1,7 @@
+owner = AYL
+controller = AYL
+trade_goods = cotton
+life_rating = 35
+terrain = atlanta
+add_core = AYL
+state_building = { level = 1 building = ammunition_factory upgrade = yes } 

@@ -1,0 +1,39 @@
+VOC = { value = 100 }
+XHO = { value = -200 }
+
+army = {
+    name = "Army of the Cape"
+    location = 2087
+    regiment = {
+        name = "1st Infantry Brigade"
+        type = infantry
+        home = 2087
+    }
+    regiment = {
+        name = "2nd Infantry Brigade"
+        type = infantry
+        home = 2089
+    }
+    regiment = {
+        name = "1st Artillery Brigade"
+        type = artillery
+        home = 2090
+    }
+}
+
+navy = {
+    name = "Merchant Navy"
+    location = 2087
+	ship = {
+		name = "de Kaap"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

@@ -1,0 +1,6 @@
+owner = YUC
+controller = YUC
+trade_goods = fish
+life_rating = 35
+terrain = campeche
+add_core = YUC

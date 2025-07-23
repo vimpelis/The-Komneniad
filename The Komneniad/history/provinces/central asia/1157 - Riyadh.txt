@@ -1,0 +1,6 @@
+owner = ARA
+controller = ARA
+trade_goods = wool
+life_rating = 32
+terrain = riyadh
+add_core = ARA

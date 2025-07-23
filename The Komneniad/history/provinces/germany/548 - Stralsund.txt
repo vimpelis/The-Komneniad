@@ -1,0 +1,8 @@
+owner = WLG
+controller = WLG
+add_core = WLG
+add_core = GER
+add_core = POM
+trade_goods = fish
+terrain = stralsund
+life_rating = 40 

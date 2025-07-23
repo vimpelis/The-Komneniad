@@ -1,0 +1,32 @@
+#Starting event
+country_event = {
+    id = 156000
+    title = "Neither a state, nor a nation"
+    desc = "156000DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "I wish we lived in simpler times."
+		any_pop = {
+			limit = { has_pop_culture = west_german }
+			militancy = 2
+			consciousness = 2
+		}
+		any_pop = {
+			limit = { has_pop_culture = wallonian }
+			militancy = 3
+			consciousness = 3
+		}
+		any_pop = {
+			limit = { has_pop_culture = anglo_saxon }
+			militancy = 4
+			consciousness = 4
+		}
+		add_country_modifier = {
+			name = BRB_feudalism
+			duration = -1
+		}
+    }
+}

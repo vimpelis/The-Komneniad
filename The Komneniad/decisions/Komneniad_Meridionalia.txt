@@ -1,0 +1,180 @@
+political_decisions = {
+	AST_claim_new_holland = {
+		picture = meridionalia
+		potential = {
+			tag = AST
+			NOT = { has_country_flag = AST_claim_new_holland }
+		}
+		allow = {
+			war = no
+			OR = {
+				ENG_2497 = { owned_by = THIS }
+				state_n_government = 1
+			}
+		}
+		effect = {
+			prestige = 10
+			badboy = 5
+			ENG_2497 = { add_core = THIS }
+			random_owned = {
+                limit = {
+                    2497 = { empty = yes }
+                }
+                2497 = { secede_province = THIS }
+				2498 = { secede_province = THIS }
+				2499 = { secede_province = THIS }
+				2501 = { secede_province = THIS }
+				2502 = { secede_province = THIS }
+				2504 = { secede_province = THIS }
+				2602 = { secede_province = THIS }
+            }
+			set_country_flag = AST_claim_new_holland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	AST_claim_occitania = {
+		picture = occitania
+		potential = {
+			tag = AST
+			OR = {
+				government = presidential_dictatorship
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+			}
+			NOT = { has_country_flag = AST_claim_occitania }
+		}
+		allow = {
+			war = no
+			OR = {
+				government = presidential_dictatorship
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+			}
+			rank = 12
+		}
+		effect = {
+			badboy = 24.5
+			add_accepted_culture = occitan
+			OCC = { all_core = { add_core = THIS } }
+			set_country_flag = AST_claim_occitania
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.95
+            }
+		}
+	}
+	
+	AST_form_occitania = {
+		picture = occitania
+		potential = {
+			tag = AST
+			has_country_flag = AST_claim_occitania
+			NOT = { exists = OCC }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 50
+			change_tag = OCC
+			capital = 455
+			primary_culture = occitan
+			add_accepted_culture = australian
+			FRA_445 = { remove_core = AST }
+			FRA_461 = { remove_core = AST }
+			FRA_458 = { remove_core = AST }
+			FRA_455 = { remove_core = AST }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AST_colonize_interior = {
+		picture = meridionalia
+		potential = {
+			tag = AST
+			OR = {
+				2496 = { empty = yes }
+				2506 = { empty = yes }
+				2604 = { empty = yes }
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				year = 1850
+				total_pops = 250000
+			}
+		}
+		effect = {
+			prestige = 5
+			random_owned = {
+                limit = {
+                    2604 = { empty = yes }
+                }
+                2604 = { secede_province = THIS }
+				2489 = { secede_province = THIS }
+				2490 = { secede_province = THIS }
+            }
+			random_owned = {
+                limit = {
+                    2475 = { empty = yes }
+                }
+                2475 = { secede_province = THIS }
+            }
+			random_owned = {
+                limit = {
+                    2496 = { empty = yes }
+                }
+                2496 = { secede_province = THIS }
+				2495 = { secede_province = THIS }
+            }
+			random_owned = {
+                limit = {
+                    2506 = { empty = yes }
+                }
+                2506 = { secede_province = THIS }
+				2603 = { secede_province = THIS }
+				2507 = { secede_province = THIS }
+            }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AST_colonize_interior_2 = {
+		picture = meridionalia
+		potential = {
+			tag = AST
+			owns = 2497
+			2500 = { empty = yes }
+			has_country_flag = AST_claim_new_holland
+		}
+		allow = {
+			war = no
+			2507 = { empty = no }
+		}
+		effect = {
+			prestige = 5
+			random_owned = {
+                limit = {
+                    2500 = { empty = yes }
+                }
+                2500 = { secede_province = THIS }
+				2503 = { secede_province = THIS }
+				2601 = { secede_province = THIS }
+				2605 = { secede_province = THIS }
+            }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

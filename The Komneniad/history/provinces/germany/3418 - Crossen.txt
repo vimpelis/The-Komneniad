@@ -1,0 +1,9 @@
+add_core = LUS
+add_core = SLS
+trade_goods = grain
+life_rating = 40
+terrain = reichenau
+owner = ZPD
+controller = ZPD
+add_core = ZPD
+add_core = BOH

@@ -1,0 +1,8 @@
+owner = HEB
+controller = HEB
+add_core = CHI
+trade_goods = wool
+life_rating = 32
+terrain = hills
+add_core = HEB
+fort = 1

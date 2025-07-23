@@ -1,0 +1,7 @@
+owner = HEB
+controller = HEB
+add_core = CHI
+trade_goods = tea
+life_rating = 32
+terrain = kaifeng
+add_core = HEB

@@ -1,0 +1,12 @@
+owner = DAN
+controller = DAN
+add_core = ENG
+trade_goods = grain
+life_rating = 35
+terrain = york
+add_core = DAN
+state_building = { level = 2 building = clipper_shipyard upgrade = yes } 
+state_building = { level = 2 building = glass_factory upgrade = yes } 
+state_building = { level = 1 building = canned_food_factory upgrade = yes }
+state_building = { level = 1 building = liquor_distillery upgrade = yes }
+state_building = { level = 1 building = regular_clothes_factory upgrade = yes }  

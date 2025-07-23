@@ -1,0 +1,7 @@
+owner = CLT
+controller = CLT
+add_core = CLT
+add_core = SCO
+trade_goods = wool
+terrain = shetland
+life_rating = 30 

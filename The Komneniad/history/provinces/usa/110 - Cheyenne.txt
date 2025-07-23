@@ -1,0 +1,7 @@
+owner = CAL
+controller = CAL
+add_core = CAL
+colonial = 2
+trade_goods = grain
+terrain = rocksprings
+life_rating = 35

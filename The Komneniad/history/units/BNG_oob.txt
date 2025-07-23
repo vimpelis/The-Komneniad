@@ -1,0 +1,109 @@
+army = {
+    name = "1st Army"
+    location = 1251
+    regiment = {
+        name = "1st Infantry Brigade"
+        type = infantry
+        home = 1251
+    }
+	regiment = {
+        name = "2nd Infantry Brigade"
+        type = infantry
+        home = 1253
+    }
+	regiment = {
+        name = "3rd Infantry Brigade"
+        type = infantry
+        home = 1256
+    }
+	regiment = {
+        name = "4th Infantry Brigade"
+        type = infantry
+        home = 1255
+    }
+	regiment = {
+        name = "5th Infantry Brigade"
+        type = infantry
+        home = 1252
+    }
+	regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1249
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1254
+    }
+	regiment = {
+        name = "1st Artillery Brigade"
+        type = artillery
+        home = 1257
+    }
+	regiment = {
+        name = "2nd Artillery Brigade"
+        type = artillery
+        home = 2566
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = hussar
+        home = 1258
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1240
+    regiment = {
+        name = "1st Infantry Brigade"
+        type = infantry
+        home = 1240
+    }
+	regiment = {
+        name = "2nd Infantry Brigade"
+        type = infantry
+        home = 1241
+    }
+	regiment = {
+        name = "3rd Infantry Brigade"
+        type = infantry
+        home = 1243
+    }
+	regiment = {
+        name = "4th Infantry Brigade"
+        type = infantry
+        home = 1247
+    }
+	regiment = {
+        name = "5th Infantry Brigade"
+        type = infantry
+        home = 1248
+    }
+	regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1250
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1249
+    }
+	regiment = {
+        name = "1st Artillery Brigade"
+        type = artillery
+        home = 1245
+    }
+	regiment = {
+        name = "2nd Artillery Brigade"
+        type = artillery
+        home = 1243
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = hussar
+        home = 1246
+    }
+}

@@ -1,0 +1,292 @@
+country_event = {
+
+    id = 35302 #Parallel to PAP35700
+    title = "EVTNAME35700"
+    desc = "EVTDESC35700"
+    picture = "pope"
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITS
+        }
+        year = 1891
+        NOT = {
+            year = 1894
+            exists = PAP
+            has_global_flag = RerumNovarum
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1892
+        }
+
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1893
+        }
+    }
+
+    option = {
+        name = "EVTOPTA35700"
+        prestige = 5
+        labourers = {
+            consciousness = 1
+        }
+        craftsmen = {
+            consciousness = 1
+        }
+        artisans = {
+            consciousness = 1
+        }
+        soldiers = {
+            consciousness = 1
+        }
+        set_global_flag = RerumNovarum
+    }
+}
+
+country_event = {
+
+    id = 96165
+    title = "EVTNAME96165" #Italian Unification
+    desc = "EVTDESC96165"
+    picture = "unite"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT96165OPTA"
+        set_country_flag = objects_to_italy
+        relation = { who = ITA value = -100 }
+
+        random_owned = {
+            limit = { owner = { is_greater_power = yes } }
+            owner = { diplomatic_influence = { who = ITA value = -200 } }
+        }
+
+        leave_alliance = ITA
+
+        casus_belli = {
+            target = ITA
+            type = humiliate
+            months = 12
+        }
+        random_country = {
+            limit = {
+                tag = ITA
+                any_owned_province = { NOT = { is_core = ITA } }
+            }
+            add_casus_belli = { target = THIS type = free_peoples months = 36 }
+        }
+
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0.1
+                is_sphere_leader_of = ITA
+            }
+            modifier = {
+                factor = 0.25
+                alliance_with = ITA
+            }
+            modifier = {
+                factor = 0.3
+                primary_culture = french
+                NOT = {
+                    465 = { owned_by = ITA }
+                    3681 = { owned_by = ITA }
+                    466 = { owned_by = ITA }
+                    472 = { owned_by = ITA }
+                }
+            }
+            modifier = {
+                factor = 0.5
+                OR = {
+                    war_policy = pacifism
+                    war_policy = anti_military
+                }
+            }
+            modifier = {
+                factor = 0.25
+                OR = {
+                    is_disarmed = yes
+                    has_country_modifier = recently_lost_war
+                    war = yes
+                }
+            }
+            modifier = {
+                factor = 1.25
+                NOT = { relation = { who = ITA value = 0 } }
+            }
+            modifier = {
+                factor = 0.5
+                relation = { who = ITA value = 100 }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT96165OPTB"
+        set_country_flag = accepts_italy
+        relation = {
+            who = ITA
+            value = 100
+        }
+        random_owned = {
+            limit = {
+                owner = { is_greater_power = yes }
+            }
+            owner = {
+                diplomatic_influence = {
+                    who = ITA
+                    value = 25
+                }
+            }
+        }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0.5
+                war_policy = jingoism
+            }
+            modifier = {
+                factor = 2.5
+                primary_culture = french
+                NOT = {
+                    465 = { owned_by = ITA }
+                    3681 = { owned_by = ITA }
+                    466 = { owned_by = ITA }
+                    472 = { owned_by = ITA }
+                }
+            }
+            modifier = {
+                factor = 0.5
+                primary_culture = french
+                OR = {
+                    465 = { owned_by = ITA }
+                    3681 = { owned_by = ITA }
+                    466 = { owned_by = ITA }
+                    472 = { owned_by = ITA }
+                }
+            }
+            modifier = {
+                factor = 0
+                any_core = { owned_by = ITA }
+            }
+            modifier = {
+                factor = 0.1
+                OR = {
+                    tag = AUS
+                    tag = AUB
+                    tag = KUK
+                }
+            }
+            modifier = {
+                factor = 0.5
+                NOT = { relation = { who = ITA value = 0 } }
+            }
+            modifier = {
+                factor = 1.5
+                relation = { who = ITA value = 100 }
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 96172
+    title = "EVTNAME96172" #Altare della patria construction
+    desc = "EVTDESC96172"
+    picture = "vittoriano"
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITS
+        }
+        owns = 749
+        has_country_flag = altar_built
+        NOT = { has_country_modifier = monument_under_construction }
+	}
+
+    fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVTOPTA96172"
+        prestige = 15
+        war_exhaustion = -20
+        749 = { set_province_flag = fine_arts }
+    }
+}
+
+# The adventures of Pinocchio
+country_event = {
+
+    id = 110054
+    title = "EVTNAME110054"
+    desc = "EVTDESC110054"
+    picture = "ITA_pinocchio"
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITS
+            tag = TUS
+        }
+        year = 1881
+        owns = 744
+    }
+
+    mean_time_to_happen = {
+        months = 36
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT110054OPTA" #A fine tale for children! And only for children.
+        prestige = 2
+        add_country_modifier = { name = reading duration = 730 }
+        any_pop = { scaled_consciousness = { factor = 1 } }
+    }
+}
+
+country_event = {
+    id = 6101
+    title = "EVTNAME6101" # Tripoli Grand Prix
+    desc = "EVTDESC6101"
+    picture = tripoli_grand_prix
+
+    fire_only_once = yes
+
+    trigger = {
+        is_culture_group = italian
+        year = 1915
+        owns = 1731
+        invention = daimlers_automobile
+    }
+
+    mean_time_to_happen = { months = 24 }
+
+    option = {
+        name = "EVT6100OPTA"
+        prestige = 5
+        1731 = {
+            add_province_modifier = {
+                name = small_immigration_boom
+                duration = 1000
+            }
+        }
+    }
+}

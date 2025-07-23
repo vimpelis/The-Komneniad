@@ -1,0 +1,6 @@
+owner = SAH
+controller = SAH
+add_core = SAH
+trade_goods = fruit
+terrain = montane_forest
+life_rating = 34 

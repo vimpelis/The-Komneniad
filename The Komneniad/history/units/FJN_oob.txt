@@ -1,0 +1,209 @@
+GNG = {
+    value = 200
+}
+YNN = {
+    value = 75
+}
+HUB = {
+    value = -100
+}
+HEB = {
+    value = -100
+}
+HUI = {
+    value = -100
+}
+JIA = {
+    value = -100
+}
+HNN = {
+    value = -100
+}
+SZC = {
+    value = -100
+}
+SXI = {
+    value = -100
+}
+TAI = {
+    value = -150
+}
+IRY = {
+    value = -50
+}
+KOR = {
+    value = -50
+}
+JAP = {
+    value = -100
+}
+
+army = {
+    name = "1st Army"
+    location = 1482
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1609
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1607
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1610
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1611
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1546
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1546
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1483
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 1482
+    }
+	
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 1484
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1609
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1494
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1494
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1487
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1486
+    }
+}
+
+army = {
+    name = "Lanfang Army"
+    location = 2665
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2665
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 1482
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

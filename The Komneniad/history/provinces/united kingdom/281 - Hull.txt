@@ -1,0 +1,8 @@
+owner = DAN
+controller = DAN
+add_core = ENG
+trade_goods = fish
+life_rating = 35
+naval_base = 2
+terrain = hull
+add_core = DAN

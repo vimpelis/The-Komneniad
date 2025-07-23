@@ -1,0 +1,8 @@
+owner = ZND
+controller = ZND
+add_core = KDS
+add_core = LUR
+trade_goods = wool
+life_rating = 35
+terrain = ilam
+add_core = ZND

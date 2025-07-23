@@ -1,0 +1,8 @@
+owner = ASY
+controller = ASY
+add_core = ASY
+add_core = KDS
+add_core = SYR
+add_core = UQA
+trade_goods = wool
+life_rating = 35 

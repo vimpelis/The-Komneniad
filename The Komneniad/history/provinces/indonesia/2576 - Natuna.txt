@@ -1,0 +1,7 @@
+owner = FJN
+controller = FJN
+add_core = LAN
+add_core = RIA
+trade_goods = fish
+terrain = small_island
+life_rating = 31

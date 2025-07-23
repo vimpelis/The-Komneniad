@@ -1,0 +1,6 @@
+owner = TAI
+controller = TAI
+add_core = TAI
+terrain = small_island
+trade_goods = fish
+life_rating = 32
