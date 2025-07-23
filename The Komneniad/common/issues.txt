@@ -642,14 +642,9 @@ political_reforms = {
             cb_generation_speed_modifier = -0.15
             supply_consumption = -0.1
             allow = {
-                OR = {
-                    AND = {
-                        number_of_states = 2
-                        can_create_vassals = yes
-                        is_cultural_union = yes
-                    }
-                    has_country_flag = is_swiss
-                }
+				number_of_states = 2
+				can_create_vassals = yes
+				is_cultural_union = yes
             }
         }
         regionalism = {
@@ -678,7 +673,6 @@ political_reforms = {
                 is_cultural_union = yes
                 can_create_vassals = yes
                 is_vassal = no
-                NOT = { has_country_flag = the_slavery_debate }
             }
         }
         unitary = {
