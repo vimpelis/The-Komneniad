@@ -326,6 +326,27 @@ country_event = {
                 political_parties = secret_ballots
             }
         }
+		modifier = {
+            factor = 0.5
+            upper_house = {
+				ideology = reactionary
+				value = 0.3
+			}
+        }
+		modifier = {
+            factor = 0.1
+            upper_house = {
+				ideology = reactionary
+				value = 0.6
+			}
+        }
+		modifier = {
+            factor = 0.1
+            upper_house = {
+				ideology = reactionary
+				value = 0.9
+			}
+        }
     }
 
     option = {

@@ -9729,6 +9729,12 @@ german_unification = {
 		any_owned = {
 			limit = {
 				is_core = GER
+				NOT = {
+					OR = {
+						region = PRU_690
+						region = PRU_695
+					}
+				}
 			}
 			secede_province = THIS
 		}
