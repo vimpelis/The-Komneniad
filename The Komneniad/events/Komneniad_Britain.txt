@@ -43,7 +43,12 @@ country_event = {
         name = "We don't need it, give it to them."
 		prestige = 5
 		badboy = -1
-		2509 = { secede_province = DAN }
+		any_owned = {
+			limit = {
+				is_core = NZL
+			}
+			secede_province = DAN
+		}
 		DAN = { country_event = 157003 }
 		ai_chance = {
             factor = 95
