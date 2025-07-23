@@ -1,27 +1,27 @@
 # The-Komneniad
-The Komneniad is an alternate history mod that aims to combine the extensive flavor of newer mods with the vanilla feel of Victoria II.
+**The Komneniad** is an alternate history mod that aims to combine the extensive flavor of newer mods with the vanilla feel of Victoria II.
 It is inspired by various mods from all Paradox games, and features many scenarios that are often overlooked in Victoria II alternate history mods,
 such as a colonial Mali Empire, an Ethiopian conquest of the Middle East, and a united West Slavic state.
 
-What is the mod about?
-	The Komneniad is not centered on a specific point of divergence. While it may technically exist, it is of absolutely no importance,
+**What is the mod about?**
+  The Komneniad is not centered on a specific point of divergence. While it may technically exist, it is of absolutely no importance,
 	since the map was created based on what the developer thought seemed cool, be it satisfying borders, potentially interesting gameplay
 	opportunities or less explored alternate history scenarios. It is a mish-mash of all of your favourite (and not) alt-hist universes,
 	with small pieces of inspiration taken from all time periods and all Paradox games.
 
-Then why is it called "The Komneniad"?
+**Then why is it called "The Komneniad"?**
 	During the development process, it just so turned out that at large, the European politics were dictated by the actions of the Byzantine Empire. 
 	With there being no other unifying quality between all of the features of the mod, it was chosen to name the whole thing after the Byzantines.
 	Besides, doesn't that eagle on the logo look cool?
 
-Where can I find the lore?
+**Where can I find the lore?**
 	Small pieces of lore are scattered among the mod's hundreds of events, with most countries having a starting event with a short lore dump.
 	Pretty much all you need to know when getting into the mod is that the defining event of the last few decades were the Martletist Wars,
 	the in-universe version of the OTL French Revolutionary Wars. The symbol of the revolution in this mod, the Martlet, is an ancient heraldic
 	image found in England - it is a bird with no legs, thus being unable to land. It represents England's centuries-long struggle against
 	the various invaders, most notably the Danes, who ruled England since the 12th century.
 	
-The other important things to know are:
+**The other important things to know are:**
 	- The mod is based on GFM, so all credits to the GFM devs for a major part of the content. However, since the mod has been in development for
 	  quite a while, the exact GFM version is from somewhere around July 2023, so a lot of newer content isn't in.
 	- The Komneniad is a one-man project, and thus, while I will try to keep regularly updating the mod, don't expect exceptional speed.
@@ -36,12 +36,12 @@ The other important things to know are:
 	  automatically through monthly cleanup. See the bottom of this file for specific province IDs.
 	- Make sure to check out new African post-colonial tags! Cores of them appear after 1890 (and only if the corresponding region is consolidated).
 	
-WARNING: Playing in small resolutions will cause problems with the main menu. The recommended resolution is 1920x1200 and above.
+**WARNING:** Playing in small resolutions will cause problems with the main menu. The recommended resolution is 1920x1200 and above.
 
 
-Country tags:
+**Country tags:**
 
-EUROPE:
+**EUROPE:**
 CLT - Celtic Union
 DAN - Daneland
 LON - London
@@ -67,13 +67,13 @@ VID - Vidzeme
 DOR - Dorpat
 KUR - Courland
 
-EUROPEAN FORMABLES:
+**EUROPEAN FORMABLES:**
 LTN - Latin Empire
 DIE - Dietsland
 WST - Westland
 CRP - Carpathia
 
-ASIA:
+**ASIA:**
 UQA - Al-Uqaydat
 ZND - Zandiyeh
 MGT - Manghits
@@ -89,11 +89,11 @@ CMP - Champa
 YUE - Yue
 FJN - Min
 
-ASIAN FORMABLES:
+**ASIAN FORMABLES:**
 XIE - Xie
 TUT - Tultaehan
 
-NEW WORLD:
+**NEW WORLD:**
 WEL - Welserland
 SAH - Sahel Al-Wafir
 BIR - Biru
@@ -106,12 +106,12 @@ NBS - Vaskonia Berria
 FLU - Fluvial
 IRO - Northw. Conf.
 
-NEW WORLD FORMABLES:
+**NEW WORLD FORMABLES:**
 CLM - Colombia
 AAL - Ard Al-Hurriyah
 
 
-Event ID ranges:
+**Event ID ranges:**
 150000 - Iberia
 151000 - Byzantium
 152000 - Russia
@@ -138,7 +138,7 @@ Event ID ranges:
 172000 - France
 173000 - Arajana
 
-Random notes that are not present in any of the events:
+**Random notes that are not present in any of the events:**
 
 	The name of the Korean formable, Tultaehan (Duldaehan in Revised Romanization of Korean), means "Two Great Han", in reference to the Han Chinese
 	and the name that is sometimes used to refer to Korea (Han). You could also translate it as "two for one", which also fits I guess.
@@ -147,41 +147,41 @@ Random notes that are not present in any of the events:
 	This means they don't really care about expanding further into the continent.
 
 
-African provinces trade goods changes (after 1890):
-1935 = { trade_goods = coal } #Aruchukwu (representing Enugu)
-1949 = { trade_goods = coal } #Hadejia
-2054 = { trade_goods = coal }
-2072 = { trade_goods = coal }
-2073 = { trade_goods = coal }
+**African provinces trade goods changes (after 1890):**
+1935 = { trade_goods = coal } #Aruchukwu (representing Enugu)  
+1949 = { trade_goods = coal } #Hadejia  
+2054 = { trade_goods = coal }  
+2072 = { trade_goods = coal }  
+2073 = { trade_goods = coal }  
 
-1991 = { trade_goods = ivory }
+1991 = { trade_goods = ivory }  
 
-1886 = { trade_goods = grain } #Bo
-1809 = { trade_goods = grain } #Say
-2017 = { trade_goods = grain }
+1886 = { trade_goods = grain } #Bo  
+1809 = { trade_goods = grain } #Say  
+2017 = { trade_goods = grain }  
 
-1878 = { trade_goods = timber }
+1878 = { trade_goods = timber }  
 
-2075 = { trade_goods = gold } #Francistown gold
-1881 = { trade_goods = gold } #Dinguiraye
-1909 = { trade_goods = gold } #Sekondi (Tarkwa Mine)
-1910 = { trade_goods = gold } #Kumai (Obuasi Mine)
+2075 = { trade_goods = gold } #Francistown gold  
+1881 = { trade_goods = gold } #Dinguiraye  
+1909 = { trade_goods = gold } #Sekondi (Tarkwa Mine)  
+1910 = { trade_goods = gold } #Kumai (Obuasi Mine)  
 
-3678 = { trade_goods = sugar }
-2050 = { trade_goods = sugar }
-1982 = { trade_goods = sugar }
+3678 = { trade_goods = sugar }  
+2050 = { trade_goods = sugar }  
+1982 = { trade_goods = sugar }  
 
-1879 = { trade_goods = fruit } #Boffa/Conakry
-1919 = { trade_goods = fruit }
-2039 = { trade_goods = fruit }
-2041 = { trade_goods = fruit }
-1994 = { trade_goods = fruit }
+1879 = { trade_goods = fruit } #Boffa/Conakry  
+1919 = { trade_goods = fruit }  
+2039 = { trade_goods = fruit }  
+2041 = { trade_goods = fruit }  
+1994 = { trade_goods = fruit }  
 
-2031 = { trade_goods = cattle }
-2076 = { trade_goods = cattle }
-2077 = { trade_goods = cattle }
-2574 = { trade_goods = cattle }
-3649 = { trade_goods = cattle }
+2031 = { trade_goods = cattle }    
+2076 = { trade_goods = cattle }  
+2077 = { trade_goods = cattle }  
+2574 = { trade_goods = cattle }  
+3649 = { trade_goods = cattle }  
 
 2064 = { trade_goods = tea }
 2065 = { trade_goods = tea }
