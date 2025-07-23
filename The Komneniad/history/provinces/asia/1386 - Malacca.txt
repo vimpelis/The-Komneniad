@@ -1,7 +1,6 @@
 owner = ADU
 controller = ADU
 add_core = JOH
-add_core = SGP
 trade_goods = fruit
 life_rating = 37
 colonial = 2

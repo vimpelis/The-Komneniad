@@ -26,14 +26,6 @@ HAR = {
     value = 50
 }
 
-MAJ = {
-    value = -200
-}
-
-WRL = {
-    value = -200
-}
-
 OMA = {
     value = 100
 }

@@ -1,5 +1,5 @@
 capital = 2247
-primary_culture = north_andean
+primary_culture = mexican
 religion = catholic
 government = democracy
 plurality = 25.0
@@ -80,5 +80,3 @@ steam_powered_sugar_mills = yes
 #Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 0
-
-oob = "CLM_oob.txt"

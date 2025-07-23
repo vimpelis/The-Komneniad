@@ -74,6 +74,5 @@ post_napoleonic_thought = 1
 post_nelsonian_thought = 1
 private_banks = 1
 piston_steam_engine = 1
-prestige = 0
 
 oob = "FRI_oob.txt"

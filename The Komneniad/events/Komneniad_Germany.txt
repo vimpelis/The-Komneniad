@@ -1,5 +1,5 @@
 #155000 - Starting event (Bavaria)
-#01 - 
+#01 - Starting event (Everyone else)
 
 #Starting event (Bavaria)
 country_event = {

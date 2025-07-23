@@ -304,8 +304,14 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 15787
+        size = 12787
     }
+	
+	craftsmen = {
+		culture = greek
+		religion = orthodox
+		size = 3000
+	}
 
     clergymen = {
         culture = bulgarian
@@ -1006,7 +1012,13 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 47550
+        size = 40550
+    }
+	
+	craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 7000
     }
 
     aristocrats = {
@@ -1458,7 +1470,13 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 22995
+        size = 18995
+    }
+	
+	craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 4000
     }
 
     aristocrats = {
@@ -2400,7 +2418,13 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 24350
+        size = 20350
+    }
+	
+	craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 4000
     }
 
     aristocrats = {
@@ -4833,16 +4857,10 @@
         size = 47520
     }
 
-    farmers = {
+    craftsmen = {
         culture = anatolian
         religion = orthodox
         size = 1782
-    }
-
-    farmers = {
-        culture = circassian
-        religion = orthodox
-        size = 297
     }
 
     soldiers = {

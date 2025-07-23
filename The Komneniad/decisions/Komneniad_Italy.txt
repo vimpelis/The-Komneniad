@@ -76,6 +76,33 @@ political_decisions = {
 		}
 	}
 	
+	italia_irredenta_next = {
+		picture = italia_irredenta
+		potential = {
+			tag = ITA
+			has_country_flag = italia_irredenta
+			NOT = { has_country_flag = italia_irredenta_next }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 8
+			AUS_780 = { add_core = THIS }
+			SAR_466 = { add_core = THIS }
+			set_country_flag = italia_irredenta_next
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
 	ITA_claim_africa = {
 		picture = tunisia_map
 		potential = {

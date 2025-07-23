@@ -1,6 +1,5 @@
 owner = ADU
 controller = ADU
-add_core = SGP
 add_core = PRK
 trade_goods = grain
 life_rating = 37

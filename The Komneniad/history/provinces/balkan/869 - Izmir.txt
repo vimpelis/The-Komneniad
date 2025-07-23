@@ -4,3 +4,5 @@ add_core = BYZ
 trade_goods = fruit
 life_rating = 35
 terrain = smyrna
+state_building = { level = 1 building = clipper_shipyard upgrade = yes } 
+state_building = { level = 1 building = lumber_mill upgrade = yes } 

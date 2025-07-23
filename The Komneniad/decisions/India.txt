@@ -493,7 +493,6 @@ political_decisions = {
                 KAL = { in_sphere = THIS }
 				KHN = { in_sphere = THIS }
                 MAK = { in_sphere = THIS }
-                LAS = { in_sphere = THIS }
             }
         }
 
@@ -570,22 +569,6 @@ political_decisions = {
             random_country = {
                 limit = {
                     tag = MAK
-                    exists = yes
-                    ai = no
-                }
-                country_event = 11101
-            }
-            random_country = {
-                limit = {
-                    tag = LAS
-                    exists = yes
-                    ai = yes
-                }
-                THIS = { inherit = LAS }
-            }
-            random_country = {
-                limit = {
-                    tag = LAS
                     exists = yes
                     ai = no
                 }
@@ -997,7 +980,6 @@ political_decisions = {
             NOT = { tag = KAL }
 			NOT = { tag = KHN }
             NOT = { tag = MAK }
-			NOT = { tag = LAS }
             NOT = { tag = SIN }
             year = 1880
             OR = {
@@ -1014,13 +996,6 @@ political_decisions = {
                         }
                     }
                     MAK = { all_core = {
-                        OR = {
-                            owned_by = THIS
-                            owner = { OR = { is_vassal = no vassal_of = THIS } ai = yes in_sphere = THIS war = no }
-                            }
-                        }
-                    }
-					LAS = { all_core = {
                         OR = {
                             owned_by = THIS
                             owner = { OR = { is_vassal = no vassal_of = THIS } ai = yes in_sphere = THIS war = no }
@@ -1273,7 +1248,6 @@ political_decisions = {
 			KSN = { all_core = { add_core = PAK remove_core = KSN } }
             KAL = { all_core = { add_core = PAK remove_core = KAL } }
 			KHN = { all_core = { add_core = PAK remove_core = KAL } }
-			LAS = { all_core = { add_core = PAK remove_core = KAL } }
             MAK = { all_core = { add_core = PAK remove_core = MAK } }
             SIN = { all_core = { add_core = PAK remove_core = SIN } }
             PNJ = { all_core = { add_core = PAK } }

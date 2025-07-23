@@ -311,13 +311,6 @@ acquire_core_state = {
 
     can_use = {
 		is_substate = no
-        NOT = {
-            AND = {
-                #THIS = { ai = yes }
-                has_global_flag = sw_set
-                NOT = { year = 1840 }
-            }
-        }
         OR = {
             AND = {
                 THIS = { total_amount_of_ships = 5 }
@@ -402,13 +395,6 @@ acquire_all_cores = {
     good_relation_militancy_factor = 1
 
     can_use = {
-        NOT = {
-            AND = {
-                #THIS = { ai = yes }
-                has_global_flag = sw_set
-                NOT = { year = 1840 }
-            }
-        }
         civilized = yes
         NOT = { is_our_vassal = THIS }
         number_of_states = 2 # annex if you want their last state
@@ -879,13 +865,6 @@ annex_core_country = {
     good_relation_militancy_factor = 1
 
     can_use = {
-        NOT = {
-            AND = {
-                #THIS = { ai = yes }
-                has_global_flag = sw_set
-                NOT = { year = 1840 }
-            }
-        }
         NOT = { is_our_vassal = THIS }
         any_owned_province = { is_core = THIS }
         NOT = {
@@ -3999,7 +3978,6 @@ demand_concession_casus_belli = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             continent = africa
             continent = central_africa
             continent = west_africa
@@ -4236,7 +4214,6 @@ demand_concession_NI_casus_belli = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             continent = africa
             continent = central_africa
             continent = west_africa
@@ -4459,7 +4436,6 @@ demand_concession_BC_casus_belli = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             continent = africa
             continent = central_africa
             continent = west_africa
@@ -5131,7 +5107,6 @@ establish_protectorate_casus_belli = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             capital_scope = { continent = africa }
             capital_scope = { continent = west_africa }
             capital_scope = { continent = central_africa }
@@ -5316,7 +5291,6 @@ establish_protectorate_NI_casus_belli = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             capital_scope = { continent = africa }
             capital_scope = { continent = west_africa }
             capital_scope = { continent = central_africa }
@@ -5486,7 +5460,6 @@ establish_protectorate_BC_casus_belli = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             capital_scope = { continent = africa }
             capital_scope = { continent = west_africa }
             capital_scope = { continent = central_africa }
@@ -6847,13 +6820,6 @@ acquire_substate_core_region = {
     good_relation_militancy_factor = 1
 
     can_use = {
-        NOT = {
-            AND = {
-                #THIS = { ai = yes }
-                has_global_flag = sw_set
-                NOT = { year = 1840 }
-            }
-        }
         NOT = { is_our_vassal = THIS }
         num_of_substates = 1 # if has any substate
         THIS = { ai = no }
@@ -8289,13 +8255,6 @@ take_capital = {
     good_relation_militancy_factor = 1
 
     can_use = {
-        NOT = {
-            AND = {
-                #THIS = { ai = yes }
-                has_global_flag = sw_set
-                NOT = { year = 1840 }
-            }
-        }
         THIS = {
             NOT = {
                 has_country_flag = in_great_war
@@ -8468,7 +8427,6 @@ demand_concession_capital_late = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             continent = africa
             continent = central_africa
             continent = west_africa
@@ -8659,7 +8617,6 @@ demand_concession_capital = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             continent = africa
             continent = central_africa
             continent = west_africa
@@ -8838,7 +8795,6 @@ demand_concession_capital_early = {
 
         #Restrictions to non-African State conquering
         OR = {
-			owner = { has_global_flag = sw_set }
             continent = africa
             continent = central_africa
             continent = west_africa

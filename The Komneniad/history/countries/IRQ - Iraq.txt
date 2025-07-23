@@ -62,8 +62,6 @@ pre_indust = yes_pre_indust
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
 
-oob = "IRQ_oob.txt"
-
 govt_flag = {
 	government = colonial_company_4
 	flag = theocracy

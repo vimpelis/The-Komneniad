@@ -688,10 +688,7 @@ political_reforms = {
             allow = {
                 has_global_flag = revolution_n_counter_researched
                 NOT = { num_of_substates = 1 }
-                OR = {
-                    is_cultural_union = no
-                    has_country_flag = france
-                }
+                is_cultural_union = no
             }
         }
     }

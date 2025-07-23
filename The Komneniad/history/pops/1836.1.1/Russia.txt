@@ -3267,6 +3267,12 @@
         religion = orthodox
         size = 7000
     }
+	
+	craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 8000
+    }
 
     aristocrats = {
         culture = ashkenazi
@@ -3329,6 +3335,12 @@
         religion = orthodox
         size = 70000
     }
+	
+	craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 1800
+    }
 }
 #Kaluga (876000/219000 POPS)
 1010 = {
@@ -3373,6 +3385,12 @@
         religion = orthodox
         size = 121365
     }
+	
+	craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 1600
+    }
 }
 #Tula (1160000/290000 POPS)
 1011 = {
@@ -3416,6 +3434,12 @@
         culture = russian
         religion = orthodox
         size = 196820
+    }
+	
+	craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 2000
     }
 }
 #Riazan (1192000/298000 POPS)
@@ -3961,6 +3985,12 @@
         culture = russian
         religion = orthodox
         size = 32990
+    }
+	
+	craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 5100
     }
 
     clergymen = {
@@ -7034,6 +7064,12 @@
         culture = tatar
         religion = sunni
         size = 2750
+    }
+	
+	craftsmen = {
+        culture = russian
+        religion = orthodox
+        size = 3900
     }
 }
 #Chelyabinsk (180000/45000 POPS)

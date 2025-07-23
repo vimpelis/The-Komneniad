@@ -31,6 +31,19 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 	
+	debug_disable = {
+		picture = komneniad
+		potential = {
+			has_country_flag = debug_enabled
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = debug_enabled
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 	debug_get_cores = {
 		picture = komneniad
 		potential = {
@@ -92,17 +105,23 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 	
-	debug_disable = {
+	debug_spawn_colombia = {
 		picture = komneniad
 		potential = {
+			ai = no
 			has_country_flag = debug_enabled
 		}
 		allow = {
 		}
 		effect = {
-			clr_country_flag = debug_enabled
+			MEX = { all_core = { add_core = CLM } }
+			RGR = { all_core = { add_core = CLM } }
+			YUC = { all_core = { add_core = CLM } }
+			CAL = { all_core = { add_core = CLM } }
+			FLU = { all_core = { add_core = CLM } }
+			NBS = { all_core = { add_core = CLM } }
 		}
-		ai_will_do = { factor = 1 }
+		ai_will_do = { factor = 0 }
 	}
 	
 	#this will be expanded to all countries which need a tip to function properly

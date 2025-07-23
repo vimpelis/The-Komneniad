@@ -19,10 +19,6 @@ GEL = {
     value = 50
 }
 
-MAJ = {
-    value = 75
-}
-
 leader = {
    name = "Emir Abu Bakr II"
    type = land

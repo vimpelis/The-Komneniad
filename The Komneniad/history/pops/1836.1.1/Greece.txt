@@ -38,7 +38,7 @@
         size = 1680
     }
 
-    farmers = {
+    craftsmen = {
         culture = greek
         religion = orthodox
         size = 6765
@@ -192,7 +192,13 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 21937
+        size = 18937
+    }
+	
+	craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 3000
     }
 
     aristocrats = {
@@ -2009,7 +2015,13 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 60075
+        size = 58075
+    }
+	
+	craftsmen = {
+        culture = greek
+        religion = orthodox
+        size = 2000
     }
 
     farmers = {

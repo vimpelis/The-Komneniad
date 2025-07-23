@@ -39,7 +39,6 @@ political_decisions = {
 						province_id = 3602
                         is_core = KAL
                         is_core = MAK
-						is_core = LAS
 						is_core = KHN
                         is_core = AFG
                         is_core = KAS

@@ -150,7 +150,6 @@ political_decisions = {
                 has_country_flag = unite_with_romania
                 tag = ROM
                 tag = MOL
-                tag = URP
             }
             NOT = { has_global_flag = sw_set }
         }

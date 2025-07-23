@@ -273,6 +273,13 @@ country_event = {
 			}
 			clr_country_flag = colony_exemption
 		}
+		any_country = {
+			limit = {
+				government = league
+				NOT = { centralization = confederalism }
+			}
+			political_reform = confederalism
+		}
 		#Section 0: Colonial vassals are made westernized if after 1860, tested
 		random_owned = {
 			limit = {

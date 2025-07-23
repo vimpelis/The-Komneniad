@@ -70,6 +70,7 @@ political_decisions = {
 			prestige = 15
 			capital = 703
 			add_accepted_culture = ukrainian
+			political_reform = federalism
 			BOH = {
 				all_core = {
 					limit = {

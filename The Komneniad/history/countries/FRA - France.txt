@@ -111,8 +111,6 @@ oob = "FRA_oob.txt"
 
 foreign_investment = {
     PAP = 15000
-    SAR = 10000
-    BEL = 20000
 }
 
 govt_flag = {

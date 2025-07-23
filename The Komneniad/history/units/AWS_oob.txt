@@ -14,10 +14,6 @@ HAR = {
     value = 100
 }
 
-MAJ = {
-    value = 60
-}
-
 TIG = {
     value = 40
 }

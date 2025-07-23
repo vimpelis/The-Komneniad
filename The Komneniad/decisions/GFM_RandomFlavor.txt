@@ -572,7 +572,6 @@ political_decisions = {
                     is_core = VEN
                     is_core = LOM
                     is_core = RMG
-                    is_core = SYC
                 }
             }
         }
@@ -598,7 +597,6 @@ political_decisions = {
                         is_core = VEN
                         is_core = LOM
                         is_core = RMG
-                        is_core = SYC
                     }
                 }
                 add_core = THIS
@@ -614,7 +612,6 @@ political_decisions = {
                 remove_core = VEN
                 remove_core = LOM
                 remove_core = RMG
-                remove_core = SYC
             }
         }
         ai_will_do = {

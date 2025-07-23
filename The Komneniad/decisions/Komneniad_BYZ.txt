@@ -308,7 +308,7 @@ political_decisions = {
             badboy = 22
 			casus_belli = {
 				target = CRP
-				type = conquest
+				type = conquest_any
 				months = 24
 			}
 			any_pop = {
@@ -1002,6 +1002,7 @@ political_decisions = {
 			has_global_flag = We_have_reconciled_with_Russia
         }
         allow = {
+			war_with = RUS
         }
         effect = {
 			badboy = 5
@@ -1017,6 +1018,75 @@ political_decisions = {
                 factor = 0
                 badboy = 0.8
             }
+		}
+    }
+	
+	BYZ_accept_assyrians = {
+        picture = greater_assyria
+        potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			owns = 900
+			NOT = { has_country_flag = BYZ_accept_assyrians }
+        }
+        allow = {
+			war = no
+			923 =  = { owned_by = THIS }
+        }
+        effect = {
+			add_accepted_culture = assyrian
+			set_country_flag = BYZ_accept_assyrians
+        }
+        ai_will_do = {
+			factor = 1
+		}
+    }
+	
+	BYZ_accept_syriacs = {
+        picture = greater_syria
+        potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			owns = 900
+			NOT = { has_country_flag = BYZ_accept_syriacs }
+        }
+        allow = {
+			war = no
+			913 = { owned_by = THIS }
+        }
+        effect = {
+			add_accepted_culture = syriac
+			set_country_flag = BYZ_accept_syriacs
+        }
+        ai_will_do = {
+			factor = 1
+		}
+    }
+	
+	BYZ_accept_copts = {
+        picture = Coptic
+        potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			owns = 913
+			NOT = { has_country_flag = BYZ_accept_copts }
+        }
+        allow = {
+			war = no
+			1751 = { owned_by = THIS }
+        }
+        effect = {
+			add_accepted_culture = copt
+			set_country_flag = BYZ_accept_copts
+        }
+        ai_will_do = {
+			factor = 1
 		}
     }
 }
