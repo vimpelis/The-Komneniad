@@ -941,26 +941,6 @@ country_event = {
     trigger = {
 		has_global_flag = TODO
 		owns = 1568
-		CHI = {
-			any_core = {
-				limit = {
-					is_primary_culture = CHI
-					NOT = {
-						OR = {
-							is_core = YNN
-							has_province_modifier = treaty_port
-						}
-					}
-				}
-				owner = {
-					NOT = {
-						primary_culture = han_chinese
-						accepted_culture = han_chinese
-						has_country_flag = mahayana_country
-					}
-				}
-			}
-		}
 		NOT = { has_global_flag = yihetuan_formed }
     }
 

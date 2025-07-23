@@ -309,7 +309,7 @@ country_event = {
 			government = democracy
 			government = hms_government
 		}
-		NOT = { political_reform = universal_voting }
+		NOT = { vote_franschise = universal_voting }
     }
 
     fire_only_once = yes
