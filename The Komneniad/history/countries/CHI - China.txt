@@ -39,7 +39,7 @@ colonial_policy = no_colonies
 
 set_country_flag = mahayana_country
 
-ruling_party = CHI_conservative
+ruling_party = CHI_warlord_conservative
 upper_house = {
     fascist = 0
     liberal = 0

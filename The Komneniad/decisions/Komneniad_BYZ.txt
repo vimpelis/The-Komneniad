@@ -1033,7 +1033,7 @@ political_decisions = {
         }
         allow = {
 			war = no
-			923 =  = { owned_by = THIS }
+			923 = { owned_by = THIS }
         }
         effect = {
 			add_accepted_culture = assyrian

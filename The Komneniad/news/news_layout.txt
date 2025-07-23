@@ -234,7 +234,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = british
+                        primary_culture = anglo_saxon
                         ruling_party_ideology = communist
                     }
                     and = {
@@ -242,7 +242,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = communist
                         }
                     }
@@ -251,7 +251,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = communist
                         }
                     }
@@ -264,7 +264,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = british
+                        primary_culture = anglo_saxon
                         ruling_party_ideology = fascist
                     }
                     and = {
@@ -272,7 +272,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = fascist
                         }
                     }
@@ -281,7 +281,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = fascist
                         }
                     }
@@ -294,7 +294,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = british
+                        primary_culture = anglo_saxon
                         ruling_party_ideology = reactionary
                     }
                     and = {
@@ -302,7 +302,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = reactionary
                         }
                     }
@@ -311,7 +311,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = reactionary
                         }
                     }
@@ -325,7 +325,7 @@ style =
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = british
+                        primary_culture = anglo_saxon
                         ruling_party_ideology = radical
                     }
                     and = {
@@ -333,7 +333,7 @@ style =
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = radical
                         }
                     }
@@ -342,7 +342,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                             ruling_party_ideology = radical
                         }
                     }
@@ -355,14 +355,14 @@ style =
             trigger = {
                 or = {
                     and = {
-                        is_culture_group = british
+                        primary_culture = anglo_saxon
                     }
                     and = {
                         civilized = no
                         part_of_sphere = yes
 
                         sphere_owner = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                         }
                     }
                     and = {
@@ -370,7 +370,7 @@ style =
                         is_vassal = yes
 
                         overlord = {
-                            is_culture_group = british
+                            primary_culture = anglo_saxon
                         }
                     }
                 }

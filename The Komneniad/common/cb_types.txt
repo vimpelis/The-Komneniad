@@ -5546,7 +5546,7 @@ negotiated_transfer = {
     sprite_index = 5
     is_triggered_only = yes
 	# Audax Validator "." Ignore_NEXT
-    days = 1
+    months = 1
     crisis = no
 
     badboy_factor = 0

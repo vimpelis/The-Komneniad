@@ -3866,11 +3866,6 @@ country_event = {
 			limit = { province_id = 2017 }
 			change_province_name = "Kasama"
 		}
-		random_owned = {
-			limit = { province_id = 2015 owner = { primary_culture = british } }
-			change_province_name = "Livingstone"
-			state_scope = { change_region_name = "Northern Rhodesia" }
-		}
 
 		ENG_2014 = { add_core = ZAM }
 		ENG_2016 = { add_core = ZAM }
