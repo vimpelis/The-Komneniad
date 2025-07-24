@@ -717,3 +717,49 @@ country_event = {
 		AUS_736 = { remove_core = THIS }
     }
 }
+
+country_event = {
+    id = 155021
+    title = "The Duchy of Prussia"
+    desc = "We have gained the lands of the former Duchy of Prussia. Since they are disconnected, perhaps we'd want to set up a puppet duchy here?"
+    picture = "GER_map"
+
+    trigger = {
+		OR = {
+			tag = BAV
+			tag = SGF
+		}
+		any_owned_province = { is_core = PRU }
+		NOT = { exists = PRU }
+		NOT = { owns = 681 }
+		NOT = { owns = 679 }
+		NOT = { owns = 699 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+        name = "Let's do it."
+		badboy = -4
+		release_vassal = PRU
+		ai_chance = {
+            factor = 99
+        }
+    }
+	
+	option = {
+        name = "No, we will control these lands directly."
+		badboy = 2
+		ai_chance = {
+            factor = 1
+			modifier = {
+				badboy = 0.9
+				factor = 0
+			}
+        }
+    }
+}

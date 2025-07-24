@@ -2970,17 +2970,12 @@ country_event = {
 	immediate = {
 		any_owned = {
 			limit = {
-				OR = {
-					region = ENG_1818
-					region = ENG_1825
-				}
+				is_core = CHD
 				NOT = { terrain = desert }
 				NOT = { life_rating = 12 }
 			}
 			life_rating = 25
 		}
-		ENG_1818 = { add_core = CHD }
-		ENG_1825 = { add_core = CHD }
 
 		CHD = {
 			clr_country_flag = sunni_country
@@ -3116,23 +3111,10 @@ country_event = {
 
 		any_owned = {
 			limit = {
-				OR = {
-					region = ENG_1956
-					region = SOK_1963
-					region = SOK_1956
-				}
+				is_core = CMR
 				NOT = { life_rating = 12 }
 			}
 			life_rating = 20
-		}
-		ENG_1956 = {
-			add_core = CMR
-		}
-		SOK_1956 = {
-			add_core = CMR
-		}
-		SOK_1963 = {
-			add_core = CMR
 		}
 
 		CMR = {

@@ -50,6 +50,7 @@ country_event = {
 			secede_province = DAN
 		}
 		DAN = { country_event = 157003 }
+		set_global_flag = DEN_DAN_NZL_accept
 		ai_chance = {
             factor = 95
             modifier = {
@@ -284,5 +285,35 @@ country_event = {
 			secede_province = NZL
 		}
 		NZL = { government = democracy }
+    }
+}
+
+country_event = {
+    id = 157010
+    title = "Our Lands in Ny Sjaelland"
+    desc = "As per the treaty with Daneland, we will transfer them all of Ny Sjaelland"
+    picture = "australia_colony"
+
+    trigger = {
+		tag = DEN
+		has_global_flag = DEN_DAN_NZL_accept
+		any_owned_province = { is_core = NZL }
+		NOT = { year = 1848 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Ok"
+		any_owned = {
+			limit = {
+				is_core = NZL
+			}
+			secede_province = DAN
+		}
     }
 }
