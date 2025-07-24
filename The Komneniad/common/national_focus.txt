@@ -5,6 +5,7 @@ rail_focus = { #Now called Colonial Policy
         icon = 2
         limit = {
             is_colonial = yes
+			owner = { ai = no }
         }
     }
 
@@ -13,6 +14,7 @@ rail_focus = { #Now called Colonial Policy
         pop_militancy_modifier = 0.01
         icon = 3
         limit = {
+			owner = { ai = no }
             is_colonial = yes
             is_overseas = yes
             NOT = { has_province_modifier = treaty_port }
@@ -33,6 +35,7 @@ rail_focus = { #Now called Colonial Policy
         pop_militancy_modifier = 0.01
         icon = 4
         limit = {
+			owner = { ai = no }
             is_colonial = yes
             is_overseas = yes
             NOT = { has_province_modifier = treaty_port }
@@ -53,6 +56,7 @@ rail_focus = { #Now called Colonial Policy
         immigrant_attract = 0.25
         icon = 5
         limit = {
+			owner = { ai = no }
             is_colonial = yes
             is_overseas = yes
             OR = {
@@ -204,6 +208,11 @@ promotion_focus = {
                 is_colonial = no
                 owner = { ai = no }
             }
+			OR = {
+				owner = { ai = no }
+				state_scope = { total_pops = 40000 }
+				NOT = { number_of_states = 3 }
+			}
         }
     }
 
@@ -234,6 +243,11 @@ promotion_focus = {
             work_available = { worker = craftsmen }
             NOT = { state_scope = { is_colonial = yes } }
             NOT = { state_scope = { any_owned_province = { unemployment_by_type = { type = craftsmen value = 0.5 } } } }
+			OR = {
+				owner = { ai = no }
+				state_scope = { total_pops = 40000 }
+				NOT = { number_of_states = 3 }
+			}
         }
     }
 
@@ -290,6 +304,11 @@ promotion_focus = {
                 NOT = { state_scope = { soldiers = 0.048 } }
                 owner = { ai = no }
             }
+			OR = {
+				owner = { ai = no }
+				state_scope = { total_pops = 40000 }
+				NOT = { number_of_states = 3 }
+			}
         }
     }
 }
