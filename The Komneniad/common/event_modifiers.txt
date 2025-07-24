@@ -5173,8 +5173,8 @@ espanian_cultural_unity_2 = {
 }
 
 BRB_feudalism = {
-    global_pop_militancy_modifier = 0.05
-	global_pop_consciousness_modifier = 0.05
+    global_pop_militancy_modifier = 0.02
+	global_pop_consciousness_modifier = 0.02
     icon = 6
 }
 
