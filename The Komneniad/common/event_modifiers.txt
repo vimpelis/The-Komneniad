@@ -5242,12 +5242,3 @@ slavic_revolt = {
     tax_efficiency = 0.25
     icon = 18
 }
-
-corrupt_army = {
-    land_organisation = -0.05
-    goods_demand = -0.6
-    naval_organisation = -0.05
-    org_regain = -0.05
-    supply_consumption = 0.1
-    icon = 18
-}

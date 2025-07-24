@@ -4080,16 +4080,11 @@ country_event = {
 			set_country_flag = post_colonial_country
 			all_core = { remove_core = ZAN }
 		}
-
-		ENG_2026 = { add_core = KNY }
 		ENG_2024 = { add_core = KNY }
 
 		any_owned = {
 			limit = {
-				OR = {
-					region = ENG_2026
-					region = ENG_2024
-				}
+				region = ENG_2024
 				NOT = { life_rating = 12 }
 			}
 			life_rating = 25
