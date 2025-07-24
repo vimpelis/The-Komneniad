@@ -39,7 +39,9 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 10
-			RGR = { all_core = { add_core = THIS } }
+			TEX_132 = { add_core = THIS }
+			MEX_2149 = { add_core = THIS }
+			MEX_100 = { add_core = THIS }
 			add_accepted_culture = riograndense
 			set_country_flag = AYL_retake_RGR
 		}
