@@ -1,4 +1,4 @@
-# The-Komneniad
+# The Komneniad
 **The Komneniad** is an alternate history mod that aims to combine the extensive flavor of newer mods with the vanilla feel of Victoria II.
 It is inspired by various mods from all Paradox games, and features many scenarios that are often overlooked in Victoria II alternate history mods,
 such as a colonial Mali Empire, an Ethiopian conquest of the Middle East, and a united West Slavic state.
