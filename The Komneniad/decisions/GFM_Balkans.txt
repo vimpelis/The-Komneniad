@@ -2,7 +2,10 @@ political_decisions = {
     create_romania = {
         potential = {
             NOT = {
-                exists = ROM
+                OR = {
+					exists = ROM
+					exists = CRP
+				}
                 is_culture_group = pan_romanian
             }
             OR = {

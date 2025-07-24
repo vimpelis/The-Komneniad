@@ -13,6 +13,7 @@ political_decisions = {
 			OR = {
 				all_core = { owned_by = THIS }
 				year = 1870
+				exists = GER
 			}
 			OR = {
 				NOT = { government = absolute_monarchy }
