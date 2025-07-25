@@ -58,6 +58,7 @@
 peace_order = {
 treaty_port_casus_belli
 treaty_port_casus_belli_no_infamy
+great_war_penalty_cb
 war_reparations
 become_independent
 dismantle_cb
@@ -95,6 +96,7 @@ make_puppet_small
 make_puppet_tiny
 make_puppet_minuscule
 make_puppet_no_infamy
+make_puppet_no_add_wargoal
 install_fascism_make_puppet
 install_communism_make_puppet
 end_radicals
@@ -106,6 +108,7 @@ humiliate
 place_in_the_sun
 dismantle_forts
 china_acquire_state
+sahel_jihad_cb
 mauretanian_crusade
 acquire_state
 acquire_state_mid
@@ -140,8 +143,10 @@ demand_concession_capital_early
 acquire_core_substate_region
 liberate_puppet
 cut_down_to_size_no_infamy
+cut_down_to_size_no_add_wargoal_2
 liberate_puppet_no_infamy
 humiliate_no_infamy
+call_allies_cb
 }
 
 # Great War CB's
