@@ -86,7 +86,7 @@ country_event = {
 
 country_event = {
     id = 158003
-    title = "The Northwestern Confederacy is annexed!"
+    title = "The Lacustrine Confederacy is annexed!"
     desc = "158003DESC"
     picture = "great_lakes"
 
@@ -108,7 +108,7 @@ country_event = {
 
 country_event = {
     id = 158004
-    title = "The Northwestern Confederacy is annexed!"
+    title = "The Lacustrine Confederacy is annexed!"
     desc = "158003DESC"
     picture = "great_lakes"
 

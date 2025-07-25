@@ -592,13 +592,52 @@ political_decisions = {
 		allow = {
 			war = no
 			rank = 16
-			2149 = { owned_by = this }
+			2149 = { owned_by = THIS }
 			129 = { owned_by = THIS }
 		}
 		effect = {
 			135 = { secede_province = THIS }
 			136 = { secede_province = THIS }
 			3588 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	AYL_colonize_greatplains = {
+		picture = disband_reservation
+		potential = {
+			tag = AYL
+			year = 1845
+			OR = {
+				127 = { empty = yes }
+				125 = { empty = yes }
+			}
+		}
+		allow = {
+			war = no
+			126 = { owned_by = THIS }
+		}
+		effect = {
+			random_owned = {
+                limit = {
+                    127 = { empty = yes }
+                }
+                127 = { secede_province = THIS }
+				131 = { secede_province = THIS }
+				129 = { secede_province = THIS }
+				103 = { secede_province = THIS }
+				105 = { secede_province = THIS }
+            }
+			random_owned = {
+                limit = {
+                    125 = { empty = yes }
+                }
+                125 = { secede_province = THIS }
+				123 = { secede_province = THIS }
+				124 = { secede_province = THIS }
+				3317 = { secede_province = THIS }
+				106 = { secede_province = THIS }
+            }
 		}
 		ai_will_do = { factor = 1 }
 	}
