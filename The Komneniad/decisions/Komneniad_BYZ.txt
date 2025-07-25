@@ -657,7 +657,7 @@ political_decisions = {
         }
 
         effect = {
-            set_country_flag = BYZ_finish_hungary
+            set_country_flag = BYZ_accept_hungarians
 			prestige = 10
             add_accepted_culture = hungarian
         }
