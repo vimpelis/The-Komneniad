@@ -1770,7 +1770,6 @@ prussian_general_staff = {
     icon = 15
 }
 
-##### Boer War #####
 trek_boers = {
     global_assimilation_rate = 0.01
     mobilisation_size = 2
