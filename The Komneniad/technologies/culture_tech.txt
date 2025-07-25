@@ -667,7 +667,7 @@ enlightenment_thought = {
     max_national_focus = 1
 
     ai_chance = {
-        factor = 11
+        factor = 150
         modifier = {
             factor = 1.02
             tech_school = culture_tech_school
