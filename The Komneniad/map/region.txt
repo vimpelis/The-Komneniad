@@ -115,7 +115,7 @@ ENG_260 = { 260 261 262 } #Munster
 
 ENG_263 = { 263 264 265 3378 } #Leinster
 
-ENG_266 = { 266 267 268 1724 3478 3479 3477 } #Highlands
+ENG_266 = { 253 266 267 268 1724 3478 3479 3477 } #Highlands
 
 ENG_271 = { 271 269 270 272 304 } #Lowlands
 
@@ -136,7 +136,7 @@ ENG_300 = { 300 294 301 302 303 } #South East England
 
 ### Scandinavia
 
-DEN_251 = { 251 252 253 2636 468 } #Iceland & Greenland
+DEN_251 = { 251 252 2636 468 } #Iceland & Greenland
 
 SWE_318 = { 318 317 319 320 321 3338 } #Norrland
 

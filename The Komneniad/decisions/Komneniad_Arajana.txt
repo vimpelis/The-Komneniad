@@ -187,7 +187,7 @@ political_decisions = {
 		potential = {
 			tag = KIB
 			owns = 2423
-			NOT = { owns = 2418 }
+			2418 = { empty = yes }
 		}
 		allow = {
 			war = no

@@ -1,0 +1,21 @@
+#UBD dies if it got kicked to Gotland
+country_event = {
+    id = 174000
+    title = "An Exile in Gotland"
+    desc = "Our state got exiled to the island of Gotland. There is no way out of here - this it where the Baltic Union dies. Local Swedish nationalists have already launched a coup."
+
+    trigger = {
+		tag = UBD
+        331 = { is_capital = yes }
+		NOT = { num_of_cities = 2 }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "Oh well."
+		331 = { remove_core = UBD secede_province = SWE }
+    }
+}

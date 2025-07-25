@@ -104,7 +104,17 @@ country_event = {
 
     trigger = {
         tag = CLT
-		NOT = { 
+		any_owned_province = {
+			NOT = {
+				OR = {
+					is_core = ENG
+					is_core = SCO
+					is_core = WHA
+				}
+			}
+		}
+		
+		NOT = {
 			any_owned_province = {
 				OR = {
 					is_core = ENG
@@ -125,8 +135,10 @@ country_event = {
 
     option = {
         name = "The Dream is dead."
+		prestige_factor = 0.5
 		change_tag = IRE
 		primary_culture = irish
+		capital = 263
 		remove_accepted_culture = scottish
 		remove_accepted_culture = welsh
 		279 = { add_core = SCO }

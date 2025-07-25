@@ -142,7 +142,8 @@ AAL - Ard Al-Hurriyah
 170000 - Italy  
 171000 - Arles  
 172000 - France  
-173000 - Arajana  
+173000 - Arajana
+174000 - Scandi  
 
 **Random notes that are not present in any of the events:**
 
