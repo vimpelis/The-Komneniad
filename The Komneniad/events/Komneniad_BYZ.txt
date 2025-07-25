@@ -295,6 +295,14 @@ country_event = {
 
     mean_time_to_happen = {
         days = 720
+		modifier = {
+            factor = 0.5
+            year = 1843
+        }
+		modifier = {
+            factor = 0.1
+            year = 1845
+        }
     }
 
     option = {
@@ -525,6 +533,14 @@ country_event = {
 
     mean_time_to_happen = {
         days = 720
+		modifier = {
+            factor = 0.5
+            year = 1843
+        }
+		modifier = {
+            factor = 0.1
+            year = 1845
+        }
     }
 
     option = {
