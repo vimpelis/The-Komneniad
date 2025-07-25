@@ -428,31 +428,31 @@
 
     aristocrats = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 10
     }
 
     clergymen = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 50
     }
 
     artisans = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 250
     }
 
     soldiers = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 75
     }
 
     farmers = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 1425
     }
 	
@@ -530,49 +530,49 @@
 
     aristocrats = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 80
     }
 
     clergymen = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 40
     }
 
     artisans = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 1080
     }
 
     farmers = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 5940
     }
 
     aristocrats = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 110
     }
 
     clergymen = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 60
     }
 
     artisans = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 340
     }
 
     farmers = {
         culture = assyrian
-        religion = syriac
+        religion = nestorian
         size = 4230
     }
 
