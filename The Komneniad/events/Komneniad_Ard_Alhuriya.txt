@@ -340,6 +340,7 @@ country_event = {
 		BOL_2321 = { add_core = ATA }
 		AMZ_2317 = { add_core = ATA }
 		AAL = { country_event = 161017 }
+		set_country_flag = ATA_claim_potosi
 		ai_chance = {
 			factor = 40
 			modifier = {
