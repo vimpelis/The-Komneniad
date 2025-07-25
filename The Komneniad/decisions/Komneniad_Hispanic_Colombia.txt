@@ -18,7 +18,9 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 10
-			RGR = { all_core = { add_core = THIS } }
+			TEX_132 = { add_core = THIS }
+			MEX_2149 = { add_core = THIS }
+			MEX_100 = { add_core = THIS }
 			add_accepted_culture = riograndense
 			set_country_flag = AYL_integrate_riogrande
 		}
@@ -592,7 +594,7 @@ political_decisions = {
 		allow = {
 			war = no
 			rank = 16
-			2149 = { owned_by = THIS }
+			14 = { owned_by = THIS }
 			129 = { owned_by = THIS }
 		}
 		effect = {
