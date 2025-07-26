@@ -4,6 +4,10 @@ country_event = { ##rework
     title = "EVTNAME70000"
     desc = "EVTDESC70000"
     #picture = "Slaves"
+	
+	is_triggered_only = yes
+    allow_multiple_instances = yes
+	
     trigger = {
         country = {
             OR = {
@@ -13,8 +17,6 @@ country_event = { ##rework
             capital_scope = { NOT = { continent = europe } }
         }
     }
-    is_triggered_only = yes
-    allow_multiple_instances = yes
 
     option = {
         name = "EVTOPTA70000"
@@ -49,10 +51,6 @@ country_event = { ##rework
         }
         ai_chance = {
             factor = 50
-            modifier = {
-                factor = 100
-                owner = { tag = D01 }
-            }
             modifier = {
                 factor = 2.0
                 owner = { civilized = no }
@@ -95,14 +93,16 @@ country_event = {
     title = "EVTNAME70001"
     desc = "EVTDESC70001"
     #picture = "Western"
+	
+    is_triggered_only = yes
+    allow_multiple_instances = yes
+	
     trigger = {
         country = {
             slavery = no_slavery
             capital_scope = { NOT = { continent = europe } }
         }
     }
-    is_triggered_only = yes
-    allow_multiple_instances = yes
 
     option = {
         name = "EVTOPTA70001"
