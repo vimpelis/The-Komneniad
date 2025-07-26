@@ -2112,7 +2112,6 @@ boxer_rebels = {
 
     demands_enforced_effect = {
         war_exhaustion = 25
-        country_event = 13370
     }
 }
 

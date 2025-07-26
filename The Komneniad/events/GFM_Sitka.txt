@@ -1269,3 +1269,741 @@ country_event = {
         }
     }
 }
+
+#Loser of the Brother's War
+country_event = {
+    id = 99996
+    title = "EVTNAME99996"
+    desc = "EVTDESC99996"
+	picture = "koniggratz"
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT99996OPTA"
+        war_exhaustion = -5
+        relation = { #Normalize Relations with victor
+            who = FROM
+            value = 200
+        }
+        random_country = {
+            limit = {
+                tag = FROM
+            }
+            set_country_flag = brothers_war_winner
+            remove_country_modifier = brothers_war_aggressor
+        }
+        any_country = {
+            limit = {
+                exists = yes
+                is_greater_power = no
+                is_culture_group = THIS
+                NOT = { vassal_of = THIS }
+                is_substate = no
+            }
+            relation = {
+                who = THIS
+                value = -400
+            }
+            diplomatic_influence = {
+                who = THIS
+                value = -400
+            }
+            diplomatic_influence = {
+                who = FROM
+                value = 400
+            }
+            leave_alliance = THIS
+            end_military_access = THIS
+            create_alliance = FROM
+        }
+        add_country_modifier = {
+            name = diplomatic_isolation
+            duration = 1825
+        }
+        remove_country_modifier = brothers_war_aggressor
+        set_country_flag = brothers_war_loser
+    }
+}
+
+country_event = {
+    id = 1316176
+    title = "EVTNAME1316176" # $COUNTRY_ADJ$ Envoy Ejected
+    desc = "EVTDESC1316176"
+    picture = "qing_emperor"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT1316176OPTA"
+        random_owned = {
+            limit = { owner = { ai = no } }
+            owner = {
+                war = {
+                    target = FROM
+                    attacker_goal = { casus_belli = treaty_port_casus_belli }
+                }
+            }
+        }
+        random_owned = {
+            limit = { owner = { ai = yes } }
+            owner = {
+                war = {
+                    target = FROM
+                    attacker_goal = { casus_belli = treaty_port_casus_belli }
+                    call_ally = yes
+                }
+            }
+        }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0.5
+                any_greater_power = { war_with = THIS }
+            }
+            modifier = {
+                factor = 0.75
+                NOT = { any_greater_power = { war_with = THIS } }
+                war = yes
+            }
+            modifier = {
+                factor = 0.5
+                war_exhaustion = 20
+            }
+            modifier = {
+                factor = 1.25
+                war_policy = jingoism
+            }
+            modifier = {
+                factor = 0.5
+                war_policy = anti_military
+            }
+            modifier = {
+                factor = 0
+                war_policy = pacifism
+            }
+            modifier = {
+                factor = 0
+                FROM = {
+                    NOT = { neighbour = THIS }
+                    NOT = { any_owned_province = { port = yes } }
+                    NOT = { any_neighbor_country = { alliance_with = THIS } }
+                }
+            }
+            modifier = {
+                factor = 0.5
+                FROM = { brigades_compare = 5 }
+            }
+        }
+    }
+
+    option = {
+        name = "EVT1316176OPTB"
+        relation = { who = FROM value = 50 }
+        prestige = -25
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0.5
+                neighbour = FROM
+            }
+            modifier = {
+                factor = 0.5
+                FROM = {
+                    NOT = { brigades_compare = 2 }
+                }
+            }
+        }
+    }
+}
+
+#Unequal Treaty if war is won
+country_event = {
+    id = 1316089
+    title = "EVTNAME1316089" #The Unequal Treaty (with other countries -- if war was won)
+    desc = "EVTDESC1316089"
+    picture = "china_deal"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT97161OPTA"
+        random_country = {
+            limit = {
+                tag = FROM
+                NOT = {
+                    AND = {
+                        OR = {
+                            tag = JAP
+                            tag = TKG
+                        }
+                        has_country_modifier = fukoku_kyohei
+                        NOT = { has_country_flag = negotiate_treaty_shimonoseki }
+                    }
+                }
+            }
+            country_event = 1316091
+        }
+    }
+}
+
+country_event = {
+    id = 1316091
+    title = "EVTNAME1316091" #The Unequal Treaty (to the GP)
+    desc = "EVTDESC1316091"
+    news = yes
+    news_title = "EVTNAME1316083_NEWS_TITLE"
+    news_desc_long = "EVTDESC1316083_NEWS_LONG"
+    news_desc_medium = "EVTDESC1316083_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC1316083_NEWS_SHORT"
+    picture = "china_deal"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT1316090OPTA"
+        prestige_factor = 0.1
+        treasury = 200000
+        relation = { who = FROM value = 300 }
+        diplomatic_influence = { who = FROM value = 50 }
+        random_owned = {
+            limit = {
+                owner = { tag = ENG }
+                OR = {
+                    1496 = {
+                        NOT = { owned_by = ENG }
+                        NOT = { owned_by = FROM }
+                    }
+                    owner = { has_country_flag = treaty_of_nanking }
+                }
+            }
+            FROM = {
+                random_owned = {
+                    limit = {
+                        OR = {
+                            province_id = 1498
+                            province_id = 1538
+                            province_id = 1566
+                            province_id = 1481
+                            province_id = 1569
+                            province_id = 1606
+							province_id = 3364
+                            province_id = 2632
+                        }
+                    }
+                    secede_province = THIS
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    tag = ENG
+                    NOT = { has_country_flag = treaty_of_nanking }
+                }
+                FROM = { owns = 1496 }
+            }
+            1496 = { secede_province = ENG }
+        }
+        random_owned = {
+            limit = {
+                owner = { tag = RUS }
+                FROM = { NOT = { owns = 1481 } }
+            }
+            FROM = {
+                random_owned = {
+                    limit = {
+                        OR = {
+                            province_id = 1498
+                            province_id = 1538
+                            province_id = 1566
+                            province_id = 1569
+                            province_id = 1606
+							province_id = 3364
+                            province_id = 1496
+                        }
+                    }
+                    secede_province = THIS
+                }
+            }
+        }
+        random_owned = {
+            limit = {
+                owner = { tag = RUS }
+                FROM = { owns = 1481 }
+            }
+            1481 = { secede_province = RUS }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { tag = ENG }
+                    NOT = { tag = RUS }
+                }
+            }
+            FROM = {
+                random_owned = {
+                    limit = {
+                        OR = {
+                            province_id = 1498
+                            province_id = 1538
+                            province_id = 1566
+                            province_id = 1569
+                            province_id = 1606
+                            province_id = 1481
+                            province_id = 1496
+							province_id = 3364
+                            province_id = 2632
+                        }
+                    }
+                    secede_province = THIS
+                }
+            }
+        }
+        any_owned = {
+            limit = {
+                is_core = CHI
+                NOT = {
+                    is_core = THIS
+                    region = CHI_1082
+                    region = JAP_1086
+                    region = CHI_1485
+                    province_id = 1498
+                    province_id = 1538
+                    province_id = 1496
+                    province_id = 1566
+                    province_id = 1481
+                    province_id = 1569
+                    province_id = 1606
+                    province_id = 1485
+                    province_id = 2562
+					province_id = 3364
+                    province_id = 1499
+                    province_id = 2632
+                }
+            }
+            secede_province = FROM
+        }
+        FROM = { country_event = 1316092 }
+        ai_chance = { factor = 100 }
+    }
+
+    option = {
+        name = "EVT1316091OPTB"
+        badboy = 3
+        any_owned = {
+            limit = { is_core = CHI }
+            any_pop = { militancy = 6 }
+        }
+        any_greater_power = {
+            limit = {
+                any_owned_province = { continent = asia }
+                NOT = { tag = THIS }
+            }
+            relation = { who = THIS value = -50 }
+            casus_belli = {
+                target = THIS
+                type = place_in_the_sun
+                months = 60
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+}
+
+#big dump for random events
+
+country_event = {
+    id = 1316092
+    title = "EVTNAME1316092" #The Unequal Treaty (to China)
+    desc = "EVTDESC1316092"
+    picture = "asian_administration"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT1316092OPTA"
+        prestige_factor = -0.2
+        random_country = { limit = { exists = yes tag = CHI } inherit = CHI }
+        treasury = -200000
+        any_owned = {
+            limit = { is_core = FROM }
+            secede_province = FROM
+        }
+        capital_scope = {
+            add_province_modifier = { name = legation_quarter duration = -1 }
+        }
+        random_owned = {
+            limit = { owner = { has_country_modifier = uncivilized_isolationism } }
+            owner = {
+                remove_country_modifier = uncivilized_isolationism
+                add_country_modifier = {
+                    name = "western_influences"
+                    duration = -1
+                }
+            }
+        }
+    }
+}
+
+
+# Event to Inherit
+country_event = {
+    id = 95255
+    title = "EVTNAME95255" #Indonesian Unification
+    desc = "EVTDESC95255"
+    picture = "Celebration"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT95255OPTA"
+        random_country = {
+            limit = {
+                NOT = { is_our_vassal = THIS }
+                is_sphere_leader_of = THIS
+            }
+            relation = {
+                who = FROM
+                value = -25
+            }
+        }
+        random_country = {
+            limit = { is_our_vassal = THIS }
+            casus_belli = {
+                target = FROM
+                type = acquire_any_state
+                months = 12
+            }
+            casus_belli = {
+                target = FROM
+                type = cut_down_to_size
+                months = 12
+            }
+            relation = {
+                who = FROM
+                value = -50
+            }
+            FROM = { badboy = 1 }
+        }
+        FROM = { inherit = THIS }
+        ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 0.5
+                is_vassal = yes
+            }
+            modifier = {
+                factor = 0.5
+                part_of_sphere = yes
+                NOT = { in_sphere = FROM }
+            }
+            modifier = {
+                factor = 0.5
+                NOT = {
+                    relation = {
+                        who = FROM
+                        value = 100
+                    }
+                }
+            }
+            modifier = {
+                factor = 1.2
+                alliance_with = FROM
+            }
+        }
+    }
+
+    option = {
+        name = "EVT95255OPTB"
+        prestige = 1
+        relation = {
+            who = FROM
+            value = -100
+        }
+        leave_alliance = FROM
+        any_pop = {
+            militancy = 3
+            consciousness = 2
+        }
+        ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 2
+                is_vassal = yes
+            }
+            modifier = {
+                factor = 2
+                part_of_sphere = yes
+                NOT = { in_sphere = FROM }
+            }
+            modifier = {
+                factor = 0
+                in_sphere = FROM
+            }
+            modifier = {
+                factor = 0
+                vassal_of = FROM
+            }
+        }
+    }
+}
+
+
+# Unification of Lan Xang (Laos)
+country_event = {
+    id = 97120
+    title = "EVTNAME97120"
+    desc = "EVTDESC97120"
+    picture = "Celebration"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT97120OPTA"
+        any_owned = { limit = { is_core = THIS } add_core = XAN remove_core = THIS }
+        FROM = {
+            inherit = THIS
+            badboy = 1
+        }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 1.5
+                in_sphere = FROM
+            }
+            modifier = {
+                factor = 1.5
+                relation = {
+                    who = FROM
+                    value = 100
+                }
+            }
+            modifier = {
+                factor = 1.5
+                relation = {
+                    who = FROM
+                    value = 175
+                }
+            }
+            modifier = {
+                factor = 1.5
+                alliance_with = FROM
+            }
+            modifier = {
+                factor = 2
+                government = fascist_dictatorship
+                FROM = {
+                    government = fascist_dictatorship
+                }
+            }
+            modifier = {
+                factor = 2
+                government = proletarian_dictatorship
+                FROM = {
+                    government = proletarian_dictatorship
+                }
+            }
+            modifier = {
+                factor = 3
+                vassal_of = FROM
+            }
+        }
+    }
+
+    option = {
+        name = "EVT97120OPTB"
+        prestige = 1
+        relation = {
+            who = FROM
+            value = -100
+        }
+        leave_alliance = FROM
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 1.5
+                NOT = {
+                    relation = {
+                        who = FROM
+                        value = -100
+                    }
+                }
+            }
+            modifier = {
+                factor = 1.5
+                NOT = {
+                    relation = {
+                        who = FROM
+                        value = -175
+                    }
+                }
+            }
+            modifier = {
+                factor = 10
+                government = fascist_dictatorship
+                FROM = {
+                    government = proletarian_dictatorship
+                }
+            }
+            modifier = {
+                factor = 10
+                government = proletarian_dictatorship
+                FROM = {
+                    government = fascist_dictatorship
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+
+    id = 37236
+    title = "EVTNAME37236" #Eiffel Tower Construction
+    desc = "EVTDESC37236"
+    picture = "eiffel_tower_construction"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT37236OPTA"
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 40000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 40000 } }
+            owner = { treasury = -40000 }
+        }
+        random_list = {
+            50 = { add_country_modifier = { name = eiffel_tower_construction duration = 600 } }
+            40 = { add_country_modifier = { name = eiffel_tower_construction duration = 730 } }
+            10 = { add_country_modifier = { name = eiffel_tower_construction duration = 900 } }
+        }
+
+        ai_chance = {
+            factor = 40
+        }
+    }
+
+    option = {
+        name = "EVT37236OPTB"
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 30000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 30000 } }
+            owner = { treasury = -30000 }
+        }
+        random_list = {
+            30 = { add_country_modifier = { name = eiffel_tower_construction duration = 600 } }
+            50 = { add_country_modifier = { name = eiffel_tower_construction duration = 730 } }
+            20 = { add_country_modifier = { name = eiffel_tower_construction duration = 900 } }
+        }
+
+        ai_chance = {
+            factor = 40
+        }
+    }
+
+    option = {
+        name = "EVT37236OPTC"
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    NOT = { check_variable = { which = owed_cash_money value = 1 } }
+                }
+            }
+            owner = { set_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_owned = {
+            limit = {
+                owner = {
+                    NOT = { money = 20000 }
+                    check_variable = { which = owed_cash_money value = 9 }
+                }
+            }
+            owner = { change_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_owned = {
+            limit = { owner = { money = 20000 } }
+            owner = { treasury = -20000 }
+        }
+        random_list = {
+            30 = { add_country_modifier = { name = eiffel_tower_construction duration = 600 } }
+            30 = { add_country_modifier = { name = eiffel_tower_construction duration = 730 } }
+            40 = { add_country_modifier = { name = eiffel_tower_construction duration = 900 } }
+        }
+
+        ai_chance = {
+            factor = 20
+        }
+    }
+}
+
+
+country_event = {
+
+    id = 37237
+    title = "EVTNAME37237" #Eiffel Tower finished
+    desc = "EVTDESC37237"
+    picture = "eiffel_tower_finished"
+
+    fire_only_once = yes
+
+    trigger = {
+        primary_culture = french
+        is_greater_power = yes
+        capital = 425
+        NOT = { has_country_modifier = eiffel_tower_construction }
+		has_global_flag = the_eiffel_tower_was_built
+		NOT = { has_global_flag = catalan_towner }
+	}
+
+    mean_time_to_happen = { days = 5 }
+
+    option = {
+        name = "EVT37237OPTA"
+        set_country_flag = eiffel_tower_built
+        425 = {
+            set_province_flag = eiffel_tower_built
+            add_province_modifier = {
+                name = the_eiffel_tower
+                duration = -1
+            }
+        }
+        prestige = 20
+    }
+}

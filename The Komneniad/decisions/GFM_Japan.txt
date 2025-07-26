@@ -44,43 +44,6 @@ political_decisions = {
 			set_country_flag = nagasaki_center_built
 		}
 	}
-	
-	ganghwa_treaty = {
-        picture = unequal_treaty
-        potential = {
-            OR = {
-                tag = JAP
-                tag = TKG
-            }
-            has_country_flag = rejected_ganghwa_treaty
-            NOT = { has_country_flag = negotiate_ganghwa_treaty }
-            KOR = {
-                ai = yes
-                civilized = no
-                war_with = THIS
-            }
-        }
-
-        allow = {
-            KOR = {
-                OR = {
-                    war_exhaustion = 50
-                    any_owned_province = { controlled_by = THIS }
-                }
-                OR = {
-                    national_provinces_occupied = 0.10
-                    blockade = 0.50
-                }
-                war_exhaustion = 20
-            }
-        }
-
-        effect = {
-            set_country_flag = negotiate_ganghwa_treaty
-            KOR = { country_event = 85015 }
-        }
-        ai_will_do = { factor = 1 }
-    }
 
     ansei_purge = {
         picture = ansei_purge
