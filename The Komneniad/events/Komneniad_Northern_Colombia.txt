@@ -203,7 +203,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 214 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		60 = {
@@ -217,7 +217,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 60 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		211 = {
@@ -231,7 +231,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 211 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		207 = {
@@ -245,7 +245,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 207 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		208 = {
@@ -259,7 +259,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 208 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		210 = {
@@ -273,7 +273,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 210 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		209 = {
@@ -287,7 +287,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 209 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		205 = {
@@ -301,7 +301,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 205 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		216 = {
@@ -315,7 +315,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 216 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		218 = {
@@ -329,7 +329,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 218 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
     }
@@ -365,7 +365,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 204 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		202 = {
@@ -379,7 +379,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 202 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		2555 = {
@@ -393,7 +393,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 2555 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		206 = {
@@ -407,7 +407,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 206 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		3655 = {
@@ -421,7 +421,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 3655 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
     }
@@ -458,7 +458,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 191 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		190 = {
@@ -472,7 +472,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 190 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		2556 = {
@@ -486,7 +486,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 2556 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		3657 = {
@@ -500,7 +500,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 3657 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		3656 = {
@@ -514,7 +514,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 3656 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		185 = {
@@ -528,7 +528,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 185 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
     }
@@ -564,7 +564,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 200 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		199 = {
@@ -578,7 +578,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 199 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		3566 = {
@@ -592,7 +592,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 3566 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		198 = {
@@ -606,7 +606,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 198 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
     }
@@ -642,7 +642,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 196 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		3654 = {
@@ -656,7 +656,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 3654 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		201 = {
@@ -670,7 +670,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 201 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		195 = {
@@ -684,7 +684,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 195 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		3310 = {
@@ -698,7 +698,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 3310 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
     }
@@ -734,7 +734,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 197 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		194 = {
@@ -748,7 +748,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 194 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		140 = {
@@ -762,7 +762,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 140 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		192 = {
@@ -776,7 +776,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 192 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		193 = {
@@ -790,7 +790,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 193 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		3311 = {
@@ -804,7 +804,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 3311 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
     }
@@ -840,7 +840,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 186 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		184 = {
@@ -854,7 +854,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 184 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		187 = {
@@ -868,7 +868,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 187 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		188 = {
@@ -882,7 +882,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 188 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
 		189 = {
@@ -896,7 +896,7 @@ country_event = {
 			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 189 }
-			secede_province = FFF
+			secede_province = CLN
 		}
 		primary_culture = vrijlander
     }
@@ -1369,16 +1369,18 @@ country_event = {
 		27 = { secede_province = THIS }
 		22 = { secede_province = THIS }
 		26 = { secede_province = THIS }
+		#mormon pops from ILD are put in a holding cell, never to be seen again
 		2943 = { secede_province = THIS }
 		65 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		64 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		58 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		57 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		56 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
-		2943 = { secede_province = FFF }
-		3118 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 27 } secede_province = FFF }
-		3229 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 22 } secede_province = FFF }
-		3228 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 26 } secede_province = FFF }
+		2943 = { secede_province = CLN }
+		#new mormons emerge from the bottom of the lakes
+		3118 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 27 } secede_province = CLN }
+		3229 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 22 } secede_province = CLN }
+		3228 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 26 } secede_province = CLN }
 		27 = { life_rating = 10 add_province_modifier = { name = recently_built_city duration = 1825 } secede_province = DES }
 		22 = { life_rating = 10 secede_province = DES }
 		26 = { life_rating = 10 secede_province = DES }
@@ -1393,16 +1395,18 @@ country_event = {
 		27 = { secede_province = THIS }
 		22 = { secede_province = THIS }
 		26 = { secede_province = THIS }
+		#mormon pops from ILD are put in a holding cell, never to be seen again
 		2943 = { secede_province = THIS }
 		65 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		64 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		58 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		57 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
 		56 = { any_pop = { limit = { has_pop_religion = mormon } move_pop = 2943 } }
-		2943 = { secede_province = FFF }
-		3118 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 27 } secede_province = FFF }
-		3229 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 22 } secede_province = FFF }
-		3228 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 26 } secede_province = FFF }
+		2943 = { secede_province = CLN }
+		#new mormons emerge from the bottom of the lakes
+		3118 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 27 } secede_province = CLN }
+		3229 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 22 } secede_province = CLN }
+		3228 = { secede_province = THIS any_pop = { literacy = 0.45 move_pop = 26 } secede_province = CLN }
 		27 = { life_rating = 10 add_province_modifier = { name = recently_built_city duration = 1825 } secede_province = DES }
 		22 = { life_rating = 10 secede_province = DES }
 		26 = { life_rating = 10 secede_province = DES }

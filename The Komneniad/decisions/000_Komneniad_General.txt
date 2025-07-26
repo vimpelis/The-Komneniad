@@ -124,6 +124,32 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 	
+	debug_wipe_clt = {
+		picture = komneniad
+		potential = {
+			ai = no
+			has_country_flag = debug_enabled
+		}
+		allow = {
+		}
+		effect = {
+			CLT = {
+				any_owned = {
+					limit = {
+						NOT = {
+							OR = {
+								province_id = 2049
+								province_id = 269
+							}
+						}
+					}
+					secede_province = TUR
+				}
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+	
 	#this will be expanded to all countries which need a tip to function properly
 	komneniad_tips_BAV = {
 		picture = komneniad
