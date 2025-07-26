@@ -699,7 +699,6 @@ country_event = {
     trigger = {
 		OR = {
 			tag = DEN
-			tag = DNN
 			tag = SCA
 			has_country_flag = i_am_dne
 		}

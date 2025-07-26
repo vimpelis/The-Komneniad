@@ -3831,15 +3831,6 @@ country_event = {
 			name = japonisme
 			duration = -1
 		}
-		any_country = {
-			limit = {
-				OR = {
-					capital_scope = { continent = europe }
-					tag = USA
-				}
-			}
-			relation = { who = THIS value = 30 }
-		}
 	}
 
 	mean_time_to_happen = { months = 1 }

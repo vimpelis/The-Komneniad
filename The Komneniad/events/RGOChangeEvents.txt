@@ -222,9 +222,9 @@ province_event = { # Iron found # iron events
             AND = {
                 owner = {
                     OR = {
-                        tag = QNG
+                        tag = XIE
                         tag = CHI
-                        tag = TPG
+                        tag = TUT
                         tag = KOR
                     }
                 }

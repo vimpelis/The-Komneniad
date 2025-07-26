@@ -612,7 +612,6 @@ country_event = {
 			exists = HOL
 			exists = LAU
 			exists = PAL
-			exists = TST
 		}
     }
 
@@ -656,7 +655,6 @@ country_event = {
 			remove_core = HOL
 			remove_core = LAU
 			remove_core = PAL
-			remove_core = TST
 		}
     }
 }

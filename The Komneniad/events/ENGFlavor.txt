@@ -84,13 +84,10 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-    OR = {
-        tag = ENG
-        tag = ENL
-        }
+		tag = ENG
         NOT = { has_country_modifier = bigben_construction }
-        has_country_flag = big_ben_construction
-        }
+		has_country_flag = big_ben_construction
+    }
 
     mean_time_to_happen = { days = 5 }
 
