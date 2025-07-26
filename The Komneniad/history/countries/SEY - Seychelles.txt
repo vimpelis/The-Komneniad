@@ -1,7 +1,7 @@
 capital = 2127
-primary_culture = afro_caribbean
-religion = catholic
-government = colonial_company
+primary_culture = swahili
+religion = sunni
+government = democracy
 plurality = 0.0
 nationalvalue = nv_order
 literacy = 0.01
@@ -38,7 +38,7 @@ citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = post_colonial_country
-set_country_flag = catholic_country
+set_country_flag = sunni_country
 
 ruling_party = SEY_reactionary
 upper_house = {

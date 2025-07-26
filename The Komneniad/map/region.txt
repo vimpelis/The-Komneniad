@@ -704,7 +704,7 @@ BUR_1339 = { 1339 1341 1342 3665 } #Kachin
 
 ENG_1343 = { 1343 1344 1353 3264 1352 1354 } #Tenasserim
 
-ENG_2125 = { 2125 2127 2126 2124 2123 2128 } #Indian Ocean Territory
+ENG_2125 = { 2123 2124 2125 2126 2127 2128 } #Indian Ocean Territory
 
 
 ### Indochina
