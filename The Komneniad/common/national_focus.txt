@@ -211,7 +211,7 @@ promotion_focus = {
 			OR = {
 				owner = { ai = no }
 				state_scope = { total_pops = 40000 }
-				NOT = { number_of_states = 3 }
+				owner = { NOT = { number_of_states = 3 } }
 			}
         }
     }
@@ -246,7 +246,7 @@ promotion_focus = {
 			OR = {
 				owner = { ai = no }
 				state_scope = { total_pops = 40000 }
-				NOT = { number_of_states = 3 }
+				owner = { NOT = { number_of_states = 3 } }
 			}
         }
     }
@@ -307,7 +307,7 @@ promotion_focus = {
 			OR = {
 				owner = { ai = no }
 				state_scope = { total_pops = 40000 }
-				NOT = { number_of_states = 3 }
+				owner = { NOT = { number_of_states = 3 } }
 			}
         }
     }

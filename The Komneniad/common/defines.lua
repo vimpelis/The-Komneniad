@@ -700,7 +700,6 @@ ai =
 	EDUCATOR_WEIGHT = 10000.0, -- ai weigth for new clergy
 	SOLDIER_WEIGHT = 10000.0, -- ai weight for soldiers
 	SOLDIER_FRACTION = 0.04, -- max amount of population AI wants to be soldiers Abe edit: it used to be 0.045 but that makes no sense, the NFs are limited to 0.4
-	CLERGYMEN_FRACTION = 0.034, -- max amount of population AI wants to be clergymen
 	CAPITALIST_FRACTION = 0.003, -- max amount of population AI wants to be capis
 	PRODUCTION_WEIGHT = 0.01, -- ai weight for new production
 	SPAM_PENALTY = 20, -- makes certain diplomatic action less common
