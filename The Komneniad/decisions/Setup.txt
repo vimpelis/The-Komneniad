@@ -854,6 +854,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = initial_growth
 			}
+			NOT = { year = 1837 }
 			NOT = { has_global_flag = you_are_playing_mp }
 		}
 
