@@ -843,6 +843,10 @@ political_decisions = {
             has_country_flag = government_decisions_on
             ai = no
             NOT = { has_global_flag = no_incorp }
+			OR = {
+				NOT = { tag = ZPD }
+				has_country_flag = ZPD_great_national_reform
+			}
         }
         allow = {
             war = no
