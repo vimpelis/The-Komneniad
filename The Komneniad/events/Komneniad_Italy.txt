@@ -404,6 +404,7 @@ country_event = {
     trigger = {
 		tag = PAP
 		year = 1849
+		NOT = { year = 1850 }
 		war = no
 		is_vassal = no
     }
