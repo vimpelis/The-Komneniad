@@ -80,7 +80,10 @@ country_event = { ##rework
             modifier = {
                 factor = 0
                 owner = {
-                    tag = AYL
+                    OR = {
+						tag = ANT
+						tag = AYL
+					}
                 }
             }
         }
