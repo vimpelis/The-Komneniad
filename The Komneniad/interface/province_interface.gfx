@@ -614,7 +614,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_terrainimg_florence"
-		texturefile = "gfx\\interface\\prov_pictures\\terrain_florence.bmp"
+		texturefile = "gfx\\interface\\prov_pictures\\terrain_farmlands.bmp"
 		norefcount = yes
 	}
 
