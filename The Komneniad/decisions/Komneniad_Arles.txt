@@ -242,8 +242,29 @@ political_decisions = {
 			prestige = 10
 			add_accepted_culture = spanish
 			add_accepted_culture = galician
+			add_accepted_culture = aragonese
+			add_accepted_culture = baetican
 			add_accepted_culture = espanian
 			set_country_flag = LTN_accept_spain
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	LTN_accept_france = {
+		picture = form_fra
+		potential = {
+			tag = LTN
+			NOT = { has_country_flag = LTN_accept_france }
+		}
+		allow = {
+			war = no
+			owns = 425
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = french
+			add_accepted_culture = wallonian
+			set_country_flag = LTN_accept_france
 		}
 		ai_will_do = { factor = 1 }
 	}

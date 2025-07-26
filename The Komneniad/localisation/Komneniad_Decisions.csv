@@ -360,6 +360,8 @@ ARE_latin_empire_title;The Latin Empire;;;;;;;;;;;;;
 ARE_latin_empire_desc;Our relentless ambition has brought the Arelat state to unseen heights. We are the masters of the Western Mediterranean, and with the lands we hold being so culturally close, we must unite them based on the common principles we share. Let us proclaim the Latin Empire, an heir to Rome!;;;;;;;;;;;;;
 LTN_accept_spain_title;Accept the Espanians;;;;;;;;;;;;;
 LTN_accept_spain_desc;The peoples of Espania are about as Latin as we are. We must integrate them.;;;;;;;;;;;;;
+LTN_accept_france_title;Accept the Oilitans;;;;;;;;;;;;;
+LTN_accept_france_desc;The peoples of Oilitania are about as Latin as we are. We must integrate them.;;;;;;;;;;;;;
 FRA_lorraine_title;End the Duchy of Lorraine;;;;;;;;;;;;;
 FRA_lorraine_desc;Lorraine is a remnant of the ages past, when the nation was disunited. We must bring the Upper Burgundians in line.;;;;;;;;;;;;;
 FRA_arles_title;Down the Rhone;;;;;;;;;;;;;
