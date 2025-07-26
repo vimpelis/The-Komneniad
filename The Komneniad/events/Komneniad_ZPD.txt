@@ -21,6 +21,7 @@ country_event = {
 
     trigger = {
 		tag = ZPD
+		war = no
 		has_country_flag = ZPD_annex_prussia
 		owns = 690
 		NOT = { exists = PRU }
