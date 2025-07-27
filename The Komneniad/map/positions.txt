@@ -95780,8 +95780,8 @@
 
     building_position = {
         fort = {
-            x = 1883.000000
-            y = 993.000000
+            x = 1881.000000
+            y = 1058.400000
         }
 
         railroad = {
@@ -102841,8 +102841,8 @@
 
     building_position = {
         fort = {
-            x = 1990.560000
-            y = 957.510000
+            x = 2025.218333
+            y = 920.158333
         }
 
         railroad = {
@@ -129218,7 +129218,12 @@
 }
 
 3411 = {
-    text_scale = 1.2
+    text_position = {
+        x = 1892.383333
+        y = 996.026667
+    }
+
+    text_scale = 3
     building_position = {
         naval_base = {
             x = 1636.400000
