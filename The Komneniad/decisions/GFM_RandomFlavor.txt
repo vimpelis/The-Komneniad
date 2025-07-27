@@ -388,7 +388,6 @@ political_decisions = {
             iron_breech_loaded_artillery = 1
             state_n_government = 1
             industrial_score = 150
-            owns = 577
             owns = 578
             owns = 2561
             owns = 576
