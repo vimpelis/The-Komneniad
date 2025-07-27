@@ -5214,3 +5214,9 @@ slavic_revolt = {
     tax_efficiency = 0.25
     icon = 18
 }
+
+native_nation = {
+    global_immigrant_attract = -1
+    global_assimilation_rate = -1
+    icon = 18
+}

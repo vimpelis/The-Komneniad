@@ -756,6 +756,7 @@ political_decisions = {
 				}
 			}
 			LON = { add_country_modifier = { name = neutrality_modifier duration = -1 } }
+			IRO = { add_country_modifier = { name = native_nation duration = -1 } }
 			277 = {
 				add_province_modifier = {
 					name = celtification
