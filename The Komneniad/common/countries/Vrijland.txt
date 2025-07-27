@@ -11,7 +11,7 @@ party = {
     social_policy = no_position_set
     economic_policy = interventionism
     trade_policy = protectionism
-    religious_policy = moralism
+    religious_policy = pluralism
     citizenship_policy = residency
     war_policy = pro_military
 }
@@ -26,7 +26,7 @@ party = {
     social_policy = no_position_set
     economic_policy = interventionism
     trade_policy = free_trade
-    religious_policy = pluralism
+    religious_policy = secularized
     citizenship_policy = limited_citizenship
     war_policy = pro_military
 }

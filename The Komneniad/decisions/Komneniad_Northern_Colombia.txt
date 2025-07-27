@@ -600,12 +600,7 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			badboy = -4
-			any_owned = {
-				limit = {
-					is_core = ACA
-				}
-				secede_province = ACA
-			}
+			release = ACA
 			create_alliance = ACA
 			relation = {
 				who = ACA
