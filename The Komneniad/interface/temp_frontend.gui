@@ -37,14 +37,14 @@ guiTypes = {
 			{
 				name = "frontend_backdrop"
 				spriteType = "GFX_frontend_main_bg"
-				position = { x = -786 y = -661 }
+				position = { x = -640 y = -600 }
 				Orientation = "CENTER"
 			}
 		iconType =
 			{
 				name = "frontend_bottomtile1"
 				spriteType = "GFX_frontend_bottomtile"
-				position = { x = -960 y = -600 }
+				position = { x = -960 y = -540 }
 				Orientation = "CENTER"
 			}
 		iconType =
@@ -59,7 +59,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 				name = "version_label"
-				position = { x = -955 y = 561 }
+				position = { x = -955 y = 501 }
 				textureFile = ""
 				font = "Arial12"
 				borderSize = { x = 0 y = 0 }
