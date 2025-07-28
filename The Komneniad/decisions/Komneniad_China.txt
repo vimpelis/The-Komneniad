@@ -67,7 +67,10 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			state_n_government = 1
+			OR = {
+				state_n_government = 1
+				owns = 2681
+			}
 		}
 		effect = {
 			prestige = 10
