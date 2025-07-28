@@ -912,8 +912,6 @@ province_event = {
 		has_global_flag = YUE_reinforce_bo_ni
     }
 
-    fire_only_once = yes
-
     mean_time_to_happen = {
         days = 10
     }
