@@ -574,6 +574,14 @@ country_event = {
             }
             any_state = { flashpoint_tension = -100 }
         }
+		#clean up crisis tension in VOC
+		any_country = {
+            limit = {
+				tag = VOC
+				exists = yes
+            }
+            any_state = { flashpoint_tension = -100 }
+        }
 		#make CLN unable to be interacted with by ai
 		any_country = {
 			limit = {

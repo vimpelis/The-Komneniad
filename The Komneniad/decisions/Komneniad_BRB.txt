@@ -124,7 +124,7 @@ political_decisions = {
 		allow = {
 			war = no
 			rank = 4
-			all_core = { owned_by = THIS }
+			all_core = { OR = { owned_by = THIS region = ENG_300 } }
 		}
 		effect = {
 			prestige = 15

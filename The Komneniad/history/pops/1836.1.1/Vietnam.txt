@@ -1444,3 +1444,11 @@
         size = 5938
     }
 }
+
+3413 = {
+	farmers = {
+        culture = min
+        religion = mahayana
+        size = 75
+    }
+}

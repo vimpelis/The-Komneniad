@@ -1681,22 +1681,16 @@ liberate_country = {
             THIS = { civilized = no }
             war_with = THIS
             NOT = { relation = { who = THIS value = 0 } }
+			involved_in_crisis = yes
             FROM = { involved_in_crisis = yes }
             THIS = { ai = no }
-            has_global_flag = intervention_in_vietnam
-            has_global_flag = italy_fights_turk
-            has_global_flag = wakhan_treaty
-            has_global_flag = persia_treaty
         }
         OR = {
             NOT = { has_country_flag = dismantle_declared }
             THIS = { NOT = { has_country_flag = in_great_war } }
+			involved_in_crisis = yes
             FROM = { involved_in_crisis = yes }
             THIS = { ai = no }
-            has_global_flag = intervention_in_vietnam
-            has_global_flag = italy_fights_turk
-            has_global_flag = wakhan_treaty
-            has_global_flag = persia_treaty
         }
     }
 
@@ -1723,9 +1717,6 @@ liberate_country = {
             FROM = { involved_in_crisis = yes }
         }
         OR = {
-            THIS = { has_global_flag = intervention_in_vietnam }
-            THIS = { has_global_flag = wakhan_treaty }
-            THIS = { has_global_flag = persia_treaty }
             THIS = { ai = no }
             FROM = { NOT = { any_core = { is_core = THIS } } }
             FROM = { involved_in_crisis = yes }
@@ -1737,15 +1728,7 @@ liberate_country = {
         }
         OR = {
             AND = {
-                OR = {
-                    THIS = { ai = no }
-                    THIS = { has_global_flag = wakhan_treaty }
-                    THIS = { has_global_flag = persia_treaty }
-                    has_global_flag = wakhan_treaty
-                    has_global_flag = persia_treaty
-                    THIS = { has_global_flag = intervention_in_vietnam }
-                    has_global_flag = intervention_in_vietnam
-                }
+                THIS = { ai = no }
                 any_owned_province = { is_core = FROM }
             }
             AND = {
@@ -1900,12 +1883,6 @@ liberate_country = {
             FROM = { civilized = yes }
             THIS = { civilized = no }
             THIS = { ai = no }
-            THIS = { has_global_flag = wakhan_treaty }
-            has_global_flag = wakhan_treaty
-            THIS = { has_global_flag = persia_treaty }
-            has_global_flag = persia_treaty
-            THIS = { has_global_flag = intervention_in_vietnam }
-            has_global_flag = intervention_in_vietnam
         }
         OR = {
             FROM = { exists = no }
@@ -1914,12 +1891,6 @@ liberate_country = {
             FROM = { relation = { who = THIS value = 100 } }
             FROM = { involved_in_crisis = yes }
             THIS = { ai = no }
-            THIS = { has_global_flag = wakhan_treaty }
-            has_global_flag = wakhan_treaty
-            THIS = { has_global_flag = persia_treaty }
-            has_global_flag = persia_treaty
-            THIS = { has_global_flag = intervention_in_vietnam }
-            has_global_flag = intervention_in_vietnam
         }
     }
 

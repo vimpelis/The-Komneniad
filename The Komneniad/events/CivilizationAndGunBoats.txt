@@ -4207,9 +4207,46 @@ country_event = {
 			}
 		}
         random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
+		#add techs
         random_owned = {
             limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
             owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_research_tech_on_civ } NOT = { malthusian_thought = 1 } }
+            owner = { activate_technology = malthusian_thought activate_technology = late_enlightenment_philosophy  clr_country_flag = give_research_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_monetary_tech_on_civ } NOT = { no_standard = 1 } }
+            owner = { activate_technology = no_standard  clr_country_flag = give_monetary_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_firearms_tech_on_civ } NOT = { guild_based_production = 1 } }
+            owner = { activate_technology = guild_based_production  clr_country_flag = give_firearms_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_industrial_tech_on_civ } NOT = { piston_steam_engine = 1 } }
+            owner = { activate_technology = piston_steam_engine  clr_country_flag = give_industrial_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_weapons } NOT = { flintlock_rifles = 1 } }
+            owner = { activate_technology = flintlock_rifles  clr_country_flag = using_foreign_weapons }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_constructions_tech_on_civ } NOT = { post_napoleonic_thought = 1 } }
+            owner = { activate_technology = post_napoleonic_thought  clr_country_flag = give_constructions_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_armyschools_tech_on_civ } NOT = { army_command_principle = 1 } }
+            owner = { activate_technology = army_command_principle  clr_country_flag = give_armyschools_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_shipyards } NOT = { post_nelsonian_thought = 1 } }
+            owner = { activate_technology = post_nelsonian_thought  clr_country_flag = using_foreign_shipyards }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_artillery } NOT = { bronze_muzzle_loaded_artillery = 1 } }
+            owner = { activate_technology = bronze_muzzle_loaded_artillery  clr_country_flag = using_foreign_artillery }
         }
         # Enable uncivilizsed nations to unlock steamers when having unlocked it in political decisions
         random_owned = {

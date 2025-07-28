@@ -1114,6 +1114,7 @@ economic_reforms = {
             on_execute = {
                 effect = {
                     activate_technology = no_standard
+					set_country_flag = give_monetary_tech_on_civ
                     any_pop = {
                         scaled_militancy = {
                             ideology = liberal
@@ -1184,6 +1185,7 @@ economic_reforms = {
                     plurality = 5
                     activate_technology = malthusian_thought
                     activate_technology = late_enlightenment_philosophy
+					set_country_flag = give_research_tech_on_civ
                     any_pop = {
                         scaled_militancy = {
                             ideology = liberal
@@ -1264,6 +1266,7 @@ economic_reforms = {
                 effect = {
                     treasury = -10000
                     activate_technology = guild_based_production
+					set_country_flag = give_firearms_tech_on_civ
                     build_factory_in_capital_state = small_arms_factory
 
                     any_pop = {
@@ -1336,6 +1339,7 @@ economic_reforms = {
                 effect = {
                     treasury = -7000
                     activate_technology = piston_steam_engine
+					set_country_flag = give_industrial_tech_on_civ
                     build_factory_in_capital_state = fabric_factory
 
                     any_pop = {
@@ -1494,6 +1498,7 @@ military_reforms = {
             on_execute = {
                 effect = {
                     activate_technology = military_staff_system
+					set_country_flag = give_advisor_tech_on_civ
                     country_event = 90959
                     any_pop = {
                         scaled_militancy = {
@@ -1529,6 +1534,7 @@ military_reforms = {
             on_execute = {
                 effect = {
                     activate_technology = army_command_principle
+					set_country_flag = give_armyschools_tech_on_civ
                     random_owned = {
                         limit = { owner = { has_country_modifier = corrupt_army } }
                         owner = { remove_country_modifier = corrupt_army }
