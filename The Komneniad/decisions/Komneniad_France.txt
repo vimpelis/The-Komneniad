@@ -31,7 +31,7 @@ political_decisions = {
 		picture = arles
 		potential = {
 			tag = FRA
-			has_country_flag = duchy_of_lorraine
+			has_country_flag = FRA_lorraine
 			NOT = { has_country_flag = FRA_arles }
 		}
 		allow = {
@@ -59,7 +59,7 @@ political_decisions = {
 		picture = become_wallonia
 		potential = {
 			tag = FRA
-			has_country_flag = duchy_of_lorraine
+			has_country_flag = FRA_lorraine
 			NOT = { has_country_flag = FRA_wallonia }
 		}
 		allow = {
