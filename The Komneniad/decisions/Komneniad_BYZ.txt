@@ -582,7 +582,7 @@ political_decisions = {
 			prestige = 15
 			ROM = {
 				all_core = {
-					add_core = BYZ
+					add_core = THIS
 				}
 			}
 			add_accepted_culture = romanian
@@ -616,6 +616,7 @@ political_decisions = {
 			has_country_flag = greek_path
 			has_country_flag = BYZ_integrate_romania
 			NOT = { has_country_flag = BYZ_kill_hungary }
+			NOT = { has_country_flag = BYZ_punish_carpathia }
         }
 
         allow = {
@@ -645,8 +646,10 @@ political_decisions = {
         picture = hungary
         potential = {
 			tag = GRE
-			has_country_flag = greek_path
-			owns = 641
+			OR = {
+				has_country_flag = BYZ_kill_hungary
+				has_country_flag = BYZ_punish_carpathia
+			}
 			NOT = { has_country_flag = BYZ_accept_hungarians }
         }
 
@@ -660,6 +663,7 @@ political_decisions = {
             set_country_flag = BYZ_accept_hungarians
 			prestige = 10
             add_accepted_culture = hungarian
+			HUN = { all_core = { add_core = THIS } }
         }
 
         ai_will_do = { factor = 1 }

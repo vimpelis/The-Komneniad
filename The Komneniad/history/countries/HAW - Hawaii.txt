@@ -1,7 +1,6 @@
 capital = 658
 primary_culture = polynesian
-culture = yankee
-religion = protestant
+religion = catholic
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
@@ -35,7 +34,7 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
 
-set_country_flag = protestant_country
+set_country_flag = catholic_country
 
 ruling_party = HAW_conservative
 upper_house = {

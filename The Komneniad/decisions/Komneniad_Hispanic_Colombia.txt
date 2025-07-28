@@ -339,7 +339,7 @@ political_decisions = {
 		allow = {
 			war = no
 			owns = 2183
-			all_core = { OR = { owned_by = THIS is_overseas = yes } }
+			all_core = { OR = { owned_by = THIS region = HAW_658 } }
 		}
 		effect = {
 			prestige = 50
@@ -421,7 +421,6 @@ political_decisions = {
 		picture = ayllonia
 		potential = {
 			tag = CLM
-			has_country_flag = MEX_take_fluminia
 			NOT = {	has_country_flag = CLM_kill_ayllonia }
 		}
 		allow = {
@@ -693,6 +692,7 @@ political_decisions = {
 				}
 				has_country_flag = AYL_cuba_refused
 			}
+			NOT = { has_country_flag = AYL_claim_cuba }
 		}
 		allow = {
 			war = no
@@ -713,6 +713,7 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
+			set_country_flag = AYL_claim_cuba
 		}
 		ai_will_do = {
 			factor = 1

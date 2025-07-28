@@ -129229,18 +129229,6 @@
     }
 
     text_scale = 3
-    building_position = {
-        naval_base = {
-            x = 1636.400000
-            y = 1251.750000
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 4.717414
-    }
-
 }
 
 3412 = {

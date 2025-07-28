@@ -245,14 +245,14 @@ political_decisions = {
 			}
 			any_owned = {
 				limit = {
-					province_id = 2182
+					province_id = 2188
 					NOT = { trade_goods = coffee }
 				}
 				trade_goods = coffee
 			}
 			any_owned = {
 				limit = {
-					province_id = 2188
+					province_id = 2182
 					NOT = { trade_goods = coffee }
 				}
 				trade_goods = coffee
@@ -273,14 +273,14 @@ political_decisions = {
 			}
 			any_owned = {
 				limit = {
-					province_id = 2171
+					province_id = 2169
 					NOT = { trade_goods = coffee }
 				}
 				trade_goods = coffee
 			}
 			any_owned = {
 				limit = {
-					province_id = 2169
+					province_id = 2171
 					NOT = { trade_goods = coffee }
 				}
 				trade_goods = coffee

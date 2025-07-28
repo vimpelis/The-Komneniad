@@ -801,7 +801,16 @@ country_event = {
 
     option = {
         name = "You are going to Fluvial."
+		all_core = {
+			limit = {
+				is_core = AYL
+				NOT = { is_core = FLU }
+			}
+			remove_core = THIS
+		}
 		change_tag = FLU
+		primary_culture = fluvialean
+		add_accepted_culture = ayllonian
 		prestige = -10
 		capital = 139
     }

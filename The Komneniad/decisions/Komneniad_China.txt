@@ -249,7 +249,7 @@ political_decisions = {
 			has_country_flag = YUE_northern_expedition
 			has_country_flag = YUE_formalize_southern_borders
 			has_country_flag = YUE_annex_taiwan
-			has_global_flag = YUE_expand_lanfang
+			has_global_flag = YUE_reinforce_bo_ni
 			all_core = {
 				owned_by = THIS
 			}
