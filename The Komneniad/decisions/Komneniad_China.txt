@@ -567,9 +567,9 @@ political_decisions = {
 		allow = {
 			war = no
 			money = 25000
-			invention = small_arms_factory
-			invention = artillery_factory
-			invention = ammunition_factory
+			invention = ammunition_production
+			invention = small_arms_production
+			invention = artillery_production
 		}
 		effect = {
 			treasury = -25000
