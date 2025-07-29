@@ -656,16 +656,13 @@ political_decisions = {
                 is_culture_group = malian_american_cultures
 				is_culture_group = moorish_american_cultures
 				is_culture_group = african_diaspora_cultures
-                is_culture_group = native_american
 				is_culture_group = neo_european_cultures
-                primary_culture = australian
             }
             OR = {
                 continent = north_america
                 continent = south_america
-                primary_culture = australian
+                continent = australia_new_zealand
             }
-            is_greater_power = no
             NOT = { has_country_flag = come_to_the_new_world }
             number_of_states = 2
             num_of_ports = 1
@@ -676,12 +673,7 @@ political_decisions = {
             is_vassal = no
             is_greater_power = no
             state_n_government = 1
-            slavery = no_slavery
-            public_meetings = yes_meeting
-            press_rights = free_press
-            citizens_rights = all_voting_pops
             NOT = { citizenship_policy = residency }
-            NOT = { religious_policy = moralism }
             OR = {
                 government = democracy
                 government = hms_government
@@ -693,11 +685,16 @@ political_decisions = {
         effect = {
             set_country_flag = come_to_the_new_world
             treasury = -50000
-            add_country_modifier = { name = small_immigration_boom duration = 730 }
+            add_country_modifier = { name = land_of_opportunity duration = 3650 }
+			CLN = { change_variable = { which = new_life_decision value = 1 } }
         }
 
         ai_will_do = {
-            factor = 0
+            factor = 1
+            modifier = {
+                factor = 0
+                CLN = { check_variable = { which = new_life_decision value = 3 } }
+            }
         }
     }
 	

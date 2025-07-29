@@ -952,7 +952,8 @@ small_immigration_boom = {
 }
 
 land_of_opportunity = {
-    global_immigrant_attract = 4.5
+    global_immigrant_attract = 2
+	global_assimilation_rate = 0.5
     icon = 13
 }
 

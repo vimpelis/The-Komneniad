@@ -75,7 +75,16 @@ country_event = {
             }
             remove_country_modifier = western_presence
         }
-
+		any_country = {
+            limit = {
+				exists = yes
+				NOT = { has_country_flag = land_of_opportunity_done }
+                has_country_flag = come_to_the_new_world
+				NOT = { has_country_modifier = land_of_opportunity }
+            }
+            CLN = { change_variable = { which = new_life_decision value = -1 } }
+			set_country_flag = land_of_opportunity_done
+        }
 		#abolishing serfdom
 		any_country = {
             limit = {
@@ -280,6 +289,26 @@ country_event = {
 			}
 			political_reform = confederalism
 		}
+		#KOMNENIAD: reused GFM colonial gov system
+		#Alaska
+		any_country = {
+			limit = {
+				tag = LSK
+				vassal_of = RUS
+				NOT = { government = colonial_company }
+			}
+			government = colonial_company
+		}
+		#Tawalisi
+		any_country = {
+			limit = {
+				tag = PHL
+				vassal_of = ADU
+				NOT = { government = colonial_company }
+			}
+			government = colonial_company
+		}
+		#END OF KOMNENIAD COLONIAL GOV SYSTEM
 		#Section 0: Colonial vassals are made westernized if after 1860, tested
 		random_owned = {
 			limit = {

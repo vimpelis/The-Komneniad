@@ -1109,7 +1109,6 @@ DVG_badboy_1 = {
     }
     badboy = -0.40
     icon = 1
-
 }
 
 DVG_badboy_2 = {
@@ -1119,5 +1118,56 @@ DVG_badboy_2 = {
     }
     badboy = -0.20
     icon = 1
+}
 
+#Komneniad
+NZL_overpop = {
+    trigger = {
+		tag = NZL
+		total_pops = 750000
+    }
+    global_immigrant_attract = -1
+    icon = 2
+}
+
+SAF_overpop = {
+    trigger = {
+		tag = SAF
+		OR = {
+			AND = {
+				number_of_states = 1
+				total_pops = 350000
+			}
+			AND = {
+				number_of_states = 2
+				total_pops = 500000
+			}
+			AND = {
+				number_of_states = 3
+				total_pops = 750000
+			}
+			AND = {
+				number_of_states = 4
+				total_pops = 1000000
+			}
+			AND = {
+				number_of_states = 5
+				total_pops = 1250000
+			}
+			AND = {
+				number_of_states = 4
+				total_pops = 1500000
+			}
+			AND = {
+				number_of_states = 5
+				total_pops = 1750000
+			}
+			AND = {
+				number_of_states = 6
+				total_pops = 2000000
+			}
+		}
+    }
+    global_immigrant_attract = -1
+    icon = 2
 }

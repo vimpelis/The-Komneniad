@@ -34,6 +34,14 @@ political_decisions = {
                     3404 = { empty = yes } #al-Salman
                     1158 = { empty = yes } #al-Nefud
                 }
+				AND = { #Shaybah
+                    owns = 1170
+                    3385 = { empty = yes }
+                }
+				AND = { #Anazzah
+                    owns = 1156
+                    2639 = { empty = yes }
+                }
             }
         }
 
@@ -102,6 +110,28 @@ political_decisions = {
                     3404 = { empty = yes } #al-Salman
                     1158 = { empty = yes } #al-Nefud
                     OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Shaybah
+                    owns = 1170
+                    3385 = { empty = yes }
+					OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Anazzah
+                    owns = 1156
+                    2639 = { empty = yes }
+					OR = {
                         year = 1860
                         AND = {
                             state_n_government = 1
@@ -203,6 +233,32 @@ political_decisions = {
 						}
 					}
 				}
+            }
+			#Shaybah#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1170
+                        3385 = { empty = yes }
+                    }
+                }
+                3385 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+			#Anazzah#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1156
+                        2639 = { empty = yes }
+                    }
+                }
+                2639 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+				931 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+				910 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+				907 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+				2321 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
             }
         }
         ai_will_do = { factor = 1 }

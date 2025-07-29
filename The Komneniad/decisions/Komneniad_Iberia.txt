@@ -55,18 +55,36 @@ political_decisions = {
 		picture = rio_de_decision
 		potential = {
 			tag = ADU
+			has_global_flag = berlin_conference
 			owns = 1720
 			NOT = { has_country_flag = ADU_western_sahara }
 		}
 		allow = {
 			war = no
-			year = 1880
 			nationalism_n_imperialism = 1
 		}
 		effect = {
 			badboy = 3
 			MLI_1696 = { add_core = THIS }
 			MOR_1683 = { add_core = THIS }
+			random_owned = {
+                limit = {
+                    1775 = { empty = yes }
+                }
+				1773 = { secede_province = THIS }
+				1774 = { secede_province = THIS }
+                1775 = { secede_province = THIS }
+				1779 = { secede_province = THIS }
+				1782 = { secede_province = THIS }
+				3430 = { secede_province = THIS }
+				1696 = { secede_province = THIS }
+            }
+			random_owned = {
+                limit = {
+                    1716 = { empty = yes }
+                }
+				1716 = { secede_province = THIS }
+            }
 			add_accepted_culture = maures
 			set_country_flag = ADU_western_sahara
 		}

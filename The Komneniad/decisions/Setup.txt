@@ -688,6 +688,7 @@ political_decisions = {
 				country_event = 477877789
 			}
 			#################Komneniad######################
+			set_variable = { which = new_life_decision value = 0 }
 			any_country = {
 				limit = { is_greater_power = yes }
 				add_country_modifier = {
