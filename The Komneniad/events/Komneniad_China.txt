@@ -918,13 +918,15 @@ province_event = {
 
     option = {
         name = "Wonderful."
-		any_owned = {
-			limit = {
-				is_core = LAN
-			}
-			add_province_modifier = {
-				name = kongsi_immigration
-				duration = -1
+		owner = {
+			any_owned = {
+				limit = {
+					is_core = LAN
+				}
+				add_province_modifier = {
+					name = kongsi_immigration
+					duration = -1
+				}
 			}
 		}
     }
