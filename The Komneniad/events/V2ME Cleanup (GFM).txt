@@ -3317,7 +3317,7 @@ country_event = {
 					set_country_flag = biafra_master
 					ARO = { all_core = { remove_core = ARO } }
 					MLI_1934 = { add_core = ARO }
-					ENG_1956 = { add_core = ARO }
+					SOK_1963 = { add_core = ARO }
 					ARO = {
 						all_core = { remove_core = CLA remove_core = WRI remove_core = ADW }
 						set_country_flag = post_colonial_country

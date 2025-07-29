@@ -99,6 +99,7 @@ political_decisions = {
 			MEX_2183 = { add_core = THIS }
 			MEX_2181 = { add_core = THIS }
 			UCA_2186 = { add_core = THIS }
+			UCA_2191 = { add_core = THIS }
 			set_country_flag = AYL_annex_yucatan
 		}
 		ai_will_do = {
