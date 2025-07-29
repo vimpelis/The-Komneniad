@@ -385,7 +385,7 @@ political_decisions = {
 			}
 			add_country_modifier = {
 				name = SPA_reverse_arabization
-				duration = 7300
+				duration = 14600
 			}
 			any_pop = {
 				limit = { has_pop_culture = andalusian }
