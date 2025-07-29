@@ -674,6 +674,7 @@ country_event = {
 		}
 		729 = { is_core = THIS }
 		NOT = { owns = 729 }
+		736 = { owner = { OR = { is_culture_group = italian has_country_flag = BYZ_avenge_fourth_crusade } } }
     }
 
     fire_only_once = yes
@@ -702,6 +703,7 @@ country_event = {
 		}
 		736 = { is_core = THIS }
 		NOT = { owns = 736 }
+		736 = { owner = { OR = { is_culture_group = italian has_country_flag = BYZ_avenge_fourth_crusade } } }
     }
 
     fire_only_once = yes

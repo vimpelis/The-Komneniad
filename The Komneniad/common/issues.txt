@@ -626,6 +626,7 @@ political_reforms = {
 					ruling_party_ideology = communist
 					ruling_party_ideology = fascist
                 }
+				NOT = { government = league }
             }
         }
         confederalism = {
@@ -661,6 +662,7 @@ political_reforms = {
                     NOT = { ruling_party_ideology = communist }
                     NOT = { ruling_party_ideology = fascist }
                 }
+				NOT = { government = league }
             }
         }
         federalism = {
@@ -671,6 +673,14 @@ political_reforms = {
                 is_cultural_union = yes
                 can_create_vassals = yes
                 is_vassal = no
+				NOT = {
+					OR = {
+						tag = CLM
+						tag = ZPD
+						tag = CLT
+					}
+				}
+				NOT = { government = league }
             }
         }
         unitary = {
@@ -681,6 +691,7 @@ political_reforms = {
                 has_global_flag = revolution_n_counter_researched
                 NOT = { num_of_substates = 1 }
                 is_cultural_union = no
+				NOT = { government = league }
             }
         }
     }
