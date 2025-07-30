@@ -261,6 +261,12 @@
         religion = theravada
         size = 1000
     }
+	
+	bureaucrats = {
+        culture = thai
+        religion = theravada
+        size = 250
+    }
 
     clergymen = {
         culture = thai
@@ -277,7 +283,7 @@
     soldiers = {
         culture = thai
         religion = theravada
-        size = 2900
+        size = 3200
     }
 
     farmers = {

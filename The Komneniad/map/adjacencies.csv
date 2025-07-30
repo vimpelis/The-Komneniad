@@ -254,7 +254,6 @@ From;To;Type;Through;Data;Comment
 609;465;impassable;0;0;Lucerne-Novara
 469;465;impassable;0;0;Lucerne-Novara
 721;3272;impassable;0;0;Lucerne-Novara
-472;720;impassable;0;0;Nizza-Novara
 471;720;impassable;0;0;Frejus-Novara
 469;720;impassable;0;0;Dinha-Novara
 611;614;impassable;0;0;Lucerne-Novara
@@ -267,11 +266,9 @@ From;To;Type;Through;Data;Comment
 ;;;;;
 #Alaskan Panhandle;;;;;
 ;;;;;
-3597;6;impassable;0;0;
-2;3597;impassable;0;0;
-1;3597;impassable;0;0;
-4;3597;impassable;0;0;
 1;17;impassable;0;0;
+6;17;impassable;0;0;
+6;7;impassable;0;0;
 ;;;;;
 #Siberia;;;;;
 ;;;;;
@@ -321,6 +318,7 @@ From;To;Type;Through;Data;Comment
 #Carpathians;;;;;
 661;660;impassable;0;0;Carpathians
 660;672;impassable;0;0;Carpathians
+660;663;impassable;0;0;Carpathians
 659;667;impassable;0;0;Carpathians
 656;665;impassable;0;0;Carpathians
 663;661;impassable;0;0;Carpathians

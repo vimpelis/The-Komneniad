@@ -1,6 +1,6 @@
-owner = PHI
-controller = PHI
-add_core = PHI
+owner = PHM
+controller = PHM
+add_core = PHM
 add_core = SIA
 trade_goods = silk
 life_rating = 35

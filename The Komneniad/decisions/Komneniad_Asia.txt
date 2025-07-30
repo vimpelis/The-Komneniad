@@ -2,7 +2,7 @@ political_decisions = {
 	PHI_reclaim_ayutthaya = {
 		picture = thai_map
 		potential = {
-			tag = PHI
+			tag = PHM
 			NOT = { has_country_flag = PHI_reclaim_ayutthaya }
 		}
 		allow = {
@@ -93,7 +93,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = SIA
-				tag = PHI
+				tag = PHM
 			}
 			in_sphere = FRA
 			exists = CAM
@@ -108,7 +108,7 @@ political_decisions = {
 				state_n_government = 1
 				civilization_progress = 0.5
 			}
-			all_core = { owned_by = THIS }
+			all_core = { OR = { owned_by = THIS owned_by = CAM } }
 		}
 		effect = {
 			FRA = { country_event = 166015 }
@@ -122,7 +122,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = SIA
-				tag = PHI
+				tag = PHM
 			}
 			OR = {
 				has_country_flag = SIA_cambodia_refuse
@@ -141,13 +141,13 @@ political_decisions = {
 			badboy = 7
 			add_casus_belli = {
 				target = CAM
-				type = conquest
+				type = conquest_any
 				months = 12
 			}
 			war = {
 				target = CAM
 				attacker_goal = {
-					casus_belli = conquest
+					casus_belli = conquest_any
 				}
 			}
 			set_country_flag = SIA_annex_cambodia
@@ -160,7 +160,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = SIA
-				tag = PHI
+				tag = PHM
 			}
 			OR = {
 				has_country_flag = SIA_cambodia_refuse
@@ -392,7 +392,7 @@ political_decisions = {
 				limit = {
 					OR = {
 						tag = SIA
-						tag = PHI
+						tag = PHM
 						tag = LIG
 						tag = CAM
 						tag = CHK

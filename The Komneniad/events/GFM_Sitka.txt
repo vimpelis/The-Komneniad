@@ -1612,8 +1612,6 @@ country_event = {
     }
 }
 
-#big dump for random events
-
 country_event = {
     id = 1316092
     title = "EVTNAME1316092" #The Unequal Treaty (to China)

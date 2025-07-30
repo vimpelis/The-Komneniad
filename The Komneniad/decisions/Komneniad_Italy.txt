@@ -265,6 +265,7 @@ political_decisions = {
 					is_culture_group = italian
 					exists = yes
 					NOT = { tag = THIS }
+					is_vassal = no
 				}
 				country_event = 11101
 			}

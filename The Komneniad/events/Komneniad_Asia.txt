@@ -21,7 +21,7 @@ country_event = {
     picture = "SIA_surrender"
 
     trigger = {
-		tag = PHI
+		tag = PHM
 		year = 1838
     }
 
@@ -35,7 +35,7 @@ country_event = {
         name = "Cooperation is the future."
 		FRA = {
 			diplomatic_influence = {
-				who = PHI
+				who = PHM
 				value = 50
 			}
 		}
@@ -46,7 +46,7 @@ country_event = {
 			}
 			add_country_modifier = {
 				name = western_influences
-				duration = 7300
+				duration = -1
 			}
 		}
     }
@@ -71,7 +71,7 @@ country_event = {
 
     option = {
         name = "Forwards!"
-		PHI = { country_event = 166003 } 
+		PHM = { country_event = 166003 } 
 		relation = {
 			who = BUR
 			value = -100
@@ -117,7 +117,7 @@ country_event = {
 			militancy = 2
 			consciousness = 2
 		}
-		PHI = { country_event = 166005 }
+		PHM = { country_event = 166005 }
 		CHK = { country_event = 166006 }
 		clr_country_flag = XAN_raid
     }
@@ -178,7 +178,7 @@ country_event = {
     picture = "SIA_battle"
 
     trigger = {
-		tag = PHI
+		tag = PHM
 		XAN = { war_with = CHK }
     }
 
@@ -194,14 +194,14 @@ country_event = {
 			target = XAN
 			attacker_goal = {
 				casus_belli = acquire_all_cores
-				country = PHI
+				country = PHM
 			}
 		}
 		war = {
 			target = CHK
 			attacker_goal = {
 				casus_belli = acquire_all_cores
-				country = PHI
+				country = PHM
 			}
 		}
     }
@@ -214,7 +214,7 @@ country_event = {
     picture = "SIA_surrender"
 
     trigger = {
-		tag = PHI
+		tag = PHM
 		war = no
 		owns = 1358
 		exists = XAN
@@ -242,7 +242,7 @@ country_event = {
     picture = "SIA_surrender"
 
     trigger = {
-		tag = PHI
+		tag = PHM
 		war = no
 		owns = 1359
 		exists = CHK
@@ -272,8 +272,8 @@ country_event = {
     trigger = {
 		tag = FRA
 		owns = 1380
-		1359 = { owned_by = PHI }
-		1358 = { owned_by = PHI }
+		1359 = { owned_by = PHM }
+		1358 = { owned_by = PHM }
     }
 
     fire_only_once = yes
@@ -285,7 +285,7 @@ country_event = {
     option = {
         name = "Let's send them a delegation."
 		prestige = 5
-		PHI = { country_event = 166011 }
+		PHM = { country_event = 166011 }
     }
 }
 
@@ -303,11 +303,11 @@ country_event = {
 		years_of_research = 12
 		FRA = {
 			diplomatic_influence = {
-				who = PHI
+				who = PHM
 				value = 400
 			}
 			relation = {
-				who = PHI
+				who = PHM
 				value = 400
 			}
 		}
@@ -321,7 +321,7 @@ country_event = {
     picture = "SIA_bangkok"
 
     trigger = {
-		tag = PHI
+		tag = PHM
 		owns = 1346
     }
 
@@ -335,7 +335,8 @@ country_event = {
         name = "A dream come true."
 		prestige = 10
 		change_tag = SIA
-		all_core = { remove_core = PHI }
+		capital = 1346
+		all_core = { remove_core = PHM }
     }
 }
 
@@ -372,7 +373,7 @@ country_event = {
     picture = "SIA_battle"
 
     trigger = {
-		tag = PHI
+		tag = PHM
 		is_vassal = no
 		neighbour = BUR
 		OR = {
@@ -398,7 +399,7 @@ country_event = {
 			target = BUR
 			attacker_goal = {
 				casus_belli = acquire_all_cores
-				country = PHI
+				country = PHM
 			}
 		}
 		set_country_flag = PHI_reclaim_ayutthaya
@@ -504,7 +505,7 @@ country_event = {
     trigger = {
 		OR = {
 			tag = SIA
-			tag = PHI
+			tag = PHM
 		}
 		war = no
 		OR = {
@@ -567,7 +568,7 @@ country_event = {
 			value = -50
 		}
 		relation = {
-			who = PHI
+			who = PHM
 			value = -50
 		}
 		clr_global_flag = SIA_cambodia_accept

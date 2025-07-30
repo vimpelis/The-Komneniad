@@ -184,6 +184,7 @@ country_event = {
 				build_factory_in_capital_state = liquor_distillery
 			}
 		}
+		capital = 2172
 	}
 }
 
@@ -230,6 +231,7 @@ country_event = {
 				build_factory_in_capital_state = steel_factory
 			}
 		}
+		capital = 2172
 	}
 }
 

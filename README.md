@@ -85,7 +85,7 @@ ZND - Zandiyeh
 MGT - Manghits  
 MGW - Maguindanao  
 VOC - United East India Company  
-PHI - Phimai  
+PHM - Phimai  
 LIG - Ligor  
 IRY - Iryai  
 HUB - Hubei  
