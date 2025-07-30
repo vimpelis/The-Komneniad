@@ -6,3 +6,4 @@ trade_goods = fruit
 life_rating = 35
 terrain = simferopol
 colonial = 2
+add_core = PNT

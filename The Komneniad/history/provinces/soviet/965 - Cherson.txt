@@ -5,3 +5,4 @@ trade_goods = fish
 life_rating = 35
 terrain = kherson
 add_core = CRI
+add_core = PNT

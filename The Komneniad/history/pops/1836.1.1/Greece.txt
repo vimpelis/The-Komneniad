@@ -194,8 +194,8 @@
         religion = orthodox
         size = 18937
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = greek
         religion = orthodox
         size = 3000
@@ -1395,7 +1395,7 @@
     aristocrats = {
         culture = greek
         religion = orthodox
-        size = 110
+        size = 99
     }
 
     bureaucrats = {
@@ -1413,13 +1413,13 @@
     clergymen = {
         culture = greek
         religion = orthodox
-        size = 275
+        size = 247
     }
 
     artisans = {
         culture = greek
         religion = orthodox
-        size = 3850
+        size = 3465
     }
 
     soldiers = {
@@ -1431,7 +1431,31 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 22000
+        size = 19800
+    }
+
+    aristocrats = {
+        culture = anatolian
+        religion = orthodox
+        size = 11
+    }
+
+    clergymen = {
+        culture = anatolian
+        religion = orthodox
+        size = 28
+    }
+
+    artisans = {
+        culture = anatolian
+        religion = orthodox
+        size = 385
+    }
+
+    farmers = {
+        culture = anatolian
+        religion = orthodox
+        size = 2200
     }
 }
 #Ionian Islands Region (188000)
@@ -2017,8 +2041,8 @@
         religion = orthodox
         size = 58075
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = greek
         religion = orthodox
         size = 2000

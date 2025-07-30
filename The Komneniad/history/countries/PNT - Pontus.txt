@@ -1,12 +1,14 @@
-capital = 967
-primary_culture = tatar
-culture = pontic
-religion = sunni
+capital = 882
+primary_culture = pontic
+culture = greek
+culture = anatolian
+religion = orthodox
 government = absolute_monarchy
-plurality = 0.02
+plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.1
+literacy = 0.22
 civilized = yes
+is_releasable_vassal = no
 
 #Technologies
 post_napoleonic_thought = 1
@@ -31,28 +33,17 @@ mechanical_production = 1
 hot_blast = 1
 basic_chemistry = 1
 
-ruling_party = CRI_conservative
-upper_house = {
-    fascist = 0
-    liberal = 13
-    conservative = 68
-    reactionary = 19
-    radical = 0
-    socialist = 0
-    communist = 0
-}
-
-set_country_flag = sunni_country
-
+#Political Reforms
 slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
-public_meetings = no_meeting
+public_meetings = restricted_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
-voting_system = jefferson_method
+voting_system = first_past_the_post
 political_parties = underground_parties
 
+#Social Reforms
 wage_reform = no_minimum_wage
 work_hours = no_work_hour_limit
 safety_regulations = no_safety
@@ -60,13 +51,41 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
+centralization = unitary
+colonial_policy = no_colonies
+
 
 #New Reforms
 conscription = no_draft
-debt_law = serfdom
+debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
-centralization = unitary
-colonial_policy = no_colonies
+
+set_country_flag = orthodox_country
+set_country_flag = unreleasable_country
+
+ruling_party = GRE_conservative
+upper_house = {
+    fascist = 0
+    liberal = 35
+    conservative = 55
+    reactionary = 10
+    radical = 0
+    socialist = 0
+    communist = 0
+}
+
+govt_flag = {
+    government = absolute_empire
+    flag = theocracy
+}
+govt_flag = {
+    government = semi_constitutional_empire
+    flag = theocracy
+}
+govt_flag = {
+    government = constitutional_empire
+    flag = theocracy
+}

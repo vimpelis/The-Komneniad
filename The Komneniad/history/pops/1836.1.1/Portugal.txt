@@ -1297,7 +1297,7 @@
     aristocrats = {
         culture = greek
         religion = orthodox
-        size = 100
+        size = 90
     }
 
     bureaucrats = {
@@ -1315,13 +1315,13 @@
     clergymen = {
         culture = greek
         religion = orthodox
-        size = 250
+        size = 225
     }
 
     artisans = {
         culture = greek
         religion = orthodox
-        size = 3500
+        size = 3150
     }
 
     soldiers = {
@@ -1333,7 +1333,31 @@
     farmers = {
         culture = greek
         religion = orthodox
-        size = 20000
+        size = 18000
+    }
+
+    aristocrats = {
+        culture = anatolian
+        religion = orthodox
+        size = 10
+    }
+
+    clergymen = {
+        culture = anatolian
+        religion = orthodox
+        size = 25
+    }
+
+    artisans = {
+        culture = anatolian
+        religion = orthodox
+        size = 350
+    }
+
+    farmers = {
+        culture = anatolian
+        religion = orthodox
+        size = 2000
     }
 }
 #Setubal (112000/28000 POPS)

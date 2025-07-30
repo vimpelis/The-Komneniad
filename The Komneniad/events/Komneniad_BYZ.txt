@@ -1400,3 +1400,59 @@ country_event = {
 		}
     }
 }
+
+country_event = {
+    id = 151035
+    title = "Hellenomnemon"
+    desc = "151035DESC"
+    picture = "hellenomnemon"
+
+    trigger = {
+		year = 1843
+        OR = {
+			tag = BYZ
+			tag = GRE
+		}
+    }
+    mean_time_to_happen = {
+        days = 90
+    }
+	fire_only_once = yes
+    option = {
+        name = "Borderline treason."
+		any_pop = {
+			limit = { has_pop_culture = anatolian }
+			consciousness = 1
+		}
+		any_pop = {
+			limit = { has_pop_culture = pontic }
+			consciousness = 1
+		}
+    }
+}
+
+country_event = {
+    id = 151036
+    title = "Neos Hellenomnemon"
+    desc = "151036DESC"
+    picture = "neos_hellenomnemon"
+
+    trigger = {
+		year = 1903
+        OR = {
+			tag = BYZ
+			tag = GRE
+		}
+    }
+    mean_time_to_happen = {
+        days = 180
+    }
+	fire_only_once = yes
+    option = {
+        name = "Interesting."
+		prestige = 5
+		any_pop = {
+			consciousness = -0.5
+		}
+    }
+}

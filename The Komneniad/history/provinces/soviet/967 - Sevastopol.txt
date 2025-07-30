@@ -8,3 +8,4 @@ terrain = sevastopol
 naval_base = 2
 fort = 1
 colonial = 2
+add_core = PNT

@@ -3034,7 +3034,7 @@
     }
 
     farmers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 4000
     }

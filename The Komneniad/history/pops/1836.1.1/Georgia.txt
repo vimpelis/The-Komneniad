@@ -141,7 +141,7 @@
     }
 
     farmers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 6000
     }
@@ -369,7 +369,7 @@
     }
 
     farmers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 1000
     }
@@ -615,7 +615,7 @@
     }
 
     farmers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 3500
     }
@@ -665,31 +665,31 @@
     }
 
     aristocrats = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 75
     }
 
     clergymen = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 75
     }
 
     artisans = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 200
     }
 
     soldiers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 50
     }
 
     farmers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 2000
     }
@@ -779,31 +779,31 @@
     }
 
     aristocrats = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 15
     }
 
     clergymen = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 15
     }
 
     artisans = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 40
     }
 
     soldiers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 10
     }
 
     farmers = {
-        culture = greek
+        culture = pontic
         religion = orthodox
         size = 1620
     }
@@ -867,25 +867,25 @@
     }
 
     soldiers = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 165
     }
 
     clergymen = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 165
     }
 
     artisans = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 165
     }
 
     farmers = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 1500
     }
@@ -903,7 +903,7 @@
     }
 
     artisans = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 900
     }

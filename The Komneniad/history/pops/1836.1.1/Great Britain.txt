@@ -4507,45 +4507,45 @@
 #Brighton (404000/101000 POPS)
 3604 = {
     aristocrats = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
-        size = 143
+        size = 79
     }
 
     bureaucrats = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 143
     }
 
     officers = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 35
     }
 
     clergymen = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
-        size = 357
+        size = 196
     }
 
     artisans = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
-        size = 5855
+        size = 3220
     }
 
     soldiers = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
         size = 1430
     }
 
     farmers = {
-        culture = anatolian
+        culture = pontic
         religion = orthodox
-        size = 33462
+        size = 18404
     }
 
     artisans = {
@@ -4571,49 +4571,73 @@
         religion = orthodox
         size = 550
     }
-}
-#Portsmouth
-3269 = {
+
     aristocrats = {
         culture = anatolian
         religion = orthodox
-        size = 115
-    }
-
-    bureaucrats = {
-        culture = anatolian
-        religion = orthodox
-        size = 115
-    }
-
-    officers = {
-        culture = anatolian
-        religion = orthodox
-        size = 28
+        size = 64
     }
 
     clergymen = {
         culture = anatolian
         religion = orthodox
-        size = 288
+        size = 161
     }
 
     artisans = {
         culture = anatolian
         religion = orthodox
-        size = 3637
-    }
-
-    soldiers = {
-        culture = anatolian
-        religion = orthodox
-        size = 1155
+        size = 2635
     }
 
     farmers = {
         culture = anatolian
         religion = orthodox
-        size = 20790
+        size = 15058
+    }
+}
+#Portsmouth
+3269 = {
+    aristocrats = {
+        culture = pontic
+        religion = orthodox
+        size = 63
+    }
+
+    bureaucrats = {
+        culture = pontic
+        religion = orthodox
+        size = 115
+    }
+
+    officers = {
+        culture = pontic
+        religion = orthodox
+        size = 28
+    }
+
+    clergymen = {
+        culture = pontic
+        religion = orthodox
+        size = 158
+    }
+
+    artisans = {
+        culture = pontic
+        religion = orthodox
+        size = 2000
+    }
+
+    soldiers = {
+        culture = pontic
+        religion = orthodox
+        size = 1155
+    }
+
+    farmers = {
+        culture = pontic
+        religion = orthodox
+        size = 11434
     }
 
     artisans = {
@@ -4638,6 +4662,30 @@
         culture = turkish
         religion = orthodox
         size = 165
+    }
+
+    aristocrats = {
+        culture = anatolian
+        religion = orthodox
+        size = 52
+    }
+
+    clergymen = {
+        culture = anatolian
+        religion = orthodox
+        size = 130
+    }
+
+    artisans = {
+        culture = anatolian
+        religion = orthodox
+        size = 1637
+    }
+
+    farmers = {
+        culture = anatolian
+        religion = orthodox
+        size = 9356
     }
 }
 #Southampton (332000/83000 POPS)

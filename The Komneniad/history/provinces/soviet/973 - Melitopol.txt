@@ -5,3 +5,4 @@ trade_goods = coal
 life_rating = 35
 terrain = melitopol
 add_core = CRI
+add_core = PNT

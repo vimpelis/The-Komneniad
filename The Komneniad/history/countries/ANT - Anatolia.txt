@@ -1,6 +1,7 @@
 capital = 876
 primary_culture = anatolian
 culture = greek
+culture = pontic
 religion = orthodox
 government = absolute_monarchy
 plurality = 0.0

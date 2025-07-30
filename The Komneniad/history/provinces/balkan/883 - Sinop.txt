@@ -5,4 +5,5 @@ trade_goods = fish
 life_rating = 35
 terrain = sinop
 add_core = ANT
+add_core = PNT
 state_building = { level = 1 building = steel_factory upgrade = yes } 
