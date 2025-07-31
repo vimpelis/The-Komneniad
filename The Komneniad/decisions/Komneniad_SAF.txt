@@ -56,16 +56,15 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = SAF_northern_frontier
-			2094 = { secede_province = SAF life_rating = 20 }
-			2095 = { secede_province = SAF life_rating = 20 }
-			2084 = { secede_province = SAF life_rating = 15 change_province_name = "Luderitzbaai" }
-			2086 = { secede_province = SAF life_rating = 15 change_province_name = "Keetmanshoop" }
 			2085 = {
 				secede_province = SAF
 				life_rating = 15
 				change_province_name = "Stampriet"
-				state_scope = { change_region_name = "Namakwaland" }
 			}
+			2084 = { secede_province = SAF life_rating = 15 change_province_name = "Luderitzbaai" }
+			2086 = { secede_province = SAF life_rating = 15 change_province_name = "Keetmanshoop" }
+			2094 = { secede_province = SAF life_rating = 20 }
+			2095 = { secede_province = SAF life_rating = 20 }
 		}
 		ai_will_do = { factor = 1 }
 	}

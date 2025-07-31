@@ -213,6 +213,7 @@ country_event = {
     picture = "india_map"
 
     trigger = {
+		ai = no
 		money = 20000000
     }
 
