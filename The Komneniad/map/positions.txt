@@ -103953,15 +103953,6 @@
             y = 782.223333
         }
 
-        naval_base = {
-            x = 2220.375000
-            y = 765.346667
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 3.419208
     }
 
 } # Vila do Barra
@@ -133206,6 +133197,15 @@
             y = 760.040000
         }
 
+        naval_base = {
+            x = 2219.400000
+            y = 764.550000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.146593
     }
 
 }
@@ -135934,6 +135934,15 @@
             y = 699.900000
         }
 
+        naval_base = {
+            x = 2198.40000
+            y = 726.550000
+        }
+
+    }
+
+    building_rotation = {
+        naval_base = 3.096623
     }
 
 } # Simanggang
