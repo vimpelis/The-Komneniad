@@ -998,7 +998,7 @@ political_decisions = {
         potential = {
 			OR = {
 				tag = BYZ
-				tag = GRE
+				has_country_flag = greek_path
 			}
 			NOT = { 967 = { is_core = THIS } }
 			war_with = RUS
@@ -1030,7 +1030,7 @@ political_decisions = {
         potential = {
 			OR = {
 				tag = BYZ
-				tag = GRE
+				has_country_flag = greek_path
 			}
 			owns = 900
 			NOT = { has_country_flag = BYZ_accept_assyrians }
@@ -1053,7 +1053,7 @@ political_decisions = {
         potential = {
 			OR = {
 				tag = BYZ
-				tag = GRE
+				has_country_flag = greek_path
 			}
 			owns = 900
 			NOT = { has_country_flag = BYZ_accept_syriacs }
@@ -1076,7 +1076,7 @@ political_decisions = {
         potential = {
 			OR = {
 				tag = BYZ
-				tag = GRE
+				has_country_flag = greek_path
 			}
 			owns = 913
 			NOT = { has_country_flag = BYZ_accept_copts }
