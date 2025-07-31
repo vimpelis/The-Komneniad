@@ -207,3 +207,252 @@
 		size = 10000
 	}
 }
+
+#Reiszakers
+2931 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2932 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2934 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2946 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2947 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2948 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2949 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2950 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+2951 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3016 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3017 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3018 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3021 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3022 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3023 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3024 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3025 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3026 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3027 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3028 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3029 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3033 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3034 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3205 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3206 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3207 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3208 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3209 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3210 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3211 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}
+
+3237 = { 
+	slaves = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+}

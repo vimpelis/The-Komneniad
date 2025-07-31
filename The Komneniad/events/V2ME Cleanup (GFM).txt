@@ -7462,9 +7462,8 @@ country_event = {
 				owner = {
 					set_global_flag = namibia_organized
 					set_country_flag = namibia_master
-					NMB = { all_core = { remove_core = NMB } }
-					ENG_2068 = { add_core = NMB }
-					ENG_2071 = { add_core = NMB }
+					POR_2003 = { add_core = NMB }
+					ENG_2078 = { add_core = NMB }
 					NMB = {
 						all_core = { remove_core = SHO remove_core = MAT }
 						set_country_flag = post_colonial_country
@@ -9383,5 +9382,358 @@ country_event = {
 		set_country_flag = interacted_with
 		FROM = { clr_country_flag = possible_interactions }
 		overlord = { country_event = 477877792 }
+	}
+}
+
+country_event = {
+	id = 477877794
+	title = "Reiszakers on the move"
+	desc = "This event makes 100 Reiszaker pops move into necessary provinces"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "OK"
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 206
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2931 = { any_pop = { move_pop = 206 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 3655
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2932 = { any_pop = { move_pop = 3655 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 2555
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2934 = { any_pop = { move_pop = 2555 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 204
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2946 = { any_pop = { move_pop = 204 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 202
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2947 = { any_pop = { move_pop = 202 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 199
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2948 = { any_pop = { move_pop = 199 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 200
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2949 = { any_pop = { move_pop = 200 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 3566
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2950 = { any_pop = { move_pop = 3566 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 198
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				2951 = { any_pop = { move_pop = 198 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 196
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3016 = { any_pop = { move_pop = 196 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 3654
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3017 = { any_pop = { move_pop = 3654 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 195
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3018 = { any_pop = { move_pop = 195 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 201
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3021 = { any_pop = { move_pop = 201 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 3310
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3022 = { any_pop = { move_pop = 3310 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 191
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3023 = { any_pop = { move_pop = 191 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 2556
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3024 = { any_pop = { move_pop = 2556 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 190
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3025 = { any_pop = { move_pop = 190 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 188
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3026 = { any_pop = { move_pop = 188 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 187
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3027 = { any_pop = { move_pop = 187 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 184
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3028 = { any_pop = { move_pop = 184 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 186
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3029 = { any_pop = { move_pop = 186 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 185
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3033 = { any_pop = { move_pop = 185 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 3657
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3034 = { any_pop = { move_pop = 3657 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 3656
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3205 = { any_pop = { move_pop = 3656 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 189
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3206 = { any_pop = { move_pop = 189 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 3311
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3207 = { any_pop = { move_pop = 3311 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 193
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3208 = { any_pop = { move_pop = 193 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 197
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3209 = { any_pop = { move_pop = 197 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 194
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3210 = { any_pop = { move_pop = 194 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 192
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3211 = { any_pop = { move_pop = 192 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
+		VRI = {
+			random_owned = {
+				limit = {
+					province_id = 140
+					has_province_modifier = reiszakers
+					NOT = { has_province_modifier = reiszakers_moved_in }
+				}
+				3237 = { any_pop = { move_pop = 140 } }
+				add_province_modifier = { name = reiszakers_moved_in duration = -1 }
+			}
+		}
 	}
 }

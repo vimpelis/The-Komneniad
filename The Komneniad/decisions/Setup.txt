@@ -796,10 +796,10 @@ political_decisions = {
 				}
 				country_event = 165001
 			}
-			#For some reason the game didn't want to give PHI the event any other way, so here's a workaround
+			#For some reason the game didn't want to give PHM the event any other way, so here's a workaround
 			any_country = {
 				limit = {
-					tag = PHI
+					tag = PHM
 				}
 				country_event = 166000
 				treasury = 20000

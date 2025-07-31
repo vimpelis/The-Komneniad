@@ -10892,6 +10892,12 @@
 #ruled by the USA
 #Charleston (248000/61000 POPS)
 205 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -11092,6 +11098,12 @@
 #ruled by the USA
 #Greenville (96000/27000 POPS)
 207 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -11148,6 +11160,12 @@
 }
 #Raleigh (156000/39000 POPS)
 208 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -11216,6 +11234,12 @@
 }
 #Charlotte (136000/34000 POPS)
 209 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -11272,6 +11296,12 @@
 }
 #Wilmington (188000/47000 POPS)
 210 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -11541,9 +11571,21 @@
         religion = catholic
         size = 8500
     }
+	
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
 }
 #Blackstone (340000/85000 POPS)
 211 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -11766,6 +11808,12 @@
 }
 #Norfolk (108000/27000 POPS)
 214 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -11932,6 +11980,12 @@
 }
 #Roanoke (120000/30000 POPS)
 216 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic
@@ -12239,6 +12293,12 @@
 }
 #Wheeling (100000/25000 POPS)
 218 = {
+	farmers = {
+        culture = vrijlander
+        religion = protestant
+        size = 100
+    }
+
     aristocrats = {
         culture = ayllonian
         religion = catholic

@@ -197,7 +197,7 @@ country_event = {
 }
 
 country_event = {
-    id = 159007
+    id = 159008
     title = "AI: Take Hawaii"
     desc = "Hey AI, did you know you have a core on Hawaii that blocks your expansion? Yeah, go get it."
     picture = "mexico-us-treaty"

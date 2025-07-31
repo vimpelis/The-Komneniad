@@ -7720,66 +7720,6 @@ country_event = {
 }
 
 country_event = {
-	id = 477877794
-	title = "Organization of Gambia"
-	desc = "With our control over Gambia secured, our colonial administration in the area has consolidated their hold. New maps have been drawn, and an official protectorate has been established."
-	picture = "colonial_nigeria"
-
-	is_triggered_only = yes
-
-	option = {
-		name = "Excellent."
-		1785 = { add_core = GMB }
-
-		any_owned = {
-			limit = { is_core = GMB }
-			remove_core = TOO
-			remove_core = WOL
-			remove_core = SEG
-			remove_core = TOU
-			remove_core = GBU
-		}
-
-		GMB = {
-			clr_country_flag = sunni_country
-			clr_country_flag = shiite_country
-			clr_country_flag = ibadi_country
-			clr_country_flag = catholic_country
-			clr_country_flag = protestant_country
-			clr_country_flag = mormon_country
-			clr_country_flag = orthodox_country
-			clr_country_flag = coptic_country
-			clr_country_flag = jewish_country
-			clr_country_flag = yazidi_country
-			clr_country_flag = mahayana_country
-			clr_country_flag = gelugpa_country
-			clr_country_flag = theravada_country
-			clr_country_flag = hindu_country
-			clr_country_flag = shinto_country
-			clr_country_flag = sikh_country
-			clr_country_flag = animist_country
-		}
-
-		random_owned = { limit = { owner = { has_country_flag = catholic_country } } GMB = { religion = catholic set_country_flag = catholic_country } }
-		random_owned = { limit = { owner = { has_country_flag = protestant_country } } GMB = { religion = protestant set_country_flag = protestant_country } }
-		random_owned = { limit = { owner = { has_country_flag = orthodox_country } } GMB = { religion = orthodox set_country_flag = orthodox_country } }
-		random_owned = { limit = { owner = { has_country_flag = mormon_country } } GMB = { religion = mormon set_country_flag = mormon_country } }
-		random_owned = { limit = { owner = { has_country_flag = coptic_country } } GMB = { religion = coptic set_country_flag = coptic_country } }
-		random_owned = { limit = { owner = { has_country_flag = sunni_country } } GMB = { religion = sunni set_country_flag = sunni_country } }
-		random_owned = { limit = { owner = { has_country_flag = shiite_country } } GMB = { religion = shiite set_country_flag = shiite_country } }
-		random_owned = { limit = { owner = { has_country_flag = shinto_country } } GMB = { religion = shinto set_country_flag = shinto_country } }
-		random_owned = { limit = { owner = { has_country_flag = mahayana_country } } GMB = { religion = mahayana set_country_flag = mahayana_country } }
-		random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } GMB = { religion = gelugpa set_country_flag = gelugpa_country } }
-		random_owned = { limit = { owner = { has_country_flag = theravada_country } } GMB = { religion = theravada set_country_flag = theravada_country } }
-		random_owned = { limit = { owner = { has_country_flag = hindu_country } } GMB = { religion = hindu set_country_flag = hindu_country } }
-		random_owned = { limit = { owner = { has_country_flag = sikh_country } } GMB = { religion = sikh set_country_flag = sikh_country } }
-		random_owned = { limit = { owner = { has_country_flag = jewish_country } } GMB = { religion = jewish set_country_flag = jewish_country } }
-		random_owned = { limit = { owner = { has_country_flag = ibadi_country } } GMB = { religion = ibadi set_country_flag = ibadi_country } }
-		random_owned = { limit = { owner = { has_country_flag = yazidi_country } } GMB = { religion = yazidi set_country_flag = yazidi_country } }
-	}
-}
-
-country_event = {
 	id = 477877795
 	title = "Organization of Timor"
 	desc = "With our control over Timor secured, our colonial administration in the area has consolidated their hold. New maps have been drawn, and an official protectorate has been established."

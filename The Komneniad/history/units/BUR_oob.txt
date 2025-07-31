@@ -1,6 +1,6 @@
 #Relations
 
-PHI = {
+PHM = {
     value = -100        #relation
 }
 

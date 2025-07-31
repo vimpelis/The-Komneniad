@@ -1285,3 +1285,56 @@ country_event = {
 		ai_chance = { factor = 0 }
     }
 }
+
+country_event = {
+    id = 158030
+    title = "The Reiszakers"
+    desc = "158030DESC"
+    picture = "reiszaker"
+
+    trigger = {
+		tag = VRI
+		NOT = { year = 1910 }
+		war = no
+		has_country_flag = VRI_rally_the_betrodden
+		any_owned_province = {
+			OR = {
+				region = USA_201
+				region = USA_3657
+				region = USA_200
+				region = USA_196
+				region = USA_194
+				region = USA_185
+				region = USA_205
+				region = USA_211
+			}
+			NOT = { has_province_modifier = reiszakers }
+		}
+    }
+
+    mean_time_to_happen = { days = 90 }
+
+    option = {
+        name = "For the adventurer and the office-seeker, I have no welcome."
+		any_owned = {
+			limit = {
+				OR = {
+					region = USA_201
+					region = USA_3657
+					region = USA_200
+					region = USA_196
+					region = USA_194
+					region = USA_185
+					region = USA_205
+					region = USA_211
+				}
+				NOT = { has_province_modifier = reiszakers }
+			}
+			add_province_modifier = {
+				name = reiszakers
+				duration = -1
+			}
+		}
+		CLN = { country_event = 477877794 }
+    }
+}

@@ -1,4 +1,4 @@
-PHI = { value = -100 }
+PHM = { value = -100 }
 CAM = { value = -100 }
 CHK = { value = 100 }
 LUA = { value = -100 }
