@@ -592,6 +592,7 @@ political_decisions = {
 				OR = {
 					owned_by = THIS
 					NOT = { is_core = CHI }
+					has_province_modifier = treaty_port
 				}
 			}
 			owns = 1616
