@@ -676,6 +676,7 @@ political_decisions = {
             NOT = { citizenship_policy = residency }
             OR = {
                 government = democracy
+				government = radical_republic
                 government = hms_government
                 government = constitutional_empire
             }
