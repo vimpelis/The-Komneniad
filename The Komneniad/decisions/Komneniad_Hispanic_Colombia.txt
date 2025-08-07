@@ -360,7 +360,7 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			all_core = { owned_by = THIS }
+			all_core = { OR = { owned_by = THIS region = HAW_658 } }
 		}
 		effect = {
 			badboy = 3
@@ -426,7 +426,7 @@ political_decisions = {
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
-			all_core = { owned_by = THIS }
+			all_core = { OR = { owned_by = THIS region = HAW_658 } }
 		}
 		effect = {
 			badboy = 20
@@ -452,7 +452,7 @@ political_decisions = {
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
-			all_core = { owned_by = THIS }
+			all_core = { OR = { owned_by = THIS region = HAW_658 } }
 		}
 		effect = {
 			badboy = 10

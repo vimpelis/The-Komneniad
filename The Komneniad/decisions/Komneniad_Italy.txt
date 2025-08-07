@@ -266,6 +266,7 @@ political_decisions = {
 					exists = yes
 					NOT = { tag = THIS }
 					is_vassal = no
+					war = no
 				}
 				country_event = 11101
 			}
