@@ -1114,6 +1114,7 @@ country_event = {
 			}
 			add_core = NAF
 		}
+		NAF = { government = democracy }
     }
 }
 
