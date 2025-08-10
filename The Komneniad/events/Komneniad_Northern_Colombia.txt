@@ -405,6 +405,7 @@ country_event = {
 		}
 		primary_culture = freedman
 		3544 = {
+			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 191 }
 		}
@@ -490,6 +491,7 @@ country_event = {
 		}
 		primary_culture = freedman
 		3544 = {
+			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 200 }
 		}
@@ -555,6 +557,7 @@ country_event = {
 		}
 		primary_culture = freedman
 		3544 = {
+			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 196 }
 		}
@@ -632,6 +635,7 @@ country_event = {
 		}
 		primary_culture = freedman
 		3544 = {
+			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 197 }
 		}
@@ -718,6 +722,7 @@ country_event = {
 		}
 		primary_culture = freedman
 		3544 = {
+			secede_province = THIS
 			assimilate = yes
 			any_pop = { pop_type = slaves move_pop = 186 }
 		}
@@ -801,16 +806,18 @@ country_event = {
 
     option = {
         name = "You are going to Fluvial."
-		all_core = {
-			limit = {
-				is_core = AYL
-				NOT = { is_core = FLU }
-			}
-			remove_core = THIS
-		}
 		change_tag = FLU
 		primary_culture = fluvialean
 		add_accepted_culture = ayllonian
+		all_core = {
+			remove_core = THIS
+		}
+		USA_139 = { add_core = FLU }
+		USA_144 = { add_core = FLU }
+		USA_124 = { add_core = FLU }
+		USA_129 = { add_core = FLU }
+		140 = { add_core = FLU }
+		192 = { add_core = FLU }
 		prestige = -10
 		capital = 139
     }
