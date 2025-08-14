@@ -4937,7 +4937,7 @@ annex_africa_full = {
             nationalism_n_imperialism = 1
             capital_scope = { continent = europe }
             NOT = { tag = RUS }
-            NOT = { tag = TUR }
+            NOT = { tag = BYZ }
             slavery = no_slavery
             OR = {
                 is_greater_power = yes
