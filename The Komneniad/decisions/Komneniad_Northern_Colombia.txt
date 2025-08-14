@@ -440,6 +440,34 @@ political_decisions = {
 		}
 	}
 	
+	VRI_liberate_antillean = {
+		picture = spain_slavery_abolition
+		potential = {
+			tag = VRI
+			has_country_flag = VRI_kill_ayllonia
+			owns = 200
+			NOT = { has_country_flag = VRI_liberate_antillean }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			owns = 2209
+			owns = 2217
+			owns = 2222
+		}
+		effect = {
+			add_accepted_culture = afro_latino
+			add_accepted_culture = afro_caribbean
+			add_accepted_culture = afro_dutch
+			add_accepted_culture = afro_french
+			add_accepted_culture = afro_occitan
+			set_country_flag = VRI_liberate_antillean
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	DES_beachan = {
 		picture = mormons
 		potential = {

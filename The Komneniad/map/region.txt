@@ -1280,6 +1280,7 @@ tooltip_4 = { 3186 }
 tooltip_5 = { 3186 }
 tooltip_6 = { 3186 } #hellenophiles lose the game
 tooltip_7 = { 3186 } #hel. gain 2 infl.
+tooltip_8 = { 3186 }
 hel_gain_1 = { 3186 }
 hel_lose_1 = { 3186 }
 hel_lose_3 = { 3186 }

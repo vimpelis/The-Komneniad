@@ -1346,3 +1346,67 @@ country_event = {
 		CLN = { country_event = 477877794 }
     }
 }
+
+country_event = {
+    id = 158031
+    title = "The Antillean Project"
+    desc = "158031DESC"
+    picture = "spain_loses_cuba"
+
+    trigger = {
+		tag = VRI
+		has_country_flag = VRI_liberate_antillean
+		NOT = { exists = CRB }
+		government = radical_republic
+		war = no
+		any_owned_province = {
+			OR = {
+				is_core = CUB
+				is_core = CRB
+				is_core = HAI
+			}
+		}
+    }
+
+    mean_time_to_happen = { days = 90 }
+	fire_only_once = yes
+
+    option = {
+        name = "Let us establish a sister repbulic."
+		badboy = 2
+		tooltip_8 = {}
+		CUB = { all_core = { add_core = CRB } }
+		HAI = { all_core = { add_core = CRB } }
+		release_vassal = CRB
+		CRB = { all_core = { limit = { NOT = { owned_by = CRB } } add_core = THIS } capital = 2209 }
+		set_country_flag = VRI_antillean_project
+    }
+	
+	option = {
+        name = "We will control the Antillean directly."
+		prestige = 5
+    }
+}
+
+country_event = {
+    id = 158032
+    title = "The Antillean Project"
+    desc = "With the reconquest of another part of the Antillean, we may transfer the respective region to our Sister Republic."
+    picture = "spain_loses_cuba"
+
+    trigger = {
+		tag = VRI
+		has_country_flag = VRI_antillean_project
+		CRB = { vassal_of = THIS }
+		any_owned_province = {
+			is_core = CRB
+		}
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Ok"
+		any_owned = { limit = { is_core = CRB } secede_province = CRB remove_core = VRI }
+    }
+}

@@ -67,8 +67,6 @@ border_policy = open_borders
 centralization = federalism
 colonial_policy = no_colonies
 
-
-
 ruling_party = TTB_liberal
 upper_house = {
     fascist = 0
@@ -78,6 +76,21 @@ upper_house = {
     radical = 7
     socialist = 0
     communist = 0
+}
+
+govt_flag = {
+	government = colonial_company
+	flag = theocracy
+}
+
+govt_flag = {
+    government = radical_republic
+    flag = colonial_company
+}
+
+govt_flag = {
+	government = hms_government
+	flag = theocracy
 }
 
 set_country_flag = post_colonial_country
