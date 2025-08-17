@@ -2786,6 +2786,7 @@ country_event = {
 
     option = {
         name = "Hm, I'll consider it."
+		country_event = 4207008
     }
 }
 #End war with non-existent nations

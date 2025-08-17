@@ -674,35 +674,6 @@ country_event = {
     }
 }
 
-#The Canals are Seized - Bankrupt
-country_event = {
-    id = 36980
-    title = "EVTNAME36980"
-    desc = "EVTDESC36980"
-    picture = "suez_canal_built"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT36980OPTA"
-        random_country = {
-            limit = { tag = FROM NOT = { is_sphere_leader_of = THIS } }
-            money = -200000
-            THIS = { money = 200000 }
-        }
-        random_owned = {
-            limit = { owner = { tag = EGY } }
-            EGY = { plurality = -15 }
-            FROM = {
-                diplomatic_influence = {
-                    who = THIS
-                    value = 400
-                }
-            }
-        }
-    }
-}
-
 country_event = {
 
     id = 97350

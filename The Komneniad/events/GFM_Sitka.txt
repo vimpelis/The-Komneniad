@@ -157,19 +157,7 @@ country_event = {
 		517 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
     }
 }
-country_event = {
-	id = 123429
-	title = "The Soviet takeover"
-	desc = "The filthy communists have overthrown our government. We must now lay low and lick our wounds to prepare for toppling their regime."
-	fire_only_once = yes
-	is_triggered_only = yes
 
-    option = {
-        name = "Bolshevik scum!"
-		government = presidential_dictatorship
-    }
-
-}
 country_event = {
 	id = 123928
 	title = "The Dog Tax War"
@@ -1324,97 +1312,6 @@ country_event = {
         }
         remove_country_modifier = brothers_war_aggressor
         set_country_flag = brothers_war_loser
-    }
-}
-
-country_event = {
-    id = 1316176
-    title = "EVTNAME1316176" # $COUNTRY_ADJ$ Envoy Ejected
-    desc = "EVTDESC1316176"
-    picture = "qing_emperor"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT1316176OPTA"
-        random_owned = {
-            limit = { owner = { ai = no } }
-            owner = {
-                war = {
-                    target = FROM
-                    attacker_goal = { casus_belli = treaty_port_casus_belli }
-                }
-            }
-        }
-        random_owned = {
-            limit = { owner = { ai = yes } }
-            owner = {
-                war = {
-                    target = FROM
-                    attacker_goal = { casus_belli = treaty_port_casus_belli }
-                    call_ally = yes
-                }
-            }
-        }
-        ai_chance = {
-            factor = 50
-            modifier = {
-                factor = 0.5
-                any_greater_power = { war_with = THIS }
-            }
-            modifier = {
-                factor = 0.75
-                NOT = { any_greater_power = { war_with = THIS } }
-                war = yes
-            }
-            modifier = {
-                factor = 0.5
-                war_exhaustion = 20
-            }
-            modifier = {
-                factor = 1.25
-                war_policy = jingoism
-            }
-            modifier = {
-                factor = 0.5
-                war_policy = anti_military
-            }
-            modifier = {
-                factor = 0
-                war_policy = pacifism
-            }
-            modifier = {
-                factor = 0
-                FROM = {
-                    NOT = { neighbour = THIS }
-                    NOT = { any_owned_province = { port = yes } }
-                    NOT = { any_neighbor_country = { alliance_with = THIS } }
-                }
-            }
-            modifier = {
-                factor = 0.5
-                FROM = { brigades_compare = 5 }
-            }
-        }
-    }
-
-    option = {
-        name = "EVT1316176OPTB"
-        relation = { who = FROM value = 50 }
-        prestige = -25
-        ai_chance = {
-            factor = 50
-            modifier = {
-                factor = 0.5
-                neighbour = FROM
-            }
-            modifier = {
-                factor = 0.5
-                FROM = {
-                    NOT = { brigades_compare = 2 }
-                }
-            }
-        }
     }
 }
 

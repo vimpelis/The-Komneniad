@@ -1,0 +1,1422 @@
+#This file contains various flavor events that do not affect gameplay (mostly)
+
+country_event = {
+	id = 610
+	title = "Onamo 'namo!"
+    desc = "MON_610_DESC"
+    picture = "onamo_namo"
+	fire_only_once = yes
+
+    trigger = {
+		tag = BYZ
+		year = 1867
+		exists = yes
+		any_owned_province = { is_core = SER }
+	}
+	
+	mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = {
+        name = "Curse them!"
+		any_pop = { limit = { has_pop_culture = serb } militancy = 1 consciousness = 2 }
+    }
+}
+
+country_event = {
+	id = 631
+	title = "Marнna"
+	desc = "MARINABASEN"
+	picture = "marina_poem"
+	fire_only_once = yes
+	trigger = {
+		NOT = { tag = HUN }
+		owns = 636
+		year = 1846
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "Brilliant!"
+		prestige = 5
+	}
+}
+
+country_event = {
+	id = 632
+	title = "Matica Slovenskб"
+	desc = "MATICASLOVENSKA"
+	picture = "matica_slovenska"
+	fire_only_once = yes
+	trigger = {
+		owns = 636
+		year = 1863
+		NOT = { primary_culture = slovak }
+		realism = 1
+		month = 8
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "Donate to help them out."
+		plurality = 1
+		money = -1000
+		any_pop = { limit = { has_pop_culture = slovak } consciousness = 1 }
+		any_pop = { limit = { has_pop_culture = slovak } militancy = -1 }
+		ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                AND = { tag = HUN NOT = { accepted_culture = slovak } }
+            }
+        }
+	}
+	
+	option = {
+		name = "How interesting."
+		any_pop = { limit = { has_pop_culture = slovak } consciousness = 1 }
+		ai_chance = {
+            factor = 0
+            modifier = {
+                factor = 1
+                AND = { tag = HUN NOT = { accepted_culture = slovak } }
+            }
+        }
+	}
+}
+
+country_event = {
+	id = 633
+	title = "Matica Slovenskб"
+	desc = "MATICASLOVENSKA"
+	picture = "matica_slovenska"
+	fire_only_once = yes
+	trigger = {
+		owns = 636
+		year = 1863
+		primary_culture = slovak
+		realism = 1
+		month = 8
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "An excellent initiative!"
+		prestige = 5
+		plurality = 1
+		years_of_research = 0.3
+		any_pop = { limit = { has_pop_culture = slovak } consciousness = -1 }
+	}
+}
+
+#Tunguska Meteor Strike
+country_event = {
+    id = 21500
+    title = "EVTNAME21500"
+    desc = "EVTDESC21500"
+    news = yes
+    news_desc_long = "EVTDESC21500_NEWS_LONG"
+    news_desc_medium = "EVTDESC21500_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC21500_NEWS_SHORT"
+    picture = "tunguska"
+
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        year = 1908
+        owns = 2694
+		month = 6
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "EVTOPTA21500"
+        random_owned = { limit = { province_id = 2694 has_building = railroad } infrastructure = -6 }
+        random_owned = { limit = { province_id = 2694 has_building = fort } fort = -6 }
+        random_owned = { limit = { province_id = 2694 total_pops = 10000 } any_pop = { reduce_pop = 0.99 } }
+    }
+}
+
+country_event = {
+	id = 600355
+	title = "The 1860 Great Meteor"
+	desc = "1860GREATMETEOR"
+	picture = "1860_meteor"
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VRI
+			tag = ACA
+			tag = IRO
+		}
+		year = 1860
+		month = 7
+	}
+
+	mean_time_to_happen = { days = 20 }
+
+	option = {
+		name = "Year of meteors! Brooding year!"
+		any_pop = {
+			consciousness = -0.1
+		}
+		research_points = 300
+	}
+}
+
+country_event = {
+	id = 600356
+	title = "The 1913 Great Meteor Procession"
+	desc = "1913GREATMETEOR"
+	picture = "1913_meteor"
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VRI
+			tag = ACA
+			tag = IRO
+			tag = ILD
+		}
+		year = 1913
+		month = 2
+	}
+
+	mean_time_to_happen = { days = 7 }
+
+	option = {
+		name = "Let God guide us to understanding these meteors."
+		any_pop = {
+			consciousness = -0.1
+		}
+		research_points = 300
+	}
+}
+
+country_event = {
+    id = 46367272
+    title = "PETITJOURNALTITLE"
+    desc = "PETITJOURNALDESC"
+	picture = "petit_journal"
+	fire_only_once = yes
+	
+    trigger = {
+		tag = FRA
+		year = 1863
+		owns = 425
+		month = 2
+    }
+	
+    mean_time_to_happen = { days = 1 }
+	
+    option = {
+        name = "PETITJOURNALOPT"
+		prestige = 5
+		425 = {
+			any_pop = { consciousness = -1 ideology = { factor = 0.05 value = conservative } }
+		}
+    }
+}
+
+country_event = {
+    id = 123646
+    title = "Puck!"
+    desc = "PUCKLOC"
+    picture = "puck"
+    fire_only_once = yes
+    trigger = {
+        tag = ACA
+        year = 1876
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+		name = "What fools these mortals be!"
+		prestige = 5
+		any_pop = {
+			consciousness = 0.1
+		}
+    }
+}
+
+province_event = { #Kota Bahru founded
+    id = 95658
+    title = "EVTNAME95658"
+    desc = "EVTDESC95658"
+
+    trigger = {
+        province_id = 1391
+        year = 1843
+    }
+
+    mean_time_to_happen = { months = 12 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT95658OPTA"
+        add_province_modifier = {
+            name = recently_built_city
+            duration = 365
+        }
+        1391 = { change_province_name = "Kota Bahru" }
+    }
+}
+
+#Foundation of Johor Bahru and Kuantan
+country_event = {
+    id = 956580
+    title = "EVTNAME956580"
+    desc = "EVTDESC956580"
+    picture = "exemplar_colony"
+
+    trigger = {
+        owns = 1385
+        year = 1848
+    }
+
+    mean_time_to_happen = { months = 50 }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT956580OPTA"
+        1385 = {
+            life_rating = 5
+            change_province_name = "Johor Bahru"
+            any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.7 }
+            add_province_modifier = { name = recently_built_city duration = 365 }
+        }
+
+        1387 = {
+            life_rating = 5
+            change_province_name = "Kuala Lumpur"
+            trade_goods = gold
+            any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.5 }
+            add_province_modifier = { name = recently_built_city duration = 1080 }
+        }
+
+        1390 = {
+            life_rating = 5
+            trade_goods = gold
+            change_province_name = "Kuantan"
+            any_pop = { limit = { has_pop_culture = yue } reduce_pop = 1.7 }
+            add_province_modifier = { name = recently_built_city duration = 365 }
+        }
+    }
+}
+
+
+#Saxophone
+country_event = {
+
+    id = 36704
+    news = yes
+    news_desc_long = "EVTDESC36704_NEWS_LONG"
+    news_desc_medium = "EVTDESC36704_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC36704_NEWS_SHORT"
+
+    trigger = {
+        OR = {
+			tag = BRB
+			tag = DIE
+			tag = WST
+		}
+        year = 1845
+        NOT = {
+            year = 1848
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+
+        modifier = {
+            factor = 0.85 #increase likelihood to happen
+            year = 1846
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1847
+        }
+    }
+
+    title = "EVTNAME36704"
+    desc = "EVTDESC36704"
+    picture = "sax"
+
+
+    option = {
+        name = "EVTOPTA36704"
+        prestige = 2
+    }
+}
+
+#Solvay invents ammonia process
+country_event = {
+
+    id = 36705
+    news = yes
+    news_desc_long = "EVTDESC36705_NEWS_LONG"
+    news_desc_medium = "EVTDESC36705_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC36705_NEWS_SHORT"
+
+    trigger = {
+        OR = {
+			tag = BRB
+			tag = DIE
+			tag = WST
+		}
+        year = 1861
+        NOT = {
+            year = 1864
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+
+        modifier = {
+            factor = 0.85 #increase likelihood to happen
+            year = 1862
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1863
+        }
+    }
+
+    title = "EVTNAME36705"
+    desc = "EVTDESC36705"
+    picture = "Solvay"
+
+    option = {
+        name = "EVTOPTA36705"
+        prestige = 5
+        years_of_research = 0.4
+    }
+}
+
+country_event = {
+    id = 738472
+    title = "Mining Railway of Pejao" # Aveiro Coal Mine
+    desc = "EVTDESC738472"
+    picture = "railway_pejao"
+
+    trigger = {
+        #tag = POR Other countries can mine it actually.
+        war = no
+        owns = 3473
+        NOT = { has_country_flag = coal_aveiro }
+        steam_turbine = 1
+    }
+
+    mean_time_to_happen = { months = 2 }
+
+    option = {
+        name = "Start mining!"
+        set_country_flag = coal_aveiro
+        3473 = {
+            trade_goods = coal
+        }
+		ai_chance = { factor = 1 }
+    }
+    option = {
+        name = "We just love beef!"
+        set_country_flag = coal_aveiro
+        prestige = 5
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+
+    id = 46800
+    title = "EVTNAME46800"
+    desc = "EVTDESC46800"
+    picture = "Machupicchu"
+    news = yes
+    news_desc_long = "EVTDESC46800_NEWS_LONG"
+    news_desc_medium = "EVTDESC46800_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC46800_NEWS_SHORT"
+
+    trigger = {
+        NOT = { has_global_flag = machu_picchu_discovered }
+        has_country_flag = looking_for_machu_picchu
+    }
+
+    fire_only_once = yes
+    allow_multiple_instances = no
+
+    mean_time_to_happen = {
+        months = 36
+
+        modifier = {
+            factor = 0.1 #increase likelihood to happen
+            owns = 2302 #Cusco
+        }
+
+        modifier = {
+            factor = 0.7 #increase likelihood to happen
+            2302 = {
+                owner = {
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                }
+            }
+        }
+
+        modifier = {
+            factor = 0.2 #increase likelihood to happen
+            year = 1911
+        }
+
+        modifier = {
+            factor = 0.8 #increase likelihood to happen
+            NOT = { owns = 2302 }
+            2302 = { owner = { neighbour = THIS } }
+        }
+
+        modifier = {
+            factor = 0.8 #increase likelihood to happen
+            is_greater_power = yes
+        }
+
+        modifier = {
+            factor = 0.8 #increase likelihood to happen
+            capital_scope = {
+                OR = {
+                    continent = north_america
+                    continent = south_america
+                }
+            }
+        }
+
+        modifier = {
+            factor = 0.9 #increase likelihood to happen
+            education_spending = 0.7
+        }
+
+        modifier = {
+            factor = 0.9 #increase likelihood to happen
+            education_spending = 0.8
+        }
+
+        modifier = {
+            factor = 0.9 #increase likelihood to happen
+            education_spending = 0.9
+        }
+    }
+
+    option = {
+        name = "EVTOPTA46800"
+        set_global_flag = machu_picchu_discovered
+        prestige = 25
+    }
+
+}
+
+country_event = {
+    id = 69003
+    title = "The Rebuilding of San Francisco"
+    desc = "After the devastating earthquake that almost completely destroyed San Francisco, the city's rebuilding efforts are now quickly progressing."
+    picture = "earthquake"
+
+    trigger = {
+        owns = 104
+        104 = { has_province_modifier = earthquake_devastation }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { months = 6 }
+
+    option = {
+        name = "San Francisco will soon return to its former glory!"
+        #rails
+        any_owned = {
+            limit = {
+                province_id = 104
+                THIS = { early_railroad = 1 } NOT = { THIS = { iron_railroad = 1 } }
+            }
+            infrastructure = 1
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+                THIS = { iron_railroad = 1 } NOT = { THIS = { steel_railroad = 1 } }
+            }
+            infrastructure = 2
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+                THIS = { steel_railroad = 1 } NOT = { THIS = { integral_rail_system = 1 } }
+            }
+            infrastructure = 3
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+                THIS = { integral_rail_system = 1 } NOT = { THIS = { limited_access_roads = 1 } }
+            }
+            infrastructure = 4
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+                THIS = { limited_access_roads = 1 }
+            }
+            infrastructure = 5
+        }
+        #port
+        any_owned = {
+            limit = {
+                province_id = 104
+				has_building = naval_base
+                THIS = { battleship_column_doctrine = 1 } NOT = { THIS = { raider_group_doctrine = 1 } }
+            }
+            naval_base = 2
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+				has_building = naval_base
+                THIS = { raider_group_doctrine = 1 } NOT = { THIS = { blue_and_brown_water_schools = 1 } }
+            }
+            naval_base = 3
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+				has_building = naval_base
+                THIS = { blue_and_brown_water_schools = 1 } NOT = { THIS = { high_sea_battle_fleet = 1 } }
+            }
+            naval_base = 4
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+				has_building = naval_base
+                THIS = { high_sea_battle_fleet = 1 } NOT = { THIS = { modern_naval_doctrine = 1 } }
+            }
+            naval_base = 5
+        }
+        any_owned = {
+            limit = {
+                province_id = 104
+				has_building = naval_base
+                THIS = { modern_naval_doctrine = 1 }
+            }
+            naval_base = 6
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+}
+
+country_event = {
+    id = 123551
+    title = "The Eruption of Mont Pelйe"
+    desc = "MONTPELEEERUPTS"
+	major = yes
+    fire_only_once = yes
+    picture = "pelee_eruption"
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+        owns = 2228
+        year = 1902
+		month = 4
+    }
+    option = {
+        name = "What a tragedy!"
+        any_pop = {
+            limit = {
+                location = {
+                    province_id = 2228
+                }
+            }
+            reduce_pop = 0.01
+        }
+    }
+}
+
+country_event = {
+    id = 123552
+    title = "The Eruption of Mount Tarawera"
+    desc = "TARAWERAERUPTION"
+    fire_only_once = yes
+	major = yes
+    picture = "tarawera_eruption"
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+        owns = 2571
+        year = 1886
+		month = 6
+    }
+    option = {
+        name = "What a tragedy!"
+        any_pop = {
+            limit = {
+                location = {
+                    province_id = 2571
+                }
+            }
+            reduce_pop = 0.7
+        }
+    }
+}
+
+#Krakatoa Explodes
+country_event = {
+    id = 21510
+    title = "EVTNAME21510"
+    desc = "EVTDESC21510"
+    news = yes
+    news_desc_long = "EVTDESC21510_NEWS_LONG"
+    news_desc_medium = "EVTDESC21510_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC21510_NEWS_SHORT"
+    picture = "krakatoa"
+
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        year = 1883
+        owns = 1414
+		month = 5
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVTOPTA21510"
+        1414 = { any_pop = { reduce_pop = 0.96 } life_rating = -1 }
+        random_owned = { limit = { province_id = 1414 has_building = railroad } infrastructure = -1 }
+        random_owned = { limit = { province_id = 1414 has_building = fort } fort = -1 }
+        random_owned = { limit = { province_id = 1413 has_building = naval_base } naval_base = -1 }
+    }
+}
+
+country_event = {
+    id = 1236300
+    title = "The Eruption of Ruang"
+    desc = "RUANGERUPTION"
+	major = yes
+    fire_only_once = yes
+    picture = "1871_ruang"
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+        owns = 1433
+        year = 1871
+		month = 3
+    }
+    option = {
+        name = "Hell in paradise."
+        any_pop = {
+            limit = {
+                location = {
+                    province_id = 1433
+                }
+            }
+            reduce_pop = 0.99
+        }
+    }
+}
+
+country_event = {
+    id = 1236301
+    title = "The Eruption of Mount Bandai"
+    desc = "BANDAIERUPTION"
+	major = yes
+    fire_only_once = yes
+    picture = "1888_mount_bandai"
+    mean_time_to_happen = { days = 1 }
+    trigger = {
+        owns = 1669
+        year = 1889
+		month = 7
+    }
+    option = {
+        name = "Even from disaster comes beauty."
+        any_pop = {
+            limit = {
+                location = {
+                    province_id = 1669
+                }
+            }
+            reduce_pop = 0.99
+        }
+    }
+}
+
+country_event = {
+    id = 36405
+    title = "thranename"
+    desc = "thranedesc"
+    picture = "thrane"
+    trigger = {
+        OR = {
+            tag = NOR
+			tag = DEN
+			tag = SCA
+        }
+		owns = 313
+        year = 1850
+        NOT = {
+            year = 1854
+            has_global_flag = Thrane
+        }
+    }
+    fire_only_once = yes
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 1.45 #increase likelihood to happen
+            year = 1851
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1852
+        }
+
+        modifier = {
+            factor = 0.45 #increase likelihood to happen
+            year = 1853
+        }
+    }
+
+    option = {
+        name = "thrane_option1"
+        labourers = {
+            consciousness = 1
+        }
+        farmers = {
+            consciousness = 1
+        }
+        artisans = {
+            consciousness = 1
+        }
+        craftsmen = {
+            consciousness = 1
+        }
+        add_country_modifier = {
+            name = thrane_angry
+            duration = 3652
+        }
+        set_global_flag = Thrane
+		political_reform = non_socialist
+    }
+
+    option = {
+        name = "thrane_option2"
+        labourers = {
+            consciousness = 1
+        }
+        farmers = {
+            consciousness = 1
+        }
+        artisans = {
+            consciousness = 1
+        }
+        craftsmen = {
+            consciousness = 1
+        }
+        add_country_modifier = {
+            name = thrane_glad
+            duration = 10957
+        }
+        set_global_flag = Thrane
+		political_reform = all_trade_unions
+    }
+}
+
+country_event = {
+    id = 228287
+    title = "RISE_OF_STAVANGER_TITLE"
+    desc = "RISE_OF_STAVANGER_DESC"
+    picture = "rise_of_stavanger"
+    trigger = {
+        year = 1837
+        owns = 3490
+    }
+    fire_only_once = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "Go'e gang! (Commonly used expression for 'Good times!' in Stavanger)"
+        prestige = 2
+        3490 = {
+		    add_province_modifier = {
+			    name = rise_of_stavanger
+				duration = 8400
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 36521836
+    title = "bomuldsfabrique"
+    desc = "bomuldsfabriquedesc"
+    picture = "bomuldsfabrique"
+    trigger = {
+        year = 1836
+        owns = 316
+    }
+    fire_only_once = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "bomuldsfabrique_option"
+		316 = { trade_goods = coal }
+		316 = { add_province_modifier = {
+	        name = bomuldsfabrique_modifier
+	        duration = 3652
+            }
+		}
+    }
+}
+
+country_event = {
+    id = 36521846
+    title = "bomuldsfabrique2"
+    desc = "bomuldsfabriquedesc2"
+    picture = "bomuldsfabrique"
+    trigger = {
+        year = 1846
+		owns = 316
+    }
+    fire_only_once = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "bomuldsfabrique_option2"
+		316 = { trade_goods = fish }
+    }
+}
+
+country_event = {
+		id = 97093
+		title = "EVTNAME97093" #Research Station in South Georgia
+		desc = "EVTDESC97093"
+		picture = "meteorological_station"
+
+		fire_only_once = yes
+
+		trigger = {
+			OR = {
+				tag = ATA
+				AND = {
+					has_country_flag = i_am_hsa
+					owns = 2310 #La Paz
+					owns = 2295 #Lima
+					owns = 2279 #Quito
+					owns = 2247 #Bogota
+					owns = 2264 #Caracas
+					owns = 2348 #Buenos Aires
+					owns = 2344 #Montevideo
+					owns = 2324 #Santiago
+					owns = 2172 #Mexico City
+					owns = 2186 #Guatemala City
+					owns = 2191 #San Salvador
+					owns = 2194 #San Pedro Sula
+					owns = 2197 #Managua
+					owns = 2201 #San Jose
+					owns = 2204 #Panama City
+				}
+			}
+			year = 1904
+			owns = 2400
+		}
+
+		mean_time_to_happen = {
+			months = 3
+		}
+
+		option = {
+			name = "EVTOPT97093A" #Excellent!
+			prestige = 1
+			years_of_research = 0.25
+			2400 = {
+				any_pop = {
+					limit = {
+						culture = antartidan
+						type = clergymen
+					}
+					move_pop = 2133
+					money = 50
+				}
+			}
+			ai_chance = {
+				factor = 100
+        }
+    }
+}
+
+#Lafone SAVES the falklands with SHEEP and GAUCHOS
+	country_event = {
+		id = 97094
+		title = "EVTNAME97094" #Samuel Lafone
+		desc = "EVTDESC97094"
+		picture = "falklands_map"
+
+		fire_only_once = yes
+
+		trigger = {
+			year = 1852
+			owns = 2131
+			NOT = { has_country_flag = lafone_sheep }
+		}
+
+		mean_time_to_happen = {
+			months = 3
+			}
+
+		option = {
+			name = "EVTOPT97094A" #Phew!
+			set_country_flag = lafone_sheep
+			2131 = {
+                add_province_modifier = { name = gauchos_and_sheep duration = 5110 }
+				trade_goods = wool
+				life_rating = 1
+				any_pop = {
+					limit = {
+						culture = platinean
+					}
+					reduce_pop = 1.25
+				}
+			}
+		}
+	}
+
+country_event = {
+    id = 97108
+    title = "The Strait of Magellan"
+    desc = "We now control the Strait of Magellan, the only current connection between the Atlantic and Pacific oceans, giving us greater wealth and prestige on the world stage."
+    picture = "magellan_strait"
+
+    trigger = {
+        owns = 2334
+		NOT = { has_country_modifier = magellan_strait_owner }
+		NOT = { is_canal_enabled = 3 }
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Excellent!"
+		add_country_modifier = { name = magellan_strait_owner duration = -1 }
+        2334 = { add_province_modifier = { name = magellan_strait duration = -1 } }
+    }
+}
+
+country_event = {
+    id = 97109
+    title = "The Panama Canal"
+    desc = "A canal passing through the Isthmus of Panama has been constructed, severely affecting the flow of trade through the Magellan Strait."
+    picture = "magellan_strait"
+
+    trigger = {
+        owns = 2334
+		has_country_modifier = magellan_strait_owner
+		is_canal_enabled = 3
+    }
+
+    mean_time_to_happen = { months = 1 }
+
+    option = {
+        name = "Damn..."
+		remove_country_modifier = magellan_strait_owner
+        2334 = { remove_province_modifier = magellan_strait }
+    }
+}
+
+country_event = {
+	id = 97210
+	title = "Magellan Strait Control Lost"
+	desc = "As we no longer control the Magellan Strait, we get no benefit from it."
+	picture = "magellan_strait"
+
+	trigger = {
+		NOT = { owns = 2334 }
+		has_country_modifier = magellan_strait_owner
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = {
+		name = "Blast!"
+		remove_country_modifier = magellan_strait_owner
+	}
+}
+
+country_event = {
+    id = 3697000
+    title = "EVTNAME3697000" #Start building the big ben
+    desc = "EVTDESC3697000"
+    picture = "big_ben_construction"
+
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT37236OPTA"
+        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -40000 } }
+        random_owned = {
+            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            owner = { set_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_owned = {
+            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            owner = { change_variable = { which = owed_cash_money value = 40 } }
+        }
+        random_list = {
+            50 = { add_country_modifier = { name = bigben_construction duration = 2920 } }
+            40 = { add_country_modifier = { name = bigben_construction duration = 3650 } }
+            10 = { add_country_modifier = { name = bigben_construction duration = 4380 } }
+        }
+
+        ai_chance = {
+            factor = 40
+        }
+    }
+
+    option = {
+        name = "EVT37236OPTB"
+        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -30000 } }
+        random_owned = {
+            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            owner = { set_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_owned = {
+            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            owner = { change_variable = { which = owed_cash_money value = 30 } }
+        }
+        random_list = {
+            30 = { add_country_modifier = { name = bigben_construction duration = 2920 } }
+            50 = { add_country_modifier = { name = bigben_construction duration = 3650 } }
+            20 = { add_country_modifier = { name = bigben_construction duration = 4380 } }
+        }
+
+        ai_chance = {
+            factor = 40
+        }
+    }
+
+    option = {
+        name = "EVT37236OPTC"
+        random_owned = { limit = { owner = { ai = no } } owner = { treasury = -20000 } }
+        random_owned = {
+            limit = { owner = { ai = yes NOT = { check_variable = { which = owed_cash_money value = 1 } } } }
+            owner = { set_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_owned = {
+            limit = { owner = { ai = yes check_variable = { which = owed_cash_money value = 9 } } }
+            owner = { change_variable = { which = owed_cash_money value = 20 } }
+        }
+        random_list = {
+            30 = { add_country_modifier = { name = bigben_construction duration = 2920 } }
+            30 = { add_country_modifier = { name = bigben_construction duration = 3650 } }
+            40 = { add_country_modifier = { name = bigben_construction duration = 4380 } }
+        }
+
+        ai_chance = {
+            factor = 20
+        }
+    }
+}
+
+country_event = {
+
+    id = 3697001
+    title = "EVTNAME3697001" #Big Ben Finished
+    desc = "EVTDESC3697001"
+    picture = "big_ben_finished"
+
+    fire_only_once = yes
+
+    trigger = {
+		tag = ENG
+        NOT = { has_country_modifier = bigben_construction }
+		has_country_flag = big_ben_construction
+    }
+
+    mean_time_to_happen = { days = 5 }
+
+    option = {
+        name = "EVT3697001OPTA"
+        300 = {
+            set_province_flag = big_ben_built
+            add_province_modifier = { name = the_big_ben duration = -1 }
+        }
+        prestige = 20
+    }
+}
+
+country_event = {
+	id = 4207000
+	title = "Puente de Panzacola"
+	desc = "EVTDESC4207000"
+	picture = "puente_de_panzacola"
+	fire_only_once = yes
+
+	trigger = {
+		capital = 2172
+		OR = {
+			primary_culture = mexican
+			accepted_culture = mexican
+		}
+		year = 1861
+	}
+
+	option = {
+		name = "Such a beautiful piece of art."
+		prestige = 1
+	}
+}
+
+country_event = {
+	id = 4207001
+	title = "Los Rurales"
+	desc = "EVTDESC4207001"
+	picture = "mexicanrurales"
+
+	trigger = {
+		capital = 2172
+		OR = {
+			primary_culture = mexican
+			accepted_culture = mexican
+		}
+		year = 1861
+		any_owned_province = {
+			is_core = THIS
+			OR = {
+				trade_goods = grain
+				trade_goods = cattle
+				trade_goods = fruit
+				trade_goods = cotton
+			}
+			NOT = { has_province_modifier = los_rurales }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "A noble militia."
+		farmers = {
+			militancy = -1
+			consciousness = -0.5
+		}
+		all_core = {
+			limit = {
+				NOT = { has_province_modifier = los_rurales }
+				OR = {
+					trade_goods = grain
+					trade_goods = cattle
+					trade_goods = fruit
+					trade_goods = cotton
+				}
+			}
+			add_province_modifier = {
+				name = los_rurales
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 4207002
+	title = "La Rebeliуn Chatina"
+	desc = "EVTDESC4207002"
+	picture = "chatinos"
+	fire_only_once = yes
+
+	trigger = {
+		year = 1896
+		capital = 2172
+		OR = {
+			accepted_culture = mexican
+			primary_culture = mexican
+		}
+		NOT = { accepted_culture = nahua }
+		NOT = { has_country_flag = native_protection_act_enacted }
+		owns = 2177
+		owns = 2178
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "Burn the court files."
+		prestige = -5
+		2177 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = nahua
+				}
+				reduce_pop = 0.75
+				militancy = 4.5
+				consciousness = 5
+			}
+		}
+		2178 = {
+			any_pop = {
+				limit = {
+					has_pop_culture = nahua
+				}
+				reduce_pop = 0.75
+				militancy = 4.5
+				consciousness = 5
+			}
+		}
+		any_pop = {
+			limit = {
+				has_pop_culture = nahua
+			}
+			militancy = 0.5
+			consciousness = 1
+		}
+	}
+}
+
+country_event = {
+	id = 4207003
+	title = "Tequila Herradura"
+	desc = "EVTDESC4207003"
+	picture = "tequilaherradura"
+	fire_only_once = yes
+
+	trigger = {
+		capital = 2172
+		OR = {
+			primary_culture = mexican
+			accepted_culture = mexican
+		}
+		year = 1870
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "Mexican industry shall be a priority."
+		random_owned = {
+			limit = {
+				province_id = 2166
+				state_scope = { NOT = { has_building = liquor_distillery } }
+			}
+			owner = {
+				capital = 2166
+				build_factory_in_capital_state = liquor_distillery
+			}
+		}
+		capital = 2172
+	}
+}
+
+country_event = {
+	id = 4207008
+	title = "Straits"
+	desc = "EVTDESC4207008"
+	picture = "straits_explained"
+	is_triggered_only = yes
+
+	option = {
+		name = "Got it."
+	}
+}
+
+country_event = {
+	id = 4207009
+	title = "La Fundidora"
+	desc = "EVTDESC4207009"
+	picture = "fundidora"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2149
+		year = 1900
+	}
+
+	option = {
+		name = "Interesting, I am sure."
+		2149 = {
+			trade_goods = iron
+			add_province_modifier = {
+				name = fundidora
+				duration = -1
+			}
+		}
+		random_owned = {
+			limit = {
+				province_id = 2149
+				state_scope = { NOT = { has_building = steel_factory } }
+			}
+			owner = {
+				capital = 2149
+				build_factory_in_capital_state = steel_factory
+			}
+		}
+		capital = 2172
+	}
+}
+
+country_event = {
+	id = 4207022
+	title = "El Vocabulario de Mexicanismos"
+	desc = "EVTDESC4207022"
+	picture = "mexicanismos"
+	fire_only_once = yes
+
+	trigger = {
+		year = 1899
+		OR = {
+			tag = MEX
+			AND = {
+				has_country_flag = i_am_hsa
+				owns = 2172
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = "Chingуn."
+		prestige = 2
+	}
+}

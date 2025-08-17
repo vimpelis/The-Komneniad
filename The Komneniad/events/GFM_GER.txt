@@ -1,0 +1,596 @@
+country_event = {
+    id = 123767
+    title = "Kladderadatsch"
+    desc = "KLADDERDESC"
+	picture = "kladderadatsch"
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = SGF
+			tag = BAV
+		}
+		year = 1848
+		month = 5
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "How silly!"
+		any_pop = {
+			consciousness = 0.1
+		}
+    }
+}
+
+#Socialist conference on the Great War
+country_event = {
+
+    id = 31308
+    news = yes
+    news_desc_long = "EVTDESC31308_NEWS_LONG"
+    news_desc_medium = "EVTDESC31308_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC31308_NEWS_SHORT"
+
+    trigger = {
+        tag = SWI
+		government = democracy
+        war = no
+        year = 1915
+        NOT = {
+            year = 1918
+            has_country_flag = 1stSocCon
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1916
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1917
+        }
+    }
+
+    title = "EVTNAME31308"
+    desc = "EVTDESC31308"
+    picture = "anticorn"
+
+    option = {
+        name = "EVTOPTA31308"
+        plurality = 1
+        set_country_flag = 1stSocCon
+        labourers = {
+            consciousness = 1
+        }
+        craftsmen = {
+            consciousness = 1
+        }
+    }
+}
+
+#Geneva Convention
+country_event = {
+
+    id = 31310
+    news = yes
+    news_desc_long = "EVTDESC31310_NEWS_LONG"
+    news_desc_medium = "EVTDESC31310_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC31310_NEWS_SHORT"
+
+    trigger = {
+        tag = SWI
+        has_global_flag = geneva_convention_held
+        war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1864
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1865
+        }
+    }
+
+    title = "EVTNAME31310"
+    desc = "EVTDESC31310"
+    picture = "genevaconvention"
+
+    option = {
+        name = "EVTOPTA31310"
+        prestige = 20
+    }
+
+}
+
+#Theodor Herzl's 'Der Judenstaat'
+country_event = { #original VIP event by Palisadoes
+    id = 131511
+    title = "EVTNAME131511"
+    desc = "EVTDESC131511"
+    picture = "theodor_herzl"
+
+    fire_only_once = yes
+
+    trigger = {
+        NOT = { exists = ISR }
+        owns = 619
+		has_global_flag = start_of_first_aliyah
+		revolution_n_counterrevolution = 1
+    }
+
+    mean_time_to_happen = {
+		months = 7
+	}
+
+    option = {
+        name = "EVTOPTA131511"
+        any_pop = { limit = { religion = jewish } consciousness = 3 }
+		set_global_flag = der_judenstaat
+    }
+
+}
+
+country_event = {
+
+    id = 34700
+    news = yes
+    news_desc_long = "EVTDESC34700_NEWS_LONG"
+    news_desc_medium = "EVTDESC34700_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC34700_NEWS_SHORT"
+
+    trigger = {
+        tag = SAX
+        year = 1837
+        war = no
+        NOT = {
+            year = 1840
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1838
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1839
+        }
+    }
+
+    title = "EVTNAME34700"
+    desc = "EVTDESC34700"
+    picture = "theatre"
+
+    option = {
+        name = "EVTOPTA34700"
+        prestige = 5
+    }
+}
+
+country_event = {
+
+    id = 34701
+    news = yes
+    news_desc_long = "EVTDESC34701_NEWS_LONG"
+    news_desc_medium = "EVTDESC34701_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC34701_NEWS_SHORT"
+
+    trigger = {
+        tag = SAX
+        year = 1841
+        war = no
+        NOT = {
+            year = 1844
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1842
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1843
+        }
+    }
+
+    title = "EVTNAME34701"
+    desc = "EVTDESC34701"
+    picture = "Dresdenopera"
+
+    option = {
+        name = "EVTOPTA34701"
+        prestige = 5
+    }
+}
+
+country_event = {
+
+    id = 33400
+    news = yes
+    news_desc_long = "EVTDESC33400_NEWS_LONG"
+    news_desc_medium = "EVTDESC33400_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC33400_NEWS_SHORT"
+	fire_only_once = yes
+
+    trigger = {
+        tag = BAV
+        year = 1841
+        classicism_n_early_romanticism = 1 #has the romanticism tech
+        NOT = {
+            year = 1844
+            has_global_flag = the_walhalla_is_built
+		}
+	}
+
+    mean_time_to_happen = {
+        months = 6
+
+        modifier = {
+            factor = 0.85 #increase likelihood to happen
+            year = 1842
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1843
+        }
+    }
+
+    title = "EVTNAME33400"
+    desc = "EVTDESC33400"
+    picture = "Walhalla"
+
+    option = {
+        name = "EVTOPTA33400"
+        prestige = 5
+        set_global_flag = the_walhalla_is_built
+		602 = {
+			add_province_modifier = {
+				name = the_walhalla
+				duration = -1
+			}
+		}
+    }
+}
+
+#Pinacotheque
+country_event = {
+
+    id = 33402
+    news = yes
+    news_desc_long = "EVTDESC33402_NEWS_LONG"
+    news_desc_medium = "EVTDESC33402_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC33402_NEWS_SHORT"
+
+    trigger = {
+        tag = BAV
+        year = 1852
+        realism = 1 #has the realism tech
+        OR = {
+            government = absolute_monarchy
+            government = hms_government
+            government = prussian_constitutionalism
+            government = absolute_empire
+            government = semi_constitutional_empire
+            government = constitutional_empire
+        }
+        NOT = { year = 1855 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 6
+
+        modifier = {
+            factor = 0.85 #increase likelihood to happen
+            year = 1853
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1854
+        }
+    }
+
+    title = "EVTNAME33402"
+    desc = "EVTDESC33402"
+    picture = "Bayern"
+
+    option = {
+        name = "EVTOPTA33402"
+        prestige = 5
+    }
+}
+
+# Wagner
+country_event = {
+
+    id = 33403 #parallel event is GER 33003
+    news = yes
+    news_desc_long = "EVTDESC33403_NEWS_LONG"
+    news_desc_medium = "EVTDESC33403_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC33403_NEWS_SHORT"
+
+    trigger = {
+        tag = BAV
+        year = 1875
+        nationalism_n_imperialism = 1 #has the nationalism tech
+        has_country_flag = swan_king
+        owns = 598 #Bayreuth
+        NOT = {
+            year = 1885
+            has_global_flag = RichardWagner
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 6
+
+        modifier = {
+            factor = 0.85 #increase likelihood to happen
+            year = 1876
+        }
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1877
+        }
+    }
+
+    title = "EVTNAME33403"
+    desc = "EVTDESC33403"
+    picture = "wagner"
+
+    option = {
+        name = "EVTOPTA33403"
+        prestige = 5
+        set_global_flag = RichardWagner
+    }
+}
+
+#Cologne Cathedral
+country_event = {
+    id = 200001
+    title = "EVTNAME200001"
+    desc = "EVTDESC200001"
+    picture = "db_frage"
+
+    trigger = {
+        NOT = { has_global_flag = cologne_cathedral_build }
+        NOT = { has_country_flag = dombau_ja }
+        NOT = { has_country_flag = dombau_nein }
+        year = 1840
+        war = no
+        owns = 575
+        is_culture_group = germanic
+    }
+
+    fire_only_once = yes
+    mean_time_to_happen = { months = 6 }
+
+    option = {
+        name = "EVTOPTA200001"
+        money = -1000
+        any_pop = { limit = { has_pop_religion = catholic } consciousness = -1 }
+        set_country_flag = dombau_ja
+
+        ai_chance = { factor = 100 }
+    }
+
+    option = {
+        name = "EVTOPTB200001"
+        prestige = -10
+        set_country_flag = dombau_nein
+
+        ai_chance = { factor = 0 }
+    }
+}
+
+#Cologne Cathedral: Work resumes
+country_event = {
+    id = 200002
+    title = "EVTNAME200002"
+    desc = "EVTDESC200002"
+    picture = "db_beginn"
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = dombau_ja
+        NOT = { has_global_flag = dombau_beginn }
+        year = 1842
+        war = no
+    }
+
+    mean_time_to_happen = { months = 6 }
+
+    option = {
+        name = "EVTOPTA200002"
+        prestige = 5
+        any_pop = { limit = { has_pop_religion = catholic } consciousness = -1 }
+        set_global_flag = dombau_beginn
+    }
+}
+
+
+#Celebration
+country_event = {
+    id = 200003
+    title = "EVTNAME200003"
+    desc = "EVTDESC200003"
+    picture = "db_fertig"
+    is_triggered_only = yes
+
+    option = {
+        name = "EVTOPTA200003"
+        575 = { life_rating = 1 }
+        any_pop = { limit = { has_pop_religion = catholic } consciousness = -1 }
+        any_greater_power = { prestige = -5 }
+    }
+}
+
+#German anthem
+country_event = {
+    id = 200005
+    title = "EVTNAME200005"
+    desc = "EVTDESC200005"
+    picture = "Deutschlandlied"
+    fire_only_once = yes
+
+    trigger = {
+        NOT = { has_country_flag = german_anthem }
+        tag = GER
+    }
+
+    mean_time_to_happen = { months = 12 }
+
+    option = {
+        name = "EVTOPTA200005"
+        prestige = 15
+        any_pop = {
+            limit = { is_culture_group = germanic }
+            ideology = { value = reactionary factor = 0.05 }
+            ideology = { value = conservative factor = 0.1 }
+            consciousness = -1
+        }
+        set_country_flag = german_anthem
+
+        ai_chance = {
+            factor = 40
+            modifier = {
+                factor = 10
+                primary_culture = north_german
+            }
+            modifier = {
+                factor = 0
+                primary_culture = south_german
+            }
+            modifier = {
+                factor = 1.5
+                ruling_party_ideology = reactionary
+            }
+            modifier = {
+                factor = 0.25
+                ruling_party_ideology = liberal
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTB200005"
+        prestige = 25
+        any_pop = {
+            limit = { is_culture_group = germanic }
+            ideology = { value = liberal factor = 0.15 }
+            consciousness = 1
+            militancy = -1
+        }
+        set_country_flag = german_anthem
+
+        ai_chance = {
+            factor = 40
+            modifier = {
+                factor = 10
+                primary_culture = south_german
+            }
+            modifier = {
+                factor = 2.5
+                government = democracy
+            }
+            modifier = {
+                factor = 2.5
+                ruling_party_ideology = liberal
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTC200005"
+        prestige = 20
+        any_pop = {
+            limit = { is_culture_group = germanic }
+            ideology = { value = conservative factor = 0.05 }
+            ideology = { value = liberal factor = 0.1 }
+            consciousness = -1
+            militancy = -1
+        }
+        set_country_flag = german_anthem
+
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 2.5
+                government = democracy
+            }
+            modifier = {
+                factor = 2.5
+                ruling_party_ideology = liberal
+            }
+        }
+    }
+
+    option = {
+        name = "EVTOPTD200005"
+        prestige = 20
+        any_pop = {
+            limit = { is_culture_group = germanic }
+            ideology = { value = conservative factor = 0.15 }
+            militancy = -1
+        }
+        set_country_flag = german_anthem
+
+        ai_chance = { factor = 10 }
+    }
+
+}
+
+country_event = {
+	id = 4206994
+	title = "Clemencia"
+	desc = "EVTDESC4206994"
+	picture = "clemencia"
+	fire_only_once = yes
+
+	trigger = {
+		owns = 2172
+		year = 1869
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = "Interesting, for sure."
+		prestige = 2.5
+	}
+}

@@ -74,6 +74,16 @@ country_event = {
 		country_event = 169001
     }
 	option = {
+        name = "Proletarian Dictatorship"
+		government = proletarian_dictatorship
+		country_event = 169001
+    }
+	option = {
+        name = "Fascist Dictatorship"
+		government = fascist_dictatorship
+		country_event = 169001
+    }
+	option = {
         name = "Close event"
     }
 }

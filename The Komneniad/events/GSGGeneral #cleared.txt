@@ -721,28 +721,6 @@ country_event = {
 }
 
 country_event = {
-    id = 188101
-    title = "A New Life in the New World"
-    desc = "Our propaganda's effect is slowing down, but we are still getting some extra immigrants."
-    picture = "statue_of_liberty"
-
-    trigger = {
-        has_country_flag = come_to_the_new_world
-        NOT = {
-            has_country_modifier = slow_immigration_boom
-        }
-    }
-    mean_time_to_happen = {
-        months = 1500
-    }
-    option = {
-        name = "Keep 'em coming."
-        add_country_modifier = { name = slow_immigration_boom duration = 365 }
-
-    }
-}
-
-country_event = {
 
     id = 95523
     title = "A Vassal Nation"

@@ -1,0 +1,203 @@
+country_event = {
+
+    id = 35700
+    news = yes
+    news_desc_long = "EVTDESC35700_NEWS_LONG"
+    news_desc_medium = "EVTDESC35700_NEWS_MEDIUM"
+    news_desc_short = "EVTDESC35700_NEWS_SHORT"
+
+    trigger = {
+        tag = PAP
+        year = 1891
+        NOT = {
+            year = 1894
+            has_global_flag = RerumNovarum
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1892
+        }
+
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1893
+        }
+    }
+
+    title = "EVTNAME35700"
+    desc = "EVTDESC35700"
+    picture = "pope"
+
+    option = {
+        name = "EVTOPTA35700"
+        prestige = 5
+        labourers = {
+            consciousness = 1
+        }
+        craftsmen = {
+            consciousness = 1
+        }
+        artisans = {
+            consciousness = 1
+        }
+        soldiers = {
+            consciousness = 1
+        }
+        set_global_flag = RerumNovarum
+    }
+}
+
+country_event = {
+
+    id = 35302 #Parallel to PAP35700
+    title = "EVTNAME35700"
+    desc = "EVTDESC35700"
+    picture = "pope"
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITS
+        }
+        year = 1891
+        NOT = {
+            year = 1894
+            exists = PAP
+            has_global_flag = RerumNovarum
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 5
+
+        modifier = {
+            factor = 0.75 #increase likelihood to happen
+            year = 1892
+        }
+
+
+        modifier = {
+            factor = 0.95 #increase likelihood to happen
+            year = 1893
+        }
+    }
+
+    option = {
+        name = "EVTOPTA35700"
+        prestige = 5
+        labourers = {
+            consciousness = 1
+        }
+        craftsmen = {
+            consciousness = 1
+        }
+        artisans = {
+            consciousness = 1
+        }
+        soldiers = {
+            consciousness = 1
+        }
+        set_global_flag = RerumNovarum
+    }
+}
+
+country_event = {
+
+    id = 96172
+    title = "EVTNAME96172" #Altare della patria construction
+    desc = "EVTDESC96172"
+    picture = "vittoriano"
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITS
+        }
+        owns = 749
+        has_country_flag = altar_built
+        NOT = { has_country_modifier = monument_under_construction }
+	}
+
+    fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "EVTOPTA96172"
+        prestige = 15
+        war_exhaustion = -20
+        749 = { set_province_flag = fine_arts }
+    }
+}
+
+# The adventures of Pinocchio
+country_event = {
+
+    id = 110054
+    title = "EVTNAME110054"
+    desc = "EVTDESC110054"
+    picture = "ITA_pinocchio"
+
+    trigger = {
+        OR = {
+            tag = ITA
+            tag = ITS
+            tag = TUS
+        }
+        year = 1881
+        owns = 744
+    }
+
+    mean_time_to_happen = {
+        months = 36
+    }
+
+    fire_only_once = yes
+
+    option = {
+        name = "EVT110054OPTA" #A fine tale for children! And only for children.
+        prestige = 2
+        add_country_modifier = { name = reading duration = 730 }
+        any_pop = { scaled_consciousness = { factor = 1 } }
+    }
+}
+
+country_event = {
+    id = 6101
+    title = "EVTNAME6101" # Tripoli Grand Prix
+    desc = "EVTDESC6101"
+    picture = tripoli_grand_prix
+
+    fire_only_once = yes
+
+    trigger = {
+        is_culture_group = italian
+        year = 1915
+        owns = 1731
+        invention = daimlers_automobile
+    }
+
+    mean_time_to_happen = { months = 24 }
+
+    option = {
+        name = "EVT6100OPTA"
+        prestige = 5
+        1731 = {
+            add_province_modifier = {
+                name = small_immigration_boom
+                duration = 1000
+            }
+        }
+    }
+}
+
+

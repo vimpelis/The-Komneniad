@@ -427,21 +427,6 @@ country_event = {
     }
 }
 
-
-# Removing cores for non-existing countries
-country_event = {
-    id = 11105
-    title = "EVTNAME11105"
-    desc = "EVTDESC11105"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "EVT11105OPTA"
-        all_core = { remove_core = THIS }
-    }
-}
-
 # Generic Event to Inherit
 country_event = {
     id = 98650
