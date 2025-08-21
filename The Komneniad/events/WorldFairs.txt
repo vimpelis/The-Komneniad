@@ -28,24 +28,6 @@ country_event = {
             year = 1870
         }
 
-		modifier = {
-            factor = 0.001
-			OR = {
-				primary_culture = spanish
-				primary_culture = catalan
-			}
-			owns = 498
-            invention = bessemer_steel
-            NOT = { year = 1888 }
-        }
-
-        modifier = {
-            factor = 0.01
-            primary_culture = french
-            invention = bessemer_steel
-            NOT = { has_global_flag = the_eiffel_tower_was_built }
-        }
-
         modifier = {
             factor = 0.8
             year = 1890
