@@ -261,9 +261,6 @@
         size = 3725
     }
 }
-#Socaire
-3554 = {
-}
 #Chile Norte Region (116000)
 #Ruled by Chile 1836
 #Copiapo (52000/13000 POPS)

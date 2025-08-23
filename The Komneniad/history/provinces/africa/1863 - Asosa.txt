@@ -1,6 +1,6 @@
-owner = ETH
-controller = ETH
-add_core = ETH
+owner = JIM
+controller = JIM
+add_core = JIM
 trade_goods = dye
 life_rating = 35
-terrain = jungle_hills
+terrain = montane_forest

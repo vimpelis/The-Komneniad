@@ -2,5 +2,6 @@ owner = MLI
 controller = MLI
 add_core = MLI
 add_core = MOS
+add_core = ASH
 trade_goods = fruit
 life_rating = 35 

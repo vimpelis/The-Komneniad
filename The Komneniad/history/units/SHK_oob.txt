@@ -10,7 +10,7 @@ SHW = {
     value = -10
 }
 
-KAF = {
+JIM = {
     value = 100
 }
 

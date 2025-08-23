@@ -1,3 +1,6 @@
-trade_goods = grain
-life_rating = 1
-terrain = desert
+owner = JIM
+controller = JIM
+add_core = JIM
+trade_goods = fruit
+life_rating = 35
+terrain = montane_forest

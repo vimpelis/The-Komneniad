@@ -1,7 +1,6 @@
-owner = SUD
-controller = SUD
-add_core = SUD
-add_core = SUD
-trade_goods = cattle
-life_rating = 31
-terrain = semidesert
+owner = DAR
+controller = DAR
+add_core = DAR
+trade_goods = wool
+life_rating = 34
+terrain = steppe

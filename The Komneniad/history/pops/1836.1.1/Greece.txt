@@ -2426,10 +2426,6 @@
         size = 12600
     }
 }
-#under the rule of Ottoman Empire in 1836
-#Chios (68000/17000 POPS)
-843 = {
-}
 #Mytilene (44000/11000 POPS)
 844 = {
     aristocrats = {

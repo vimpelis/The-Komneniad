@@ -26,13 +26,23 @@ army = {
     name = "Army of the Sultanate of Darfur"
     location = 1841
 	regiment = {
-        name = "Sultan's Kights"
+        name = "1st Sultan's Kights"
 		type = cavalry
         home = 1841
 	}
 	regiment = {
-        name = "Fur Warriors"
+        name = "2nd Sultan's Kights"
+		type = cavalry
+        home = 1838
+	}
+	regiment = {
+        name = "1st Fur Warriors"
 		type = irregular
 		home = 1842
+	}
+	regiment = {
+        name = "2nd Fur Warriors"
+		type = irregular
+		home = 1828
 	}
 }

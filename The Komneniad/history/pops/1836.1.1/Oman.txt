@@ -111,7 +111,7 @@
     }
 
     slaves = {
-        culture = nilotic
+        culture = ethiopian_minor
         religion = animist
         size = 2000
     }
@@ -285,7 +285,7 @@
     }
 
     slaves = {
-        culture = nilotic
+        culture = ethiopian_minor
         religion = animist
         size = 1100
     }

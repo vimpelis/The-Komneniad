@@ -1,0 +1,22 @@
+ETH = { value = -50 }
+SOM = { value = -50 }
+
+army = {
+    name = "Army of the Kingdom of Jimma"
+    location = 1863
+    regiment = {
+        name = "1st Oromo Warriors"
+        type = irregular
+        home = 1863
+    }
+    regiment = {
+        name = "2nd Oromo Warriors"
+        type = irregular
+        home = 1863
+    }
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 45
+    }
+}

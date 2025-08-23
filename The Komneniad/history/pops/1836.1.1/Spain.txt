@@ -4703,12 +4703,6 @@
         size = 1
     }
 
-    clergymen = {
-        culture = aragonese
-        religion = sunni
-        size = 0
-    }
-
     artisans = {
         culture = aragonese
         religion = sunni
@@ -4725,18 +4719,6 @@
         culture = aragonese
         religion = sunni
         size = 55
-    }
-
-    aristocrats = {
-        culture = aragonese
-        religion = sunni
-        size = 0
-    }
-
-    clergymen = {
-        culture = aragonese
-        religion = sunni
-        size = 0
     }
 
     artisans = {
@@ -5037,12 +5019,6 @@
         culture = catalan
         religion = catholic
         size = 1
-    }
-
-    clergymen = {
-        culture = catalan
-        religion = catholic
-        size = 0
     }
 
     artisans = {
@@ -6048,12 +6024,6 @@
         size = 1
     }
 
-    clergymen = {
-        culture = catalan
-        religion = catholic
-        size = 0
-    }
-
     artisans = {
         culture = catalan
         religion = catholic
@@ -6070,12 +6040,6 @@
         culture = catalan
         religion = catholic
         size = 1
-    }
-
-    clergymen = {
-        culture = catalan
-        religion = catholic
-        size = 0
     }
 
     artisans = {

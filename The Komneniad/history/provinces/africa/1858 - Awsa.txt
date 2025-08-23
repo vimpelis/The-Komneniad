@@ -2,5 +2,5 @@ owner = AWS
 controller = AWS
 add_core = AWS
 trade_goods = sulphur
-terrain = desert
-life_rating = 10
+terrain = semi_desert_mountains
+life_rating = 30

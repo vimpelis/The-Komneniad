@@ -1,4 +1,4 @@
-color = { 100  0  15 }
+color = { 201  101  39 }
 graphical_culture = ZuluGC
 
 party = {

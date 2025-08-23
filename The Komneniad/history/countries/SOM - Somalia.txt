@@ -1,11 +1,12 @@
 capital = 1868
 primary_culture = somali
-culture = cushitic
+culture = afar
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.04
+literacy = 0.021
+non_state_culture_literacy = 0.021
 
 #Political Reforms
 slavery = yes_slavery

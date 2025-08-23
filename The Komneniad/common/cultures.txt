@@ -1591,14 +1591,6 @@ arab = {
         last_names = { Ziyad al-Rahman Firnas al-Majriti al-Zahrawi al-Zarqali Bajjah Zuhr al-Idrisi Tufail Rushd al-Baitar Battuta Khaldon al-Qalasadi
         }
     }
-    sudanese = {
-        color = { 0 73 13 }
-        first_names = { Awin Akoc Nyidok Kwadker Ajang Dedunyal Kuikon Yor Kur Fadyet Fafiti Nyadwai Muko Wak Tyelgut Kodit Aney
-        }
-
-        last_names = { "wad Nyakwac" "wad Kudit" "wad Akwot" "wad Nyidok" "wad Ajang" "wad Kwadker" "wad Akoc" "wad Yor" "wad Kur"
-        }
-    }
 }
 
 #nuristani_group = {
@@ -4074,21 +4066,18 @@ central_african = {
 
         last_names = { Vaweka Apuobo Leku Ndjabu Ninga Adirodo Ngudjolo Lubanga Chui Koka Zaba Yakutumba Mudundu }
     }
-
     kingwana = {
         color = { 211 228 113 }
         first_names = { Bokobo Bomete Ilitosini Ndjandja }
 
         last_names = { Taabwa Bwile Bembe Kabwari Buyu Bangubangu Zimba Kwami Tembo Nyanga Bhele Komo Nande }
     }
-
     chokwe = {
         color = { 136 144 120 }
         first_names = { Kalembe    Kalembele Kambangaji Lundembe Ndembe Ngulu Tulembele Tumbangaji     }
 
         last_names = { Chokwe Lovale Balovale Nsongo }
     }
-
     mongo = {
         color = { 162 175 65 }
         first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
@@ -4105,16 +4094,9 @@ central_african = {
         last_names = { Tombalbaye  Odingar Moungar Ermanala Gawrang Qadir as-Saghir Mohammed al-Mahdi al-Kabir Bira
         }
     }
+	#Toubou
     teda = {
         color = { 156 198 100 }
-        first_names = { Yusuf Raqib Muhammad Adham Ali Ibrahim Ahmad Yakob Kharut Salih Jawda
-        }
-
-        last_names = { "Abd al-Aziz" "Abda al-Karim" "Derret ibn Jawda" Arous as-Sarhir al-Sharif "ibn Yusuf" "ibn Ali"
-        }
-    }
-	zaghawa = {
-        color = { 190 60 127 }
         first_names = { Yusuf Raqib Muhammad Adham Ali Ibrahim Ahmad Yakob Kharut Salih Jawda
         }
 
@@ -4128,14 +4110,6 @@ central_african = {
 
         last_names = { Sarandji Kamoun Nzapayeké Tiangaye Touadéra Dologuelé Samba-Panza Wodobodé Bozizé }
     }
-    #forest_bantu = {
-    #    color = { 237 134 16 }
-    #    first_names = { Ngalifourou Muteba Mushidi Mbala Mutand Mudib Kangapu Cimbindu Mbumb Cakasekene Mulay Nawej Cikombe Waranankong
-    #    }
-	#
-    #    last_names = { Bongo Ganao Kalong Mukaz Ditend Yaava Namwan Naweej Kamong Isot Kat Muteba
-    #    }
-    #}
     south_forest_bantu = {
         color = { 233 237 16 }
         first_names = { Kaumba Muteba Mushidi Mbala Mutand Mudib Kangapu Cimbindu Mbumb Cakasekene Mulay Nawej Cikombe Waranankong
@@ -4144,14 +4118,6 @@ central_african = {
         last_names = { Kasang Nambing Kalong Mukaz Ditend Yaava Namwan Naweej Kamong Isot Kat Muteba
         }
     }
-    #african_minor = {
-    #    color = { 63 32 10 }
-    #    first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife #Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
-    #    }
-    #
-    #    last_names = { Mussa Mutato Bowelle Makeda Nzinga Sundiata
-    #    }
-    #}
 }
 
 east_african = {
@@ -4164,12 +4130,6 @@ east_african = {
 
         last_names = { Selassie Mikael Mariam Melekot Seged Wossen Makonnen Mengitsu Abbaba Dingil Hailu Giorgis }
     }
-    #beta_israeli = {
-    #    color = { 185 30 160 }
-    #    first_names = { Amare Bekele Berhanu Saleh Haile Berihun Demissie Desta Geteye Girma Kelile Negasi Abebe Fakirta Adis Kassa Menelik }
-
-    #    last_names = { Selassie Mikael Mariam Melekot Seged Wossen Makonnen Mengitsu Abbaba Dingil Hailu Giorgis }
-    #}
     afar = {
         color = { 198 46 99 }
         first_names = { Mahammad Umar Kedafu Alimirah Amda Baeda Kadhafo
@@ -4226,14 +4186,6 @@ east_african = {
         last_names = { Ahmed Baqsa Injamo Argaw Hailemaraim Dinagde Tariq
         }
     }
-    kefficho = {
-        color = { 100 0 15 }
-        first_names = { Aba Tekle Sacho Gawa Gaha Shagi Jilcha Jawe Sana Gunji Galli Gaki Beshi Hoti Kaye
-        }
-
-        last_names = { Ginocho Gaocho Sherocho Nechocho Sachi Bulgu Gomol
-        }
-    }
     kikuyu = {
         color = { 99 164 74 }
         first_names = { Gacoki Kanja Kirimi Kioi Muiru Mukanda Muthengi Nderitu Nyamu Riitho Runo Waitimu Wamungunda Wamwara Warui Kariuki Githinji Gitonga Hiuhu Ikinya Kiara Matu Murathi Mbogo Ngigi Muriu
@@ -4242,18 +4194,14 @@ east_african = {
         last_names = { Njoroge Maina Mwangi Wairia Njuguna Gitau Kiarie Mbugua Chege Manjiri Mamba Tene Agu Manduti Cuma Ciira Mathathi Ndemi Iregi Kinuthia Karanja Kinyanjui Nganga Gathuru
         }
     }
-    luo = {
+    nilotic = {
         color = { 156 156 89 }
-        first_names = { Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa }
-
-        last_names = { Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo }
-    }
-    maasai = {
-        color = { 134 57 84 }
-        first_names = { Mbatian Lenana Segi Parasayip Koyati Kakenya Lekuton Olemeeli Meitikini
+        first_names = { Mbatian Lenana Segi Parasayip Koyati Kakenya Lekuton Olemeeli Meitikini 
+		Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa
         }
 
         last_names = { "Ole Mbatian" "Ole Lenana" "Ole Segi" "Ole Parasayip" "Ole Koyati"
+		Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo
         }
     }
     nuer = {
@@ -4265,7 +4213,15 @@ east_african = {
         }
     }
     nuba = {
-        color = { 48 213 48 }
+        color = { 70 155 110 }
+        first_names = { Awin Akoc Nyidok Kwadker Ajang Dedunyal Kuikon Yor Kur Fadyet Fafiti Nyadwai Muko Wak Tyelgut Kodit Aney
+        }
+
+        last_names = { "wad Nyakwac" "wad Kudit" "wad Akwot" "wad Nyidok" "wad Ajang" "wad Kwadker" "wad Akoc" "wad Yor" "wad Kur"
+        }
+    }
+	sudanese = {
+        color = { 110  90  160 }
         first_names = { Awin Akoc Nyidok Kwadker Ajang Dedunyal Kuikon Yor Kur Fadyet Fafiti Nyadwai Muko Wak Tyelgut Kodit Aney
         }
 
@@ -4286,16 +4242,6 @@ east_african = {
 
         last_names = { Musinga Gahindiro Rwogera Rutarindwa Mutara Ndahindurwa Rushatsi Ndagushimiye Senyamwisa Mutamo Serushambo Butama Rugamba Gisabo Mbikije }
     }
-
-    #sidama = {
-    #    color = { 84 97 38 }
-    #    first_names = { Aba Tekle Sacho Gawa Gaha Shagi Jilcha Jawe Sana Gunji Galli Gaki Beshi Hoti Kaye
-    #    }
-
-    #    last_names = { Ginocho Gaocho Sherocho Nechocho Sachi Bulgu Gomol
-    #    }
-    #}
-
     somali = {
         color = { 226 22 48 }
         first_names = { Yusuf Mahamud Ahmed Osman Ali Aul Shire Mohamud Naleye Abdikarim Dalmar Ghdi Labaan Roble Taban Erasto Abdi
@@ -4328,19 +4274,13 @@ east_african = {
         last_names = { Njovu Ndiga Ngo Nseenene Mmamba Ngonge Ngabi
         }
     }
-    cushitic = {
-        color = { 201 101 39 }
-        first_names = { "Ibn Muhammad" Abdullah "Abbas said" Ismail Mansur Rahman Abdallahi Hassan Malusi Tahir Wiraj Amsalu Nijam Bakri
-        }
+    ethiopian_minor = {
+        color = { 100 0 15 }
+        first_names = { Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa
+		Aba Tekle Sacho Gawa Gaha Shagi Jilcha Jawe Sana Gunji Galli Gaki Beshi Hoti Kaye		}
 
-        last_names = { Ahmad Ali Zubayr Digna Azrak Hammuda al-Tasashi Nujumi
-        }
-    }
-    nilotic = {
-        color = { 101 101 39 }
-        first_names = { Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa }
-
-        last_names = { Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo }
+        last_names = { Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo
+		Ginocho Gaocho Sherocho Nechocho Sachi Bulgu Gomol		}
     }
 }
 

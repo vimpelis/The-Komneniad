@@ -1,7 +1,7 @@
-capital = 1862
-primary_culture = kefficho
-culture = cushitic
-religion = animist
+capital = 1863
+primary_culture = oromo
+culture = amhara
+religion = coptic
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
@@ -38,7 +38,7 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
 
-set_country_flag = animist_country
+set_country_flag = coptic_country
 
 ruling_party = KAF_conservative
 upper_house = {
@@ -51,10 +51,13 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = lacking_writing_system
-
 #Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "KAF_oob.txt"
+foreign_weapons = yes_foreign_weapons
+foreign_training = yes_foreign_training
+
+flintlock_rifles = 1
+
+oob = "JIM_oob.txt"

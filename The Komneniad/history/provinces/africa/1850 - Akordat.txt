@@ -2,5 +2,5 @@ owner = ETH
 controller = ETH
 add_core = ETH
 trade_goods = fruit
-terrain = semidesert
-life_rating = 32
+terrain = steppe
+life_rating = 25

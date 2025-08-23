@@ -1,6 +1,3 @@
-owner = ETH
-controller = ETH
-add_core = ETH
-trade_goods = cattle
-life_rating = 35
-terrain = montane_forest
+trade_goods = fruit
+life_rating = 10
+terrain = forest_hills

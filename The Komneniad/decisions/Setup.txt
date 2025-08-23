@@ -619,7 +619,7 @@ political_decisions = {
                 limit = {
                     exists = yes
                     OR = {
-                        tag = KAF
+                        tag = JIM
                         tag = GON
                         tag = SHW
                         tag = TIG
@@ -713,6 +713,7 @@ political_decisions = {
 				}
 				treasury = 10000
 			}
+			SOM = { any_pop = { limit = { has_pop_culture = amhara } literacy = 0.06 } }
 			FJN = { country_event = 165002 }
 			GNG = { country_event = 165002 }
 			TAI = { country_event = 165003 }
@@ -774,6 +775,12 @@ political_decisions = {
 				add_province_modifier = {
 					name = celtification
 					duration = -1
+				}
+			}
+			1827 = {
+				add_province_modifier = {
+					name = recently_built_city
+					duration = 3650
 				}
 			}
 			any_country = {

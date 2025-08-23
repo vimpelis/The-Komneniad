@@ -1,3 +1,6 @@
-trade_goods = grain
+owner = SUD
+controller = SUD
+add_core = SUD
+trade_goods = fruit
 terrain = desert
-life_rating = 1
+life_rating = 20 

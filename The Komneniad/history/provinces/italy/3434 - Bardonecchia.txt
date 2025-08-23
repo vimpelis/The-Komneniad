@@ -1,3 +1,6 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+owner = SOM
+controller = SOM
+add_core = SOM
+trade_goods = wool
+terrain = semidesert
+life_rating = 20

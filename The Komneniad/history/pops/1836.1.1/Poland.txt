@@ -1,4 +1,3 @@
-#This file was modified using POP Adjuster, so expect some weirdness like size = 0 pops
 #Pomerania Region (804000) #see Germany.txt for balance of region
 #under the rule of Prussia 1836
 #Stettin (484000/121000 POPS) #Part of Poland since 1945
@@ -6755,8 +6754,6 @@
         religion = catholic
         size = 6000
     }
-}
-3318 = {
 }
 3417 = {
 }

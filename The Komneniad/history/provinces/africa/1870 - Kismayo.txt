@@ -1,6 +1,6 @@
 add_core = SOM
-trade_goods = cattle
+trade_goods = cotton
 terrain = savanna
-life_rating = 10
+life_rating = 25
 owner = SOM
 controller = SOM

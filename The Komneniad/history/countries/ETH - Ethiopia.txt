@@ -1,8 +1,7 @@
-capital = 1859
+capital = 1852
 primary_culture = amhara
 culture = tigray
 culture = oromo
-culture = cushitic
 religion = coptic
 government = absolute_empire
 plurality = 5.0
@@ -59,10 +58,13 @@ modern_winemaking = yes
 
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
+post_napoleonic_thought = 1
 
 foreign_weapons = yes_foreign_weapons
 foreign_artillery = yes_foreign_artillery
 monetary_reform = yes_monetary_reform
+foreign_training = yes_foreign_training
+military_constructions = yes_military_constructions
 
 schools = unciv_tech_school
 

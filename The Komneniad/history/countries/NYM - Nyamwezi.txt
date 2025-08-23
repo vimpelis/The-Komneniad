@@ -1,5 +1,5 @@
 capital = 2047
-primary_culture = maasai
+primary_culture = nilotic
 culture = lacustrine_bantu
 religion = animist
 government = absolute_monarchy

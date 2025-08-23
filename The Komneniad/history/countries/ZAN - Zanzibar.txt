@@ -2,7 +2,6 @@ capital = 2048
 primary_culture = swahili
 culture = yao
 culture = kikuyu
-culture = cushitic
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0

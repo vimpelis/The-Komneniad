@@ -1,74 +1,101 @@
+leader = {
+    name = "Marye of Yejju"
+    picture = african_general_4
+    date = 1790.1.1
+    type = land
+    personality = defence_1.1
+    background = attack_3.1
+}
+
+JIM = { value = -50 }
+AWS = { value = 100 }
+SOM = { value = -200 }
+SUD = { value = 25 }
+EGY = { value = -25 }
+SPA = { value = 50 }
+BYZ = { value = -50 }
+
 army = {
-    name = "1st Army"
-    location = 1859
+    name = "Imperial Guard"
+    location = 1852
 	regiment = {
-        name = "1st Infantry Regiment"
+        name = "1st Imperial Guard"
         type = infantry
-        home = 1859
+        home = 1852
     }
     regiment = {
-        name = "2nd Infantry Regiment"
+        name = "2nd Imperial Guard"
         type = infantry
-        home = 1859
-    }
-    regiment = {
-        name = "1st Cavalry Regiment"
-        type = cavalry
-        home = 1859
-    }
-	regiment = {
-        name = "2nd Cavalry Regiment"
-        type = cavalry
-        home = 1863
-    }
-	regiment = {
-        name = "3rd Cavalry Regiment"
-        type = cavalry
-        home = 1855
+        home = 1852
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 3593
-    }
-	regiment = {
-        name = "2nd Artillery Regiment"
-        type = artillery
-        home = 1860
+        home = 1854
     }
 }
 
 army = {
-    name = "2nd Army"
+    name = "1st Army"
     location = 1856
 	regiment = {
-        name = "1st Irregular Infantry Regiment"
+        name = "1st Infantry Regiment"
         type = infantry
-        home = 1856
+        home = 1855
     }
     regiment = {
-        name = "2nd Irregular Infantry Regiment"
+        name = "2nd Infantry Regiment"
         type = infantry
-        home = 1857
+        home = 1855
     }
 	regiment = {
-        name = "3rd Irregular Infantry Regiment"
-        type = infantry
+        name = "1st Welajoch Regiment"
+        type = irregular
         home = 3592
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = cavalry
-        home = 1854
+        home = 3593
     }
 	regiment = {
         name = "2nd Cavalry Regiment"
         type = cavalry
-        home = 1852
+        home = 1859
     }
 	regiment = {
         name = "3rd Cavalry Regiment"
         type = cavalry
-        home = 1852
+        home = 1859
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1849
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1859
+    }
+	regiment = {
+        name = "1st Welajoch Regiment"
+        type = irregular
+        home = 3491
+    }
+	regiment = {
+        name = "2nd Welajoch Regiment"
+        type = irregular
+        home = 1853
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1857
+    }
+	regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1854
     }
 }

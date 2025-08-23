@@ -1,3 +1,4 @@
-trade_goods = grain
+trade_goods = wool
 terrain = desert
-life_rating = 1
+life_rating = 10
+add_core = DAR

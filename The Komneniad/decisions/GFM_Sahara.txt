@@ -118,14 +118,12 @@ political_decisions = {
                         owns = 3668
                         1742 = { empty = yes }
 						3394 = { empty = yes }
-						3395 = { empty = yes }
                         NOT = { has_global_flag = libya_organized }
                     }
                 }
 				owner = {
 					1742 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
 					3394 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
-					3395 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
             }
@@ -136,14 +134,12 @@ political_decisions = {
                         owns = 3668
                         1742 = { empty = yes }
 						3394 = { empty = yes }
-						3395 = { empty = yes }
                         has_global_flag = libya_organized
                     }
                 }
 				owner = {
 					1742 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					3394 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
-					3395 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
             }
@@ -159,7 +155,6 @@ political_decisions = {
 				owner = {
 					3668 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
 					3394 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
-					3395 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
 					1742 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
@@ -176,7 +171,6 @@ political_decisions = {
 				owner = {
 					3668 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					3394 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
-					3395 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					1742 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
@@ -256,7 +250,6 @@ political_decisions = {
                 limit = { owner = { 1741 = { owned_by = THIS is_core = THIS } } }
                 3668 = { add_core = THIS }
 				3394 = { add_core = THIS }
-				3395 = { add_core = THIS }
             }
             random_owned = {
                 limit = { owner = { 1738 = { owned_by = THIS is_core = THIS } } }

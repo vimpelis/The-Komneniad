@@ -1,7 +1,6 @@
-owner = SUD
-controller = SUD
-add_core = SUD
-add_core = SUD
-trade_goods = fruit
-life_rating = 32
-terrain = semidesert
+owner = TAQ
+controller = TAQ
+add_core = TAQ
+trade_goods = cattle
+life_rating = 35
+terrain = hills

@@ -985,7 +985,7 @@
     }
 
     farmers = {
-        culture = luo
+        culture = nilotic
         religion = animist
         size = 35345
     }
@@ -997,7 +997,7 @@
     }
 
     slaves = {
-        culture = luo
+        culture = nilotic
         religion = animist
         size = 7330
     }
@@ -1041,7 +1041,7 @@
     }
 
     farmers = {
-        culture = luo
+        culture = nilotic
         religion = animist
         size = 10000
     }

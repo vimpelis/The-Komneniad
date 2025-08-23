@@ -1,6 +1,5 @@
 capital = 2023
 primary_culture = baganda
-culture = luo
 culture = lacustrine_bantu
 culture = nilotic
 culture = ruanda

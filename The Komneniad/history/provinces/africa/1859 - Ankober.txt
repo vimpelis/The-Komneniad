@@ -1,6 +1,6 @@
 owner = ETH
 controller = ETH
 add_core = ETH
-trade_goods = coffee
-terrain = ankober
+trade_goods = timber
+terrain = dry_mountains
 life_rating = 35

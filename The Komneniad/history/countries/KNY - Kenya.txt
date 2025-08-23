@@ -1,6 +1,5 @@
 capital = 2024
 primary_culture = kikuyu
-culture = luo
 culture = nilotic
 religion = animist
 government = absolute_monarchy

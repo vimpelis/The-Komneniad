@@ -1,6 +1,5 @@
-capital = 1827
+capital = 1835
 primary_culture = sudanese
-culture = nilotic
 culture = beja
 culture = nuba
 religion = coptic
@@ -50,14 +49,17 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = sunni_country
+set_country_flag = coptic_country
 
-foreign_artillery = yes_foreign_artillery
 foreign_weapons = yes_foreign_weapons
+foreign_artillery = yes_foreign_artillery
+foreign_training = yes_foreign_training
+military_constructions = yes_military_constructions
 
 #Technologies
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
+post_napoleonic_thought = 1
 
 #Inventions
 
