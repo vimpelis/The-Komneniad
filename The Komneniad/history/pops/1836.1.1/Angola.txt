@@ -346,32 +346,32 @@
 #Mocamedes (116000/29000 POPS)
 2004 = {
     aristocrats = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 50
     }
 
     artisans = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 500
     }
 

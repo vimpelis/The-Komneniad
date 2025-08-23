@@ -3927,31 +3927,31 @@
 2647 = {
     aristocrats = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 15
     }
 
     clergymen = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 20
     }
 
     artisans = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 25
     }
 
     soldiers = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 25
     }
 
     farmers = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 300
     }
 
@@ -3986,20 +3986,20 @@
     }
 
     bureaucrats = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 5
     }
 
     artisans = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 10
     }
 
     clergymen = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 10
     }
 }
@@ -4009,25 +4009,25 @@
 1446 = {
     clergymen = {
         culture = moluccan
-        religion = catholic
+        religion = sunni
         size = 25
     }
 
     artisans = {
         culture = moluccan
-        religion = catholic
+        religion = sunni
         size = 250
     }
 
     soldiers = {
         culture = moluccan
-        religion = catholic
+        religion = sunni
         size = 15
     }
 
     farmers = {
         culture = moluccan
-        religion = catholic
+        religion = sunni
         size = 710
     }
 
@@ -4063,25 +4063,25 @@
 
     clergymen = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 50
     }
 
     artisans = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 750
     }
 
     soldiers = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 25
     }
 
     farmers = {
         culture = melanesian
-        religion = catholic
+        religion = sunni
         size = 1175
     }
 
@@ -4116,26 +4116,26 @@
     }
 
     bureaucrats = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 5
     }
 
     artisans = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 10
     }
 
     clergymen = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 10
     }
 
     soldiers = {
-        culture = portuguese
-        religion = catholic
+        culture = andalusian
+        religion = sunni
         size = 25
     }
 

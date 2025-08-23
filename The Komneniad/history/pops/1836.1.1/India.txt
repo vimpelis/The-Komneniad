@@ -8644,32 +8644,32 @@
 }
 3475 = {
     aristocrats = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 30
     }
 
     bureaucrats = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 25
     }
 
     clergymen = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 50
     }
 
     artisans = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 50
     }
 
@@ -8687,13 +8687,13 @@
 
     artisans = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 300
     }
 
     soldiers = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 650
     }
 
@@ -8705,7 +8705,7 @@
 
     farmers = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 2500
     }
 
@@ -9045,68 +9045,68 @@
 #3471 - Goa (235000/58750 POPS)
 3471 = {
     aristocrats = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 30
     }
 
     bureaucrats = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 25
     }
 
     clergymen = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 50
     }
 
     artisans = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = portuguese
-        religion = catholic
+        culture = bedouin
+        religion = sunni
         size = 50
     }
 
     aristocrats = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 50
     }
 
     bureaucrats = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 50
     }
 
     clergymen = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 50
     }
 
     artisans = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 400
     }
 
     soldiers = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 500
     }
 
     farmers = {
         culture = gujarati
-        religion = catholic
+        religion = sunni
         size = 9725
     }
 
@@ -9925,31 +9925,31 @@
 ######Jews
 1303 = {
     aristocrats = {
-        culture = portuguese
+        culture = galician
         religion = catholic
         size = 150
     }
 
     bureaucrats = {
-        culture = portuguese
+        culture = galician
         religion = catholic
         size = 25
     }
 
     clergymen = {
-        culture = portuguese
+        culture = galician
         religion = catholic
         size = 50
     }
 
     artisans = {
-        culture = portuguese
+        culture = galician
         religion = catholic
         size = 500
     }
 
     soldiers = {
-        culture = portuguese
+        culture = galician
         religion = catholic
         size = 25
     }
@@ -11100,100 +11100,94 @@
     }
 }
 365 = {
+    aristocrats = {
+        culture = bedouin
+        religion = sunni
+        size = 30
+    }
+
     bureaucrats = {
-        culture = french
-        religion = catholic
-        size = 1
-    }
-
-    clergymen = {
-        culture = french
-        religion = catholic
-        size = 1
-    }
-
-    soldiers = {
-        culture = french
-        religion = catholic
-        size = 2
-    }
-
-    clergymen = {
-        culture = kannada
-        religion = hindu
-        size = 15
-    }
-
-    artisans = {
-        culture = kannada
-        religion = hindu
-        size = 400
-    }
-
-    artisans = {
-        culture = kannada
-        religion = catholic
-        size = 150
-    }
-
-    soldiers = {
-        culture = kannada
-        religion = catholic
-        size = 350
-    }
-
-    farmers = {
-        culture = kannada
-        religion = hindu
-        size = 8500
-    }
-
-    farmers = {
-        culture = kannada
-        religion = catholic
-        size = 1500
-    }
-
-    clergymen = {
-        culture = kannada
+        culture = bedouin
         religion = sunni
         size = 25
     }
 
+    clergymen = {
+        culture = bedouin
+        religion = sunni
+        size = 50
+    }
+
     artisans = {
-        culture = kannada
+        culture = bedouin
+        religion = sunni
+        size = 100
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = sunni
+        size = 50
+    }
+
+    clergymen = {
+        culture = gujarati
+        religion = hindu
+        size = 20
+    }
+
+    artisans = {
+        culture = gujarati
+        religion = hindu
+        size = 200
+    }
+
+    artisans = {
+        culture = gujarati
+        religion = sunni
+        size = 200
+    }
+
+    soldiers = {
+        culture = gujarati
+        religion = sunni
+        size = 350
+    }
+
+    farmers = {
+        culture = gujarati
+        religion = hindu
+        size = 3500
+    }
+
+    farmers = {
+        culture = gujarati
+        religion = sunni
+        size = 1500
+    }
+
+    clergymen = {
+        culture = sindi
+        religion = sunni
+        size = 20
+    }
+
+    artisans = {
+        culture = sindi
         religion = sunni
         size = 300
     }
 
     soldiers = {
-        culture = kannada
+        culture = sindi
         religion = sunni
-        size = 150
+        size = 200
     }
 
     farmers = {
-        culture = kannada
+        culture = sindi
         religion = sunni
-        size = 2500
-    }
-
-    bureaucrats = {
-        culture = french
-        religion = protestant
-        size = 14
-    }
-
-    clergymen = {
-        culture = french
-        religion = protestant
-        size = 14
-    }
-
-    soldiers = {
-        culture = french
-        religion = protestant
-        size = 23
+        size = 1000
     }
 }
 #Malabar Region  (2656000)

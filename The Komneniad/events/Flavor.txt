@@ -1005,9 +1005,6 @@ country_event = {
 				trade_goods = wool
 				life_rating = 1
 				any_pop = {
-					limit = {
-						culture = platinean
-					}
 					reduce_pop = 1.25
 				}
 			}

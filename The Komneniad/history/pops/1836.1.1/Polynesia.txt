@@ -125,59 +125,6 @@
         size = 30
     }
 }
-#Midway + Wake (60/15 POPS)
-3150 = {
-    farmers = {
-        culture = han_chinese
-        religion = confucian
-        size = 4300
-    }
-}
-3176 = {
-    artisans = {
-        culture = japanese
-        religion = shinto
-        size = 100
-    }
-}
-3170 = {
-    farmers = {
-        culture = japanese
-        religion = shinto
-        size = 14500
-    }
-}
-3175 = {
-    farmers = {
-        culture = japanese
-        religion = shinto
-        size = 3000
-    }
-}
-#Midway + Wake (60/15 POPS)
-3247 = {
-    farmers = {
-        culture = han_chinese
-        religion = confucian
-        size = 3700
-    }
-}
-#Midway + Wake (60/15 POPS)
-3153 = {
-    farmers = {
-        culture = han_chinese
-        religion = confucian
-        size = 4000
-    }
-}
-#Midway + Wake (60/15 POPS)
-3167 = {
-    farmers = {
-        culture = portuguese
-        religion = catholic
-        size = 2500
-    }
-}
 #Central Polynesia Region (604)
 #uncolonized in 1836
 #Palmyra Atoll (60/15 POPS)
@@ -572,41 +519,11 @@
         size = 1350
     }
 }
-#Pitcairn Islands (160/40 POPS) #anglo_saxon trade post - proclaimed colony 1838
+#Pitcairn Islands (160/40 POPS)
 2552 = {
-    aristocrats = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 2
-    }
-
-    clergymen = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 2
-    }
-
-    artisans = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 2
-    }
-
-    soldiers = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 2
-    }
-
-    farmers = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 10
-    }
-
     farmers = {
         culture = polynesian
-        religion = protestant
+        religion = animist
         size = 10
     }
 }

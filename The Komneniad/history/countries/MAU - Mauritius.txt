@@ -1,5 +1,5 @@
 capital = 2125
-primary_culture = kreol
+primary_culture = afro_caribbean
 religion = catholic
 government = democracy
 plurality = 0.0

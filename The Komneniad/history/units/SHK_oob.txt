@@ -1,21 +1,9 @@
-EGY = {
-    value = -400
-}
-
-GON = {
-    value = -10
-}
-
-SHW = {
-    value = -10
+SUD = {
+    value = -200
 }
 
 JIM = {
     value = 100
-}
-
-TIG = {
-    value = -10
 }
 
 DAR = {

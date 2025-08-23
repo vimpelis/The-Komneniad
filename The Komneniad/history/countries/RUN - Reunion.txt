@@ -1,5 +1,5 @@
 capital = 2126
-primary_culture = kreol
+primary_culture = afro_french
 culture = french
 religion = catholic
 government = colonial_company_2

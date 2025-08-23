@@ -252,7 +252,6 @@ political_decisions = {
 							is_culture_group = central_african
 							is_culture_group = east_african
 							is_culture_group = southern_african
-							has_pop_culture = afro_american
 							has_pop_culture = dakota
 							has_pop_culture = cherokee
 							has_pop_culture = native_american_minor
@@ -350,7 +349,6 @@ political_decisions = {
 					limit = {
 						OR = {
 							type = slaves
-							has_pop_culture = afro_american
 							is_culture_group = west_african
 							is_culture_group = central_african
 							is_culture_group = east_african
@@ -614,23 +612,6 @@ political_decisions = {
                     limit = { owner = { foreign_training = yes_foreign_training } }
                     owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
                 }
-            }
-            any_country = {
-                limit = {
-                    exists = yes
-                    OR = {
-                        tag = JIM
-                        tag = GON
-                        tag = SHW
-                        tag = TIG
-						tag = WLO
-						tag = GJM
-                        tag = AWS
-                        tag = HAR
-                    }
-                }
-                add_country_modifier = { name = zemene_mesafint duration = 10950 }
-                add_country_modifier = { name = exploiting_the_land duration = 10950 }
             }
 			2191 = { add_province_modifier = { name = indigo_dye duration = -1 } }
 			2192 = { add_province_modifier = { name = indigo_dye duration = -1 } }

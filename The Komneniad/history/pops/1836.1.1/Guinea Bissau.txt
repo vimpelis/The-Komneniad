@@ -1,5 +1,4 @@
 #Casamance Region (108000) #see Senegal.txt and Guinea.txt for balance of region
-#Uncolonized in 1836/Portuguese trade post
 #Bissau (32000/8000 POPS)
 1877 = {
     clergymen = {
