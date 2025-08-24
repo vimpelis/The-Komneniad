@@ -2199,13 +2199,7 @@
     farmers = {
         culture = gypsy
         religion = orthodox
-        size = 100
-    }
-
-    farmers = {
-        culture = gypsy
-        religion = sunni
-        size = 200
+        size = 300
     }
 
     aristocrats = {
