@@ -491,8 +491,6 @@ political_decisions = {
                 any_owned_province = { region = SIN_1288 }
                 any_owned_province = { region = KAL_1221 }
                 KAL = { in_sphere = THIS }
-				KHN = { in_sphere = THIS }
-                MAK = { in_sphere = THIS }
             }
         }
 
@@ -530,12 +528,6 @@ political_decisions = {
                     owner = { vassal_of = THIS }
                 }
             }
-			3508 = { #Pishukan
-                OR = {
-                    owned_by = THIS
-                    owner = { vassal_of = THIS }
-                }
-            }
         }
 
         effect = {
@@ -558,43 +550,10 @@ political_decisions = {
                 }
                 country_event = 11101
             }
-            random_country = {
-                limit = {
-                    tag = MAK
-                    exists = yes
-                    ai = yes
-                }
-                THIS = { inherit = MAK }
-            }
-            random_country = {
-                limit = {
-                    tag = MAK
-                    exists = yes
-                    ai = no
-                }
-                country_event = 11101
-            }
-			random_country = {
-                limit = {
-                    tag = KHN
-                    exists = yes
-                    ai = yes
-                }
-                THIS = { inherit = KHN }
-            }
-            random_country = {
-                limit = {
-                    tag = KHN
-                    exists = yes
-                    ai = no
-                }
-                country_event = 11101
-            }
 
             1221 = { secede_province = BLC }
             1222 = { secede_province = BLC }
             3258 = { secede_province = BLC }
-			3508 = { secede_province = BLC }
 			3506 = { secede_province = BLC }
 			3507 = { secede_province = BLC }
 			3510 = { secede_province = BLC }
@@ -978,8 +937,6 @@ political_decisions = {
             NOT = { tag = PAK }
             NOT = { tag = PNJ }
             NOT = { tag = KAL }
-			NOT = { tag = KHN }
-            NOT = { tag = MAK }
             NOT = { tag = SIN }
             year = 1880
             OR = {
@@ -989,20 +946,6 @@ political_decisions = {
             any_owned_province = {
                 OR = {
                     KAL = { all_core = {
-                        OR = {
-                            owned_by = THIS
-                            owner = { OR = { is_vassal = no vassal_of = THIS } ai = yes in_sphere = THIS war = no }
-                            }
-                        }
-                    }
-                    MAK = { all_core = {
-                        OR = {
-                            owned_by = THIS
-                            owner = { OR = { is_vassal = no vassal_of = THIS } ai = yes in_sphere = THIS war = no }
-                            }
-                        }
-                    }
-					KHN = { all_core = {
                         OR = {
                             owned_by = THIS
                             owner = { OR = { is_vassal = no vassal_of = THIS } ai = yes in_sphere = THIS war = no }
@@ -1031,21 +974,7 @@ political_decisions = {
             civilized = yes
             war = no
             mass_politics = 1
-            KAL = {
-                all_core = {
-                OR = {
-                    owned_by = THIS
-                    owner = {
-                        OR = { is_vassal = no vassal_of = THIS }
-                        ai = yes
-                        in_sphere = THIS
-                        war = no
-                        is_greater_power = no
-                        }
-                    }
-                }
-            }
-            1222 = {
+            1221 = {
                 OR = {
                     owned_by = THIS
                     owner = {
@@ -1057,7 +986,7 @@ political_decisions = {
                     }
                 }
             }
-			3258 = {
+			1227 = {
                 OR = {
                     owned_by = THIS
                     owner = {
@@ -1069,7 +998,7 @@ political_decisions = {
                     }
                 }
             }
-			3506 = {
+			1218 = {
                 OR = {
                     owned_by = THIS
                     owner = {
@@ -1081,7 +1010,7 @@ political_decisions = {
                     }
                 }
             }
-			3507 = {
+            1288 = {
                 OR = {
                     owned_by = THIS
                     owner = {
@@ -1090,112 +1019,6 @@ political_decisions = {
                         OR = { is_vassal = no vassal_of = THIS }
                         war = no
                         is_greater_power = no
-                    }
-                }
-            }
-			3508 = {
-                OR = {
-                    owned_by = THIS
-                    owner = {
-                        in_sphere = THIS
-                        ai = yes
-                        OR = { is_vassal = no vassal_of = THIS }
-                        war = no
-                        is_greater_power = no
-                    }
-                }
-            }
-			3509 = {
-                OR = {
-                    owned_by = THIS
-                    owner = {
-                        in_sphere = THIS
-                        ai = yes
-                        OR = { is_vassal = no vassal_of = THIS }
-                        war = no
-                        is_greater_power = no
-                    }
-                }
-            }
-			1220 = {
-                OR = {
-                    owned_by = THIS
-                    owner = {
-                        in_sphere = THIS
-                        ai = yes
-                        OR = { is_vassal = no vassal_of = THIS }
-                        war = no
-                        is_greater_power = no
-                    }
-                }
-            }
-            SIN = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							ai = yes
-							in_sphere = THIS
-							OR = { is_vassal = no vassal_of = THIS }
-							war = no
-							is_greater_power = no
-                        }
-                    }
-                }
-            }
-            PNJ = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							ai = yes
-							OR = { is_vassal = no vassal_of = THIS }
-							war = no
-							is_greater_power = no
-                        }
-                    }
-                }
-            }
-			HNZ = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							ai = yes
-							OR = { is_vassal = no vassal_of = THIS }
-							war = no
-							is_greater_power = no
-                        }
-                    }
-                }
-            }
-			CRL = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							ai = yes
-							OR = { is_vassal = no vassal_of = THIS }
-							war = no
-							is_greater_power = no
-                        }
-                    }
-                }
-            }
-			KSN = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = {
-							in_sphere = THIS
-							ai = yes
-							OR = { is_vassal = no vassal_of = THIS }
-							war = no
-							is_greater_power = no
-                        }
                     }
                 }
             }
@@ -1243,40 +1066,14 @@ political_decisions = {
                 limit = { exists = no tag = PNJ }
                 PNJ = { all_core = { remove_core = PNJ } }
             }
-            CRL = { all_core = { add_core = PAK remove_core = CRL } }
-            HNZ = { all_core = { add_core = PAK remove_core = HNZ } }
-			KSN = { all_core = { add_core = PAK remove_core = KSN } }
-            KAL = { all_core = { add_core = PAK remove_core = KAL } }
-			KHN = { all_core = { add_core = PAK remove_core = KAL } }
-            MAK = { all_core = { add_core = PAK remove_core = MAK } }
             SIN = { all_core = { add_core = PAK remove_core = SIN } }
             PNJ = { all_core = { add_core = PAK } }
             KAS = { all_core = { add_core = PAK } }
-			3509 = { add_core = PAK }
-			1220 = { add_core = PAK }
-			1219 = { add_core = PAK }
-			1218 = { add_core = PAK }
-			1230 = { add_core = PAK }
-			1232 = { add_core = PAK }
-			1228 = { add_core = PAK }
-			1227 = { add_core = PAK }
-			1229 = { add_core = PAK }
-			1231 = { add_core = PAK }
-            random_country = {
-                limit = { tag = BNG exists = no }
-                BNG = { all_core = { remove_core = BNG } }
-                ENG_1252 = { add_core = BNG }
-                BNG = {
-                    government = democracy
-                    capital = 1254
-                    religion = sunni
-                    clr_country_flag = hindu_country
-                    set_country_flag = sunni_country
-                }
-            }
+			KAL_1221 = { add_core = PAK }
+			PAN_1227 = { add_core = PAK }
+			AFG_1218 = { add_core = PAK }
             random_owned = { limit = { owner = { owns = 1254 } } ENG_1252 = { add_core = PAK } }
             any_owned = { limit = { is_core = PAK } any_pop = { limit = { OR = { has_pop_religion = sunni has_pop_religion = shiite } } militancy = -2 consciousness = 5 } }
-            1223 = { remove_core = CRL }
             PAK = {
                 tech_school = developing_tech_school
                 all_core = {
@@ -1290,7 +1087,7 @@ political_decisions = {
             }
 			any_owned = {
 				limit = {
-					AND = { is_core = PAK NOT = { region = PER_1140 province_id = 1234 province_id = 1233 province_id = 1235 province_id = 3527 } }
+					is_core = PAK
 				}
 				secede_province = PAK
 			}
@@ -1334,9 +1131,7 @@ political_decisions = {
             set_global_flag = pakistan_formed
             prestige = 20
             all_core = { add_core = PAK remove_core = THIS }
-            CRL = { all_core = { add_core = PAK remove_core = CRL } }
             KAL = { all_core = { add_core = PAK remove_core = KAL } }
-            MAK = { all_core = { add_core = PAK remove_core = MAK } }
             SIN = { all_core = { add_core = PAK remove_core = SIN } }
             PNJ = { all_core = { add_core = PAK remove_core = PNJ } }
             KAS = { all_core = { add_core = PAK } }
@@ -1353,7 +1148,6 @@ political_decisions = {
                 }
             }
             random_owned = { limit = { owner = { owns = 1254 } } ENG_1252 = { add_core = PAK } }
-            1223 = { remove_core = CRL }
             change_tag = PAK
             PAK = {
                 add_accepted_culture = panjabi
