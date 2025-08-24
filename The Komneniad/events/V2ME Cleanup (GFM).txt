@@ -1270,7 +1270,7 @@ country_event = {
 					}
 					AND = {
 						owns = 1923
-						NOT = { 1923 = { trade_goods = tropical_wood } }
+						NOT = { 1923 = { OR = { trade_goods = tropical_wood trade_goods = rubber } } }
 					}
 					AND = {
 						owns = 1924
@@ -1306,7 +1306,7 @@ country_event = {
 					}
 					AND = {
 						owns = 1978
-						NOT = { 1978 = { trade_goods = tropical_wood } }
+						NOT = { 1978 = { OR = { trade_goods = tropical_wood trade_goods = rubber } } }
 					}
 					########tobacco
 					AND = {
@@ -1613,7 +1613,7 @@ country_event = {
 					}
 					AND = {
 						owns = 2624
-						NOT = { 2624 = { trade_goods = coffee } }
+						NOT = { 2624 = { OR = { trade_goods = coffee trade_goods = rubber } } }
 					}
 					AND = {
 						owns = 3610
@@ -1694,7 +1694,7 @@ country_event = {
 					}
 					AND = {
 						owns = 1827
-						NOT = { 1827 = { trade_goods = cotton } }
+						NOT = { 1827 = { OR = { trade_goods = cotton trade_goods = rubber } } }
 					}
 					AND = {
 						owns = 1830
@@ -2175,7 +2175,7 @@ country_event = {
 			any_owned = {
 				limit = {
 					province_id = 1923
-					NOT = { trade_goods = tropical_wood }
+					NOT = { OR = { trade_goods = tropical_wood trade_goods = rubber } }
 				}
 				trade_goods = tropical_wood
 			}
@@ -2238,11 +2238,11 @@ country_event = {
 			any_owned = {
 				limit = {
 					province_id = 1978
-					NOT = { trade_goods = tropical_wood }
+					NOT = { OR = { trade_goods = tropical_wood trade_goods = rubber } }
 				}
 				trade_goods = tropical_wood
 			}
-				########tobacco
+			########tobacco
 			any_owned = {
 				limit = {
 					province_id = 1839
@@ -2773,7 +2773,7 @@ country_event = {
 			any_owned = {
 				limit = {
 					province_id = 2624
-					NOT = { trade_goods = coffee }
+					NOT = { OR = { trade_goods = coffee trade_goods = rubber } }
 				}
 				trade_goods = coffee
 			}
@@ -2914,7 +2914,7 @@ country_event = {
 			any_owned = {
 				limit = {
 					province_id = 1827
-					NOT = { trade_goods = cotton }
+					NOT = { OR = { trade_goods = cotton trade_goods = rubber } }
 				}
 				trade_goods = cotton
 			}
@@ -7582,7 +7582,7 @@ country_event = {
 				owns = 1832
 				owns = 3377
 				owns = 1839
-				owns = 1817
+				owns = 3251
 			}
 			random_owned = {
 				limit = {
@@ -7605,7 +7605,7 @@ country_event = {
 					SUD = { all_core = { remove_core = SUD } }
 					EGY_1834 = { add_core = SUD }
 					EGY_1827 = { add_core = SUD }
-					EGY_1842 = { add_core = SUD }
+					EGY_1839 = { add_core = SUD }
 					SUD = {
 						all_core = { remove_core = SHK remove_core = DAR }
 						set_country_flag = post_colonial_country
@@ -7719,7 +7719,7 @@ country_event = {
 				year = 1890
 				NOT = { exists = TIG }
 				owns = 1875
-				owns = 1856
+				owns = 1848
 			}
 			random_owned = {
 				limit = {
@@ -7740,7 +7740,6 @@ country_event = {
 					set_global_flag = eritrea_organized
 					set_country_flag = eritrea_master
 					TIG = { all_core = { remove_core = TIG } }
-					ETH_1853 = { add_core = TIG }
 					ENG_1848 = { add_core = TIG }
 					TIG = {
 						set_country_flag = post_colonial_country
