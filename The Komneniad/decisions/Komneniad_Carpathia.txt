@@ -122,14 +122,39 @@ political_decisions = {
 		allow = {
 			war = no
 			nationalism_n_imperialism = 1
-			owns = 771
-			owns = 3374
+			771 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			3374 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
 		}
 		effect = {
 			add_accepted_culture = serb
 			add_accepted_culture = croat
 			SER = { all_core = { add_core = THIS } }
 			CRO = { all_core = { add_core = THIS } }
+			any_country = {
+				limit = {
+					OR = {
+						tag = SER
+						tag = CRO
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
 			set_country_flag = CRP_accept_south_slavs
 		}
 		ai_will_do = { factor = 1 }
