@@ -1,0 +1,26 @@
+political_decisions = {
+	JIM_call_mcgill = {
+		picture = mcgill
+		potential = {
+			tag = JIM
+			NOT = { year = 1840 }
+			NOT = { has_country_flag = JIM_call_mcgill }
+		}
+		allow = {
+			NOT = { year = 1840 }
+			money = 50000
+		}
+		effect = {
+			treasury = -50000
+			define_general = {
+                name = "Slippin' Jimmy"
+                personality = defence_5.1
+                background = attack_5.1
+            }
+			set_country_flag = JIM_call_mcgill
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

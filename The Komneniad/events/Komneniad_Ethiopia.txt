@@ -1,0 +1,13 @@
+#Starting event
+country_event = {
+    id = 175000
+    title = "Narrative event"
+    desc = "175000DESC"
+    picture = "ZPD"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "blah blah blah"
+    }
+}

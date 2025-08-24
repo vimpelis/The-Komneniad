@@ -412,7 +412,7 @@ hel_gain_1;§BThe Hellenophiles §!will gain §B1§! influence!\n;;;;;;;;;;;;;
 hel_lose_1;§BThe Hellenophiles §!will lose §B1§! influence!\n;;;;;;;;;;;;;
 hel_lose_3;§BThe Hellenophiles §!will lose §B3§! influence!\n;;;;;;;;;;;;;
 hel_lose_5;§BThe Hellenophiles §!will lose §B5§! influence!\n;;;;;;;;;;;;;
-hel_set_5;§BThe Hellenophile §!influence will be set at §B5§b.;;;;;;;;;;;;;
+hel_set_5;§BThe Hellenophile §!influence will be set at §B5§!.§b;;;;;;;;;;;;;
 BYZ_crimean_war;Crimean War;;;;;;;;;;;;;
 BYZ_crimean_war_desc;Push §YRussia§! out of the §YAzov Sea§!;;;;;;;;;;;;;
 BYZ_crimean_war_short;Safeguard against $RECIPIENT$;;;;;;;;;;;;;
