@@ -5239,7 +5239,7 @@ post_zemene_mesafint = {
 	tax_efficiency = 0.2
 	cb_generation_speed_modifier = -0.5
 	global_population_growth = -0.001
-	land_organisation = -0.1
+	land_organisation = -0.2
     icon = 16
 }
 
@@ -5247,5 +5247,12 @@ ETH_insurgency = {
     pop_militancy_modifier = 0.1
 	pop_consciousness_modifier = 0.1
 	local_RGO_output = -0.9
+    icon = 18
+}
+
+ETH_ransacked = {
+    pop_militancy_modifier = 0.1
+	pop_consciousness_modifier = 0.1
+	local_RGO_output = -0.25
     icon = 18
 }

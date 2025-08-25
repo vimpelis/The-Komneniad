@@ -158,6 +158,32 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	ETH_ransack_province = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = no
+			ai = no
+			NOT = { has_country_flag = ETH_ransack }
+		}
+		allow = {
+			any_owned_province = {
+				country_units_in_province = THIS
+				NOT = { has_province_modifier = ETH_insurgency has_province_modifier = ETH_ransacked }
+			}
+		}
+		effect = {
+			set_country_flag = ETH_ransack
+			random_owned = {
+				limit = { NOT = { has_province_modifier = ETH_insurgency has_province_modifier = ETH_ransacked } country_units_in_province = THIS }
+				province_event = { id = 175004 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	JIM_call_mcgill = {
 		picture = mcgill

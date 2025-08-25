@@ -104,3 +104,26 @@ country_event = {
 		relation = { who = JIM value = -400 }
     }
 }
+
+#Province exploited for money
+province_event = {
+    id = 175004
+    title = "$PROVINCENAME$ Exploited"
+    desc = "175004DESC"
+    picture = "eth_19"
+
+    is_triggered_only = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "blah blah blah"
+		owner = { add_tax_relative_income = 5 }
+		any_pop = { militancy = 3 consciousness = 3 }
+		add_province_modifier = {
+			name = ETH_ransacked
+			duration = 1825
+		}
+		owner = { clr_country_flag = ETH_ransack }
+    }
+}
