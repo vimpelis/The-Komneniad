@@ -3,11 +3,104 @@ country_event = {
     id = 175000
     title = "Narrative event"
     desc = "175000DESC"
-    picture = "ZPD"
+    picture = "eth_1"
 
     is_triggered_only = yes
 
     option = {
         name = "blah blah blah"
+		add_country_modifier = {
+			name = post_zemene_mesafint
+			duration = 3650
+		}
+		TIG = {
+			all_core = {
+				add_province_modifier = {
+					name = ETH_insurgency
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = ETH_active_insurgency
+		set_variable = {
+			which = ETH_provinces_checked
+			value = 0
+		}
+    }
+}
+
+#Search unsuccesssul
+country_event = {
+    id = 175001
+    title = "Search unsuccesssul"
+    desc = "175001DESC"
+    picture = "eth_1"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "blah blah blah"
+		clr_country_flag = ETH_search_in_progress
+    }
+}
+
+#Search successsul
+country_event = {
+    id = 175002
+    title = "Search successsul"
+    desc = "175002DESC"
+    picture = "eth_1"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "blah blah blah"
+		clr_country_flag = ETH_search_in_progress
+		clr_country_flag = ETH_active_insurgency
+		set_country_flag = ETH_expansion_unlocked
+		prestige = 5
+		any_owned = { remove_province_modifier = ETH_insurgency remove_core = TIG }
+		any_pop = {
+			limit = { has_pop_culture = tigray }
+			militancy = -1
+		}
+    }
+}
+
+#Took too long to search, couped (softlock prevention)
+country_event = {
+    id = 175003
+    title = "Couped"
+    desc = "175003DESC"
+    picture = "eth_1"
+
+    trigger = {
+		year = 1840
+		has_country_flag = ETH_active_insurgency
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+
+    option = {
+        name = "blah blah blah"
+		set_country_flag = ETH_couped
+		clr_country_flag = ETH_search_in_progress
+		clr_country_flag = ETH_active_insurgency
+		any_pop = { militancy = 2 }
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = regency_modifier
+		economic_reform = no_monetary_reform
+		any_owned = { remove_province_modifier = ETH_insurgency }
+		1857 = { add_core = TIG }
+		1854 = { add_core = TIG }
+		TIG = { all_core = { secede_province = TIG } }
+		1859 = { add_core = JIM secede_province = JIM }
+		3491 = { add_core = JIM secede_province = JIM }
+		relation = { who = TIG value = -400 }
+		relation = { who = JIM value = -400 }
     }
 }

@@ -56,9 +56,14 @@ upper_house = {
 #Inventions
 modern_winemaking = yes
 
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+post_napoleonic_thought = 1
+
+foreign_weapons = yes_foreign_weapons
+foreign_artillery = yes_foreign_artillery
+military_constructions = yes_military_constructions
 
 #Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-
-oob = "TIG_oob.txt"

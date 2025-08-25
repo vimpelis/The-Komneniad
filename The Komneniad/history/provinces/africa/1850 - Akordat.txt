@@ -1,6 +1,7 @@
 owner = ETH
 controller = ETH
 add_core = ETH
+add_core = TIG
 trade_goods = fruit
 terrain = steppe
 life_rating = 25

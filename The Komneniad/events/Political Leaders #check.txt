@@ -3815,6 +3815,7 @@ country_event = {
             has_country_modifier = dour_economist
         }
 		NOT = { tag = AST } #Aimar Chambon (1796-1876)
+		NOT = { tag = ETH year = 1870 } #Marye of Yejju
     }
 
     mean_time_to_happen = {

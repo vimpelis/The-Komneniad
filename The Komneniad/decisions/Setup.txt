@@ -695,6 +695,18 @@ political_decisions = {
 				treasury = 10000
 			}
 			SOM = { any_pop = { limit = { has_pop_culture = amhara } literacy = 0.06 } }
+			ETH = {
+				country_event = 175000
+				add_country_modifier = {
+					name = regency_modifier
+					duration = -1
+				}
+				add_country_modifier = {
+					name = prince_of_terror
+					duration = -1
+				}
+				any_pop = { militancy = 2 }
+			}
 			FJN = { country_event = 165002 }
 			GNG = { country_event = 165002 }
 			TAI = { country_event = 165003 }

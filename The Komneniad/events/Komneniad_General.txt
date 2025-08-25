@@ -247,3 +247,30 @@ country_event = {
         name = "Ok"
     }
 }
+
+country_event = {
+    id = 169009
+    title = "Spawn a country"
+    desc = "Select a late-game country to spawn"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Pakistan"
+		political_reform = no_slavery
+		SIN_1288 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		PAN_1227 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		KAL_1221 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		AFG_1218 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		AFG_1209 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		PAN_1224 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		AFG_1215 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		3512 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		3258 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		1146 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		1144 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		1143 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		3496 = { add_core = PAK secede_province = THIS secede_province = PAK }
+    }
+}

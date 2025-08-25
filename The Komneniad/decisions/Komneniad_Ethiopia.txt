@@ -1,4 +1,83 @@
 political_decisions = {
+	ETH_check_province = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_active_insurgency
+			NOT = { has_country_flag = ETH_gottem }
+			NOT = { has_country_flag = ETH_couped }
+		}
+		allow = {
+			money = 2000
+			any_owned_province = {
+				is_core = TIG
+				has_province_modifier = ETH_insurgency
+				country_units_in_province = THIS
+			}
+			NOT = { has_country_flag = ETH_search_in_progress }
+		}
+		#1st province guaranteed fail, 2nd 50/50, 3rd 25/75, 4th guaranteed success
+		effect = {
+			treasury = -2000
+			tooltip_9 = {}
+			change_variable = {
+				which = ETH_provinces_checked
+				value = 1
+			}
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip check_variable = { which = ETH_provinces_checked value = 1 } NOT = { check_variable = { which = ETH_provinces_checked value = 2 } } } }
+				owner = {
+					country_event = { id = 175001 days = 14 }
+					random_owned = {
+						limit = { is_core = TIG has_province_modifier = ETH_insurgency country_units_in_province = THIS }
+						remove_province_modifier = ETH_insurgency
+					}
+					set_country_flag = ETH_search_in_progress
+				}
+			}
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip check_variable = { which = ETH_provinces_checked value = 2 } NOT = { check_variable = { which = ETH_provinces_checked value = 3 } } } }
+				owner = {
+					random_list = {
+						50 = { country_event = { id = 175001 days = 14 } }
+						50 = { country_event = { id = 175002 days = 14 } }
+					}
+					random_owned = {
+						limit = { is_core = TIG has_province_modifier = ETH_insurgency country_units_in_province = THIS }
+						remove_province_modifier = ETH_insurgency
+					}
+					set_country_flag = ETH_search_in_progress
+				}
+			}
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip check_variable = { which = ETH_provinces_checked value = 3 } NOT = { check_variable = { which = ETH_provinces_checked value = 4 } } } }
+				owner = {
+					random_list = {
+						25 = { country_event = { id = 175001 days = 14 } }
+						75 = { country_event = { id = 175002 days = 14 } }
+					}
+					random_owned = {
+						limit = { is_core = TIG has_province_modifier = ETH_insurgency country_units_in_province = THIS }
+						remove_province_modifier = ETH_insurgency
+					}
+					set_country_flag = ETH_search_in_progress
+				}
+			}
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip check_variable = { which = ETH_provinces_checked value = 4 } } }
+				owner = {
+					country_event = { id = 175002 days = 14 }
+					random_owned = {
+						limit = { is_core = TIG has_province_modifier = ETH_insurgency country_units_in_province = THIS }
+						remove_province_modifier = ETH_insurgency
+					}
+					set_country_flag = ETH_search_in_progress
+				}
+			}
+			clr_country_flag = hidden_tooltip
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	JIM_call_mcgill = {
 		picture = mcgill
 		potential = {
