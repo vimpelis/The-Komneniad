@@ -3,7 +3,7 @@ country_event = {
     id = 175000
     title = "Narrative event"
     desc = "175000DESC"
-    picture = "eth_1"
+    picture = "eth_2"
 
     is_triggered_only = yes
 
@@ -34,7 +34,7 @@ country_event = {
     id = 175001
     title = "Search unsuccesssul"
     desc = "175001DESC"
-    picture = "eth_1"
+    picture = "eth_3"
 
     is_triggered_only = yes
 
@@ -67,12 +67,12 @@ country_event = {
     }
 }
 
-#Took too long to search, couped (softlock prevention)
+#Took too long to search, couped
 country_event = {
     id = 175003
     title = "Couped"
     desc = "175003DESC"
-    picture = "eth_1"
+    picture = "eth_12"
 
     trigger = {
 		year = 1840
