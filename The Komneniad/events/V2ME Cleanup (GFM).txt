@@ -9260,6 +9260,8 @@ country_event = {
 			770 = { change_province_name = "Pola" }
 		}
 		
+		ETH = { change_variable = { which = ETH_provinces_ransacked value = -2 } }
+		
 		CLN = { country_event = { id = 477877791 days = 365 } }
 	}
 }

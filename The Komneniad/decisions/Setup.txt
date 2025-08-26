@@ -706,6 +706,10 @@ political_decisions = {
 					duration = -1
 				}
 				any_pop = { militancy = 2 }
+				add_country_modifier = {
+					name = post_zemene_mesafint
+					duration = 3650
+				}
 			}
 			FJN = { country_event = 165002 }
 			GNG = { country_event = 165002 }

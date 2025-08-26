@@ -164,8 +164,6 @@ political_decisions = {
 		potential = {
 			tag = ETH
 			civilized = no
-			ai = no
-			NOT = { has_country_flag = ETH_ransack }
 		}
 		allow = {
 			any_owned_province = {
@@ -174,14 +172,106 @@ political_decisions = {
 			}
 		}
 		effect = {
-			set_country_flag = ETH_ransack
+			badboy = 0.25
 			random_owned = {
 				limit = { NOT = { has_province_modifier = ETH_insurgency has_province_modifier = ETH_ransacked } country_units_in_province = THIS }
-				province_event = { id = 175004 }
+				province_event = { id = 175005 }
+				add_province_modifier = {
+					name = ETH_ransacked
+					duration = 1825
+				}
 			}
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+                factor = 0
+                money = 1000
+            }
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	ETH_kill_jimmy = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_expansion_unlocked
+			NOT = { has_country_flag = ETH_kill_jimmy }
+		}
+		allow = {
+			war = no
+			NOT = { truce_with = JIM }
+			month = 8 #kiremt season ends
+		}
+		effect = {
+			set_country_flag = ETH_kill_jimmy
+			badboy = 5
+			JIM = { all_core = { add_core = THIS } }
+			war = {
+				target = JIM
+				attacker_goal = { casus_belli = annex_core_country }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }	
+		}
+	}
+	
+	ETH_invade_somalia = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_kill_jimmy
+			NOT = { has_country_flag = ETH_invade_somalia }
+		}
+		allow = {
+			war = no
+			NOT = {
+				SOM = {
+					brigades_compare = 0.51
+				}
+			}
+			all_core = { owned_by = THIS }
+			NOT = { truce_with = SOM }
+		}
+		effect = {
+			set_country_flag = ETH_invade_somalia
+			country_event = 175009
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }	
+		}
+	}
+	
+	ETH_check_influence_level = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			check_variable = {
+				which = ETH_regency_influence
+				value = 0
+			}
+		}
+		allow = {
+			year = 1937
+		}
+		effect = {
+			ETH_show_inf_lvl = {}
+		}
+		ai_will_do = {
+			factor = 0	
 		}
 	}
 

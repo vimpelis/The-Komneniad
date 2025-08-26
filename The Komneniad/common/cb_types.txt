@@ -9650,3 +9650,93 @@ mex_yuc_war = {
     }
     on_po_accepted = { any_pop = { militancy = -1 } }
 }
+
+ethiopian_somalian_cb = {
+    sprite_index = 22
+    is_triggered_only = yes
+    months = 12
+
+    badboy_factor = 0
+    prestige_factor = 1
+    peace_cost_factor = 80
+    penalty_factor = 0
+    constructing_cb = no
+    crisis = no
+
+    break_truce_prestige_factor = 0
+    break_truce_infamy_factor = 0
+    break_truce_militancy_factor = 0
+    truce_months = 60
+
+    good_relation_prestige_factor = 0
+    good_relation_infamy_factor = 0
+    good_relation_militancy_factor = 0
+
+	po_status_quo = yes
+
+    war_name = ETHIOPIAN_SOMALIAN_WAR_NAME
+
+    can_use = {
+    }
+
+    on_add = {
+    }
+
+    on_po_accepted = {
+		any_owned = {
+			limit = { is_core = ETH }
+			secede_province = ETH
+		}
+		any_country = {
+			limit = { tag = ETH has_country_flag = ETHSOM_oldborder }
+			ETH = { create_vassal = SOM }
+		}
+		end_war = AWS
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
+    }
+}
+ethiopian_somalian2_cb = {
+    sprite_index = 22
+    is_triggered_only = yes
+    months = 12
+
+    badboy_factor = 0
+    prestige_factor = 1
+    peace_cost_factor = 25
+    penalty_factor = 0
+    constructing_cb = no
+    crisis = no
+
+    break_truce_prestige_factor = 0
+    break_truce_infamy_factor = 0
+    break_truce_militancy_factor = 0
+    truce_months = 60
+
+    good_relation_prestige_factor = 0
+    good_relation_infamy_factor = 0
+    good_relation_militancy_factor = 0
+
+	po_status_quo = yes
+    po_reparations = yes
+
+    war_name = ETHIOPIAN_SOMALIAN2_WAR_NAME
+
+    can_use = {
+    }
+
+    on_add = {
+    }
+
+    on_po_accepted = {
+		set_country_flag = lost_ethiopian_somalian
+		AWS = { all_core = { add_core = SOM } }
+		SOM = { inherit = AWS }
+		any_owned = {
+			limit = {
+				is_core = SOM
+			}
+			secede_province = SOM
+		}
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
+    }
+}

@@ -172,8 +172,8 @@ country_event = {
     picture = "mexico-us-treaty"
 
     trigger = {
+		tag = CAL
 		NBS = { vassal_of = CAL war = no }
-        tag = CAL
 		ai = yes
         war_with = MEX
     }

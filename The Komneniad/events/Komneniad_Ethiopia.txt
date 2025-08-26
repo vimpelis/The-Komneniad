@@ -1,18 +1,15 @@
 #Starting event
 country_event = {
     id = 175000
-    title = "Narrative event"
+    title = "The Lion and the Lamb"
     desc = "175000DESC"
     picture = "eth_2"
 
     is_triggered_only = yes
 
     option = {
-        name = "blah blah blah"
-		add_country_modifier = {
-			name = post_zemene_mesafint
-			duration = 3650
-		}
+        name = "The men marched on in fear."
+		tooltip_10 = {}
 		TIG = {
 			all_core = {
 				add_province_modifier = {
@@ -21,9 +18,18 @@ country_event = {
 				}
 			}
 		}
+		set_variable = {
+			which = ETH_regency_influence
+			value = 7
+		}
 		set_country_flag = ETH_active_insurgency
 		set_variable = {
 			which = ETH_provinces_checked
+			value = 0
+		}
+		#changes by -2 every with yearly cleanup
+		set_variable = {
+			which = ETH_provinces_ransacked
 			value = 0
 		}
     }
@@ -32,14 +38,14 @@ country_event = {
 #Search unsuccesssul
 country_event = {
     id = 175001
-    title = "Search unsuccesssul"
+    title = "Nowhere to be found"
     desc = "175001DESC"
     picture = "eth_3"
 
     is_triggered_only = yes
 
     option = {
-        name = "blah blah blah"
+        name = "Onwards to the next village!"
 		clr_country_flag = ETH_search_in_progress
     }
 }
@@ -47,31 +53,62 @@ country_event = {
 #Search successsul
 country_event = {
     id = 175002
-    title = "Search successsul"
+    title = "Gottem!"
     desc = "175002DESC"
     picture = "eth_1"
 
     is_triggered_only = yes
 
     option = {
-        name = "blah blah blah"
+        name = "The joy of rape was not their only reward this day."
 		clr_country_flag = ETH_search_in_progress
+		any_owned = { remove_province_modifier = ETH_insurgency }
+		country_event = 175003
+    }
+}
+
+#Execution event
+country_event = {
+    id = 175003
+    title = "Crippled little rata"
+    desc = "175003DESC"
+    picture = "eth_1"
+
+    is_triggered_only = yes
+	
+	immediate = {
+		###SMALL INCREASE FUNCTION
+		change_variable = { which = ETH_regency_influence value = 1 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###SMALL INCREASE FUNCTION END
+	}
+
+    option = {
+        name = "what kind of man hides in tigray?"
 		clr_country_flag = ETH_active_insurgency
 		set_country_flag = ETH_expansion_unlocked
+		tooltip_11 = {}
+		ETH_show_inf_lvl = {}
 		prestige = 5
-		any_owned = { remove_province_modifier = ETH_insurgency remove_core = TIG }
+		any_owned = { remove_core = TIG }
 		any_pop = {
 			limit = { has_pop_culture = tigray }
-			militancy = -1
+			militancy = 1
 		}
     }
 }
 
 #Took too long to search, couped
 country_event = {
-    id = 175003
+    id = 175004
     title = "Couped"
-    desc = "175003DESC"
+    desc = "175004DESC"
     picture = "eth_12"
 
     trigger = {
@@ -107,23 +144,419 @@ country_event = {
 
 #Province exploited for money
 province_event = {
-    id = 175004
+    id = 175005
     title = "$PROVINCENAME$ Exploited"
-    desc = "175004DESC"
+    desc = "175005DESC"
     picture = "eth_19"
 
     is_triggered_only = yes
 
     mean_time_to_happen = { days = 1 }
+	
+	allow_multiple_instances = yes
 
     option = {
         name = "blah blah blah"
-		owner = { add_tax_relative_income = 5 }
+		owner = { add_tax_relative_income = 10 }
 		any_pop = { militancy = 3 consciousness = 3 }
-		add_province_modifier = {
-			name = ETH_ransacked
+		owner = { change_variable = { which = ETH_provinces_ransacked value = 1 } }
+    }
+}
+
+#Ransacked too much
+country_event = {
+    id = 175006
+    title = "Too much trolling"
+    desc = "175006DESC"
+    picture = "eth_3"
+
+    trigger = {
+		tag = ETH
+		check_variable = {
+			which = ETH_provinces_ransacked
+			value = 10
+		}
+		NOT = { has_country_modifier = ETH_demographic_crisis }
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "cya in hague"
+		add_country_modifier = {
+			name = ETH_demographic_crisis
 			duration = 1825
 		}
-		owner = { clr_country_flag = ETH_ransack }
     }
+}
+
+#Conquest of Kaffa
+country_event = {
+    id = 175007
+    title = "Kaffa"
+    desc = "175007DESC"
+    picture = "eth_20"
+
+    trigger = {
+		tag = ETH
+		owns = 1863
+		owns = 45
+		3591 = { empty = yes }
+		3594 = { empty = yes }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	immediate = {
+		###SMALL INCREASE FUNCTION
+		change_variable = { which = ETH_regency_influence value = 1 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###SMALL INCREASE FUNCTION END
+	}
+
+    option = {
+        name = "cool"
+		tooltip_11 = {}
+		ETH_show_inf_lvl = {}
+		add_accepted_culture = ethiopian_minor
+		1860 = { add_core = ETH secede_province = ETH }
+		3591 = { add_core = ETH secede_province = ETH }
+		3594 = { add_core = ETH secede_province = ETH }
+		3596 = { add_core = ETH secede_province = ETH }
+		
+    }
+}
+
+#Dynamic loc
+country_event = {
+    id = 175008
+    title = "ETH Dynamic loc"
+    desc = "175008DESC"
+    picture = "eth_20"
+
+	is_triggered_only = yes
+
+    option = {
+        name = "yes"
+		any_country = {
+			limit = {
+				ETH = {
+					check_variable = {
+						which = ETH_regency_influence
+						value = 0
+					}
+					NOT = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 1
+						}
+					}
+				}
+			}
+			CLN = {
+				3189 = { secede_province = CLN }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §BNonexistent§!!§b . . . . . . . . . . . . . . ." } }
+			}
+		}
+		any_country = {
+			limit = {
+				ETH = {
+					check_variable = {
+						which = ETH_regency_influence
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 3
+						}
+					}
+				}
+			}
+			CLN = {
+				3189 = { secede_province = CLN }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GVery Low§!!§b . . . . . . . . . . . . . . ." } }
+			}
+		}
+		any_country = {
+			limit = {
+				ETH = {
+					check_variable = {
+						which = ETH_regency_influence
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 5
+						}
+					}
+				}
+			}
+			CLN = {
+				3189 = { secede_province = CLN }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GLow§!!§b . . . . . . . . . . . . . . ." } }
+			}
+		}
+		any_country = {
+			limit = {
+				ETH = {
+					check_variable = {
+						which = ETH_regency_influence
+						value = 5
+					}
+					NOT = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 7
+						}
+					}
+				}
+			}
+			CLN = {
+				3189 = { secede_province = CLN }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §YMedium§!!§b . . . . . . . . . . . . . . ." } }
+			}
+		}
+		any_country = {
+			limit = {
+				ETH = {
+					check_variable = {
+						which = ETH_regency_influence
+						value = 7
+					}
+					NOT = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 9
+						}
+					}
+				}
+			}
+			CLN = {
+				3189 = { secede_province = CLN }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RHigh§!!§b . . . . . . . . . . . . . . . . . . . . . . . ." } }
+			}
+		}
+		any_country = {
+			limit = {
+				ETH = {
+					check_variable = {
+						which = ETH_regency_influence
+						value = 9
+					}
+					NOT = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 11
+						}
+					}
+				}
+			}
+			CLN = {
+				3189 = { secede_province = CLN }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RVery High§!!§b . . . . . . . . . . . . . . ." } }
+			}
+		}
+		any_country = {
+			limit = {
+				ETH = {
+					check_variable = {
+						which = ETH_regency_influence
+						value = 11
+					}
+				}
+			}
+			CLN = {
+				3189 = { secede_province = CLN }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RExtremely High§!!§b . . . . . . . . . . . . . . ." } }
+			}
+		}
+    }
+}
+
+#What do you want to take from Somalia
+country_event = {
+	id = 175009
+	title = "Somalia war"
+	desc = "175009DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "ogaden"
+		###SMALL INCREASE FUNCTION
+		tooltip_11 = {}
+		change_variable = { which = ETH_regency_influence value = 1 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###SMALL INCREASE FUNCTION END
+		badboy = 8
+		set_country_flag = ETHSOM_ogaden
+		ETH_3590 = { add_core = THIS }
+		3434 = { add_core = THIS }
+		1866 = { add_core = THIS secede_province = THIS }
+		1867 = { add_core = THIS }
+		1873 = { add_core = THIS }
+		war = {
+			target = SOM
+			attacker_goal = {
+				casus_belli = ethiopian_somalian_cb
+			}
+			defender_goal = {
+				casus_belli = ethiopian_somalian2_cb
+			}
+			call_ally = yes
+		}
+		AWS = { country_event = { id = 175010 days = 1 } }
+	}
+	
+	option = {
+        name = "restore old border"
+		###MEDIUM INCREASE FUNCTION
+		tooltip_12 = {}
+		change_variable = { which = ETH_regency_influence value = 2 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###MEDIUM INCREASE FUNCTION END
+		badboy = 17.5
+		set_country_flag = ETHSOM_oldborder
+		ETH_3590 = { add_core = THIS }
+		3434 = { add_core = THIS }
+		1866 = { add_core = THIS secede_province = THIS }
+		1867 = { add_core = THIS }
+		1873 = { add_core = THIS }
+		1871 = { add_core = THIS }
+		1872 = { add_core = THIS }
+		war = {
+			target = SOM
+			attacker_goal = {
+				casus_belli = ethiopian_somalian_cb
+			}
+			defender_goal = {
+				casus_belli = ethiopian_somalian2_cb
+			}
+			call_ally = yes
+		}
+		AWS = { country_event = { id = 175010 days = 1 } }
+    }
+	
+	option = {
+        name = "fully annex"
+		###LARGE INCREASE FUNCTION
+		tooltip_13 = {}
+		change_variable = { which = ETH_regency_influence value = 3 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###LARGE INCREASE FUNCTION END
+		badboy = 22.5
+		set_country_flag = ETHSOM_fullannex
+		ETH_3590 = { add_core = THIS }
+		3434 = { add_core = THIS }
+		SOM_1868 = { add_core = THIS }
+		1866 = { add_core = THIS secede_province = THIS }
+		2031 = { add_core = THIS }
+		1870 = { add_core = THIS }
+		2045 = { add_core = THIS }
+		2030 = { add_core = THIS }
+		2032 = { add_core = THIS }
+		war = {
+			target = SOM
+			attacker_goal = {
+				casus_belli = ethiopian_somalian_cb
+			}
+			defender_goal = {
+				casus_belli = ethiopian_somalian2_cb
+			}
+			call_ally = yes
+		}
+		AWS = { country_event = { id = 175010 days = 1 } }
+    }
+}
+
+#Aussa switches sides (AWS event)
+country_event = {
+	id = 175010
+	title = "Aussa switches sides"
+	desc = "175010DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "heehee"
+		SOM = { release_vassal = AWS }
+		leave_alliance = SOM
+		relation = {
+			who = SOM
+			value = -400
+		}
+		ETH = { country_event = 175011 }
+		SOM = { country_event = 175012 }
+	}
+}
+
+#Aussa switches sides (ETH event)
+country_event = {
+	id = 175011
+	title = "Aussa switches sides"
+	desc = "175011DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "yay"
+		end_war = AWS
+		create_alliance = AWS
+		military_access = AWS
+		AWS = { military_access = ETH }
+		relation = {
+			who = AWS
+			value = 400
+		}
+		SOM = { war = { target = AWS attacker_goal = { casus_belli = conquest_any } defender_goal = { casus_belli = status_quo } call_ally = yes } }
+	}
+}
+
+#Aussa switches sides (SOM event)
+country_event = {
+	id = 175012
+	title = "Aussa switches sides"
+	desc = "175012DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "oi"
+	}
 }
