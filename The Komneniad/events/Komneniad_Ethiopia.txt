@@ -10,6 +10,7 @@ country_event = {
     option = {
         name = "The men marched on in fear."
 		tooltip_10 = {}
+		ETH_show_inf_lvl = {}
 		TIG = {
 			all_core = {
 				add_province_modifier = {
