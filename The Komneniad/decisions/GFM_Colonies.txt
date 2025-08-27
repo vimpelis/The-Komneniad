@@ -342,7 +342,6 @@ political_decisions = {
             owns = 2512
             owns = 2513
             NOT = { has_global_flag = new_zealand_commodities }
-            has_global_flag = north_island_renamed
         }
 
         allow = {

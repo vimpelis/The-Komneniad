@@ -15,141 +15,6 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 	
-	debug_enable = {
-		picture = komneniad
-		alert = no
-		potential = {
-			ai = no
-			has_global_flag = debug_allowed
-			NOT = { has_country_flag = debug_enabled }
-		}
-		allow = {
-		}
-		effect = {
-			set_country_flag = debug_enabled
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	debug_disable = {
-		picture = komneniad
-		potential = {
-			has_country_flag = debug_enabled
-		}
-		allow = {
-		}
-		effect = {
-			clr_country_flag = debug_enabled
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	debug_get_cores = {
-		picture = komneniad
-		potential = {
-			ai = no
-			has_country_flag = debug_enabled
-		}
-		allow = {
-		}
-		effect = {
-			all_core = { secede_province = THIS }
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	debug_summon_tech_event = {
-		picture = komneniad
-		potential = {
-			ai = no
-			has_country_flag = debug_enabled
-		}
-		allow = {
-		}
-		effect = {
-			country_event = 169000
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	debug_summon_govtype_event = {
-		picture = komneniad
-		potential = {
-			ai = no
-			has_country_flag = debug_enabled
-		}
-		allow = {
-		}
-		effect = {
-			country_event = 169001
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	debug_check_life_rating = {
-		picture = komneniad
-		potential = {
-			ai = no
-			has_country_flag = debug_enabled
-		}
-		allow = {
-		}
-		effect = {
-			any_land_province = {
-				limit = {
-					NOT = { life_rating = 5 }
-				}
-				secede_province = THIS
-			}
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	debug_spawn_colombia = {
-		picture = komneniad
-		potential = {
-			ai = no
-			has_country_flag = debug_enabled
-		}
-		allow = {
-		}
-		effect = {
-			MEX = { all_core = { add_core = CLM } }
-			RGR = { all_core = { add_core = CLM } }
-			YUC = { all_core = { add_core = CLM } }
-			CAL = { all_core = { add_core = CLM } }
-			FLU = { all_core = { add_core = CLM } }
-			NBS = { all_core = { add_core = CLM } }
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	debug_wipe_clt = {
-		picture = komneniad
-		potential = {
-			ai = no
-			has_country_flag = debug_enabled
-		}
-		allow = {
-		}
-		effect = {
-			CLT = {
-				any_owned = {
-					limit = {
-						NOT = {
-							OR = {
-								province_id = 2049
-								province_id = 269
-							}
-						}
-					}
-					secede_province = TUR
-				}
-			}
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
 	#this will be expanded to all countries which need a tip to function properly
 	komneniad_tips_BAV = {
 		picture = komneniad
@@ -187,4 +52,41 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 0 }
 	}
+	
+	#GFM remnant, here just in case
+	option_disable_hpm_crisis = {
+        picture = starting_options
+        alert = no
+        potential = {
+            exists = yes
+            NOT = { has_global_flag = revolution_n_counter_researched }
+            OR = {
+                AND = {
+                    ai = yes
+                    year = 1886
+                    OR = {
+                        revolution_n_counterrevolution = 1
+                        any_neighbor_country = { revolution_n_counterrevolution = 1 }
+                        any_greater_power = { revolution_n_counterrevolution = 1 }
+                    }
+                }
+                AND = {
+                    ai = yes
+                    year = 1870
+                    has_global_flag = unlock_crisis_in_1870
+                    OR = {
+                        revolution_n_counterrevolution = 1
+                        any_neighbor_country = { revolution_n_counterrevolution = 1 }
+                        any_greater_power = { revolution_n_counterrevolution = 1 }
+                    }
+                }
+            }
+        }
+
+        allow = {}
+
+        effect = { set_global_flag = revolution_n_counter_researched }
+
+        ai_will_do = { factor = 1 }
+    }
 }

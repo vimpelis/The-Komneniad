@@ -1,11 +1,161 @@
 country_event = {
+    id = 169003
+    title = "Komneniad Menu"
+    desc = "Welcome to the Menu! Select what you'd like to check out."
+    picture = "india_map"
+
+    is_triggered_only = yes
+	allow_multiple_instances = yes
+
+	option = {
+        name = "Let me see the GFM-related info (and credits)"
+		country_event = 60168151
+    }
+	
+	option = {
+        name = "Open the Options menu"
+		country_event = 169010
+    }
+	
+	option = {
+        name = "Page 2"
+		country_event = 169006
+    }
+	
+	option = {
+        name = "Exit menu"
+		clr_country_flag = komneniad_menu
+    }
+}
+
+country_event = {
+    id = 169006
+    title = "Komneniad Menu: Page 2"
+    desc = "Welcome to the Menu! Select what you'd like to check out."
+    picture = "india_map"
+
+    is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	option = {
+        name = "Back to Page 1"
+		country_event = 169003
+    }
+	
+	option = {
+        name = "Open Debug"
+		country_event = 169007
+		clr_country_flag = komneniad_menu
+    }
+	
+	option = {
+        name = "What are the gameplay changes?"
+		country_event = 169004
+    }
+	
+	option = {
+        name = "Exit menu"
+		clr_country_flag = komneniad_menu
+    }
+}
+
+country_event = {
+    id = 169004
+    title = "Komneniad: Gameplay changes"
+    desc = "169004DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Ok"
+		country_event = 169006
+    }
+}
+
+country_event = {
+    id = 169002
+    title = "Bavaria tips"
+    desc = "169002DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Thanks!"
+		clr_country_flag = komneniad_tips
+    }
+}
+
+country_event = {
+    id = 169005
+    title = "Byzantium tips"
+    desc = "169005DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	immediate = { clr_country_flag = komneniad_tips }
+
+	option = {
+        name = "Thanks!"
+    }
+}
+
+country_event = {
+    id = 169007
+    title = "Komneniad: Debug"
+    desc = "169007DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	option = {
+        name = "Annex all cores"
+		all_core = { secede_province = THIS }
+		country_event = 169007
+    }
+
+	option = {
+        name = "Summon tech event"
+		country_event = 169000
+    }
+	
+	option = {
+        name = "Summon govtype event"
+		country_event = 169001
+    }
+	
+	option = {
+        name = "Check for faulty life rating"
+		any_land_province = {
+			limit = {
+				NOT = { life_rating = 5 }
+			}
+			secede_province = THIS
+		}
+		country_event = 169007
+    }
+	
+	option = {
+        name = "Clear Infamy"
+		badboy = -1000
+		country_event = 169007
+    }
+	
+	option = {
+        name = "Close"
+    }
+}
+
+country_event = {
     id = 169000
     title = "Tech Event"
     desc = "Choose which tech you'd like to get."
     picture = "guinea_coast"
 
     is_triggered_only = yes
-	
 	allow_multiple_instances = yes
 
     option = {
@@ -30,6 +180,7 @@ country_event = {
     }
 	option = {
         name = "Close event"
+		country_event = 169007
     }
 }
 
@@ -40,7 +191,6 @@ country_event = {
     picture = "guinea_coast"
 
     is_triggered_only = yes
-	
 	allow_multiple_instances = yes
 
     option = {
@@ -85,144 +235,7 @@ country_event = {
     }
 	option = {
         name = "Close event"
-    }
-}
-
-country_event = {
-    id = 169002
-    title = "Bavaria tips"
-    desc = "169002DESC"
-    picture = "india_map"
-
-    is_triggered_only = yes
-
-	option = {
-        name = "Thanks!"
-		clr_country_flag = komneniad_tips
-    }
-}
-
-country_event = {
-    id = 169003
-    title = "Komneniad Menu"
-    desc = "Welcome to the Menu! Select what you'd like to check out."
-    picture = "india_map"
-
-    is_triggered_only = yes
-
-	option = {
-        name = "Let me see the GFM-related info (and credits)"
-		country_event = 60168151
-		clr_country_flag = komneniad_menu
-    }
-	
-	option = {
-        name = "What are the gameplay changes?"
-		country_event = 169004
-    }
-	
-	option = {
-        name = "Page 2"
-		country_event = 169006
-    }
-}
-
-country_event = {
-    id = 169004
-    title = "Komneniad: Gameplay changes"
-    desc = "169004DESC"
-    picture = "india_map"
-
-    is_triggered_only = yes
-
-	option = {
-        name = "Ok"
-		clr_country_flag = komneniad_menu
-    }
-}
-
-country_event = {
-    id = 169005
-    title = "Byzantium tips"
-    desc = "169005DESC"
-    picture = "india_map"
-
-    is_triggered_only = yes
-	
-	immediate = { clr_country_flag = komneniad_tips }
-
-	option = {
-        name = "Thanks!"
-    }
-}
-
-country_event = {
-    id = 169006
-    title = "Komneniad Menu: Page 2"
-    desc = "Welcome to the Menu! Select what you'd like to check out."
-    picture = "india_map"
-
-    is_triggered_only = yes
-	
-	option = {
-        name = "Back to Page 1"
-		country_event = 169003
-    }
-	
-	option = {
-        name = "I want to allow turning on debug."
-		set_global_flag = debug_allowed
-		clr_country_flag = komneniad_menu
-    }
-	
-	option = {
-        name = "I want to DISALLOW turning on debug (After allowing it)"
-		clr_global_flag = debug_allowed
-		clr_country_flag = komneniad_menu
-    }
-	
-	option = {
-        name = "Open the default cheat menu"
 		country_event = 169007
-		clr_country_flag = komneniad_menu
-    }
-}
-
-country_event = {
-    id = 169007
-    title = "Komneniad: Default Cheat Menu"
-    desc = "These events were in GFM, untriggerable. No idea if they are from GFM, HPM or any other predecessor, but here they are if you want to use them."
-    picture = "india_map"
-
-    is_triggered_only = yes
-	
-	option = {
-        name = "Clear Infamy"
-		country_event = 80003
-    }
-	
-	option = {
-        name = "Clear Militancy"
-		country_event = 80004
-    }
-	
-	option = {
-        name = "Clear Consciousness"
-		country_event = 80005
-    }
-	
-	option = {
-        name = "Add Research Points (though why not use inr?)"
-		country_event = 80006
-    }
-	
-	option = {
-        name = "Add Jingoism"
-		country_event = 80007
-    }
-	
-	option = {
-        name = "Close"
     }
 }
 
@@ -257,6 +270,17 @@ country_event = {
     is_triggered_only = yes
 	
 	option = {
+        name = "Colombia"
+		political_reform = no_slavery
+		MEX = { all_core = { add_core = CLM secede_province = THIS secede_province = CLM } }
+		RGR = { all_core = { add_core = CLM secede_province = THIS secede_province = CLM } }
+		YUC = { all_core = { add_core = CLM secede_province = THIS secede_province = CLM } }
+		CAL = { all_core = { add_core = CLM secede_province = THIS secede_province = CLM } }
+		FLU = { all_core = { add_core = CLM secede_province = THIS secede_province = CLM } }
+		NBS = { all_core = { add_core = CLM secede_province = THIS secede_province = CLM } }
+    }
+	
+	option = {
         name = "Pakistan"
 		political_reform = no_slavery
 		SIN_1288 = { add_core = PAK secede_province = THIS secede_province = PAK }
@@ -273,4 +297,144 @@ country_event = {
 		1143 = { add_core = PAK secede_province = THIS secede_province = PAK }
 		3496 = { add_core = PAK secede_province = THIS secede_province = PAK }
     }
+}
+
+country_event = {
+    id = 169010
+    title = "Options"
+    desc = "Select an option"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	option = {
+        name = "Unlock Crisis in 1870"
+		options_tt_1 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169010
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_global_flag = unlock_crisis_in_1870
+    }
+	
+	option = {
+        name = "Enable Crisis from the Start"
+		options_tt_2 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169010
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_global_flag = revolution_n_counter_researched
+    }
+	
+	option = {
+        name = "Disable Workplace Events"
+		options_tt_3 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169010
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_global_flag = workplace_events_disabled
+    }
+	
+	option = {
+        name = "Disable the Bankruptcy Events"
+		options_tt_4 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169010
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_country_flag = bankruptcy_events_disabled
+        any_country = { limit = { ai = no } set_country_flag = bankruptcy_events_disabled }
+    }
+	
+	option = {
+        name = "Adjust Infamy Reduction"
+		set_global_flag = one_point_five_infamy_reduction
+        country_event = 123641
+    }
+	
+	option = {
+        name = "Back to Menu"
+        country_event = 169003
+    }
+}
+
+country_event = {
+    id = 123641
+    title = "More Infamy Reduction"
+    desc = "You have taken the option to increase infamy reduction. To what level do you wish to set it?"
+    fire_only_once = yes
+	is_triggered_only = yes
+	picture = "infamy"
+    option = {
+        name = "I'd like to have -0.15 infamy reduction."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_a
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_a duration = -1 }
+		country_event = 169010
+	}
+    option = {
+        name = "-0.2 is the way to go."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_b
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_b duration = -1 }
+		country_event = 169010
+	}
+    option = {
+        name = "Make it -0.25."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_c
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_c duration = -1 }
+		country_event = 169010
+	}
+    option = {
+        name = "-0.3 sounds more like it!"
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_d
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_d duration = -1 }
+		country_event = 169010
+	}
+}
+
+country_event = {
+	id = 4207008
+	title = "Straits"
+	desc = "EVTDESC4207008"
+	picture = "straits_explained"
+	is_triggered_only = yes
+
+	option = {
+		name = "Got it."
+		country_event = 169003
+	}
 }

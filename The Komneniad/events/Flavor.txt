@@ -1344,18 +1344,6 @@ country_event = {
 }
 
 country_event = {
-	id = 4207008
-	title = "Straits"
-	desc = "EVTDESC4207008"
-	picture = "straits_explained"
-	is_triggered_only = yes
-
-	option = {
-		name = "Got it."
-	}
-}
-
-country_event = {
 	id = 4207009
 	title = "La Fundidora"
 	desc = "EVTDESC4207009"
