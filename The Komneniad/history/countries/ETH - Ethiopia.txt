@@ -66,6 +66,4 @@ monetary_reform = yes_monetary_reform
 foreign_training = yes_foreign_training
 military_constructions = yes_military_constructions
 
-schools = unciv_tech_school
-
 oob = "ETH_oob.txt"

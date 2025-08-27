@@ -18,31 +18,18 @@ country_event = {
     allow_multiple_instances = yes
 
     option = {
-
         name = "It is out of our hands."
-
         any_country = {
-
             limit = {
-
                 NOT = { has_country_modifier = bad_debter }
-
                 has_country_flag = will_give_grants
-
                 ai = no
-
                 money = 10000
-
             }
-
             country_event = { id = 100001 days = 0 }
-
         }
-
         ai_chance = { factor = 100 }
-
     }
-
 }
 
 
@@ -55,20 +42,14 @@ id = 100002
     desc = "$FROMCOUNTRY$ has decided to give us aid on the order of thousands of pounds."
 
     allow_multiple_instances = yes
-
     is_triggered_only = yes
+	
     option = {
-
         name = "Great!"
-
         ai_chance = { factor = 100 }
-
         FROM = { country_event = { id = 100013 days = 0 } }
-
         FROM = { country_event = { id = 100003 days = 0 } }
-
     }
-
 }
 
 

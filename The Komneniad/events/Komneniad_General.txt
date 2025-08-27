@@ -145,6 +145,18 @@ country_event = {
     }
 	
 	option = {
+        name = "Annex all"
+		any_owned = {
+            secede_province = THIS
+        }
+        any_country = {
+            annex_to = THIS
+        }
+        any_land_province = { secede_province = THIS }
+		country_event = 169007
+    }
+	
+	option = {
         name = "Close"
     }
 }
