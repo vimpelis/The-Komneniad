@@ -54,8 +54,8 @@ country_event = {
     }
 	
 	option = {
-        name = "Exit menu"
-		clr_country_flag = komneniad_menu
+        name = "Enable multiplayer mode"
+		set_global_flag = you_are_playing_mp
     }
 }
 

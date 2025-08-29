@@ -1298,6 +1298,8 @@ options_tt_1 = {}
 options_tt_2 = {}
 options_tt_3 = {}
 options_tt_4 = {}
+options_tt_on = {}
+options_tt_off = {}
 
 any_sea_province = {
 
