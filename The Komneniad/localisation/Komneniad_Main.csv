@@ -524,3 +524,9 @@ options_tt_3;A few province events related to the workplace, such as "The Old Ma
 options_tt_4;Disabling the Bankruptcy events will stop you from getting the CB and effects that happen when a country goes bankrupt on you. It won't stop the event for the AI nor will stop countries going bankrupt.§b;;;;;;;;;;;;;;
 options_tt_on;This option is currently §GEnabled§!. Click to §RDisable§! it.§b;;;;;;;;;;;;;;
 options_tt_off;This option is currently §RDisabled§!. Click to §GEnable§! it.§b;;;;;;;;;;;;;;
+ai_event_cooldown;AI event cooldown;;;;;;;;;;;;;;
+ai_event_cooldown_desc;Cooldown for AI-only events.;;;;;;;;;;;;;;
+NORMAL_WAR_PUPPET_NAME_GNG_FJN;Kapok War;;;;;;;;;;;;;
+NORMAL_WAR_PUPPET_NAME_FJN_GNG;Kapok War;;;;;;;;;;;;;
+AGRESSION_WAR_PUPPET_NAME_GNG_FJN;Kapok War;;;;;;;;;;;;;
+AGRESSION_WAR_PUPPET_NAME_FJN_GNG;Kapok War;;;;;;;;;;;;;

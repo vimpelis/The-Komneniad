@@ -5264,3 +5264,7 @@ ETH_demographic_crisis = {
 	war_exhaustion = 0.25
     icon = 18
 }
+
+ai_event_cooldown = {
+    icon = 16
+}

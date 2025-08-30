@@ -157,6 +157,12 @@ country_event = {
     }
 	
 	option = {
+        name = "Add debug countryflag (NO TOUCH)"
+		set_country_flag = debug_enabled
+		country_event = 169007
+    }
+	
+	option = {
         name = "Close"
     }
 }

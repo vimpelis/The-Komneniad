@@ -303,3 +303,5 @@ Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;P
 175011DESC;text;;;;;;;;;;;;
 175012DESC;text;;;;;;;;;;;;
 169007DESC;Pick a debug option.\n\n§RDon't touch anything if you don't know what you are doing!;;;;;;;;;;;;
+165038DESC;In $YEAR$, a failed coup attempt happened in $FROMCOUNTRY$, with the $FROMCOUNTRY_ADJ$ Government blaming $OURCOUNTRY$ and accusing us of trying to subjugate their country. A rapid collapse of diplomatic relations ensued, and soon the two countries found themselves at war with each other. This was the start of the Kapok War - a prelude to Yue unification.;;;;;;;;;;;;
+165039DESC;In $YEAR$, a failed coup attempt happened in $CAPITAL$, and though the perpetrators were unknown, the $COUNTRY_ADJ$ Government blamed their Southern neighbor and accused them of an attempt to subjugate the country. A rapid collapse of diplomatic relations ensued, and soon the two countries found themselves at war with each other. This was the start of the Kapok War - a prelude to Yue unification.;;;;;;;;;;;;

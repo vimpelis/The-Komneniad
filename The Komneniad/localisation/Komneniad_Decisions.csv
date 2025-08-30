@@ -557,3 +557,5 @@ decision_example_title;text;;;;;;;;;;;;;
 decision_example_desc;text;;;;;;;;;;;;;
 ETH_check_province_title;Smoke out the Rats;;;;;;;;;;;;;
 ETH_check_province_desc;Bribes, threats and demonstrative violence - these are the tried and effective tools when dealing with an insurgency. Faking his death is one thing, but if Wube thinks he can successfully recuperate while hiding among a rebellious populace, he is dead wrong.;;;;;;;;;;;;;
+YUE_kapok_war_title;Kapok War;;;;;;;;;;;;;
+YUE_kapok_war_desc;In $YEAR$, a failed coup attempt happened in $CAPITAL$, and though the perpetrators were unknown, the $COUNTRY_ADJ$ Government blamed their Southern neighbor and accused them of an attempt to subjugate the country. A rapid collapse of diplomatic relations ensued, and soon the two countries found themselves at war with each other. This was the start of the Kapok War - a prelude to Yue unification.;;;;;;;;;;;;;

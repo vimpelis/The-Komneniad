@@ -891,6 +891,164 @@ country_event = {
     }
 }
 
+country_event = {
+    id = 165036
+    title = "AI: Yue-Min Relation Improvement"
+    desc = "This event helps the AI form Yue."
+    picture = "china_map"
+
+    trigger = {
+		OR = {
+			tag = GNG
+			tag = FJN
+		}
+		ai = yes
+		exists = GNG
+		exists = FJN
+		NOT = { has_country_modifier = ai_event_cooldown }
+		NOT = {
+			OR = {
+				AND = {
+					tag = GNG
+					relation = {
+						who = FJN
+						value = 200
+					}
+				}
+				AND = {
+					tag = FJN
+					relation = {
+						who = GNG
+						value = 200
+					}
+				}
+			}
+		}
+		NOT = { OR = { war_with = GNG war_with = FJN } }
+		NOT = { exists = YUE }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Ok"
+		relation = {
+			who = FJN
+			value = 15
+		}
+		relation = {
+			who = GNG
+			value = 15
+		}
+		add_country_modifier = {
+			name = ai_event_cooldown
+			duration = 1200
+		}
+    }
+}
+
+country_event = {
+    id = 165037
+    title = "AI: Yue-Min Alliance"
+    desc = "This event helps the AI form Yue."
+    picture = "china_map"
+
+    trigger = {
+		OR = {
+			tag = GNG
+			tag = FJN
+		}
+		ai = yes
+		exists = GNG
+		exists = FJN
+		NOT = { has_country_modifier = ai_event_cooldown }
+		OR = {
+			AND = {
+				tag = GNG
+				relation = {
+					who = FJN
+					value = 150
+				}
+			}
+			AND = {
+				tag = FJN
+				relation = {
+					who = GNG
+					value = 150
+				}
+			}
+		}
+		NOT = {
+			OR = {
+				AND = {
+					tag = GNG
+					allied_with = FJN
+				}
+				AND = {
+					tag = FJN
+					allied_with = GNG
+				}
+			}
+		}
+		NOT = { OR = { war_with = GNG war_with = FJN } }
+		NOT = { exists = YUE }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Ok"
+		GNG = {
+			create_alliance = FJN
+		}
+		add_country_modifier = {
+			name = ai_event_cooldown
+			duration = 1200
+		}
+    }
+}
+
+country_event = {
+    id = 165038
+    title = "The Kapok War"
+    desc = "165038DESC"
+    picture = "kapok_war"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To war!"
+		FROM = { country_event = 165039 }
+    }
+}
+
+country_event = {
+    id = 165039
+    title = "The Kapok War"
+    desc = "165039DESC"
+    picture = "kapok_war"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To war!"
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = make_puppet_no_add_wargoal
+			}
+			defender_goal = {
+				casus_belli = make_puppet_no_add_wargoal
+			}
+			call_ally = yes
+		}
+    }
+}
+
 province_event = {
     id = 165049
     title = "Kongsis expand operations"

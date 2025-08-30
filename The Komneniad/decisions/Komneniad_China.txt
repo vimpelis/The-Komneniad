@@ -905,4 +905,98 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	
+	YUE_kapok_war = {
+		picture = kapok_war
+		potential = {
+			OR = {
+				tag = GNG
+				tag = FJN
+			}
+			OR = {
+				civilized = yes
+				has_country_flag = debug_enabled
+			}
+			GNG = {
+				exists = yes
+				is_vassal = no
+			}
+			FJN = {
+				exists = yes
+				is_vassal = no
+			}
+			NOT = { exists = YUE }
+			NOT = { has_global_flag = YUE_kapok_war }
+		}
+		allow = {
+			war = no
+			OR = {
+				year = 1880
+				state_n_government = 1
+			}
+			OR = {
+				AND = {
+					tag = GNG
+					NOT = { truce_with = FJN }
+					NOT = { alliance_with = FJN }
+					OR = {
+						NOT = {
+							relation = {
+								who = FJN
+								value = 50
+							}
+						}
+						year = 1890
+					}
+				}
+				AND = {
+					tag = FJN
+					NOT = { truce_with = GNG }
+					NOT = { alliance_with = GNG }
+					OR = {
+						NOT = {
+							relation = {
+								who = GNG
+								value = 50
+							}
+						}
+						year = 1890
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = YUE_kapok_war
+			random_country = {
+				limit = { OR = { tag = GNG tag = FJN } NOT = { tag = THIS } }
+				country_event = 165038
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	YUE_kapok_destroy_relations = {
+		picture = kapok_war
+		potential = {
+			OR = {
+				tag = GNG
+				tag = FJN
+			}
+			has_country_flag = debug_enabled
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			relation = {
+				who = GNG
+				value = -400
+			}
+			relation = {
+				who = FJN
+				value = -400
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }
