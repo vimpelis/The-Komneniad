@@ -145,6 +145,7 @@ AAL - Ard Al-Hurriyah
 173000 - Arajana
 174000 - Scandi  
 175000 - Ethiopia  
+176000 - Sudan
 
 **Random notes that are not present in any of the events:**
 

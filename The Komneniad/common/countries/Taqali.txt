@@ -1,4 +1,8 @@
 color = { 68 175 102 }
+absolute_empire = { 180 150 0 }
+constitutional_empire = { 180 150 0 }
+semi_constitutional_empire = { 180 150 0 }
+theocracy = { 180 150 0 }
 graphical_culture = AfricanGC
 
 party = {

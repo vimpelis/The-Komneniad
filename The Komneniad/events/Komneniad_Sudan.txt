@@ -1,0 +1,77 @@
+#Makk Maniyel - TAQ doesn't exist
+###TODO: coptic pops migration, add modifier for faster conversion
+country_event = {
+    id = 176000
+    title = "The Sermon of Makk Maniyel"
+    desc = "176000DESC"
+    picture = "eth_1"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Ok"
+		TAQ = {
+			prestige = 10
+			government = theocracy
+			religion = coptic
+			primary_culture = nilotic
+			add_accepted_culture = nuba
+			economic_reform = yes_education_reform
+			military_reform = yes_foreign_training
+			military_reform = yes_foreign_weapons
+		}
+		ENG_1844 = { add_core = TAQ }
+		3377 = { add_core = TAQ }
+		1832 = { add_core = TAQ }
+		1840 = { add_core = TAQ }
+		random_owned = {
+            limit = {
+                1834 = { empty = yes }
+            }
+            1834 = { secede_province = THIS }
+			1843 = { secede_province = THIS }
+			1844 = { secede_province = THIS }
+			1845 = { secede_province = THIS }
+			1846 = { secede_province = THIS }
+			1834 = { secede_province = TAQ }
+			1843 = { secede_province = TAQ }
+			1844 = { secede_province = TAQ }
+			1845 = { secede_province = TAQ }
+			1846 = { secede_province = TAQ }
+        }
+    }
+	
+	option = {
+        name = "Play as Makk Maniyel"
+		TAQ = {
+			prestige = 10
+			government = theocracy
+			religion = coptic
+			primary_culture = nilotic
+			add_accepted_culture = nuba
+			economic_reform = yes_education_reform
+			military_reform = yes_foreign_training
+			military_reform = yes_foreign_weapons
+		}
+		ENG_1844 = { add_core = TAQ }
+		3377 = { add_core = TAQ }
+		1832 = { add_core = TAQ }
+		1840 = { add_core = TAQ }
+		random_owned = {
+            limit = {
+                1834 = { empty = yes }
+            }
+            1834 = { secede_province = THIS }
+			1843 = { secede_province = THIS }
+			1844 = { secede_province = THIS }
+			1845 = { secede_province = THIS }
+			1846 = { secede_province = THIS }
+			1834 = { secede_province = TAQ }
+			1843 = { secede_province = TAQ }
+			1844 = { secede_province = TAQ }
+			1845 = { secede_province = TAQ }
+			1846 = { secede_province = TAQ }
+        }
+		change_tag_no_core_switch = TAQ
+    }
+}
