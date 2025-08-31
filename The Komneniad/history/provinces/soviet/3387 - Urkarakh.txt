@@ -1,3 +1,4 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+trade_goods = tropical_wood
+terrain = savanna
+add_core = SHK
+life_rating = 15

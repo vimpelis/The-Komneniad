@@ -6513,9 +6513,6 @@
         size = 335
     }
 }
-#Urkarakh
-3387 = {
-}
 #al-Qa'im
 3389 = {
     aristocrats = {

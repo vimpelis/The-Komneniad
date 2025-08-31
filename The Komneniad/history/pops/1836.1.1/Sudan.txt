@@ -2079,91 +2079,25 @@
     farmers = {
         culture = nilotic
         religion = animist
-        size = 43055
-    }
-
-    slaves = {
-        culture = sara
-        religion = sunni
-        size = 900
-    }
-
-    slaves = {
-        culture = sara
-        religion = animist
-        size = 500
-    }
-
-    slaves = {
-        culture = ethiopian_minor
-        religion = animist
-        size = 500
+        size = 41055
     }
 	
-    aristocrats = {
+	farmers = {
         culture = nilotic
-        religion = sunni
-        size = 30
-    }
-
-    clergymen = {
-        culture = nilotic
-        religion = sunni
-        size = 45
-    }
-
-    artisans = {
-        culture = nilotic
-        religion = sunni
-        size = 90
-    }
-
-    soldiers = {
-        culture = nilotic
-        religion = sunni
-        size = 15
-    }
-
-    farmers = {
-        culture = nilotic
-        religion = sunni
-        size = 1025
-    }
-
-    aristocrats = {
-        culture = nilotic
-        religion = animist
-        size = 830
-    }
-
-    clergymen = {
-        culture = nilotic
-        religion = animist
-        size = 200
-    }
-
-    artisans = {
-        culture = nilotic
-        religion = animist
-        size = 1890
-    }
-
-    soldiers = {
-        culture = nilotic
-        religion = animist
-        size = 510
-    }
-
-    farmers = {
-        culture = nilotic
-        religion = animist
-        size = 36670
+        religion = coptic
+        size = 2000
     }
 
     slaves = {
-        culture = ethiopian_minor
+        culture = sara
         religion = animist
-        size = 10520
+        size = 1200
+    }
+
+    slaves = {
+        culture = nilotic
+        religion = animist
+        size = 500
     }
 }
 #Yambio (140000/35000 POPS)
@@ -2887,5 +2821,73 @@
         culture = bedouin
         religion = sunni
         size = 350
+    }
+}
+
+3387 = {
+	aristocrats = {
+        culture = nilotic
+        religion = coptic
+        size = 30
+    }
+
+    clergymen = {
+        culture = nilotic
+        religion = coptic
+        size = 45
+    }
+
+    artisans = {
+        culture = nilotic
+        religion = coptic
+        size = 90
+    }
+
+    soldiers = {
+        culture = nilotic
+        religion = coptic
+        size = 15
+    }
+
+    farmers = {
+        culture = nilotic
+        religion = coptic
+        size = 1025
+    }
+
+    aristocrats = {
+        culture = nilotic
+        religion = animist
+        size = 830
+    }
+
+    clergymen = {
+        culture = nilotic
+        religion = animist
+        size = 200
+    }
+
+    artisans = {
+        culture = nilotic
+        religion = animist
+        size = 1890
+    }
+
+    soldiers = {
+        culture = nilotic
+        religion = animist
+        size = 510
+    }
+
+    farmers = {
+        culture = nilotic
+        religion = animist
+        size = 36670
+    }
+
+    slaves = {
+        culture = nilotic
+        religion = animist
+        size = 10520
     }
 }
