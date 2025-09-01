@@ -51,6 +51,20 @@ country_event = {
 			}
 			set_country_flag = theocratic_government
 		}
+		any_country = {
+			limit = {
+				has_country_modifier = religious_effort
+				NOT = { has_country_flag = religious_effort }
+			}
+			set_country_flag = religious_effort
+		}
+		any_country = {
+			limit = {
+				has_country_flag = religious_effort
+				NOT = { has_country_modifier = religious_effort }
+			}
+			clr_country_flag = religious_effort
+		}
 		random_owned = {
 			limit = {
 				owner = {

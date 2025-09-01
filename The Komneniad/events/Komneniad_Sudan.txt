@@ -1,15 +1,25 @@
 #Makk Maniyel - TAQ doesn't exist
-###TODO: coptic pops migration, add modifier for faster conversion
 country_event = {
     id = 176000
     title = "The Sermon of Makk Maniyel"
     desc = "176000DESC"
     picture = "eth_1"
 
-    is_triggered_only = yes
+    trigger = {
+		owns = 1840
+		year = 1852
+		NOT = { has_global_flag = maniyel_spawned }
+		NOT = { exists = TAQ }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
 
     option = {
-        name = "Ok"
+        name = "Interesting fellow."
 		TAQ = {
 			prestige = 10
 			government = theocracy
@@ -19,6 +29,7 @@ country_event = {
 			economic_reform = yes_education_reform
 			military_reform = yes_foreign_training
 			military_reform = yes_foreign_weapons
+			add_country_modifier = { name = religious_effort duration = 5475 }
 		}
 		ENG_1844 = { add_core = TAQ }
 		3377 = { add_core = TAQ }
@@ -39,10 +50,16 @@ country_event = {
 			1845 = { secede_province = TAQ }
 			1846 = { secede_province = TAQ }
         }
+		3101 = { any_pop = { move_pop = 1834 } }
+		3224 = { any_pop = { move_pop = 1843 } }
+		2942 = { any_pop = { move_pop = 1844 } }
+		3236 = { any_pop = { move_pop = 1845 } }
+		3551 = { any_pop = { move_pop = 1846 } }
+		set_global_flag = maniyel_spawned
     }
 	
 	option = {
-        name = "Play as Makk Maniyel"
+        name = "§BPlay as Makk Maniyel§!"
 		TAQ = {
 			prestige = 10
 			government = theocracy
@@ -52,6 +69,7 @@ country_event = {
 			economic_reform = yes_education_reform
 			military_reform = yes_foreign_training
 			military_reform = yes_foreign_weapons
+			add_country_modifier = { name = religious_effort duration = 5475 }
 		}
 		ENG_1844 = { add_core = TAQ }
 		3377 = { add_core = TAQ }
@@ -72,6 +90,65 @@ country_event = {
 			1845 = { secede_province = TAQ }
 			1846 = { secede_province = TAQ }
         }
+		3101 = { any_pop = { move_pop = 1834 } }
+		3224 = { any_pop = { move_pop = 1843 } }
+		2942 = { any_pop = { move_pop = 1844 } }
+		3236 = { any_pop = { move_pop = 1845 } }
+		3551 = { any_pop = { move_pop = 1846 } }
 		change_tag_no_core_switch = TAQ
+		set_global_flag = maniyel_spawned
+    }
+}
+
+#Makk Maniyel - TAQ exists
+country_event = {
+    id = 176001
+    title = "The Sermon of Makk Maniyel"
+    desc = "176001DESC"
+    picture = "eth_1"
+
+    trigger = {
+		tag = TAQ
+		year = 1852
+		NOT = { has_global_flag = maniyel_spawned }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+
+    option = {
+        name = "Spread the Word!"
+		prestige = 10
+		government = theocracy
+		religion = coptic
+		primary_culture = nilotic
+		add_accepted_culture = nuba
+		economic_reform = yes_education_reform
+		military_reform = yes_foreign_training
+		military_reform = yes_foreign_weapons
+		add_country_modifier = { name = religious_effort duration = 5475 }
+		ENG_1844 = { add_core = TAQ }
+		3377 = { add_core = TAQ }
+		1832 = { add_core = TAQ }
+		1840 = { add_core = TAQ }
+		random_owned = {
+            limit = {
+                1834 = { empty = yes }
+            }
+            1834 = { secede_province = THIS }
+			1843 = { secede_province = THIS }
+			1844 = { secede_province = THIS }
+			1845 = { secede_province = THIS }
+			1846 = { secede_province = THIS }
+        }
+		3101 = { any_pop = { move_pop = 1834 } }
+		3224 = { any_pop = { move_pop = 1843 } }
+		2942 = { any_pop = { move_pop = 1844 } }
+		3236 = { any_pop = { move_pop = 1845 } }
+		3551 = { any_pop = { move_pop = 1846 } }
+		set_global_flag = maniyel_spawned
     }
 }

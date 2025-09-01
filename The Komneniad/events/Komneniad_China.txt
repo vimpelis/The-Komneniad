@@ -984,11 +984,11 @@ country_event = {
 			OR = {
 				AND = {
 					tag = GNG
-					allied_with = FJN
+					alliance_with = FJN
 				}
 				AND = {
 					tag = FJN
-					allied_with = GNG
+					alliance_with = GNG
 				}
 			}
 		}

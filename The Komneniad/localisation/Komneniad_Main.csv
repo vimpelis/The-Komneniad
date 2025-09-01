@@ -538,3 +538,5 @@ NORMAL_WAR_PUPPET_NAME_GNG_FJN;Kapok War;;;;;;;;;;;;;
 NORMAL_WAR_PUPPET_NAME_FJN_GNG;Kapok War;;;;;;;;;;;;;
 AGRESSION_WAR_PUPPET_NAME_GNG_FJN;Kapok War;;;;;;;;;;;;;
 AGRESSION_WAR_PUPPET_NAME_FJN_GNG;Kapok War;;;;;;;;;;;;;
+religious_effort;Religious Conversion Effort;;;;;;;;;;;;;
+religious_effort_desc;We are focused on converting the unbelievers to the True Faith.\n§GThis modifier will massively increase religious conversion speed!§!;;;;;;;;;;;;;

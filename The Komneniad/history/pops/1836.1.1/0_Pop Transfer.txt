@@ -456,3 +456,73 @@
         size = 100
     }
 }
+
+3101 = { 
+	clergymen = {
+        culture = nilotic
+        religion = coptic
+        size = 100
+    }
+	
+	farmers = {
+        culture = nilotic
+        religion = coptic
+        size = 1500
+    }
+}
+
+3224 = { 
+	clergymen = {
+        culture = nilotic
+        religion = coptic
+        size = 200
+    }
+	
+	farmers = {
+        culture = nilotic
+        religion = coptic
+        size = 3000
+    }
+}
+
+2942 = { 
+	clergymen = {
+        culture = nilotic
+        religion = coptic
+        size = 250
+    }
+	
+	farmers = {
+        culture = nilotic
+        religion = coptic
+        size = 3500
+    }
+}
+
+3236 = { 
+	clergymen = {
+        culture = nilotic
+        religion = coptic
+        size = 225
+    }
+	
+	farmers = {
+        culture = nilotic
+        religion = coptic
+        size = 3250
+    }
+}
+
+3551 = { 
+	clergymen = {
+        culture = nilotic
+        religion = coptic
+        size = 275
+    }
+	
+	farmers = {
+        culture = nilotic
+        religion = coptic
+        size = 3750
+    }
+}

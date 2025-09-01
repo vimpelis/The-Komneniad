@@ -5268,3 +5268,7 @@ ETH_demographic_crisis = {
 ai_event_cooldown = {
     icon = 16
 }
+
+religious_effort = {
+    icon = 17
+}
