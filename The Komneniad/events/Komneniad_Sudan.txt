@@ -30,6 +30,14 @@ country_event = {
 			military_reform = yes_foreign_training
 			military_reform = yes_foreign_weapons
 			add_country_modifier = { name = religious_effort duration = 5475 }
+			define_general = {
+				name = "Makk Maniyel"
+				personality = defence_2.1
+				background = attack_4.1
+			}
+			treasury = 20000
+			capital = 1844
+			set_country_flag = TAQ_maniyel_regime
 		}
 		ENG_1844 = { add_core = TAQ }
 		3377 = { add_core = TAQ }
@@ -39,11 +47,11 @@ country_event = {
             limit = {
                 1834 = { empty = yes }
             }
-            1834 = { secede_province = THIS }
-			1843 = { secede_province = THIS }
-			1844 = { secede_province = THIS }
-			1845 = { secede_province = THIS }
-			1846 = { secede_province = THIS }
+            1834 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1843 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1844 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1845 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1846 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			1834 = { secede_province = TAQ }
 			1843 = { secede_province = TAQ }
 			1844 = { secede_province = TAQ }
@@ -70,6 +78,14 @@ country_event = {
 			military_reform = yes_foreign_training
 			military_reform = yes_foreign_weapons
 			add_country_modifier = { name = religious_effort duration = 5475 }
+			define_general = {
+				name = "Makk Maniyel"
+				personality = defence_2.1
+				background = attack_4.1
+			}
+			treasury = 20000
+			capital = 1844
+			set_country_flag = TAQ_maniyel_regime
 		}
 		ENG_1844 = { add_core = TAQ }
 		3377 = { add_core = TAQ }
@@ -79,11 +95,11 @@ country_event = {
             limit = {
                 1834 = { empty = yes }
             }
-            1834 = { secede_province = THIS }
-			1843 = { secede_province = THIS }
-			1844 = { secede_province = THIS }
-			1845 = { secede_province = THIS }
-			1846 = { secede_province = THIS }
+            1834 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1843 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1844 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1845 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1846 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			1834 = { secede_province = TAQ }
 			1843 = { secede_province = TAQ }
 			1844 = { secede_province = TAQ }
@@ -130,6 +146,13 @@ country_event = {
 		military_reform = yes_foreign_training
 		military_reform = yes_foreign_weapons
 		add_country_modifier = { name = religious_effort duration = 5475 }
+		define_general = {
+			name = "Makk Maniyel"
+			personality = defence_2.1
+			background = attack_4.1
+		}
+		treasury = 20000
+		set_country_flag = TAQ_maniyel_regime
 		ENG_1844 = { add_core = TAQ }
 		3377 = { add_core = TAQ }
 		1832 = { add_core = TAQ }
@@ -138,11 +161,11 @@ country_event = {
             limit = {
                 1834 = { empty = yes }
             }
-            1834 = { secede_province = THIS }
-			1843 = { secede_province = THIS }
-			1844 = { secede_province = THIS }
-			1845 = { secede_province = THIS }
-			1846 = { secede_province = THIS }
+            1834 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1843 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1844 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1845 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			1846 = { secede_province = THIS any_pop = { literacy = -0.99 } }
         }
 		3101 = { any_pop = { move_pop = 1834 } }
 		3224 = { any_pop = { move_pop = 1843 } }

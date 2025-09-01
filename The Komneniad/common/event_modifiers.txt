@@ -5272,3 +5272,12 @@ ai_event_cooldown = {
 religious_effort = {
     icon = 17
 }
+
+NUB_taxation = {
+    tax_efficiency = 0.15
+    land_organisation = -0.1
+    naval_organisation = -0.1
+    global_pop_consciousness_modifier = 0.05
+    global_pop_militancy_modifier = 0.05
+    icon = 10
+}

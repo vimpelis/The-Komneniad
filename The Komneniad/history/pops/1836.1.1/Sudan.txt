@@ -1905,93 +1905,51 @@
 #Waw (140000/35000 POPS)
 1843 = {
     aristocrats = {
-        culture = bedouin
-        religion = sunni
-        size = 185
-    }
-
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 115
-    }
-
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 525
-    }
-
-    soldiers = {
-        culture = bedouin
-        religion = sunni
-        size = 350
-    }
-
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 6075
+        culture = nilotic
+        religion = animist
+        size = 500
     }
 
     aristocrats = {
-        culture = nilotic
-        religion = animist
-        size = 300
-    }
-
-    aristocrats = {
-        culture = nilotic
-        religion = sunni
-        size = 300
-    }
-
-    bureaucrats = {
-        culture = nilotic
-        religion = animist
-        size = 35
-    }
-
-    bureaucrats = {
-        culture = nilotic
-        religion = sunni
-        size = 10
-    }
-
-    officers = {
-        culture = nilotic
-        religion = animist
-        size = 15
-    }
-
-    officers = {
-        culture = nilotic
-        religion = sunni
-        size = 5
-    }
-
-    clergymen = {
-        culture = nilotic
-        religion = animist
-        size = 130
-    }
-
-    clergymen = {
         culture = nilotic
         religion = sunni
         size = 50
     }
+	
+	aristocrats = {
+        culture = nilotic
+        religion = coptic
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = nilotic
+        religion = animist
+        size = 45
+    }
+
+    officers = {
+        culture = nilotic
+        religion = animist
+        size = 20
+    }
+
+    clergymen = {
+        culture = nilotic
+        religion = animist
+        size = 180
+    }
 
     artisans = {
         culture = nilotic
         religion = animist
-        size = 400
+        size = 500
     }
 
     artisans = {
         culture = nilotic
         religion = sunni
-        size = 175
+        size = 75
     }
 
     soldiers = {
@@ -2002,32 +1960,38 @@
 
     soldiers = {
         culture = nilotic
-        religion = sunni
+        religion = coptic
         size = 100
     }
 
     farmers = {
         culture = nilotic
         religion = animist
-        size = 14000
+        size = 18000
     }
 
     farmers = {
         culture = nilotic
+        religion = coptic
+        size = 450
+    }
+	
+	farmers = {
+        culture = nilotic
         religion = sunni
-        size = 2450
+        size = 2000
     }
 
     farmers = {
         culture = sara
         religion = animist
-        size = 1000
+        size = 1800
     }
 
     farmers = {
         culture = sara
         religion = sunni
-        size = 1000
+        size = 200
     }
 
     slaves = {
@@ -2050,7 +2014,7 @@
 
     farmers = {
         culture = sudanese
-        religion = sunni
+        religion = coptic
         size = 1800
     }
 }

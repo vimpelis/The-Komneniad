@@ -1,0 +1,329 @@
+political_decisions = {
+	NUB_coptic_education = {
+		picture = gtfo
+		potential = {
+			tag = SUD
+			civilized = no
+			NOT = { has_country_flag = NUB_coptic_education }
+		}
+		allow = {
+			money = 20000
+			OR = {
+				relation = { who = EGY value = 75 }
+				year = 1845
+			}
+		}
+		effect = {
+			treasury = -20000
+			prestige = 5
+			research_points = 3500
+			economic_reform = yes_education_reform
+			set_country_flag = NUB_coptic_education
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	NUB_import_crops = {
+		picture = gtfo
+		potential = {
+			tag = SUD
+			civilized = no
+			NOT = { has_country_flag = NUB_import_crops }
+		}
+		allow = {
+			money = 20000
+			OR = {
+				relation = { who = BYZ value = 75 }
+				AND = {
+					year = 1860
+					ai = yes
+				}
+			}
+		}
+		effect = {
+			treasury = -20000
+			prestige = 5
+			random_owned = { limit = { province_id = 1827 } trade_goods = cotton }
+			random_owned = { limit = { province_id = 1837 } trade_goods = cotton }
+			random_owned = { limit = { province_id = 1830 } trade_goods = tobacco }
+			random_owned = { limit = { province_id = 3377 } trade_goods = tobacco }
+			random_owned = { limit = { province_id = 1832 } trade_goods = coffee }
+			economic_reform = yes_land_reform
+			set_country_flag = NUB_import_crops
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	NUB_increase_taxation = {
+		picture = gtfo
+		potential = {
+			tag = SUD
+			civilized = no
+			NOT = { has_country_flag = NUB_increase_taxation }
+		}
+		allow = {
+			war = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+			OR = { relation = { who = ETH value = 100 } year = 1845 }
+		}
+		effect = {
+			any_pop = { militancy = 2 }
+			treasury = 5000
+			add_country_modifier = {
+				name = NUB_taxation
+				duration = 3650
+			}
+			set_country_flag = NUB_increase_taxation
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	NUB_eat_fashoda = {
+		picture = gtfo
+		potential = {
+			tag = SUD
+			NOT = { has_country_flag = NUB_eat_fashoda }
+		}
+		allow = {
+			war = no
+			OR = {
+				owns = 1832
+				year = 1839
+			}
+		}
+		effect = {
+			badboy = 5
+			3377 = { add_core = SUD secede_province = SUD }
+			1832 = { add_core = SUD }
+			random_owned = {
+				limit = { exists = SHK }
+				SUD = {
+					war = {
+						target = SHK
+						attacker_goal = { casus_belli = annex_core_country }
+					}
+				}
+			}
+			set_country_flag = NUB_eat_fashoda
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	NUB_retake_kordofan = {
+		picture = gtfo
+		potential = {
+			tag = SUD
+			has_country_flag = NUB_eat_fashoda
+			NOT = { has_country_flag = NUB_retake_kordofan }
+		}
+		allow = {
+			war = no
+			OR = {
+				civilization_progress = 0.5
+				year = 1850
+			}
+		}
+		effect = {
+			badboy = 5
+			EGY_1839 = { add_core = SUD }
+			set_country_flag = NUB_retake_kordofan
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	NUB_annex_darfur = {
+		picture = gtfo
+		potential = {
+			tag = SUD
+			has_country_flag = NUB_retake_kordofan
+			NOT = { has_country_flag = NUB_annex_darfur }
+		}
+		allow = {
+			war = no
+			OR = {
+				civilized = yes
+				year = 1880
+			}
+		}
+		effect = {
+			badboy = 5
+			EGY_1842 = { add_core = SUD }
+			add_accepted_culture = fur
+			set_country_flag = NUB_annex_darfur
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	NUB_integrate_nilotic = {
+		picture = gtfo
+		potential = {
+			tag = SUD
+			has_country_flag = NUB_eat_fashoda
+			NOT = { has_country_flag = NUB_integrate_nilotic }
+		}
+		allow = {
+			war = no
+			owns = 1832
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 5
+			EGY_1844 = { add_core = SUD }
+			add_accepted_culture = nilotic
+			set_country_flag = NUB_integrate_nilotic
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+	
+	TAQ_import_intellectuals = {
+		picture = gtfo
+		potential = {
+			tag = TAQ
+			has_country_flag = TAQ_maniyel_regime
+			NOT = { has_country_flag = TAQ_import_intellectuals }
+		}
+		allow = {
+			war = no
+			literacy = 0.05
+			money = 10000
+		}
+		effect = {
+			treasury = -10000
+			research_points = 5000
+			any_pop = {
+				limit = { type = clergymen }
+				reduce_pop = 2
+			}
+			set_country_flag = TAQ_import_intellectuals
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	TAQ_end_slavery = {
+		picture = gtfo
+		potential = {
+			tag = TAQ
+			has_country_flag = TAQ_maniyel_regime
+			NOT = { has_country_flag = TAQ_end_slavery }
+		}
+		allow = {
+			war = no
+			literacy = 0.05
+		}
+		effect = {
+			political_reform = no_slavery
+			any_pop = {
+				militancy = -1
+			}
+			set_country_flag = TAQ_end_slavery
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	TAQ_cross_the_nile = {
+		picture = gtfo
+		potential = {
+			tag = TAQ
+			has_country_flag = TAQ_maniyel_regime
+			NOT = { has_country_flag = TAQ_cross_the_nile }
+		}
+		allow = {
+			war = no
+			OR = {
+				literacy = 0.15
+				year = 1865
+			}
+		}
+		effect = {
+			3387 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3447 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			set_country_flag = TAQ_cross_the_nile
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	TAQ_reform_governance = {
+		picture = gtfo
+		potential = {
+			tag = TAQ
+			has_country_flag = TAQ_maniyel_regime
+			has_country_flag = TAQ_cross_the_nile
+			NOT = { has_country_flag = TAQ_reform_governance }
+		}
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					admin_reform = yes_admin_reform
+					year = 1870
+				}
+				year = 1880 #TODO: Maniyel death
+			}
+		}
+		effect = {
+			prestige = 10
+			badboy = 10
+			government = absolute_empire
+			research_points = 5000
+			random_owned = { limit = { 3610 = { empty = yes } } 3610 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2022 = { empty = yes } } 2022 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2026 = { empty = yes } } 2026 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 1847 = { empty = yes } } 1847 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2028 = { empty = yes } } 2028 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			3610 = { add_core = THIS }
+			2022 = { add_core = THIS }
+			2026 = { add_core = THIS }
+			1847 = { add_core = THIS }
+			2028 = { add_core = THIS }
+			3595 = { add_core = THIS }
+			2021 = { add_core = THIS }
+			2023 = { add_core = THIS }
+			2024 = { add_core = THIS }
+			2027 = { add_core = THIS }
+			set_country_flag = TAQ_reform_governance
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+}
