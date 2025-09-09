@@ -64,6 +64,8 @@ become_independent
 dismantle_cb
 BYZ_crimean_war
 german_unification
+ethiopian_somalian_cb
+ethiopian_somalian2_cb
 colonial_competition
 acquire_all_cores
 acquire_core_state
