@@ -192,7 +192,7 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 5
-			EGY_1844 = { add_core = SUD }
+			ENG_1844 = { add_core = SUD }
 			add_accepted_culture = nilotic
 			set_country_flag = NUB_integrate_nilotic
 		}
@@ -266,6 +266,7 @@ political_decisions = {
 			OR = {
 				literacy = 0.15
 				year = 1865
+				year = 1830
 			}
 		}
 		effect = {
@@ -294,6 +295,7 @@ political_decisions = {
 					year = 1870
 				}
 				year = 1880 #TODO: Maniyel death
+				year = 1830
 			}
 		}
 		effect = {

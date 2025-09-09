@@ -1,3 +1,6 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+owner = NYM
+controller = NYM
+add_core = NYM
+trade_goods = cattle
+terrain = mountain
+life_rating = 25
