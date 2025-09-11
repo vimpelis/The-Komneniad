@@ -10,7 +10,7 @@
 
     aristocrats = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 350
     }
 
@@ -22,7 +22,7 @@
 
     bureaucrats = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 20
     }
 
@@ -34,13 +34,13 @@
 
     officers = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 10
     }
 
     clergymen = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 725
     }
 
@@ -52,7 +52,7 @@
 
     artisans = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 500
     }
 
@@ -64,7 +64,7 @@
 
     soldiers = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 1000
     }
 
@@ -76,7 +76,7 @@
 
     farmers = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 8000
     }
 
@@ -156,7 +156,7 @@
 
     farmers = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 500
     }
 
@@ -234,7 +234,7 @@
 
     farmers = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 2080
     }
 
@@ -362,25 +362,25 @@
 
     aristocrats = {
         culture = nilotic
-        religion = sunni
+        religion = animist
         size = 125
     }
 
     clergymen = {
         culture = nilotic
-        religion = sunni
+        religion = animist
         size = 75
     }
 
     artisans = {
         culture = nilotic
-        religion = sunni
+        religion = animist
         size = 350
     }
 
     soldiers = {
         culture = nilotic
-        religion = sunni
+        religion = animist
         size = 75
     }
 
@@ -392,7 +392,7 @@
 
     farmers = {
         culture = lendu
-        religion = sunni
+        religion = animist
         size = 530
     }
 
@@ -465,25 +465,25 @@
 3610 = {
     aristocrats = {
         culture = lendu
-        religion = sunni
+        religion = animist
         size = 550
     }
 
     clergymen = {
         culture = lendu
-        religion = sunni
+        religion = animist
         size = 300
     }
 
     soldiers = {
         culture = lendu
-        religion = sunni
+        religion = animist
         size = 300
     }
 
     farmers = {
         culture = lendu
-        religion = sunni
+        religion = animist
         size = 700
     }
 
@@ -494,7 +494,7 @@
     }
 
     farmers = {
-        culture = baganda
+        culture = nilotic
         religion = animist
         size = 1000
     }
@@ -587,7 +587,7 @@
 
     farmers = {
         culture = nilotic
-        religion = sunni
+        religion = animist
         size = 560
     }
 
@@ -599,31 +599,31 @@
 
     aristocrats = {
         culture = ethiopian_minor
-        religion = sunni
+        religion = animist
         size = 125
     }
 
     clergymen = {
         culture = ethiopian_minor
-        religion = sunni
+        religion = animist
         size = 75
     }
 
     artisans = {
         culture = ethiopian_minor
-        religion = sunni
+        religion = animist
         size = 350
     }
 
     soldiers = {
         culture = ethiopian_minor
-        religion = sunni
+        religion = animist
         size = 75
     }
 
     farmers = {
         culture = ethiopian_minor
-        religion = sunni
+        religion = animist
         size = 440
     }
 
@@ -667,13 +667,13 @@
 
     aristocrats = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 750
     }
 
     clergymen = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 375
     }
 
@@ -691,7 +691,7 @@
 
     soldiers = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 475
     }
 
@@ -703,7 +703,7 @@
 
     farmers = {
         culture = baganda
-        religion = sunni
+        religion = animist
         size = 9000
     }
 

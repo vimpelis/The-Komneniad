@@ -1,6 +1,6 @@
 political_decisions = {
 	NUB_coptic_education = {
-		picture = gtfo
+		picture = coptic_clergy
 		potential = {
 			tag = SUD
 			civilized = no
@@ -26,7 +26,7 @@ political_decisions = {
 	}
 	
 	NUB_import_crops = {
-		picture = gtfo
+		picture = sudan_farming
 		potential = {
 			tag = SUD
 			civilized = no
@@ -59,7 +59,7 @@ political_decisions = {
 	}
 	
 	NUB_increase_taxation = {
-		picture = gtfo
+		picture = sudan_taxes
 		potential = {
 			tag = SUD
 			civilized = no
@@ -85,7 +85,7 @@ political_decisions = {
 	}
 
 	NUB_eat_fashoda = {
-		picture = gtfo
+		picture = sudan_map
 		potential = {
 			tag = SUD
 			NOT = { has_country_flag = NUB_eat_fashoda }
@@ -122,7 +122,7 @@ political_decisions = {
 	}
 	
 	NUB_retake_kordofan = {
-		picture = gtfo
+		picture = sudan_map
 		potential = {
 			tag = SUD
 			has_country_flag = NUB_eat_fashoda
@@ -150,7 +150,7 @@ political_decisions = {
 	}
 	
 	NUB_annex_darfur = {
-		picture = gtfo
+		picture = sudan_map
 		potential = {
 			tag = SUD
 			has_country_flag = NUB_retake_kordofan
@@ -179,7 +179,7 @@ political_decisions = {
 	}
 	
 	NUB_integrate_nilotic = {
-		picture = gtfo
+		picture = sudan_map
 		potential = {
 			tag = SUD
 			has_country_flag = NUB_eat_fashoda
@@ -206,7 +206,7 @@ political_decisions = {
 	}
 	
 	TAQ_import_intellectuals = {
-		picture = gtfo
+		picture = coptic_clergy
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime
@@ -214,7 +214,10 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			literacy = 0.05
+			OR = {
+				literacy = 0.05
+				relation = { who = SUD value = 100 }
+			}
 			money = 10000
 		}
 		effect = {
@@ -232,7 +235,7 @@ political_decisions = {
 	}
 	
 	TAQ_end_slavery = {
-		picture = gtfo
+		picture = sudan_slavery
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime
@@ -243,6 +246,7 @@ political_decisions = {
 			literacy = 0.05
 		}
 		effect = {
+			research_points = 250
 			political_reform = no_slavery
 			any_pop = {
 				militancy = -1
@@ -264,14 +268,53 @@ political_decisions = {
 		allow = {
 			war = no
 			OR = {
-				literacy = 0.15
+				literacy = 0.1
 				year = 1865
 			}
 		}
 		effect = {
+			research_points = 500
 			3387 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			3447 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			set_country_flag = TAQ_cross_the_nile
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	TAQ_southern_expansion = {
+		picture = gtfo
+		potential = {
+			tag = TAQ
+			has_country_flag = TAQ_maniyel_regime
+			has_country_flag = TAQ_cross_the_nile
+			NOT = { has_country_flag = TAQ_southern_expansion }
+		}
+		allow = {
+			war = no
+			money = 5000
+			OR = {
+				military_constructions = yes_military_constructions
+				year = 1875
+			}
+		}
+		effect = {
+			treasury = -5000
+			research_points = 1000
+			random_owned = { limit = { 1847 = { empty = yes } } 1847 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 3672 = { empty = yes } } 3672 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 3610 = { empty = yes } } 3610 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2022 = { empty = yes } } 2022 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2026 = { empty = yes } } 2026 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			1847 = { add_core = THIS }
+			3672 = { add_core = THIS }
+			3610 = { add_core = THIS }
+			2022 = { add_core = THIS }
+			2026 = { add_core = THIS }
+			2021 = { add_core = THIS }
+			random_owned = { limit = { owner = { military_constructions = yes_military_constructions } } 3672 = { fort = 1 } 2026 = { fort = 1 } 1847 = { fort = 1 } }
+			set_country_flag = TAQ_southern_expansion
 		}
 		ai_will_do = {
 			factor = 1
@@ -293,7 +336,7 @@ political_decisions = {
 					admin_reform = yes_admin_reform
 					year = 1870
 				}
-				year = 1880 #TODO: Maniyel death
+				has_country_flag = maniyel_dead
 			}
 		}
 		effect = {
@@ -301,21 +344,6 @@ political_decisions = {
 			badboy = 10
 			government = absolute_empire
 			research_points = 5000
-			random_owned = { limit = { 3610 = { empty = yes } } 3610 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
-			random_owned = { limit = { 2022 = { empty = yes } } 2022 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
-			random_owned = { limit = { 2026 = { empty = yes } } 2026 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
-			random_owned = { limit = { 1847 = { empty = yes } } 1847 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
-			random_owned = { limit = { 2028 = { empty = yes } } 2028 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
-			3610 = { add_core = THIS }
-			2022 = { add_core = THIS }
-			2026 = { add_core = THIS }
-			1847 = { add_core = THIS }
-			2028 = { add_core = THIS }
-			3595 = { add_core = THIS }
-			2021 = { add_core = THIS }
-			2023 = { add_core = THIS }
-			2024 = { add_core = THIS }
-			2027 = { add_core = THIS }
 			set_country_flag = TAQ_reform_governance
 		}
 		ai_will_do = {
@@ -323,6 +351,71 @@ political_decisions = {
 			modifier = {
 				factor = 0
 				badboy = 0.6
+			}
+		}
+	}
+	
+	TAQ_empire_of_the_nile = {
+		picture = gtfo
+		potential = {
+			tag = TAQ
+			has_country_flag = TAQ_maniyel_regime
+			has_country_flag = TAQ_reform_governance
+			NOT = { has_country_flag = TAQ_empire_of_the_nile }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			research_points = 2500
+			random_owned = { limit = { 2028 = { empty = yes } } 2028 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			2019 = { add_core = THIS }
+			2020 = { add_core = THIS }
+			2023 = { add_core = THIS }
+			2028 = { add_core = THIS }
+			2024 = { add_core = THIS }
+			2027 = { add_core = THIS }
+			3331 = { add_core = THIS }
+			2047 = { add_core = THIS }
+			set_country_flag = TAQ_empire_of_the_nile
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	
+	TAQ_march_to_the_sea = {
+		picture = gtfo
+		potential = {
+			tag = TAQ
+			has_country_flag = TAQ_maniyel_regime
+			has_country_flag = TAQ_empire_of_the_nile
+			NOT = { has_country_flag = TAQ_march_to_the_sea }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 5
+			add_accepted_culture = kikuyu
+			random_owned = { limit = { 2354 = { empty = yes } } 2354 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			2032 = { add_core = THIS }
+			ENG_2036 = { add_core = THIS }
+			set_country_flag = TAQ_march_to_the_sea
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
 			}
 		}
 	}

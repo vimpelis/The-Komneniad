@@ -1046,3 +1046,71 @@
         size = 10000
     }
 }
+
+3672 = {
+    aristocrats = {
+        culture = lendu
+        religion = animist
+        size = 1017
+    }
+
+    clergymen = {
+        culture = lendu
+        religion = animist
+        size = 588
+    }
+
+    artisans = {
+        culture = lendu
+        religion = animist
+        size = 1610
+    }
+
+    soldiers = {
+        culture = lendu
+        religion = animist
+        size = 300
+    }
+
+    farmers = {
+        culture = lendu
+        religion = animist
+        size = 16622
+    }
+
+    farmers = {
+        culture = kingwana
+        religion = animist
+        size = 1300
+    }
+
+    farmers = {
+        culture = nilotic
+        religion = animist
+        size = 3720
+    }
+
+    farmers = {
+        culture = ubangian
+        religion = animist
+        size = 3647
+    }
+
+    slaves = {
+        culture = ubangian
+        religion = animist
+        size = 2065
+    }
+
+    slaves = {
+        culture = sara
+        religion = animist
+        size = 2035
+    }
+
+    slaves = {
+        culture = baganda
+        religion = animist
+        size = 679
+    }
+}

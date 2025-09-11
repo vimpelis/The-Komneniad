@@ -315,6 +315,32 @@ country_event = {
 		1143 = { add_core = PAK secede_province = THIS secede_province = PAK }
 		3496 = { add_core = PAK secede_province = THIS secede_province = PAK }
     }
+	
+	option = {
+        name = "Anag"
+		political_reform = no_slavery
+		ENG_1844 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		ENG_2036 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		1840 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		1832 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		3377 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		3595 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		1847 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		3331 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2022 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2028 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2023 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2019 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2021 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		3610 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2020 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2026 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2024 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2027 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2032 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		3672 = { add_core = TAQ secede_province = THIS secede_province = TAQ }		
+		TAQ = { government = absolute_empire }
+    }
 }
 
 country_event = {

@@ -1177,6 +1177,11 @@ country_event = {
 						owns = 1910
 						NOT = { 1910 = { trade_goods = gold } }
 					}
+					AND = {
+						owns = 3672
+						year = 1903
+						NOT = { 3672 = { trade_goods = gold } }
+					}
 					########sugar
 					AND = {
 						owns = 3678
@@ -2002,6 +2007,14 @@ country_event = {
 			any_owned = {
 				limit = {
 					province_id = 1910
+					NOT = { trade_goods = gold }
+				}
+				trade_goods = gold
+			}
+			any_owned = {
+				limit = {
+					province_id = 3672
+					year = 1903
 					NOT = { trade_goods = gold }
 				}
 				trade_goods = gold
