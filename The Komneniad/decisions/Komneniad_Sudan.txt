@@ -276,6 +276,7 @@ political_decisions = {
 			3387 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			3447 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 			set_country_flag = TAQ_cross_the_nile
+			add_country_modifier = { name = religious_effort duration = 1825 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -343,6 +344,7 @@ political_decisions = {
 			government = absolute_empire
 			research_points = 5000
 			set_country_flag = TAQ_reform_governance
+			add_country_modifier = { name = religious_effort duration = 1825 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -382,6 +384,7 @@ political_decisions = {
 			3595 = { add_core = THIS }
 			2033 = { add_core = THIS }
 			set_country_flag = TAQ_empire_of_the_nile
+			add_country_modifier = { name = religious_effort duration = 1825 }
 		}
 		ai_will_do = {
 			factor = 1
