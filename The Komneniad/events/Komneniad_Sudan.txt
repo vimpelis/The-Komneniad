@@ -205,4 +205,89 @@ country_event = {
 			consciousness = 0.5
 		}
 		set_country_flag = maniyel_dead
+	}
+}
+
+country_event = {
+    id = 176003
+    title = "Gondokoro Island"
+    desc = "176003DESC"
+    picture = "gondokoro"
+
+    trigger = {
+		tag = TAQ
+		owns = 3447
+		has_country_flag = TAQ_maniyel_regime
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 180
+    }
+
+    option = {
+        name = "A proper capital is good."
+		capital = 3447
+		3447 = { change_province_name = "Gondokoro" life_rating = 15 }
+	}
+}
+
+country_event = {
+    id = 176004
+    title = "An Empire Destroyed"
+    desc = "The government has been overthrown. Maniyel's legacy is now completely destroyed, and we can't claim any of it."
+    picture = "dinka"
+
+    trigger = {
+		tag = TAQ
+		has_country_flag = TAQ_maniyel_regime
+		NOT = {
+			OR = {
+				government = theocracy
+				government = absolute_empire
+				government = constitutional_empire
+				government = semi_constitutional_empire
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Oh well."
+		clr_country_flag = TAQ_maniyel_regime
+		primary_culture = nuba
+		add_accepted_culture = nilotic
+	}
+}
+
+country_event = {
+    id = 176005
+    title = "Source of the Nile"
+    desc = "176005DESC"
+    picture = "Nile"
+
+    trigger = {
+		tag = TAQ
+		owns = 2019
+		owns = 2033
+		has_country_flag = TAQ_maniyel_regime
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Lake Maniyel it is!"
+		prestige = 10
+		3102 = { change_province_name = "Lake Maniyel" }
+	}
 }

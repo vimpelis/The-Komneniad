@@ -157,6 +157,11 @@ country_event = {
     }
 	
 	option = {
+        name = "Spawn a country"
+		country_event = 169009
+    }
+	
+	option = {
         name = "Add debug countryflag (NO TOUCH)"
 		set_country_flag = debug_enabled
 		country_event = 169007
@@ -338,7 +343,8 @@ country_event = {
 		2024 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
 		2027 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
 		2032 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		3672 = { add_core = TAQ secede_province = THIS secede_province = TAQ }		
+		3672 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
+		2033 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
 		TAQ = { government = absolute_empire }
     }
 }

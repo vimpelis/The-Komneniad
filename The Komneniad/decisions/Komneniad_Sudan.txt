@@ -239,7 +239,7 @@ political_decisions = {
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime
-			NOT = { has_country_flag = TAQ_end_slavery }
+			slavery = yes_slavery
 		}
 		allow = {
 			war = no
@@ -251,7 +251,6 @@ political_decisions = {
 			any_pop = {
 				militancy = -1
 			}
-			set_country_flag = TAQ_end_slavery
 		}
 		ai_will_do = {
 			factor = 1
@@ -259,7 +258,7 @@ political_decisions = {
 	}
 	
 	TAQ_cross_the_nile = {
-		picture = gtfo
+		picture = gondokoro
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime
@@ -284,7 +283,7 @@ political_decisions = {
 	}
 	
 	TAQ_southern_expansion = {
-		picture = gtfo
+		picture = ukerewe
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime
@@ -322,7 +321,7 @@ political_decisions = {
 	}
 	
 	TAQ_reform_governance = {
-		picture = gtfo
+		picture = dinka_village
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime
@@ -341,7 +340,6 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 10
-			badboy = 10
 			government = absolute_empire
 			research_points = 5000
 			set_country_flag = TAQ_reform_governance
@@ -356,7 +354,7 @@ political_decisions = {
 	}
 	
 	TAQ_empire_of_the_nile = {
-		picture = gtfo
+		picture = ukerewe_map
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime
@@ -371,6 +369,8 @@ political_decisions = {
 			badboy = 10
 			research_points = 2500
 			random_owned = { limit = { 2028 = { empty = yes } } 2028 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2033 = { empty = yes } } 2033 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 3595 = { empty = yes } } 3595 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			2019 = { add_core = THIS }
 			2020 = { add_core = THIS }
 			2023 = { add_core = THIS }
@@ -379,6 +379,8 @@ political_decisions = {
 			2027 = { add_core = THIS }
 			3331 = { add_core = THIS }
 			2047 = { add_core = THIS }
+			3595 = { add_core = THIS }
+			2033 = { add_core = THIS }
 			set_country_flag = TAQ_empire_of_the_nile
 		}
 		ai_will_do = {
@@ -391,7 +393,7 @@ political_decisions = {
 	}
 	
 	TAQ_march_to_the_sea = {
-		picture = gtfo
+		picture = zanzibar_protectorate
 		potential = {
 			tag = TAQ
 			has_country_flag = TAQ_maniyel_regime

@@ -1072,7 +1072,7 @@ political_decisions = {
     }
 	
 	BYZ_accept_copts = {
-        picture = Coptic
+        picture = coptic_clergy
         potential = {
 			OR = {
 				tag = BYZ
