@@ -362,3 +362,45 @@ country_event = {
 		set_country_flag = SAF_wild_north
     }
 }
+
+#SAF asks for Namibia
+country_event = {
+    id = 167012
+    title = "South Afrika Asks for Land"
+    desc = "A delegation from Kaapstad has just arrived in our capital. They are asking us to cede some of our colonial holdings in Africa in exchange for South Africa allowing economic penetration. Shall we agree?"
+    picture = "conquest_of_the_desert"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "It's useless desert, let's do it."
+		random_owned = { limit = { province_id = 2085 } 2085 = { secede_province = SAF life_rating = 15 change_province_name = "Stampriet" } }
+		random_owned = { limit = { province_id = 2084 } 2084 = { secede_province = SAF life_rating = 15 change_province_name = "Luderitzbaai" } }
+		random_owned = { limit = { province_id = 2086 } 2086 = { secede_province = SAF life_rating = 15 change_province_name = "Keetmanshoop" } }
+		random_owned = { limit = { province_id = 2094 } 2094 = { secede_province = SAF life_rating = 20 } }
+		random_owned = { limit = { province_id = 2095 } 2095 = { secede_province = SAF life_rating = 20 } }
+		any_owned = { limit = { is_core = SAF } secede_province = SAF }
+		relation = { who = SAF value = 100 } diplomatic_influence = { who = SAF value = 200 }
+    }
+	
+	option = {
+        name = "I don't think we're gonna be doing that."
+		relation = { who = SAF value = -50 }
+		SAF = { country_event = 167013 }
+    }
+}
+
+#Denied
+country_event = {
+    id = 167013
+    title = "Request denied"
+    desc = "$FROMCOUNTRY$ denied our request for land. We'll have to take it back forcefully."
+    picture = "conquest_of_the_desert"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Bah! We didn't want it anyways."
+		prestige = -1
+    }
+}

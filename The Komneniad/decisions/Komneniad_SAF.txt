@@ -56,15 +56,12 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = SAF_northern_frontier
-			2085 = {
-				secede_province = SAF
-				life_rating = 15
-				change_province_name = "Stampriet"
-			}
-			2084 = { secede_province = SAF life_rating = 15 change_province_name = "Luderitzbaai" }
-			2086 = { secede_province = SAF life_rating = 15 change_province_name = "Keetmanshoop" }
-			2094 = { secede_province = SAF life_rating = 20 }
-			2095 = { secede_province = SAF life_rating = 20 }
+			random_owned = { limit = { 2085 = { empty = yes } } 2085 = { secede_province = THIS life_rating = 15 change_province_name = "Stampriet" } }
+			random_owned = { limit = { 2084 = { empty = yes } } 2084 = { secede_province = THIS life_rating = 15 change_province_name = "Luderitzbaai" } }
+			random_owned = { limit = { 2086 = { empty = yes } } 2086 = { secede_province = THIS life_rating = 15 change_province_name = "Keetmanshoop" } }
+			random_owned = { limit = { 2094 = { empty = yes } } 2094 = { secede_province = THIS life_rating = 20 } }
+			random_owned = { limit = { 2095 = { empty = yes } } 2095 = { secede_province = THIS life_rating = 20 } }
+			random_owned = { limit = { 2095 = { empty = no } } 2095 = { owner = { country_event = 167012 } } }
 		}
 		ai_will_do = { factor = 1 }
 	}
