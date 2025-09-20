@@ -1,4 +1,5 @@
 color = { 226 22 48 }
+democracy = { 0 128 128 }
 graphical_culture = MiddleEasternGC
 
 party = {
