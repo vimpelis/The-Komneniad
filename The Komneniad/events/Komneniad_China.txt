@@ -727,7 +727,7 @@ country_event = {
         name = "No more pride."
 		prestige = 50
 		CHI = { all_core = { add_core = THIS } }
-		IRY = { all_core = { remove_core = IRY }
+		IRY = { all_core = { remove_core = IRY } }
     }
 }
 
