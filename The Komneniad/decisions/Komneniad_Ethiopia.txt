@@ -201,6 +201,7 @@ political_decisions = {
 			tag = ETH
 			has_country_flag = ETH_expansion_unlocked
 			NOT = { has_country_flag = ETH_kill_jimmy }
+			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
 			war = no
@@ -231,13 +232,13 @@ political_decisions = {
 			tag = ETH
 			has_country_flag = ETH_kill_jimmy
 			NOT = { has_country_flag = ETH_invade_somalia }
+			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
 			war = no
-			NOT = {
-				SOM = {
-					brigades_compare = 0.51
-				}
+			OR = {
+				NOT = { SOM = { brigades_compare = 0.51 } }
+				year = 1840
 			}
 			all_core = { owned_by = THIS }
 			NOT = { truce_with = SOM }
@@ -250,7 +251,101 @@ political_decisions = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.8
+                badboy = 0.1
+            }	
+		}
+	}
+	
+	ETH_wild_oromos = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_invade_somalia
+			NOT = { has_country_flag = ETH_wild_oromos }
+			NOT = { has_global_flag = second_zemene_mesafint }
+		}
+		allow = {
+			war = no
+			OR = {
+				year = 1849
+				civilization_progress = 0.5
+				transport_improv = yes_transport_improv
+			}
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			random_owned = { limit = { 1864 = { empty = yes } } 1864 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 517 = { empty = yes } } 517 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2025 = { empty = yes } } 2025 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
+			set_country_flag = ETH_wild_oromos
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	ETH_integrate_afar = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_invade_somalia
+			NOT = { has_country_flag = ETH_integrate_afar }
+			NOT = { has_global_flag = second_zemene_mesafint }
+		}
+		allow = {
+			war = no
+			OR = {
+				land_reform = yes_land_reform
+				admin_reform = yes_admin_reform
+				year = 1850
+			}
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			add_accepted_culture = afar
+			AWS = { all_core = { add_core = ETH } }
+			any_country = {
+				limit = {
+					tag = AWS
+					vassal_of = ETH
+				}
+				annex_to = ETH
+			}
+			set_country_flag = ETH_integrate_afar
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	ETH_invade_nubia = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_invade_somalia
+			NOT = { has_country_flag = ETH_invade_nubia }
+			NOT = { has_global_flag = second_zemene_mesafint }
+		}
+		allow = {
+			war = no
+			civilization_progress = 0.5
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			tooltip_12 = {}
+			change_variable = { which = ETH_regency_influence value = 2 }
+			EGY_1827 = { add_core = ETH }
+			EGY_1834 = { add_core = ETH }
+			3395 = { add_core = ETH }
+			random_owned = { limit = { 3377 = { empty = yes } } 3377 = { secede_province = ETH } }
+			set_country_flag = ETH_invade_nubia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
             }	
 		}
 	}
@@ -259,16 +354,73 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ETH
-			check_variable = {
-				which = ETH_regency_influence
-				value = 0
-			}
+			has_country_flag = ETH_long_regency
 		}
 		allow = {
 			year = 1937
 		}
 		effect = {
 			ETH_show_inf_lvl = {}
+		}
+		ai_will_do = {
+			factor = 0	
+		}
+	}
+	
+	ETH_5y_decrease_infl = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_power_struggle
+		}
+		allow = {
+			NOT = { has_country_modifier = ETH_5y_cooldown }
+		}
+		effect = {
+			ETH_regency_lose_1 = {}
+			change_variable = { which = ETH_regency_influence value = -1 }
+			add_country_modifier = { name = ETH_5y_cooldown duration = 1825 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ETH_coup_regency = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_coup_available
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			country_event = 175020
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	form_ethiopia = {
+		picture = gtfo
+		potential = {
+			has_global_flag = second_zemene_mesafint
+			OR = {
+				tag = SHW
+				tag = TIG
+				tag = JIM
+			}
+		}
+		allow = {
+			NOT = { exists = ETH }
+			owns = 1852
+			war = no
+		}
+		effect = {
+			prestige = 5
+			change_tag = ETH
 		}
 		ai_will_do = {
 			factor = 0	
@@ -281,6 +433,7 @@ political_decisions = {
 			tag = JIM
 			NOT = { year = 1840 }
 			NOT = { has_country_flag = JIM_call_mcgill }
+			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
 			NOT = { year = 1840 }

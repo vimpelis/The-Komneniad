@@ -124,39 +124,6 @@ country_event = {
         name = "They shall simply remain under our influence."
     }
 }
-country_event = {
-    id = 20041215
-    title = "The Occupation of Outer Kaffa"
-    desc = "With Kaffa conquered, we can bring the remote region to its West under our control."
-    fire_only_once = yes
-    picture = "outer_kaffa"
-    mean_time_to_happen = { days = 15 }
-    trigger = {
-        tag = ETH
-		3591 = { owned_by = THIS is_core = THIS }
-		OR = {
-			AND = {
-				3595 = { empty = yes }
-				3596 = { empty = yes }
-				1847 = { empty = yes }
-				517 = { empty = yes }
-			}
-			AND = {
-				3595 = { owned_by = THIS }
-				3596 = { owned_by = THIS }
-				1847 = { owned_by = THIS }
-				517 = { owned_by = THIS }
-			}
-		}
-    }
-    option = {
-        name = "Huzzah!"
-		3595 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
-		3596 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
-		1847 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
-		517 = { secede_province = THIS add_core = THIS any_pop = { literacy = -0.99 } life_rating = 20 }
-    }
-}
 
 country_event = {
 	id = 123928

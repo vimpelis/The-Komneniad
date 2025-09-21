@@ -3790,6 +3790,7 @@ zemene_mesafint = {
     mobilisation_economy_impact = -0.3
     supply_consumption = -0.3
     war_exhaustion = -0.5
+	global_population_growth = -0.005
     icon = 5
 }
 
@@ -5280,4 +5281,8 @@ NUB_taxation = {
     global_pop_consciousness_modifier = 0.05
     global_pop_militancy_modifier = 0.05
     icon = 10
+}
+
+ETH_5y_cooldown = {
+    icon = 16
 }

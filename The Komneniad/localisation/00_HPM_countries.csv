@@ -3042,9 +3042,9 @@ SHW_communist;The Communist Faction;Faction communiste;Die kommunistische Frakti
 SHW_fascist;The Fascist Faction;Faction fasciste;Die faschistische Fraktion;;La facción fascista;;;;;;;;;
 SOM;Somalia;Somalia;Somalia;;Somalia;;;;;;;;;
 SOM_ADJ;Somali;Somali;Somalisch;;;;;;;;;;;
-SOM_absolute_monarchy;Geledi Sultanate;Somalia;Somalia;;Somalia;;;;;;;;;
+SOM_absolute_monarchy;The Geledi Sultanate;Somalia;Somalia;;Somalia;;;;;;;;;
 SOM_absolute_monarchy_ADJ;Geledi;Somali;Somalisch;;;;;;;;;;;
-SOM_prussian_constitutionalism;Geledi Sultanate;Somalia;Somalia;;Somalia;;;;;;;;;
+SOM_prussian_constitutionalism;The Geledi Sultanate;Somalia;Somalia;;Somalia;;;;;;;;;
 SOM_prussian_constitutionalism_ADJ;Geledi;Somali;Somalisch;;;;;;;;;;;
 SOM_proletarian_dictatorship;Somali Democratic Republic;;;;;;;;;;;;;
 SOM_liberal;Reformists;;;;;;;;;;;;;

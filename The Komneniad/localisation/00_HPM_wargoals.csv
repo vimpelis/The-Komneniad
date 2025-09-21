@@ -336,10 +336,6 @@ restore_austrian_empire;Acquire Austrian Core;Prendre territoire cl?Kernprovinz 
 restore_austrian_empire_desc;Acquire an enemy 即state劬 where Austria has 即traditionally ruled劬;Prendre un 即尒at劬 ennemi o?nous avons des 即provinces principales劬;Erobern Sie einen feindlichen 即Staat劬, in dem wir 即Kernprovinzen劬 haben.;;;;;;;;;;;
 restore_austrian_empire_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;
 restore_austrian_empire_setup;Acquire core $STATE$ from $RECIPIENT$;Prendre 尒at cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;
-zemene_mesafint;Zemene Mesafint;;;;;;;;;;;;;
-zemene_mesafint_desc;Acquire an enemy 即state劬 where Ethiopia has 即traditionally ruled劬;;;;;;;;;;;;;
-zemene_mesafint_short;Acquire $STATE$;;;;;;;;;;;;;
-zemene_mesafint_setup;Acquire core $STATE$ from $RECIPIENT$;;;;;;;;;;;;;
 guillotine_cb;Install Sister Republic;;;;;;;;;;;;;
 guillotine_cb_desc;Replace an enemy 即government劬 with a 即martletist republic劬;;;;;;;;;;;;;
 guillotine_cb_short;Topple government;;;;;;;;;;;;;

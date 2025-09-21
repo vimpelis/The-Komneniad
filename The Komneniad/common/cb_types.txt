@@ -65,6 +65,7 @@ dismantle_cb
 BYZ_crimean_war
 german_unification
 ethiopian_somalian_cb
+ogaden_war_cb
 ethiopian_somalian2_cb
 colonial_competition
 acquire_all_cores
@@ -9689,11 +9690,20 @@ ethiopian_somalian_cb = {
 			limit = { is_core = ETH }
 			secede_province = ETH
 		}
+		ETH_1853 = { remove_core = SOM }
+		ENG_1848 = { remove_core = SOM }
+		3594 = { remove_core = SOM }
+		1866 = { remove_core = SOM }
+		3499 = { remove_core = SOM }
 		any_country = {
 			limit = { tag = ETH has_country_flag = ETHSOM_oldborder }
 			ETH = { create_vassal = SOM }
+			SOM = { government = colonial_company }
 		}
-		end_war = AWS
+		any_country = {
+			limit = { tag = ETH has_country_flag = ETHSOM_fullannex }
+			SOM = { government = prov_gov_conservative }
+		}
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }
@@ -9704,7 +9714,7 @@ ethiopian_somalian2_cb = {
 
     badboy_factor = 0
     prestige_factor = 1
-    peace_cost_factor = 25
+    peace_cost_factor = 35
     penalty_factor = 0
     constructing_cb = no
     crisis = no
@@ -9721,7 +9731,7 @@ ethiopian_somalian2_cb = {
 	po_status_quo = yes
     po_reparations = yes
 
-    war_name = ETHIOPIAN_SOMALIAN2_WAR_NAME
+    war_name = ETHIOPIAN_SOMALIAN_WAR_NAME
 
     can_use = {
     }
@@ -9731,14 +9741,71 @@ ethiopian_somalian2_cb = {
 
     on_po_accepted = {
 		set_country_flag = lost_ethiopian_somalian
-		AWS = { all_core = { add_core = SOM } }
-		SOM = { inherit = AWS }
+		ETH_3590 = { remove_core = ETH }
+		SOM_1868 = { remove_core = ETH }
+		ENG_2024 = { remove_core = ETH }
+		ETH_1867 = { remove_core = ETH }
 		any_owned = {
 			limit = {
-				is_core = SOM
+				OR = {
+					is_core = SOM
+					region = ETH_1867
+				}
 			}
 			secede_province = SOM
 		}
+		any_country = {
+			limit = {
+				tag = AWS
+				vassal_of = ETH
+			}
+			annex_to = SOM
+		}
+		country_event = 175014
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
+    }
+}
+ogaden_war_cb = {
+    sprite_index = 22
+    is_triggered_only = yes
+    months = 12
+
+    badboy_factor = 0
+    prestige_factor = 1
+    peace_cost_factor = 40
+    penalty_factor = 0
+    constructing_cb = no
+    crisis = no
+
+    break_truce_prestige_factor = 0
+    break_truce_infamy_factor = 0
+    break_truce_militancy_factor = 0
+    truce_months = 60
+
+    good_relation_prestige_factor = 0
+    good_relation_infamy_factor = 0
+    good_relation_militancy_factor = 0
+
+	po_status_quo = yes
+
+    war_name = ETHIOPIAN_SOMALIAN_WAR_NAME
+
+    can_use = {
+    }
+
+    on_add = {
+    }
+
+    on_po_accepted = {
+		any_owned = {
+			limit = { is_core = ETH }
+			secede_province = ETH
+		}
+		ETH_1853 = { remove_core = SOM }
+		ENG_1848 = { remove_core = SOM }
+		3594 = { remove_core = SOM }
+		1866 = { remove_core = SOM }
+		3499 = { remove_core = SOM }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }

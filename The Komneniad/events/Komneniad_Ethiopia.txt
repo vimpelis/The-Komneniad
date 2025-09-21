@@ -33,6 +33,7 @@ country_event = {
 			which = ETH_provinces_ransacked
 			value = 0
 		}
+		set_country_flag = ETH_long_regency
     }
 }
 
@@ -129,17 +130,8 @@ country_event = {
 		clr_country_flag = ETH_search_in_progress
 		clr_country_flag = ETH_active_insurgency
 		any_pop = { militancy = 2 }
-		remove_country_modifier = prince_of_terror
-		remove_country_modifier = regency_modifier
-		economic_reform = no_monetary_reform
 		any_owned = { remove_province_modifier = ETH_insurgency }
-		1857 = { add_core = TIG }
-		1854 = { add_core = TIG }
-		TIG = { all_core = { secede_province = TIG } }
-		1859 = { add_core = JIM secede_province = JIM }
-		3491 = { add_core = JIM secede_province = JIM }
-		relation = { who = TIG value = -400 }
-		relation = { who = JIM value = -400 }
+		country_event = 175015
     }
 }
 
@@ -420,7 +412,7 @@ country_event = {
 		war = {
 			target = SOM
 			attacker_goal = {
-				casus_belli = ethiopian_somalian_cb
+				casus_belli = ogaden_war_cb
 			}
 			defender_goal = {
 				casus_belli = ethiopian_somalian2_cb
@@ -428,6 +420,7 @@ country_event = {
 			call_ally = yes
 		}
 		AWS = { country_event = { id = 175010 days = 1 } }
+		SOM = { country_event = 175013 }
 	}
 	
 	option = {
@@ -463,6 +456,7 @@ country_event = {
 			call_ally = yes
 		}
 		AWS = { country_event = { id = 175010 days = 1 } }
+		SOM = { country_event = 175013 }
     }
 	
 	option = {
@@ -500,6 +494,7 @@ country_event = {
 			call_ally = yes
 		}
 		AWS = { country_event = { id = 175010 days = 1 } }
+		SOM = { country_event = 175013 }
     }
 }
 
@@ -537,6 +532,7 @@ country_event = {
 	option = {
 		name = "yay"
 		end_war = AWS
+		create_vassal = AWS
 		create_alliance = AWS
 		military_access = AWS
 		AWS = { military_access = ETH }
@@ -544,7 +540,8 @@ country_event = {
 			who = AWS
 			value = 400
 		}
-		SOM = { war = { target = AWS attacker_goal = { casus_belli = conquest_any } defender_goal = { casus_belli = status_quo } call_ally = yes } }
+		AWS = { government = absolute_monarchy }
+		war = { attacker_goal = { casus_belli = call_allies_cb } call_ally = yes }
 	}
 }
 
@@ -559,5 +556,338 @@ country_event = {
 
 	option = {
 		name = "oi"
+	}
+}
+
+#War declared (SOM notf)
+country_event = {
+	id = 175013
+	title = "Ethiopia Declares War!"
+	desc = "175013DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Bastards!"
+		badboy = 10
+		ETH_1853 = { add_core = SOM }
+		ENG_1848 = { add_core = SOM }
+		3594 = { add_core = SOM }
+		1866 = { add_core = SOM }
+		3499 = { add_core = SOM }
+	}
+}
+
+#ETH Defeat
+country_event = {
+	id = 175014
+	title = "Crushed Ambition"
+	desc = "175014DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Dark times ahead."
+		tooltip_14 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				ETH = { country_event = { id = 175015 days = 14 } }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+}
+
+#ETH Civil war
+country_event = {
+	id = 175015
+	title = "Second Zemene Mesafint"
+	desc = "175015DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "That's it then."
+		tooltip_15 = {}
+		set_variable = {
+			which = ETH_regency_influence
+			value = 0
+		}
+		set_country_flag = ETH_regency_over
+		1859 = { add_core = SHW secede_province = SHW }
+		3491 = { add_core = SHW secede_province = SHW }
+		1853 = { add_core = SHW secede_province = SHW }
+		1863 = { add_core = JIM secede_province = JIM }
+		45 = { add_core = JIM secede_province = JIM }
+		random_owned = { limit = { province_id = 3596 } add_core = JIM secede_province = JIM }
+		3591 = { add_core = KAF secede_province = KAF }
+		1860 = { add_core = KAF secede_province = KAF }
+		ETH = { add_country_modifier = { name = zemene_mesafint duration = -1 } all_core = { add_core = SHW add_core = JIM } }
+		JIM = { add_country_modifier = { name = zemene_mesafint duration = -1 } all_core = { add_core = SHW add_core = ETH } }
+		SHW = { add_country_modifier = { name = zemene_mesafint duration = -1 } all_core = { add_core = JIM } }
+		war = {
+			target = SHW
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = conquest_any
+			}
+		}
+		JIM = {
+			war = {
+				target = SHW
+				attacker_goal = {
+					casus_belli = conquest_any
+				}
+				defender_goal = {
+					casus_belli = conquest_any
+				}
+			}
+			war = {
+				target = ETH
+				attacker_goal = {
+					casus_belli = conquest_any
+				}
+				defender_goal = {
+					casus_belli = conquest_any
+				}
+			}
+			military_reform = yes_foreign_training
+			military_reform = yes_military_constructions
+			military_reform = yes_foreign_weapons
+			military_reform = yes_foreign_artillery
+		}
+		TIG = { all_core = { secede_province = TIG } }
+		any_country = {
+			limit = {
+				tag = TIG
+				exists = yes
+			}
+			war = {
+				target = ETH
+				attacker_goal = {
+					casus_belli = conquest_any
+				}
+				defender_goal = {
+					casus_belli = conquest_any
+				}
+			}
+			add_country_modifier = { name = zemene_mesafint duration = -1 } all_core = { add_core = SHW add_core = JIM }
+			SHW = { all_core = { add_core = TIG } }
+			JIM = { all_core = { add_core = TIG } }
+			ETH = { all_core = { add_core = TIG } }
+		}
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = regency_modifier
+		economic_reform = no_monetary_reform
+		relation = { who = TIG value = -400 }
+		relation = { who = JIM value = -400 }
+		relation = { who = SHW value = -400 }
+		relation = { who = KAF value = -400 }
+		clr_country_flag = ETH_long_regency
+		clr_country_flag = ETH_power_struggle
+		set_global_flag = second_zemene_mesafint
+	}
+}
+
+#End of Second Zemene Mesafint
+country_event = {
+	id = 175016
+	title = "End of the Second Zemene Mesafint"
+	desc = "175016DESC"
+	picture = "eth_20"
+
+	trigger = {
+		has_global_flag = second_zemene_mesafint
+		tag = ETH
+		war = no
+		NOT = {
+			OR = {
+				exists = JIM
+				exists = SHW
+				exists = TIG
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+	option = {
+		name = "Finally!"
+		remove_country_modifier = zemene_mesafint
+		any_pop = { militancy = -2 }
+	}
+}
+
+#Marye dies - Power struggle activated
+country_event = {
+	id = 175017
+	title = "Death of Marye"
+	desc = "175017DESC"
+	picture = "eth_20"
+
+	trigger = {
+		has_country_flag = ETH_long_regency
+		tag = ETH
+		year = 1841
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	immediate = {
+		###VERY LARGE DECREASE FUNCTION
+		change_variable = { which = ETH_regency_influence value = -4 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###VERY LARGE DECREASE FUNCTION END
+	}
+
+	option = {
+		name = "text"
+		set_country_flag = ETH_power_struggle
+		any_pop = { militancy = -1 }
+		remove_country_modifier = prince_of_terror
+		add_country_modifier = { name = ETH_5y_cooldown duration = 1825 }
+	}
+}
+
+#Rest of Kaffa state conquest
+country_event = {
+	id = 175018
+	title = "Subjugation of the Shanqella"
+	desc = "175018DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		owns = 3596
+		owns = 517
+		OR = {
+			year = 1875
+			medicine = 1
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 180
+    }
+
+	option = {
+		name = "text"
+		random_owned = { limit = { 3595 = { empty = yes } } 3595 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
+		random_owned = { limit = { 1847 = { empty = yes } } 1847 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
+		random_owned = { limit = { 3377 = { empty = yes } } 3377 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+	}
+}
+
+#Military declares allegiance to Emperor
+country_event = {
+	id = 175019
+	title = "Military Declares Allegiance to the Emperor"
+	desc = "175019DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		has_country_flag = ETH_power_struggle
+		year = 1855
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	immediate = {
+		###SMALL DECREASE FUNCTION
+		change_variable = { which = ETH_regency_influence value = -1 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###SMALL DECREASE FUNCTION END
+	}
+
+	option = {
+		name = "text"
+		ETH_regency_lose_1 = {}
+		ETH_show_inf_lvl = {}
+		set_country_flag = ETH_coup_available
+	}
+}
+
+#Coup
+#TODO
+country_event = {
+	id = 175020
+	title = "Palace Coup!"
+	desc = "175020DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "text"
+		prestige = 10
+		tooltip_15 = {}
+		clr_country_flag = ETH_coup_available
+		clr_country_flag = ETH_power_struggle
+		set_variable = { which = ETH_regency_influence value = 0 }
+		remove_country_modifier = regency_modifier
+	}
+}
+
+#0 Influence - Regency falls
+#TODO
+country_event = {
+	id = 175021
+	title = "End of the Long Regency"
+	desc = "175021DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		has_country_flag = ETH_power_struggle
+		NOT = { check_variable = { which = ETH_regency_influence value = 1 } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+		name = "text"
+		prestige = 10
+		tooltip_15 = {}
+		clr_country_flag = ETH_coup_available
+		clr_country_flag = ETH_power_struggle
+		set_variable = { which = ETH_regency_influence value = 0 }
+		remove_country_modifier = regency_modifier
 	}
 }
