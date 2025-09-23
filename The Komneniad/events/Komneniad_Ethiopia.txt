@@ -10,7 +10,6 @@ country_event = {
     option = {
         name = "The men marched on in fear."
 		tooltip_10 = {}
-		ETH_show_inf_lvl = {}
 		TIG = {
 			all_core = {
 				add_province_modifier = {
@@ -72,15 +71,19 @@ country_event = {
 #Execution event
 country_event = {
     id = 175003
-    title = "Crippled little rata"
+    title = "None of his business"
     desc = "175003DESC"
-    picture = "eth_1"
+    picture = "eth_9"
 
     is_triggered_only = yes
-	
-	immediate = {
+
+    option = {
+        name = "He will never forget this day."
+		clr_country_flag = ETH_active_insurgency
+		set_country_flag = ETH_expansion_unlocked
 		###SMALL INCREASE FUNCTION
 		change_variable = { which = ETH_regency_influence value = 1 }
+		ETH_regency_gain_1 = {}
 		set_country_flag = hidden_tooltip
 		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
 			owner = {
@@ -89,14 +92,6 @@ country_event = {
 		}
 		clr_country_flag = hidden_tooltip
 		###SMALL INCREASE FUNCTION END
-	}
-
-    option = {
-        name = "what kind of man hides in tigray?"
-		clr_country_flag = ETH_active_insurgency
-		set_country_flag = ETH_expansion_unlocked
-		tooltip_11 = {}
-		ETH_show_inf_lvl = {}
 		prestige = 5
 		any_owned = { remove_core = TIG }
 		any_pop = {
@@ -109,7 +104,7 @@ country_event = {
 #Took too long to search, couped
 country_event = {
     id = 175004
-    title = "Couped"
+    title = "A valuable thing"
     desc = "175004DESC"
     picture = "eth_12"
 
@@ -125,7 +120,7 @@ country_event = {
     }
 
     option = {
-        name = "blah blah blah"
+        name = "The pendulum swings, unbothered."
 		set_country_flag = ETH_couped
 		clr_country_flag = ETH_search_in_progress
 		clr_country_flag = ETH_active_insurgency
@@ -138,9 +133,8 @@ country_event = {
 #Province exploited for money
 province_event = {
     id = 175005
-    title = "$PROVINCENAME$ Exploited"
+    title = "$PROVINCENAME$ exploited"
     desc = "175005DESC"
-    picture = "eth_19"
 
     is_triggered_only = yes
 
@@ -149,7 +143,7 @@ province_event = {
 	allow_multiple_instances = yes
 
     option = {
-        name = "blah blah blah"
+        name = "Great!"
 		owner = { add_tax_relative_income = 10 }
 		any_pop = { militancy = 3 consciousness = 3 }
 		owner = { change_variable = { which = ETH_provinces_ransacked value = 1 } }
@@ -159,7 +153,7 @@ province_event = {
 #Ransacked too much
 country_event = {
     id = 175006
-    title = "Too much trolling"
+    title = "Consequences of our actions"
     desc = "175006DESC"
     picture = "eth_3"
 
@@ -177,7 +171,7 @@ country_event = {
     }
 
     option = {
-        name = "cya in hague"
+        name = "They sure hit hard."
 		add_country_modifier = {
 			name = ETH_demographic_crisis
 			duration = 1825
@@ -188,7 +182,7 @@ country_event = {
 #Conquest of Kaffa
 country_event = {
     id = 175007
-    title = "Kaffa"
+    title = "In the land of enset"
     desc = "175007DESC"
     picture = "eth_20"
 
@@ -205,10 +199,12 @@ country_event = {
     mean_time_to_happen = {
         days = 1
     }
-	
-	immediate = {
+
+    option = {
+        name = "Coptic science at its finest!"
 		###SMALL INCREASE FUNCTION
 		change_variable = { which = ETH_regency_influence value = 1 }
+		ETH_regency_gain_1 = {}
 		set_country_flag = hidden_tooltip
 		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
 			owner = {
@@ -217,17 +213,11 @@ country_event = {
 		}
 		clr_country_flag = hidden_tooltip
 		###SMALL INCREASE FUNCTION END
-	}
-
-    option = {
-        name = "cool"
-		tooltip_11 = {}
-		ETH_show_inf_lvl = {}
 		add_accepted_culture = ethiopian_minor
-		1860 = { add_core = ETH secede_province = ETH }
-		3591 = { add_core = ETH secede_province = ETH }
-		3594 = { add_core = ETH secede_province = ETH }
-		3596 = { add_core = ETH secede_province = ETH }
+		1860 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
+		3591 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
+		3594 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
+		3596 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
 		
     }
 }
@@ -246,10 +236,6 @@ country_event = {
 		any_country = {
 			limit = {
 				ETH = {
-					check_variable = {
-						which = ETH_regency_influence
-						value = 0
-					}
 					NOT = {
 						check_variable = {
 							which = ETH_regency_influence
@@ -260,7 +246,7 @@ country_event = {
 			}
 			CLN = {
 				3189 = { secede_province = CLN }
-				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §BNonexistent§!!§b . . . . . . . . . . . . . . ." } }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §BNonexistent§!!§b" } }
 			}
 		}
 		any_country = {
@@ -280,7 +266,7 @@ country_event = {
 			}
 			CLN = {
 				3189 = { secede_province = CLN }
-				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GVery Low§!!§b . . . . . . . . . . . . . . ." } }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GVery Low§!!§b" } }
 			}
 		}
 		any_country = {
@@ -300,7 +286,7 @@ country_event = {
 			}
 			CLN = {
 				3189 = { secede_province = CLN }
-				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GLow§!!§b . . . . . . . . . . . . . . ." } }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GLow§!!§b" } }
 			}
 		}
 		any_country = {
@@ -320,7 +306,7 @@ country_event = {
 			}
 			CLN = {
 				3189 = { secede_province = CLN }
-				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §YMedium§!!§b . . . . . . . . . . . . . . ." } }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §YMedium§!!§b" } }
 			}
 		}
 		any_country = {
@@ -340,7 +326,7 @@ country_event = {
 			}
 			CLN = {
 				3189 = { secede_province = CLN }
-				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RHigh§!!§b . . . . . . . . . . . . . . . . . . . . . . . ." } }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RHigh§!!§b" } }
 			}
 		}
 		any_country = {
@@ -360,7 +346,7 @@ country_event = {
 			}
 			CLN = {
 				3189 = { secede_province = CLN }
-				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RVery High§!!§b . . . . . . . . . . . . . . ." } }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RVery High§!!§b" } }
 			}
 		}
 		any_country = {
@@ -374,7 +360,7 @@ country_event = {
 			}
 			CLN = {
 				3189 = { secede_province = CLN }
-				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RExtremely High§!!§b . . . . . . . . . . . . . . ." } }
+				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RExtremely High§!!§b" } }
 			}
 		}
     }
@@ -383,16 +369,16 @@ country_event = {
 #What do you want to take from Somalia
 country_event = {
 	id = 175009
-	title = "Somalia war"
+	title = "An Expedition to Somalia"
 	desc = "175009DESC"
 	picture = "eth_20"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "ogaden"
+		name = "Overextension killed the Empire. We only need Ogaden."
 		###SMALL INCREASE FUNCTION
-		tooltip_11 = {}
+		ETH_regency_gain_1 = {}
 		change_variable = { which = ETH_regency_influence value = 1 }
 		set_country_flag = hidden_tooltip
 		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
@@ -406,7 +392,7 @@ country_event = {
 		set_country_flag = ETHSOM_ogaden
 		ETH_3590 = { add_core = THIS }
 		3434 = { add_core = THIS }
-		1866 = { add_core = THIS secede_province = THIS }
+		1866 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } }
 		1867 = { add_core = THIS }
 		1873 = { add_core = THIS }
 		war = {
@@ -424,9 +410,9 @@ country_event = {
 	}
 	
 	option = {
-        name = "restore old border"
+        name = "The old status quo worked well."
 		###MEDIUM INCREASE FUNCTION
-		tooltip_12 = {}
+		ETH_regency_gain_2 = {}
 		change_variable = { which = ETH_regency_influence value = 2 }
 		set_country_flag = hidden_tooltip
 		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
@@ -440,7 +426,7 @@ country_event = {
 		set_country_flag = ETHSOM_oldborder
 		ETH_3590 = { add_core = THIS }
 		3434 = { add_core = THIS }
-		1866 = { add_core = THIS secede_province = THIS }
+		1866 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } }
 		1867 = { add_core = THIS }
 		1873 = { add_core = THIS }
 		1871 = { add_core = THIS }
@@ -460,9 +446,9 @@ country_event = {
     }
 	
 	option = {
-        name = "fully annex"
+        name = "Somalis can't be trusted. Annexation it is!"
 		###LARGE INCREASE FUNCTION
-		tooltip_13 = {}
+		ETH_regency_gain_3 = {}
 		change_variable = { which = ETH_regency_influence value = 3 }
 		set_country_flag = hidden_tooltip
 		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
@@ -477,7 +463,7 @@ country_event = {
 		ETH_3590 = { add_core = THIS }
 		3434 = { add_core = THIS }
 		SOM_1868 = { add_core = THIS }
-		1866 = { add_core = THIS secede_province = THIS }
+		1866 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } }
 		2031 = { add_core = THIS }
 		1870 = { add_core = THIS }
 		2045 = { add_core = THIS }
@@ -501,14 +487,14 @@ country_event = {
 #Aussa switches sides (AWS event)
 country_event = {
 	id = 175010
-	title = "Aussa switches sides"
+	title = "Our true allegiance"
 	desc = "175010DESC"
 	picture = "eth_20"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "heehee"
+		name = "Great!"
 		SOM = { release_vassal = AWS }
 		leave_alliance = SOM
 		relation = {
@@ -523,14 +509,14 @@ country_event = {
 #Aussa switches sides (ETH event)
 country_event = {
 	id = 175011
-	title = "Aussa switches sides"
+	title = "The Afar join the fight"
 	desc = "175011DESC"
 	picture = "eth_20"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "yay"
+		name = "We will never forget their service."
 		end_war = AWS
 		create_vassal = AWS
 		create_alliance = AWS
@@ -548,14 +534,15 @@ country_event = {
 #Aussa switches sides (SOM event)
 country_event = {
 	id = 175012
-	title = "Aussa switches sides"
+	title = "The Afar betray us!"
 	desc = "175012DESC"
 	picture = "eth_20"
 
 	is_triggered_only = yes
 
 	option = {
-		name = "oi"
+		name = "Fools!"
+		prestige = -1
 	}
 }
 
@@ -569,7 +556,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Bastards!"
+		name = "War is upon us!"
 		badboy = 10
 		ETH_1853 = { add_core = SOM }
 		ENG_1848 = { add_core = SOM }
@@ -722,13 +709,13 @@ country_event = {
     }
 
 	option = {
-		name = "Finally!"
+		name = "Perhaps. But I wouldn't try."
 		remove_country_modifier = zemene_mesafint
 		any_pop = { militancy = -2 }
 	}
 }
 
-#Marye dies - Power struggle activated
+#Marye dies
 country_event = {
 	id = 175017
 	title = "Death of Marye"
@@ -746,10 +733,12 @@ country_event = {
     mean_time_to_happen = {
         days = 90
     }
-	
-	immediate = {
+
+	option = {
+		name = "The Emperor remained silent."
 		###VERY LARGE DECREASE FUNCTION
 		change_variable = { which = ETH_regency_influence value = -4 }
+		ETH_regency_lose_4 = {}
 		set_country_flag = hidden_tooltip
 		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
 			owner = {
@@ -758,14 +747,9 @@ country_event = {
 		}
 		clr_country_flag = hidden_tooltip
 		###VERY LARGE DECREASE FUNCTION END
-	}
-
-	option = {
-		name = "text"
-		set_country_flag = ETH_power_struggle
 		any_pop = { militancy = -1 }
 		remove_country_modifier = prince_of_terror
-		add_country_modifier = { name = ETH_5y_cooldown duration = 1825 }
+		country_event = { id = 175028 days = 3 }
 	}
 }
 
@@ -818,10 +802,12 @@ country_event = {
     mean_time_to_happen = {
         days = 90
     }
-	
-	immediate = {
+
+	option = {
+		name = "text"
 		###SMALL DECREASE FUNCTION
 		change_variable = { which = ETH_regency_influence value = -1 }
+		ETH_regency_lose_1 = {}
 		set_country_flag = hidden_tooltip
 		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
 			owner = {
@@ -830,12 +816,6 @@ country_event = {
 		}
 		clr_country_flag = hidden_tooltip
 		###SMALL DECREASE FUNCTION END
-	}
-
-	option = {
-		name = "text"
-		ETH_regency_lose_1 = {}
-		ETH_show_inf_lvl = {}
 		set_country_flag = ETH_coup_available
 	}
 }
@@ -854,10 +834,41 @@ country_event = {
 		name = "text"
 		prestige = 10
 		tooltip_15 = {}
-		clr_country_flag = ETH_coup_available
-		clr_country_flag = ETH_power_struggle
 		set_variable = { which = ETH_regency_influence value = 0 }
 		remove_country_modifier = regency_modifier
+		clr_country_flag = ETH_coup_available
+		clr_country_flag = ETH_power_struggle
+		clr_country_flag = ETH_long_regency
+		random_owned = { limit = { owner = { has_country_flag = ETH_verylow_infl } }
+			owner = {
+				prestige = -1
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = ETH_low_infl } }
+			owner = {
+				prestige = -2
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = ETH_medium_infl } }
+			owner = {
+				prestige = -3
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = ETH_high_infl } }
+			owner = {
+				prestige = -4
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = ETH_veryhigh_infl } }
+			owner = {
+				prestige = -5
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = ETH_extreme_infl } }
+			owner = {
+				prestige = -6
+			}
+		}
 	}
 }
 
@@ -887,7 +898,312 @@ country_event = {
 		tooltip_15 = {}
 		clr_country_flag = ETH_coup_available
 		clr_country_flag = ETH_power_struggle
+		clr_country_flag = ETH_long_regency
 		set_variable = { which = ETH_regency_influence value = 0 }
 		remove_country_modifier = regency_modifier
+	}
+}
+
+#Trolling prevention - Nubia
+country_event = {
+	id = 175022
+	title = "Conquest of Nubia"
+	desc = "175022DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		OR = {
+			owns = 1835
+			owns = 1827
+		}
+		NOT = { has_country_flag = ETH_invade_nubia }
+		has_country_flag = ETH_long_regency
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+		name = "text"
+			###MEDIUM INCREASE FUNCTION
+			ETH_regency_gain_2 = {}
+			change_variable = { which = ETH_regency_influence value = 2 }
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					CLN = { country_event = 175008 }
+				}
+			}
+			clr_country_flag = hidden_tooltip
+			###MEDIUM INCREASE FUNCTION END
+			badboy = 10
+			EGY_1827 = { add_core = ETH }
+			EGY_1834 = { add_core = ETH }
+			3395 = { add_core = ETH }
+			random_owned = { limit = { 3377 = { empty = yes } } 3377 = { secede_province = ETH } }
+			set_country_flag = ETH_invade_nubia
+	}
+}
+
+#Trolling prevention - Ogaden
+country_event = {
+	id = 175023
+	title = "Conquest of Ogaden"
+	desc = "175023DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		owns = 3590
+		NOT = { owns = 1868 }
+		NOT = { has_country_flag = ETH_invade_somalia }
+		has_country_flag = ETH_long_regency
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+		name = "text"
+		###SMALL INCREASE FUNCTION
+		ETH_regency_gain_1 = {}
+		change_variable = { which = ETH_regency_influence value = 1 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###SMALL INCREASE FUNCTION END
+		badboy = 5
+		set_country_flag = ETHSOM_ogaden
+		ETH_3590 = { add_core = THIS }
+		3434 = { add_core = THIS }
+		1866 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } }
+		1867 = { add_core = THIS }
+		1873 = { add_core = THIS }
+		set_country_flag = ETH_invade_somalia
+	}
+}
+
+#Trolling prevention - Somalia Part
+country_event = {
+	id = 175024
+	title = "Conquest of Somalia"
+	desc = "175024DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		owns = 1868
+		NOT = { owns = 1870 }
+		OR = {
+			NOT = { has_country_flag = ETH_invade_somalia }
+			has_country_flag = ETHSOM_ogaden
+		}
+		has_country_flag = ETH_long_regency
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+		name = "text"
+		###MEDIUM INCREASE FUNCTION
+		ETH_regency_gain_2 = {}
+		change_variable = { which = ETH_regency_influence value = 2 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###MEDIUM INCREASE FUNCTION END
+		badboy = 7.5
+		set_country_flag = ETHSOM_oldborder
+		ETH_3590 = { add_core = THIS }
+		3434 = { add_core = THIS }
+		1866 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } }
+		1867 = { add_core = THIS }
+		1873 = { add_core = THIS }
+		1871 = { add_core = THIS }
+		1872 = { add_core = THIS }
+		set_country_flag = ETH_invade_somalia
+	}
+}
+
+#Trolling prevention - Somalia Full
+country_event = {
+	id = 175025
+	title = "Conquest of Somalia"
+	desc = "175025DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		owns = 1870
+		OR = {
+			NOT = { has_country_flag = ETH_invade_somalia }
+			has_country_flag = ETHSOM_ogaden
+			has_country_flag = ETHSOM_oldborder
+		}
+		has_country_flag = ETH_long_regency
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+		name = "text"
+		###LARGE INCREASE FUNCTION
+		ETH_regency_gain_3 = {}
+		change_variable = { which = ETH_regency_influence value = 3 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###LARGE INCREASE FUNCTION END
+		badboy = 10
+		set_country_flag = ETHSOM_fullannex
+		ETH_3590 = { add_core = THIS }
+		3434 = { add_core = THIS }
+		SOM_1868 = { add_core = THIS }
+		1866 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } }
+		2031 = { add_core = THIS }
+		1870 = { add_core = THIS }
+		2045 = { add_core = THIS }
+		2030 = { add_core = THIS }
+		2032 = { add_core = THIS }
+		set_country_flag = ETH_invade_somalia
+	}
+}
+
+#Trolling prevention - Kordofan
+country_event = {
+	id = 175026
+	title = "Conquest of Kordofan"
+	desc = "175026DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		owns = 1828
+		NOT = { has_country_flag = ETH_invade_kordofan }
+		has_country_flag = ETH_long_regency
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+		name = "text"
+			###SMALL INCREASE FUNCTION
+			ETH_regency_gain_1 = {}
+			change_variable = { which = ETH_regency_influence value = 1 }
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					CLN = { country_event = 175008 }
+				}
+			}
+			clr_country_flag = hidden_tooltip
+			###SMALL INCREASE FUNCTION END
+			badboy = 5
+			EGY_1839 = { add_core = ETH }
+			set_country_flag = ETH_invade_kordofan
+	}
+}
+
+#Trolling prevention - Egypt
+country_event = {
+	id = 175027
+	title = "Conquest of Egypt"
+	desc = "175027DESC"
+	picture = "eth_20"
+
+	trigger = {
+		tag = ETH
+		OR = {
+			owns = 1745
+			owns = 1751
+			AND = {
+				owns = 1769
+				owns = 1763
+				OR = {
+					owns = 1755
+					owns = 1759
+				}
+			}
+		}
+		NOT = { has_country_flag = ETH_invade_egypt }
+		has_country_flag = ETH_long_regency
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+		name = "text"
+			###VERY LARGE INCREASE FUNCTION
+			ETH_regency_gain_4 = {}
+			change_variable = { which = ETH_regency_influence value = 4 }
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					CLN = { country_event = 175008 }
+				}
+			}
+			clr_country_flag = hidden_tooltip
+			###VERY LARGE INCREASE FUNCTION END
+			badboy = 20
+			EGY_1745 = { add_core = ETH }
+			EGY_1751 = { add_core = ETH }
+			EGY_1755 = { add_core = ETH }
+			EGY_1758 = { add_core = ETH }
+			EGY_1762 = { add_core = ETH }
+			EGY_1771 = { add_core = ETH }
+			set_country_flag = ETH_invade_egypt
+	}
+}
+
+#Marye dies - Power struggle activated
+country_event = {
+	id = 175028
+	title = "A house divided"
+	desc = "175028DESC"
+	picture = "eth_20"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The battle is on."
+		tooltip_16 = {}
+		set_country_flag = ETH_power_struggle
+		any_pop = { consciousness = 1 }
+		add_country_modifier = { name = ETH_5y_cooldown duration = 1825 }
 	}
 }

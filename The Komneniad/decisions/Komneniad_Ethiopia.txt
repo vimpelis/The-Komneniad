@@ -233,6 +233,7 @@ political_decisions = {
 			has_country_flag = ETH_kill_jimmy
 			NOT = { has_country_flag = ETH_invade_somalia }
 			NOT = { has_global_flag = second_zemene_mesafint }
+			NOT = { has_country_flag = westernized_ethiopia }
 		}
 		allow = {
 			war = no
@@ -325,6 +326,7 @@ political_decisions = {
 			has_country_flag = ETH_invade_somalia
 			NOT = { has_country_flag = ETH_invade_nubia }
 			NOT = { has_global_flag = second_zemene_mesafint }
+			NOT = { has_country_flag = westernized_ethiopia }
 		}
 		allow = {
 			war = no
@@ -332,9 +334,18 @@ political_decisions = {
 			all_core = { owned_by = THIS }
 		}
 		effect = {
-			badboy = 10
-			tooltip_12 = {}
+			###MEDIUM INCREASE FUNCTION
+			ETH_regency_gain_2 = {}
 			change_variable = { which = ETH_regency_influence value = 2 }
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					CLN = { country_event = 175008 }
+				}
+			}
+			clr_country_flag = hidden_tooltip
+			###MEDIUM INCREASE FUNCTION END
+			badboy = 10
 			EGY_1827 = { add_core = ETH }
 			EGY_1834 = { add_core = ETH }
 			3395 = { add_core = ETH }
@@ -346,6 +357,96 @@ political_decisions = {
 			modifier = {
                 factor = 0
                 badboy = 0.6
+            }	
+		}
+	}
+	
+	ETH_invade_kordofan = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_invade_nubia
+			NOT = { has_country_flag = ETH_invade_kordofan }
+			NOT = { has_global_flag = second_zemene_mesafint }
+			NOT = { has_country_flag = westernized_ethiopia }
+		}
+		allow = {
+			war = no
+			OR = {
+				year = 1860
+				transport_improv = yes_transport_improv
+			}
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			###SMALL INCREASE FUNCTION
+			ETH_regency_gain_1 = {}
+			change_variable = { which = ETH_regency_influence value = 1 }
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					CLN = { country_event = 175008 }
+				}
+			}
+			clr_country_flag = hidden_tooltip
+			###SMALL INCREASE FUNCTION END
+			badboy = 7.5
+			EGY_1839 = { add_core = ETH }
+			set_country_flag = ETH_invade_kordofan
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }	
+		}
+	}
+	
+	ETH_invade_egypt = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			has_country_flag = ETH_invade_nubia
+			NOT = { has_country_flag = ETH_invade_egypt }
+			NOT = { has_global_flag = second_zemene_mesafint }
+			NOT = { has_country_flag = westernized_ethiopia }
+		}
+		allow = {
+			war = no
+			OR = {
+				year = 1870
+				firearms_production = yes_firearms_production
+			}
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			###VERY LARGE INCREASE FUNCTION
+			ETH_regency_gain_4 = {}
+			change_variable = { which = ETH_regency_influence value = 4 }
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					CLN = { country_event = 175008 }
+				}
+			}
+			clr_country_flag = hidden_tooltip
+			###VERY LARGE INCREASE FUNCTION END
+			badboy = 20
+			EGY_1745 = { add_core = ETH }
+			EGY_1751 = { add_core = ETH }
+			EGY_1755 = { add_core = ETH }
+			EGY_1758 = { add_core = ETH }
+			EGY_1762 = { add_core = ETH }
+			EGY_1771 = { add_core = ETH }
+			TRI_1735 = { add_core = ETH }
+			set_country_flag = ETH_invade_egypt
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
             }	
 		}
 	}
@@ -377,9 +478,19 @@ political_decisions = {
 			NOT = { has_country_modifier = ETH_5y_cooldown }
 		}
 		effect = {
-			ETH_regency_lose_1 = {}
+			###SMALL DECREASE FUNCTION
 			change_variable = { which = ETH_regency_influence value = -1 }
+			ETH_regency_lose_1 = {}
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					CLN = { country_event = 175008 }
+				}
+			}
+			clr_country_flag = hidden_tooltip
+			###SMALL DECREASE FUNCTION END
 			add_country_modifier = { name = ETH_5y_cooldown duration = 1825 }
+			any_pop = { consciousness = 0.5 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -396,6 +507,102 @@ political_decisions = {
 			war = no
 		}
 		effect = {
+			random_owned = {
+				limit = {
+					ETH = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 1
+						}
+						NOT = {
+							check_variable = {
+								which = ETH_regency_influence
+								value = 3
+							}
+						}
+					}
+				}
+				owner = { set_country_flag = ETH_verylow_infl }
+			}
+			random_owned = {
+				limit = {
+					ETH = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 3
+						}
+						NOT = {
+							check_variable = {
+								which = ETH_regency_influence
+								value = 5
+							}
+						}
+					}
+				}
+				owner = { set_country_flag = ETH_low_infl }
+			}
+			random_owned = {
+				limit = {
+					ETH = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 5
+						}
+						NOT = {
+							check_variable = {
+								which = ETH_regency_influence
+								value = 7
+							}
+						}
+					}
+				}
+				owner = { set_country_flag = ETH_medium_infl }
+			}
+			random_owned = {
+				limit = {
+					ETH = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 7
+						}
+						NOT = {
+							check_variable = {
+								which = ETH_regency_influence
+								value = 9
+							}
+						}
+					}
+				}
+				owner = { set_country_flag = ETH_high_infl }
+			}
+			random_owned = {
+				limit = {
+					ETH = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = ETH_regency_influence
+								value = 11
+							}
+						}
+					}
+				}
+				owner = { set_country_flag = ETH_veryhigh_infl }
+			}
+			random_owned = {
+				limit = {
+					ETH = {
+						check_variable = {
+							which = ETH_regency_influence
+							value = 11
+						}
+					}
+				}
+				owner = { set_country_flag = ETH_extreme_infl }
+			}
 			country_event = 175020
 		}
 		ai_will_do = {
