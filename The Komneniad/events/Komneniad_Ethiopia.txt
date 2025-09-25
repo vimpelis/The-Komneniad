@@ -817,6 +817,7 @@ country_event = {
 		clr_country_flag = hidden_tooltip
 		###SMALL DECREASE FUNCTION END
 		set_country_flag = ETH_coup_available
+		any_pop = { consciousness = 0.5 }
 	}
 }
 
@@ -1238,7 +1239,7 @@ country_event = {
 	}
 }
 
-#Random power srtuggle event 1
+#Random power struggle event 1
 country_event = {
 	id = 175029
 	title = "The cost of modernity"
