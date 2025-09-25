@@ -610,6 +610,35 @@ political_decisions = {
 		}
 	}
 	
+	ETH_past_mistakes = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			year = 1880
+			OR = {
+				has_country_modifier = ETH_medium_modf
+				has_country_modifier = ETH_high_modf
+				has_country_modifier = ETH_veryhigh_modf
+				has_country_modifier = ETH_exthigh_modf
+			}
+		}
+		allow = {
+			war = no
+			civilized = yes
+			treasury = 20000
+		}
+		effect = {
+			money = -20000
+			remove_country_modifier = ETH_medium_modf
+			remove_country_modifier = ETH_high_modf
+			remove_country_modifier = ETH_veryhigh_modf
+			remove_country_modifier = ETH_exthigh_modf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	form_ethiopia = {
 		picture = gtfo
 		potential = {

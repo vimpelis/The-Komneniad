@@ -5286,3 +5286,49 @@ NUB_taxation = {
 ETH_5y_cooldown = {
     icon = 16
 }
+
+ETH_verylow_modf = {
+	education_efficiency_modifier = 0.15
+	land_organisation = 0.1
+	global_pop_militancy_modifier = -0.01
+	research_points_modifier = 0.2
+    icon = 5
+}
+ETH_low_modf = {
+	education_efficiency_modifier = 0.1
+	land_organisation = 0.05
+	research_points_modifier = 0.1
+    icon = 5
+}
+ETH_medium_modf = {
+	education_efficiency_modifier = 0.05
+	global_pop_militancy_modifier = 0.01
+    icon = 6
+}
+ETH_high_modf = {
+	education_efficiency_modifier = -0.1
+	research_points_modifier = -0.1
+	land_organisation = -0.05
+	tax_efficiency = -0.05
+	global_pop_militancy_modifier = 0.02
+	war_exhaustion = 0.1
+    icon = 6
+}
+ETH_veryhigh_modf = {
+	education_efficiency_modifier = -0.15
+	research_points_modifier = -0.15
+	land_organisation = -0.1
+	tax_efficiency = -0.1
+	global_pop_militancy_modifier = 0.03
+	war_exhaustion = 0.1
+    icon = 6
+}
+ETH_exthigh_modf = {
+	education_efficiency_modifier = -0.25
+	research_points_modifier = -0.25
+	land_organisation = -0.2
+	tax_efficiency = -0.25
+	global_pop_militancy_modifier = 0.05
+	war_exhaustion = 0.25
+    icon = 6
+}
