@@ -579,12 +579,12 @@ ETH_demographic_crisis_desc;Our country is undergoing rapid demographic collapse
 NORMAL_WAR_RESTORE_ORDER_NAME_ETH_JIM;Ethiopian Conquest of Jimma;;;;;;;;;;;;;
 AGRESSION_WAR_RESTORE_ORDER_NAME_ETH_JIM;Ethiopian Conquest of Jimma;;;;;;;;;;;;;
 tooltip_16;§GThe power struggle enters its final phase, as we are now able to openly work against the Regency!§!\n;;;;;;;;;;;;;;
-ETH_infl_verylow_effect;Due to §GVery Low§! influence, the following will happen:;;;;;;;;;;;;;;
-ETH_infl_low_effect;Due to §GLow§! influence, the following will happen;;;;;;;;;;;;;;
-ETH_infl_medium_effect;Due to §YMedium§! influence, the following will happen;;;;;;;;;;;;;;
-ETH_infl_high_effect;Due to §RHigh§! influence, the following will happen;;;;;;;;;;;;;;
-ETH_infl_veryhigh_effect;Due to §RVery High§! influence, the following will happen;;;;;;;;;;;;;;
-ETH_infl_exthigh_effect;Due to §RExtremely High§! influence, the following will happen;;;;;;;;;;;;;;
+ETH_infl_verylow_effect;Because of §GVery Low§! influence, the following will happen:;;;;;;;;;;;;;;
+ETH_infl_low_effect;Because of §GLow§! influence, the following will happen;;;;;;;;;;;;;;
+ETH_infl_medium_effect;Because of §YMedium§! influence, the following will happen;;;;;;;;;;;;;;
+ETH_infl_high_effect;Because of §RHigh§! influence, the following will happen;;;;;;;;;;;;;;
+ETH_infl_veryhigh_effect;Because of §RVery High§! influence, the following will happen;;;;;;;;;;;;;;
+ETH_infl_exthigh_effect;Because of §RExtremely High§! influence, the following will happen;;;;;;;;;;;;;;
 ETH_verylow_modf;National Rejuvenation;;;;;;;;;;;;;;
 ETH_verylow_modf_desc;Defeat of the usurpers brought new hope to the people of Ethiopia, while the reforms made have had a wondrous effect on our country.;;;;;;;;;;;;;;
 ETH_low_modf;National Rejuvenation;;;;;;;;;;;;;;

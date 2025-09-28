@@ -6,6 +6,7 @@ country_event = {
 
     trigger = {
 		tag = UBD
+		NOT = { owns = 354 }
         331 = { is_capital = yes }
 		NOT = { num_of_cities = 2 }
     }
