@@ -2932,3 +2932,22 @@ country_event = {
 			}
 	}
 }
+
+country_event = {
+    id = 169012
+    title = "Get westernized"
+    desc = "wow"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Ok"
+		research_points = 25000
+		economic_reform = yes_industrial_construction
+		economic_reform = yes_pre_indust
+		economic_reform = yes_firearms_production
+		economic_reform = yes_research_reform
+		economic_reform = monetary_reform_two
+    }
+}

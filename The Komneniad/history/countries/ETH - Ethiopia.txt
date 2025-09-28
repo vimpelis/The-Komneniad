@@ -8,6 +8,7 @@ plurality = 5.0
 nationalvalue = nv_tradition
 literacy = 0.07
 is_releasable_vassal = no
+prestige = 5
 
 slavery = yes_slavery
 upper_house_composition = appointed

@@ -230,10 +230,10 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ETH
+			civilized = no
 			has_country_flag = ETH_kill_jimmy
 			NOT = { has_country_flag = ETH_invade_somalia }
 			NOT = { has_global_flag = second_zemene_mesafint }
-			NOT = { has_country_flag = westernized_ethiopia }
 		}
 		allow = {
 			war = no
@@ -323,10 +323,10 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ETH
+			civilized = no
 			has_country_flag = ETH_invade_somalia
 			NOT = { has_country_flag = ETH_invade_nubia }
 			NOT = { has_global_flag = second_zemene_mesafint }
-			NOT = { has_country_flag = westernized_ethiopia }
 		}
 		allow = {
 			war = no
@@ -346,6 +346,7 @@ political_decisions = {
 			clr_country_flag = hidden_tooltip
 			###MEDIUM INCREASE FUNCTION END
 			badboy = 10
+			add_accepted_culture = sudanese
 			EGY_1827 = { add_core = ETH }
 			EGY_1834 = { add_core = ETH }
 			3395 = { add_core = ETH }
@@ -365,10 +366,10 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ETH
+			civilized = no
 			has_country_flag = ETH_invade_nubia
 			NOT = { has_country_flag = ETH_invade_kordofan }
 			NOT = { has_global_flag = second_zemene_mesafint }
-			NOT = { has_country_flag = westernized_ethiopia }
 		}
 		allow = {
 			war = no
@@ -391,6 +392,7 @@ political_decisions = {
 			clr_country_flag = hidden_tooltip
 			###SMALL INCREASE FUNCTION END
 			badboy = 7.5
+			add_accepted_culture = nuba
 			EGY_1839 = { add_core = ETH }
 			set_country_flag = ETH_invade_kordofan
 		}
@@ -407,10 +409,10 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ETH
+			civilized = no
 			has_country_flag = ETH_invade_nubia
 			NOT = { has_country_flag = ETH_invade_egypt }
 			NOT = { has_global_flag = second_zemene_mesafint }
-			NOT = { has_country_flag = westernized_ethiopia }
 		}
 		allow = {
 			war = no
@@ -433,6 +435,7 @@ political_decisions = {
 			clr_country_flag = hidden_tooltip
 			###VERY LARGE INCREASE FUNCTION END
 			badboy = 20
+			add_accepted_culture = copt
 			EGY_1745 = { add_core = ETH }
 			EGY_1751 = { add_core = ETH }
 			EGY_1755 = { add_core = ETH }
@@ -636,6 +639,296 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	ETH_invade_somalia_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			NOT = { has_country_flag = ETHSOM_fullannex }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = {
+				OR = {
+					owned_by = THIS
+					empty = yes
+					owner = {
+						capital_scope = {
+							NOT = {
+								continent = east_africa
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			badboy = 10
+			random_owned = {
+				limit = {
+					SOM = {
+						exists = yes
+						vassal_of = ETH
+					}
+				}
+				owner = { badboy = -5 }
+			}
+			add_accepted_culture = somali
+			ETH_1867 = { add_core = ETH }
+			ENG_2024 = { add_core = ETH }
+			SOM_1868 = { add_core = ETH }
+			ETH_3590 = { add_core = ETH }
+			ENG_1848 = { add_core = ETH }
+			any_country = {
+				limit = {
+					tag = SOM
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+			set_country_flag = ETHSOM_fullannex
+			set_country_flag = ETH_invade_somalia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }	
+		}
+	}
+	
+	ETH_invade_kenya_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			has_country_flag = ETHSOM_fullannex
+			NOT = { 2024 = { is_core = ETH } }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = {
+				OR = {
+					owned_by = THIS
+					empty = yes
+					owner = {
+						capital_scope = {
+							NOT = {
+								continent = east_africa
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			badboy = 5
+			add_accepted_culture = somali
+			ENG_2024 = { add_core = ETH }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }	
+		}
+	}
+	
+	ETH_invade_equatoria_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			has_country_flag = ETH_invade_nubia
+			NOT = { has_country_flag = ETH_invade_equatoria }
+		}
+		allow = {
+			war = no
+			year = 1880
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 7.5
+			add_accepted_culture = nilotic
+			TAQ = { all_core = { add_core = ETH } }
+			ENG_1844 = { add_core = ETH }
+			set_country_flag = ETH_invade_equatoria
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }	
+		}
+	}
+	
+	ETH_invade_nubia_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			has_country_flag = ETH_invade_somalia
+			NOT = { has_country_flag = ETH_invade_nubia }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = sudanese
+			EGY_1827 = { add_core = ETH }
+			EGY_1834 = { add_core = ETH }
+			3395 = { add_core = ETH }
+			random_owned = { limit = { 3377 = { empty = yes } } 3377 = { secede_province = ETH } }
+			set_country_flag = ETH_invade_nubia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }	
+		}
+	}
+	
+	ETH_invade_kordofan_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			has_country_flag = ETH_invade_nubia
+			NOT = { has_country_flag = ETH_invade_kordofan }
+		}
+		allow = {
+			war = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 10
+			add_accepted_culture = nuba
+			EGY_1839 = { add_core = ETH }
+			set_country_flag = ETH_invade_kordofan
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }	
+		}
+	}
+	
+	ETH_invade_egypt_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			has_country_flag = ETH_invade_nubia
+			NOT = { has_country_flag = ETH_invade_egypt }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 22.5
+			add_accepted_culture = copt
+			EGY_1745 = { add_core = ETH }
+			EGY_1751 = { add_core = ETH }
+			EGY_1755 = { add_core = ETH }
+			EGY_1758 = { add_core = ETH }
+			EGY_1762 = { add_core = ETH }
+			EGY_1771 = { add_core = ETH }
+			TRI_1735 = { add_core = ETH }
+			set_country_flag = ETH_invade_egypt
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.1
+            }	
+		}
+	}
+	
+	ETH_invade_syria_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			has_country_flag = ETH_invade_egypt
+			NOT = { has_country_flag = ETH_invade_syria }
+		}
+		allow = {
+			war = no
+			year = 1905
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 20
+			add_accepted_culture = syriac
+			add_accepted_culture = assyrian
+			EGY_921 = { add_core = ETH }
+			EGY_915 = { add_core = ETH }
+			EGY_903 = { add_core = ETH }
+			EGY_897 = { add_core = ETH }
+			TUR_3300 = { add_core = ETH }
+			TUR_893 = { add_core = ETH }
+			TUR_923 = { add_core = ETH }
+			900 = { add_core = ETH }
+			894 = { add_core = ETH }
+			898 = { add_core = ETH }
+			set_country_flag = ETH_invade_syria
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }	
+		}
+	}
+	
+	ETH_invade_armenia_civilized = {
+		picture = gtfo
+		potential = {
+			tag = ETH
+			civilized = yes
+			has_country_flag = ETH_invade_syria
+			NOT = { has_country_flag = ETH_invade_armenia }
+		}
+		allow = {
+			war = no
+			mass_politics = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = armenian
+			BYZ_894 = { add_core = ETH }
+			BYZ_879 = { add_core = ETH }
+			TUR_890 = { add_core = ETH }
+			RUS_1098 = { add_core = ETH }
+			AZB_1105 = { add_core = ETH }
+			set_country_flag = ETH_invade_armenia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }	
 		}
 	}
 	

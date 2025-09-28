@@ -1254,7 +1254,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = {
-        days = 720
+        days = 500
     }
 
 	option = {
@@ -1276,5 +1276,104 @@ country_event = {
 		clr_country_flag = hidden_tooltip
 		###SMALL INCREASE FUNCTION END
 		any_pop = { consciousness = 0.5 }
+	}
+}
+
+#Random power struggle event 2
+country_event = {
+	id = 175030
+	title = "Blessed are the meek"
+	desc = "175030DESC"
+	picture = "eth_8"
+
+	trigger = {
+		tag = ETH
+		has_country_flag = ETH_power_struggle
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 750
+    }
+
+	option = {
+		name = "Truly, I will inherit the Earth regardless."
+		###SMALL DECREASE FUNCTION
+		change_variable = { which = ETH_regency_influence value = -1 }
+		ETH_regency_lose_1 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###SMALL DECREASE FUNCTION END
+		prestige = -5
+		any_pop = { limit = { type = farmers } militancy = 1 }
+		any_pop = { limit = { type = labourers } militancy = 1 }
+		any_pop = { limit = { type = serfs } militancy = 1 }
+		any_pop = { limit = { type = artisans } militancy = 1 }
+	}
+	
+	option = {
+		name = "I do it for myself, not for them."
+		any_pop = { limit = { type = farmers } militancy = -1 }
+		any_pop = { limit = { type = labourers } militancy = -1 }
+		any_pop = { limit = { type = serfs } militancy = -1 }
+		any_pop = { limit = { type = artisans } militancy = -1 }
+		add_country_modifier = {
+			name = down_to_earth
+			duration = 1825
+		}
+	}
+}
+
+#Random power struggle event 3
+country_event = {
+	id = 175031
+	title = "A benevolent hand"
+	desc = "175031DESC"
+	picture = "eth_16"
+
+	trigger = {
+		tag = ETH
+		has_country_flag = ETH_power_struggle
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1000
+		modifier = {
+            factor = 0.1
+            admin_reform = yes_admin_reform
+        }
+    }
+
+	option = {
+		name = "Purge the administration!"
+		###SMALL DECREASE FUNCTION
+		change_variable = { which = ETH_regency_influence value = -1 }
+		ETH_regency_lose_1 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				CLN = { country_event = 175008 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		###SMALL DECREASE FUNCTION END
+		money = -25000
+		any_pop = { limit = { type = bureaucrats } militancy = 4 consciousness = 4 reduce_pop = 0.9 }
+	}
+	
+	option = {
+		name = "Why would you fix something that works?"
+		add_country_modifier = {
+			name = ETH_corruption
+			duration = 3650
+		}
 	}
 }
