@@ -360,6 +360,37 @@ country_event = {
 		2024 = { add_core = SOM secede_province = THIS secede_province = SOM }
 		2027 = { add_core = SOM secede_province = THIS secede_province = SOM }
     }
+	
+	option = {
+        name = "Mega Kurdish Empire"
+		political_reform = no_slavery
+		BYZ_921 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		BYZ_894 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		BYZ_879 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		TUR_893 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		EGY_897 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		TUR_3300 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		TUR_890 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		TUR_923 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		TUR_931 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		TUR_935 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1122 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1112 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		RUS_1098 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		AZB_1105 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		RUS_1102 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1116 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1121 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1127 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1132 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1136 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1130 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1140 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1148 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		AFG_1212 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		AFG_1215 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		KAL_1221 = { add_core = KDS secede_province = THIS secede_province = KDS }
+    }
 }
 
 country_event = {
@@ -2949,5 +2980,22 @@ country_event = {
 		economic_reform = yes_firearms_production
 		economic_reform = yes_research_reform
 		economic_reform = monetary_reform_two
+    }
+}
+
+country_event = {
+    id = 169013
+    title = "UH test"
+    desc = "wow"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Ok"
+		upper_house = {
+			ideology = conservative
+			value = -0.1
+		}
     }
 }

@@ -1,6 +1,6 @@
 political_decisions = {
 	ETH_check_province = {
-		picture = gtfo
+		picture = ETH_1
 		potential = {
 			tag = ETH
 			ai = no
@@ -81,7 +81,7 @@ political_decisions = {
 	
 	#AI doesnt have to have troops in a province to check it
 	ETH_check_province_AI = {
-		picture = gtfo
+		picture = ETH_1
 		potential = {
 			tag = ETH
 			ai = yes
@@ -160,7 +160,7 @@ political_decisions = {
 	}
 	
 	ETH_ransack_province = {
-		picture = gtfo
+		picture = ETH_2
 		potential = {
 			tag = ETH
 			civilized = no
@@ -320,7 +320,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_nubia = {
-		picture = gtfo
+		picture = sudan_map
 		potential = {
 			tag = ETH
 			civilized = no
@@ -510,103 +510,14 @@ political_decisions = {
 			war = no
 		}
 		effect = {
-			random_owned = {
-				limit = {
-					ETH = {
-						check_variable = {
-							which = ETH_regency_influence
-							value = 1
-						}
-						NOT = {
-							check_variable = {
-								which = ETH_regency_influence
-								value = 3
-							}
-						}
+			set_country_flag = hidden_tooltip
+				random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+					owner = {
+						ETH = { country_event = 175020 }
 					}
 				}
-				owner = { set_country_flag = ETH_verylow_infl }
-			}
-			random_owned = {
-				limit = {
-					ETH = {
-						check_variable = {
-							which = ETH_regency_influence
-							value = 3
-						}
-						NOT = {
-							check_variable = {
-								which = ETH_regency_influence
-								value = 5
-							}
-						}
-					}
-				}
-				owner = { set_country_flag = ETH_low_infl }
-			}
-			random_owned = {
-				limit = {
-					ETH = {
-						check_variable = {
-							which = ETH_regency_influence
-							value = 5
-						}
-						NOT = {
-							check_variable = {
-								which = ETH_regency_influence
-								value = 7
-							}
-						}
-					}
-				}
-				owner = { set_country_flag = ETH_medium_infl }
-			}
-			random_owned = {
-				limit = {
-					ETH = {
-						check_variable = {
-							which = ETH_regency_influence
-							value = 7
-						}
-						NOT = {
-							check_variable = {
-								which = ETH_regency_influence
-								value = 9
-							}
-						}
-					}
-				}
-				owner = { set_country_flag = ETH_high_infl }
-			}
-			random_owned = {
-				limit = {
-					ETH = {
-						check_variable = {
-							which = ETH_regency_influence
-							value = 9
-						}
-						NOT = {
-							check_variable = {
-								which = ETH_regency_influence
-								value = 11
-							}
-						}
-					}
-				}
-				owner = { set_country_flag = ETH_veryhigh_infl }
-			}
-			random_owned = {
-				limit = {
-					ETH = {
-						check_variable = {
-							which = ETH_regency_influence
-							value = 11
-						}
-					}
-				}
-				owner = { set_country_flag = ETH_extreme_infl }
-			}
-			country_event = 175020
+			clr_country_flag = hidden_tooltip
+			tooltip_17 = {}
 		}
 		ai_will_do = {
 			factor = 1
@@ -703,7 +614,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_kenya_civilized = {
-		picture = gtfo
+		picture = ETH_shanqella
 		potential = {
 			tag = ETH
 			civilized = yes
@@ -742,7 +653,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_equatoria_civilized = {
-		picture = gtfo
+		picture = ETH_shanqella
 		potential = {
 			tag = ETH
 			civilized = yes
@@ -771,7 +682,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_nubia_civilized = {
-		picture = gtfo
+		picture = sudan_map
 		potential = {
 			tag = ETH
 			civilized = yes

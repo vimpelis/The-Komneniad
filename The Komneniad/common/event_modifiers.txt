@@ -5332,15 +5332,36 @@ ETH_exthigh_modf = {
 	war_exhaustion = 0.25
     icon = 6
 }
+
 down_to_earth = {
 	supply_consumption = -0.05
 	global_pop_militancy_modifier = -0.05
 	global_pop_consciousness_modifier = -0.05
     icon = 13
 }
+
 ETH_corruption = {
 	administrative_efficiency_modifier = 0.05
 	tax_efficiency = -0.1
 	education_efficiency_modifier = -0.1
     icon = 10
+}
+
+ETH_mad_king_modf_1 = {
+	administrative_efficiency_modifier = -0.05
+	badboy = 0.01
+	global_pop_militancy_modifier = 0.05
+	global_pop_consciousness_modifier = 0.05
+	land_organisation = 0.1
+    icon = 4
+}
+
+ETH_mad_king_modf_2 = {
+	tax_efficiency = -0.1
+	administrative_efficiency_modifier = -0.1
+	badboy = 0.01
+	global_pop_militancy_modifier = 0.1
+	global_pop_consciousness_modifier = 0.1
+	land_organisation = 0.05
+    icon = 4
 }

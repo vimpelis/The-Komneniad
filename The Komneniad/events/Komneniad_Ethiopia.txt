@@ -22,6 +22,7 @@ country_event = {
 			which = ETH_regency_influence
 			value = 7
 		}
+		set_global_flag = ETH_regency_lvl_5
 		set_country_flag = ETH_active_insurgency
 		set_variable = {
 			which = ETH_provinces_checked
@@ -247,6 +248,13 @@ country_event = {
 			CLN = {
 				3189 = { secede_province = CLN }
 				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §BNonexistent§!!§b" } }
+				set_global_flag = ETH_regency_lvl_1
+				clr_global_flag = ETH_regency_lvl_2
+				clr_global_flag = ETH_regency_lvl_3
+				clr_global_flag = ETH_regency_lvl_4
+				clr_global_flag = ETH_regency_lvl_5
+				clr_global_flag = ETH_regency_lvl_6
+				clr_global_flag = ETH_regency_lvl_7
 			}
 		}
 		any_country = {
@@ -267,6 +275,13 @@ country_event = {
 			CLN = {
 				3189 = { secede_province = CLN }
 				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GVery Low§!!§b" } }
+				clr_global_flag = ETH_regency_lvl_1
+				set_global_flag = ETH_regency_lvl_2
+				clr_global_flag = ETH_regency_lvl_3
+				clr_global_flag = ETH_regency_lvl_4
+				clr_global_flag = ETH_regency_lvl_5
+				clr_global_flag = ETH_regency_lvl_6
+				clr_global_flag = ETH_regency_lvl_7
 			}
 		}
 		any_country = {
@@ -287,6 +302,13 @@ country_event = {
 			CLN = {
 				3189 = { secede_province = CLN }
 				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §GLow§!!§b" } }
+				clr_global_flag = ETH_regency_lvl_1
+				clr_global_flag = ETH_regency_lvl_2
+				set_global_flag = ETH_regency_lvl_3
+				clr_global_flag = ETH_regency_lvl_4
+				clr_global_flag = ETH_regency_lvl_5
+				clr_global_flag = ETH_regency_lvl_6
+				clr_global_flag = ETH_regency_lvl_7
 			}
 		}
 		any_country = {
@@ -307,6 +329,13 @@ country_event = {
 			CLN = {
 				3189 = { secede_province = CLN }
 				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §YMedium§!!§b" } }
+				clr_global_flag = ETH_regency_lvl_1
+				clr_global_flag = ETH_regency_lvl_2
+				clr_global_flag = ETH_regency_lvl_3
+				set_global_flag = ETH_regency_lvl_4
+				clr_global_flag = ETH_regency_lvl_5
+				clr_global_flag = ETH_regency_lvl_6
+				clr_global_flag = ETH_regency_lvl_7
 			}
 		}
 		any_country = {
@@ -327,6 +356,13 @@ country_event = {
 			CLN = {
 				3189 = { secede_province = CLN }
 				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RHigh§!!§b" } }
+				clr_global_flag = ETH_regency_lvl_1
+				clr_global_flag = ETH_regency_lvl_2
+				clr_global_flag = ETH_regency_lvl_3
+				clr_global_flag = ETH_regency_lvl_4
+				set_global_flag = ETH_regency_lvl_5
+				clr_global_flag = ETH_regency_lvl_6
+				clr_global_flag = ETH_regency_lvl_7
 			}
 		}
 		any_country = {
@@ -347,6 +383,13 @@ country_event = {
 			CLN = {
 				3189 = { secede_province = CLN }
 				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RVery High§!!§b" } }
+				clr_global_flag = ETH_regency_lvl_1
+				clr_global_flag = ETH_regency_lvl_2
+				clr_global_flag = ETH_regency_lvl_3
+				clr_global_flag = ETH_regency_lvl_4
+				clr_global_flag = ETH_regency_lvl_5
+				set_global_flag = ETH_regency_lvl_6
+				clr_global_flag = ETH_regency_lvl_7
 			}
 		}
 		any_country = {
@@ -361,6 +404,13 @@ country_event = {
 			CLN = {
 				3189 = { secede_province = CLN }
 				3189 = { state_scope = { change_region_name = "§!Current §RRegency§! influence is §RExtremely High§!!§b" } }
+				clr_global_flag = ETH_regency_lvl_1
+				clr_global_flag = ETH_regency_lvl_2
+				clr_global_flag = ETH_regency_lvl_3
+				clr_global_flag = ETH_regency_lvl_4
+				clr_global_flag = ETH_regency_lvl_5
+				clr_global_flag = ETH_regency_lvl_6
+				set_global_flag = ETH_regency_lvl_7
 			}
 		}
     }
@@ -840,7 +890,7 @@ country_event = {
 		clr_country_flag = ETH_coup_available
 		clr_country_flag = ETH_power_struggle
 		clr_country_flag = ETH_long_regency
-		random_owned = { limit = { owner = { has_country_flag = ETH_verylow_infl } }
+		random_owned = { limit = { owner = { has_global_flag = ETH_regency_lvl_2 } }
 			owner = {
 				ETH_infl_verylow_effect = {}
 				years_of_research = 1
@@ -850,7 +900,7 @@ country_event = {
 				}
 			}
 		}
-		random_owned = { limit = { owner = { has_country_flag = ETH_low_infl } }
+		random_owned = { limit = { owner = { has_global_flag = ETH_regency_lvl_3 } }
 			owner = {
 				ETH_infl_low_effect = {}
 				years_of_research = 0.5
@@ -860,7 +910,7 @@ country_event = {
 				}
 			}
 		}
-		random_owned = { limit = { owner = { has_country_flag = ETH_medium_infl } }
+		random_owned = { limit = { owner = { has_global_flag = ETH_regency_lvl_4 } }
 			owner = {
 				ETH_infl_medium_effect = {}
 				war_exhaustion = 10
@@ -870,7 +920,7 @@ country_event = {
 				}
 			}
 		}
-		random_owned = { limit = { owner = { has_country_flag = ETH_high_infl } }
+		random_owned = { limit = { owner = { has_global_flag = ETH_regency_lvl_5 } }
 			owner = {
 				ETH_infl_high_effect = {}
 				war_exhaustion = 20
@@ -880,7 +930,7 @@ country_event = {
 				}
 			}
 		}
-		random_owned = { limit = { owner = { has_country_flag = ETH_veryhigh_infl } }
+		random_owned = { limit = { owner = { has_global_flag = ETH_regency_lvl_6 } }
 			owner = {
 				ETH_infl_veryhigh_effect = {}
 				war_exhaustion = 30
@@ -890,7 +940,7 @@ country_event = {
 				}
 			}
 		}
-		random_owned = { limit = { owner = { has_country_flag = ETH_extreme_infl } }
+		random_owned = { limit = { owner = { has_global_flag = ETH_regency_lvl_7 } }
 			owner = {
 				ETH_infl_exthigh_effect = {}
 				war_exhaustion = 50
@@ -1259,7 +1309,7 @@ country_event = {
 
 	option = {
 		name = "They aren't worth it."
-		years_of_research = 1
+		years_of_research = -3
 	}
 	
 	option = {
@@ -1375,5 +1425,109 @@ country_event = {
 			name = ETH_corruption
 			duration = 3650
 		}
+	}
+}
+
+#Tewodros becomes mad 1
+country_event = {
+	id = 175032
+	title = "The Emperor's cruelty"
+	desc = "175032DESC"
+	picture = "eth_9"
+
+	trigger = {
+		tag = ETH
+		year = 1861
+		NOT = { has_global_flag = second_zemene_mesafint }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1000
+		modifier = {
+            factor = 0.5
+            year = 1863
+        }
+		modifier = {
+            factor = 0.1
+            year = 1865
+        }
+    }
+
+	option = {
+		name = "A hard upbringing does that to people."
+		add_country_modifier = {
+			name = ETH_mad_king_modf_1
+			duration = -1
+		}
+		set_country_flag = ETH_mad_tewodros
+	}
+}
+
+#Tewodros becomes mad 2
+country_event = {
+	id = 175033
+	title = "Rolling down"
+	desc = "175033DESC"
+	picture = "eth_21"
+
+	trigger = {
+		tag = ETH
+		has_country_flag = ETH_mad_tewodros
+		NOT = { has_global_flag = second_zemene_mesafint }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1000
+		modifier = {
+            factor = 0.5
+            year = 1870
+        }
+		modifier = {
+            factor = 0.1
+            year = 1872
+        }
+    }
+
+	option = {
+		name = "One after Fetha Nagast. As if I could ever make such a mistake!"
+		remove_country_modifier = ETH_mad_king_modf_1
+		add_country_modifier = {
+			name = ETH_mad_king_modf_2
+			duration = -1
+		}
+	}
+}
+
+#Tewodros dies
+country_event = {
+	id = 175034
+	title = "Death of Tewodros II"
+	desc = "175034DESC"
+	picture = "eth_22"
+
+	trigger = {
+		tag = ETH
+		year = 1876
+		NOT = { has_global_flag = second_zemene_mesafint }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 210
+    }
+	
+	major = yes
+
+	option = {
+		name = "Not before cleaning up his father's mess, of course."
+		remove_country_modifier = ETH_mad_king_modf_1
+		remove_country_modifier = ETH_mad_king_modf_2
+		any_pop = { militancy = -1 }
+		any_pop = { consciousness = 1 }
 	}
 }

@@ -20,10 +20,7 @@ political_decisions = {
 		picture = komneniad
 		potential = {
 			ai = no
-			OR = {
-				tag = BAV
-				tag = BYZ
-			}
+			tag = BAV
 			NOT = { has_country_flag = komneniad_tips year = 1837 }
 		}
 		allow = {

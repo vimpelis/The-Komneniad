@@ -1292,6 +1292,7 @@ ETH_regency_gain_4 = {} #ETH regency infl increase VERY LARGE
 tooltip_14 = {} #A storm is brewing in the countryside...
 tooltip_15 = {} #Regency gone
 tooltip_16 = {} #Battle is on
+tooltip_17 = {} #ETH coup explanation
 ETH_infl_verylow_effect = {}
 ETH_infl_low_effect = {}
 ETH_infl_medium_effect = {}
