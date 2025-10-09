@@ -5,3 +5,4 @@ trade_goods = iron
 life_rating = 35
 terrain = malatya
 add_core = ANT
+add_core = KDS

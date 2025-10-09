@@ -1,0 +1,15 @@
+#177000 - Starting event
+
+#Starting event
+country_event = {
+    id = 177000
+    title = "Kurmanca in 1836"
+    desc = "177000DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Odds mean nothing."
+    }
+}
