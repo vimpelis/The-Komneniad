@@ -224,8 +224,9 @@ From;To;Type;Through;Data;Comment
 1120;1119;impassable;0;0;scary mountain #Khoramabad-Ilam
 892;3348;impassable;0;0;scary mountain #Bay-Maku
 3536;3348;impassable;0;0;scary mountain #Bayazid-Maku
+890;3348;impassable;0;0;scary mountain
+2548;3348;impassable;0;0;scary mountain
 3353;892;impassable;0;0;scary mountain #Bay-Chihriq
-928;3353;impassable;0;0;scary mountain #Rewanduz-Orumiyeh
 ;;;;;
 #Caucasus;;;;;
 ;;;;;
