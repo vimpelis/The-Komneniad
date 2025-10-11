@@ -1093,5 +1093,38 @@ political_decisions = {
 			factor = 1
 		}
     }
+	
+	BYZ_become_rhomania = {
+        picture = BYZ_senate
+        potential = {
+			tag = BYZ
+			has_country_flag = BYZ_rename_available
+        }
+        allow = {
+			war = no
+			invention = pragmatism
+        }
+        effect = {
+			set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip government = absolute_empire } }
+				owner = { government = absolute_monarchy }
+			}
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip government = constitutional_empire } }
+				owner = { government = hms_government }
+			}
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip government = semi_constitutional_empire } }
+				owner = { government = prussian_constitutionalism }
+			}
+			clr_country_flag = hidden_tooltip
+			prestige = 15
+			any_pop = { consciousness = 1 }
+			remove_country_modifier = BYZ_identity_crisis
+			rename_rhomania_tt = {}
+			clr_country_flag = BYZ_rename_available
+        }
+        ai_will_do = {
+			factor = 1
+		}
+    }
 }
 	

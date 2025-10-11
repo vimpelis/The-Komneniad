@@ -39,6 +39,11 @@ NAP = {
     level = 0
     influence_value = 0
 }
+ASY = {
+    value = 125
+    level = 4
+    influence_value = 10
+}
 BAV = {
     value = 50
 }

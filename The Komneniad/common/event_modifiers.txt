@@ -5365,3 +5365,16 @@ ETH_mad_king_modf_2 = {
 	land_organisation = 0.05
     icon = 4
 }
+
+KDS_powerful_tribe = {
+	local_RGO_output = -0.5
+	pop_militancy_modifier = 0.1
+	pop_consciousness_modifier = 0.1
+    icon = 18
+}
+
+BYZ_identity_crisis = {
+	prestige = -0.01
+	global_pop_consciousness_modifier = 0.05
+    icon = 18
+}

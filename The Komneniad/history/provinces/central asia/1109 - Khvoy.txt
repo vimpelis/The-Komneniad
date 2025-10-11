@@ -1,6 +1,6 @@
-owner = BZD
-controller = BZD
-add_core = BZD
+owner = BDN
+controller = BDN
+add_core = BDN
 add_core = KDS
 trade_goods = wool
 life_rating = 35 

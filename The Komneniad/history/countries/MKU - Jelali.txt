@@ -1,10 +1,11 @@
 capital = 1110
 primary_culture = kurdish
-religion = sunni
+culture = turkish
+religion = yazidi
 government = absolute_monarchy
-plurality = 0.0
+plurality = 0
 nationalvalue = nv_tradition
-literacy = 0.01
+literacy = 0.02
 non_state_culture_literacy = 0.01
 
 #Political Reforms
@@ -27,11 +28,11 @@ pensions = no_pensions
 school_reforms = no_schools
 
 #New Reforms
-conscription = four_year_draft
-debt_law = peonage
+conscription = two_year_draft
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = primary_culture_only
+citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
@@ -48,13 +49,21 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = sunni_country
+set_country_flag = yazidi_country
+
+foreign_weapons = yes_foreign_weapons
+foreign_artillery = yes_foreign_artillery
+foreign_officers = yes_foreign_officers
 
 #Technologies
-
-#Inventions
-foreign_weapons = yes_foreign_weapons
+flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+military_staff_system = 1
 
 #Starting Consciousness
-consciousness = 0
+consciousness = 1
 nonstate_consciousness = 0
+
+schools = unciv_tech_school
+
+oob = "MKU_oob.txt"

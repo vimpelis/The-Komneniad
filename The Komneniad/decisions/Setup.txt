@@ -759,30 +759,15 @@ political_decisions = {
 			}
 			LON = { add_country_modifier = { name = neutrality_modifier duration = -1 } }
 			IRO = { add_country_modifier = { name = native_nation duration = -1 } }
-			277 = {
-				add_province_modifier = {
-					name = celtification
-					duration = -1
-				}
-			}
-			3608 = {
-				add_province_modifier = {
-					name = celtification
-					duration = -1
-				}
-			}
-			285 = {
-				add_province_modifier = {
-					name = celtification
-					duration = -1
-				}
-			}
-			1827 = {
-				add_province_modifier = {
-					name = recently_built_city
-					duration = 3650
-				}
-			}
+			277 = { add_province_modifier = { name = celtification duration = -1 } }
+			3608 = { add_province_modifier = { name = celtification duration = -1 } }
+			285 = { add_province_modifier = { name = celtification duration = -1 } }
+			1827 = { add_province_modifier = { name = recently_built_city duration = 3650 } }
+			892 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
+			3532 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
+			899 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
+			3279 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
+			BZD = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
 			any_country = {
 				limit = {
 					OR = {

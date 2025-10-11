@@ -1,0 +1,39 @@
+political_decisions = {
+	KDS_consolidate_lake_van = {
+		picture = kurdistan_map
+		potential = {
+			OR = {
+				primary_culture = kurdish
+				tag = BTL
+			}
+			NOT = { exists = KDS }
+			NOT = { has_global_flag = KDS_consolidate_lake_van }
+		}
+		allow = {
+			war = no
+			owns = 890
+			owns = 891
+			owns = 3348
+		}
+		effect = {
+			prestige = 10
+			badboy = 5
+			TUR_890 = {
+				remove_core = BTL
+				remove_core = BDN
+				remove_core = MKU
+				remove_core = BZD
+				add_core = THIS
+			}
+			892 = { remove_core = BDN add_core = THIS }
+			set_global_flag = KDS_consolidate_lake_van
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+}

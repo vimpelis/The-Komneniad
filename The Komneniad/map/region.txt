@@ -1307,6 +1307,7 @@ hel_lose_1 = { 3186 }
 hel_lose_3 = { 3186 }
 hel_lose_5 = { 3186 }
 hel_set_5 = { 3186 }
+rename_rhomania_tt = {}
 options_tt_1 = {}
 options_tt_2 = {}
 options_tt_3 = {}

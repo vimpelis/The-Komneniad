@@ -1,10 +1,11 @@
 capital = 891
 primary_culture = kurdish
-religion = sunni
+culture = turkish
+religion = yazidi
 government = absolute_monarchy
 plurality = 0
 nationalvalue = nv_tradition
-literacy = 0.01
+literacy = 0.02
 non_state_culture_literacy = 0.01
 
 #Political Reforms
@@ -48,18 +49,21 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = sunni_country
-
-consciousness = 0
-nonstate_consciousness = 0
-
+set_country_flag = yazidi_country
 
 foreign_weapons = yes_foreign_weapons
+foreign_artillery = yes_foreign_artillery
+foreign_officers = yes_foreign_officers
+
 #Technologies
 flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+military_staff_system = 1
 
-#Inventions
-small_arms_production = yes
-ammunition_production = yes
+#Starting Consciousness
+consciousness = 1
+nonstate_consciousness = 0
+
+schools = unciv_tech_school
 
 oob = "BTL_oob.txt"

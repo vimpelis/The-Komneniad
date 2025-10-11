@@ -1,0 +1,41 @@
+political_decisions = {
+	ARM_greater_armenia = {
+		picture = greater_armenia
+		potential = {
+			tag = ARM
+			NOT = { has_country_flag = ARM_greater_armenia }
+		}
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					owns = 890
+					owns = 891
+					owns = 3348
+				}
+				AND = {
+					rank = 16
+					nationalism_n_imperialism = 1
+				}
+			}
+		}
+		effect = {
+			badboy = 20
+			TUR_890 = { add_core = THIS }
+			TUR_893 = { add_core = THIS }
+			BYZ_879 = { add_core = THIS }
+			BYZ_894 = { add_core = THIS }
+			BYZ_1096 = { add_core = THIS }
+			3293 = { add_core = THIS }
+			3362 = { add_core = THIS }
+			set_country_flag = ARM_greater_armenia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.2
+            }
+		}
+	}
+}

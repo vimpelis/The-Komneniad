@@ -27,6 +27,10 @@
 #32 - Revolt dead
 #33 - Revolt succeeds
 #34 - Fall of Rome
+#35 - Hellenomnemon
+#36 - Neos Hellenomnemon
+#37 - Verona Alliance (TODO)
+#38 - Country name
 
 #Starting event (p1)
 country_event = {
@@ -1379,7 +1383,7 @@ country_event = {
     id = 151034
     title = "Fall of Rome"
     desc = "151034DESC"
-    picture = "roman_republic"
+    picture = "BYZ_rome_conquered"
 	
 	major = yes
 
@@ -1408,11 +1412,11 @@ country_event = {
     picture = "hellenomnemon"
 
     trigger = {
-		year = 1843
         OR = {
 			tag = BYZ
 			tag = GRE
 		}
+		year = 1843
     }
     mean_time_to_happen = {
         days = 90
@@ -1438,21 +1442,64 @@ country_event = {
     picture = "neos_hellenomnemon"
 
     trigger = {
-		year = 1903
         OR = {
 			tag = BYZ
 			tag = GRE
 		}
+		year = 1903
     }
     mean_time_to_happen = {
         days = 180
     }
 	fire_only_once = yes
+	
     option = {
         name = "Interesting."
 		prestige = 5
 		any_pop = {
 			consciousness = -0.5
 		}
+    }
+}
+
+country_event = {
+    id = 151037
+    title = "War of the Verona Alliance"
+    desc = "151037DESC"
+    picture = "BYZ_rome_conquered"
+
+    is_triggered_only = yes 
+
+    option = {
+        name = "Interesting."
+    }
+}
+
+country_event = {
+    id = 151038
+    title = "The many names of Rome"
+    desc = "151038DESC"
+    picture = "BYZ_senate"
+
+    trigger = {
+        tag = BYZ
+		has_country_flag = roman_path
+		year = 1851
+    }
+    mean_time_to_happen = {
+        days = 180
+    }
+	fire_only_once = yes
+
+    option = {
+        name = "Pride is the greatest sin."
+		any_pop = {
+			consciousness = 0.5
+		}
+		add_country_modifier = {
+			name = BYZ_identity_crisis
+			duration = -1
+		}
+		set_country_flag = BYZ_rename_available
     }
 }

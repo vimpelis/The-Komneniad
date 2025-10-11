@@ -1,9 +1,21 @@
+BDN = { value = -100 }
+BZD = { value = -100 }
+MKU = { value = -100 }
+BYZ = { value = -150 }
+ASY = { value = -200 }
+ARM = { value = -50 }
+
 army = {
     name = "Army of the Kurdish Emir"
     location = 891
     regiment = {
         name = "Kurdish Warriors"
         type = infantry
+        home = 891
+    }
+	regiment = {
+        name = "Tribal Cavalry"
+        type = cavalry
         home = 891
     }
 }

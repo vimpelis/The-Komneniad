@@ -2,5 +2,6 @@ owner = ASY
 controller = ASY
 add_core = ASY
 add_core = KDS
+add_core = BDN
 trade_goods = fruit
 life_rating = 35 

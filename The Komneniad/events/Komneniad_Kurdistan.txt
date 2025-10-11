@@ -13,3 +13,111 @@ country_event = {
         name = "Odds mean nothing."
     }
 }
+
+country_event = {
+    id = 177001
+    title = "The Campaigns of Bedirxan"
+    desc = "177001DESC"
+    picture = "kurdistan"
+
+    trigger = {
+		tag = BZD
+		year = 1838
+		NOT = { year = 1850 }
+		war = no
+		is_vassal = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+
+    option = {
+        name = "Bedirxan will carry us to victory!"
+		define_general = {
+			name = "Bedirxan"
+			personality = defence_1.1
+			background = attack_4.1
+		}
+		any_pop = {
+			limit = { type = soldiers }
+			reduce_pop = 1.1
+		}
+		war = {
+			target = BDN
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = conquest_any }
+		}
+		war = {
+			target = BTL
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = conquest_any }
+		}
+		war = {
+			target = MKU
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = conquest_any }
+		}
+		BTL = { country_event = 177003 }
+		BDN = { country_event = 177002 }
+		MKU = { country_event = 177002 }
+    }
+}
+
+country_event = {
+    id = 177002
+    title = "The Campaigns of Bedirxan"
+    desc = "177001DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will resist!"
+		BDN = {
+			war = {
+				target = MKU
+				attacker_goal = { casus_belli = conquest_any }
+				defender_goal = { casus_belli = conquest_any }
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 177003
+    title = "The Campaigns of Bedirxan"
+    desc = "177001DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Bedirxan will fall!"
+		primary_culture = turkish
+		add_accepted_culture = kurdish
+		define_general = {
+			name = "Hizir Bey"
+			personality = defence_2.1
+			background = attack_3.1
+		}
+		any_pop = {
+			limit = { type = soldiers has_pop_culture = turkish }
+			reduce_pop = 1.2
+		}
+		any_pop = {
+			limit = { type = farmers has_pop_culture = turkish }
+			reduce_pop = 1.05
+		}
+			war = {
+				target = BDN
+				attacker_goal = { casus_belli = conquest_any }
+			}
+			war = {
+				target = MKU
+				attacker_goal = { casus_belli = conquest_any }
+			}
+    }
+}
