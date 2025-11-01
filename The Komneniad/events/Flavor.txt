@@ -207,6 +207,7 @@ country_event = {
     title = "PETITJOURNALTITLE"
     desc = "PETITJOURNALDESC"
 	picture = "petit_journal"
+	
 	fire_only_once = yes
 	
     trigger = {

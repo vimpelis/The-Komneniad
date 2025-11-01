@@ -1,5 +1,6 @@
-owner = PAT
-controller = PAT
+owner = JOH
+controller = JOH
+add_core = JOH
 add_core = PAT
 trade_goods = tropical_wood
 terrain = jungle_hills

@@ -247,6 +247,66 @@
         religion = sunni
         size = 1825
     }
+	
+	aristocrats = {
+        culture = bedouin
+        religion = sunni
+        size = 25
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = sunni
+        size = 35
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = sunni
+        size = 75
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = sunni
+        size = 2150
+    }
+	
+	aristocrats = {
+        culture = mashriqi
+        religion = sunni
+        size = 25
+    }
+
+    clergymen = {
+        culture = mashriqi
+        religion = sunni
+        size = 50
+    }
+
+    artisans = {
+        culture = mashriqi
+        religion = sunni
+        size = 150
+    }
+
+    soldiers = {
+        culture = mashriqi
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = sunni
+        size = 1500
+    }
 }
 #Abha (56000/14000 POPS)
 1155 = {
@@ -320,39 +380,7 @@
 #under the "rule" of Egypt in 1836
 #Kaf (20000/5000 POPS) #now part of Saudi Arabia
 1156 = {
-    aristocrats = {
-        culture = bedouin
-        religion = sunni
-        size = 75
-    }
-
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 75
-    }
-
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 650
-    }
-
-    soldiers = {
-        culture = bedouin
-        religion = sunni
-        size = 100
-    }
-
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 4600
-    }
-}
-#Al-Qurayyat
-2639 = {
-    aristocrats = {
+	aristocrats = {
         culture = bedouin
         religion = sunni
         size = 15
@@ -375,6 +403,10 @@
         religion = sunni
         size = 2100
     }
+}
+#Al-Qurayyat
+2639 = {
+    
 }
 #Nejd Region (204000)
 #under the rule of Nejd in 1836

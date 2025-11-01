@@ -64,9 +64,6 @@ become_independent
 dismantle_cb
 BYZ_crimean_war
 german_unification
-ethiopian_somalian_cb
-ogaden_war_cb
-ethiopian_somalian2_cb
 colonial_competition
 acquire_all_cores
 acquire_core_state
@@ -140,6 +137,9 @@ negotiated_transfer
 status_quo
 test_end_war
 take_capital
+ethiopian_somalian_cb
+ogaden_war_cb
+ethiopian_somalian2_cb
 demand_concession_capital_late
 demand_concession_capital
 demand_concession_capital_early
@@ -7116,6 +7116,16 @@ conquest_any = {
     }
 
     on_po_accepted = {
+		any_country = {
+			limit = { primary_culture = kurdish has_country_flag = KDS_kurdish_uprising exists = yes NOT = { exists = ASY } }
+			country_event = 177005
+			clr_country_flag = KDS_kurdish_uprising
+		}
+		any_country = {
+			limit = { primary_culture = kurdish has_country_flag = KDS_kurdish_uprising exists = no exists = ASY }
+			ASY = { country_event = 177007 }
+			clr_country_flag = KDS_kurdish_uprising
+		}
     }
 }
 
@@ -9075,7 +9085,6 @@ liberate_puppet_no_infamy = {
     po_transfer_provinces = yes
 
     can_use = {
-		ai = yes
         NOT = {
             is_our_vassal = THIS
             has_country_modifier = neutrality
@@ -9109,6 +9118,8 @@ liberate_puppet_no_infamy = {
             THIS = { NOT = { has_country_flag = in_great_war } }
             FROM = { involved_in_crisis = yes }
             THIS = { ai = no }
+			primary_culture = kurdish
+			primary_culture = turkish
         }
 	}
 
@@ -9122,6 +9133,7 @@ liberate_puppet_no_infamy = {
             THIS = { ai = no }
             FROM = { NOT = { any_core = { is_core = THIS } } }
             FROM = { involved_in_crisis = yes }
+			FROM = { tag = ASY }
         }
         NOT = {
             tag = FROM
@@ -9129,6 +9141,7 @@ liberate_puppet_no_infamy = {
             this_culture_union = FROM
         }
         OR = {
+			FROM = { tag = ASY }
             AND = {
                 THIS = { ai = no }
                 any_owned_province = { is_core = FROM }
@@ -9221,10 +9234,12 @@ liberate_puppet_no_infamy = {
             FROM = { civilized = yes }
             THIS = { civilized = no }
             THIS = { ai = no }
+			FROM = { tag = ASY }
         }
         OR = {
             FROM = { involved_in_crisis = yes }
             THIS = { ai = no }
+			FROM = { tag = ASY }
         }
 	}
 

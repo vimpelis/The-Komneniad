@@ -290,91 +290,6 @@ political_decisions = {
         }
         ai_will_do = { factor = 1 }
     }
-
-    unite_malaya = {
-        picture = map_east_indies
-        potential = {
-            primary_culture = malay
-            NOT = {
-                has_global_flag = malaya_formed
-                exists = MLY
-                tag = INO
-            }
-        }
-
-        allow = {
-            war = no
-            civilized = yes
-            prestige = 50
-            state_n_government = 1
-            JOH = {
-                all_core = {
-                    OR = {
-                        owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
-                    }
-                }
-            }
-            PHG = {
-                all_core = {
-                    OR = {
-                        owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
-                    }
-                }
-            }
-            PRK = {
-                all_core = {
-                    OR = {
-                        owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
-                    }
-                }
-            }
-            SLG = {
-                all_core = {
-                    OR = {
-                        owned_by = THIS
-                        owner = { in_sphere = THIS }
-                        owner = { vassal_of = THIS }
-                    }
-                }
-            }
-        }
-
-        effect = {
-            set_global_flag = malaya_formed
-            prestige = 20
-            all_core = {
-                remove_core = THIS
-                add_core = MLY
-            }
-            change_tag = MLY
-            ENG_1384 = { add_core = MLY }
-            ENG_1391 = { add_core = MLY }
-			2576 = { add_core = MLY }
-            any_country = {
-                limit = {
-                    primary_culture = malay
-                    NOT = { tag = THIS }
-                    war = no
-                    OR = {
-                        in_sphere = THIS
-                        relation = {
-                            who = THIS
-                            value = 50
-                        }
-                    }
-                }
-                country_event = 95255
-            }
-        }
-
-        ai_will_do = { factor = 1 }
-    }
     create_malaya = {
         picture = map_east_indies
         potential = {
@@ -454,23 +369,6 @@ political_decisions = {
                     }
                 }
             }
-            PHG = {
-                all_core = {
-                    OR = {
-                        owned_by = THIS
-                        owner = {
-                            OR = {
-                                civilized = no
-                                ai = yes
-                            }
-                            OR = {
-                                in_sphere = THIS
-                                vassal_of = THIS
-                            }
-                        }
-                    }
-                }
-            }
             PRK = {
                 all_core = {
                     OR = {
@@ -488,7 +386,7 @@ political_decisions = {
                     }
                 }
             }
-            SLG = {
+            PAT = {
                 all_core = {
                     OR = {
                         owned_by = THIS
@@ -522,27 +420,7 @@ political_decisions = {
             }
             random_country = {
                 limit = {
-                    tag = PHG
-                    OR = {
-                        in_sphere = THIS
-                        vassal_of = THIS
-                    }
-                }
-                annex_to = THIS
-            }
-            random_country = {
-                limit = {
                     tag = PRK
-                    OR = {
-                        in_sphere = THIS
-                        vassal_of = THIS
-                    }
-                }
-                annex_to = THIS
-            }
-            random_country = {
-                limit = {
-                    tag = SLG
                     OR = {
                         in_sphere = THIS
                         vassal_of = THIS
@@ -578,18 +456,6 @@ political_decisions = {
                 all_core = {
                     add_core = MLY
                     remove_core = JOH
-                }
-            }
-            SLG = {
-                all_core = {
-                    add_core = MLY
-                    remove_core = SLG
-                }
-            }
-            PHG = {
-                all_core = {
-                    add_core = MLY
-                    remove_core = PHG
                 }
             }
             PRK = {

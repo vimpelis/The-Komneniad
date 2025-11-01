@@ -1,5 +1,4 @@
 trade_goods = wool
 life_rating = 20
 terrain = desert
-add_core = HAL
-add_core = ARA
+add_core = SYR

@@ -7,7 +7,7 @@ political_decisions = {
 				tag = BTL
 			}
 			NOT = { exists = KDS }
-			NOT = { has_global_flag = KDS_consolidate_lake_van }
+			NOT = { has_country_flag = KDS_consolidate_lake_van }
 		}
 		allow = {
 			war = no
@@ -26,14 +26,313 @@ political_decisions = {
 				add_core = THIS
 			}
 			892 = { remove_core = BDN add_core = THIS }
-			set_global_flag = KDS_consolidate_lake_van
+			set_country_flag = KDS_consolidate_lake_van
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.2
+                badboy = 0.8
             }
+		}
+	}
+	
+	KDS_unite_kurdistan = {
+		picture = kurdistan_map
+		potential = {
+			primary_culture = kurdish
+			NOT = { exists = KDS }
+		}
+		allow = {
+			war = no
+			owns = 890
+			owns = 893
+			owns = 923
+		}
+		effect = {
+			prestige = 10
+			change_tag = KDS
+			government = theocracy
+			all_core = {
+				remove_core = BTL
+				remove_core = BDN
+				remove_core = MKU
+				remove_core = BZD
+				remove_core = TSI
+				remove_core = MLN
+			}
+			any_country = {
+				limit = {
+					primary_culture = kurdish
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	KDS_kurdish_uprising = {
+		picture = kurdistan_map
+		potential = {
+			has_country_flag = KDS_uprising_available
+			OR = {
+				ASY = { owns = 3279 }
+				ASY = { owns = 3532 }
+			}
+			NOT = { exists = KDS }
+			NOT = { has_country_flag = KDS_kurdish_uprising }
+		}
+		allow = {
+			war = no
+			OR = {
+				BYZ = { war = yes }
+				GRE = { war = yes }
+				relation = { who = BYZ value = 150 }
+				relation = { who = GRE value = 150 }
+			}
+		}
+		effect = {
+			badboy = 5
+			ASY = {
+				any_owned = {
+					limit = {
+						province_id = 892
+					}
+					secede_province = THIS
+					add_core = THIS
+				}
+				any_owned = {
+					limit = {
+						province_id = 3532
+					}
+					secede_province = THIS
+					secede_province = TSI
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							province_id = 3279
+							province_id = 899
+						}
+					}
+					secede_province = THIS
+					secede_province = MLN
+				}
+			}
+			create_vassal = TSI
+			create_vassal = MLN
+			create_alliance = TSI
+			create_alliance = MLN
+			any_country = {
+				limit = {
+					tag = BYZ
+					exists = yes
+				}
+				leave_alliance = ASY
+				diplomatic_influence = {
+					who = ASY
+					value = -400
+				}
+				country_event = 177010
+			}
+			any_country = {
+				limit = {
+					tag = GRE
+					exists = yes
+				}
+				leave_alliance = ASY
+				diplomatic_influence = {
+					who = ASY
+					value = -400
+				}
+				country_event = 177010
+			}
+			war = {
+				target = ASY
+				attacker_goal = { casus_belli = conquest_any }
+				defender_goal = { casus_belli = conquest_any }
+				call_ally = yes
+			}
+			ASY = { country_event = 177009 }
+			set_country_flag = KDS_kurdish_uprising
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	KDS_eastern_bulwark = {
+		picture = kurdistan_map
+		potential = {
+			tag = KDS
+			NOT = { has_country_flag = KDS_eastern_bulwark }
+		}
+		allow = {
+			war = no
+			owns = 925
+			owns = 1118
+			owns = 1119
+		}
+		effect = {
+			badboy = 10
+			TUR_931 = { add_core = THIS }
+			TUR_935 = { add_core = THIS }
+			TUR_3300 = { add_core = THIS }
+			3537 = { add_core = THIS }
+			3278 = { add_core = THIS }
+			set_country_flag = KDS_eastern_bulwark
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	KDS_caucasus = {
+		picture = kurdistan_map
+		potential = {
+			tag = KDS
+			NOT = { has_country_flag = KDS_caucasus }
+		}
+		allow = {
+			war = no
+			owns = 885
+		}
+		effect = {
+			badboy = 10
+			add_accepted_culture = armenian
+			add_accepted_culture = azerbaijani
+			RUS_1098 = { add_core = THIS }
+			AZB_1105 = { add_core = THIS }
+			PER_1112 = { add_core = THIS }
+			set_country_flag = KDS_caucasus
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	KDS_empire = {
+		picture = kurdistan_map
+		potential = {
+			tag = KDS
+			has_country_flag = KDS_caucasus
+			has_country_flag = KDS_eastern_bulwark
+			NOT = { has_country_flag = KDS_empire }
+		}
+		allow = {
+			war = no
+			civilized = yes
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			random_owned = {
+				limit = {
+					OR = {
+						owner = { government = absolute_monarchy }
+						owner = { government = hms_government }
+						owner = { government = prussian_constitutionalism }
+						owner = { government = theocracy }
+					}
+				}
+				owner = { government = absolute_empire }
+			}
+			set_country_flag = KDS_empire
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.1
+            }
+		}
+	}
+	
+	ASY_crush_the_kurds = {
+		picture = kurdistan_map
+		potential = {
+			tag = ASY
+			NOT = { has_country_flag = ASY_crush_the_kurds }
+			NOT = { has_country_flag = ASY_attacked }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			OR = {
+				civilized = yes
+				owns = 890
+			}
+		}
+		effect = {
+			badboy = 10
+			any_owned = { remove_province_modifier = KDS_powerful_tribe }
+			TUR_890 = { add_core = THIS }
+			set_country_flag = ASY_crush_the_kurds
+			ASY_kurd_integration_tt = {}
+			set_country_flag = ASY_kurd_integration_pending
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	ASY_exarchate_of_assyria = {
+		picture = kurdistan_map
+		potential = {
+			tag = ASY
+			OR = {
+				vassal_of = GRE
+				vassal_of = BYZ
+			}
+			OR = {
+				GRE = { has_country_flag = BYZ_assyria_war }
+				BYZ = { has_country_flag = BYZ_assyria_war }
+			}
+			NOT = { has_country_flag = ASY_exarchate_of_assyria }
+		}
+		allow = {
+		}
+		effect = {
+			overlord = { country_event = 177014 }
+			set_country_flag = ASY_exarchate_of_assyria
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ASY_unify_education = {
+		picture = kurdistan_map
+		potential = {
+			tag = ASY
+			year = 1937
+			NOT = { has_country_flag = ASY_unify_education }
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = ASY_unify_education
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

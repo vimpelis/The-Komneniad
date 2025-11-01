@@ -103,29 +103,15 @@ vassal = {
 }
 
 vassal = {
-    first = ADU
-    second = JOH
-    start_date = 1836.1.1
-    end_date = 1936.1.1
-}
-
-vassal = {
-    first = ADU
-    second = SLG
-    start_date = 1836.1.1
-    end_date = 1936.1.1
-}
-
-vassal = {
-    first = ADU
-    second = PHG
-    start_date = 1836.1.1
-    end_date = 1936.1.1
-}
-
-vassal = {
-    first = ADU
+    first = JOH
     second = PRK
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = JOH
+    second = ATJ
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
@@ -133,13 +119,6 @@ vassal = {
 vassal = {
     first = SPA
     second = MAL
-    start_date = 1836.1.1
-    end_date = 1936.1.1
-}
-
-vassal = {
-    first = VOC
-    second = RIA
     start_date = 1836.1.1
     end_date = 1936.1.1
 }

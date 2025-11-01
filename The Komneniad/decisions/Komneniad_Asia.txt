@@ -433,6 +433,7 @@ political_decisions = {
 			1392 = { owner = { OR = { vassal_of = THIS tag = THIS } } }
 		}
 		effect = {
+			set_global_flag = malaya_formed
 			badboy = 5
 			prestige = 10
 			change_tag = MLY

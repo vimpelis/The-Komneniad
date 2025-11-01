@@ -664,38 +664,6 @@
         size = 172
     }
 }
-#Cobija (28000/7000 POPS)
-2321 = {
-    aristocrats = {
-        culture = bedouin
-        religion = sunni
-        size = 5
-    }
-
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 5
-    }
-
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 10
-    }
-
-    soldiers = {
-        culture = bedouin
-        religion = sunni
-        size = 5
-    }
-
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 370
-    }
-}
 3382 = {
     aristocrats = {
         culture = amazonian

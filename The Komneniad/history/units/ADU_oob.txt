@@ -18,6 +18,8 @@ ARE = {
     value = -50
 }
 
+JOH = { value = 150 }
+
 army = {
     name = "1st Army"
     location = 489

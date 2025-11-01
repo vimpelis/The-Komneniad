@@ -6835,25 +6835,25 @@
 
     soldiers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 55
     }
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 55
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 110
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 1980
     }
 
@@ -7127,7 +7127,7 @@
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 100
     }
 
@@ -7285,7 +7285,7 @@
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 425
     }
 
@@ -7487,19 +7487,19 @@
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 25
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 50
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 200
     }
 
@@ -7555,31 +7555,31 @@
 
     soldiers = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 1100
     }
 
     aristocrats = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 46
     }
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 30
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 168
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 3068
     }
 
@@ -7681,7 +7681,7 @@
 
     farmers = {
         culture = assyrian
-        religion = coptic
+        religion = orthodox
         size = 1100
     }
 }
@@ -7743,31 +7743,31 @@
 
     aristocrats = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 30
     }
 
     officers = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 30
     }
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 30
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 122
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 2793
     }
 
@@ -7809,31 +7809,31 @@
 
     aristocrats = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 99
     }
 
     officers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 15
     }
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 15
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 266
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 3784
     }
 
@@ -7981,63 +7981,33 @@
         size = 537
     }
 
-    aristocrats = {
-        culture = assyrian
-        religion = coptic
-        size = 8
-    }
-
-    officers = {
-        culture = assyrian
-        religion = coptic
-        size = 8
-    }
-
-    clergymen = {
-        culture = assyrian
-        religion = coptic
-        size = 8
-    }
-
     artisans = {
         culture = assyrian
-        religion = coptic
+        religion = orthodox
         size = 31
     }
 
     farmers = {
         culture = assyrian
-        religion = coptic
+        religion = orthodox
         size = 698
     }
 
     aristocrats = {
         culture = assyrian
-        religion = coptic
+        religion = orthodox
         size = 25
-    }
-
-    officers = {
-        culture = assyrian
-        religion = coptic
-        size = 4
-    }
-
-    clergymen = {
-        culture = assyrian
-        religion = coptic
-        size = 4
     }
 
     artisans = {
         culture = assyrian
-        religion = coptic
+        religion = orthodox
         size = 67
     }
 
     farmers = {
         culture = assyrian
-        religion = coptic
+        religion = orthodox
         size = 1196
     }
 
@@ -8049,7 +8019,7 @@
 
     bureaucrats = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 192
     }
 
@@ -8069,7 +8039,7 @@
 3530 = {
     soldiers = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 1100
     }
 
@@ -8183,19 +8153,19 @@
 
     aristocrats = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 390
     }
 
     officers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 60
     }
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 60
     }
 
@@ -8208,85 +8178,13 @@
     farmers = {
         culture = assyrian
         religion = nestorian
-        size = 8760
-    }
-
-    aristocrats = {
-        culture = assyrian
-        religion = nestorian
-        size = 8
-    }
-
-    officers = {
-        culture = assyrian
-        religion = nestorian
-        size = 1
-    }
-
-    clergymen = {
-        culture = assyrian
-        religion = nestorian
-        size = 1
-    }
-
-    artisans = {
-        culture = assyrian
-        religion = nestorian
-        size = 22
+        size = 3760
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
-        size = 175
-    }
-
-    farmers = {
-        culture = assyrian
-        religion = nestorian
-        size = 10
-    }
-
-    aristocrats = {
-        culture = assyrian
-        religion = coptic
-        size = 3
-    }
-
-    clergymen = {
-        culture = assyrian
-        religion = coptic
-        size = 3
-    }
-
-    artisans = {
-        culture = assyrian
-        religion = coptic
-        size = 12
-    }
-
-    farmers = {
-        culture = assyrian
-        religion = coptic
-        size = 67
-    }
-
-    aristocrats = {
-        culture = assyrian
-        religion = coptic
-        size = 97
-    }
-
-    officers = {
-        culture = assyrian
-        religion = coptic
-        size = 15
-    }
-
-    clergymen = {
-        culture = assyrian
-        religion = coptic
-        size = 15
+        religion = orthodox
+        size = 5175
     }
 
     artisans = {
@@ -8298,50 +8196,14 @@
     farmers = {
         culture = assyrian
         religion = coptic
-        size = 2190
-    }
-
-    aristocrats = {
-        culture = assyrian
-        religion = coptic
-        size = 2
-    }
-
-    officers = {
-        culture = assyrian
-        religion = coptic
-        size = 0
-    }
-
-    clergymen = {
-        culture = assyrian
-        religion = coptic
-        size = 0
-    }
-
-    artisans = {
-        culture = assyrian
-        religion = coptic
-        size = 5
-    }
-
-    farmers = {
-        culture = assyrian
-        religion = coptic
-        size = 44
-    }
-
-    farmers = {
-        culture = assyrian
-        religion = coptic
-        size = 2
+        size = 2590
     }
 }
 #Jezira/Cizre (92000/23000 POPS)
 2414 = {
     soldiers = {
         culture = assyrian
-        religion = nestorian
+        religion = coptic
         size = 1100
     }
 
@@ -8383,20 +8245,20 @@
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 60
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 60
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
-        size = 10290
+        religion = orthodox
+        size = 7290
     }
 
     aristocrats = {
@@ -8516,14 +8378,14 @@
     farmers = {
         culture = assyrian
         religion = coptic
-        size = 671
+        size = 3671
     }
 }
 #Weranshahir
 3279 = {
     soldiers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 1100
     }
 
@@ -8637,25 +8499,25 @@
 
     aristocrats = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 30
     }
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 30
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 120
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 9315
     }
 
@@ -9637,7 +9499,7 @@
 899 = {
     soldiers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 1100
     }
 
@@ -9751,25 +9613,25 @@
 
     aristocrats = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 144
     }
 
     clergymen = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 99
     }
 
     artisans = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 612
     }
 
     farmers = {
         culture = assyrian
-        religion = nestorian
+        religion = orthodox
         size = 10494
     }
 

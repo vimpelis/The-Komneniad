@@ -31,7 +31,6 @@ political_decisions = {
                 }
 				AND = { #Ha'il
                     owns = 1160 #Ha'il
-                    3404 = { empty = yes } #al-Salman
                     1158 = { empty = yes } #al-Nefud
                 }
 				AND = { #Shaybah
@@ -39,8 +38,28 @@ political_decisions = {
                     3385 = { empty = yes }
                 }
 				AND = { #Anazzah
-                    owns = 1156
-                    2639 = { empty = yes }
+                    owns = 911
+                    1156 = { empty = yes }
+                }
+				AND = { #Jordan
+                    owns = 908
+                    910 = { empty = yes }
+                }
+				AND = { #Suwayda
+                    owns = 906
+                    907 = { empty = yes }
+                }
+				AND = { #Deirezzor
+                    owns = 3300
+                    2321 = { empty = yes }
+                }
+				AND = { #Iraq North
+                    owns = 929
+                    931 = { empty = yes }
+                }
+				AND = { #Iraq South
+                    owns = 933
+                    3404 = { empty = yes }
                 }
             }
         }
@@ -107,7 +126,6 @@ political_decisions = {
                 }
 				AND = { #Ha'il
                     owns = 1160 #Ha'il
-                    3404 = { empty = yes } #al-Salman
                     1158 = { empty = yes } #al-Nefud
                     OR = {
                         year = 1860
@@ -129,8 +147,63 @@ political_decisions = {
                     }
                 }
 				AND = { #Anazzah
-                    owns = 1156
-                    2639 = { empty = yes }
+                    owns = 911
+                    1156 = { empty = yes }
+					OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Jordan
+                    owns = 908
+                    910 = { empty = yes }
+					OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Suwayda
+                    owns = 906
+                    907 = { empty = yes }
+					OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Deirezzor
+                    owns = 3300
+                    2321 = { empty = yes }
+					OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Iraq North
+                    owns = 929
+                    931 = { empty = yes }
+					OR = {
+                        year = 1860
+                        AND = {
+                            state_n_government = 1
+                            NOT = { capital_scope = { continent = europe } }
+                        }
+                    }
+                }
+				AND = { #Iraq South
+                    owns = 933
+                    3404 = { empty = yes }
 					OR = {
                         year = 1860
                         AND = {
@@ -211,11 +284,9 @@ political_decisions = {
                 limit = {
                     owner = {
                         owns = 1160 #Hail
-                        3404 = { empty = yes } #al-Salman
 						1158 = { empty = yes } #al-Nefud
                     }
                 }
-                3404 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
 				1158 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
                 owner = {
 					prestige = 1
@@ -225,6 +296,7 @@ political_decisions = {
 								OR = {
 									tag = HAL
 									tag = NEJ
+									tag = ARA
 								}
 							}
 						}
@@ -249,15 +321,66 @@ political_decisions = {
             random_owned = {
                 limit = {
                     owner = {
-                        owns = 1156
-                        2639 = { empty = yes }
+                        owns = 911
+                        1156 = { empty = yes }
                     }
                 }
-                2639 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
-				931 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
-				910 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
-				907 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
-				2321 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                1156 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+			#Jordan#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 908
+                        910 = { empty = yes }
+                    }
+                }
+                910 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+			#Suwayda#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 906
+                        907 = { empty = yes }
+                    }
+                }
+                907 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+			#Deirezzor#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 3300
+                        2321 = { empty = yes }
+                    }
+                }
+                2321 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+			#Iraq North#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 929
+                        931 = { empty = yes }
+                    }
+                }
+                931 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                owner = { prestige = 1 }
+            }
+			#Iraq South#
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 933
+                        3404 = { empty = yes }
+                    }
+                }
+                3404 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
                 owner = { prestige = 1 }
             }
         }

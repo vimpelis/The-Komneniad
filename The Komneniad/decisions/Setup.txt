@@ -747,6 +747,8 @@ political_decisions = {
 			BTL = { country_event = 177000 }
 			BZD = { country_event = 177000 }
 			MKU = { country_event = 177000 }
+			BDN = { country_event = 177000 }
+			ASY = { country_event = 177006 }
 			FRK = { country_event = { id = 155002 days = 28 } }
 			FRK = { country_event = { id = 155004 days = 31 } }
 			FRK = { country_event = { id = 155006 days = 33 } }

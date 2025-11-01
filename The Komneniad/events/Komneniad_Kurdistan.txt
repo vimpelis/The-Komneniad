@@ -121,3 +121,372 @@ country_event = {
 			}
     }
 }
+
+country_event = {
+    id = 177004
+    title = "The Assyrian Yoke"
+    desc = "177004DESC"
+    picture = "kurdistan"
+
+    trigger = {
+		has_country_flag = KDS_consolidate_lake_van
+		exists = ASY
+		war = no
+		is_vassal = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Now, to deal with the Greeks."
+		new_decisions_tt = {}
+		set_country_flag = KDS_uprising_available
+    }
+}
+
+country_event = {
+    id = 177005
+    title = "Victory against Assyria"
+    desc = "177005DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A deal with the devil is preferable to death."
+		any_owned = {
+			limit = { is_core = UQA }
+			secede_province = UQA
+		}
+		random_owned = {
+			limit = { exists = ZND }
+			owner = {
+				any_owned = {
+					limit = { is_core = IRQ }
+					secede_province = ZND
+				}
+			}
+		}
+		any_owned = {
+			limit = { is_core = IRQ }
+			secede_province = IRQ
+		}
+		BYZ = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+			relation = {
+				who = THIS
+				value = 400
+			}
+		}
+		GRE = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+			relation = {
+				who = THIS
+				value = 400
+			}
+		}
+		BYZ = { country_event = 177011 }
+		GRE = { country_event = 177011 }
+    }
+	
+	option = {
+        name = "Let them come, hunger and disease will claim their armies!"
+		any_country = {
+			limit = {
+				tag = GRE
+				exists = yes
+			}
+			country_event = 177012
+		}
+		any_country = {
+			limit = {
+				tag = BYZ
+				exists = yes
+			}
+			country_event = 177012
+		}
+    }
+}
+
+country_event = {
+    id = 177006
+    title = "An Uneasy Kingdom"
+    desc = "177006DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Enemies all around."
+    }
+}
+
+country_event = {
+    id = 177007
+    title = "Victory against the Kurds"
+    desc = "177007DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Onwards."
+		prestige = 10
+		inherit = MLN
+		inherit = TSI
+		ASY_kurd_integration_tt = {}
+		set_country_flag = ASY_kurd_integration_pending
+    }
+}
+
+country_event = {
+    id = 177008
+    title = "Integration of the Kurds"
+    desc = "177008DESC"
+    picture = "kurdistan"
+
+    trigger = {
+		tag = ASY
+		has_country_flag = ASY_kurd_integration_pending
+		owns = 890
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 180
+    }
+
+    option = {
+        name = "Great!"
+		prestige = 5
+		add_accepted_culture = kurdish
+		TUR_890 = { add_core = THIS }
+		clr_country_flag = ASY_kurd_integration_pending
+    }
+}
+
+country_event = {
+    id = 177009
+    title = "The Kurds rise up!"
+    desc = "177009DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Expel the savages!"
+		set_country_flag = ASY_attacked
+    }
+}
+
+country_event = {
+    id = 177010
+    title = "Trouble in the East"
+    desc = "177010DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We'll keep a close eye."
+    }
+}
+
+country_event = {
+    id = 177011
+    title = "Fall of Assyria"
+    desc = "177011DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A masterstroke of diplomacy or a humiliation?"
+    }
+}
+
+country_event = {
+    id = 177012
+    title = "Fall of Assyria"
+    desc = "177012DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Order shall be restored!"
+		badboy = 7.5
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = liberate_puppet_no_infamy country = ASY }
+		}
+		any_pop = {
+            scaled_militancy = {
+                factor = -4
+                issue = jingoism
+            }
+        }
+		any_pop = {
+            scaled_militancy = {
+                factor = -2
+                issue = pro_military
+            }
+        }
+		any_pop = {
+            scaled_militancy = {
+                factor = 2
+                issue = anti_military
+            }
+        }
+		any_pop = {
+            scaled_militancy = {
+                factor = 4
+                issue = pacifism
+            }
+        }
+		set_country_flag = BYZ_assyria_war
+		ai_chance = {
+			factor = 90
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+			modifier = {
+                factor = 0.6
+                badboy = 0.5
+            }
+			modifier = {
+                factor = 0.5
+                war = yes
+            }
+		}
+    }
+	
+    option = {
+        name = "Let it go, Assyria is not worth it."
+		FROM = { country_event = 177013 }
+		prestige = -10
+		any_pop = {
+            scaled_militancy = {
+                factor = 4
+                issue = jingoism
+            }
+        }
+		any_pop = {
+            scaled_militancy = {
+                factor = 2
+                issue = pro_military
+            }
+        }
+		any_pop = {
+            scaled_militancy = {
+                factor = -2
+                issue = anti_military
+            }
+        }
+		any_pop = {
+            scaled_militancy = {
+                factor = -4
+                issue = pacifism
+            }
+        }
+		ai_chance = {
+			factor = 10
+		}
+    }
+}
+
+country_event = {
+    id = 177013
+    title = "Constantinople backs down"
+    desc = "177013DESC"
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Cowards!"
+		prestige = 10
+    }
+}
+
+country_event = {
+    id = 177014
+    title = "Liberation of Assyria"
+    desc = "Roman armies are being met with gifts and honors as they victoriously march through the liberated Assyrian lands. To prevent a disaster from happening ever again, Assyria will be reorganised into an Exarchate."
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Good."
+		prestige = 10
+		ASY = {
+			inherit = MLN
+			inherit = TSI
+			government = colonial_company
+		}
+    }
+}
+
+country_event = {
+    id = 177015
+    title = "Fate of Van"
+    desc = "We have taken over the area around the lake Van. While we could simply annex it, there is also the possibility of handing it over to the Exarchate of Assyria, which would allow for more effective management and fuller integration of the locals."
+    picture = "kurdistan"
+
+    trigger = {
+		OR = {
+			tag = BYZ
+			tag = GRE
+		}
+		ASY = { vassal_of = THIS }
+		has_country_flag = BYZ_assyria_war
+		owns = 891
+		owns = 890
+		owns = 1109
+		owns = 3348
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+	option = {
+        name = "It's fine as it is."
+    }
+	
+	option = {
+        name = "The Exarchate will manage it effectively."
+		TUR_890 = { secede_province = ASY }
+    }
+}
+
+country_event = {
+    id = 177016
+    title = "Administration of the Kurdish Lands"
+    desc = "Constantinople decided to give us the area of Van. We will integrate it."
+    picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Nice."
+		TUR_890 = { add_core = THIS }
+		ASY_kurd_integration_tt = {}
+		set_country_flag = ASY_kurd_integration_pending
+    }
+}
