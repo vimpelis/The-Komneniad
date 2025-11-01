@@ -729,6 +729,10 @@ ideological_thought = {
             factor = 51
             year = 1850
         }
+		modifier = {
+            factor = 50
+            tag = BRB
+        }
         modifier = {
             factor = 1.02
             tech_school = culture_tech_school
@@ -777,6 +781,10 @@ state_n_government = {
             any_owned_province = { port = yes }
             total_pops = 3000000
         }
+		modifier = {
+            factor = 50
+            tag = BRB
+        }
         modifier = {
             factor = 3
             tech_school = culture_tech_school
@@ -813,6 +821,10 @@ nationalism_n_imperialism = {
             factor = 2
             is_greater_power = yes
             year = 1865
+        }
+		modifier = {
+            factor = 50
+            tag = BRB
         }
         modifier = {
             factor = 51

@@ -9724,13 +9724,7 @@
     farmers = {
         culture = armenian
         religion = coptic
-        size = 9675
-    }
-
-    farmers = {
-        culture = anatolian
-        religion = orthodox
-        size = 350
+        size = 8775
     }
 
     aristocrats = {
@@ -9760,7 +9754,7 @@
     farmers = {
         culture = mashriqi
         religion = sunni
-        size = 1185
+        size = 785
     }
 
     clergymen = {
@@ -9778,7 +9772,13 @@
     farmers = {
         culture = syriac
         religion = orthodox
-        size = 8475
+        size = 9625
+    }
+	
+	farmers = {
+        culture = syriac
+        religion = coptic
+        size = 3150
     }
 
     clergymen = {
@@ -9814,7 +9814,7 @@
     farmers = {
         culture = mashriqi
         religion = shiite
-        size = 5700
+        size = 3700
     }
 
     aristocrats = {
@@ -9856,7 +9856,7 @@
     farmers = {
         culture = anatolian
         religion = orthodox
-        size = 3800
+        size = 4150
     }
 }
 #Bayburt

@@ -931,7 +931,7 @@
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 1100
+        size = 1400
     }
 
     aristocrats = {
@@ -961,7 +961,7 @@
     farmers = {
         culture = teda
         religion = sunni
-        size = 1200
+        size = 900
     }
 
     farmers = {

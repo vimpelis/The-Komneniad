@@ -39,7 +39,7 @@
     }
 
     farmers = {
-        culture = copt
+        culture = oromo
         religion = coptic
         size = 100
     }
@@ -76,20 +76,26 @@
 
     clergymen = {
         culture = syriac
-        religion = orthodox
+        religion = coptic
         size = 100
     }
 
     artisans = {
         culture = syriac
-        religion = orthodox
+        religion = coptic
         size = 100
     }
 
     farmers = {
         culture = syriac
+        religion = coptic
+        size = 450
+    }
+	
+	farmers = {
+        culture = syriac
         religion = orthodox
-        size = 500
+        size = 50
     }
 
     clergymen = {
@@ -168,44 +174,44 @@
 
     clergymen = {
         culture = syriac
-        religion = orthodox
+        religion = coptic
         size = 100
     }
 
     artisans = {
         culture = syriac
-        religion = orthodox
+        religion = coptic
         size = 100
     }
 
     farmers = {
         culture = syriac
-        religion = orthodox
+        religion = coptic
         size = 500
     }
 
     aristocrats = {
         culture = syriac
-        religion = coptic
+        religion = orthodox
         size = 11
     }
 
     clergymen = {
         culture = syriac
-        religion = coptic
+        religion = orthodox
         size = 23
     }
 
     artisans = {
         culture = syriac
-        religion = coptic
+        religion = orthodox
         size = 30
     }
 
     farmers = {
         culture = syriac
-        religion = coptic
-        size = 665
+        religion = orthodox
+        size = 265
     }
 }
 #Badiyat al-Sham Region (40000)  #see Syria.txt, Iraq.txt & Saudi Arabia.txt for balance of region
