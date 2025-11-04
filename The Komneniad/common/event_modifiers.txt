@@ -5378,3 +5378,15 @@ BYZ_identity_crisis = {
 	global_pop_consciousness_modifier = 0.05
     icon = 18
 }
+
+KDS_more_mob = {
+	mobilisation_economy_impact = -0.25
+    land_unit_start_experience = 5
+    supply_consumption = -0.05
+    mobilisation_size = 0.2
+    icon = 15
+}
+
+KDS_tribute_cooldown = {
+    icon = 16
+}

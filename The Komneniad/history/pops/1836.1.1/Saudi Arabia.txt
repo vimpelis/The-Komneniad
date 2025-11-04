@@ -404,10 +404,6 @@
         size = 2100
     }
 }
-#Al-Qurayyat
-2639 = {
-    
-}
 #Nejd Region (204000)
 #under the rule of Nejd in 1836
 #Riyadh (116000/29000 POPS)

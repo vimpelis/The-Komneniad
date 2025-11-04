@@ -1,3 +1,6 @@
+owner = LBA
+controller = LBA
+add_core = LBA
 terrain = jungle_mountains
 trade_goods = fruit
-life_rating = 10
+life_rating = 25

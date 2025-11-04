@@ -1,5 +1,6 @@
-add_core = TSW
-terrain = semidesert
-trade_goods = wool
-life_rating = 10
-colonial = 1
+owner = LBA
+controller = LBA
+add_core = LBA
+terrain = jungle
+trade_goods = fruit
+life_rating = 25

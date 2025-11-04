@@ -559,8 +559,6 @@ province_event = {
 
     option = {
         name = "EVTOPTA1100"
-        owner = { random_owned = { limit = { province_id = 2488 NOT = { trade_goods = gold } } change_province_name = "Cairns" } }
-		owner = { random_owned = { limit = { province_id = 3468 trade_goods = gold } change_province_name = "South Pass City" } }
         trade_goods = gold
         add_province_modifier = { name = gold_rush duration = 730 }
         # life_rating = 5

@@ -45,6 +45,10 @@ country_event = {
 			limit = { type = soldiers }
 			reduce_pop = 1.1
 		}
+		add_country_modifier = {
+			name = KDS_more_mob
+			duration = 3650
+		}
 		war = {
 			target = BDN
 			attacker_goal = { casus_belli = conquest_any }
@@ -76,6 +80,10 @@ country_event = {
 
     option = {
         name = "We will resist!"
+		add_country_modifier = {
+			name = KDS_more_mob
+			duration = 3650
+		}
 		BDN = {
 			war = {
 				target = MKU
@@ -96,6 +104,10 @@ country_event = {
 
     option = {
         name = "Bedirxan will fall!"
+		add_country_modifier = {
+			name = KDS_more_mob
+			duration = 3650
+		}
 		primary_culture = turkish
 		add_accepted_culture = kurdish
 		define_general = {
@@ -488,5 +500,110 @@ country_event = {
 		TUR_890 = { add_core = THIS }
 		ASY_kurd_integration_tt = {}
 		set_country_flag = ASY_kurd_integration_pending
+    }
+}
+
+country_event = {
+    id = 177017
+    title = "The Assyrian Massacre of $YEAR$"
+    desc = "177017DESC"
+    picture = "assyrian_cavalry"
+
+    trigger = {
+		OR = {
+			primary_culture = kurdish
+			tag = BTL
+		}
+		has_country_flag = KDS_consolidate_lake_van
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+        name = "The ends justify the means."
+		relation = { who = ASY value = -100 }
+		1109 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.1 } }
+		891 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.1 } }
+		890 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.1 } }
+    }
+}
+
+country_event = {
+    id = 177018
+    title = "The Assyrian Genocide"
+    desc = "177018DESC"
+    picture = "assyrian_genocide"
+
+    trigger = {
+		OR = {
+			primary_culture = kurdish
+			tag = BTL
+		}
+		owns = 923
+		owns = 892
+		owns = 3532
+		owns = 901
+		owns = 3530
+		owns = 3279
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+        name = "Was it really necessary?"
+		badboy = 4
+		923 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.9 } }
+		3294 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.9 } }
+		3532 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.9 } }
+		901 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.9 } }
+		893 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.9 } }
+		928 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.75 } }
+		3353 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.75 } }
+		892 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.6 } }
+		2414 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.75 } }
+		3530 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.75 } }
+		3279 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.75 } }
+		899 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.75 } }
+		3231 = { any_pop = { move_pop = 889 } }
+		3232 = { any_pop = { move_pop = 888 } }
+		3640 = { any_pop = { move_pop = 887 } }
+		3489 = { any_pop = { move_pop = 3533 } }
+		2777 = { any_pop = { move_pop = 3300 } }
+		set_country_flag = KDS_assyrian_genocide
+    }
+}
+
+country_event = {
+    id = 177019
+    title = "The Pacification of Kurmanca"
+    desc = "177019DESC"
+    picture = "assyrian_cavalry"
+
+    trigger = {
+		tag = ASY
+		owns = 891
+		owns = 3536
+		owns = 1109
+		owns = 3348
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+        name = "Their opinion is of no importance to us."
+		badboy = 2
+		TUR_890 = { any_pop = { limit = { has_pop_culture = kurdish } reduce_pop = 0.9 } any_pop = { limit = { type = soldiers } reduce_pop = 0.1 } }
     }
 }

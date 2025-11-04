@@ -495,7 +495,6 @@ country_event = {
 		name = "Hurray!"
 		3668 = { secede_province = THIS any_pop = { literacy = -0.99 } fort = 1 }
 		3394 = { secede_province = THIS any_pop = { literacy = -0.99 } }
-		3395 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 	}
 }
 
@@ -536,17 +535,20 @@ province_event = {
 				year = 1862
 				NOT = { year = 1872 }
 				NOT = { trade_goods = pearls }
+				empty = no
 			}
 			AND = {
 				province_id = 2602
 				year = 1872
 				NOT = { year = 1886 }
 				NOT = { trade_goods = pearls }
+				empty = no
 			}
 			AND = {
 				province_id = 2501
 				year = 1886
 				NOT = { trade_goods = pearls }
+				empty = no
 			}
 		}
     }

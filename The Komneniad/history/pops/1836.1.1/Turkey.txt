@@ -7127,8 +7127,8 @@
 
     farmers = {
         culture = assyrian
-        religion = orthodox
-        size = 100
+        religion = nestorian
+        size = 2000
     }
 
     aristocrats = {
@@ -7287,6 +7287,18 @@
         culture = assyrian
         religion = orthodox
         size = 425
+    }
+	
+	farmers = {
+        culture = assyrian
+        religion = nestorian
+        size = 5875
+    }
+	
+	farmers = {
+        culture = assyrian
+        religion = coptic
+        size = 150
     }
 
     farmers = {
@@ -7502,6 +7514,18 @@
         religion = orthodox
         size = 200
     }
+	
+	farmers = {
+        culture = assyrian
+        religion = nestorian
+        size = 4775
+    }
+	
+	farmers = {
+        culture = assyrian
+        religion = coptic
+        size = 50
+    }
 
     aristocrats = {
         culture = kurdish
@@ -7580,7 +7604,7 @@
     farmers = {
         culture = assyrian
         religion = coptic
-        size = 3068
+        size = 6068
     }
 
     aristocrats = {

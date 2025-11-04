@@ -322,6 +322,7 @@ political_decisions = {
 			capital = 1127
 			years_of_research = 15
 			ZND = { all_core = { limit = { NOT = { is_core = IRQ } } add_core = MGT } }
+			ZND = { all_core = { remove_core = ZND } }
 			set_country_flag = MGT_proclaim_empire
 		}
 		ai_will_do = { factor = 1 }

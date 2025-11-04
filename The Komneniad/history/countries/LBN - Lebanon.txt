@@ -1,8 +1,8 @@
 capital = 913
-primary_culture = mashriqi
-culture = syriac
-culture = bedouin
-religion = sunni
+primary_culture = syriac
+culture = assyrian
+culture = greek
+religion = coptic
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
@@ -50,4 +50,4 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = sunni_country
+set_country_flag = coptic_country

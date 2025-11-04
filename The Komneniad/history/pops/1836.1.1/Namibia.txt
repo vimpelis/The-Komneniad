@@ -349,6 +349,90 @@
         religion = animist
         size = 2595
     }
+	
+	aristocrats = {
+        culture = herero
+        religion = animist
+        size = 15
+    }
+
+    clergymen = {
+        culture = herero
+        religion = animist
+        size = 25
+    }
+
+    artisans = {
+        culture = herero
+        religion = animist
+        size = 45
+    }
+
+    soldiers = {
+        culture = herero
+        religion = animist
+        size = 10
+    }
+
+    farmers = {
+        culture = herero
+        religion = animist
+        size = 625
+    }
+
+    aristocrats = {
+        culture = tswana
+        religion = animist
+        size = 13
+    }
+
+    clergymen = {
+        culture = tswana
+        religion = animist
+        size = 8
+    }
+
+    artisans = {
+        culture = tswana
+        religion = animist
+        size = 35
+    }
+
+    soldiers = {
+        culture = tswana
+        religion = animist
+        size = 45
+	}
+
+    farmers = {
+        culture = tswana
+        religion = animist
+        size = 208
+    }
+
+    aristocrats = {
+        culture = khoisan
+        religion = animist
+        size = 13
+    }
+
+    clergymen = {
+        culture = khoisan
+        religion = animist
+        size = 8
+    }
+
+    soldiers = {
+        culture = khoisan
+        religion = animist
+        size = 20
+    }
+
+    farmers = {
+        culture = khoisan
+        religion = animist
+        size = 327
+    }
 }
 #Kafue Region (16000) #see Zambia.txt for balance of region
 #uncolonized in 1836/dominated by the Lozi in 1836

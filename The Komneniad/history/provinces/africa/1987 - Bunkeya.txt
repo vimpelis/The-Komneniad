@@ -1,6 +1,6 @@
-owner = LUN
-controller = LUN
-add_core = YEK
+owner = KZB
+controller = KZB
 add_core = KZB
+add_core = YEK
 trade_goods = iron
 life_rating = 25

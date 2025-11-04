@@ -4,6 +4,3 @@
 #Andorra (228000/37000 POPS)
 3252 = {
 }
-#San Marino
-3266 = {
-}

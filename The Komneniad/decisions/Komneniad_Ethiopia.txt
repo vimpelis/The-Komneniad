@@ -750,6 +750,7 @@ political_decisions = {
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
+			rank = 12
 			all_core = { OR = { owned_by = THIS empty = yes } }
 		}
 		effect = {
@@ -791,7 +792,6 @@ political_decisions = {
 			add_accepted_culture = syriac
 			add_accepted_culture = assyrian
 			EGY_921 = { add_core = ETH }
-			EGY_915 = { add_core = ETH }
 			EGY_903 = { add_core = ETH }
 			EGY_897 = { add_core = ETH }
 			TUR_3300 = { add_core = ETH }

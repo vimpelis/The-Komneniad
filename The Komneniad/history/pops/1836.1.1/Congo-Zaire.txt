@@ -601,6 +601,37 @@
         size = 47670
     }
 }
+3649 = {
+	aristocrats = {
+        culture = luba
+        religion = animist
+        size = 500
+    }
+
+    clergymen = {
+        culture = luba
+        religion = animist
+        size = 400
+    }
+
+    artisans = {
+        culture = luba
+        religion = animist
+        size = 1200
+    }
+
+    soldiers = {
+        culture = luba
+        religion = animist
+        size = 2400
+    }
+
+    farmers = {
+        culture = luba
+        religion = animist
+        size = 82520
+    }
+}
 #Maniema Region (3304400)
 #under the rule of Luba in 1836
 #Nyangwe (1144000/286000 POPS)
@@ -677,48 +708,91 @@
         size = 64670
     }
 }
+3266 = {
+	aristocrats = {
+        culture = luba
+        religion = animist
+        size = 400
+    }
+
+    clergymen = {
+        culture = luba
+        religion = animist
+        size = 200
+    }
+
+    artisans = {
+        culture = luba
+        religion = animist
+        size = 500
+    }
+
+    soldiers = {
+        culture = luba
+        religion = animist
+        size = 900
+    }
+
+    farmers = {
+        culture = luba
+        religion = animist
+        size = 32780
+    }
+	
+	farmers = {
+        culture = kingwana
+        religion = animist
+        size = 8000
+    }
+	
+	farmers = {
+        culture = ruanda
+        religion = animist
+        size = 3000
+    }
+}
 #Uvira (836000/209000 POPS)
 1991 = {
     aristocrats = {
         culture = kingwana
         religion = sunni
-        size = 1375
+        size = 875
     }
 
     clergymen = {
         culture = kingwana
         religion = sunni
-        size = 730
+        size = 330
     }
 
     artisans = {
         culture = kingwana
         religion = sunni
-        size = 2840
+        size = 1840
     }
 
     soldiers = {
         culture = kingwana
         religion = sunni
-        size = 2200
+        size = 1100
     }
 
     farmers = {
         culture = kingwana
         religion = sunni
-        size = 449320
+        size = 89320
     }
 
     farmers = {
         culture = ruanda
         religion = animist
-        size = 89320
+        size = 29320
     }
 
     slaves = {
         culture = south_forest_bantu
         religion = animist
-        size = 14670
+        size = 8670
     }
 }
 #Basoko (1324400/331100 POPS)
@@ -797,6 +871,37 @@
         culture = ubangian
         religion = animist
         size = 10000
+    }
+}
+2639 = {
+	aristocrats = {
+        culture = kingwana
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = kingwana
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = kingwana
+        religion = sunni
+        size = 200
+    }
+
+    soldiers = {
+        culture = kingwana
+        religion = sunni
+        size = 300
+    }
+
+    farmers = {
+        culture = kingwana
+        religion = sunni
+        size = 12780
     }
 }
 #Nsheng (660000/165000 POPS)

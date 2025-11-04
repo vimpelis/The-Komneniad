@@ -291,3 +291,78 @@ country_event = {
 		3102 = { change_province_name = "Lake Maniyel" }
 	}
 }
+
+country_event = {
+    id = 176006
+    title = "Nilotic Conquests"
+    desc = "The realm must grow. The tribes shall submit to our rule. All of the Nile shall hear the Word!"
+    picture = "Nile"
+
+    trigger = {
+		tag = TAQ
+		has_country_flag = TAQ_maniyel_regime
+		ai = yes
+		war = no
+		any_neighbor_country = {
+			any_owned_province = { is_core = THIS }
+			civilized = no
+			part_of_sphere = no
+			NOT = { truce_with = THIS }
+			NOT = { military_score = THIS }
+			NOT = { tag = SUD }
+		}
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "To war!"
+		random_country = {
+			limit = {
+				any_owned_province = { is_core = THIS }
+				civilized = no
+				part_of_sphere = no
+				neighbour = THIS
+				NOT = { truce_with = THIS }
+				NOT = { military_score = THIS }
+				NOT = { tag = SUD }
+			}
+			country_event = 176007
+		}
+	}
+}
+
+country_event = {
+    id = 176007
+    title = "Nilotic Conquests"
+    desc = "Maniyel is invading our lands!"
+    picture = "Nile"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To war!"
+		FROM = {
+			country_event = 176008
+		}
+	}
+}
+
+country_event = {
+    id = 176008
+    title = "Nilotic Conquests"
+    desc = "With the target acquired, we shall invade!"
+    picture = "Nile"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Blood for the blood god!"
+		war = {
+			target = FROM
+			attacker_goal = { casus_belli = annex_core_country }
+		}
+	}
+}

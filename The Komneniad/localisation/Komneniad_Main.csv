@@ -640,3 +640,7 @@ AGRESSION_WAR_CONQUEST_ANY_NAME_MKU_ASY;Kurdish-Assyrian War;;;;;;;;;;;;;
 NORMAL_WAR_CONQUEST_ANY_NAME_BTL_ASY;Turkish-Assyrian War;;;;;;;;;;;;;
 AGRESSION_WAR_CONQUEST_ANY_NAME_BTL_ASY;Turkish-Assyrian War;;;;;;;;;;;;;
 ASY_colonial_company;Exarchate of Assyria;;;;;;;;;;;;;
+KDS_more_mob;Tribal Mobilization;;;;;;;;;;;;;;
+KDS_more_mob_desc;The drums of war can be heard in every nook and cranny: the tribes are being mobilized for war.;;;;;;;;;;;;;;
+KDS_tribute_cooldown;Tribute Collection Cooldown;;;;;;;;;;;;;;
+KDS_tribute_cooldown_desc;We can't collect tribute while this modifier is present.;;;;;;;;;;;;;;

@@ -7,14 +7,14 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			nationalism_n_imperialism = 1
-			owns = 375
-			owns = 385
 			OR = {
-				all_core = { owned_by = THIS }
-				year = 1870
+				nationalism_n_imperialism = 1
+				exists = SGF
+				exists = NGF
 				exists = GER
 			}
+			owns = 375
+			owns = 385
 			OR = {
 				NOT = { government = absolute_monarchy }
 				year = 1870

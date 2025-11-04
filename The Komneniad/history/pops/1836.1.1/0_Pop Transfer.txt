@@ -526,3 +526,90 @@
         size = 3750
     }
 }
+
+#Assyrian refugees
+3231 = { 
+	slaves = {
+        culture = assyrian
+        religion = orthodox
+        size = 4000
+    }
+	slaves = {
+        culture = assyrian
+        religion = coptic
+        size = 2000
+    }
+	slaves = {
+        culture = assyrian
+        religion = nestorian
+        size = 1000
+    }
+}
+3232 = { 
+	slaves = {
+        culture = assyrian
+        religion = orthodox
+        size = 2000
+    }
+	slaves = {
+        culture = assyrian
+        religion = coptic
+        size = 1000
+    }
+	slaves = {
+        culture = assyrian
+        religion = nestorian
+        size = 500
+    }
+}
+3640 = { 
+	slaves = {
+        culture = assyrian
+        religion = orthodox
+        size = 3000
+    }
+	slaves = {
+        culture = assyrian
+        religion = coptic
+        size = 1500
+    }
+	slaves = {
+        culture = assyrian
+        religion = nestorian
+        size = 750
+    }
+}
+3489 = { 
+	slaves = {
+        culture = assyrian
+        religion = orthodox
+        size = 3000
+    }
+	slaves = {
+        culture = assyrian
+        religion = coptic
+        size = 1500
+    }
+	slaves = {
+        culture = assyrian
+        religion = nestorian
+        size = 750
+    }
+}
+2777 = { 
+	slaves = {
+        culture = assyrian
+        religion = orthodox
+        size = 500
+    }
+	slaves = {
+        culture = assyrian
+        religion = coptic
+        size = 250
+    }
+	slaves = {
+        culture = assyrian
+        religion = nestorian
+        size = 50
+    }
+}

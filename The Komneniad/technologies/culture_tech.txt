@@ -750,7 +750,7 @@ state_n_government = {
 
     max_national_focus = 1
     ai_chance = {
-        factor = 15
+        factor = 50
         modifier = {
             factor = 3.5
             is_greater_power = yes
@@ -801,7 +801,7 @@ nationalism_n_imperialism = {
     cb_creation_speed = 0.1
 
     ai_chance = {
-        factor = 20
+        factor = 50
         modifier = {
             factor = 21
             is_greater_power = yes

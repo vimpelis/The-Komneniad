@@ -396,6 +396,12 @@ country_event = {
 		name = "Decolonize Africa"
 		country_event = 169011
 	}
+	
+	option = {
+        name = "Middle East options"
+		political_reform = no_slavery
+		country_event = 169014
+    }
 }
 
 country_event = {
@@ -687,5 +693,115 @@ country_event = {
 			ideology = conservative
 			value = -0.1
 		}
+    }
+}
+
+country_event = {
+    id = 169014
+    title = "Middle East Countries"
+    desc = "wip"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	option = {
+        name = "Give BYZ Cilicia"
+		894 = { secede_province = THIS secede_province = BYZ }
+		898 = { secede_province = THIS secede_province = BYZ }
+		900 = { secede_province = THIS secede_province = BYZ }
+		3362 = { secede_province = THIS secede_province = BYZ }
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Release Syria-Palestine"
+		897 = { secede_province = THIS secede_province = LBN }
+		905 = { secede_province = THIS secede_province = LBN }
+		914 = { secede_province = THIS secede_province = LBN }
+		EGY_903 = { secede_province = THIS secede_province = LBN }
+		EGY_921 = { secede_province = THIS secede_province = LBN }
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Release Palestine"
+		EGY_921 = { secede_province = THIS secede_province = PLS }
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Release Iraq"
+		TUR_935 = { secede_province = THIS secede_province = IRQ }
+		TUR_931 = { secede_province = THIS secede_province = IRQ }
+		3278 = { secede_province = THIS secede_province = IRQ }
+		931 = { secede_province = THIS secede_province = IRQ }
+		3404 = { secede_province = THIS secede_province = IRQ }
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Add Dayr al Zur to Iraq"
+		TUR_3300 = { secede_province = THIS secede_province = IRQ }
+		2321 = { secede_province = THIS secede_province = IRQ }
+		3537 = { secede_province = THIS secede_province = IRQ }
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Release Jordan"
+		EGY_908 = { secede_province = THIS secede_province = JOR }
+		910 = { secede_province = THIS secede_province = JOR }
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Sayhad Placeholder"
+		ABU_1162 = { secede_province = THIS secede_province = OMA }
+		NEJ_3385 = { secede_province = THIS secede_province = OMA }
+		YEM_1412 = { secede_province = THIS secede_province = OMA }
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Annex Central Arabia to ARU"
+		HDJ_1151 = { secede_province = THIS secede_province = ARU }
+		NEJ_1160 = { secede_province = THIS secede_province = ARU }
+		YEM_1178 = { secede_province = THIS secede_province = ARU }
+		1163 = { secede_province = THIS secede_province = ARU }
+		1164 = { secede_province = THIS secede_province = ARU }
+		911 = { secede_province = THIS secede_province = ARU }
+		1156 = { secede_province = THIS secede_province = ARU }
+		change_tag_no_core_switch = ARU
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Annex Sayhad to ARU"
+		ABU_1162 = { secede_province = THIS secede_province = ARU }
+		NEJ_3385 = { secede_province = THIS secede_province = ARU }
+		YEM_1412 = { secede_province = THIS secede_province = ARU }
+		OMA_1166 = { secede_province = THIS secede_province = ARU }
+		change_tag_no_core_switch = ARU
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Annex EGY, JOR, IRQ, SYR to ARU"
+		ARU = {
+			inherit = EGY
+			inherit = SYR
+			inherit = IRQ
+			inherit = JOR
+			inherit = UQA
+		}
+		1758 = { secede_province = THIS secede_province = ARU }
+		2585 = { secede_province = THIS secede_province = ARU }
+		change_tag_no_core_switch = ARU
+		country_event = 169014
+    }
+	
+	option = {
+        name = "Close"
     }
 }
