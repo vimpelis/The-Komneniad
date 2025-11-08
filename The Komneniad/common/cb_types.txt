@@ -132,6 +132,7 @@ mex_yuc_war
 ethiopian_somalian_cb
 ogaden_war_cb
 ethiopian_somalian2_cb
+syriac_crisis
 establish_protectorate_BC_casus_belli
 establish_protectorate_NI_casus_belli
 establish_protectorate_casus_belli
@@ -9783,6 +9784,69 @@ ogaden_war_cb = {
 		3594 = { remove_core = SOM }
 		1866 = { remove_core = SOM }
 		3499 = { remove_core = SOM }
+		add_country_modifier = { name = recently_lost_war duration = 1825 }
+    }
+}
+
+syriac_crisis = {
+    sprite_index = 22
+    is_triggered_only = yes
+    months = 12
+
+    badboy_factor = 0
+    prestige_factor = 1
+    peace_cost_factor = 40
+    penalty_factor = 0
+    constructing_cb = no
+    crisis = no
+
+    break_truce_prestige_factor = 0
+    break_truce_infamy_factor = 0
+    break_truce_militancy_factor = 0
+    truce_months = 60
+
+    good_relation_prestige_factor = 0
+    good_relation_infamy_factor = 0
+    good_relation_militancy_factor = 0
+
+	po_status_quo = yes
+
+    war_name = SYRIAC_CRISIS_WAR_NAME
+
+    can_use = {
+    }
+
+    on_add = {
+    }
+
+    on_po_accepted = {
+		any_owned = {
+			limit = {
+				OR = {
+					region = EGY_897
+					region = EGY_903
+					region = BYZ_894
+					region = TUR_3300
+				}
+			}
+			secede_province = THIS
+		}
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 915
+					province_id = 916
+					province_id = 917
+					province_id = 918
+					province_id = 919
+					province_id = 3358
+					province_id = 3474
+				}
+			}
+			add_core = PLS secede_province = THIS secede_province = PLS
+		}
+		create_vassal = PLS
+		PLS = { government = colonial_company }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }

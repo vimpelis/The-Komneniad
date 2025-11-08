@@ -1,0 +1,354 @@
+#178000 - Starting event
+
+#Starting event
+country_event = {
+    id = 178000
+    title = "The Compromise of Egypt"
+    desc = "178000DESC"
+    picture = "EGY_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A compromise unwanted by both sides is doomed to fail."
+    }
+}
+
+country_event = {
+    id = 178001
+    title = "Arelat activity in Beirut"
+    desc = "178001DESC"
+    picture = "beirut"
+
+    trigger = {
+		tag = EGY
+		owns = 913
+		year = 1842
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 100
+    }
+
+    option = {
+        name = "And it won't be the last."
+		ARE = { country_event = 178002 }
+		913 = { any_pop = { limit = { has_pop_culture = sephardic } reduce_pop = 2 } any_pop = { limit = { has_pop_culture = lower_burgundian } reduce_pop = 1.5 } add_province_modifier = { name = EGY_beirut duration = -1 } }
+    }
+}
+
+country_event = {
+    id = 178002
+    title = "New opportunities in Beirut"
+    desc = "178001DESC"
+    picture = "beirut"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A new profitable market."
+		diplomatic_influence = {
+			who = EGY
+			value = 25
+		}
+		add_country_modifier = { name = EGY_ARE_modf duration = 3650 }
+	}
+}
+
+#If war with BYZ
+country_event = {
+    id = 178003
+    title = "Union for the Protection of Syria"
+    desc = "178003DESC"
+    picture = "syria_street"
+
+    trigger = {
+		tag = EGY
+		OR = {
+			war_with = BYZ
+			AND = {
+				year = 1837
+				owns = 900
+			}
+		}
+		any_owned_province = { is_core = SYR }
+		NOT = { has_country_flag = EGY_UPS_formed }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "'Alarming' seems to be an undestatement."
+		EGY_897 = { add_core = LBN add_province_modifier = { name = EGY_syriac_unrest duration = -1 } }
+		EGY_903 = { add_core = LBN add_province_modifier = { name = EGY_syriac_unrest duration = -1 } }
+		EGY_921 = { add_core = LBN add_province_modifier = { name = EGY_syriac_unrest duration = -1 } }
+		900 = { add_core = LBN add_province_modifier = { name = EGY_syriac_unrest duration = -1 } }
+		any_pop = { limit = { has_pop_culture = syriac } militancy = 2 consciousness = 4 }
+		set_country_flag = EGY_UPS_formed
+	}
+}
+
+#If gave up Cilicia
+country_event = {
+    id = 178004
+    title = "Union for the Protection of Syria"
+    desc = "178004DESC"
+    picture = "syria_street"
+
+    trigger = {
+		tag = EGY
+		NOT = { war_with = BYZ }
+		NOT = { owns = 900 }
+		any_owned_province = { is_core = SYR }
+		NOT = { has_country_flag = EGY_UPS_formed }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "'Alarming' seems to be an undestatement."
+		EGY_897 = { add_core = LBN add_province_modifier = { name = EGY_syriac_unrest duration = -1 } }
+		EGY_903 = { add_core = LBN add_province_modifier = { name = EGY_syriac_unrest duration = -1 } }
+		EGY_921 = { add_core = LBN add_province_modifier = { name = EGY_syriac_unrest duration = -1 } }
+		900 = { add_core = LBN }
+		any_pop = { limit = { has_pop_culture = syriac } militancy = 2 consciousness = 4 }
+		set_country_flag = EGY_UPS_formed
+	}
+}
+
+country_event = {
+    id = 178005
+    title = "Increasing tensions in Sham"
+    desc = "178005DESC"
+    picture = "aleppo"
+
+    trigger = {
+		tag = EGY
+		year = 1846
+		any_owned_province = { is_core = LBN }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 200
+    }
+
+    option = {
+        name = "If there was to be just a spark..."
+		any_pop = { limit = { has_pop_culture = syriac } militancy = 1 consciousness = 2 }
+		any_pop = { limit = { has_pop_culture = mashriqi } militancy = 2 consciousness = 4 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				any_country = {
+					limit = {
+						tag = BYZ
+						exists = yes
+					}
+					country_event = 178009
+				}
+				any_country = {
+					limit = {
+						tag = GRE
+						exists = yes
+					}
+					country_event = 178009
+				}
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+}
+
+country_event = {
+    id = 178006
+    title = "The 1850 Massacre of Aleppo"
+    desc = "178006DESC"
+    picture = "aleppo_massacre"
+	major = yes
+
+    trigger = {
+		tag = EGY
+		year = 1850
+		month = 10
+		owns = 897
+		NOT = { year = 1851 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    option = {
+        name = "The powderkeg has exploded."
+		897 = { any_pop = { reduce_pop = 0.8 } add_province_modifier = { name = war_torn duration = 720 } }
+		any_pop = { limit = { has_pop_culture = syriac } militancy = 4 consciousness = 6 }
+		any_pop = { limit = { has_pop_culture = mashriqi } militancy = 2 consciousness = 4 }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				any_country = {
+					limit = {
+						tag = BYZ
+						exists = yes
+					}
+					country_event = 178007
+				}
+				any_country = {
+					limit = {
+						tag = GRE
+						exists = yes
+					}
+					country_event = 178007
+				}
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_global_flag = aleppo_massacre
+	}
+}
+
+country_event = {
+    id = 178007
+    title = "Christians massacred in Aleppo"
+    desc = "178007DESC"
+    picture = "aleppo_massacre"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "This is unacceptable, send the demands!"
+		badboy = 10
+		FROM = { country_event = 178008 }
+		ai_chance = {
+            factor = 100
+			modifier = {
+				badboy = 0.6
+				factor = 0
+			}
+        }
+	}
+	
+	option = {
+        name = "We couldn't be bothered."
+		prestige = -50
+		scaled_militancy = {
+			factor = 6
+			issue = jingoism
+		}
+		scaled_militancy = {
+			factor = 3
+			issue = pro_military
+		}
+		ai_chance = {
+            factor = 1
+			modifier = {
+				NOT = { badboy = 0.6 }
+				factor = 0
+			}
+        }
+	}
+}
+
+country_event = {
+    id = 178008
+    title = "Constantinople demands Syriac autonomy"
+    desc = "178008DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We accept, for it is the right choice to reconcile."
+		FROM = { country_event = 178010 }
+		badboy = -4
+		EGY_897 = { secede_province = LBN }
+		3361 = { secede_province = LBN }
+		913 = { secede_province = LBN }
+		912 = { secede_province = LBN }
+		create_vassal = LBN
+		scaled_militancy = {
+			factor = 4
+			issue = jingoism
+		}
+		scaled_militancy = {
+			factor = 2
+			issue = pro_military
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+        name = "Egypt will not be humiliated!"
+		FROM = { country_event = 178011 }
+		scaled_militancy = {
+			factor = -4
+			issue = jingoism
+		}
+		scaled_militancy = {
+			factor = -2
+			issue = pro_military
+		}
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = {
+    id = 178009
+    title = "Syriacs organise in Antioch"
+    desc = "178009DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Interesting."
+		BYZ_syria_infamy_notf = {}
+		any_pop = { limit = { has_pop_culture = syriac } consciousness = 2 }
+	}
+}
+
+country_event = {
+    id = 178010
+    title = "Egypt acquiesces"
+    desc = "178010DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Good."
+		badboy = -10
+	}
+}
+
+country_event = {
+    id = 178011
+    title = "Egypt refuses"
+    desc = "178011DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Syria will be free."
+		war = {
+			target = EGY
+			attacker_goal = { casus_belli = syriac_crisis }
+			defender_goal = { casus_belli = status_quo }
+		}
+	}
+}

@@ -644,3 +644,8 @@ KDS_more_mob;Tribal Mobilization;;;;;;;;;;;;;;
 KDS_more_mob_desc;The drums of war can be heard in every nook and cranny: the tribes are being mobilized for war.;;;;;;;;;;;;;;
 KDS_tribute_cooldown;Tribute Collection Cooldown;;;;;;;;;;;;;;
 KDS_tribute_cooldown_desc;We can't collect tribute while this modifier is present.;;;;;;;;;;;;;;
+EGY_beirut;Independent Trade City;;;;;;;;;;;;;;
+EGY_ARE_modf;Middle Eastern Profits;;;;;;;;;;;;;;
+EGY_ARE_modf_desc;We are exploiting the untapped market of Phoenice, free of competition.;;;;;;;;;;;;;;
+EGY_syriac_unrest;Syriac Disobedience;;;;;;;;;;;;;;
+BYZ_syria_infamy_notf;§BIt is heavily recommended that you do not exceed 15 infamy when the year 1850 comes.§!\n;;;;;;;;;;;;;;
