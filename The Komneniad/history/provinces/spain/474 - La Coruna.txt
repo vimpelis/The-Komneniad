@@ -1,7 +1,6 @@
 owner = SPA
 controller = SPA
 add_core = SPA
-naval_base = 1
 trade_goods = timber
 terrain = la_coruna
 life_rating = 35
