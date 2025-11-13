@@ -5412,3 +5412,38 @@ EGY_syriac_unrest = {
 	goods_demand = -0.25
     icon = 8
 }
+
+SOM_darod = {
+	pop_militancy_modifier = 0.05
+	farm_RGO_eff = -0.25
+	mine_RGO_eff = -0.25
+    icon = 20
+}
+
+SOM_hawiye = {
+	pop_militancy_modifier = 0.05
+	farm_RGO_eff = -0.25
+	mine_RGO_eff = -0.25
+    icon = 20
+}
+
+SOM_dir = {
+	pop_militancy_modifier = 0.05
+	farm_RGO_eff = -0.25
+	mine_RGO_eff = -0.25
+    icon = 20
+}
+
+SOM_isaaq = {
+	pop_militancy_modifier = 0.05
+	farm_RGO_eff = -0.25
+	mine_RGO_eff = -0.25
+    icon = 20
+}
+
+SOM_rahanweyn = {
+	pop_militancy_modifier = 0.05
+	farm_RGO_eff = -0.25
+	mine_RGO_eff = -0.25
+    icon = 20
+}

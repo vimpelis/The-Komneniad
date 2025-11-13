@@ -21,13 +21,16 @@ country_event = {
             }
             country_event = 5582701
         }
+		ai_chance = { factor = 1 }
     }
     option = {
         name = "Now is not the time."
+		ai_chance = { factor = 0 }
     }
     option = {
         name = "Disable this option."
         set_global_flag = no_incorp
+		ai_chance = { factor = 0 }
     }
 }
 
@@ -46,9 +49,7 @@ country_event = {
             }
             country_event = 9972733
         }
-        ai_chance = {
-            factor = 100
-        }
+		ai_chance = { factor = 1 }
     }
 
 }
@@ -63,6 +64,7 @@ country_event = {
 
     option = {
         name = "Let's maintain the status quo."
+		ai_chance = { factor = 0 }
     }
 
     option = {
@@ -94,6 +96,6 @@ country_event = {
             who = FROM
             value = -400
         }
-
+		ai_chance = { factor = 1 }
     }
 }

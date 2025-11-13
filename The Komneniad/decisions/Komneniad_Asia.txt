@@ -109,6 +109,7 @@ political_decisions = {
 				civilization_progress = 0.5
 			}
 			all_core = { OR = { owned_by = THIS owned_by = CAM } }
+			NOT = { truce_with = CAM }
 		}
 		effect = {
 			FRA = { country_event = 166015 }
@@ -136,6 +137,7 @@ political_decisions = {
 			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
+			NOT = { truce_with = CAM }
 		}
 		effect = {
 			badboy = 7

@@ -145,6 +145,12 @@ country_event = {
     }
 	
 	option = {
+        name = "Add Research Points"
+		research_points = 35000
+		country_event = 169007
+    }
+	
+	option = {
         name = "Annex all"
 		any_owned = {
             secede_province = THIS

@@ -8,6 +8,7 @@ country_event = {
     trigger = {
 		tag = ARA
 		has_recently_lost_war = yes
+		war = no
 		NOT = { has_country_flag = ARA_unification_call }
     }
 

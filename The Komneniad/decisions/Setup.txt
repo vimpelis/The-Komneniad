@@ -710,6 +710,7 @@ political_decisions = {
 					name = post_zemene_mesafint
 					duration = 3650
 				}
+				treasury = 20000
 			}
 			FJN = { country_event = 165002 }
 			GNG = { country_event = 165002 }
@@ -750,6 +751,7 @@ political_decisions = {
 			BDN = { country_event = 177000 }
 			ASY = { country_event = 177006 }
 			EGY = { country_event = 178000 }
+			SOM = { country_event = 175035 }
 			FRK = { country_event = { id = 155002 days = 28 } }
 			FRK = { country_event = { id = 155004 days = 31 } }
 			FRK = { country_event = { id = 155006 days = 33 } }

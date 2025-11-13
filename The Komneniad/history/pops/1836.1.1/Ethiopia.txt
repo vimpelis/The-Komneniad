@@ -493,7 +493,7 @@
     soldiers = {
         culture = amhara
         religion = coptic
-        size = 1670
+        size = 3250
     }
 
     farmers = {
@@ -609,7 +609,7 @@
 	soldiers = {
 		culture = amhara
 		religion = coptic
-		size = 1120
+		size = 6350
 	}
 
 	farmers = {
@@ -2472,7 +2472,7 @@
     farmers = {
         culture = somali
         religion = sunni
-        size = 19625
+        size = 24625
     }
 
     slaves = {
@@ -2562,7 +2562,7 @@
     farmers = {
         culture = oromo
         religion = coptic
-        size = 22050
+        size = 17050
     }
 	
 	aristocrats = {

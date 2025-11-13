@@ -1124,19 +1124,19 @@
 	aristocrats = {
         culture = ethiopian_minor
         religion = animist
-        size = 150
+        size = 120
     }
 
     clergymen = {
         culture = ethiopian_minor
         religion = animist
-        size = 100
+        size = 80
     }
 
     artisans = {
         culture = ethiopian_minor
         religion = animist
-        size = 400
+        size = 300
     }
 
     soldiers = {
@@ -1148,19 +1148,19 @@
     farmers = {
         culture = ethiopian_minor
         religion = animist
-        size = 3570
+        size = 2570
     }
 
     slaves = {
         culture = ethiopian_minor
         religion = animist
-        size = 1200
+        size = 800
     }
 	
 	farmers = {
         culture = ethiopian_minor
         religion = sunni
-        size = 2000
+        size = 1500
     }
 
     slaves = {
@@ -1256,6 +1256,6 @@
 	farmers = {
         culture = somali
         religion = sunni
-        size = 1825
+        size = 6925
     }
 }

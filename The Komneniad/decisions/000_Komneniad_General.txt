@@ -774,8 +774,10 @@ political_decisions = {
 		alert = no
         potential = {
             is_greater_power = yes
-            has_country_flag = government_decisions_on
-            ai = no
+            OR = {
+				has_country_flag = government_decisions_on
+				ai = yes
+			}
             NOT = { has_global_flag = no_incorp }
 			OR = {
 				NOT = { tag = ZPD }
@@ -788,7 +790,17 @@ political_decisions = {
         effect = {
             country_event = 9705979
         }
-        ai_will_do = { factor = 0 }
+        ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { any_core = { owner = { OR = { vassal_of = THIS in_sphere = THIS } } } }
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
     }
 
 	reform_the_local_government = {

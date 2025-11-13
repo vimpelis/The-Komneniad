@@ -1531,3 +1531,359 @@ country_event = {
 		any_pop = { consciousness = 1 }
 	}
 }
+
+#########################################SOMALIA#########################################
+
+#Starting event
+country_event = {
+	id = 175035
+	title = "The Clans of Somalia"
+	desc = "175035DESC"
+	picture = "somalia"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Like a stray dog."
+		1872 = { add_province_modifier = { name = SOM_darod duration = -1 } }
+		1867 = { add_province_modifier = { name = SOM_darod duration = -1 } }
+		2031 = { add_province_modifier = { name = SOM_darod duration = -1 } }
+		1870 = { add_province_modifier = { name = SOM_darod duration = -1 } }
+		2045 = { add_province_modifier = { name = SOM_darod duration = -1 } }
+		2030 = { add_province_modifier = { name = SOM_darod duration = -1 } }
+		2032 = { add_province_modifier = { name = SOM_darod duration = -1 } }
+		1871 = { add_province_modifier = { name = SOM_hawiye duration = -1 } }
+		1868 = { add_province_modifier = { name = SOM_hawiye duration = -1 } }
+		1874 = { add_province_modifier = { name = SOM_dir duration = -1 } }
+		3590 = { add_province_modifier = { name = SOM_dir duration = -1 } }
+		1873 = { add_province_modifier = { name = SOM_isaaq duration = -1 } }
+		1869 = { add_province_modifier = { name = SOM_rahanweyn duration = -1 } }
+	}
+}
+
+country_event = {
+	id = 175036
+	title = "Clans of Somalia"
+	desc = "175036DESC"
+	picture = "somalia"
+
+	is_triggered_only = yes
+	
+	allow_multiple_instances = yes
+
+	option = {
+		name = "Darod"
+		random_owned = {
+			limit = { owner = { has_country_flag = SOM_darod_gone } }
+			owner = { SOM_clandone_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = { SOM_darod_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { money = 75000 NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = { req_money75k = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { money = 75000 } NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = { req_nomoney75k = {} }
+		}
+		random_owned = {
+			limit = { owner = { military_score = 50 NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = { req_milscore = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { military_score = 50 } NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = { req_nomilscore = {} }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip money = 75000 military_score = 50 NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = {
+				set_country_flag = SOM_darod_gone
+				treasury = -75000
+				any_owned = { limit = { has_province_modifier = SOM_darod } remove_province_modifier = SOM_darod any_pop = { limit = { has_pop_culture = somali } militancy = 6 consciousness = 6 } }
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip has_country_flag = SOM_darod_gone has_country_flag = SOM_hawiye_gone has_country_flag = SOM_dir_gone has_country_flag = SOM_isaac_gone has_country_flag = SOM_rahanweyn_gone } }
+			owner = {
+				set_country_flag = SOM_clans_gone
+				country_event = 175040
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip NOT = { has_country_flag = SOM_clans_gone } } }
+			owner = {
+				country_event = 175036
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+	
+	option = {
+		name = "Hawiye"
+		random_owned = {
+			limit = { owner = { has_country_flag = SOM_hawiye_gone } }
+			owner = { SOM_clandone_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = SOM_hawiye_gone } } }
+			owner = { SOM_hawiye_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { OR = { admin_reform = yes_admin_reform state_n_government = 1 } NOT = { has_country_flag = SOM_hawiye_gone } } }
+			owner = { req_adminreform = {} }
+		}
+		random_owned = {
+			limit = { owner = { OR = { AND = { admin_reform = no_admin_reform civilized = no } AND = { NOT = { state_n_government = 1 } civilized = yes } } NOT = { has_country_flag = SOM_hawiye_gone } } }
+			owner = { req_noadminreform = {} }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip OR = { admin_reform = yes_admin_reform state_n_government = 1 } NOT = { has_country_flag = SOM_hawiye_gone } } }
+			owner = {
+				set_country_flag = SOM_hawiye_gone
+				any_owned = { limit = { has_province_modifier = SOM_hawiye } remove_province_modifier = SOM_hawiye any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip has_country_flag = SOM_darod_gone has_country_flag = SOM_hawiye_gone has_country_flag = SOM_dir_gone has_country_flag = SOM_isaac_gone has_country_flag = SOM_rahanweyn_gone } }
+			owner = {
+				set_country_flag = SOM_clans_gone
+				country_event = 175040
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip NOT = { has_country_flag = SOM_clans_gone } } }
+			owner = {
+				country_event = 175036
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+	
+	option = {
+		name = "Dir"
+		random_owned = {
+			limit = { owner = { has_country_flag = SOM_dir_gone } }
+			owner = { SOM_clandone_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = SOM_dir_gone } } }
+			owner = { SOM_dir_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { positivism = 1 NOT = { has_country_flag = SOM_dir_gone } } }
+			owner = { req_positivism = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { positivism = 1 } NOT = { has_country_flag = SOM_dir_gone } } }
+			owner = { req_nopositivism = {} }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip positivism = 1 NOT = { has_country_flag = SOM_dir_gone } } }
+			owner = {
+				set_country_flag = SOM_dir_gone
+				any_owned = { limit = { has_province_modifier = SOM_dir } remove_province_modifier = SOM_dir any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip has_country_flag = SOM_darod_gone has_country_flag = SOM_hawiye_gone has_country_flag = SOM_dir_gone has_country_flag = SOM_isaac_gone has_country_flag = SOM_rahanweyn_gone } }
+			owner = {
+				set_country_flag = SOM_clans_gone
+				country_event = 175040
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip NOT = { has_country_flag = SOM_clans_gone } } }
+			owner = {
+				country_event = 175036
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+	
+	option = {
+		name = "Isaaq"
+		random_owned = {
+			limit = { owner = { has_country_flag = SOM_isaac_gone } }
+			owner = { SOM_clandone_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = SOM_isaac_gone } } }
+			owner = { SOM_isaaq_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { OR = { finance_reform = yes_finance_reform market_structure = 1 } NOT = { has_country_flag = SOM_isaac_gone } } }
+			owner = { req_financereform = {} }
+		}
+		random_owned = {
+			limit = { owner = { OR = { AND = { finance_reform = no_finance_reform civilized = no } AND = { NOT = { market_structure = 1 } civilized = yes } } NOT = { has_country_flag = SOM_isaac_gone } } }
+			owner = { req_nofinancereform = {} }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip OR = { finance_reform = yes_finance_reform market_structure = 1 } NOT = { has_country_flag = SOM_isaac_gone } } }
+			owner = {
+				set_country_flag = SOM_isaac_gone
+				any_owned = { limit = { has_province_modifier = SOM_isaaq } remove_province_modifier = SOM_isaaq any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip has_country_flag = SOM_darod_gone has_country_flag = SOM_hawiye_gone has_country_flag = SOM_dir_gone has_country_flag = SOM_isaac_gone has_country_flag = SOM_rahanweyn_gone } }
+			owner = {
+				set_country_flag = SOM_clans_gone
+				country_event = 175040
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip NOT = { has_country_flag = SOM_clans_gone } } }
+			owner = {
+				country_event = 175036
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+	
+	option = {
+		name = "Rahanweyn"
+		random_owned = {
+			limit = { owner = { has_country_flag = SOM_rahanweyn_gone } }
+			owner = { SOM_clandone_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = SOM_rahanweyn_gone } } }
+			owner = { SOM_rahanweyn_tt = {} }
+		}
+		random_owned = {
+			limit = { owner = { prestige = 10 NOT = { has_country_flag = SOM_rahanweyn_gone } } }
+			owner = { req_prestige10 = {} }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { prestige = 10 } NOT = { has_country_flag = SOM_rahanweyn_gone } } }
+			owner = { req_noprestige10 = {} }
+		}
+		random_owned = {
+			limit = { owner = { OR = { land_reform = yes_land_reform high_pressure_steam_engine = 1 } NOT = { has_country_flag = SOM_rahanweyn_gone } } }
+			owner = { req_landreform = {} }
+		}
+		random_owned = {
+			limit = { owner = { OR = { AND = { land_reform = no_land_reform civilized = no } AND = { NOT = { high_pressure_steam_engine = 1 } civilized = yes } } NOT = { has_country_flag = SOM_rahanweyn_gone } } }
+			owner = { req_nolandreform = {} }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip prestige = 10 OR = { land_reform = yes_land_reform high_pressure_steam_engine = 1 } NOT = { has_country_flag = SOM_rahanweyn_gone } } }
+			owner = {
+				set_country_flag = SOM_rahanweyn_gone
+				prestige = -10
+				any_owned = { limit = { has_province_modifier = SOM_rahanweyn } remove_province_modifier = SOM_rahanweyn any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip has_country_flag = SOM_darod_gone has_country_flag = SOM_hawiye_gone has_country_flag = SOM_dir_gone has_country_flag = SOM_isaac_gone has_country_flag = SOM_rahanweyn_gone } }
+			owner = {
+				set_country_flag = SOM_clans_gone
+				country_event = 175040
+			}
+		}
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip NOT = { has_country_flag = SOM_clans_gone } } }
+			owner = {
+				country_event = 175036
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+	
+	option = {
+		name = "Close"
+		clr_country_flag = SOM_menu_open
+	}
+}
+
+country_event = {
+	id = 175037
+	title = "The Victory at Harar"
+	desc = "175037DESC"
+	picture = "somalia"
+
+	trigger = {
+		tag = SOM
+		year = 1837
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 120
+    }
+
+	option = {
+		name = "A source of pride for all Somalis."
+	}
+}
+
+country_event = {
+	id = 175038
+	title = "Beyond the Great Rift"
+	desc = "175038DESC"
+	picture = "somalia"
+
+	trigger = {
+		tag = SOM
+		year = 1880
+		has_country_flag = SOM_safeguard_zanj
+		owns = 2024
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+	option = {
+		name = "A wise decision."
+		2026 = { add_core = THIS }
+		random_owned = { limit = { 2026 = { empty = yes } } 2026 = { secede_province = THIS } }
+	}
+}
+
+country_event = {
+	id = 175039
+	title = "The Maasai Flee"
+	desc = "175039DESC"
+	picture = "somalia"
+
+	trigger = {
+		owns = 2047
+		owns = 2027
+		NOT = { tag = NYM }
+		NOT = { year = 1880 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+	option = {
+		name = "Less problems for us, then."
+		NYM = {
+			2033 = { add_core = NYM any_pop = { limit = { has_pop_culture = nilotic } pop_type = farmers reduce_pop = 30 } }
+			2028 = { add_core = NYM any_pop = { limit = { has_pop_culture = nilotic } reduce_pop = 2 } }
+			3331 = { any_pop = { limit = { has_pop_culture = nilotic } reduce_pop = 2 } }
+		}
+		random_owned = { limit = { 2033 = { empty = yes } } 2033 = { secede_province = THIS life_rating = 15 secede_province = NYM } }
+		random_owned = { limit = { 2028 = { empty = yes } } 2028 = { secede_province = THIS life_rating = 15 secede_province = NYM } }
+		2047 = { any_pop = { limit = { has_pop_culture = nilotic } reduce_pop = 0.3 } }
+		2027 = { any_pop = { limit = { has_pop_culture = nilotic } reduce_pop = 0.3 } }
+		2024 = { any_pop = { limit = { has_pop_culture = nilotic } reduce_pop = 0.5 } }
+		2032 = { any_pop = { limit = { has_pop_culture = nilotic } reduce_pop = 0.5 } }
+	}
+}
+
+country_event = {
+	id = 175040
+	title = "Somali Clans Crushed"
+	desc = "175040DESC"
+	picture = "somalia"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The hardest of tasks are no match for human will."
+		prestige = 25
+		research_points = 5000
+	}
+}

@@ -196,7 +196,7 @@ political_decisions = {
 	}
 	
 	ETH_kill_jimmy = {
-		picture = gtfo
+		picture = ETH_3
 		potential = {
 			tag = ETH
 			has_country_flag = ETH_expansion_unlocked
@@ -227,7 +227,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_somalia = {
-		picture = gtfo
+		picture = somalia
 		potential = {
 			tag = ETH
 			civilized = no
@@ -258,7 +258,7 @@ political_decisions = {
 	}
 	
 	ETH_wild_oromos = {
-		picture = gtfo
+		picture = oromo
 		potential = {
 			tag = ETH
 			has_country_flag = ETH_invade_somalia
@@ -286,7 +286,7 @@ political_decisions = {
 	}
 	
 	ETH_integrate_afar = {
-		picture = gtfo
+		picture = afar
 		potential = {
 			tag = ETH
 			has_country_flag = ETH_invade_somalia
@@ -363,7 +363,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_kordofan = {
-		picture = gtfo
+		picture = kordofan
 		potential = {
 			tag = ETH
 			civilized = no
@@ -406,7 +406,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_egypt = {
-		picture = gtfo
+		picture = egypt
 		potential = {
 			tag = ETH
 			civilized = no
@@ -455,7 +455,7 @@ political_decisions = {
 	}
 	
 	ETH_check_influence_level = {
-		picture = gtfo
+		picture = ETH_1
 		potential = {
 			tag = ETH
 			has_country_flag = ETH_long_regency
@@ -472,7 +472,7 @@ political_decisions = {
 	}
 	
 	ETH_5y_decrease_infl = {
-		picture = gtfo
+		picture = ETH_4
 		potential = {
 			tag = ETH
 			has_country_flag = ETH_power_struggle
@@ -501,7 +501,7 @@ political_decisions = {
 	}
 	
 	ETH_coup_regency = {
-		picture = gtfo
+		picture = ETH_5
 		potential = {
 			tag = ETH
 			has_country_flag = ETH_coup_available
@@ -525,7 +525,7 @@ political_decisions = {
 	}
 	
 	ETH_past_mistakes = {
-		picture = gtfo
+		picture = ETH_6
 		potential = {
 			tag = ETH
 			year = 1880
@@ -554,7 +554,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_somalia_civilized = {
-		picture = gtfo
+		picture = somalia
 		potential = {
 			tag = ETH
 			civilized = yes
@@ -713,7 +713,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_kordofan_civilized = {
-		picture = gtfo
+		picture = kordofan
 		potential = {
 			tag = ETH
 			civilized = yes
@@ -740,7 +740,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_egypt_civilized = {
-		picture = gtfo
+		picture = egypt
 		potential = {
 			tag = ETH
 			civilized = yes
@@ -775,7 +775,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_syria_civilized = {
-		picture = gtfo
+		picture = syria
 		potential = {
 			tag = ETH
 			civilized = yes
@@ -812,7 +812,7 @@ political_decisions = {
 	}
 	
 	ETH_invade_armenia_civilized = {
-		picture = gtfo
+		picture = greater_armenia
 		potential = {
 			tag = ETH
 			civilized = yes
@@ -844,7 +844,7 @@ political_decisions = {
 	}
 	
 	form_ethiopia = {
-		picture = gtfo
+		picture = ETH_2
 		potential = {
 			has_global_flag = second_zemene_mesafint
 			OR = {
@@ -863,7 +863,235 @@ political_decisions = {
 			change_tag = ETH
 		}
 		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	SOM_open_clan_menu = {
+		picture = somalia
+		potential = {
+			tag = SOM
+			ai = no
+			NOT = { has_country_flag = SOM_menu_open }
+			NOT = { has_country_flag = SOM_clans_gone }
+		}
+		allow = {
+			tag = SOM
+		}
+		effect = {
+			country_event = 175036
+			set_country_flag = SOM_menu_open
+		}
+		ai_will_do = {
 			factor = 0	
+		}
+	}
+	
+	SOM_subjugate_the_oromo = {
+		picture = oromo
+		potential = {
+			tag = SOM
+			NOT = { has_country_flag = SOM_subjugate_the_oromo }
+		}
+		allow = {
+			war = no
+			is_vassal = no
+			OR = {
+				admin_reform = yes_admin_reform
+				state_n_government = 1
+			}
+		}
+		effect = {
+			add_accepted_culture = oromo
+			random_owned = { limit = { 3594 = { empty = yes } } 3594 = { secede_province = THIS } }
+			random_owned = { limit = { 1866 = { empty = yes } } 1866 = { secede_province = THIS } }
+			random_owned = { limit = { 1864 = { empty = yes } } 1864 = { secede_province = THIS } }
+			random_owned = { limit = { 2025 = { empty = yes } } 2025 = { secede_province = THIS } }
+			3594 = { add_core = THIS }
+			1866 = { add_core = THIS }
+			1864 = { add_core = THIS }
+			2025 = { add_core = THIS }
+			set_country_flag = SOM_subjugate_the_oromo
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	SOM_safeguard_zanj = {
+		picture = zanzibar_oman
+		potential = {
+			tag = SOM
+			NOT = { has_country_flag = SOM_safeguard_zanj }
+		}
+		allow = {
+			war = no
+			is_vassal = no
+			OR = {
+				year = 1875
+				civilization_progress = 0.5
+				breech_loaded_rifles = 1
+			}
+		}
+		effect = {
+			add_accepted_culture = swahili
+			2354 = { add_core = THIS }
+			2047 = { add_core = THIS }
+			2027 = { add_core = THIS }
+			2024 = { add_core = THIS }
+			2048 = { add_core = THIS }
+			random_owned = { limit = { 2354 = { empty = yes } } 2354 = { secede_province = THIS } }
+			set_country_flag = SOM_safeguard_zanj
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	SOM_accept_tigray = {
+		picture = ETH_1
+		potential = {
+			tag = SOM
+			any_owned_province = { is_core = TIG }
+			NOT = { has_country_flag = SOM_accept_tigray }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			TIG = { all_core = { owned_by = THIS } }
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = tigray
+			set_country_flag = SOM_accept_tigray
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	SOM_ai_crush_darod = {
+		picture = somalia
+		potential = {
+			tag = SOM
+			ai = yes
+			NOT = { has_country_flag = SOM_darod_gone }
+		}
+		allow = {
+			military_score = 50
+			money = 75000
+			war = no
+		}
+		effect = {
+			treasury = -75000
+			any_owned = { limit = { has_province_modifier = SOM_darod } remove_province_modifier = SOM_darod any_pop = { limit = { has_pop_culture = somali } militancy = 6 consciousness = 6 } }
+			set_country_flag = SOM_darod_gone
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	SOM_ai_crush_hawiye = {
+		picture = somalia
+		potential = {
+			tag = SOM
+			ai = yes
+			NOT = { has_country_flag = SOM_hawiye_gone }
+		}
+		allow = {
+			OR = { admin_reform = yes_admin_reform state_n_government = 1 }
+		}
+		effect = {
+			any_owned = { limit = { has_province_modifier = SOM_hawiye } remove_province_modifier = SOM_hawiye any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+			set_country_flag = SOM_hawiye_gone
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	SOM_ai_crush_dir = {
+		picture = somalia
+		potential = {
+			tag = SOM
+			ai = yes
+			NOT = { has_country_flag = SOM_dir_gone }
+		}
+		allow = {
+			positivism = 1
+		}
+		effect = {
+			any_owned = { limit = { has_province_modifier = SOM_dir } remove_province_modifier = SOM_dir any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+			set_country_flag = SOM_dir_gone
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	SOM_ai_crush_isaaq = {
+		picture = somalia
+		potential = {
+			tag = SOM
+			ai = yes
+			NOT = { has_country_flag = SOM_isaac_gone }
+		}
+		allow = {
+			OR = { finance_reform = yes_finance_reform market_structure = 1 }
+		}
+		effect = {
+			any_owned = { limit = { has_province_modifier = SOM_isaaq } remove_province_modifier = SOM_isaaq any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+			set_country_flag = SOM_isaac_gone
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	SOM_ai_crush_rahanweyn = {
+		picture = somalia
+		potential = {
+			tag = SOM
+			ai = yes
+			NOT = { has_country_flag = SOM_rahanweyn_gone }
+		}
+		allow = {
+			prestige = 10
+			OR = { land_reform = yes_land_reform high_pressure_steam_engine = 1 }
+		}
+		effect = {
+			set_country_flag = SOM_rahanweyn_gone
+			prestige = -10
+			any_owned = { limit = { has_province_modifier = SOM_rahanweyn } remove_province_modifier = SOM_rahanweyn any_pop = { limit = { has_pop_culture = somali } militancy = 4 consciousness = 4 } }
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	SOM_ai_crush_alldone = {
+		picture = somalia
+		potential = {
+			tag = SOM
+			ai = yes
+			has_country_flag = SOM_rahanweyn_gone
+			has_country_flag = SOM_darod_gone
+			has_country_flag = SOM_dir_gone
+			has_country_flag = SOM_hawiye_gone
+			has_country_flag = SOM_isaac_gone
+			NOT = { has_country_flag = SOM_clans_gone }
+		}
+		allow = {
+			tag = SOM
+		}
+		effect = {
+			set_country_flag = SOM_clans_gone
+			prestige = 25
+			research_points = 5000
+		}
+		ai_will_do = {
+			factor = 1	
 		}
 	}
 

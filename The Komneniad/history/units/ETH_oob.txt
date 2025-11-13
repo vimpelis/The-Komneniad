@@ -33,6 +33,11 @@ army = {
         type = artillery
         home = 1854
     }
+	regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3593
+    }
 }
 
 army = {
@@ -77,6 +82,16 @@ army = {
         name = "1st Infantry Regiment"
         type = infantry
         home = 1859
+    }
+	regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 3593
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1854
     }
 	regiment = {
         name = "1st Welajoch Regiment"
