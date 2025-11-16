@@ -1,7 +1,7 @@
-owner = SHO
-controller = SHO
+owner = SOF
+controller = SOF
+add_core = SOF
 add_core = SHO
-add_core = AGC
 trade_goods = tobacco
 terrain = savanna
 life_rating = 35

@@ -6,7 +6,7 @@
         size = 100
     }
 	
-    clergymen = {
+    serfs = {
         culture = deisearaitach
         religion = mormon
         size = 250
@@ -38,7 +38,7 @@
         size = 25
     }
 	
-    clergymen = {
+    serfs = {
         culture = deisearaitach
         religion = mormon
         size = 150
@@ -70,7 +70,7 @@
         size = 25
     }
 	
-    clergymen = {
+    serfs = {
         culture = deisearaitach
         religion = mormon
         size = 150
@@ -458,7 +458,7 @@
 }
 
 3101 = { 
-	clergymen = {
+	serfs = {
         culture = nilotic
         religion = coptic
         size = 100
@@ -472,7 +472,7 @@
 }
 
 3224 = { 
-	clergymen = {
+	serfs = {
         culture = nilotic
         religion = coptic
         size = 200
@@ -486,7 +486,7 @@
 }
 
 2942 = { 
-	clergymen = {
+	serfs = {
         culture = nilotic
         religion = coptic
         size = 250
@@ -500,7 +500,7 @@
 }
 
 3236 = { 
-	clergymen = {
+	serfs = {
         culture = nilotic
         religion = coptic
         size = 225
@@ -514,7 +514,7 @@
 }
 
 3551 = { 
-	clergymen = {
+	serfs = {
         culture = nilotic
         religion = coptic
         size = 275

@@ -1,6 +1,6 @@
-owner = SPA
-controller = SPA
-add_core = AGC
+owner = SOF
+controller = SOF
+add_core = SOF
+add_core = SHO
 trade_goods = cotton
 life_rating = 35
-colonial = 2

@@ -1,0 +1,76 @@
+political_decisions = {
+	ADU_kill_MAD = {
+		picture = madagascar_old
+		potential = {
+			tag = ADU
+			OR = {
+				owns = 3541
+				owns = 2122
+				AKR = { vassal_of = THIS }
+			}
+			exists = MAD
+			NOT = {	has_country_flag = ADU_kill_MAD }
+		}
+		allow = {
+			war = no
+			OR = {
+				iron_steamers = 1
+				year = 1867
+			}
+			NOT = { truce_with = MAD }
+		}
+		effect = {
+			badboy = 5
+			any_country = {
+				limit = {
+					tag = AKR
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+			war = {
+				target = MAD
+				attacker_goal = { casus_belli = establish_protectorate_casus_belli_no_infamy }
+			}
+			set_country_flag = ADU_kill_MAD
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ADU_annex_AKR = {
+		picture = madagascar_old
+		potential = {
+			AKR = { vassal_of = THIS }
+			year = 1880
+			NOT = {	has_country_flag = ADU_annex_AKR }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			badboy = 2
+			any_country = {
+				limit = {
+					tag = AKR
+					vassal_of = THIS
+				}
+				annex_to = THIS
+			}
+			set_country_flag = ADU_annex_AKR
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+}

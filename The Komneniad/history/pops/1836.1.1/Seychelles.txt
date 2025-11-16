@@ -3,9 +3,15 @@
 #Seychelles (5000/1250 POPS)
 2127 = {
     aristocrats = {
-        culture = bedouin
+        culture = andalusian
         religion = sunni
         size = 20
+    }
+	
+	farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 120
     }
 
     aristocrats = {

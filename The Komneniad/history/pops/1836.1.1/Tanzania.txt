@@ -328,43 +328,139 @@
     farmers = {
         culture = swahili
         religion = sunni
-        size = 14750
+        size = 12750
     }
 
     aristocrats = {
         culture = yao
         religion = animist
-        size = 350
+        size = 200
     }
 
     clergymen = {
         culture = yao
         religion = animist
-        size = 200
+        size = 150
     }
 
     artisans = {
         culture = yao
         religion = animist
-        size = 950
+        size = 650
     }
 
     soldiers = {
         culture = yao
         religion = animist
-        size = 200
+        size = 100
+    }
+
+    aristocrats = {
+        culture = yao
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = yao
+        religion = sunni
+        size = 100
+    }
+
+    artisans = {
+        culture = yao
+        religion = sunni
+        size = 350
+    }
+
+    soldiers = {
+        culture = yao
+        religion = sunni
+        size = 100
     }
 
     farmers = {
         culture = yao
         religion = animist
-        size = 17300
+        size = 5000
+    }
+
+    farmers = {
+        culture = yao
+        religion = sunni
+        size = 5700
+    }
+
+    farmers = {
+        culture = yao
+        religion = ibadi
+        size = 400
+    }
+
+    aristocrats = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 275
+    }
+
+    clergymen = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 150
+    }
+
+    artisans = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 650
+    }
+
+    soldiers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 100
+    }
+
+    aristocrats = {
+        culture = lacustrine_bantu
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = lacustrine_bantu
+        religion = sunni
+        size = 100
+    }
+
+    artisans = {
+        culture = lacustrine_bantu
+        religion = sunni
+        size = 250
+    }
+
+    soldiers = {
+        culture = lacustrine_bantu
+        religion = sunni
+        size = 50
+    }
+
+    farmers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 6200
+    }
+
+    farmers = {
+        culture = lacustrine_bantu
+        religion = sunni
+        size = 2000
     }
 
     slaves = {
-        culture = yao
+        culture = lacustrine_bantu
         religion = animist
-        size = 10000
+        size = 5000
     }
 }
 #Lindi (64000/16000 POPS)
@@ -374,47 +470,154 @@
         religion = sunni
         size = 100
     }
-
+	
     aristocrats = {
-        culture = galician
-        religion = catholic
+        culture = swahili
+        religion = ibadi
         size = 500
     }
 
     bureaucrats = {
-        culture = galician
-        religion = catholic
+        culture = swahili
+        religion = ibadi
+        size = 60
+    }
+
+    officers = {
+        culture = swahili
+        religion = ibadi
         size = 25
     }
 
     clergymen = {
-        culture = galician
-        religion = catholic
+        culture = swahili
+        religion = ibadi
+        size = 100
+    }
+
+    artisans = {
+        culture = yao
+        religion = sunni
+        size = 650
+    }
+
+    soldiers = {
+        culture = yao
+        religion = sunni
+        size = 1175
+    }
+
+    farmers = {
+        culture = yao
+        religion = sunni
+        size = 13500
+    }
+
+    farmers = {
+        culture = swahili
+        religion = sunni
+        size = 3225
+    }
+
+    slaves = {
+        culture = yao
+        religion = animist
+        size = 3000
+    }
+
+    slaves = {
+        culture = swahili
+        religion = animist
+        size = 1000
+    }
+	
+	aristocrats = {
+        culture = swahili
+        religion = sunni
+        size = 100
+    }
+    aristocrats = {
+        culture = bedouin
+        religion = ibadi
+        size = 500
+    }
+
+    bureaucrats = {
+        culture = bedouin
+        religion = ibadi
+        size = 40
+    }
+
+    officers = {
+        culture = bedouin
+        religion = ibadi
+        size = 20
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = ibadi
         size = 50
     }
 
     artisans = {
         culture = swahili
         religion = sunni
-        size = 650
+        size = 450
     }
 
     soldiers = {
         culture = swahili
         religion = sunni
-        size = 175
+        size = 1075
     }
 
     farmers = {
         culture = swahili
         religion = sunni
-        size = 10725
+        size = 10025
+    }
+
+    farmers = {
+        culture = swahili
+        religion = ibadi
+        size = 1000
+    }
+
+    clergymen = {
+        culture = yao
+        religion = animist
+        size = 50
+    }
+
+    artisans = {
+        culture = yao
+        religion = animist
+        size = 650
+    }
+
+    soldiers = {
+        culture = yao
+        religion = animist
+        size = 175
+    }
+
+    farmers = {
+        culture = yao
+        religion = animist
+        size = 9000
+    }
+	
+    farmers = {
+        culture = yao
+        religion = sunni
+        size = 1000
     }
 
     slaves = {
         culture = yao
         religion = animist
-        size = 4000
+        size = 1000
     }
 }
 #Ruvuma-Rufiji Region (568000)
@@ -448,49 +651,325 @@
     farmers = {
         culture = yao
         religion = sunni
-        size = 15425
+        size = 3425
     }
 
     aristocrats = {
-        culture = chewa
+        culture = yao
         religion = animist
         size = 225
     }
 
     clergymen = {
-        culture = chewa
+        culture = yao
         religion = animist
         size = 125
     }
 
     artisans = {
-        culture = chewa
+        culture = yao
         religion = animist
         size = 600
     }
 
     soldiers = {
-        culture = chewa
+        culture = yao
         religion = animist
         size = 125
     }
 
     farmers = {
-        culture = chewa
+        culture = yao
         religion = animist
         size = 10925
     }
 
     slaves = {
-        culture = chewa
+        culture = yao
         religion = animist
         size = 3000
     }
 
     slaves = {
-        culture = chewa
+        culture = lacustrine_bantu
         religion = animist
         size = 2000
+    }
+	
+    aristocrats = {
+        culture = yao
+        religion = animist
+        size = 200
+    }
+
+    clergymen = {
+        culture = yao
+        religion = animist
+        size = 100
+    }
+
+    artisans = {
+        culture = yao
+        religion = animist
+        size = 200
+    }
+
+    soldiers = {
+        culture = yao
+        religion = animist
+        size = 100
+    }
+
+    farmers = {
+        culture = yao
+        religion = animist
+        size = 7900
+    }
+
+    slaves = {
+        culture = yao
+        religion = animist
+        size = 500
+    }
+
+    aristocrats = {
+        culture = yao
+        religion = animist
+        size = 200
+    }
+
+    clergymen = {
+        culture = yao
+        religion = animist
+        size = 50
+    }
+
+    artisans = {
+        culture = yao
+        religion = animist
+        size = 150
+    }
+
+    soldiers = {
+        culture = yao
+        religion = animist
+        size = 1000
+    }
+
+    farmers = {
+        culture = yao
+        religion = animist
+        size = 9100
+    }
+
+    slaves = {
+        culture = yao
+        religion = animist
+        size = 500
+    }
+	
+    aristocrats = {
+        culture = nguni
+        religion = animist
+        size = 50
+    }
+
+    bureaucrats = {
+        culture = nguni
+        religion = animist
+        size = 10
+    }
+
+    officers = {
+        culture = nguni
+        religion = animist
+        size = 40
+    }
+
+    clergymen = {
+        culture = nguni
+        religion = animist
+        size = 50
+    }
+
+    artisans = {
+        culture = nguni
+        religion = animist
+        size = 300
+    }
+
+    soldiers = {
+        culture = nguni
+        religion = animist
+        size = 3050
+    }
+
+    labourers = {
+        culture = nguni
+        religion = animist
+        size = 9000
+    }
+	
+	aristocrats = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 350
+    }
+
+    bureaucrats = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 100
+    }
+
+    officers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 45
+    }
+	
+    clergymen = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 150
+    }
+
+    artisans = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 500
+    }
+
+    soldiers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 3100
+    }
+
+    farmers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 32200
+    }
+
+    slaves = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 9700
+    }
+
+    farmers = {
+        culture = yao
+        religion = animist
+        size = 100
+    }
+
+    slaves = {
+        culture = yao
+        religion = animist
+        size = 900
+    }
+
+    farmers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 300
+    }
+
+    slaves = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 2700
+    }
+	
+	aristocrats = {
+        culture = yao
+        religion = sunni
+        size = 475
+    }
+
+    clergymen = {
+        culture = yao
+        religion = sunni
+        size = 250
+    }
+
+    artisans = {
+        culture = yao
+        religion = sunni
+        size = 100
+    }
+
+    soldiers = {
+        culture = yao
+        religion = sunni
+        size = 250
+    }
+
+    farmers = {
+        culture = yao
+        religion = sunni
+        size = 2125
+    }
+
+    aristocrats = {
+        culture = yao
+        religion = animist
+        size = 150
+    }
+
+    clergymen = {
+        culture = yao
+        religion = animist
+        size = 75
+    }
+
+    artisans = {
+        culture = yao
+        religion = animist
+        size = 400
+    }
+
+    soldiers = {
+        culture = yao
+        religion = animist
+        size = 75
+    }
+
+    farmers = {
+        culture = yao
+        religion = animist
+        size = 11075
+    }
+
+    clergymen = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 75
+    }
+
+    artisans = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 400
+    }
+
+    soldiers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 75
+    }
+
+    farmers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 8075
+    }
+
+    slaves = {
+        culture = southern_bantu
+        religion = animist
+        size = 1200
     }
 }
 #Masasi (132000/33000 POPS)
@@ -522,43 +1001,97 @@
     farmers = {
         culture = yao
         religion = sunni
-        size = 15125
+        size = 11125
     }
 
     aristocrats = {
-        culture = southern_bantu
+        culture = yao
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = yao
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = yao
         religion = animist
         size = 400
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = yao
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = yao
         religion = animist
-        size = 7275
+        size = 12575
     }
 
     slaves = {
         culture = southern_bantu
         religion = animist
-        size = 8000
+        size = 7200
+    }
+	
+	aristocrats = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 350
+    }
+	
+    clergymen = {
+        culture = lacustrine_bantu
+        religion = sunni
+        size = 150
+    }
+
+    artisans = {
+        culture = lacustrine_bantu
+        religion = sunni
+        size = 500
+    }
+
+    soldiers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 1100
+    }
+
+    farmers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 9650
+    }
+
+    farmers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 13500
+    }
+
+    farmers = {
+        culture = yao
+        religion = animist
+        size = 7250
+    }
+
+    slaves = {
+        culture = yao
+        religion = animist
+        size = 3000
+    }
+
+    slaves = {
+        culture = yao
+        religion = sunni
+        size = 2000
     }
 }
 #Iringa (300000/75000 POPS)
@@ -566,133 +1099,121 @@
     aristocrats = {
         culture = lacustrine_bantu
         religion = animist
-        size = 250
+        size = 375
+    }
+
+    bureaucrats = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 70
+    }
+
+    officers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 35
     }
 
     clergymen = {
-        culture = lacustrine_bantu
-        religion = animist
-        size = 100
-    }
-
-    artisans = {
         culture = lacustrine_bantu
         religion = animist
         size = 200
     }
 
+    artisans = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 800
+    }
+
     soldiers = {
         culture = lacustrine_bantu
         religion = animist
-        size = 100
+        size = 3200
     }
 
     farmers = {
         culture = lacustrine_bantu
         religion = animist
-        size = 4000
-    }
-
-    farmers = {
-        culture = khoisan
-        religion = animist
-        size = 4000
+        size = 18825
     }
 
     aristocrats = {
-        culture = chewa
+        culture = lacustrine_bantu
         religion = animist
-        size = 450
+        size = 250
+    }
+
+    bureaucrats = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 70
+    }
+
+    officers = {
+        culture = lacustrine_bantu
+        religion = animist
+        size = 35
     }
 
     clergymen = {
-        culture = chewa
+        culture = lacustrine_bantu
         religion = animist
-        size = 225
+        size = 125
     }
 
     artisans = {
-        culture = chewa
+        culture = lacustrine_bantu
         religion = animist
-        size = 1150
+        size = 250
     }
 
     soldiers = {
-        culture = chewa
+        culture = lacustrine_bantu
         religion = animist
-        size = 225
+        size = 125
     }
 
     farmers = {
-        culture = chewa
+        culture = lacustrine_bantu
         religion = animist
-        size = 15950
+        size = 19650
     }
 
     slaves = {
-        culture = chewa
+        culture = lacustrine_bantu
         religion = animist
-        size = 13000
+        size = 3050
     }
 
     aristocrats = {
-        culture = chewa
-        religion = sunni
-        size = 100
+        culture = bemba
+        religion = animist
+        size = 525
     }
 
     clergymen = {
-        culture = chewa
-        religion = sunni
-        size = 100
+        culture = bemba
+        religion = animist
+        size = 275
     }
 
     artisans = {
-        culture = chewa
-        religion = sunni
-        size = 200
+        culture = bemba
+        religion = animist
+        size = 1100
     }
 
     soldiers = {
-        culture = chewa
-        religion = sunni
-        size = 100
+        culture = bemba
+        religion = animist
+        size = 275
     }
 
     farmers = {
-        culture = chewa
-        religion = sunni
-        size = 3650
-    }
-
-    aristocrats = {
-        culture = yao
+        culture = bemba
         religion = animist
-        size = 450
-    }
-
-    clergymen = {
-        culture = yao
-        religion = animist
-        size = 250
-    }
-
-    artisans = {
-        culture = yao
-        religion = animist
-        size = 900
-    }
-
-    soldiers = {
-        culture = yao
-        religion = animist
-        size = 200
-    }
-
-    farmers = {
-        culture = yao
-        religion = animist
-        size = 10225
+        size = 2825
     }
 }
 #Tanganyikia Region (1276000)

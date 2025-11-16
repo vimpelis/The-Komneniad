@@ -1,0 +1,35 @@
+ADU = { value = -51 }
+GAZ = { value = -200 }
+SHO = { value = -200 }
+
+army = {
+    name = "Army of Sofala"
+    location = 2057
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2053
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2057
+    }
+}
+
+navy = {
+    name = "Sofala Fleet"
+    location = 2057
+	ship = {
+        name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Frigate"
+        type = frigate
+    }
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

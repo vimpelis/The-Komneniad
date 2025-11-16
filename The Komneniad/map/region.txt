@@ -704,7 +704,7 @@ BUR_1339 = { 1339 1341 1342 3665 } #Kachin
 
 ENG_1343 = { 1343 1344 1353 1352 1354 } #Tenasserim
 
-ENG_2125 = { 2123 2124 2125 2126 2127 2128 } #Indian Ocean Territory
+ENG_2125 = { 2123 2125 2126 2127 2128 } #Indian Ocean Territory
 
 
 ### Indochina
@@ -1074,9 +1074,9 @@ TRN_2108 = { 2105 2108 2110 2109 2107 2106 } #Transvaal - called originally Tky-
 
 ZUL_2113 = { 2111 2112 2113 2114 1689 3648 } #Zululand - Natal
 
-MAD_2117 = { 2117 2122 2116 2118 } #South Madagascar
+MAD_2117 = { 2116 2117 2118 3281 } #South Madagascar
 
-MAD_2121 = { 2121 2115 2120 2119 3541 3679 3281 } #North Madagascar
+MAD_2121 = { 2115 2119 2120 2121 2122 2124 3541 3679 } #North Madagascar
 
 
 ### Mexico

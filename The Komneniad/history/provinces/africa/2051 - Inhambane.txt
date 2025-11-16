@@ -1,5 +1,6 @@
-owner = GAZ
-controller = GAZ
+owner = SOF
+controller = SOF
+add_core = SOF
 add_core = GAZ
 trade_goods = fruit
 terrain = savanna

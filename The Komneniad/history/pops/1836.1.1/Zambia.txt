@@ -263,13 +263,13 @@
     farmers = {
         culture = chewa
         religion = animist
-        size = 7300
+        size = 4300
     }
 
     slaves = {
         culture = chewa
         religion = animist
-        size = 2000
+        size = 1000
     }
 
     aristocrats = {
@@ -299,37 +299,404 @@
     farmers = {
         culture = bemba
         religion = animist
-        size = 4575
+        size = 1575
     }
 
     aristocrats = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 100
     }
 
     clergymen = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = sena
+        culture = chewa
         religion = animist
-        size = 3650
+        size = 650
+    }
+	
+    aristocrats = {
+        culture = chewa
+        religion = animist
+        size = 450
+    }
+
+    bureaucrats = {
+        culture = chewa
+        religion = animist
+        size = 30
+    }
+
+    officers = {
+        culture = chewa
+        religion = animist
+        size = 120
+    }
+
+    clergymen = {
+        culture = chewa
+        religion = animist
+        size = 250
+    }
+
+    artisans = {
+        culture = chewa
+        religion = animist
+        size = 200
+    }
+
+    soldiers = {
+        culture = chewa
+        religion = animist
+        size = 150
+    }
+
+    farmers = {
+        culture = chewa
+        religion = animist
+        size = 1550
+    }
+
+    aristocrats = {
+        culture = bemba
+        religion = animist
+        size = 200
+    }
+
+    clergymen = {
+        culture = bemba
+        religion = animist
+        size = 100
+    }
+
+    artisans = {
+        culture = bemba
+        religion = animist
+        size = 200
+    }
+
+    soldiers = {
+        culture = bemba
+        religion = animist
+        size = 100
+    }
+
+    farmers = {
+        culture = bemba
+        religion = animist
+        size = 2000
+    }
+
+    slaves = {
+        culture = bemba
+        religion = animist
+        size = 500
+    }
+	
+	aristocrats = {
+        culture = chewa
+        religion = animist
+        size = 300
+    }
+
+    clergymen = {
+        culture = chewa
+        religion = animist
+        size = 125
+    }
+
+    artisans = {
+        culture = chewa
+        religion = animist
+        size = 650
+    }
+
+    soldiers = {
+        culture = chewa
+        religion = animist
+        size = 150
+    }
+
+    farmers = {
+        culture = chewa
+        religion = animist
+        size = 15825
+    }
+
+    slaves = {
+        culture = chewa
+        religion = animist
+        size = 2000
+    }
+
+    aristocrats = {
+        culture = nguni
+        religion = animist
+        size = 20
+    }
+
+    artisans = {
+        culture = nguni
+        religion = animist
+        size = 30
+    }
+
+    soldiers = {
+        culture = nguni
+        religion = animist
+        size = 120
+    }
+
+    farmers = {
+        culture = nguni
+        religion = animist
+        size = 125
+    }
+
+    aristocrats = {
+        culture = bemba
+        religion = animist
+        size = 110
+    }
+
+    clergymen = {
+        culture = bemba
+        religion = animist
+        size = 110
+    }
+
+    artisans = {
+        culture = bemba
+        religion = animist
+        size = 125
+    }
+
+    soldiers = {
+        culture = bemba
+        religion = animist
+        size = 110
+    }
+
+    farmers = {
+        culture = bemba
+        religion = animist
+        size = 3175
+    }
+
+	soldiers = { 
+		culture = nguni 
+		religion = animist 
+		size = 1100
+	}
+	soldiers = { 
+		culture = chewa 
+		religion = animist 
+		size = 50
+	}
+	soldiers = { 
+		culture = bemba 
+		religion = animist 
+		size = 50
+	}
+	farmers = { 
+		culture = nguni 
+		religion = animist 
+		size = 2500
+	}
+	farmers = { 
+		culture = chewa 
+		religion = animist 
+		size = 50
+	}
+	farmers = { 
+		culture = bemba 
+		religion = animist 
+		size = 50
+	}
+	
+	aristocrats = {
+        culture = chewa
+        religion = animist
+        size = 300
+    }
+
+    clergymen = {
+        culture = chewa
+        religion = animist
+        size = 125
+    }
+
+    artisans = {
+        culture = chewa
+        religion = animist
+        size = 650
+    }
+
+    soldiers = {
+        culture = chewa
+        religion = animist
+        size = 150
+    }
+
+    farmers = {
+        culture = chewa
+        religion = animist
+        size = 11825
+    }
+
+    slaves = {
+        culture = chewa
+        religion = animist
+        size = 2000
+    }
+
+    aristocrats = {
+        culture = nguni
+        religion = animist
+        size = 20
+    }
+
+    artisans = {
+        culture = nguni
+        religion = animist
+        size = 30
+    }
+
+    soldiers = {
+        culture = nguni
+        religion = animist
+        size = 120
+    }
+
+    farmers = {
+        culture = nguni
+        religion = animist
+        size = 125
+    }
+
+    aristocrats = {
+        culture = bemba
+        religion = animist
+        size = 110
+    }
+
+    clergymen = {
+        culture = bemba
+        religion = animist
+        size = 110
+    }
+
+    artisans = {
+        culture = bemba
+        religion = animist
+        size = 125
+    }
+
+    soldiers = {
+        culture = bemba
+        religion = animist
+        size = 110
+    }
+
+    farmers = {
+        culture = bemba
+        religion = animist
+        size = 1175
+    }
+	
+	aristocrats = {
+        culture = chewa
+        religion = animist
+        size = 300
+    }
+
+    bureaucrats = {
+        culture = chewa
+        religion = animist
+        size = 95
+    }
+
+    officers = {
+        culture = chewa
+        religion = animist
+        size = 40
+    }
+
+    clergymen = {
+        culture = chewa
+        religion = animist
+        size = 125
+    }
+
+    artisans = {
+        culture = chewa
+        religion = animist
+        size = 650
+    }
+
+    soldiers = {
+        culture = chewa
+        religion = animist
+        size = 1150
+    }
+
+    farmers = {
+        culture = chewa
+        religion = animist
+        size = 18825
+    }
+
+    slaves = {
+        culture = chewa
+        religion = animist
+        size = 2000
+    }
+
+    aristocrats = {
+        culture = bemba
+        religion = animist
+        size = 10
+    }
+
+    clergymen = {
+        culture = bemba
+        religion = animist
+        size = 10
+    }
+
+    artisans = {
+        culture = bemba
+        religion = animist
+        size = 25
+    }
+
+    soldiers = {
+        culture = bemba
+        religion = animist
+        size = 10
+    }
+
+    farmers = {
+        culture = bemba
+        religion = animist
+        size = 175
     }
 }
 #Kafue Region (228000) #see Namibia.txt for balance of region

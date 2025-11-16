@@ -296,7 +296,6 @@ country_event = {
 			any_pop = { pop_type = slaves move_pop = 218 }
 			secede_province = CLN
 		}
-
 		primary_culture = vrijlander
     }
 }

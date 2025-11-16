@@ -33,31 +33,31 @@
     }
 
     aristocrats = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 25
     }
 
     clergymen = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 100
     }
 
     soldiers = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 25
     }
 
     farmers = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 2100
     }
@@ -219,31 +219,31 @@
     }
 
     aristocrats = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 10
     }
 
     clergymen = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 50
     }
 
     soldiers = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 15
     }
 
     farmers = {
-        culture = sena
+        culture = chewa
         religion = animist
         size = 950
     }

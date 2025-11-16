@@ -2595,6 +2595,66 @@
     }
 }
 1689 = {
+	bureaucrats = {
+        culture = irish
+        religion = anglican
+        size = 30
+    }
+
+	aristocrats = {
+        culture = irish
+        religion = anglican
+        size = 25
+    }
+
+    clergymen = {
+        culture = irish
+        religion = anglican
+        size = 50
+    }
+
+    artisans = {
+        culture = irish
+        religion = anglican
+        size = 75
+    }
+
+    soldiers = {
+        culture = irish
+        religion = anglican
+        size = 80
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 120
+    }
+	
+	aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 10
+    }
+
+    clergymen = {
+        culture = boer
+        religion = protestant
+        size = 90
+    }
+
+    artisans = {
+        culture = boer
+        religion = protestant
+        size = 100
+    }
+	
+	farmers = {
+        culture = boer
+        religion = protestant
+        size = 350
+    }
+
     aristocrats = {
         culture = zulu
         religion = animist

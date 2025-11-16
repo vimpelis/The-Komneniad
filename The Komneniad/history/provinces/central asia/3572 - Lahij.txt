@@ -1,6 +1,6 @@
-owner = MHR
-controller = MHR
-add_core = MHR
+owner = HAD
+controller = HAD
+add_core = HAD
 trade_goods = fish
 life_rating = 32
 terrain = lahij

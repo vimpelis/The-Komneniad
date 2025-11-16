@@ -1,5 +1,5 @@
-owner = CMS
-controller = CMS
+owner = ADU
+controller = ADU
 add_core = CMS
 trade_goods = fish
 life_rating = 30 

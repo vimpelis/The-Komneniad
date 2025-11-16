@@ -1,4 +1,4 @@
-add_core = MHR
+add_core = HAD
 terrain = desert
 trade_goods = wool
 life_rating = 20

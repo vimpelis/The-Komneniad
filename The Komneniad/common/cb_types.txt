@@ -9846,7 +9846,7 @@ syriac_crisis = {
 			add_core = PLS secede_province = THIS secede_province = PLS
 		}
 		create_vassal = PLS
-		PLS = { government = colonial_company }
+		PLS = { government = colonial_company all_core = { limit = { owned_by = EGY } secede_province = PLS } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }

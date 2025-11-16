@@ -420,13 +420,13 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 10
-			YNN = { all_core = { add_core = CHI } }
+			YNN = { all_core = { add_core = THIS } }
 			any_country = {
 				limit = {
 					tag = YNN
-					in_sphere = CHI
+					in_sphere = THIS
 				}
-				annex_to = CHI
+				annex_to = THIS
 			}
 			set_country_flag = CHI_reclaim_yunnan
 		}

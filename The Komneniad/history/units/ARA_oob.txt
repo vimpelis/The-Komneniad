@@ -1,7 +1,7 @@
 OMA = { value = -100 }
 EGY = { value = -100 }
 ZND = { value = -100 }
-MHR = { value = -100 }
+HAD = { value = -100 }
 
 leader = {
     name = "Al Saud"

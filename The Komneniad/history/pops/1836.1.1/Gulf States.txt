@@ -51,7 +51,7 @@
     aristocrats = {
         culture = bedouin
         religion = sunni
-        size = 150
+        size = 129
     }
 
     bureaucrats = {
@@ -69,13 +69,13 @@
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 50
+        size = 43
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 86
     }
 
     soldiers = {
@@ -87,7 +87,7 @@
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 500
+        size = 430
     }
 
     clergymen = {
@@ -115,12 +115,12 @@
     }
 
     slaves = {
-        culture = ethiopian_minor
+        culture = nilotic
         religion = animist
         size = 400
     }
 
-	 artisans = {
+    artisans = {
         culture = persian
         religion = shiite
         size = 150
@@ -137,13 +137,37 @@
         religion = orthodox
         size = 250
     }
+
+    aristocrats = {
+        culture = bedouin
+        religion = ibadi
+        size = 21
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = ibadi
+        size = 7
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = ibadi
+        size = 14
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = ibadi
+        size = 70
+    }
 }
 #Doha (8000/2000 POPS) #now part of Qatar
 1165 = {
     aristocrats = {
         culture = bedouin
         religion = sunni
-        size = 70
+        size = 66
     }
 
     bureaucrats = {
@@ -161,13 +185,13 @@
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 25
+        size = 23
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 94
     }
 
     soldiers = {
@@ -179,13 +203,37 @@
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 2025
+        size = 1903
     }
 
     slaves = {
-        culture = ethiopian_minor
+        culture = nilotic
         religion = animist
         size = 200
+    }
+
+    aristocrats = {
+        culture = bedouin
+        religion = ibadi
+        size = 4
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = ibadi
+        size = 2
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = ibadi
+        size = 6
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = ibadi
+        size = 122
     }
 }
 #Uman Region (36000) #see Oman.txt for balance of region
@@ -195,7 +243,7 @@
     aristocrats = {
         culture = bedouin
         religion = sunni
-        size = 225
+        size = 173
     }
 
     bureaucrats = {
@@ -213,13 +261,13 @@
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 50
+        size = 38
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 250
+        size = 192
     }
 
     soldiers = {
@@ -231,13 +279,37 @@
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 3050
+        size = 2348
     }
 
     slaves = {
-        culture = ethiopian_minor
+        culture = nilotic
         religion = animist
         size = 800
+    }
+
+    aristocrats = {
+        culture = bedouin
+        religion = ibadi
+        size = 52
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = ibadi
+        size = 12
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = ibadi
+        size = 58
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = ibadi
+        size = 702
     }
 }
 #Dubai (16000/4000 POPS)   #now part of UAE
@@ -245,19 +317,19 @@
     aristocrats = {
         culture = bedouin
         religion = sunni
-        size = 50
+        size = 32
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 75
+        size = 48
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 200
+        size = 128
     }
 
     soldiers = {
@@ -269,7 +341,7 @@
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 2625
+        size = 1680
     }
 
     farmers = {
@@ -277,26 +349,49 @@
         religion = shiite
         size = 300
     }
-}
 
+    aristocrats = {
+        culture = bedouin
+        religion = ibadi
+        size = 18
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = ibadi
+        size = 27
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = ibadi
+        size = 72
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = ibadi
+        size = 945
+    }
+}
 #Sharjah (16000/4000 POPS)   #now part of UAE
 3515 = {
     aristocrats = {
         culture = bedouin
         religion = sunni
-        size = 50
+        size = 36
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 75
+        size = 54
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 200
+        size = 144
     }
 
     soldiers = {
@@ -308,7 +403,7 @@
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 2025
+        size = 1458
     }
 
     farmers = {
@@ -317,8 +412,30 @@
         size = 100
     }
 
-}
+    aristocrats = {
+        culture = bedouin
+        religion = ibadi
+        size = 14
+    }
 
+    clergymen = {
+        culture = bedouin
+        religion = ibadi
+        size = 21
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = ibadi
+        size = 56
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = ibadi
+        size = 567
+    }
+}
 #Liwa
 12 = {
     aristocrats = {

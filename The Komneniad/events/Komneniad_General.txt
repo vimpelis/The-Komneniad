@@ -128,6 +128,17 @@ country_event = {
     }
 	
 	option = {
+        name = "Westernize"
+		economic_reform = finance_reform_two
+		economic_reform = yes_pre_indust
+		economic_reform = yes_industrial_construction
+		economic_reform = yes_firearms_production
+		economic_reform = yes_research_reform
+		economic_reform = monetary_reform_two
+		country_event = 169007
+    }
+	
+	option = {
         name = "Check for faulty life rating"
 		any_land_province = {
 			limit = {
@@ -587,10 +598,10 @@ country_event = {
 			2014 = { add_core = ZAM secede_province = THIS secede_province = ZAM }
 			2015 = { add_core = ZAM secede_province = THIS secede_province = ZAM }
 			2081 = { add_core = ZAM secede_province = THIS secede_province = ZAM }
-			#Niaseria
-			POR_2060 = { add_core = MLW secede_province = THIS secede_province = MLW }
-			ENG_2067 = { add_core = MLW secede_province = THIS secede_province = MLW }
-			ENG_2039 = { add_core = MLW secede_province = THIS secede_province = MLW }
+			#Mozambique
+			POR_2060 = { add_core = MOZ secede_province = THIS secede_province = MOZ }
+			ENG_2067 = { add_core = MOZ secede_province = THIS secede_province = MOZ }
+			ENG_2039 = { add_core = MOZ secede_province = THIS secede_province = MOZ }
 			#Namibia
 			ENG_2078 = { add_core = NMB secede_province = THIS secede_province = NMB }
 			3649 = { add_core = NMB secede_province = THIS secede_province = NMB }

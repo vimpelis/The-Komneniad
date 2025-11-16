@@ -5,115 +5,109 @@
     aristocrats = {
         culture = bedouin
         religion = ibadi
-        size = 150
+        size = 180
     }
 
     bureaucrats = {
         culture = bedouin
         religion = ibadi
-        size = 25
+        size = 30
     }
 
     officers = {
         culture = bedouin
         religion = ibadi
-        size = 50
+        size = 60
     }
 
     clergymen = {
         culture = bedouin
         religion = ibadi
-        size = 50
+        size = 60
     }
 
     artisans = {
         culture = bedouin
         religion = ibadi
-        size = 400
+        size = 480
     }
 
     soldiers = {
         culture = bedouin
         religion = ibadi
-        size = 3000
-    }
-
-    soldiers = {
-        culture = bedouin
-        religion = ibadi
-        size = 1000
+        size = 1800
     }
 
     farmers = {
         culture = bedouin
         religion = ibadi
-        size = 2625
+        size = 14790
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 50
+        size = 60
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 120
     }
 
     soldiers = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 120
     }
 
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 3950
+        size = 2340
     }
 
     artisans = {
         culture = baluchi
         religion = sunni
-        size = 50
+        size = 60
     }
 
     soldiers = {
         culture = baluchi
         religion = sunni
-        size = 25
+        size = 30
     }
 
     farmers = {
         culture = baluchi
         religion = sunni
-        size = 925
+        size = 1470
     }
 
     clergymen = {
         culture = persian
         religion = shiite
-        size = 25
+        size = 30
     }
 
     artisans = {
         culture = persian
         religion = shiite
-        size = 50
+        size = 60
     }
 
     farmers = {
         culture = persian
         religion = shiite
-        size = 925
+        size = 1710
     }
 
     slaves = {
-        culture = ethiopian_minor
+        culture = nilotic
         religion = animist
-        size = 2000
+        size = 3000
     }
 }
 #Suhar (16000/4000 POPS)
@@ -121,37 +115,37 @@
     aristocrats = {
         culture = bedouin
         religion = ibadi
-        size = 50
+        size = 60
     }
 
     clergymen = {
         culture = bedouin
         religion = ibadi
-        size = 75
+        size = 90
     }
 
     artisans = {
         culture = bedouin
         religion = ibadi
-        size = 200
+        size = 240
     }
 
     soldiers = {
         culture = bedouin
         religion = ibadi
-        size = 50
+        size = 1260
     }
 
     farmers = {
         culture = bedouin
         religion = ibadi
-        size = 2000
+        size = 7140
     }
 
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 1625
+        size = 1710
     }
 }
 #Nizwa (24000/6000 POPS)
@@ -215,79 +209,79 @@
     aristocrats = {
         culture = bedouin
         religion = ibadi
-        size = 25
+        size = 30
     }
 
     clergymen = {
         culture = bedouin
         religion = ibadi
-        size = 50
+        size = 60
     }
 
     artisans = {
         culture = bedouin
         religion = ibadi
-        size = 100
+        size = 120
     }
 
     soldiers = {
         culture = bedouin
         religion = ibadi
-        size = 25
+        size = 1350
     }
 
     farmers = {
         culture = bedouin
         religion = ibadi
-        size = 1800
+        size = 8040
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 25
+        size = 30
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 120
     }
 
     soldiers = {
         culture = bedouin
         religion = sunni
-        size = 25
+        size = 30
     }
 
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 1850
+        size = 1980
     }
 
     artisans = {
         culture = baluchi
         religion = sunni
-        size = 50
+        size = 60
     }
 
     soldiers = {
         culture = baluchi
         religion = sunni
-        size = 25
+        size = 30
     }
 
     farmers = {
         culture = baluchi
         religion = sunni
-        size = 925
+        size = 390
     }
 
     slaves = {
-        culture = ethiopian_minor
+        culture = nilotic
         religion = animist
-        size = 1100
+        size = 720
     }
 }
 #Duqm (20000/5000 POPS)
@@ -347,65 +341,63 @@
     aristocrats = {
         culture = bedouin
         religion = ibadi
-        size = 65
+        size = 78
     }
 
     bureaucrats = {
         culture = bedouin
         religion = ibadi
-        size = 5
+        size = 6
     }
 
     officers = {
         culture = bedouin
         religion = ibadi
-        size = 5
+        size = 6
     }
 
     clergymen = {
         culture = bedouin
         religion = ibadi
-        size = 75
+        size = 90
     }
 
     artisans = {
         culture = bedouin
         religion = ibadi
-        size = 250
+        size = 300
     }
 
     soldiers = {
         culture = bedouin
         religion = ibadi
-        size = 1000
+        size = 120
     }
 
     farmers = {
         culture = bedouin
         religion = ibadi
-        size = 3000
+        size = 2388
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 25
+        size = 30
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 50
+        size = 60
     }
 
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 2025
+        size = 8280
     }
-
 }
-
 #Khasab - Former Oyotuni/Chokurdakh
 2664 = {
     aristocrats = {
@@ -456,7 +448,6 @@
         size = 100
     }
 }
-
 #Gwadar - Ziryanka (1000/250 POPS)
 2640 = {
 }

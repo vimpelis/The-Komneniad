@@ -1,6 +1,6 @@
 army = {
     name = "First Antankarana Regiment"
-    location = 2120
+    location = 2124
     regiment = {
         name = "1. Infantry"
         type = irregular

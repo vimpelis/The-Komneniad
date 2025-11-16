@@ -68,8 +68,6 @@ ammunition_production = yes
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "AFG_oob.txt"
-
 
 govt_flag = {
     government = constitutional_empire

@@ -1,6 +1,6 @@
-owner = SPA
-controller = SPA
-add_core = AGC
+owner = ADU
+controller = ADU
+add_core = MOZ
 trade_goods = fish
 life_rating = 35
 colonial = 2

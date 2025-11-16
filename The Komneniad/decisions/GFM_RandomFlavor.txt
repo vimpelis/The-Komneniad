@@ -769,13 +769,6 @@ political_decisions = {
 					owns = 2115
 				}
 				AND = {
-					tag = BOI
-					MAD = { exists = no }
-					2117 = { empty = yes }
-					2116 = { empty = yes }
-					owns = 2115
-				}
-				AND = {
 					tag = AKR
 					MAD = { exists = no }
 					2117 = { empty = yes }
@@ -800,120 +793,27 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
     }
 
-	the_antankarana_question = {
-		picture = antankarana_old
-		potential = {
-			tag = MAD
-			ai = no
-			AKR = { owns = 2120 ai = yes }
-			NOT = { has_country_flag = vassalized_antankarana }
-			AKR = { is_vassal = no }
-		}
-
-		allow = {
-			war = no
-			is_vassal = no
-			year = 1841
-		}
-
-		effect = {
-			set_country_flag = vassalized_antankarana
-			create_vassal = AKR
-		}
-
-		ai_will_do = { factor = 1 }
-    }
-
 	conquer_antankarana = {
 		picture = antankarana_old
 		potential = {
 			tag = MAD
-			NOT = { has_country_flag = vassalized_antankarana }
 			NOT = { has_country_flag = annexed_antankarana_novassal }
 		}
 
 		allow = {
-			NOT = { exists = BOI }
 			war = no
 			is_vassal = no
-			AKR = { is_vassal = no }
-			AKR = { owns = 2120 }
-			owns = 2117
-			year = 1841
+			OR = {
+				AKR = { exists = no }
+				year = 1880
+			}
 		}
 
 		effect = {
-			leave_alliance = AKR
-			war = {
-				target = AKR
-				attacker_goal = { casus_belli = conquest_any }
-				defender_goal = { casus_belli = humiliate_no_infamy }
-			}
 			2120 = { add_core = MAD }
+			2124 = { add_core = MAD }
+			3679 = { add_core = MAD }
 			set_country_flag = annexed_antankarana_novassal
-		}
-
-		ai_will_do = { factor = 1 }
-	}
-
-	annex_antankarana = {
-		picture = antankarana_old
-		potential = {
-			tag = MAD
-			has_country_flag = vassalized_antankarana
-			is_our_vassal = AKR
-			NOT = { has_country_flag = annexed_antankarana_novassal }
-			owns = 2117
-			AKR = { vassal_of = THIS }
-			AKR = { owns = 2120 }
-		}
-
-		allow = {
-			war = no
-			is_vassal = no
-			civilized = yes
-		}
-
-		effect = {
-			release_vassal = AKR
-			leave_alliance = AKR
-			war = {
-				target = AKR
-				attacker_goal = { casus_belli = conquest_any }
-				defender_goal = { casus_belli = humiliate_no_infamy }
-			}
-			2120 = { add_core = MAD }
-		}
-
-		ai_will_do = { factor = 1 }
-	}
-
-	annex_boina = {
-		picture = bara_map
-		potential = {
-			tag = MAD
-			BOI = {
-				owns = 3541
-			}
-			NOT = { has_country_flag = yeah_boi }
-		}
-
-		allow = {
-			war = no
-			is_vassal = no
-			BOI = { vassal_of = THIS }
-			year = 1840
-		}
-
-		effect = {
-			set_country_flag = yeah_boi
-			release_vassal = BOI
-			leave_alliance = BOI
-			war = {
-				target = BOI
-				attacker_goal = { casus_belli = conquest_any }
-				defender_goal = { casus_belli = humiliate_no_infamy }
-			}
 		}
 
 		ai_will_do = { factor = 1 }

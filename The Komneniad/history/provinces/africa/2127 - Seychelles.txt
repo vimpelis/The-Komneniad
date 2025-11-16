@@ -1,6 +1,5 @@
-owner = OMA
-controller = OMA
-add_core = OMA
+owner = ADU
+controller = ADU
 add_core = SEY
 trade_goods = fruit
 life_rating = 35

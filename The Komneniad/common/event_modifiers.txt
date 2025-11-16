@@ -5116,7 +5116,7 @@ returning_trekkers = {
 }
 
 SPA_bureaucratic_mess = {
-    assimilation_rate = -0.1
+    global_assimilation_rate = -0.1
 	administrative_efficiency_modifier = -0.2
 	tax_efficiency = -0.05
 	global_pop_consciousness_modifier = 0.01
@@ -5124,23 +5124,23 @@ SPA_bureaucratic_mess = {
 }
 
 SPA_reverse_arabization = {
-    assimilation_rate = 1
+    global_assimilation_rate = 1
     icon = 17
 }
 
 espanian_cultural_unity = {
-    assimilation_rate = 3
+    global_assimilation_rate = 3
     icon = 17
 }
 
 ADU_arabization = {
-    assimilation_rate = 1.5
+    global_assimilation_rate = 1.5
 	education_efficiency_modifier = 0.15
     icon = 17
 }
 
 espanian_cultural_unity_2 = {
-    assimilation_rate = 1
+    global_assimilation_rate = 1
 	education_efficiency_modifier = 0.20
 	administrative_efficiency_modifier = 0.1
     icon = 17
@@ -5446,4 +5446,9 @@ SOM_rahanweyn = {
 	farm_RGO_eff = -0.25
 	mine_RGO_eff = -0.25
     icon = 20
+}
+
+OMA_sayhadi_education = {
+	global_assimilation_rate = 6
+    icon = 17
 }

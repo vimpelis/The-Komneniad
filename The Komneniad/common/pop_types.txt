@@ -801,6 +801,11 @@ assimilation_chance = {
             NOT = { unemployment = 0.05 }
         }
     }
+	
+	modifier = {
+        factor = 1
+        has_country_flag = culture_conversion
+    }
 
     modifier = {
         factor = -80
@@ -818,44 +823,6 @@ assimilation_chance = {
             location = { continent = australia_new_zealand }
         }
     }
-
-    #modifier = {
-    #    factor = -80
-    #    country = { NOT = { has_country_flag = african_integration_policy } }
-    #    is_culture_group = african_diaspora_cultures
-    #    OR = {
-    #        location = { continent = north_america }
-    #        location = { continent = south_america }
-    #    }
-    #}
-
-    #modifier = {
-    #    factor = -80
-    #    country = { NOT = { has_country_flag = african_integration_policy } }
-    #    OR = {
-    #        location = { continent = africa }
-    #        location = { continent = south_africa }
-    #        location = { continent = west_africa }
-    #        location = { continent = east_africa }
-    #        location = { continent = central_africa }
-    #    }
-    #    OR = {
-    #        is_culture_group = african_diaspora_cultures
-    #        is_culture_group = west_african
-    #        is_culture_group = central_african
-    #        is_culture_group = east_african
-    #        is_culture_group = southern_african
-    #    }
-    #    OR = {
-    #        NOT = { country = { is_culture_group = african_diaspora_cultures } }
-    #        NOT = { country = { is_culture_group = west_african } }
-    #        NOT = { country = { is_culture_group = central_african } }
-    #        NOT = { country = { is_culture_group = east_african } }
-    #        NOT = { country = { is_culture_group = southern_african } }
-    #        NOT = { country = { is_culture_group = arab } }
-    #    }
-    #}
-
 }
 
 #general conversion mtth, same for all pops
@@ -949,7 +916,7 @@ conversion_chance = {
         country = { religious_policy = pro_atheism }
     }
 	modifier = {
-        factor = 1
+        factor = 5
         country = { has_country_flag = religious_effort }
     }
 

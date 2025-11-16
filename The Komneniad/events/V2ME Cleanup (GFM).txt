@@ -1085,13 +1085,11 @@ country_event = {
                     is_core = MOZ
                     OR = {
                         is_core = GAZ
-                        is_core = AGC
                         is_core = ZUL
                         is_core = SHO
                     }
                 }
                 remove_core = GAZ
-                remove_core = AGC
                 remove_core = ZUL
                 remove_core = SHO
                 remove_core = ZAN
@@ -8212,14 +8210,14 @@ country_event = {
 			}
 		}
 		
-		#malawi (actually niaseria)
+		#mozambique
 		any_country = {
 			limit = {
 				war = no
 				exists = yes
 				civilized = yes
 				year = 1890
-				NOT = { exists = MLW }
+				NOT = { exists = MOZ }
 				owns = 2061
 				owns = 2581
 				owns = 2066
@@ -8245,11 +8243,11 @@ country_event = {
 				owner = {
 					set_global_flag = malawi_organized
 					set_country_flag = malawi_master
-					POR_2060 = { add_core = MLW }
-					ENG_2039 = { add_core = MLW }
-					ENG_2067 = { add_core = MLW }
-					MLW = {
-						all_core = { remove_core = AGC remove_core = SHO remove_core = KZB remove_core = ZAN }
+					POR_2060 = { add_core = MOZ }
+					ENG_2039 = { add_core = MOZ }
+					ENG_2067 = { add_core = MOZ }
+					MOZ = {
+						all_core = { remove_core = SHO remove_core = KZB remove_core = ZAN }
 						set_country_flag = post_colonial_country
 						tech_school = unciv_tech_school
 						government = democracy
@@ -8272,22 +8270,22 @@ country_event = {
 						clr_country_flag = sikh_country
 						clr_country_flag = animist_country
 					}
-					random_owned = { limit = { owner = { has_country_flag = catholic_country } } MLW = { religion = catholic set_country_flag = catholic_country } }
-					random_owned = { limit = { owner = { has_country_flag = protestant_country } } MLW = { religion = protestant set_country_flag = protestant_country } }
-					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } MLW = { religion = orthodox set_country_flag = orthodox_country } }
-					random_owned = { limit = { owner = { has_country_flag = mormon_country } } MLW = { religion = mormon set_country_flag = mormon_country } }
-					random_owned = { limit = { owner = { has_country_flag = coptic_country } } MLW = { religion = coptic set_country_flag = coptic_country } }
-					random_owned = { limit = { owner = { has_country_flag = sunni_country } } MLW = { religion = sunni set_country_flag = sunni_country } }
-					random_owned = { limit = { owner = { has_country_flag = shiite_country } } MLW = { religion = shiite set_country_flag = shiite_country } }
-					random_owned = { limit = { owner = { has_country_flag = shinto_country } } MLW = { religion = shinto set_country_flag = shinto_country } }
-					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } MLW = { religion = mahayana set_country_flag = mahayana_country } }
-					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } MLW = { religion = gelugpa set_country_flag = gelugpa_country } }
-					random_owned = { limit = { owner = { has_country_flag = theravada_country } } MLW = { religion = theravada set_country_flag = theravada_country } }
-					random_owned = { limit = { owner = { has_country_flag = hindu_country } } MLW = { religion = hindu set_country_flag = hindu_country } }
-					random_owned = { limit = { owner = { has_country_flag = sikh_country } } MLW = { religion = sikh set_country_flag = sikh_country } }
-					random_owned = { limit = { owner = { has_country_flag = jewish_country } } MLW = { religion = jewish set_country_flag = jewish_country } }
-					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } MLW = { religion = ibadi set_country_flag = ibadi_country } }
-					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } MLW = { religion = yazidi set_country_flag = yazidi_country } }
+					random_owned = { limit = { owner = { has_country_flag = catholic_country } } MOZ = { religion = catholic set_country_flag = catholic_country } }
+					random_owned = { limit = { owner = { has_country_flag = protestant_country } } MOZ = { religion = protestant set_country_flag = protestant_country } }
+					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } MOZ = { religion = orthodox set_country_flag = orthodox_country } }
+					random_owned = { limit = { owner = { has_country_flag = mormon_country } } MOZ = { religion = mormon set_country_flag = mormon_country } }
+					random_owned = { limit = { owner = { has_country_flag = coptic_country } } MOZ = { religion = coptic set_country_flag = coptic_country } }
+					random_owned = { limit = { owner = { has_country_flag = sunni_country } } MOZ = { religion = sunni set_country_flag = sunni_country } }
+					random_owned = { limit = { owner = { has_country_flag = shiite_country } } MOZ = { religion = shiite set_country_flag = shiite_country } }
+					random_owned = { limit = { owner = { has_country_flag = shinto_country } } MOZ = { religion = shinto set_country_flag = shinto_country } }
+					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } MOZ = { religion = mahayana set_country_flag = mahayana_country } }
+					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } MOZ = { religion = gelugpa set_country_flag = gelugpa_country } }
+					random_owned = { limit = { owner = { has_country_flag = theravada_country } } MOZ = { religion = theravada set_country_flag = theravada_country } }
+					random_owned = { limit = { owner = { has_country_flag = hindu_country } } MOZ = { religion = hindu set_country_flag = hindu_country } }
+					random_owned = { limit = { owner = { has_country_flag = sikh_country } } MOZ = { religion = sikh set_country_flag = sikh_country } }
+					random_owned = { limit = { owner = { has_country_flag = jewish_country } } MOZ = { religion = jewish set_country_flag = jewish_country } }
+					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } MOZ = { religion = ibadi set_country_flag = ibadi_country } }
+					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } MOZ = { religion = yazidi set_country_flag = yazidi_country } }
 				}
 			}
 			random_owned = {
@@ -8313,7 +8311,7 @@ country_event = {
 						clr_country_flag = malawi_master
 					}
 					set_country_flag = malawi_master
-					MLW = {
+					MOZ = {
 						clr_country_flag = sunni_country
 						clr_country_flag = shiite_country
 						clr_country_flag = ibadi_country
@@ -8332,34 +8330,34 @@ country_event = {
 						clr_country_flag = sikh_country
 						clr_country_flag = animist_country
 					}
-					random_owned = { limit = { owner = { has_country_flag = catholic_country } } MLW = { religion = catholic set_country_flag = catholic_country } }
-					random_owned = { limit = { owner = { has_country_flag = protestant_country } } MLW = { religion = protestant set_country_flag = protestant_country } }
-					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } MLW = { religion = orthodox set_country_flag = orthodox_country } }
-					random_owned = { limit = { owner = { has_country_flag = mormon_country } } MLW = { religion = mormon set_country_flag = mormon_country } }
-					random_owned = { limit = { owner = { has_country_flag = coptic_country } } MLW = { religion = coptic set_country_flag = coptic_country } }
-					random_owned = { limit = { owner = { has_country_flag = sunni_country } } MLW = { religion = sunni set_country_flag = sunni_country } }
-					random_owned = { limit = { owner = { has_country_flag = shiite_country } } MLW = { religion = shiite set_country_flag = shiite_country } }
-					random_owned = { limit = { owner = { has_country_flag = shinto_country } } MLW = { religion = shinto set_country_flag = shinto_country } }
-					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } MLW = { religion = mahayana set_country_flag = mahayana_country } }
-					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } MLW = { religion = gelugpa set_country_flag = gelugpa_country } }
-					random_owned = { limit = { owner = { has_country_flag = theravada_country } } MLW = { religion = theravada set_country_flag = theravada_country } }
-					random_owned = { limit = { owner = { has_country_flag = hindu_country } } MLW = { religion = hindu set_country_flag = hindu_country } }
-					random_owned = { limit = { owner = { has_country_flag = sikh_country } } MLW = { religion = sikh set_country_flag = sikh_country } }
-					random_owned = { limit = { owner = { has_country_flag = jewish_country } } MLW = { religion = jewish set_country_flag = jewish_country } }
-					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } MLW = { religion = ibadi set_country_flag = ibadi_country } }
-					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } MLW = { religion = yazidi set_country_flag = yazidi_country } }
+					random_owned = { limit = { owner = { has_country_flag = catholic_country } } MOZ = { religion = catholic set_country_flag = catholic_country } }
+					random_owned = { limit = { owner = { has_country_flag = protestant_country } } MOZ = { religion = protestant set_country_flag = protestant_country } }
+					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } MOZ = { religion = orthodox set_country_flag = orthodox_country } }
+					random_owned = { limit = { owner = { has_country_flag = mormon_country } } MOZ = { religion = mormon set_country_flag = mormon_country } }
+					random_owned = { limit = { owner = { has_country_flag = coptic_country } } MOZ = { religion = coptic set_country_flag = coptic_country } }
+					random_owned = { limit = { owner = { has_country_flag = sunni_country } } MOZ = { religion = sunni set_country_flag = sunni_country } }
+					random_owned = { limit = { owner = { has_country_flag = shiite_country } } MOZ = { religion = shiite set_country_flag = shiite_country } }
+					random_owned = { limit = { owner = { has_country_flag = shinto_country } } MOZ = { religion = shinto set_country_flag = shinto_country } }
+					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } MOZ = { religion = mahayana set_country_flag = mahayana_country } }
+					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } MOZ = { religion = gelugpa set_country_flag = gelugpa_country } }
+					random_owned = { limit = { owner = { has_country_flag = theravada_country } } MOZ = { religion = theravada set_country_flag = theravada_country } }
+					random_owned = { limit = { owner = { has_country_flag = hindu_country } } MOZ = { religion = hindu set_country_flag = hindu_country } }
+					random_owned = { limit = { owner = { has_country_flag = sikh_country } } MOZ = { religion = sikh set_country_flag = sikh_country } }
+					random_owned = { limit = { owner = { has_country_flag = jewish_country } } MOZ = { religion = jewish set_country_flag = jewish_country } }
+					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } MOZ = { religion = ibadi set_country_flag = ibadi_country } }
+					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } MOZ = { religion = yazidi set_country_flag = yazidi_country } }
 				}
 			}
 		}
 		
-		#mozambique (actually sofala)
+		#sofala
 		any_country = {
 			limit = {
 				war = no
 				exists = yes
 				civilized = yes
 				year = 1890
-				NOT = { exists = MOZ }
+				NOT = { exists = SOF }
 				owns = 2057
 				owns = 2052
 				owns = 2051
@@ -8370,8 +8368,8 @@ country_event = {
 					owner = {
 						machine_guns = 1
 						NOT = {
-							has_country_flag = mozambique_master
-							has_global_flag = mozambique_organized
+							has_country_flag = sofala_master
+							has_global_flag = sofala_organized
 							capital_scope = { continent = africa }
 							capital_scope = { continent = west_africa }
 							capital_scope = { continent = central_africa }
@@ -8381,12 +8379,12 @@ country_event = {
 					}
 				}
 				owner = {
-					set_global_flag = mozambique_organized
-					set_country_flag = mozambique_master
-					POR_2054 = { add_core = MOZ }
-					POR_2049 = { add_core = MOZ }
-					MOZ = {
-						all_core = { remove_core = GAZ remove_core = SHO remove_core = AGC }
+					set_global_flag = sofala_organized
+					set_country_flag = sofala_master
+					POR_2054 = { add_core = SOF }
+					POR_2049 = { add_core = SOF }
+					SOF = {
+						all_core = { remove_core = GAZ remove_core = SHO }
 						set_country_flag = post_colonial_country
 						tech_school = unciv_tech_school
 						government = democracy
@@ -8409,31 +8407,31 @@ country_event = {
 						clr_country_flag = sikh_country
 						clr_country_flag = animist_country
 					}
-					random_owned = { limit = { owner = { has_country_flag = catholic_country } } MOZ = { religion = catholic set_country_flag = catholic_country } }
-					random_owned = { limit = { owner = { has_country_flag = protestant_country } } MOZ = { religion = protestant set_country_flag = protestant_country } }
-					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } MOZ = { religion = orthodox set_country_flag = orthodox_country } }
-					random_owned = { limit = { owner = { has_country_flag = mormon_country } } MOZ = { religion = mormon set_country_flag = mormon_country } }
-					random_owned = { limit = { owner = { has_country_flag = coptic_country } } MOZ = { religion = coptic set_country_flag = coptic_country } }
-					random_owned = { limit = { owner = { has_country_flag = sunni_country } } MOZ = { religion = sunni set_country_flag = sunni_country } }
-					random_owned = { limit = { owner = { has_country_flag = shiite_country } } MOZ = { religion = shiite set_country_flag = shiite_country } }
-					random_owned = { limit = { owner = { has_country_flag = shinto_country } } MOZ = { religion = shinto set_country_flag = shinto_country } }
-					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } MOZ = { religion = mahayana set_country_flag = mahayana_country } }
-					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } MOZ = { religion = gelugpa set_country_flag = gelugpa_country } }
-					random_owned = { limit = { owner = { has_country_flag = theravada_country } } MOZ = { religion = theravada set_country_flag = theravada_country } }
-					random_owned = { limit = { owner = { has_country_flag = hindu_country } } MOZ = { religion = hindu set_country_flag = hindu_country } }
-					random_owned = { limit = { owner = { has_country_flag = sikh_country } } MOZ = { religion = sikh set_country_flag = sikh_country } }
-					random_owned = { limit = { owner = { has_country_flag = jewish_country } } MOZ = { religion = jewish set_country_flag = jewish_country } }
-					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } MOZ = { religion = ibadi set_country_flag = ibadi_country } }
-					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } MOZ = { religion = yazidi set_country_flag = yazidi_country } }
+					random_owned = { limit = { owner = { has_country_flag = catholic_country } } SOF = { religion = catholic set_country_flag = catholic_country } }
+					random_owned = { limit = { owner = { has_country_flag = protestant_country } } SOF = { religion = protestant set_country_flag = protestant_country } }
+					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } SOF = { religion = orthodox set_country_flag = orthodox_country } }
+					random_owned = { limit = { owner = { has_country_flag = mormon_country } } SOF = { religion = mormon set_country_flag = mormon_country } }
+					random_owned = { limit = { owner = { has_country_flag = coptic_country } } SOF = { religion = coptic set_country_flag = coptic_country } }
+					random_owned = { limit = { owner = { has_country_flag = sunni_country } } SOF = { religion = sunni set_country_flag = sunni_country } }
+					random_owned = { limit = { owner = { has_country_flag = shiite_country } } SOF = { religion = shiite set_country_flag = shiite_country } }
+					random_owned = { limit = { owner = { has_country_flag = shinto_country } } SOF = { religion = shinto set_country_flag = shinto_country } }
+					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } SOF = { religion = mahayana set_country_flag = mahayana_country } }
+					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } SOF = { religion = gelugpa set_country_flag = gelugpa_country } }
+					random_owned = { limit = { owner = { has_country_flag = theravada_country } } SOF = { religion = theravada set_country_flag = theravada_country } }
+					random_owned = { limit = { owner = { has_country_flag = hindu_country } } SOF = { religion = hindu set_country_flag = hindu_country } }
+					random_owned = { limit = { owner = { has_country_flag = sikh_country } } SOF = { religion = sikh set_country_flag = sikh_country } }
+					random_owned = { limit = { owner = { has_country_flag = jewish_country } } SOF = { religion = jewish set_country_flag = jewish_country } }
+					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } SOF = { religion = ibadi set_country_flag = ibadi_country } }
+					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } SOF = { religion = yazidi set_country_flag = yazidi_country } }
 				}
 			}
 			random_owned = {
 				limit = {
 					owner = {
 						machine_guns = 1
-						has_global_flag = mozambique_organized
+						has_global_flag = sofala_organized
 						NOT = {
-							has_country_flag = mozambique_master
+							has_country_flag = sofala_master
 							capital_scope = { continent = africa }
 							capital_scope = { continent = west_africa }
 							capital_scope = { continent = central_africa }
@@ -8445,12 +8443,12 @@ country_event = {
 				owner = {
 					any_country = {
 						limit = {
-							has_country_flag = mozambique_master
+							has_country_flag = sofala_master
 						}
-						clr_country_flag = mozambique_master
+						clr_country_flag = sofala_master
 					}
-					set_country_flag = mozambique_master
-					MOZ = {
+					set_country_flag = sofala_master
+					SOF = {
 						clr_country_flag = sunni_country
 						clr_country_flag = shiite_country
 						clr_country_flag = ibadi_country
@@ -8469,22 +8467,22 @@ country_event = {
 						clr_country_flag = sikh_country
 						clr_country_flag = animist_country
 					}
-					random_owned = { limit = { owner = { has_country_flag = catholic_country } } MOZ = { religion = catholic set_country_flag = catholic_country } }
-					random_owned = { limit = { owner = { has_country_flag = protestant_country } } MOZ = { religion = protestant set_country_flag = protestant_country } }
-					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } MOZ = { religion = orthodox set_country_flag = orthodox_country } }
-					random_owned = { limit = { owner = { has_country_flag = mormon_country } } MOZ = { religion = mormon set_country_flag = mormon_country } }
-					random_owned = { limit = { owner = { has_country_flag = coptic_country } } MOZ = { religion = coptic set_country_flag = coptic_country } }
-					random_owned = { limit = { owner = { has_country_flag = sunni_country } } MOZ = { religion = sunni set_country_flag = sunni_country } }
-					random_owned = { limit = { owner = { has_country_flag = shiite_country } } MOZ = { religion = shiite set_country_flag = shiite_country } }
-					random_owned = { limit = { owner = { has_country_flag = shinto_country } } MOZ = { religion = shinto set_country_flag = shinto_country } }
-					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } MOZ = { religion = mahayana set_country_flag = mahayana_country } }
-					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } MOZ = { religion = gelugpa set_country_flag = gelugpa_country } }
-					random_owned = { limit = { owner = { has_country_flag = theravada_country } } MOZ = { religion = theravada set_country_flag = theravada_country } }
-					random_owned = { limit = { owner = { has_country_flag = hindu_country } } MOZ = { religion = hindu set_country_flag = hindu_country } }
-					random_owned = { limit = { owner = { has_country_flag = sikh_country } } MOZ = { religion = sikh set_country_flag = sikh_country } }
-					random_owned = { limit = { owner = { has_country_flag = jewish_country } } MOZ = { religion = jewish set_country_flag = jewish_country } }
-					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } MOZ = { religion = ibadi set_country_flag = ibadi_country } }
-					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } MOZ = { religion = yazidi set_country_flag = yazidi_country } }
+					random_owned = { limit = { owner = { has_country_flag = catholic_country } } SOF = { religion = catholic set_country_flag = catholic_country } }
+					random_owned = { limit = { owner = { has_country_flag = protestant_country } } SOF = { religion = protestant set_country_flag = protestant_country } }
+					random_owned = { limit = { owner = { has_country_flag = orthodox_country } } SOF = { religion = orthodox set_country_flag = orthodox_country } }
+					random_owned = { limit = { owner = { has_country_flag = mormon_country } } SOF = { religion = mormon set_country_flag = mormon_country } }
+					random_owned = { limit = { owner = { has_country_flag = coptic_country } } SOF = { religion = coptic set_country_flag = coptic_country } }
+					random_owned = { limit = { owner = { has_country_flag = sunni_country } } SOF = { religion = sunni set_country_flag = sunni_country } }
+					random_owned = { limit = { owner = { has_country_flag = shiite_country } } SOF = { religion = shiite set_country_flag = shiite_country } }
+					random_owned = { limit = { owner = { has_country_flag = shinto_country } } SOF = { religion = shinto set_country_flag = shinto_country } }
+					random_owned = { limit = { owner = { has_country_flag = mahayana_country } } SOF = { religion = mahayana set_country_flag = mahayana_country } }
+					random_owned = { limit = { owner = { has_country_flag = gelugpa_country } } SOF = { religion = gelugpa set_country_flag = gelugpa_country } }
+					random_owned = { limit = { owner = { has_country_flag = theravada_country } } SOF = { religion = theravada set_country_flag = theravada_country } }
+					random_owned = { limit = { owner = { has_country_flag = hindu_country } } SOF = { religion = hindu set_country_flag = hindu_country } }
+					random_owned = { limit = { owner = { has_country_flag = sikh_country } } SOF = { religion = sikh set_country_flag = sikh_country } }
+					random_owned = { limit = { owner = { has_country_flag = jewish_country } } SOF = { religion = jewish set_country_flag = jewish_country } }
+					random_owned = { limit = { owner = { has_country_flag = ibadi_country } } SOF = { religion = ibadi set_country_flag = ibadi_country } }
+					random_owned = { limit = { owner = { has_country_flag = yazidi_country } } SOF = { religion = yazidi set_country_flag = yazidi_country } }
 				}
 			}
 		}

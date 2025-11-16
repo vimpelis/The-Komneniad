@@ -1,6 +1,7 @@
-owner = AKR
-controller = AKR
+owner = ADU
+controller = ADU
 add_core = AKR
-terrain = jungle
+terrain = montane_forest
 trade_goods = fish
 life_rating = 35
+colonial = 2

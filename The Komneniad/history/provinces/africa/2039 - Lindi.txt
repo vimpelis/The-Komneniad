@@ -1,6 +1,6 @@
-owner = SPA
-controller = SPA
-add_core = ZAN
+owner = ADU
+controller = ADU
+add_core = MOZ
 trade_goods = grain
 life_rating = 35
 colonial = 2
