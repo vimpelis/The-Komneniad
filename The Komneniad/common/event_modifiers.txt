@@ -5452,3 +5452,10 @@ OMA_sayhadi_education = {
 	global_assimilation_rate = 6
     icon = 17
 }
+
+ARA_yemen_resistance = {
+	local_RGO_output = -0.5
+	pop_militancy_modifier = 0.25
+	pop_consciousness_modifier = 0.25
+    icon = 18
+}

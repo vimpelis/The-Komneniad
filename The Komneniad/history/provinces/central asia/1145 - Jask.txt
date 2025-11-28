@@ -1,3 +1,7 @@
-trade_goods = grain
+owner = NAJ
+controller = NAJ
+add_core = NAJ
+add_core = HAD
+trade_goods = wool
 terrain = desert
-life_rating = 1
+life_rating = 25

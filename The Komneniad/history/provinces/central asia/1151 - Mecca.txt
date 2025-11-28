@@ -1,7 +1,7 @@
-owner = ARA
-controller = ARA
+owner = HDJ
+controller = HDJ
+add_core = HDJ
+add_core = ARA
 trade_goods = grain
 life_rating = 32
 terrain = mecca
-add_core = HDJ
-add_core = ARA

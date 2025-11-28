@@ -1,7 +1,7 @@
-owner = ARA
-controller = ARA
+owner = YEM
+controller = YEM
 add_core = YEM
 trade_goods = coffee
-terrain = sanaa
+terrain = semi_desert_mountains
 life_rating = 30
-add_core = ARA
+fort = 1

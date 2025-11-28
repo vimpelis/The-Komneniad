@@ -370,6 +370,18 @@ acquire_core_state = {
     on_po_accepted = {
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         country_event = 2650    # Territorial Loss event
+		random_owned = {
+			limit = {
+				owner = {
+					tag = ARA
+					NOT = { owns = 1155 }
+					exists = HDJ
+					HDJ = { is_vassal = no }
+					NOT = { has_global_flag = ARA_dead }
+				}
+			}
+			HDJ = { country_event = 168014 }
+		}
     }
 }
 

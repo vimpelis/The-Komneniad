@@ -58,6 +58,31 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
+	HDJ_call_NAJ = {
+		picture = gtfo
+		potential = {
+			tag = HDJ
+			war_with = ARA
+			is_vassal = no
+			NOT = { has_country_flag = HDJ_call_NAJ }
+			NOT = { has_global_flag = ARA_dead }
+		}
+		allow = {
+			OR = {
+				relation = {
+					who = NAJ
+					value = 50
+				}
+				ai = yes
+			}
+		}
+		effect = {
+			NAJ = { country_event = 168008 }
+			set_country_flag = HDJ_call_NAJ
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 	OMA_centralise_empire = {
 		picture = oman_map
 		potential = {

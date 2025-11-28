@@ -1,0 +1,33 @@
+EGY = { value = 50 }
+YEM = { value = -50 }
+
+leader = {
+    name = "Muhammad ibn Awn"
+    type = land
+    date = 1830.1.1
+    personality = defence_1.1
+    background = attack_2.1
+}
+
+army = {
+    name = "Jaysh al-Hijaz"
+    location = 1151
+    regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 1153
+    }
+
+    regiment = {
+        name = "2nd Irregular Infantry Regiment"
+        type = irregular
+        home = 1152
+    }
+	
+	regiment = {
+        name = "3rd Irregular Infantry Regiment"
+        type = irregular
+        home = 1151
+    }
+}
+

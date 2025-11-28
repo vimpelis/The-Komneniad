@@ -1,6 +1,304 @@
-#Death
+#Starting event
 country_event = {
     id = 168000
+    title = "Arabia under Wahhabism"
+    desc = "168000DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+    }
+}
+
+country_event = {
+    id = 168001
+    title = "Integration of Yemen"
+    desc = "168001DESC"
+    picture = "arab_revolt"
+
+    trigger = {
+		tag = ARA
+		owns = 1178
+		war = no
+		NOT = { year = 1845 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "text"
+		2538 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
+		1110 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
+		1178 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
+    }
+}
+
+country_event = {
+    id = 168002
+    title = "Intrigues in Mecca"
+    desc = "168002DESC"
+    picture = "arab_revolt"
+
+    trigger = {
+		tag = HDJ
+		vassal_of = ARA
+		ARA = { war = no }
+		NOT = { year = 1845 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 14
+    }
+
+    option = {
+        name = "text"
+		any_pop = { militancy = 1 consciousness = 1 }
+		EGY = { country_event = 168003 }
+    }
+}
+
+country_event = {
+    id = 168003
+    title = "An opportunity in Hedjaz"
+    desc = "168003DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Wahhabism must be fought at any opportunity!"
+		treasury = -10000
+		set_global_flag = EGY_supported_HDJ
+		FROM = { country_event = 168004 }
+		ai_chance = {
+            factor = 90
+			modifier = {
+				NOT = { money = 15000 }
+				factor = 0
+			}
+        }
+    }
+	
+	option = {
+        name = "We can't spare the funds."
+		FROM = { country_event = 168005 }
+		ai_chance = {
+            factor = 10
+        }
+    }
+}
+
+country_event = {
+    id = 168004
+    title = "Egypt supports al-Muttalib"
+    desc = "168004DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		country_event = { id = 168006 days = 30 }
+    }
+}
+
+country_event = {
+    id = 168005
+    title = "Egypt refuses to help"
+    desc = "168005DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		country_event = { id = 168006 days = 30 }
+    }
+}
+
+country_event = {
+    id = 168006
+    title = "Coup in Mecca"
+    desc = "168006DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		random_owned = {
+			limit = { owner = { has_global_flag = EGY_supported_HDJ } }
+			owner = { treasury = 5000 small_arms = 60 canned_food = 60 regular_clothes = 60 ammunition = 60 }
+		}
+		ARA = { release_vassal = HDJ }
+		war = {
+			target = ARA
+			attacker_goal = {
+				casus_belli = acquire_all_cores
+				country = HDJ
+			}
+			defender_goal = { casus_belli = annex_core_country }
+		}
+		ARA = { country_event = 168007 }
+    }
+}
+
+
+country_event = {
+    id = 168007
+    title = "Sharif of Mecca revolts!"
+    desc = "168007DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+    }
+}
+
+country_event = {
+    id = 168008
+    title = "Sharif of Mecca asks for help"
+    desc = "168008DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We do not want it, but we have to."
+		HDJ = {
+			create_vassal = NAJ
+			create_alliance = NAJ
+            war = {
+                attacker_goal = { casus_belli = call_allies_cb }
+                call_ally = yes
+            }
+        }
+		FROM = { country_event = { id = 168009 days = 1 } }
+    }
+	
+	option = {
+        name = "Not our problem. If they come, they come."
+		FROM = { country_event = 168010 }
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 168009
+    title = "Najran agrees"
+    desc = "168009DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		release_vassal = NAJ
+    }
+}
+
+country_event = {
+    id = 168010
+    title = "Najran declines"
+    desc = "168010DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+    }
+}
+
+
+country_event = {
+    id = 168011
+    title = "Yemeni Tribes rise up in revolt"
+    desc = "168011DESC"
+    picture = "arab_revolt"
+
+    trigger = {
+		tag = ARA
+		war_with = HDJ
+		owns = 1110
+		NOT = { year = 1850 }
+		NOT = { has_global_flag = ARA_dead }
+    }
+	
+	fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 20
+    }
+
+    option = {
+        name = "text"
+		1110 = { secede_province = YEM }
+		YEM = { government = absolute_empire }
+		war = {
+			target = YEM
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = {
+				casus_belli = acquire_all_cores
+				country = YEM
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 168012
+    title = "Yemeni Call for Uprising"
+    desc = "168012DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+    }
+}
+
+country_event = {
+    id = 168013
+    title = "al-Hudaydah joins the rebels"
+    desc = "168013DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "No worries, we still control Sana'a."
+    }
+}
+
+country_event = {
+    id = 168014
+    title = "Victory of the Faithful"
+    desc = "168014DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		ARA = { country_event = 168015 }
+    }
+}
+
+#Death
+country_event = {
+    id = 168015
     title = "Collapse of the Emirate of Diriyah"
     desc = "168000DESC"
     picture = "arab_revolt"
@@ -37,15 +335,19 @@ country_event = {
 		release = JOR
 		release = SYR
 		release = EGY
+		end_war = YEM
+		end_war = HDJ
+		end_war = NAJ
 		change_tag = NEJ
 		ruling_party_ideology = conservative
 		1157 = { change_province_name = "Riyadh" }
+		set_global_flag = ARA_dead
     }
 }
 
 #Kill Oman?
 country_event = {
-    id = 168001
+    id = 168016
     title = "Oman is vulnerable"
     desc = "168001DESC"
     picture = "arab_revolt"
@@ -60,6 +362,7 @@ country_event = {
 				year = 1840
 			}
 		}
+		NOT = { exists = HDJ }
     }
 
     fire_only_once = yes

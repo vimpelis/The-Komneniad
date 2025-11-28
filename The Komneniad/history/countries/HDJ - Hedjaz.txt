@@ -1,4 +1,4 @@
-capital = 1152
+capital = 1151
 primary_culture = mashriqi
 culture = bedouin
 religion = sunni
@@ -69,6 +69,6 @@ nonstate_consciousness = 0
 oob = "HDJ_oob.txt"
 
 govt_flag = {
-	government = colonial_company_2
+	government = absolute_monarchy
 	flag = theocracy
 }

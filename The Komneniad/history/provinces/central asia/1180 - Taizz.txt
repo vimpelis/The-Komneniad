@@ -1,4 +1,6 @@
+owner = NAJ
+controller = NAJ
+add_core = NAJ
 add_core = YEM
 trade_goods = wool
-life_rating = 20
-add_core = ARA
+life_rating = 25

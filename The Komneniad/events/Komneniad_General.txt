@@ -254,6 +254,11 @@ country_event = {
 		country_event = 169001
     }
 	option = {
+        name = "Absolute Empire"
+		government = absolute_empire
+		country_event = 169001
+    }
+	option = {
         name = "Radical Republic"
 		government = radical_republic
 		country_event = 169001

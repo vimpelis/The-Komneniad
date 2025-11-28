@@ -1,4 +1,4 @@
-capital = 1175
+capital = 1176
 primary_culture = bedouin
 religion = ibadi
 government = colonial_company

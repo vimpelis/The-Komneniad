@@ -1,0 +1,23 @@
+name = "Wahhabi Conquest of Yemen"
+
+1835.12.1 = {
+	add_attacker = ARA
+	add_defender = YEM
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = conquest
+		actor = ARA
+		receiver = YEM
+	}
+
+}
+
+1837.1.1 = {
+	rem_attacker = ARA
+	rem_defender = YEM
+}

@@ -12,6 +12,7 @@ political_decisions = {
 				ARA = { war = yes }
 				state_n_government = 1
 			}
+			year = 1950
 		}
 		effect = {
 			badboy = 10

@@ -1,7 +1,8 @@
 OMA = { value = -100 }
-EGY = { value = -100 }
+EGY = { value = -150 }
 ZND = { value = -100 }
 HAD = { value = -100 }
+YEM = { value = -200 }
 
 leader = {
     name = "Al Saud"
@@ -12,12 +13,12 @@ leader = {
 }
 
 army = {
-    name = "1st Army"
-    location = 1164
+    name = "Ibn Saud's Army"
+    location = 2538
     regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 1164
+        home = 1157
     }
     regiment = {
         name = "2nd Infantry Regiment"
@@ -27,12 +28,12 @@ army = {
 	regiment = {
         name = "1st Irregular Infantry Regiment"
         type = irregular
-        home = 1157
+        home = 1159
     }
 	regiment = {
         name = "2nd Irregular Infantry Regiment"
         type = irregular
-        home = 1159
+        home = 1155
     }
 	regiment = {
         name = "3rd Irregular Infantry Regiment"
@@ -47,36 +48,11 @@ army = {
 	regiment = {
         name = "2nd Cavalry Regiment"
         type = cavalry
-        home = 1178
-    }
-}
-
-army = {
-    name = "2nd Army"
-    location = 1152
-	regiment = {
-        name = "1st Irregular Infantry Regiment"
-        type = irregular
         home = 1179
-    }
-    regiment = {
-        name = "1st Cavalry Regiment"
-        type = cavalry
-        home = 1155
-    }
-	regiment = {
-        name = "2nd Cavalry Regiment"
-        type = cavalry
-        home = 1151
     }
 	regiment = {
         name = "3rd Cavalry Regiment"
         type = cavalry
-        home = 1152
-    }
-	regiment = {
-        name = "4th Cavalry Regiment"
-        type = cavalry
-        home = 1153
+        home = 1164
     }
 }

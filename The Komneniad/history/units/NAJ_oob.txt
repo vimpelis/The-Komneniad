@@ -1,0 +1,19 @@
+ARA = { value = -100 }
+HAD = { value = -100 }
+YEM = { value = -100 }
+
+army = {
+    name = "Sultan's Army"
+    location = 1161
+    regiment = {
+        name = "1st Irregular Infantry Regiment"
+        type = irregular
+        home = 1180
+    }
+
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = irregular
+        home = 1161
+    }
+}

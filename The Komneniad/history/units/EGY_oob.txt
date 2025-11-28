@@ -1,3 +1,5 @@
+ARA = { value = -150 }
+
 navy = {
     name = "Taba"
     location = 1751

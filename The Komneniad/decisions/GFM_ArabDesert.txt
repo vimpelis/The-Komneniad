@@ -15,7 +15,6 @@ political_decisions = {
                     OR = {
                         owns = 1175
                         owns = 1173
-                        owns = 1176
                     }
                     3273 = { empty = yes } #Rumah
                 }
@@ -89,7 +88,6 @@ political_decisions = {
                     OR = {
                         owns = 1175
                         owns = 1173
-                        owns = 1176
                     }
                     3273 = { empty = yes } #Rumah
                     OR = {
@@ -245,7 +243,6 @@ political_decisions = {
                         OR = {
                             owns = 1175
                             owns = 1173
-                            owns = 1176
                         }
                         3273 = { empty = yes } #Rumah
                     }
