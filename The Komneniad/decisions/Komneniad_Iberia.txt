@@ -411,6 +411,7 @@ political_decisions = {
 				consciousness = 6
 			}
 			set_country_flag = SPA_reverse_arabization
+			set_country_flag = culture_conversion
 		}
 		ai_will_do = {
 			factor = 1

@@ -804,7 +804,7 @@ assimilation_chance = {
 	
 	modifier = {
         factor = 1
-        has_country_flag = culture_conversion
+        country = { has_country_flag = culture_conversion }
     }
 
     modifier = {
