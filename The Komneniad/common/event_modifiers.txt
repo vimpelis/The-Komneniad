@@ -5406,7 +5406,6 @@ EGY_ARE_modf = {
 
 EGY_syriac_unrest = {
 	pop_consciousness_modifier = 0.05
-	pop_militancy_modifier = 0.05
 	local_RGO_output = -0.25
 	local_artisan_output = -0.25
 	goods_demand = -0.25
@@ -5458,4 +5457,20 @@ ARA_yemen_resistance = {
 	pop_militancy_modifier = 0.25
 	pop_consciousness_modifier = 0.25
     icon = 18
+}
+
+HDJ_mob_modifier = {
+	mobilisation_economy_impact = -0.25
+    land_unit_start_experience = 5
+    supply_consumption = -0.15
+    mobilisation_size = 0.025
+    icon = 15
+}
+
+ARA_mob_modifier = {
+	mobilisation_economy_impact = -0.25
+    land_unit_start_experience = 5
+    supply_consumption = -0.15
+    mobilisation_size = 0.025
+    icon = 15
 }

@@ -660,6 +660,14 @@ country_event = {
             militancy = -1
             consciousness = -1
         }
+		any_country = {
+			limit = {
+				alliance_with = THIS
+				is_greater_power = yes
+				NOT = { tag = RUS }
+			}
+			leave_alliance = THIS
+		}
 		BYZ = {
 			change_variable = {
 				which = hellenophile_influence

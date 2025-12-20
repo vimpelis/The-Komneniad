@@ -302,7 +302,7 @@ country_event = {
 			factor = -2
 			issue = pro_military
 		}
-		ai_chance = { factor = 2 }
+		ai_chance = { factor = 4 }
 	}
 }
 
@@ -350,5 +350,129 @@ country_event = {
 			attacker_goal = { casus_belli = syriac_crisis }
 			defender_goal = { casus_belli = status_quo }
 		}
+	}
+}
+
+country_event = {
+    id = 178012
+    title = "Hedjaz is vulnerable"
+    desc = "178012DESC"
+    picture = "aleppo"
+
+    trigger = {
+		tag = EGY
+		HDJ = { exists = yes is_vassal = no part_of_sphere = no }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    option = {
+        name = "Demand the Sultan to bow."
+		badboy = 5
+		HDJ = { country_event = 178013 }
+	}
+	
+	option = {
+        name = "Why would we need Mecca?"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+    id = 178013
+    title = "Egypt demands our sovereignty"
+    desc = "178013DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "It's for the better good."
+		922 = { add_core = EGY }
+		any_owned = {
+			limit = { is_core = EGY }
+			secede_province = EGY
+		}
+		EGY = { create_vassal = HDJ country_event = 178014 }
+		ai_chance = {
+			factor = 3
+			modifier = {
+				has_global_flag = EGY_supported_HDJ
+				factor = 50
+			}
+		}
+	}
+	
+	option = {
+        name = "You know, it would be really funny if we executed their emissaries."
+		badboy = 2
+		EGY = { country_event = 178015 }
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+    id = 178014
+    title = "The Sultan of Hedjaz accepts"
+    desc = "178014DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Wonderful."
+		set_country_flag = EGY_take_mecca
+	}
+}
+
+country_event = {
+    id = 178015
+    title = "The Sultan of Hedjaz refuses!"
+    desc = "178015DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "There will be blood."
+		922 = { add_core = EGY }
+		HDJ_1151 = { add_core = EGY }
+		war = {
+			target = HDJ
+			attacker_goal = { casus_belli = conquest_any }
+		}
+		set_country_flag = EGY_take_mecca
+		ai_chance = {
+			factor = 50
+			modifier = {
+				war_with = BYZ
+				factor = 0
+			}
+		}
+	}
+	
+	option = {
+        name = "We're a bit busy right now to spend time on such nonsense..."
+		prestige = -10
+		HDJ = { country_event = 178016 }
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+    id = 178016
+    title = "Egypt backs down"
+    desc = "178016DESC"
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "So executing emissaries is a valid defense tactic."
+		prestige = 5
 	}
 }

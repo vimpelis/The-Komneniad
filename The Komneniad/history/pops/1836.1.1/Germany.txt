@@ -1028,8 +1028,8 @@
         religion = protestant
         size = 9435
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = west_german
         religion = protestant
         size = 500
@@ -1536,19 +1536,19 @@
 #Rugia
 3561 = {
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 24
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 286
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 40
     }
@@ -1560,7 +1560,7 @@
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 2375
     }
@@ -1596,25 +1596,25 @@
     }
 
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 27
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 54
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 40
     }
 
     serfs = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 8018
     }
@@ -2779,25 +2779,25 @@
 }
 3375 = {
     aristocrats = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 367
     }
 
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 459
     }
 
     clerks = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 46
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 5967
     }
@@ -2809,7 +2809,7 @@
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 17396
     }
@@ -4978,8 +4978,8 @@
         religion = protestant
         size = 12250
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = west_german
         religion = protestant
         size = 6000
@@ -5388,8 +5388,8 @@
         religion = catholic
         size = 74000
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = west_german
         religion = catholic
         size = 3000
@@ -5642,55 +5642,55 @@
     }
 
     aristocrats = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 26
     }
 
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 23
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 124
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 260
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 2168
     }
 
     aristocrats = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 13
     }
 
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 16
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 85
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 1446
     }
@@ -6979,8 +6979,8 @@
         religion = protestant
         size = 31385
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = north_german
         religion = protestant
         size = 1500

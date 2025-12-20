@@ -36,8 +36,8 @@ political_decisions = {
                     2564 = { empty = yes }
                 }
                 AND = {
-                    owns = 1839 #Sudan
-                    1739 = { empty = yes }
+                    owns = 1739 #Sudan
+                    3251 = { empty = yes }
                 }
                 AND = {
                     owns = 1842 #Sudan
@@ -212,11 +212,11 @@ political_decisions = {
             random_owned = {
                 limit = {
                     owner = {
-                        owns = 1839
-                        1739 = { empty = yes }
+                        owns = 1739
+                        3251 = { empty = yes }
                     }
                 }
-                1739 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                3251 = { secede_province = THIS any_pop = { literacy = -0.99 } }
                 owner = { prestige = 1 }
             }
             #Owner of Junaynah gets Pulicat, Sudan

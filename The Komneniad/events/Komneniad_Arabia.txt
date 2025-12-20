@@ -36,6 +36,7 @@ country_event = {
 		2538 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
 		1110 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
 		1178 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
+		1179 = { add_core = ARA }
     }
 }
 
@@ -147,6 +148,10 @@ country_event = {
 			}
 			defender_goal = { casus_belli = annex_core_country }
 		}
+		add_country_modifier = {
+			name = HDJ_mob_modifier
+			duration = 1825
+		}
 		ARA = { country_event = 168007 }
     }
 }
@@ -162,6 +167,10 @@ country_event = {
 
     option = {
         name = "text"
+		add_country_modifier = {
+			name = ARA_mob_modifier
+			duration = 1825
+		}
     }
 }
 
@@ -244,7 +253,23 @@ country_event = {
     option = {
         name = "text"
 		1110 = { secede_province = YEM }
-		YEM = { government = absolute_empire }
+		YEM = {
+			government = absolute_empire
+			1110 = {
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+			}
+			add_country_modifier = {
+				name = HDJ_mob_modifier
+				duration = 1825
+			}
+		}
 		war = {
 			target = YEM
 			attacker_goal = { casus_belli = annex_core_country }
@@ -292,21 +317,22 @@ country_event = {
 
     option = {
         name = "text"
-		ARA = { country_event = 168015 }
+		ARA = { country_event = 168150 }
+		remove_country_modifier = HDJ_mob_modifier
     }
 }
 
-#Death
 country_event = {
     id = 168015
-    title = "Collapse of the Emirate of Diriyah"
-    desc = "168000DESC"
+    title = "Saudi Dominance Solidifed"
+    desc = "168015DESC"
     picture = "arab_revolt"
 
     trigger = {
 		tag = ARA
-		has_recently_lost_war = yes
 		war = no
+		NOT = { exists = HDJ }
+		NOT = { has_global_flag = ARA_dead }
 		NOT = { has_country_flag = ARA_unification_call }
     }
 
@@ -315,6 +341,169 @@ country_event = {
     mean_time_to_happen = {
         days = 1
     }
+
+    option = {
+        name = "text"
+		prestige = 5
+		any_pop = { militancy = -1 }
+		remove_country_modifier = ARA_mob_modifier
+		set_country_flag = ARA_conquered_arabia
+    }
+}
+
+country_event = {
+    id = 168016
+    title = "An Opportunity in Africa"
+    desc = "168016DESC"
+    picture = "arab_revolt"
+
+    trigger = {
+		tag = OMA
+		war = no
+		SOM = { owns = 2029 war = yes }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "text"
+		war = {
+			target = SOM
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 2029
+			}
+		}
+	}
+	
+	option = {
+        name = "text"
+		prestige = -5
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 168017
+    title = "War for Yemen"
+    desc = "168017DESC"
+    picture = "arab_revolt"
+
+    trigger = {
+		OR = {
+			tag = YEM
+			tag = NAJ
+		}
+		has_global_flag = ARA_dead
+		war = no
+		OR = {
+			ai = no
+			AND = {
+				YEM = { ai = yes }
+				NAJ = { ai = yes }
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "text"
+		YEM = {
+			YEM_1178 = { add_core = YEM }
+			1161 = { add_core = YEM }
+			1145 = { add_core = YEM }
+			set_country_flag = YEM_eat_najran
+		}
+		NAJ = {
+			YEM_1178 = { add_core = NAJ }
+			1161 = { add_core = NAJ }
+			1145 = { add_core = NAJ }
+			set_country_flag = NAJ_yemen_available
+		}
+	}
+}
+
+country_event = {
+    id = 168018
+    title = "Southern tribes call for aid"
+    desc = "168018DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		YEM_1412 = { add_core = THIS }
+		OMA = {
+			any_owned_province = {
+				limit = {
+					is_core = THIS
+					NOT = { province_id = 1412 }
+					NOT = { province_id = 3273 }
+					NOT = { province_id = 1175 }
+					NOT = { province_id = 1177 }
+				}
+				secede_province = THIS
+			}
+			country_event = 168019
+		}
+		set_country_flag = YEM_southern_yemen
+		ai_chance = { factor = 95 }
+	}
+	
+	option = {
+        name = "text"
+		prestige = -5
+		any_pop = { militancy = 1 consciousness = 1 }
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = {
+    id = 168019
+    title = "Yemeni tribes refuse to bow!"
+    desc = "168019DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 3572
+			}
+			call_ally = yes
+		}
+	}
+	
+	option = {
+        name = "text"
+		prestige = -10
+		any_pop = { militancy = 2 consciousness = 2 }
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Death
+country_event = {
+    id = 168150
+    title = "Collapse of the Emirate of Diriyah"
+    desc = "168000DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
 
     option = {
         name = "The House of Saud takes over."
@@ -342,53 +531,5 @@ country_event = {
 		ruling_party_ideology = conservative
 		1157 = { change_province_name = "Riyadh" }
 		set_global_flag = ARA_dead
-    }
-}
-
-#Kill Oman?
-country_event = {
-    id = 168016
-    title = "Oman is vulnerable"
-    desc = "168001DESC"
-    picture = "arab_revolt"
-
-    trigger = {
-		tag = ARA
-		OMA = {
-			exists = yes
-			is_vassal = no
-			OR = {
-				war = yes
-				year = 1840
-			}
-		}
-		NOT = { exists = HDJ }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 1
-    }
-
-    option = {
-        name = "Seize the moment!"
-		set_country_flag = ARA_kill_oman
-		war = {
-			target = OMA
-			attacker_goal = {
-				casus_belli = conquest_any
-			}
-			defender_goal = {
-				casus_belli = status_quo
-			}
-			call_ally = yes
-		}
-    }
-	#this just softlocks you. a player is able to get out by manually justifying, the ai doesnt understand it needs to
-	option = {
-        name = "Not now."
-		prestige = -5
-		ai_chance = { factor = 0 }
     }
 }

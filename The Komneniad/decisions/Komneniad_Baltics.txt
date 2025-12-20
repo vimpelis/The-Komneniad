@@ -124,7 +124,6 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 15
-			add_accepted_culture = ukrainian
 			RUS_958 = { add_core = THIS }
 			RUS_1009 = { add_core = THIS }
 			RUS_959 = { add_core = THIS }

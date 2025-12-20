@@ -1,5 +1,5 @@
 capital = 958
-primary_culture = ukrainian
+primary_culture = ruthene
 culture = russian
 religion = orthodox
 government = colonial_company

@@ -1,9 +1,74 @@
 political_decisions = {
+	ARA_annex_najran = {
+		picture = gtfo
+		potential = {
+			tag = ARA
+			government = absolute_monarchy
+			has_country_flag = ARA_conquered_arabia
+			NOT = { has_country_flag = ARA_annex_najran }
+		}
+		allow = {
+			war = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 3
+			random_country = {
+				limit = {
+					tag = NAJ
+					vassal_of = THIS
+				}
+				annex_to = ARA
+			}
+			1161 = { add_core = ARA }
+			1180 = { add_core = ARA }
+			1145 = { add_core = ARA }
+			set_country_flag = ARA_annex_najran
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARA_invade_oman = {
+		picture = gtfo
+		potential = {
+			tag = ARA
+			government = absolute_monarchy
+			has_country_flag = ARA_annex_najran
+			NOT = { has_country_flag = ARA_invade_oman }
+		}
+		allow = {
+			war = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			badboy = 15
+			war = {
+				target = OMA
+				attacker_goal = {
+					casus_belli = conquest_any
+				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
+				call_ally = yes
+			}
+			set_country_flag = ARA_invade_oman
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
 	ARA_unification_call = {
 		picture = gtfo
 		potential = {
 			tag = ARA
 			government = absolute_monarchy
+			has_country_flag = ARA_annex_najran
 			has_country_flag = ARA_kill_oman
 			NOT = { has_country_flag = ARA_unification_call }
 		}
@@ -83,29 +148,166 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	OMA_centralise_empire = {
-		picture = oman_map
+	YEM_eat_najran = {
+		picture = gtfo
 		potential = {
-			tag = OMA
-			OR = {
-				is_our_vassal = QAT
-				is_our_vassal = HAD
-			}
-			NOT = { has_country_flag = OMA_centralise_empire }
+			tag = YEM
+			NOT = { has_country_flag = YEM_eat_najran }
 		}
 		allow = {
 			war = no
-			civilized = yes
+			all_core = { owned_by = THIS }
 		}
 		effect = {
-			prestige = 10
+			badboy = 5
+			NAJ = { all_core = { add_core = THIS } }
+			set_country_flag = YEM_eat_najran
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	NAJ_become_yemen = {
+		picture = gtfo
+		potential = {
+			tag = NAJ
+			has_country_flag = NAJ_yemen_available
+			NOT = { has_country_flag = NAJ_become_yemen }
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			government = absolute_empire
+			set_country_flag = NAJ_become_yemen
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	NAJ_tagswitch_yemen = {
+		picture = gtfo
+		potential = {
+			tag = NAJ
+			has_country_flag = NAJ_become_yemen
+			NOT = { exists = YEM }
+			owns = 1178
+		}
+		allow = {
+			war = no
+			all_core = { owned_by = THIS }
+			OR = {
+				AND = {
+					civilization_progress = 0.5
+					land_reform = yes_land_reform
+				}
+				civilized = yes
+			}
+		}
+		effect = {
+			prestige = 5
+			change_tag = YEM
+			government = absolute_monarchy
+			set_country_flag = YEM_eat_najran
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	YEM_southern_yemen = {
+		picture = gtfo
+		potential = {
+			OR = {
+				tag = YEM
+				tag = NAJ
+			}
+			OR = {
+				has_country_flag = NAJ_become_yemen
+				has_country_flag = YEM_eat_najran
+			}
+			NOT = { has_country_flag = YEM_southern_yemen }
+		}
+		allow = {
+			war = no
+			OR = {
+				civilization_progress = 0.5
+				year = 1869
+			}
+		}
+		effect = {
+			badboy = 5
+			YEM_1412 = { add_core = THIS }
+			set_country_flag = YEM_southern_yemen
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	YEM_asir = {
+		picture = gtfo
+		potential = {
+			tag = YEM
+			has_country_flag = YEM_eat_najran
+			NOT = { has_country_flag = YEM_asir }
+		}
+		allow = {
+			war = no
+			OR = {
+				state_n_government = 1
+				year = 1901
+			}
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 2
+			1155 = { add_core = THIS }
+			set_country_flag = YEM_asir
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	OMA_annex_hadhramaut = {
+		picture = oman_map
+		potential = {
+			tag = OMA
+			is_our_vassal = HAD
+			NOT = { has_country_flag = OMA_annex_hadhramaut }
+		}
+		allow = {
+			war = no
+			year = 1850
+			OR = {
+				AND = {
+					civilization_progress = 0.5
+					land_reform = yes_land_reform
+				}
+				civilized = yes
+			}
+		}
+		effect = {
+			prestige = 5
 			years_of_research = 1
-			any_country = {
-				limit = { vassal_of = THIS OR = { tag = HAD tag = QAT } }
+			HAD = {
 				annex_to = THIS
 				all_core = { add_core = THIS }
 			}
-			set_country_flag = OMA_centralise_empire
+			set_country_flag = OMA_annex_hadhramaut
+			set_country_flag = hidden_tooltip
+				random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+					owner = {
+						random_country = {
+							limit = {
+								OR = {
+									has_country_flag = NAJ_become_yemen
+									has_country_flag = YEM_eat_najran
+								}
+								war = no
+								exists = yes
+								owns = 1178
+							}
+							country_event = 168018
+						}
+					}
+				}
+			clr_country_flag = hidden_tooltip
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -198,7 +400,7 @@ political_decisions = {
 		potential = {
 			tag = OMA
 			NOT = { exists = SAY }
-			has_country_flag = OMA_centralise_empire
+			has_country_flag = OMA_annex_hadhramaut
 		}
 		allow = {
 			war = no
@@ -481,6 +683,14 @@ political_decisions = {
 			add_country_modifier = {
 				name = ADU_arabization
 				duration = -1
+			}
+			any_country = {
+				limit = {
+					tag = QAT
+					vassal_of = THIS
+				}
+				annex_to = THIS
+				all_core = { add_core = THIS }
 			}
 			all_core = { remove_core = OMA remove_core = HAD remove_core = ARU remove_core = QAT remove_core = BHR remove_core = ABU }
 			set_country_flag = culture_conversion

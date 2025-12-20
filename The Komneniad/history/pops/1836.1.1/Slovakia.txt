@@ -722,13 +722,13 @@
     }
 
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 100
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 200
     }
@@ -740,7 +740,7 @@
     }
 
     serfs = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 4450
     }
@@ -826,7 +826,7 @@
     }
 
     serfs = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 4433
     }

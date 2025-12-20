@@ -21,12 +21,10 @@ political_decisions = {
                 AND = { #Oman
                     owns = 1166 #Muscat
                     1172 = { empty = yes } #Duqm
-					1170 = { empty = yes } #Nizwa
                 }
                 AND = { #Arabia
                     owns = 1157 #Riyadh
                     2586 = { empty = yes } #Al-Ahsa
-                    1161 = { empty = yes } #Sharurah
                 }
 				AND = { #Ha'il
                     owns = 1160 #Ha'il
@@ -101,7 +99,6 @@ political_decisions = {
                 AND = { #Oman
                     owns = 1166 #Muscat
                     1172 = { empty = yes } #Duqm
-					1170 = { empty = yes } #Nizwa
                     OR = {
                         year = 1860
                         AND = {
@@ -113,7 +110,6 @@ political_decisions = {
                 AND = { #Arabia
                     owns = 1157 #Riyadh
                     2586 = { empty = yes } #Al-Ahsa
-                    1161 = { empty = yes } #Sharurah
                     OR = {
                         year = 1860
                         AND = {
@@ -256,11 +252,9 @@ political_decisions = {
                     owner = {
                         owns = 1166 #Muscat
                         1172 = { empty = yes } #Duqm
-						1170 = { empty = yes } #Nizwa
                     }
                 }
                 1172 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 15 }
-				1170 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 15 }
                 owner = { prestige = 1 }
             }
             #Arabia#
@@ -269,11 +263,9 @@ political_decisions = {
                     owner = {
                         owns = 1157 #Riyadh
                         2586 = { empty = yes } #Al-Ahsa
-						1161 = { empty = yes } #Sharurah
                     }
                 }
                 2586 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
-				1161 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
                 owner = { prestige = 1 }
             }
 			#Ha'il#

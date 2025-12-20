@@ -1015,33 +1015,39 @@
 #Taizz (52000/13000 POPS)
 1180 = {
     aristocrats = {
-        culture = mashriqi
+        culture = bedouin
         religion = sunni
         size = 2000
     }
 
     clergymen = {
-        culture = mashriqi
+        culture = bedouin
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = mashriqi
+        culture = bedouin
         religion = sunni
         size = 500
     }
 
     soldiers = {
-        culture = mashriqi
+        culture = bedouin
         religion = sunni
         size = 2000
     }
 
     farmers = {
+        culture = bedouin
+        religion = sunni
+        size = 6225
+    }
+	
+	farmers = {
         culture = mashriqi
         religion = sunni
-        size = 7225
+        size = 1000
     }
 
     aristocrats = {
@@ -1071,7 +1077,13 @@
     farmers = {
         culture = mashriqi
         religion = shiite
-        size = 12400
+        size = 10400
+    }
+	
+	farmers = {
+        culture = bedouin
+        religion = shiite
+        size = 2000
     }
 
     slaves = {

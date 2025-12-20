@@ -83,7 +83,7 @@ political_decisions = {
 				ASY = { owns = 3532 }
 			}
 			NOT = { exists = KDS }
-			NOT = { has_country_flag = KDS_kurdish_uprising }
+			NOT = { has_global_flag = kurdish_uprising }
 		}
 		allow = {
 			war = no
@@ -162,6 +162,8 @@ political_decisions = {
 				duration = 3650
 			}
 			set_country_flag = KDS_kurdish_uprising
+			ASY = { set_country_flag = ASY_kurdish_uprising }
+			set_global_flag = kurdish_uprising
 		}
 		ai_will_do = {
 			factor = 1

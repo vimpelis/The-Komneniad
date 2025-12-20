@@ -1,5 +1,5 @@
 capital = 1166
-primary_culture = sayhad
+primary_culture = sayhadi
 religion = ibadi
 government = absolute_monarchy
 plurality = 0.0

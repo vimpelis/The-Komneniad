@@ -37,7 +37,6 @@ political_decisions = {
 		allow = {
 			war = no
 			ideological_thought = 1
-			all_core = { owned_by = THIS }
 		}
 		effect = {
 			prestige = 5

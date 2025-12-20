@@ -780,7 +780,6 @@ country_event = {
 	option = {
         name = "Sayhad Placeholder"
 		ABU_1162 = { secede_province = THIS secede_province = OMA }
-		NEJ_3385 = { secede_province = THIS secede_province = OMA }
 		YEM_1412 = { secede_province = THIS secede_province = OMA }
 		country_event = 169014
     }
@@ -801,7 +800,6 @@ country_event = {
 	option = {
         name = "Annex Sayhad to ARU"
 		ABU_1162 = { secede_province = THIS secede_province = ARU }
-		NEJ_3385 = { secede_province = THIS secede_province = ARU }
 		YEM_1412 = { secede_province = THIS secede_province = ARU }
 		OMA_1166 = { secede_province = THIS secede_province = ARU }
 		change_tag_no_core_switch = ARU

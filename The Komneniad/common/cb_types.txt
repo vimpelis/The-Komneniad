@@ -370,18 +370,6 @@ acquire_core_state = {
     on_po_accepted = {
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         country_event = 2650    # Territorial Loss event
-		random_owned = {
-			limit = {
-				owner = {
-					tag = ARA
-					NOT = { owns = 1155 }
-					exists = HDJ
-					HDJ = { is_vassal = no }
-					NOT = { has_global_flag = ARA_dead }
-				}
-			}
-			HDJ = { country_event = 168014 }
-		}
     }
 }
 
@@ -467,6 +455,18 @@ acquire_all_cores = {
 
     on_po_accepted = {
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
+		random_owned = {
+			limit = {
+				owner = {
+					tag = ARA
+					NOT = { owns = 1155 }
+					exists = HDJ
+					HDJ = { is_vassal = no }
+					NOT = { has_global_flag = ARA_dead }
+				}
+			}
+			HDJ = { country_event = 168014 }
+		}
         country_event = 2650    # Territorial Loss event
     }
 }
@@ -7097,9 +7097,8 @@ conquest_any = {
 			clr_country_flag = KDS_kurdish_uprising
 		}
 		any_country = {
-			limit = { primary_culture = kurdish has_country_flag = KDS_kurdish_uprising exists = no exists = ASY }
-			ASY = { country_event = 177007 }
-			clr_country_flag = KDS_kurdish_uprising
+			limit = { tag = ASY exists = yes has_country_flag = ASY_kurdish_uprising NOT = { exists = BZD } NOT = { exists = BTL } NOT = { exists = BDN } NOT = { exists = MKU } }
+			ASY = { country_event = 177007 clr_country_flag = ASY_kurdish_uprising }
 		}
     }
 }
@@ -9843,19 +9842,16 @@ syriac_crisis = {
 			}
 			secede_province = THIS
 		}
+		915 = { add_core = PLS }
+		916 = { add_core = PLS }
+		917 = { add_core = PLS }
+		918 = { add_core = PLS }
+		919 = { add_core = PLS }
+		3358 = { add_core = PLS }
+		3474 = { add_core = PLS }
 		any_owned = {
-			limit = {
-				OR = {
-					province_id = 915
-					province_id = 916
-					province_id = 917
-					province_id = 918
-					province_id = 919
-					province_id = 3358
-					province_id = 3474
-				}
-			}
-			add_core = PLS secede_province = THIS secede_province = PLS
+			limit = { is_core = PLS }
+			secede_province = PLS
 		}
 		create_vassal = PLS
 		PLS = { government = colonial_company all_core = { limit = { owned_by = EGY } secede_province = PLS } }

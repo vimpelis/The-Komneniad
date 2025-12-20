@@ -18,7 +18,7 @@ political_decisions = {
 			political_reform = open_borders
 			add_country_modifier = {
 				name = opened_frontiers
-				duration = 7200
+				duration = 1825
 			}
 		}
 		ai_will_do = { factor = 1 }

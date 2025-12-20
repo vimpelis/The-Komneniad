@@ -51,7 +51,7 @@
     }
 
     serfs = {
-        culture = byelorussian
+        culture = ruthene
         religion = orthodox
         size = 3000
     }
@@ -220,7 +220,7 @@
     }
 
     serfs = {
-        culture = byelorussian
+        culture = ruthene
         religion = orthodox
         size = 2000
     }

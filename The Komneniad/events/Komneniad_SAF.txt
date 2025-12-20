@@ -404,3 +404,153 @@ country_event = {
 		prestige = -1
     }
 }
+
+###Gaelic Nollaig Events
+country_event = {
+    id = 167100
+    title = "Boer Movement in Nollaig"
+    desc = "167100DESC"
+    picture = "nollaig"
+
+    trigger = {
+		tag = CLT
+		owns = 1689
+		year = 1838
+		month = 5
+		NOT = { year = 1845 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+	
+	option = {
+        name = "Never thought we'd be afraid of the Dutch."
+		1689 = { add_province_modifier = { name = city_boom duration = 1825 } any_pop = { limit = { has_pop_culture = boer } militancy = 2 } }
+		set_country_flag = CLT_nollaig
+    }
+}
+
+country_event = {
+    id = 167101
+    title = "The Battle of Mpumalanga"
+    desc = "167101DESC"
+    picture = "blood_river"
+
+    trigger = {
+		tag = CLT
+		owns = 1689
+		year = 1840
+		month = 8
+		has_country_flag = CLT_nollaig
+		NOT = { year = 1845 }
+		NOT = { badboy = 0.9 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+	
+	option = {
+        name = "The governor shall be punished for such bold moves."
+		badboy = 0.5
+		ZUL = { country_event = 167102 }
+    }
+}
+
+country_event = {
+    id = 167102
+    title = "The Battle of Mpumalanga"
+    desc = "167102DESC"
+    picture = "blood_river"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "We will accept Gaelic protection."
+		2112 = { secede_province = CLT }
+		2111 = { secede_province = CLT }
+		CLT = {
+			diplomatic_influence = {
+				who = ZUL
+				value = 400
+			}
+			relation = {
+				who = ZUL
+				value = 100
+			}
+		}
+		ai_chance = { factor = 9 }
+    }
+	
+	option = {
+        name = "We will kick them out!"
+		war = {
+			target = CLT
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 1689
+			}
+			defender_goal = {
+				casus_belli = make_puppet_no_infamy
+			}
+			call_ally = yes
+		}
+		FROM = { country_event = 167103 }
+		set_global_flag = ZUL_resistance_to_CLT
+		ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = 167103
+    title = "The Zulus refuse protection"
+    desc = "Our attempted occupation of the Zulu lands was met with stiff resistance from the Zulus. The small colonial garrison has been kicked out, and now the Zulus threaten Nollaig itself."
+    picture = "blood_river"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "An unnecessary distraction."
+    }
+}
+
+country_event = {
+    id = 167104
+    title = "Subjugation of the Zulu"
+    desc = "We have been forced to sign a treaty with the Gaels, surrendering our sovereignty to them and accepting their dominance."
+    picture = "blood_river"
+
+    trigger = {
+		tag = ZUL
+		has_global_flag = ZUL_resistance_to_CLT
+		vassal_of = CLT
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+	
+	option = {
+        name = "A terrible event."
+		2112 = { secede_province = CLT }
+		2111 = { secede_province = CLT }
+		CLT = {
+			diplomatic_influence = {
+				who = ZUL
+				value = 400
+			}
+			relation = {
+				who = ZUL
+				value = 100
+			}
+		}
+    }
+}

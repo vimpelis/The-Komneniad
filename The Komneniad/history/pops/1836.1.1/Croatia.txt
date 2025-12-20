@@ -877,8 +877,8 @@
         religion = catholic
         size = 180
     }
-	
-	bureaucrats = {
+
+    bureaucrats = {
         culture = greek
         religion = orthodox
         size = 100
@@ -1156,25 +1156,25 @@
     }
 
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 30
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 90
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 110
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 1960
     }
@@ -1811,25 +1811,25 @@
     }
 
     clergymen = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 15
     }
 
     artisans = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 5
     }
 
     soldiers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 10
     }
 
     farmers = {
-        culture = ukrainian
+        culture = ruthene
         religion = orthodox
         size = 130
     }

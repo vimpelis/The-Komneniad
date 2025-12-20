@@ -94,7 +94,20 @@ country_event = {
             modifier = {
                  factor = 1.5
                  nationalvalue = nv_tradition
-             }
+            }
+			modifier = {
+                factor = 0
+                OR = {
+					tag = ETH
+					tag = EGY
+					tag = OMA
+					tag = ARM
+					tag = GEO
+					tag = GNG
+					tag = FJN
+					tag = IRO
+				}	
+            }
         }
     }
 }

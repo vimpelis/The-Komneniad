@@ -72,11 +72,15 @@ navy = {
         name = "Frigate"
         type = frigate
     }
-	ship = {
-        name = "Frigate"
-        type = frigate
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
     }
     ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
         name = "Transport Flotilla"
         type = clipper_transport
     }

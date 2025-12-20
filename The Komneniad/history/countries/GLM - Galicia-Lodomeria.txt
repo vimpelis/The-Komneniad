@@ -1,5 +1,5 @@
 capital = 702
-primary_culture = ukrainian
+primary_culture = ruthene
 culture = polish
 religion = catholic
 government = colonial_company
