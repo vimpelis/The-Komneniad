@@ -5,24 +5,34 @@ army = {
     name = "Army of the Sultan of Muscat"
     location = 1166
     regiment = {
-        name = "1. Brigade"
+        name = "1st Infantry Brigade"
         type = infantry
         home = 1166
     }
     regiment = {
-        name = "2. Brigade"
-        type = irregular
-        home = 1166
+        name = "2nd Irregular Infantry Brigade"
+        type = infantry
+        home = 1169
     }
 	regiment = {
-        name = "3. Brigade"
+        name = "1st Irregular Infantry Brigade"
         type = irregular
-        home = 1167
+        home = 1171
     }
 	regiment = {
-        name = "4. Brigade"
+        name = "2nd Irregular Infantry Brigade"
         type = irregular
+        home = 1170
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
         home = 1168
+    }
+	regiment = {
+        name = "2nd Cavalry Brigade"
+        type = cavalry
+        home = 1167
     }
 }
 
@@ -31,7 +41,7 @@ army = {
     location = 2048
 
     regiment = {
-        name = "1. Askaris"
+        name = "1st Infantry Brigade"
         type = infantry
         home = 2048
     }
@@ -42,14 +52,35 @@ army = {
     location = 1142
 
     regiment = {
-        name = "1. Brigade"
+        name = "1st Infantry Brigade"
         type = infantry
         home = 1142
     }
 	regiment = {
-        name = "2. Brigade"
+        name = "1st Irregular Infantry Brigade"
         type = irregular
         home = 1141
+    }
+	regiment = {
+        name = "1st Cavalry Brigade"
+        type = cavalry
+        home = 3496
+    }
+}
+
+army = {
+    name = "Aden Garrison"
+    location = 1412
+
+	regiment = {
+        name = "1st Irregular Infantry Brigade"
+        type = irregular
+        home = 1412
+    }
+	regiment = {
+        name = "2nd Irregular Infantry Brigade"
+        type = irregular
+        home = 1412
     }
 }
 
