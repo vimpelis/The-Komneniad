@@ -3,7 +3,7 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ARA
-			government = absolute_monarchy
+			government = absolute_empire
 			has_country_flag = ARA_conquered_arabia
 			NOT = { has_country_flag = ARA_annex_najran }
 		}
@@ -32,7 +32,7 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ARA
-			government = absolute_monarchy
+			government = absolute_empire
 			has_country_flag = ARA_annex_najran
 			NOT = { has_country_flag = ARA_invade_oman }
 		}
@@ -67,7 +67,7 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ARA
-			government = absolute_monarchy
+			government = absolute_empire
 			has_country_flag = ARA_annex_najran
 			has_country_flag = ARA_kill_oman
 			NOT = { has_country_flag = ARA_unification_call }
@@ -102,7 +102,7 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = ARA
-			government = absolute_monarchy
+			government = absolute_empire
 			has_country_flag = ARA_unification_call
 		}
 		allow = {
@@ -118,7 +118,7 @@ political_decisions = {
 			EGY = { all_core = { add_core = THIS } }
 			add_accepted_culture = misri
 			add_accepted_culture = maghrebi
-			government = absolute_empire
+			government = theocracy
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -714,6 +714,95 @@ political_decisions = {
 				duration = -1
 			}
 			set_country_flag = OMA_enforce_sayhadi_education
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARA_bedouin_leadership = {
+		picture = gtfo
+		potential = {
+			OR = {
+				tag = NEJ
+				tag = HAL
+			}
+			NOT = { has_country_flag = ARA_bedouin_leadership }
+		}
+		allow = {
+			war = no
+			OR = {
+				AND = {
+					owns = 1157
+					owns = 1160
+				}
+				year = 1852
+			}
+		}
+		effect = {
+			badboy = 10
+			NEJ = { all_core = { add_core = THIS } }
+			HAL = { all_core = { add_core = THIS } }
+			set_country_flag = ARA_bedouin_leadership
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARA_claim_central_arabia = {
+		picture = gtfo
+		potential = {
+			OR = {
+				tag = NEJ
+				tag = HAL
+				tag = HDJ
+			}
+			OR = {
+				has_country_flag = ARA_bedouin_leadership
+				tag = HDJ
+			}
+			NOT = { has_country_flag = ARA_claim_central_arabia }
+		}
+		allow = {
+			war = no
+			OR = {
+				civilization_progress = 0.5
+				AND = {
+					civilized = yes
+					rank = 24
+				}
+			}
+		}
+		effect = {
+			badboy = 12
+			NEJ = { all_core = { add_core = THIS } }
+			HAL = { all_core = { add_core = THIS } }
+			HDJ = { all_core = { add_core = THIS } }
+			set_country_flag = ARA_claim_central_arabia
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARA_unite_arabia = {
+		picture = gtfo
+		potential = {
+			OR = {
+				tag = NEJ
+				tag = HAL
+				tag = HDJ
+			}
+			has_country_flag = ARA_claim_central_arabia
+			NOT = { exists = ARA }
+		}
+		allow = {
+			war = no
+			owns = 1151
+			owns = 1157
+			owns = 1160
+		}
+		effect = {
+			prestige = 10
+			change_tag = ARA
+			NEJ = { all_core = { add_core = THIS } }
+			HAL = { all_core = { add_core = THIS } }
+			HDJ = { all_core = { add_core = THIS } }
 		}
 		ai_will_do = { factor = 1 }
 	}

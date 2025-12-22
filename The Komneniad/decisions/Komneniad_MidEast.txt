@@ -49,6 +49,44 @@ political_decisions = {
 		}
 	}
 	
+	EGY_edict_of_damascus = {
+		picture = gtfo
+		potential = {
+			tag = EGY
+			has_country_flag = EGY_UPS_formed
+			owns = 902
+			NOT = { has_country_flag = EGY_edict_of_damascus }
+		}
+		allow = {
+			war = no
+			OR = {
+				average_consciousness = 4
+				land_reform = yes_land_reform
+				year = 1855
+			}
+		}
+		effect = {
+			prestige = 5
+			any_country = {
+				limit = {
+					tag = EGY
+					land_reform = yes_land_reform
+				}
+				research_points = 10000
+			}
+			any_country = {
+				limit = {
+					tag = EGY
+					land_reform = no_land_reform
+				}
+				economic_reform = yes_land_reform
+			}
+			any_pop = { consciousness = -2 }
+			set_country_flag = EGY_edict_of_damascus
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
 	EGY_annex_uqaydat = {
 		picture = map_syria
 		potential = {
@@ -60,7 +98,7 @@ political_decisions = {
 			war = no
 			OR = {
 				land_reform = yes_land_reform
-				year = 1856
+				year = 1855
 				NOT = { owns = 897 }
 			}
 		}

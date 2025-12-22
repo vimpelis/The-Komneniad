@@ -23,6 +23,7 @@ country_event = {
 		owns = 1178
 		war = no
 		NOT = { year = 1845 }
+		government = absolute_empire
     }
 
     fire_only_once = yes
@@ -496,6 +497,87 @@ country_event = {
 	}
 }
 
+country_event = {
+    id = 168020
+    title = "The Desert War"
+    desc = "168020DESC"
+    picture = "arab_revolt"
+
+    trigger = {
+		OR = {
+			tag = NEJ
+			tag = HAL
+		}
+		war = no
+		has_country_flag = ARA_bedouin_leadership
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Arabia will be ours!"
+		random_country = {
+			limit = {
+				NOT = { tag = THIS }
+				OR = {
+					tag = NEJ
+					tag = HAL
+				}
+			}
+			country_event = 168021
+		}
+	}
+}
+
+country_event = {
+    id = 168021
+    title = "The Desert War"
+    desc = "168020DESC"
+    picture = "arab_revolt"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Arabia will be ours!"
+		FROM = {
+			war = {
+				target = THIS
+				attacker_goal = { casus_belli = annex_core_country }
+				defender_goal = { casus_belli = annex_core_country }
+				call_ally = yes
+			}
+		}
+	}
+}
+
+country_event = {
+    id = 168022
+    title = "Reorganization of Hedjaz"
+    desc = "With Hedjaz being subjugated by the Egyptians, the Hashemites will have to give up the title of Sultan and only keep the title of Sharif of Mecca."
+    picture = "arab_revolt"
+
+    trigger = {
+		tag = HDJ
+		vassal_of = EGY
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Oh well."
+		government = colonial_company
+	}
+}
+
 #Death
 country_event = {
     id = 168150
@@ -503,7 +585,18 @@ country_event = {
     desc = "168000DESC"
     picture = "arab_revolt"
 
-    is_triggered_only = yes
+    trigger = {
+		tag = ARA
+		government = absolute_empire
+		has_recently_lost_war = yes
+		NOT = { has_country_flag = ARA_unification_call }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
 
     option = {
         name = "The House of Saud takes over."
@@ -515,6 +608,7 @@ country_event = {
 		2586 = { add_core = NEJ }
 		release = HAL
 		release = HDJ
+		release = NAJ
 		release = YEM
 		release = ABU
 		release = QAT

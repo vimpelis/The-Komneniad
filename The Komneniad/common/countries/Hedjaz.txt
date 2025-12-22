@@ -1,4 +1,5 @@
 color = { 201  107  119 }
+colonial_company = { 215 170 130 }
 graphical_culture = MiddleEasternGC
 party = {
     name = "HEJ_conservative"

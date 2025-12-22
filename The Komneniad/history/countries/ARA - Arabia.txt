@@ -2,7 +2,7 @@ capital = 1157
 primary_culture = bedouin
 culture = mashriqi
 religion = sunni
-government = absolute_monarchy
+government = absolute_empire
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01
@@ -67,5 +67,5 @@ oob = "ARA_oob.txt"
 
 govt_flag = {
 	government = absolute_empire
-	flag = theocracy
+	flag = colonial_company
 }
