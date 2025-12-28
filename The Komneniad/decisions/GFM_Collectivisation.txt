@@ -58,7 +58,7 @@ political_decisions = {
 		}
 
 		allow = {
-
+			exists = yes
 		}
 
 		effect = {

@@ -476,3 +476,48 @@ country_event = {
 		prestige = 5
 	}
 }
+
+country_event = {
+    id = 178017
+    title = "The Dimming Pearl of the Mediterranean"
+    desc = "178017DESC"
+    picture = "alexandria_pic"
+
+    trigger = {
+		owns = 1751
+		1751 = { NOT = { has_province_modifier = alexandria_modf } }
+		NOT = { is_canal_enabled = 2 }
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+	option = {
+        name = "Times are changing."
+		1751 = { add_province_modifier = { name = alexandria_modf duration = -1 } }
+	}
+}
+
+country_event = {
+    id = 178018
+    title = "The Suez Canal overtakes Alexandria"
+    desc = "178018DESC"
+    picture = "alexandria_pic"
+
+    trigger = {
+		owns = 1751
+		is_canal_enabled = 2
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+
+	option = {
+        name = "The last of Alexander's legacy."
+		1751 = { remove_province_modifier = alexandria_modf trade_goods = fish }
+	}
+}

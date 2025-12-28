@@ -143,6 +143,7 @@ political_decisions = {
 			NOT = { has_country_flag = CLN_IRO_demand }
 		}
 		allow = {
+			exists = yes
 		}
 		effect = {
 			if = {

@@ -5066,10 +5066,6 @@ establish_protectorate_casus_belli = {
             NOT = {
                 has_country_flag = post_colonial_country
             }
-            AND = {
-                tag = KOR
-                THIS = { tag = JAP }
-            }
         }
         OR = {
             war_with = THIS
@@ -5248,10 +5244,6 @@ establish_protectorate_NI_casus_belli = {
             NOT = {
                 has_country_flag = post_colonial_country
             }
-            AND = {
-                tag = KOR
-                THIS = { tag = JAP }
-            }
         }
         NOT = { number_of_states = 3 }
         civilized = no
@@ -5259,7 +5251,6 @@ establish_protectorate_NI_casus_belli = {
             war_with = THIS
             THIS = { NOT = { has_country_modifier = punitive_effects } }
         }
-
         OR = {
             THIS = { ai = no }
             THIS = { war_policy = jingoism NOT = { government = democracy } }

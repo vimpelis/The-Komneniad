@@ -3,5 +3,5 @@ controller = HUI
 add_core = HUI
 trade_goods = tea
 life_rating = 32
-terrain = nanjing
+terrain = urban
 add_core = CHI

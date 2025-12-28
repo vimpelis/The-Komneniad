@@ -32,6 +32,7 @@ country_event = {
             has_country_modifier = dour_economist
             has_country_modifier = power_vacuum
             has_country_flag = minister_found
+			has_country_flag = spectator
         }
         OR = {
 			government = absolute_empire

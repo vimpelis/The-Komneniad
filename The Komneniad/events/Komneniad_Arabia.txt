@@ -509,6 +509,7 @@ country_event = {
 			tag = HAL
 		}
 		war = no
+		is_vassal = no
 		has_country_flag = ARA_bedouin_leadership
     }
 

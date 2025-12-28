@@ -4,6 +4,6 @@ add_core = BYZ
 trade_goods = fruit
 life_rating = 35
 naval_base = 1
-terrain = athens
+terrain = urban
 add_core = GRE
 state_building = { level = 1 building = liquor_distillery upgrade = yes } 

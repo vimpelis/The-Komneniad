@@ -3,7 +3,7 @@ controller = BRB
 add_core = BRB
 trade_goods = grain
 life_rating = 35
-terrain = brussels
+terrain = urban
 railroad = 1
 state_building = { level = 2 building = fabric_factory upgrade = yes } 
 state_building = { level = 1 building = canned_food_factory upgrade = yes } 

@@ -1,8 +1,7 @@
 owner = EGY
 controller = EGY
 add_core = EGY
-
-trade_goods = fish
+trade_goods = precious_goods
 life_rating = 40
-terrain = alexandria
+terrain = urban
 naval_base = 1

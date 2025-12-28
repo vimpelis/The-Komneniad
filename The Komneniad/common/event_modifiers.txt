@@ -5049,7 +5049,7 @@ chinese_warfare = {
 	import_cost = -0.2
 	leadership_modifier = 0.5
 	min_military_spending = 0.7
-	tax_efficiency = 0.1
+	tax_efficiency = 0.2
 	min_tax = 0.9
     mobilisation_size = -0.1
 	research_points_on_conquer = -0.25
@@ -5405,10 +5405,9 @@ EGY_ARE_modf = {
 }
 
 EGY_syriac_unrest = {
-	pop_consciousness_modifier = 0.05
+	pop_consciousness_modifier = 0.1
 	local_RGO_output = -0.25
 	local_artisan_output = -0.25
-	goods_demand = -0.25
     icon = 8
 }
 
@@ -5473,4 +5472,9 @@ ARA_mob_modifier = {
     supply_consumption = -0.15
     mobilisation_size = 0.025
     icon = 15
+}
+
+alexandria_modf = {
+	local_RGO_output = -0.25
+    icon = 12
 }

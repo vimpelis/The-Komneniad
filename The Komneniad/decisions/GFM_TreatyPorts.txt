@@ -9,6 +9,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -36,6 +37,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -67,6 +69,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -126,6 +129,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -172,6 +176,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -232,6 +237,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -295,6 +301,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -365,6 +372,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -427,6 +435,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -554,6 +563,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -613,13 +623,13 @@ political_decisions = {
     kwangchowan_treaty_port = {
         picture = kwangchowan_china
         potential = {
-			tag = FRA
             has_country_modifier = negotiating_treaty
             2632 = { owner = { has_country_modifier = negotiating_unequal_treaty civilized = no truce_with = THIS } }
             NOT = { has_country_modifier = chinese_treaty_port }
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -686,6 +696,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -745,6 +756,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -763,6 +775,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -781,6 +794,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -799,6 +813,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -816,7 +831,7 @@ political_decisions = {
             2589 = { owner = { has_country_modifier = negotiating_unequal_treaty civilized = no truce_with = THIS } }
         }
 
-        allow = { }
+        allow = { exists = yes }
 
         effect = {
             remove_country_modifier = negotiating_treaty
@@ -833,7 +848,7 @@ political_decisions = {
             3260 = { owner = { has_country_modifier = negotiating_unequal_treaty civilized = no truce_with = THIS } }
         }
 
-        allow = { }
+        allow = { exists = yes }
 
         effect = {
             remove_country_modifier = negotiating_treaty

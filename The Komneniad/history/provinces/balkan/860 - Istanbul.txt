@@ -3,9 +3,9 @@ controller = BYZ
 add_core = BYZ
 trade_goods = precious_goods
 life_rating = 40
-terrain = istanbul
+terrain = urban
 naval_base = 1
-fort = 1
+fort = 2
 state_building = { level = 1 building = machine_parts_factory upgrade = yes } 
 state_building = { level = 1 building = steel_factory upgrade = yes } 
 state_building = { level = 1 building = ammunition_factory upgrade = yes } 

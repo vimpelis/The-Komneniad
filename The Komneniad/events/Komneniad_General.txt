@@ -185,6 +185,11 @@ country_event = {
     }
 	
 	option = {
+        name = "Enter Spectator mode (disables events)"
+		set_country_flag = spectator
+    }
+	
+	option = {
         name = "Close"
     }
 }

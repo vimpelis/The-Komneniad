@@ -7,6 +7,7 @@ political_decisions = {
 			NOT = { has_country_flag = komneniad_menu }
 		}
 		allow = {
+			exists = yes
 		}
 		effect = {
 			set_country_flag = komneniad_menu
@@ -80,7 +81,7 @@ political_decisions = {
             }
         }
 
-        allow = {}
+        allow = { exists = yes }
 
         effect = { set_global_flag = revolution_n_counter_researched }
 
@@ -148,7 +149,7 @@ political_decisions = {
             ai = no
             NOT = { has_country_flag = will_give_grants }
         }
-        allow = { }
+        allow = { exists = yes }
         effect = {
             set_country_flag = will_give_grants
         }
@@ -179,6 +180,7 @@ political_decisions = {
             NOT = { has_country_flag = government_decisions_on }
         }
         allow = {
+			exists = yes
         }
         effect = {
             set_country_flag = government_decisions_on
@@ -195,6 +197,7 @@ political_decisions = {
             has_country_flag = government_decisions_on
         }
         allow = {
+			exists = yes
         }
         effect = {
             clr_country_flag = government_decisions_on
@@ -1370,7 +1373,7 @@ political_decisions = {
         }
 
         allow = {
-
+			exists = yes
         }
 
         alert = no
@@ -1391,6 +1394,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -1410,6 +1414,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -1765,6 +1770,7 @@ political_decisions = {
         }
 
         allow = {
+			exists = yes
         }
 
         effect = {
@@ -1902,7 +1908,7 @@ political_decisions = {
             has_country_flag = nv_change
         }
 
-        allow = { }
+        allow = { exists = yes }
 
         effect = { clr_country_flag = nv_change }
 
@@ -2186,7 +2192,7 @@ political_decisions = {
         }
 
         allow = {
-
+			exists = yes
         }
 
         effect = {
@@ -2205,7 +2211,7 @@ political_decisions = {
         }
 
         allow = {
-
+			exists = yes
         }
 
         effect = {

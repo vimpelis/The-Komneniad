@@ -315,6 +315,7 @@ political_decisions = {
 			NOT = { has_country_flag = ASY_exarchate_of_assyria }
 		}
 		allow = {
+			exists = yes
 		}
 		effect = {
 			overlord = { country_event = 177014 }
@@ -333,6 +334,7 @@ political_decisions = {
 			NOT = { has_country_flag = ASY_unify_education }
 		}
 		allow = {
+			exists = yes
 		}
 		effect = {
 			set_country_flag = ASY_unify_education
@@ -353,6 +355,7 @@ political_decisions = {
 			NOT = { has_country_modifier = KDS_tribute_cooldown }
 		}
 		allow = {
+			exists = yes
 		}
 		effect = {
 			treasury = 1000

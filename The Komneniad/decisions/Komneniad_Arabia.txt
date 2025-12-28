@@ -758,6 +758,7 @@ political_decisions = {
 				has_country_flag = ARA_bedouin_leadership
 				tag = HDJ
 			}
+			is_vassal = no
 			NOT = { has_country_flag = ARA_claim_central_arabia }
 		}
 		allow = {
@@ -789,6 +790,7 @@ political_decisions = {
 				tag = HDJ
 			}
 			has_country_flag = ARA_claim_central_arabia
+			is_vassal = no
 			NOT = { exists = ARA }
 		}
 		allow = {
@@ -803,6 +805,29 @@ political_decisions = {
 			NEJ = { all_core = { add_core = THIS } }
 			HAL = { all_core = { add_core = THIS } }
 			HDJ = { all_core = { add_core = THIS } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARA_ai_dec_NAJ = {
+		picture = gtfo
+		potential = {
+			tag = ARA
+			ai = yes
+			has_country_flag = ARA_annex_najran
+			NAJ = { exists = yes }
+			NOT = { truce_with = NAJ }
+			1161 = { is_core = ARA }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			war = {
+				target = NAJ
+				attacker_goal = { casus_belli = annex_core_country }
+				call_ally = yes
+			}
 		}
 		ai_will_do = { factor = 1 }
 	}
