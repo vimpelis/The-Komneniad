@@ -60,6 +60,11 @@ political_decisions = {
 		allow = {
 			war = no
 			OR = {
+				AND = {
+					902 = { average_consciousness = 5 }
+					897 = { average_consciousness = 5 }
+					913 = { average_consciousness = 5 }
+				}
 				average_consciousness = 4
 				land_reform = yes_land_reform
 				year = 1855
@@ -67,21 +72,19 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 5
-			any_country = {
-				limit = {
-					tag = EGY
-					land_reform = yes_land_reform
-				}
-				research_points = 10000
+			random_owned = {
+				limit = { owner = { land_reform = yes_land_reform } }
+				owner = { research_points = 10000 }
 			}
-			any_country = {
-				limit = {
-					tag = EGY
-					land_reform = no_land_reform
-				}
-				economic_reform = yes_land_reform
+			random_owned = {
+				limit = { owner = { land_reform = no_land_reform } }
+				owner = { economic_reform = yes_land_reform }
 			}
-			any_pop = { consciousness = -2 }
+			LBN = {
+				all_core = {
+					any_pop = { consciousness = -8 }
+				}
+			}
 			set_country_flag = EGY_edict_of_damascus
 		}
 		ai_will_do = { factor = 1 }

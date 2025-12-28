@@ -3,7 +3,7 @@ controller = DEN
 add_core = DEN
 trade_goods = fish
 life_rating = 40
-terrain = oslo
+terrain = urban
 naval_base = 1
-fort = 1 # state_building = {
+fort = 1
 add_core = NOR

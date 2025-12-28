@@ -5,5 +5,5 @@ add_core = GER
 add_core = POL
 trade_goods = fish
 life_rating = 40
-terrain = danzig
+terrain = urban
 naval_base = 1
