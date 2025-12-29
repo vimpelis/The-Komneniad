@@ -405,4 +405,43 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	BYZ_exarchate_of_assyria = {
+		picture = kurdistan_map
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			owns = 923
+			NOT = { has_country_flag = BYZ_exarchate_of_assyria }
+			NOT = { exists = ASY }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 10
+			badboy = -3
+			ASY = { primary_culture = greek add_accepted_culture = assyrian }
+			release_vassal = ASY
+			random_owned = {
+				limit = {
+					owner = { tag = GRE }
+				}
+				ASY = { government = colonial_company_2 }
+			}
+			random_owned = {
+				limit = {
+					owner = { tag = BYZ }
+				}
+				ASY = { government = colonial_company }
+			}
+			set_country_flag = BYZ_exarchate_of_assyria
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

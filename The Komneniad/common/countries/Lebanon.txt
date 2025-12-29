@@ -1,4 +1,6 @@
-color = { 22 32 110}
+color = { 22 32 110 }
+colonial_company = { 140 65 150 }
+colonial_company_2 = { 70 90 135 }
 graphical_culture = MiddleEasternGC
 
 party = {

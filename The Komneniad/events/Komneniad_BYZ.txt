@@ -1165,12 +1165,25 @@ country_event = {
 				name = slavic_revolt
 				duration = 1825
 			}
+			political_reform = universal_weighted_voting
+			political_reform = non_secret_ballots
+			political_reform = state_equal_weight
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = first_past_the_post
+			
 		}
 		CRO = {
 			add_country_modifier = {
 				name = slavic_revolt
 				duration = 1825
 			}
+			political_reform = universal_weighted_voting
+			political_reform = non_secret_ballots
+			political_reform = state_equal_weight
+			political_reform = yes_meeting
+			political_reform = censored_press
+			political_reform = first_past_the_post
 		}
     }
 	

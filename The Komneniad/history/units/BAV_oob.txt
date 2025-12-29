@@ -100,22 +100,22 @@ NSB = {
     influence_value = 25
 }
 SAX = {
-    value = 75
+    value = -25
     level = 4
     influence_value = 25
 }
 BRN = {
-    value = 75
+    value = -25
     level = 4
     influence_value = 25
 }
 WLG = {
-    value = 50
+    value = -10
     level = 3
     influence_value = 25
 }
 STT = {
-    value = 50
+    value = -10
     level = 3
     influence_value = 25
 }
@@ -145,7 +145,7 @@ LOM = {
     influence_value = 25
 }
 WES = {
-    value = -50
+    value = -100
     level = 3
     influence_value = 25
 }

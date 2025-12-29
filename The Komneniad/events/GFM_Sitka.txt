@@ -181,41 +181,6 @@ country_event = {
 	}
 }
 country_event = {
-    id = 960692
-    title = "Tippu Tip"
-    desc = "A trader, explorer and plantation owner, Tippu Tip has been centralizing his ivory and slave exploitation in Central Africa into an organized trading empire."
-    picture = "tippu_tip"
-    fire_only_once = yes
-
-    trigger = {
-		owns = 2048
-		year = 1860
-    }
-
-    mean_time_to_happen = { months = 3 }
-
-    option = {
-        name = "Interesting."
-		1990 = { secede_province = THIS }
-		1991 = { secede_province = THIS }
-		1990 = { secede_province = TPT }
-		1991 = { secede_province = TPT trade_goods = slave_trading }
-		TPT = { capital = 1990 }
-		ai_chance = { factor = 1 }
-    }
-
-    option = {
-        name = "That sounds quite lucrative... §BBecome Tippu Tip§W"
-		1990 = { secede_province = THIS }
-		1991 = { secede_province = THIS }
-		1990 = { secede_province = TPT }
-		1991 = { secede_province = TPT trade_goods = slave_trading }
-		TPT = { capital = 1990 }
-		change_tag_no_core_switch = TPT
-		ai_chance = { factor = 0 }
-    }
-}
-country_event = {
     id = 10790
     title = "So you are an omega, huh? 1/4"
     desc = "As a way to make things easier, this event chain will let you decide between 3 options related to POPULATION GROWTH."

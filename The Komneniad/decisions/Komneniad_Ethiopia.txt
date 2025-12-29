@@ -927,6 +927,7 @@ political_decisions = {
 		allow = {
 			war = no
 			is_vassal = no
+			all_core = { owned_by = THIS }
 			OR = {
 				year = 1875
 				civilization_progress = 0.5
@@ -1089,6 +1090,93 @@ political_decisions = {
 			set_country_flag = SOM_clans_gone
 			prestige = 25
 			research_points = 5000
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	ETH_ai_dec_nubia = {
+		picture = somalia
+		potential = {
+			tag = ETH
+			ai = yes
+			1827 = { is_core = THIS }
+			exists = SUD
+			NOT = { truce_with = SUD }
+			SUD = { owns = 1827 }
+			NOT = { SUD = { in_sphere = yes } }
+		}
+		allow = {
+			tag = ETH
+			war = no
+		}
+		effect = {
+			war = {
+				target = SUD
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1827
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	ETH_ai_dec_nubia_2 = {
+		picture = somalia
+		potential = {
+			tag = ETH
+			ai = yes
+			1835 = { is_core = THIS }
+			exists = SUD
+			NOT = { truce_with = SUD }
+			SUD = { owns = 1835 }
+			NOT = { SUD = { in_sphere = yes } }
+		}
+		allow = {
+			tag = ETH
+			war = no
+		}
+		effect = {
+			war = {
+				target = SUD
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 1835
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+	
+	ETH_ai_dec_nubia_3 = {
+		picture = somalia
+		potential = {
+			tag = ETH
+			ai = yes
+			3395 = { is_core = THIS }
+			exists = SUD
+			NOT = { truce_with = SUD }
+			SUD = { owns = 3395 }
+			NOT = { SUD = { in_sphere = yes } }
+		}
+		allow = {
+			tag = ETH
+			war = no
+		}
+		effect = {
+			war = {
+				target = SUD
+				attacker_goal = {
+					casus_belli = acquire_core_state
+					state_province_id = 3395
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1	

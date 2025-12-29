@@ -97,6 +97,36 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
+	ZPD_influence_ngf = {
+		picture = GER_map
+		potential = {
+			tag = ZPD
+			NOT = { exists = NGF exists = GER }
+			NOT = {	has_country_flag = ZPD_influence_ngf }
+		}
+		allow = {
+			war = no
+			truce_with = BAV
+			owns = 619
+		}
+		effect = {
+			prestige = 10
+			diplomatic_influence = { who = SAX value = 100 }
+			diplomatic_influence = { who = BRN value = 100 }
+			diplomatic_influence = { who = STT value = 100 }
+			diplomatic_influence = { who = WLG value = 100 }
+			diplomatic_influence = { who = THU value = 100 }
+			diplomatic_influence = { who = MEC value = 100 }
+			diplomatic_influence = { who = MST value = 100 }
+			diplomatic_influence = { who = ANH value = 100 }
+			diplomatic_influence = { who = MAG value = 100 }
+			set_country_flag = ZPD_influence_ngf
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	ZPD_create_ngf = {
 		picture = GER_map
 		potential = {

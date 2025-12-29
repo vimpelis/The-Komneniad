@@ -208,6 +208,7 @@ political_decisions = {
 			prestige = 5
 			change_tag = YEM
 			government = absolute_monarchy
+			capital = 1178
 			set_country_flag = YEM_eat_najran
 		}
 		ai_will_do = { factor = 1 }
@@ -421,6 +422,8 @@ political_decisions = {
 			remove_accepted_culture = mashriqi
 			remove_accepted_culture = bedouin
 			set_country_flag = hidden_tooltip
+			OMA = { all_core = { remove_core = OMA } }
+			all_core = { remove_core = ARU }
 				random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
 					owner = {
 						1162 = {
@@ -798,6 +801,9 @@ political_decisions = {
 			owns = 1151
 			owns = 1157
 			owns = 1160
+			NOT = { exists = NEJ }
+			NOT = { exists = HAL }
+			NOT = { exists = HDJ }
 		}
 		effect = {
 			prestige = 10
@@ -805,6 +811,7 @@ political_decisions = {
 			NEJ = { all_core = { add_core = THIS } }
 			HAL = { all_core = { add_core = THIS } }
 			HDJ = { all_core = { add_core = THIS } }
+			all_core = { remove_core = NEJ remove_core = HAL remove_core = HDJ }
 		}
 		ai_will_do = { factor = 1 }
 	}

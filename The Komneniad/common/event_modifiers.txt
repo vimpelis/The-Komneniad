@@ -5053,6 +5053,7 @@ chinese_warfare = {
 	min_tax = 0.9
     mobilisation_size = -0.1
 	research_points_on_conquer = -0.25
+	land_attack_modifier = 100
     icon = 15
 }
 
@@ -5477,4 +5478,13 @@ ARA_mob_modifier = {
 alexandria_modf = {
 	local_RGO_output = -0.25
     icon = 12
+}
+
+BYZ_syriac_revolt = {
+	pop_militancy_modifier = 0.1
+	pop_consciousness_modifier = 0.1
+	local_RGO_output = -0.75
+	local_artisan_output = -0.75
+	population_growth = -0.01
+    icon = 8
 }

@@ -9833,15 +9833,15 @@ syriac_crisis = {
 			}
 			secede_province = THIS
 		}
-		915 = { add_core = PLS }
-		916 = { add_core = PLS }
-		917 = { add_core = PLS }
-		918 = { add_core = PLS }
-		919 = { add_core = PLS }
-		3358 = { add_core = PLS }
-		3474 = { add_core = PLS }
-		release_vassal = PLS
-		PLS = { government = colonial_company all_core = { limit = { owned_by = EGY } secede_province = PLS } }
+		915 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		916 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		917 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		918 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		919 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		3358 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		3474 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		create_vassal = PLS
+		PLS = { country_event = 178019 }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }

@@ -25,6 +25,7 @@ political_decisions = {
 			prestige = 15
 			change_tag = DIE
 			remove_country_modifier = BRB_feudalism
+			BRB = { all_core = { remove_core = BRB } }
 		}
 		ai_will_do = { factor = 1 }
 	}

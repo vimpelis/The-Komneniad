@@ -594,7 +594,7 @@ political_decisions = {
 			war = no
 			OR = {
 				rank = 16
-				year = 1860
+				year = 1849
 			}
 			14 = { owned_by = THIS }
 			129 = { owned_by = THIS }

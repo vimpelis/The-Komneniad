@@ -107,10 +107,208 @@ political_decisions = {
 		}
 		effect = {
 			UQA = {
+				annex_to = THIS
+			}
+			3300 = { add_core = THIS }
+			924 = { add_core = THIS }
+			3405 = { add_core = THIS }
+			set_country_flag = EGY_annex_uqaydat
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	EGY_end_palestine_mandate = {
+		picture = palestine_map
+		potential = {
+			tag = EGY
+			PLS = { vassal_of = THIS government = colonial_company }
+			NOT = { has_country_flag = EGY_end_palestine_mandate }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			badboy = 4
+			PLS = {
+				any_pop = { militancy = 4 consciousness = 4 }
 				all_core = { add_core = THIS }
 				annex_to = THIS
 			}
-			set_country_flag = EGY_annex_uqaydat
+			set_country_flag = EGY_end_palestine_mandate
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BYZ_release_exarchate_syria = {
+		picture = map_syria
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			has_country_flag = BYZ_refused_to_release_SYR_3
+			NOT = { exists = LBN }
+			owns = 897
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			badboy = -2
+			900 = { remove_core = LBN }
+			3362 = { remove_core = LBN }
+			random_owned = {
+				limit = {
+					province_id = 3300
+				}
+				924 = { add_core = LBN }
+				3300 = { add_core = LBN }
+				3405 = { add_core = LBN }
+				2321 = { add_core = LBN }
+			}
+			release_vassal = LBN
+			LBN = { capital = 897 primary_culture = greek add_accepted_culture = syriac }
+			random_owned = {
+				limit = {
+					owner = { tag = GRE }
+				}
+				LBN = { government = colonial_company_2 }
+			}
+			random_owned = {
+				limit = {
+					owner = { tag = BYZ }
+				}
+				LBN = { government = colonial_company }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	EGY_amman_convention = {
+		picture = map_syria
+		potential = {
+			tag = EGY
+			NOT = { owns = 902 }
+			owns = 908
+			NOT = { has_country_flag = EGY_amman_convention }
+		}
+		allow = {
+			war = no
+			year = 1855
+		}
+		effect = {
+			902 = { owner = { country_event = 178027 } }
+			set_country_flag = EGY_amman_convention
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BYZ_organize_iraq = {
+		picture = iraq_map
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			owns = 926
+			NOT = { has_country_flag = BYZ_organize_iraq }
+			NOT = { exists = IRQ }
+		}
+		allow = {
+			war = no
+			market_regulations = 1
+		}
+		effect = {
+			badboy = -3
+			random_owned = {
+				limit = {
+					province_id = 3300
+				}
+				owner = {
+					3300 = { add_core = IRQ }
+					3405 = { add_core = IRQ }
+					924 = { add_core = IRQ }
+					2321 = { add_core = IRQ }
+					3325 = { add_core = IRQ }
+					3428 = { add_core = IRQ }
+				}
+			}
+			IRQ = { primary_culture = greek add_accepted_culture = mashriqi }
+			release_vassal = IRQ
+			random_owned = {
+				limit = {
+					owner = { tag = GRE }
+				}
+				IRQ = { government = colonial_company_2 }
+			}
+			random_owned = {
+				limit = {
+					owner = { tag = BYZ }
+				}
+				IRQ = { government = colonial_company }
+			}
+			set_country_flag = BYZ_organize_iraq
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	BYZ_union_of_bethlehem = {
+		picture = map_syria
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			has_country_flag = BYZ_union_of_bethlehem_available
+			NOT = { has_country_flag = BYZ_union_of_bethlehem }
+		}
+		allow = {
+			war = no
+			plurality = 75
+			great_wars_enabled = yes
+			ASY = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
+			LBN = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
+		}
+		effect = {
+			prestige = 25
+			add_accepted_culture = assyrian
+			add_accepted_culture = syriac
+			any_country = {
+				limit = {
+					OR = {
+						AND = {
+							tag = LBN
+							vassal_of = THIS
+							OR = { government = colonial_company government = colonial_company_2 }
+						}
+						AND = {
+							tag = ASY
+							vassal_of = THIS
+							OR = { government = colonial_company government = colonial_company_2 }
+						}
+						AND = {
+							tag = IRQ
+							vassal_of = THIS
+							OR = { government = colonial_company government = colonial_company_2 }
+						}
+					}
+				}
+				annex_to = THIS
+				all_core = { add_core = THIS }
+				government = democracy
+			}
+			set_country_flag = BYZ_union_of_bethlehem
 		}
 		ai_will_do = {
 			factor = 1
@@ -186,6 +384,8 @@ political_decisions = {
 			ARA = { all_core = { add_core = ARU } }
 			YEM = { all_core = { add_core = ARU } }
 			OMA = { all_core = { add_core = ARU } }
+			HAD = { all_core = { add_core = ARU } }
+			QAT = { all_core = { add_core = ARU } }
 			any_country = {
 				limit = {
 					OR = {

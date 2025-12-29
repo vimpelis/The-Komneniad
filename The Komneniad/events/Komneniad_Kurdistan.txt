@@ -447,8 +447,9 @@ country_event = {
 		ASY = {
 			inherit = MLN
 			inherit = TSI
-			government = colonial_company
 		}
+		random_owned = { limit = { owner = { tag = GRE } } ASY = { government = colonial_company_2 } }
+		random_owned = { limit = { owner = { tag = BYZ } } ASY = { government = colonial_company } }
     }
 }
 

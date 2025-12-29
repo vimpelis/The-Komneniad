@@ -501,7 +501,7 @@ country_event = {
 
 country_event = {
     id = 178018
-    title = "The Suez Canal overtakes Alexandria"
+    title = "The Suez Canal overshadows Alexandria"
     desc = "178018DESC"
     picture = "alexandria_pic"
 
@@ -519,5 +519,565 @@ country_event = {
 	option = {
         name = "The last of Alexander's legacy."
 		1751 = { remove_province_modifier = alexandria_modf trade_goods = fish }
+	}
+}
+
+country_event = {
+    id = 178019
+    title = "The Palestine Authority"
+    desc = "The Palestine Authority has been established, and its government is being formed."
+    picture = "aleppo"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Good."
+		government = colonial_company
+		915 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		916 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		917 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		918 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		919 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		3358 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		3474 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		EGY_921 = { remove_core = LBN }
+	}
+}
+
+country_event = {
+    id = 178020
+    title = "The Fate of Syria"
+    desc = "178020DESC"
+    picture = "syria_map"
+
+    trigger = {
+		OR = {
+			tag = BYZ
+			tag = GRE
+		}
+		owns = 897
+		year = 1886
+		NOT = { exists = LBN }
+    }
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	fire_only_once = yes
+
+	option = {
+        name = "We will create an autonomous Syria."
+		badboy = -4
+		900 = { remove_core = LBN }
+		random_owned = {
+			limit = {
+				province_id = 3300
+			}
+			924 = { add_core = LBN }
+			3300 = { add_core = LBN }
+			3405 = { add_core = LBN }
+			2321 = { add_core = LBN }
+		}
+		release_vassal = LBN
+		LBN = { capital = 897 }
+		ai_chance = { factor = 1 modifier = { badboy = 0.9 factor = 20 } }
+	}
+	
+	option = {
+        name = "We will create an autonomous Syria, but annex Afrin."
+		badboy = -3.75
+		900 = { remove_core = LBN }
+		3362 = { remove_core = LBN }
+		random_owned = {
+			limit = {
+				province_id = 3300
+			}
+			924 = { add_core = LBN }
+			3300 = { add_core = LBN }
+			3405 = { add_core = LBN }
+			2321 = { add_core = LBN }
+		}
+		release_vassal = LBN
+		LBN = { capital = 897 }
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+        name = "We've liberated you, and now you want more?! Ungrateful!"
+		any_pop = {
+			limit = {
+				has_pop_culture = syriac
+			}
+			militancy = 4
+			consciousness = 4
+		}
+		set_country_flag = BYZ_refused_to_release_SYR
+		ai_chance = { factor = 5 modifier = { government = absolute_empire factor = 20 } modifier = { government = absolute_monarchy factor = 20 } modifier = { badboy = 0.8 factor = 0.2 } }
+	}
+}
+
+country_event = {
+    id = 178021
+    title = "Increasing Syriac Discontent"
+    desc = "178021DESC"
+    picture = "syria_map"
+
+    trigger = {
+		OR = {
+			tag = BYZ
+			tag = GRE
+		}
+		owns = 897
+		year = 1901
+		has_country_flag = BYZ_refused_to_release_SYR
+		NOT = { exists = LBN }
+    }
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Let's create an Exarchate."
+		badboy = -2
+		900 = { remove_core = LBN }
+		3362 = { remove_core = LBN }
+		random_owned = {
+			limit = {
+				province_id = 3300
+			}
+			924 = { add_core = LBN }
+			3300 = { add_core = LBN }
+			3405 = { add_core = LBN }
+			2321 = { add_core = LBN }
+		}
+		release_vassal = LBN
+		LBN = { capital = 897 primary_culture = greek add_accepted_culture = syriac }
+		random_owned = { limit = { owner = { tag = GRE } } LBN = { government = colonial_company_2 } }
+		random_owned = { limit = { owner = { tag = BYZ } } LBN = { government = colonial_company } }
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+        name = "Our position hasn't changed."
+		any_pop = {
+			limit = {
+				has_pop_culture = syriac
+			}
+			militancy = 6
+			consciousness = 6
+		}
+		set_country_flag = BYZ_refused_to_release_SYR_2
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+    id = 178022
+    title = "The Syriac Revolt"
+    desc = "178022DESC"
+    picture = "syria_map"
+
+    trigger = {
+		OR = {
+			tag = BYZ
+			tag = GRE
+		}
+		owns = 897
+		great_wars_enabled = yes
+		war = yes
+		year = 1905
+		has_country_flag = BYZ_refused_to_release_SYR_2
+		NOT = { exists = LBN }
+    }
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Fine, take your autonomy."
+		badboy = -2
+		900 = { remove_core = LBN }
+		3362 = { remove_core = LBN }
+		random_owned = {
+			limit = {
+				province_id = 3300
+			}
+			924 = { add_core = LBN }
+			3300 = { add_core = LBN }
+			3405 = { add_core = LBN }
+			2321 = { add_core = LBN }
+		}
+		release_vassal = LBN
+		LBN = { capital = 897 primary_culture = greek add_accepted_culture = syriac }
+		random_owned = { limit = { owner = { tag = GRE } } LBN = { government = colonial_company_2 } }
+		random_owned = { limit = { owner = { tag = BYZ } } LBN = { government = colonial_company } }
+	}
+	
+	option = {
+        name = "Enact martial law and weather it out!"
+		any_pop = {
+			limit = {
+				has_pop_culture = syriac
+			}
+			militancy = 8
+			consciousness = 8
+		}
+		LBN = { all_core = { add_province_modifier = { name = BYZ_syriac_revolt duration = 3650 } } }
+		set_country_flag = BYZ_refused_to_release_SYR_3
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+    id = 178023
+    title = "On the Other Bank of the Euphrates"
+    desc = "178023DESC"
+    picture = "syria_map"
+
+    trigger = {
+		tag = ASY
+		3300 = { OR = { owned_by = BYZ owned_by = GRE } }
+		owns = 3325
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "It can't hurt to ask."
+		3300 = { owner = { country_event = 178024 } }
+	}
+}
+
+country_event = {
+    id = 178024
+    title = "Assyria asks for Dayr al-Zour"
+    desc = "178024DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "You need it more than we do."
+		FROM = { country_event = 178025 }
+		924 = { secede_province = ASY }
+		3300 = { secede_province = ASY }
+		3405 = { secede_province = ASY }
+		ai_chance = { factor = 10 modifier = { ASY = { NOT = { in_sphere = THIS } } factor = 0 } modifier = { owns = 3389 factor = 0 } }
+	}
+	
+	option = {
+        name = "No."
+		FROM = { country_event = 178026 }
+		ai_chance = { factor = 1 modifier = { ASY = { in_sphere = THIS } factor = 0.1 } }
+	}
+}
+
+country_event = {
+    id = 178025
+    title = "Constantinople agrees"
+    desc = "178025DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Hooray!"
+		prestige = 5
+	}
+}
+
+country_event = {
+    id = 178026
+    title = "Constantinople declines"
+    desc = "178026DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Thank you, 'ally'."
+		prestige = -5
+	}
+}
+
+country_event = {
+    id = 178027
+    title = "Egypt proposes border delineation"
+    desc = "178027DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Chasing some Arabs in the desert is not on our priority list."
+		prestige = 5
+		badboy = -1
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 902
+					owns = 3300
+				}
+			}
+			910 = { secede_province = THIS secede_province = EGY add_core = EGY }
+			907 = { secede_province = THIS add_core = LBN add_core = EGY }
+			2321 = { secede_province = THIS add_core = LBN add_core = EGY }
+			3300 = { add_core = LBN }
+			924 = { add_core = LBN }
+			3405 = { add_core = LBN }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 902
+					NOT = { owns = 3300 }
+					NOT = { ASY = { owns = 3389 } }
+				}
+			}
+			910 = { secede_province = THIS secede_province = EGY add_core = EGY }
+			907 = { secede_province = THIS secede_province = EGY add_core = EGY }
+			2321 = { secede_province = THIS secede_province = EGY add_core = EGY }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 902
+					ASY = { owns = 3300 owns = 3389 }
+				}
+			}
+			910 = { secede_province = THIS secede_province = EGY add_core = EGY }
+			907 = { secede_province = THIS add_core = LBN add_core = EGY }
+			2321 = { secede_province = THIS secede_province = ASY add_core = EGY }
+		}
+		FROM = { country_event = 178028 }
+	}
+}
+
+country_event = {
+    id = 178028
+    title = "The Amman Convention Successful"
+    desc = "178028DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Another problem ticked off the list."
+		prestige = 5
+		badboy = -1
+		909 = { add_core = JOR }
+		908 = { add_core = JOR }
+		922 = { add_core = JOR }
+		random_owned = {
+			limit = {
+				province_id = 910
+			}
+			add_core = JOR
+			add_core = EGY
+		}
+		random_owned = {
+			limit = {
+				province_id = 907
+			}
+			add_core = JOR
+			add_core = EGY
+		}
+		random_owned = {
+			limit = {
+				province_id = 2321
+			}
+			add_core = JOR
+			add_core = EGY
+		}
+	}
+}
+
+country_event = {
+    id = 178029
+    title = "Reorganisation of Sham"
+    desc = "178029DESC"
+    picture = "syria_map"
+
+    trigger = {
+		tag = EGY
+		owns = 908
+		NOT = { owns = 902 }
+		year = 1862
+		war = no
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Unfortunate."
+		SYR = { all_core = { remove_core = SYR } }
+		EGY_921 = { add_core = PLS }
+		909 = { add_core = JOR }
+		908 = { add_core = JOR }
+		922 = { add_core = JOR }
+		random_owned = {
+			limit = {
+				province_id = 910
+			}
+			add_core = JOR
+			add_core = EGY
+		}
+		random_owned = {
+			limit = {
+				province_id = 907
+			}
+			add_core = JOR
+			add_core = EGY
+		}
+		random_owned = {
+			limit = {
+				province_id = 2321
+			}
+			add_core = JOR
+			add_core = EGY
+		}
+		random_owned = {
+			limit = {
+				2321 = {
+					NOT = { is_core = JOR }
+				}
+			}
+			add_core = UQA
+			add_core = EGY
+		}
+	}
+}
+
+country_event = {
+    id = 178030
+    title = "Greek Interests in the Middle East"
+    desc = "178030DESC"
+    picture = "syria_map"
+
+    trigger = {
+		OR = {
+			tag = GRE
+			tag = BYZ
+		}
+		OR = {
+			ASY = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
+			LBN = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
+		}
+		nationalism_n_imperialism = 1
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "An interesting proposal."
+		set_country_flag = BYZ_union_of_bethlehem_available
+	}
+}
+
+country_event = {
+    id = 178031
+    title = "Fate of the Exarchate of Syria"
+    desc = "178031DESC"
+    picture = "syria_map"
+
+    trigger = {
+		OR = {
+			tag = GRE
+			tag = BYZ
+		}
+		LBN = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
+		NOT = { ASY = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS } }
+		revolution_n_counterrevolution = 1
+    }
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "The Exarchate is no longer necessary."
+		badboy = -1
+		LBN = { government = democracy }
+	}
+	
+	option = {
+        name = "Republican governance is the first step to independence."
+		LBN = {
+			any_pop = {
+				limit = {
+					has_pop_culture = syriac
+				}
+				militancy = 2
+				consciousness = 2
+			}
+		}
+	}
+}
+
+country_event = {
+    id = 178032
+    title = "Sedentarization of Dayr al-Zour"
+    desc = "178032DESC"
+    picture = "syria_map"
+
+    trigger = {
+		OR = {
+			AND = {
+				tag = SYR
+				owns = 3300
+			}
+			AND = {
+				tag = LBN
+				owns = 3300
+			}
+			AND = {
+				tag = ASY
+				owns = 3300
+			}
+		}
+		civilized = yes
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Very nice."
+		UQA = { all_core = { remove_core = UQA } }
+		random_owned = {
+			limit = {
+				owner = { tag = ASY }
+			}
+			3300 = { add_core = IRQ }
+			3405 = { add_core = IRQ }
+			924 = { add_core = IRQ }
+			2321 = { add_core = IRQ }
+			3325 = { add_core = IRQ }
+			3428 = { add_core = IRQ }
+		}
 	}
 }
