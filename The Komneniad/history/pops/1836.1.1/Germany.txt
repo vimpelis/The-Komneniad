@@ -4194,7 +4194,7 @@
     soldiers = {
         culture = west_german
         religion = protestant
-        size = 210
+        size = 1200
     }
 
     farmers = {
@@ -4219,12 +4219,6 @@
         culture = west_german
         religion = catholic
         size = 675
-    }
-
-    soldiers = {
-        culture = west_german
-        religion = catholic
-        size = 210
     }
 
     farmers = {
@@ -4834,7 +4828,7 @@
     soldiers = {
         culture = west_german
         religion = catholic
-        size = 2000
+        size = 3300
     }
 
     farmers = {
@@ -4859,12 +4853,6 @@
         culture = west_german
         religion = protestant
         size = 450
-    }
-
-    soldiers = {
-        culture = west_german
-        religion = protestant
-        size = 100
     }
 
     farmers = {

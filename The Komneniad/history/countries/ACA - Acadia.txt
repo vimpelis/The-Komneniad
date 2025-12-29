@@ -1,7 +1,7 @@
 capital = 243
 primary_culture = acadian
 culture = new_breton
-religion = protestant
+religion = reformed
 government = democracy
 plurality = 0.2
 nationalvalue = nv_liberty
@@ -61,7 +61,6 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
 
-set_country_flag = french_assimilation
 set_country_flag = catholic_country
 set_country_flag = new_world_nation
 

@@ -386,7 +386,7 @@
     soldiers = {
         culture = dutch
         religion = reformed
-        size = 1034
+        size = 3400
     }
 
     labourers = {
@@ -411,12 +411,6 @@
         culture = dutch
         religion = reformed
         size = 3304
-    }
-
-    soldiers = {
-        culture = dutch
-        religion = reformed
-        size = 1034
     }
 
     farmers = {

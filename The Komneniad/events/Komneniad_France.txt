@@ -11,3 +11,30 @@ country_event = {
         name = "We will manage, surely."
     }
 }
+
+country_event = {
+    id = 172001
+    title = "The French Revolution of $YEAR$"
+    desc = "172001DESC"
+    picture = "french_revolution_1848"
+
+    trigger = {
+		tag = FRA
+		government = democracy
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	fire_only_once = yes
+
+    option = {
+        name = "172001OPTA"
+		scaled_militancy = { factor = 4 ideology = reactionary }
+		scaled_militancy = { factor = 2 ideology = conservative }
+		scaled_militancy = { factor = -2 ideology = liberal }
+		scaled_militancy = { factor = -4 ideology = radical }
+		scaled_militancy = { factor = -4 ideology = socialist }
+    }
+}

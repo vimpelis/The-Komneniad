@@ -4,37 +4,37 @@
 2126 = {
     aristocrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 60
     }
 
     bureaucrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 4
     }
 
     clergymen = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 6
     }
 
     artisans = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 40
     }
 
     soldiers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 24
     }
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 466
     }
 
@@ -70,37 +70,37 @@
 
     aristocrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 690
     }
 
     bureaucrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 46
     }
 
     clergymen = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 69
     }
 
     artisans = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 460
     }
 
     soldiers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 276
     }
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 5359
     }
 }

@@ -4880,49 +4880,49 @@
 
     aristocrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 82
     }
 
     bureaucrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 41
     }
 
     clergymen = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 103
     }
 
     soldiers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 297
     }
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 1718
     }
 
     artisans = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 331
     }
 
     artisans = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 2484
     }
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 9936
     }
 }

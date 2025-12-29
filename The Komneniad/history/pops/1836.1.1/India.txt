@@ -9209,19 +9209,19 @@
 
     bureaucrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 14
     }
 
     clergymen = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 14
     }
 
     soldiers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 23
     }
 }

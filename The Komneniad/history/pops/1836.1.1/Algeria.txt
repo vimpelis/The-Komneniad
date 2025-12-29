@@ -1197,31 +1197,31 @@
 
     aristocrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 1
     }
 
     bureaucrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 1
     }
 
     clergymen = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 6
     }
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 9
     }
 
     soldiers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 4
     }
 }

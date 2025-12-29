@@ -190,7 +190,7 @@
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 210
     }
 
@@ -541,8 +541,8 @@
         religion = catholic
         size = 260925
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = north_italian
         religion = catholic
         size = 15000
@@ -1541,7 +1541,7 @@
         religion = catholic
         size = 800
     }
-	
+
     farmers = {
         culture = north_italian
         religion = catholic
@@ -3343,8 +3343,8 @@
         religion = catholic
         size = 137331
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = south_italian
         religion = catholic
         size = 1500

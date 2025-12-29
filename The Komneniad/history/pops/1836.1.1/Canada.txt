@@ -2639,49 +2639,49 @@
 66 = {
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 100
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 800
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 100
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 8900
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 500
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 1400
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 150
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 21800
     }
 }
@@ -2689,25 +2689,25 @@
 67 = {
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 300
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 1500
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 150
     }
 
     labourers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 9000
     }
 }
@@ -2717,55 +2717,55 @@
 68 = {
     bureaucrats = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 108
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 397
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 1082
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 150
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 24565
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 215
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 504
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 100
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 15388
     }
 
@@ -2815,37 +2815,37 @@
 69 = {
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 982
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 126
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 60
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 9320
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 2106
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 5002
     }
 }
@@ -2855,25 +2855,25 @@
 70 = {
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 20
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 600
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 100
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 2540
     }
 
@@ -2901,37 +2901,37 @@
 71 = {
     bureaucrats = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 70
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 70
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 2800
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 200
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 10220
     }
 
     labourers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 770
     }
 
@@ -2975,31 +2975,31 @@
 72 = {
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 40
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 600
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 125
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 7260
     }
 
     labourers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 880
     }
 
@@ -3031,25 +3031,25 @@
 73 = {
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 30
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 150
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 50
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 2790
     }
 
@@ -3077,85 +3077,85 @@
 74 = {
     aristocrats = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 34
     }
 
     bureaucrats = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 34
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 52
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 1400
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 50
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 1768
     }
 
     aristocrats = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 34
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 34
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 34
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 50
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 70
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 70
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 1400
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 4830
     }
 
@@ -3235,67 +3235,67 @@
 75 = {
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 38
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 124
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 50
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 2212
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 50
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 50
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 400
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 24
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 24
     }
 
     soldiers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 50
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 24
     }
 
@@ -3468,37 +3468,37 @@
 3280 = {
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 800
     }
 
     artisans = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 140
     }
 
     clergymen = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 60
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 6700
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 1000
     }
 
     farmers = {
         culture = acadian
-        religion = protestant
+        religion = reformed
         size = 4700
     }
 }

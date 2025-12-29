@@ -106,31 +106,31 @@
 2230 = {
     aristocrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 68
     }
 
     clergymen = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 4
     }
 
     artisans = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 104
     }
 
     soldiers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 24
     }
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 48
     }
 
@@ -166,31 +166,31 @@
 
     aristocrats = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 782
     }
 
     clergymen = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 46
     }
 
     artisans = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 1196
     }
 
     soldiers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 276
     }
 
     farmers = {
         culture = french
-        religion = protestant
+        religion = reformed
         size = 552
     }
 }
@@ -199,19 +199,19 @@
 }
 #Antigua (25000/6250 POPS) #now independent
 2224 = {
-	bureaucrats = {
+    bureaucrats = {
         culture = dutch
         religion = protestant
         size = 20
     }
-	
+
     clergymen = {
         culture = dutch
         religion = protestant
         size = 50
     }
-	
-	farmers = {
+
+    farmers = {
         culture = dutch
         religion = protestant
         size = 2400
@@ -343,7 +343,7 @@
 }
 #Saint Kitts (26500/6625 POPS)
 2227 = {
-	aristocrats = {
+    aristocrats = {
         culture = lower_burgundian
         religion = catholic
         size = 10
@@ -499,8 +499,8 @@
         religion = sunni
         size = 2075
     }
-	
-	slaves = {
+
+    slaves = {
         culture = zanj
         religion = sunni
         size = 7000

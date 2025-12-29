@@ -2,7 +2,7 @@ capital = 425
 primary_culture = french
 culture = occitan
 culture = breton
-religion = protestant
+religion = reformed
 government = hms_government
 plurality = 25
 nationalvalue = nv_equality
@@ -105,35 +105,9 @@ upper_house = {
 
 schools = culture_tech_school
 
-set_country_flag = france
-
 oob = "FRA_oob.txt"
-
-foreign_investment = {
-    PAP = 15000
-}
-
-govt_flag = {
-	government = absolute_monarchy
-	flag = theocracy
-}
-
-govt_flag = {
-	government = prussian_constitutionalism
-	flag = theocracy
-}
-
-govt_flag = {
-	government = hms_government
-	flag = theocracy
-}
 
 govt_flag = {
 	government = radical_republic
 	flag = colonial_company
-}
-
-govt_flag = {
-	government = prov_gov_liberal
-	flag = colonial_company_2
 }
