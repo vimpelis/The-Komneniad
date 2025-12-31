@@ -431,7 +431,15 @@ country_event = {
     desc = "171022DESC"
     picture = "marseilles"
 
-    is_triggered_only = yes
+    trigger = {
+		tag = ARE
+		year = 1837
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 30 }
 
     option = {
         name = "Seems intriguing."
@@ -444,10 +452,20 @@ country_event = {
     desc = "171023DESC"
     picture = "marseilles"
 
-    is_triggered_only = yes
+    trigger = {
+		tag = ARE
+		year = 1841
+		war = no
+		has_country_flag = ARE_padania_conquered
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 90 }
 
     option = {
         name = "An economist dabbling in political philosophy?"
+		set_country_flag = ARE_chevalier
     }
 }
 
@@ -457,7 +475,14 @@ country_event = {
     desc = "171024DESC"
     picture = "marseilles"
 
-    is_triggered_only = yes
+    trigger = {
+		tag = ARE
+		has_country_flag = ARE_chevalier
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 60 }
 
     option = {
         name = "A national idea is born."
