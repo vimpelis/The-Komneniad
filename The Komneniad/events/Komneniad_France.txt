@@ -28,6 +28,8 @@ country_event = {
     }
 	
 	fire_only_once = yes
+	
+	major = yes
 
     option = {
         name = "172001OPTA"

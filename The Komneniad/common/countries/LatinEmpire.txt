@@ -1,4 +1,5 @@
-color = { 173 20 83 } #1453ad
+color = { 235 180 100 } #1453ad
+fascist_dictatorship = { 173 20 83 }
 graphical_culture = EuropeanGC
 
 party = {

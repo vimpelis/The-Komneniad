@@ -39,3 +39,35 @@ country_event = {
 		PRU = { all_core = { remove_core = GER } }
     }
 }
+
+#AI alliance with BRB
+country_event = {
+    id = 154002
+    title = "An alliance against Bavaria"
+    desc = "We should kill Bavaria with hammers."
+    picture = "ZPD"
+
+    trigger = {
+		tag = ZPD
+		ai = yes
+		war = no
+		OR = {
+			BAV = { owns = 619 }
+			BAV = { owns = 575 }
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "True..."
+		relation = { who = BRB value = 400 }
+		any_greater_power = { leave_alliance = THIS }
+		BRB = { any_greater_power = { leave_alliance = THIS } }
+		create_alliance = BRB
+    }
+}

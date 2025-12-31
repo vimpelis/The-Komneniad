@@ -204,6 +204,7 @@ country_event = {
 			id = 170010
 			days = 10
 		}
+		ARE = { country_event = 171002 }
 		ai_chance = { factor = 70 }
     }
 	
@@ -222,6 +223,7 @@ country_event = {
 			id = 170011
 			days = 10
 		}
+		ARE = { country_event = 171002 }
 		ai_chance = { factor = 30 }
     }
 }

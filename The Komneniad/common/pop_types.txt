@@ -604,11 +604,6 @@ emigration_chance = {
         factor = -0.2
         state_scope = { has_factories = yes }
 		NOT = { unemployment = 0.2 }
-        location = {
-            NOT = {
-                is_core = IRE
-            }
-        }
     }
 
     group = {

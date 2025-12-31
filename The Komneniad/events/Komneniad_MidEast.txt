@@ -231,7 +231,7 @@ country_event = {
 
     option = {
         name = "This is unacceptable, send the demands!"
-		badboy = 10
+		badboy = 5
 		FROM = { country_event = 178008 }
 		ai_chance = {
             factor = 100
@@ -256,7 +256,7 @@ country_event = {
 		ai_chance = {
             factor = 1
 			modifier = {
-				NOT = { badboy = 0.6 }
+				NOT = { badboy = 0.8 }
 				factor = 0
 			}
         }
@@ -331,7 +331,7 @@ country_event = {
 
     option = {
         name = "Good."
-		badboy = -10
+		badboy = -3
 	}
 }
 

@@ -41,3 +41,506 @@ country_event = {
 		inherit = BAE
     }
 }
+
+country_event = {
+    id = 171002
+    title = "Revolution in Milan"
+    desc = "171002DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We must do something."
+		country_event = { id = 171003 days = 14 }
+    }
+}
+
+country_event = {
+    id = 171003
+    title = "Italian Princes plea for help"
+    desc = "171003DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Un unthinkable occasion: Arles goes to war."
+		set_country_flag = ARE_ready_to_kill_LOM
+		LOM = { country_event = 171005 }
+    }
+}
+
+country_event = {
+    id = 171004
+    title = "Arelat intervention in Italy"
+    desc = "171004DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "To arms!"
+    }
+}
+
+country_event = {
+    id = 171005
+    title = "Arles prepares to strike"
+    desc = "171005DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Reactionary ignorance, as always."
+    }
+}
+
+country_event = {
+    id = 171006
+    title = "Northern Italy subdued"
+    desc = "171006DESC"
+    picture = "marseilles"
+
+    trigger = {
+		tag = ARE
+		owns = 726
+		has_country_flag = ARE_invade_padania
+		NOT = { exists = LOM }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Great!"
+		LOM = { all_core = { remove_core = ARE } government = democracy }
+		720 = { add_core = SVY remove_core = LOM }
+		722 = { add_core = SVY remove_core = LOM }
+		723 = { add_core = SVY remove_core = LOM }
+		738 = { add_core = PAR remove_core = LOM }
+		739 = { add_core = MOD remove_core = LOM }
+		740 = { add_core = MOD remove_core = LOM }
+		741 = { add_core = RMG remove_core = LOM }
+		742 = { add_core = RMG remove_core = LOM }
+		743 = { add_core = RMG remove_core = LOM }
+		724 = { add_core = GEN remove_core = LOM }
+		725 = { add_core = GEN remove_core = LOM }
+		472 = { add_core = GEN remove_core = LOM }
+		release_vassal = SVY
+		release_vassal = MOD
+		release_vassal = PAR
+		release_vassal = RMG
+		PAP = { country_event = { id = 171007 days = 2 } }
+		TUS = { country_event = { id = 171007 days = 1 } }
+		set_country_flag = ARE_padania_conquered
+    }
+}
+
+country_event = {
+    id = 171007
+    title = "Arles occupies Northern Italy"
+    desc = "171007DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We need to defend ourselves."
+		random_owned = {
+			limit = {
+				owner = { tag = TUS }
+			}
+			ARE = { country_event = 171008 }
+		}
+		random_owned = {
+			limit = {
+				owner = { tag = PAP }
+			}
+			ARE = { country_event = 171009 }
+			owner = { country_event = { id = 171010 days = 7 } }
+		}
+    }
+}
+
+country_event = {
+    id = 171008
+    title = "Tuscany denounces us"
+    desc = "171008DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A very, very bad sign."
+    }
+}
+
+country_event = {
+    id = 171009
+    title = "The Pope denounces us"
+    desc = "171009DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "The Pope, out of all people, doesn't condone reaction?"
+    }
+}
+
+country_event = {
+    id = 171010
+    title = "Pope calls for Confederation"
+    desc = "171010DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Let's see what Florence thinks of this."
+		TUS = { country_event = { id = 171011 days = 1 } }
+    }
+}
+
+country_event = {
+    id = 171011
+    title = "Pope calls for Confederation"
+    desc = "171011DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "For our own safety, we must accept."
+		change_tag_no_core_switch = PAP
+		FROM = { country_event = { id = 171012 days = 1 } }
+		ai_chance = { factor = 10 modifier = { factor = 0 war_with = PAP } }
+    }
+	
+	option = {
+        name = "It hurts us to decline, but we do not wish to give up our sovereignty."
+		FROM = { country_event = { id = 171013 days = 1 } }
+		ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = 171012
+    title = "Creation of the Italian Confederation"
+    desc = "171012DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "A new age for Italy."
+		change_tag = ITS
+		TUS = { annex_to = THIS all_core = { add_core = THIS } }
+		ARE = { country_event = { id = 171014 days = 1 } }
+    }
+}
+
+country_event = {
+    id = 171013
+    title = "Tuscany declines"
+    desc = "171013DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "How are we going to defend then?"
+		ARE = { country_event = { id = 171015 days = 1 } }
+    }
+}
+
+country_event = {
+    id = 171014
+    title = "The Italians unite against us"
+    desc = "171014DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We really needed this, huh."
+    }
+}
+
+country_event = {
+    id = 171015
+    title = "The Pope fails to persuade Tuscany"
+    desc = "171015DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We must stay vigilant."
+		set_country_flag = ARE_italy_available
+    }
+}
+
+country_event = {
+    id = 171016
+    title = "Martletist terrorists rise up"
+    desc = "171016DESC"
+    picture = "marseilles"
+
+    trigger = {
+		tag = ARE
+		year = 1839
+		has_country_flag = ARE_padania_conquered
+		any_owned_province = { is_core = ITA }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 90 }
+
+    option = {
+        name = "And to think, they could've remained in power."
+		any_pop = { limit = { has_pop_culture = north_italian } militancy = 2 consciousness = 4 }
+		any_owned = {
+			limit = { is_core = ITA }
+			add_province_modifier = { name = ARE_uprising duration = 3650 }
+		}
+		new_decisions_tt = {}
+		set_country_flag = ARE_martletism_active
+    }
+}
+
+country_event = {
+    id = 171017
+    title = "Martletism spreads to the Princes"
+    desc = "171017DESC"
+    picture = "marseilles"
+
+    trigger = {
+		tag = ARE
+		has_country_flag = ARE_took_pacify_decision
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 10 }
+
+    option = {
+        name = "We will end this."
+		new_decisions_tt = {}
+		set_country_flag = ARE_princes_infected
+    }
+}
+
+country_event = {
+    id = 171018
+    title = "Arles removes the Prince"
+    desc = "171018DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Bastards!"
+		government = colonial_company
+    }
+}
+
+country_event = {
+    id = 171019
+    title = "Italy pacified"
+    desc = "171019DESC"
+    picture = "marseilles"
+
+    trigger = {
+		tag = ARE
+		has_country_flag = ARE_princes_infected
+		NOT = { any_owned_province = { has_province_modifier = ARE_uprising } }
+		SVY = { government = colonial_company NOT = { any_owned_province = { has_province_modifier = ARE_uprising } } }
+		MOD = { government = colonial_company NOT = { any_owned_province = { has_province_modifier = ARE_uprising } } }
+		PAR = { government = colonial_company NOT = { any_owned_province = { has_province_modifier = ARE_uprising } } }
+		RMG = { government = colonial_company NOT = { any_owned_province = { has_province_modifier = ARE_uprising } } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "A few too many proactive measures we've been taking."
+		prestige = 5
+		AUS_726 = { add_core = THIS }
+		724 = { add_core = THIS }
+		725 = { add_core = THIS }
+		472 = { add_core = THIS }
+		set_country_flag = ARE_pacification_done
+		clr_country_flag = ARE_martletism_active
+		clr_country_flag = ARE_princes_infected
+    }
+}
+
+country_event = {
+    id = 171020
+    title = "Arles removes the Princes"
+    desc = "171020DESC"
+    picture = "marseilles"
+
+    trigger = {
+		tag = ITS
+		government = theocracy
+		ARE = { has_country_flag = ARE_pacification_done }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "When will Italy know peace?"
+		badboy = 10
+		PAP_741 = { add_core = THIS }
+		AUS_726 = { add_core = THIS }
+		SAR_720 = { add_core = THIS }
+		ARE = { country_event = { id = 171021 days = 1 } }
+    }
+}
+
+country_event = {
+    id = 171021
+    title = "The Confederation gears up for war"
+    desc = "171021DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "And Rome is within sight..."
+		new_decisions_tt = {}
+		set_country_flag = ARE_italy_available
+    }
+}
+
+country_event = {
+    id = 171022
+    title = "The Future of Arles"
+    desc = "171022DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Seems intriguing."
+    }
+}
+
+country_event = {
+    id = 171023
+    title = "Chevalier publishes 'On the Latin race'"
+    desc = "171023DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "An economist dabbling in political philosophy?"
+    }
+}
+
+country_event = {
+    id = 171024
+    title = "Gervais II receives Chevalier"
+    desc = "171024DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A national idea is born."
+		set_country_flag = ARE_ready_for_LTN
+    }
+}
+
+country_event = {
+    id = 171025
+    title = "Martletists seize power"
+    desc = "The departure of Arelat troops in the wake of a Martletist uprising made our state extremely vulnerable. They have completely taken over the country as a result."
+    picture = "marseilles"
+
+    trigger = {
+		OR = {
+			tag = SVY
+			tag = MOD
+			tag = PAR
+			tag = RMG
+		}
+		any_owned_province = { has_province_modifier = ARE_uprising }
+		NOT = { vassal_of = ARE }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Rip"
+		government = radical_republic
+		any_owned = { remove_province_modifier = ARE_uprising }
+    }
+}
+
+country_event = {
+    id = 171026
+    title = "Martletism spreads"
+    desc = "Martletist sleeping cells have become active in our country, spreading proraganda among the peasantry and terrorising the nobility."
+    picture = "marseilles"
+
+    trigger = {
+		OR = {
+			tag = SVY
+			tag = MOD
+			tag = PAR
+			tag = RMG
+		}
+		vassal_of = ARE
+		ARE = { has_country_flag = ARE_princes_infected }
+		any_owned_province = { is_core = ITA NOT = { has_province_modifier = ARE_uprising } }
+		NOT = { government = colonial_company }
+    }
+
+    mean_time_to_happen = { days = 10 }
+
+    option = {
+        name = "Terrible."
+		any_owned = { add_province_modifier = { name = ARE_uprising duration = 3650 } }
+    }
+}
+
+country_event = {
+    id = 171027
+    title = "Defeat in Italy"
+    desc = "171027DESC"
+    picture = "marseilles"
+
+    trigger = {
+		tag = ARE
+		NOT = { has_country_flag = ARE_padania_conquered }
+		NOT = { owns = 726 }
+		has_country_flag = ARE_invade_padania
+		war = no
+    }
+
+    mean_time_to_happen = { days = 1 }
+
+    option = {
+        name = "Are we really doomed to be a pushover?"
+		prestige = -10
+		badboy = -5
+		LOM = { any_core = { remove_core = ARE } }
+		set_country_flag = ARE_defeat_in_italy
+    }
+}

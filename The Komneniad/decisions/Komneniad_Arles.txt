@@ -22,7 +22,7 @@ political_decisions = {
 			prestige = 5
 			badboy = 3
 			inherit = BNE
-			BNE = { all_core = { add_core = ARE } }
+			BNE = { all_core = { add_core = THIS } }
 			set_country_flag = ARE_annex_bern
 		}
 		ai_will_do = {
@@ -52,9 +52,9 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			badboy = 5
-			407 = { add_core = ARE }
-			2622 = { add_core = ARE }
-			FRA_411 = { add_core = ARE }
+			407 = { add_core = THIS }
+			2622 = { add_core = THIS }
+			FRA_411 = { add_core = THIS }
 			relation = {
 				who = FRA
 				value = -100
@@ -70,83 +70,34 @@ political_decisions = {
 		}
 	}
 	
-	ARE_press_savoyard_claims = {
-		picture = become_savoy
-		potential = {
-			tag = ARE
-			NOT = {	has_country_flag = ARE_press_savoyard_claims }
-		}
-		allow = {
-			war = no
-			state_n_government = 1
-			all_core = { owned_by = THIS }
-		}
-		effect = {
-			prestige = 5
-			badboy = 7.5
-			SAR_720 = { add_core = ARE }
-			add_accepted_culture = north_italian
-			relation = {
-				who = LOM
-				value = -200
-			}
-			set_country_flag = ARE_press_savoyard_claims
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.7
-            }
-		}
-	}
-	
-	ARE_claim_italian_throne = {
-		picture = italian_islands
-		potential = {
-			tag = ARE
-			has_country_flag = ARE_press_savoyard_claims
-			NOT = {	has_country_flag = ARE_claim_italian_throne }
-		}
-		allow = {
-			war = no
-			rank = 10
-			nationalism_n_imperialism = 1
-			all_core = { owned_by = THIS }
-		}
-		effect = {
-			badboy = 15
-			AUS_726 = { add_core = ARE }
-			PAP_741 = { add_core = ARE }
-			TUS_744 = { add_core = ARE }
-			PAP_752 = { add_core = ARE }
-			set_country_flag = ARE_claim_italian_throne
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.4
-            }
-		}
-	}
-	
 	ARE_restore_occitania = {
 		picture = occitania
 		potential = {
-			tag = ARE
+			OR = {
+				tag = LTN
+				AND = {
+					tag = ARE
+					has_country_flag = ARE_defeat_in_italy
+				}
+			}
 			NOT = {	has_country_flag = ARE_restore_occitania }
 		}
 		allow = {
 			war = no
 			rank = 10
-			state_n_government = 1
+			OR = {
+				AND = {
+					tag = ARE
+					state_n_government = 1
+				}
+				revolution_n_counterrevolution = 1
+			}	
 			all_core = { owned_by = THIS }
 		}
 		effect = {
 			prestige = 5
 			badboy = 15
-			OCC = { all_core = { add_core = ARE } }
+			OCC = { all_core = { add_core = THIS } }
 			relation = {
 				who = FRA
 				value = -200
@@ -165,58 +116,32 @@ political_decisions = {
 	ARE_annex_catalonia = {
 		picture = catalan_occitania
 		potential = {
-			tag = ARE
+			OR = {
+				tag = LTN
+				AND = {
+					tag = ARE
+					has_country_flag = ARE_defeat_in_italy
+				}
+			}
 			has_country_flag = ARE_restore_occitania
 			NOT = {	has_country_flag = ARE_annex_catalonia }
 		}
 		allow = {
 			war = no
-			nationalism_n_imperialism = 1
+			OR = {
+				AND = {
+					tag = ARE
+					nationalism_n_imperialism = 1
+				}
+				revolution_n_counterrevolution = 1
+			}
 			all_core = { owned_by = THIS }
 		}
 		effect = {
 			badboy = 10
-			CAT = { all_core = { add_core = ARE } }
+			CAT = { all_core = { add_core = THIS } }
 			add_accepted_culture = catalan
 			set_country_flag = ARE_annex_catalonia
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.6
-            }
-		}
-	}
-	
-	ARE_latin_empire = {
-		picture = latin
-		potential = {
-			tag = ARE
-			OR = {
-				has_country_flag = ARE_restore_occitania
-				has_country_flag = ARE_claim_italian_throne
-			}
-			NOT = { exists = LTN }
-		}
-		allow = {
-			war = no
-			owns = 749
-			accepted_culture = catalan
-			revolution_n_counterrevolution = 1
-			all_core = { owned_by = THIS }
-		}
-		effect = {
-			prestige = 50
-			badboy = 10
-			change_tag = LTN
-			add_accepted_culture = south_italian
-			ITA = { all_core = { add_core = THIS } }
-			relation = {
-				who = BYZ
-				value = -100
-			}
-			set_country_flag = ARE_latin_empire
 		}
 		ai_will_do = {
 			factor = 1
@@ -267,5 +192,262 @@ political_decisions = {
 			set_country_flag = LTN_accept_france
 		}
 		ai_will_do = { factor = 1 }
+	}
+	
+	ARE_invade_padania = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			has_country_flag = ARE_ready_to_kill_LOM
+			NOT = { has_country_flag = ARE_invade_padania }
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			badboy = 15
+			country_event = 171004
+			LOM = { all_core = { add_core = ARE } }
+			war = {
+				target = LOM
+				attacker_goal = { casus_belli = annex_core_country }
+				call_ally = yes
+			}
+			set_country_flag = ARE_invade_padania
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARE_pacify_padania = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			ai = no
+			has_country_flag = ARE_martletism_active
+		}
+		allow = {
+			any_owned_province = {
+				has_province_modifier = ARE_uprising
+				country_units_in_province = THIS
+			}
+		}
+		effect = {
+			random_owned = {
+				limit = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				remove_province_modifier = ARE_uprising
+				any_pop = { militancy = 1 consciousness = 1 }
+			}
+			set_country_flag = ARE_took_pacify_decision
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARE_pacify_princes = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			ai = no
+			has_country_flag = ARE_princes_infected
+		}
+		allow = {
+			OR = {
+				720 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				722 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				723 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				738 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				739 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				740 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				741 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				742 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+				743 = { has_province_modifier = ARE_uprising country_units_in_province = THIS }
+			}
+		}
+		effect = {
+			random_country = {
+				limit = {
+					NOT = { tag = THIS }
+					any_owned_province = {
+						has_province_modifier = ARE_uprising
+						country_units_in_province = THIS
+					}
+				}
+				any_owned = { remove_province_modifier = ARE_uprising }
+				country_event = 171018
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARE_pacify_padania_ai = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			ai = yes
+			has_country_flag = ARE_martletism_active
+		}
+		allow = {
+			any_owned_province = {
+				has_province_modifier = ARE_uprising
+			}
+			NOT = { has_country_modifier = ai_event_cooldown }
+		}
+		effect = {
+			random_owned = {
+				limit = { has_province_modifier = ARE_uprising }
+				remove_province_modifier = ARE_uprising
+				any_pop = { militancy = 1 consciousness = 1 }
+			}
+			add_country_modifier = { name = ai_event_cooldown duration = 14 }
+			set_country_flag = ARE_took_pacify_decision
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARE_pacify_princes_ai = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			ai = yes
+			has_country_flag = ARE_princes_infected
+		}
+		allow = {
+			OR = {
+				720 = { has_province_modifier = ARE_uprising }
+				722 = { has_province_modifier = ARE_uprising }
+				723 = { has_province_modifier = ARE_uprising }
+				738 = { has_province_modifier = ARE_uprising }
+				739 = { has_province_modifier = ARE_uprising }
+				740 = { has_province_modifier = ARE_uprising }
+				741 = { has_province_modifier = ARE_uprising }
+				742 = { has_province_modifier = ARE_uprising }
+				743 = { has_province_modifier = ARE_uprising }
+			}
+			NOT = { has_country_modifier = ai_event_cooldown }
+		}
+		effect = {
+			random_country = {
+				limit = {
+					NOT = { tag = THIS }
+					any_owned_province = {
+						has_province_modifier = ARE_uprising
+					}
+				}
+				any_owned = { remove_province_modifier = ARE_uprising }
+				country_event = 171018
+			}
+			add_country_modifier = { name = ai_event_cooldown duration = 14 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	ARE_claim_italian_throne = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			has_country_flag = ARE_italy_available
+			NOT = {	has_country_flag = ARE_claim_italian_throne }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 10
+			TUS_744 = { add_core = THIS }
+			PAP_752 = { add_core = THIS }
+			set_country_flag = ARE_claim_italian_throne
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	ARE_centralize_padania = {
+		picture = italian_islands
+		potential = {
+			tag = ARE
+			has_country_flag = ARE_italy_available
+			NOT = {	has_country_flag = ARE_centralize_padania }
+		}
+		allow = {
+			war = no
+			late_classical_theory = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = north_italian
+			PAP_741 = { add_core = THIS }
+			SAR_720 = { add_core = THIS }
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					OR = {
+						tag = SVY
+						tag = MOD
+						tag = PAR
+						tag = RMG
+					}
+				}
+				annex_to = THIS
+			}
+			set_country_flag = ARE_centralize_padania
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ARE_latin_empire = {
+		picture = latin
+		potential = {
+			tag = ARE
+			has_country_flag = ARE_claim_italian_throne
+			has_country_flag = ARE_ready_for_LTN
+			NOT = { exists = LTN }
+		}
+		allow = {
+			war = no
+			owns = 749
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			prestige = 50
+			badboy = 10
+			change_tag = LTN
+			add_accepted_culture = north_italian
+			add_accepted_culture = south_italian
+			ITA = { all_core = { add_core = THIS } }
+			relation = {
+				who = BYZ
+				value = -100
+			}
+			any_country = {
+				limit = {
+					vassal_of = THIS
+					OR = {
+						tag = SVY
+						tag = MOD
+						tag = PAR
+						tag = RMG
+					}
+				}
+				annex_to = THIS
+			}
+			set_country_flag = ARE_latin_empire
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
 	}
 }

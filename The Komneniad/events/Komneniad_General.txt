@@ -187,6 +187,7 @@ country_event = {
 	option = {
         name = "Enter Spectator mode (disables events)"
 		set_country_flag = spectator
+		set_global_flag = workplace_events_disabled
     }
 	
 	option = {
