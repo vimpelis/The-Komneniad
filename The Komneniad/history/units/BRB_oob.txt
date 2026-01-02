@@ -34,7 +34,7 @@ NSB = {
     influence_value = 25
 }
 FRA = {
-    value = -125
+    value = 50
 }
 DAN = {
     value = 75
@@ -47,6 +47,7 @@ ARE = {
 	level = 4
     influence_value = 25
 }
+ADU = { value = -100 }
 
 army = {
     name = "1st Army"

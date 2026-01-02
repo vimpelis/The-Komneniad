@@ -7787,10 +7787,10 @@
         size = 105
     }
 
-    artisans = {
+    craftsmen = {
         culture = occitan
         religion = catholic
-        size = 881
+        size = 10000
     }
 
     artisans = {
@@ -7820,7 +7820,7 @@
     farmers = {
         culture = occitan
         religion = catholic
-        size = 66420
+        size = 57420
     }
 
     aristocrats = {
@@ -8020,13 +8020,13 @@
     farmers = {
         culture = occitan
         religion = catholic
-        size = 66288
+        size = 66350
     }
 
-    farmers = {
+    craftsmen = {
         culture = occitan
         religion = catholic
-        size = 5266
+        size = 5200
     }
 
     farmers = {
@@ -9257,10 +9257,10 @@
         size = 80930
     }
 
-    farmers = {
+    craftsmen = {
         culture = occitan
         religion = catholic
-        size = 2093
+        size = 2100
     }
 
     artisans = {
@@ -9841,13 +9841,13 @@
     craftsmen = {
         culture = lower_burgundian
         religion = catholic
-        size = 2850
+        size = 6850
     }
 
     farmers = {
         culture = lower_burgundian
         religion = catholic
-        size = 11552
+        size = 7552
     }
 
     clergymen = {

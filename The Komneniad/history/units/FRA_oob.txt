@@ -8,9 +8,14 @@ ARE = {
 	level = 3
     influence_value = 10
 }
+PAP = {
+    value = 50
+	level = 3
+    influence_value = 10
+}
 
 BRB = {
-    value = -50
+    value = 50
 }
 
 CAT = {

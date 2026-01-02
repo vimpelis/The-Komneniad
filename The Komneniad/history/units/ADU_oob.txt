@@ -18,6 +18,16 @@ ARE = {
     value = -50
 }
 
+BRB = {
+    value = -100
+}
+
+CLT = {
+    value = 25
+}
+
+DEN = { value = 30 }
+
 JOH = { value = 150 }
 
 army = {

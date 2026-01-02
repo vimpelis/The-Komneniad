@@ -315,6 +315,79 @@ political_decisions = {
 		}
 	}
 	
+	EGY_annex_LBN_puppet = {
+		picture = map_syria
+		potential = {
+			tag = EGY
+			LBN = { vassal_of = THIS }
+			NOT = { has_country_flag = EGY_annex_LBN_puppet }
+		}
+		allow = {
+			war = no
+			civilized = yes
+		}
+		effect = {
+			LBN = { country_event = 178034 }
+			set_country_flag = EGY_annex_LBN_puppet
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	EGY_accept_christians = {
+		picture = map_syria
+		potential = {
+			tag = EGY
+			has_country_flag = EGY_ready_for_democracy
+			NOT = { has_country_flag = EGY_accept_christians }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			897 = {
+				OR = {
+					owned_by = THIS
+					owner = { vassal_of = THIS }
+					owner = { in_sphere = THIS }
+				}
+			}
+		}
+		effect = {
+			country_event = 178040
+			set_country_flag = EGY_accept_christians
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	EGY_eat_nubia = {
+		picture = map_syria
+		potential = {
+			tag = EGY
+			has_country_flag = EGY_accept_christians
+			NOT = { has_country_flag = EGY_eat_nubia }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			badboy = 10
+			add_accepted_culture = sudanese
+			SUD = { all_core = { add_core = EGY } }
+			set_country_flag = EGY_eat_nubia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.6
+			}
+		}
+	}
+	
 	form_ARU = {
 		picture = form_arab_union
 		potential = {
@@ -335,6 +408,20 @@ political_decisions = {
 					owner = { vassal_of = THIS }
 				}
 			}
+			917 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			897 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
 			OR = {
 				1751 = {
 					OR = {
@@ -344,22 +431,6 @@ political_decisions = {
 					}
 				}
 				926 = {
-					OR = {
-						owned_by = THIS
-						owner = { in_sphere = THIS }
-						owner = { vassal_of = THIS }
-					}
-				}
-			}
-			OR = {
-				917 = {
-					OR = {
-						owned_by = THIS
-						owner = { in_sphere = THIS }
-						owner = { vassal_of = THIS }
-					}
-				}
-				902 = {
 					OR = {
 						owned_by = THIS
 						owner = { in_sphere = THIS }
@@ -386,6 +457,7 @@ political_decisions = {
 			OMA = { all_core = { add_core = ARU } }
 			HAD = { all_core = { add_core = ARU } }
 			QAT = { all_core = { add_core = ARU } }
+			NAJ = { all_core = { add_core = ARU } }
 			any_country = {
 				limit = {
 					OR = {

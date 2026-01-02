@@ -280,6 +280,13 @@ country_event = {
 		913 = { secede_province = LBN }
 		912 = { secede_province = LBN }
 		create_vassal = LBN
+		LBN = { country_event = 178041 }
+		FROM = {
+			diplomatic_influence = {
+				who = LBN
+				value = 200
+			}
+		}
 		scaled_militancy = {
 			factor = 4
 			issue = jingoism
@@ -541,6 +548,18 @@ country_event = {
 		3358 = { add_core = PLS secede_province = THIS secede_province = PLS }
 		3474 = { add_core = PLS secede_province = THIS secede_province = PLS }
 		EGY_921 = { remove_core = LBN }
+		BYZ = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+		}
+		GRE = {
+			diplomatic_influence = {
+				who = THIS
+				value = 400
+			}
+		}
 	}
 }
 
@@ -1079,5 +1098,221 @@ country_event = {
 			3325 = { add_core = IRQ }
 			3428 = { add_core = IRQ }
 		}
+	}
+}
+
+country_event = {
+    id = 178033
+    title = "Syria calms down"
+    desc = "178033DESC"
+    picture = "syria_map"
+
+    trigger = {
+		tag = EGY
+		has_country_flag = EGY_UPS_formed
+		any_owned_province = { has_province_modifier = EGY_syriac_unrest }
+		OR = {
+			NOT = { owns = 897 }
+			AND = {
+				has_global_flag = aleppo_massacre
+				owns = 897
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Finally!"
+		any_owned = {
+			limit = {
+				has_province_modifier = EGY_syriac_unrest
+			}
+			any_pop = { militancy = -2 consciousness = -4 }
+			remove_province_modifier = EGY_syriac_unrest
+		}
+	}
+}
+
+country_event = {
+    id = 178034
+    title = "Egypt requests negotiations"
+    desc = "178034DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Only if there is a constitutional reform."
+		EGY = { country_event = 178035 }
+	}
+	
+	option = {
+        name = "There will be no negotiations. Syria will be free!"
+		EGY = { country_event = 178036 }
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+    id = 178035
+    title = "Syria offers a deal"
+    desc = "178035DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "A new age dawns for Egypt."
+		FROM = { country_event = 178037 }
+		set_country_flag = EGY_ready_for_democracy
+		ai_chance = { factor = 8 }
+	}
+	
+	option = {
+        name = "No deal."
+		FROM = { country_event = 178038 }
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = {
+    id = 178036
+    title = "Syria refuses to negotiate"
+    desc = "178036DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Then war it is!"
+		badboy = 5
+		release_vassal = LBN
+		LBN = { all_core = { add_core = EGY } }
+		war = {
+			target = LBN
+			attacker_goal = { casus_belli = annex_core_country }
+			call_ally = yes
+		}
+		ai_chance = { factor = 8 modifier = { badboy = 0.8 factor = 0 } }
+	}
+	
+	option = {
+        name = "You will pay... later."
+		prestige = -10
+		release_vassal = LBN
+		LBN = { all_core = { add_core = EGY } }
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = {
+    id = 178037
+    title = "Egypt accepts"
+    desc = "178037DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Is peace in the Middle East finally coming?"
+	}
+}
+
+country_event = {
+    id = 178038
+    title = "Egypt refuses"
+    desc = "178038DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Long live Free Syria!"
+		EGY = { release_vassal = LBN }
+		LBN = { all_core = { add_core = EGY } }
+	}
+}
+
+country_event = {
+    id = 178039
+    title = "Syria breaks down communications"
+    desc = "178039DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Then war it is!"
+		badboy = 5
+		war = {
+			target = LBN
+			attacker_goal = { casus_belli = annex_core_country }
+			call_ally = yes
+		}
+		ai_chance = { factor = 8 modifier = { badboy = 0.8 factor = 0 } }
+	}
+	
+	option = {
+        name = "We'll bide our time."
+		prestige = -10
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = {
+    id = 178040
+    title = "Creation of the Egyptian Republic"
+    desc = "178040DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Peace between peoples."
+		prestige = 10
+		government = democracy
+		add_accepted_culture = syriac
+		add_accepted_culture = copt
+		add_accepted_culture = ashkenazi
+		capital_scope = { add_province_modifier = { name = war_torn duration = 30 } }
+		capital = 1751
+		any_country = {
+			limit = {
+				tag = LBN
+				vassal_of = THIS
+			}
+			annex_to = THIS
+			all_core = { add_core = THIS }
+		}
+		scaled_militancy = { factor = 4 ideology = reactionary }
+		scaled_militancy = { factor = 2 ideology = conservative }
+		scaled_militancy = { factor = -2 ideology = liberal }
+		scaled_militancy = { factor = -4 ideology = socialist }
+		scaled_militancy = { factor = -4 ideology = radical }
+	}
+}
+
+country_event = {
+    id = 178041
+    title = "Birth of a Syrian state"
+    desc = "A Syrian state has been created following a diplomatic offensive done by Constantinople. This is a great occasion that will be remembered by Syrians!"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Ok"
+		EGY = {
+			EGY_897 = { secede_province = LBN }
+			3361 = { secede_province = LBN }
+			913 = { secede_province = LBN }
+			912 = { secede_province = LBN }
+		}
+		900 = { remove_core = THIS }
 	}
 }

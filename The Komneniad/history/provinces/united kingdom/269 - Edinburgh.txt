@@ -5,4 +5,4 @@ add_core = SCO
 trade_goods = coal
 life_rating = 35
 terrain = edinburgh
-state_building = { level = 2 building = fabric_factory upgrade = yes } 
+state_building = { level = 3 building = fabric_factory upgrade = yes } 
