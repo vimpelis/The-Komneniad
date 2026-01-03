@@ -4,3 +4,4 @@ add_core = DEN
 trade_goods = fruit
 life_rating = 35
 terrain = ribe
+state_building = { level = 1 building = liquor_distillery upgrade = yes }

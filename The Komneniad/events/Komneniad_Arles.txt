@@ -53,6 +53,18 @@ country_event = {
     option = {
         name = "We must do something."
 		country_event = { id = 171003 days = 14 }
+		ai_chance = { factor = 8 }
+    }
+	
+	option = {
+        name = "Actually, we are fine where we are."
+		prestige = -10
+		scaled_militancy = { issue = jingoism factor = 6 }
+		scaled_militancy = { issue = pro_military factor = 3 }
+		scaled_militancy = { issue = anti_military factor = -3 }
+		scaled_militancy = { issue = pacifism factor = -6 }
+		set_country_flag = ARE_defeat_in_italy
+		ai_chance = { factor = 2 }
     }
 }
 
@@ -66,8 +78,13 @@ country_event = {
 
     option = {
         name = "Un unthinkable occasion: Arles goes to war."
+		scaled_militancy = { issue = jingoism factor = -6 }
+		scaled_militancy = { issue = pro_military factor = -3 }
+		scaled_militancy = { issue = anti_military factor = 3 }
+		scaled_militancy = { issue = pacifism factor = 6 }
 		set_country_flag = ARE_ready_to_kill_LOM
 		LOM = { country_event = 171005 }
+		new_decisions_tt = {}
     }
 }
 
@@ -117,7 +134,7 @@ country_event = {
 
     option = {
         name = "Great!"
-		LOM = { all_core = { remove_core = ARE } government = democracy }
+		LOM = { all_core = { remove_core = ARE } government = democracy clr_country_flag = LOM_expansion_unlocked }
 		720 = { add_core = SVY remove_core = LOM }
 		722 = { add_core = SVY remove_core = LOM }
 		723 = { add_core = SVY remove_core = LOM }
@@ -558,14 +575,54 @@ country_event = {
 		has_country_flag = ARE_invade_padania
 		war = no
     }
+	
+	fire_only_once = yes
 
     mean_time_to_happen = { days = 1 }
 
     option = {
         name = "Are we really doomed to be a pushover?"
-		prestige = -10
+		prestige = -20
 		badboy = -5
 		LOM = { any_core = { remove_core = ARE } }
+		any_pop = { militancy = 1 consciousness = 1 }
 		set_country_flag = ARE_defeat_in_italy
+    }
+}
+
+country_event = {
+    id = 171028
+    title = "Unification of the South"
+    desc = "171028DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Transalpinia, for we are on the other side of the Alps."
+		all_core = { limit = { OR = { is_core = OCC is_core = BRG } } remove_core = ARE }
+    }
+	
+	option = {
+        name = "Narbonensia: let us distance further from Rome."
+		capital = 463
+		random_owned = {
+			limit = {
+				owner = { government = absolute_monarchy }
+			}
+			owner = { government = absolute_empire }
+		}
+		random_owned = {
+			limit = {
+				owner = { government = prussian_constitutionalism }
+			}
+			owner = { government = semi_constitutional_empire }
+		}
+		random_owned = {
+			limit = {
+				owner = { government = hms_government }
+			}
+			owner = { government = constitutional_empire }
+		}
     }
 }

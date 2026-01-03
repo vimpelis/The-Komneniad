@@ -310,7 +310,13 @@
     farmers = {
         culture = swedish
         religion = protestant
-        size = 24650
+        size = 20650
+    }
+	
+	craftsmen = {
+        culture = swedish
+        religion = protestant
+        size = 4000
     }
 
     farmers = {
@@ -794,7 +800,13 @@
     farmers = {
         culture = danish
         religion = protestant
-        size = 69000
+        size = 60000
+    }
+	
+	craftsmen = {
+        culture = danish
+        religion = protestant
+        size = 9000
     }
 
     farmers = {
@@ -832,7 +844,13 @@
     farmers = {
         culture = danish
         religion = protestant
-        size = 60625
+        size = 55625
+    }
+	
+	craftsmen = {
+        culture = danish
+        religion = protestant
+        size = 5000
     }
 }
 #Jan Mayen, now St Barths

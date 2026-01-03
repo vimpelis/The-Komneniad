@@ -81,3 +81,11 @@ hot_blast = 1
 basic_chemistry = 1
 
 oob = "ZPD_oob.txt"
+
+foreign_investment = {
+    BRN = 10000
+    SAX = 15000
+    STT = 2500
+    WLG = 2500
+    MEC = 2500
+}

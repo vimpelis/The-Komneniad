@@ -600,7 +600,7 @@ country_event = {
 		}
 		release_vassal = LBN
 		LBN = { capital = 897 }
-		ai_chance = { factor = 1 modifier = { badboy = 0.9 factor = 20 } }
+		ai_chance = { factor = 1 modifier = { badboy = 0.7 factor = 20 } modifier = { badboy = 0.9 factor = 20 } }
 	}
 	
 	option = {
@@ -619,15 +619,13 @@ country_event = {
 		}
 		release_vassal = LBN
 		LBN = { capital = 897 }
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 10 modifier = { badboy = 0.7 factor = 20 } }
 	}
 	
 	option = {
         name = "We've liberated you, and now you want more?! Ungrateful!"
 		any_pop = {
-			limit = {
-				has_pop_culture = syriac
-			}
+			limit = { has_pop_culture = syriac }
 			militancy = 4
 			consciousness = 4
 		}
@@ -708,7 +706,6 @@ country_event = {
 		owns = 897
 		great_wars_enabled = yes
 		war = yes
-		year = 1905
 		has_country_flag = BYZ_refused_to_release_SYR_2
 		NOT = { exists = LBN }
     }
@@ -792,12 +789,20 @@ country_event = {
 		924 = { secede_province = ASY }
 		3300 = { secede_province = ASY }
 		3405 = { secede_province = ASY }
+		relation = {
+			who = ASY
+			value = 100
+		}
 		ai_chance = { factor = 10 modifier = { ASY = { NOT = { in_sphere = THIS } } factor = 0 } modifier = { owns = 3389 factor = 0 } }
 	}
 	
 	option = {
         name = "No."
 		FROM = { country_event = 178026 }
+		relation = {
+			who = ASY
+			value = -25
+		}
 		ai_chance = { factor = 1 modifier = { ASY = { in_sphere = THIS } factor = 0.1 } }
 	}
 }

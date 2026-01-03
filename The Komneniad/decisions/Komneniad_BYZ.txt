@@ -1,45 +1,4 @@
 political_decisions = {
-	BYZ_conquer_naples = {
-        picture = aragonese_two_sicilies
-        potential = {
-			OR = {
-				tag = BYZ
-				has_country_flag = greek_path
-			}
-            exists = NAP
-			owns = 761
-            NOT = {
-				OR = {
-					has_country_flag = BYZ_conquer_naples
-					year = 1848
-				}
-			}
-        }
-        allow = {
-            war = no
-			NOT = { truce_with = NAP }
-			OR = {
-				year = 1840
-				has_global_flag = We_have_reconciled_with_Russia
-			}
-        }
-        effect = {
-            set_country_flag = BYZ_conquer_naples
-            badboy = 3
-			war = {
-				target = NAP
-				attacker_goal = { casus_belli = conquest_any }
-			}
-        }
-        ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.8
-            }
-		}
-    }
-
 	BYZ_conquer_naples_a = {
         picture = aragonese_two_sicilies
         potential = {
@@ -47,62 +6,27 @@ political_decisions = {
 				tag = BYZ
 				has_country_flag = greek_path
 			}
-			owns = 761
-            OR = {
-				year = 1848
-				NOT = { exists = NAP }
-			}
+			owns = 759
 			NOT = { has_country_flag = BYZ_conquer_naples }
         }
         allow = {
             war = no
 			OR = {
-				year = 1845
-				ideological_thought = 1
+				state_n_government = 1
+				exists = ITA
+				749 = { owner = { government = radical_republic } }
 			}
         }
         effect = {
             badboy = 7
 			SIC_754 = { add_core = THIS }
 			set_country_flag = BYZ_conquer_naples
-			set_country_flag = BYZ_consolidate_longobardia
         }
         ai_will_do = {
 			factor = 1
 			modifier = {
                 factor = 0
                 badboy = 0.7
-            }
-		}
-    }
-	
-	BYZ_consolidate_longobardia = {
-        picture = aragonese_two_sicilies
-        potential = {
-			OR = {
-				tag = BYZ
-				has_country_flag = greek_path
-			}
-			owns = 754
-			NOT = { has_country_flag = BYZ_consolidate_longobardia }
-        }
-        allow = {
-            war = no
-			OR = {
-				year = 1845
-				ideological_thought = 1
-			}
-        }
-        effect = {
-			badboy = 2
-			set_country_flag = BYZ_consolidate_longobardia
-			SIC_754 = { add_core = THIS }
-        }
-        ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.9
             }
 		}
     }
@@ -114,40 +38,28 @@ political_decisions = {
 				tag = BYZ
 				has_country_flag = greek_path
 			}
-			OR = {
-				AND = {
-					owns = 754
-					has_country_flag = BYZ_consolidate_longobardia
-				}
-				SIC = { rank = 10 }
-			}
+			owns = 759
 			NOT = { has_country_flag = BYZ_conquer_sicily }
         }
         allow = {
             war = no
-			NOT = { truce_with = SIC }
-			steamers = 1
 			OR = {
+				AND = {
+					steamers = 1
+					muzzle_loaded_rifles = 1
+				}
 				state_n_government = 1
-				SIC = { rank = 10 }
 			}
-			SIC_754 = {
-				owned_by = THIS
-			}
+			NOT = { truce_with = SIC }
         }
         effect = {
             set_country_flag = BYZ_conquer_sicily
             badboy = 14
-			casus_belli = {
+			war = {
 				target = SIC
-				type = conquest_any
-				months = 24
+				attacker_goal = { casus_belli = conquest_any }
 			}
-			SIC = {
-				all_core = {
-					add_core = THIS
-				}
-			}
+			SIC = { all_core = { add_core = THIS } }
         }
         ai_will_do = {
 			factor = 1
@@ -226,14 +138,13 @@ political_decisions = {
 	BYZ_accept_slovenes = {
         picture = greater_slovenia
         potential = {
-			has_country_flag = BYZ_norican_frontier
 			has_country_flag = greek_path
+			owns = 768
 			NOT = { has_country_flag = BYZ_accept_slovenes }
         }
         allow = {
             war = no
 			revolution_n_counterrevolution = 1
-			owns = 768
         }
         effect = {
             set_country_flag = BYZ_accept_slovenes
@@ -714,12 +625,18 @@ political_decisions = {
         potential = {
 			tag = BYZ
 			has_country_flag = roman_path
-			has_country_flag = BYZ_conquer_sicily
+			has_country_flag = BYZ_conquer_naples
 			NOT = { has_country_flag = BYZ_march_on_rome }
         }
         allow = {
             war = no
-			nationalism_n_imperialism = 1
+			OR = {
+				nationalism_n_imperialism = 1
+				AND = {
+					owns = 749
+					state_n_government = 1
+				}
+			}
 			all_core = { owned_by = THIS }
         }
         effect = {
@@ -736,6 +653,72 @@ political_decisions = {
 		}
     }
 	
+	BYZ_seize_rome = {
+        picture = papal_state
+        potential = {
+			tag = BYZ
+			has_country_flag = roman_path
+			has_country_flag = BYZ_march_on_rome
+			OR = {
+				749 = { owned_by = PAP }
+				749 = { owned_by = ITA }
+				749 = { owned_by = ITS }
+			}
+			NOT = { has_country_flag = BYZ_seize_rome }
+        }
+        allow = {
+            war = no
+			749 = { owner = { in_sphere = THIS } }
+        }
+        effect = {
+			badboy = 2
+			random_owned = {
+				limit = {
+					749 = { owned_by = PAP }
+				}
+				any_greater_power = {
+					diplomatic_influence = {
+						who = PAP
+						value = -400
+					}
+					leave_alliance = PAP
+				}
+			}
+			random_owned = {
+				limit = {
+					749 = { owned_by = ITS }
+				}
+				any_greater_power = {
+					diplomatic_influence = {
+						who = ITS
+						value = -400
+					}
+					leave_alliance = ITS
+				}
+			}
+			random_owned = {
+				limit = {
+					749 = { owned_by = ITA }
+				}
+				any_greater_power = {
+					diplomatic_influence = {
+						who = ITA
+						value = -400
+					}
+					leave_alliance = ITA
+				}
+			}
+			set_country_flag = BYZ_seize_rome
+        }
+        ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+    }
+	
 	BYZ_accept_south_italians = {
         picture = aragonese_two_sicilies
         potential = {
@@ -746,7 +729,7 @@ political_decisions = {
         allow = {
             war = no
 			revolution_n_counterrevolution = 1
-			owns = 749
+			any_owned_province = { is_core = ITA }
         }
         effect = {
             set_country_flag = BYZ_accept_south_italians
@@ -782,7 +765,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.6
+                badboy = 0.2
             }
 		}
     }

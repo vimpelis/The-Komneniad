@@ -1,0 +1,122 @@
+country_event = {
+    id = 179000
+    title = "The European Potato Blight"
+    desc = "179000DESC"
+    picture = "ZPD"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "Those poor peasants!"
+		potato_blight_tt = {}
+		CLN = { country_event = { id = 179001 days = 7 } }
+    }
+}
+
+country_event = {
+    id = 179001
+    title = "Potato Blight Spreads"
+    desc = "Scary!"
+    picture = "ZPD"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Oof"
+		any_country = {
+			any_owned = {
+				limit = { has_province_modifier = potato_blight_special }
+				any_neighbor_province = { limit = { continent = europe } add_province_modifier = { name = potato_blight_special duration = 730 } }
+				sea_zone = {
+					random_neighbor_province = { limit = { continent = europe } add_province_modifier = { name = potato_blight_special duration = 730 } }
+				}
+			}
+		}
+		random_owned = {
+			limit = { owner = { NOT = { month = 10 } } }
+			owner = { country_event = { id = 179001 days = 18 } }
+		}
+    }
+}
+
+province_event = {
+    id = 179002
+    title = "Potato Blight arrives in $PROVINCENAME$"
+    desc = "179002DESC"
+
+    trigger = {
+		OR = {
+			province_id = 442
+			province_id = 423
+			province_id = 420
+			province_id = 418
+			province_id = 402
+			province_id = 388
+			province_id = 375
+			province_id = 303
+		}
+		owner = { year = 1845 month = 6 NOT = { has_global_flag = 1845_potato_blight } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 15
+    }
+
+    option = {
+        name = "Hopefully it won't amount to much."
+		owner = { country_event = 179000 }
+		add_province_modifier = { name = potato_blight_special duration = 730 }
+		set_global_flag = 1845_potato_blight
+    }
+}
+
+country_event = {
+    id = 179003
+    title = "Drought strikes Western Europe"
+    desc = "179003DESC"
+
+    trigger = {
+		OR = {
+			primary_culture = north_german
+			primary_culture = west_german
+			primary_culture = south_german
+			primary_culture = north_italian
+			primary_culture = south_italian
+			primary_culture = upper_burgundian
+			primary_culture = lower_burgundian
+			primary_culture = french
+			primary_culture = occitan
+			primary_culture = spanish
+			primary_culture = anglo_saxon
+			primary_culture = scottish
+			primary_culture = irish
+			primary_culture = welsh
+			primary_culture = danelander
+			primary_culture = breton
+			primary_culture = dutch
+			primary_culture = wallonian
+			primary_culture = frisian
+			primary_culture = catalan
+			primary_culture = basque
+			primary_culture = andalusian
+		}
+		any_owned_province = { trade_goods = grain }
+		year = 1846
+		month = 5
+		NOT = { year = 1847 }
+		NOT = { has_country_flag = had_drought_1846 }
+    }
+
+    mean_time_to_happen = {
+        days = 5
+    }
+
+    option = {
+        name = "Hunger is a political phenomenon, not a natural one."
+		any_owned = { limit = { trade_goods = grain continent = europe } add_province_modifier = { name = severe_drought duration = 730 } }
+		set_country_flag = had_drought_1846
+    }
+}

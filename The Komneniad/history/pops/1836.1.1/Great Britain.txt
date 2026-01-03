@@ -1684,10 +1684,10 @@
         size = 2536
     }
 
-    artisans = {
+    craftsmen = {
         culture = danelander
         religion = protestant
-        size = 329
+        size = 11500
     }
 
     soldiers = {
@@ -1699,7 +1699,7 @@
     labourers = {
         culture = danelander
         religion = protestant
-        size = 18270
+        size = 11270
     }
 
     aristocrats = {
@@ -1730,12 +1730,6 @@
         culture = danelander
         religion = protestant
         size = 36
-    }
-
-    labourers = {
-        culture = danelander
-        religion = protestant
-        size = 4171
     }
 }
 281 = {
@@ -2017,22 +2011,16 @@
         size = 1390
     }
 
-    artisans = {
+    craftsmen = {
         culture = danelander
         religion = protestant
-        size = 104
+        size = 13000
     }
 
     soldiers = {
         culture = danelander
         religion = protestant
         size = 391
-    }
-
-    labourers = {
-        culture = danelander
-        religion = protestant
-        size = 12879
     }
 
     aristocrats = {
@@ -2427,7 +2415,7 @@
     craftsmen = {
         culture = anglo_saxon
         religion = protestant
-        size = 13348
+        size = 43348
     }
 
     artisans = {
@@ -2451,7 +2439,7 @@
     labourers = {
         culture = anglo_saxon
         religion = protestant
-        size = 97696
+        size = 67696
     }
 
     farmers = {
@@ -2811,7 +2799,7 @@
     craftsmen = {
         culture = anglo_saxon
         religion = protestant
-        size = 3100
+        size = 13100
     }
 
     artisans = {
@@ -2829,7 +2817,7 @@
     labourers = {
         culture = anglo_saxon
         religion = protestant
-        size = 81395
+        size = 71395
     }
 
     farmers = {
@@ -2922,7 +2910,7 @@
     craftsmen = {
         culture = anglo_saxon
         religion = protestant
-        size = 3347
+        size = 23347
     }
 
     artisans = {
@@ -2940,7 +2928,7 @@
     labourers = {
         culture = anglo_saxon
         religion = protestant
-        size = 66749
+        size = 46749
     }
 
     farmers = {

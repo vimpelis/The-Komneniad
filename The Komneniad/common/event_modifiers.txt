@@ -378,7 +378,7 @@ transvaal_civil_war = {
 }
 
 opened_frontiers = {
-    global_immigrant_attract = 0.4
+    global_immigrant_attract = 0.35
     global_assimilation_rate = 0.1
     icon = 17
 }
@@ -413,7 +413,7 @@ native_reintegration = { #From event 6004
 
 mineral_revolution = {
     icon = 19
-    global_immigrant_attract = 2
+    global_immigrant_attract = 0.35
     global_assimilation_rate = 0.1
 }
 
@@ -947,12 +947,12 @@ urgell_channels_construction = {
 }
 
 small_immigration_boom = {
-    global_immigrant_attract = 1
+    global_immigrant_attract = 0.5
     icon = 17
 }
 
 land_of_opportunity = {
-    global_immigrant_attract = 2
+    global_immigrant_attract = 0.25
 	global_assimilation_rate = 0.5
     icon = 13
 }
@@ -1690,7 +1690,7 @@ international_negotiations = {
 
 the_statue_of_liberty = {
     prestige = 0.01
-    global_immigrant_attract = 0.5    #100%
+    global_immigrant_attract = 0.1    #100%
     global_assimilation_rate = 0.5
     icon = 15
 }
@@ -1790,7 +1790,7 @@ boer_exodus = {
 }
 
 gold_rush_country = {
-    global_immigrant_attract = 0.5
+    global_immigrant_attract = 0.25
     icon = 9
 }
 
@@ -1809,7 +1809,7 @@ silver_rush = {
 }
 
 witwatersrand_gold_rush = {
-    global_immigrant_attract = 3
+    global_immigrant_attract = 0.5
     prestige = 0.01
     icon = 11
 }
@@ -2954,7 +2954,7 @@ neutrality_modifier = {
     diplomatic_points_modifier = -0.3
     core_pop_militancy_modifier = -0.01
     prestige = -0.5
-    global_immigrant_attract = 0.25
+    global_immigrant_attract = 0.05
     icon = 7
 }
 
@@ -3688,7 +3688,7 @@ neutrality = {
     leadership_modifier = -0.7
     diplomatic_points_modifier = -0.3
     prestige = -1.5
-    global_immigrant_attract = 0.2
+    global_immigrant_attract = 0.05
     icon = 7
 }
 ### Collectivisation ###
@@ -4133,11 +4133,6 @@ withdrew_from_geneva_convention = {
     diplomatic_points_modifier = -0.25
     badboy = 0.01
     icon = 6
-}
-
-small_immigration_boom = {
-    global_immigrant_attract = 1
-    icon = 17
 }
 
 slow_immigration_boom = {
@@ -5075,7 +5070,7 @@ Iryai_AI_Buff = {
 BAV_zollverein = {
 	supply_consumption = -0.1
     tax_efficiency = 0.1
-    influence_modifier = 0.25
+    influence_modifier = 0.1
     import_cost = -0.1
 	icon = 20
 }
@@ -5083,7 +5078,7 @@ BAV_zollverein = {
 zollverein = {
 	supply_consumption = -0.1
     tax_efficiency = 0.05
-    influence_modifier = 0.1
+    influence_modifier = 0.05
     import_cost = -0.05
 	icon = 20
 }
@@ -5199,7 +5194,7 @@ ATA_meteorite_iron = {
 
 giant_of_the_south = {
 	prestige = 0.01
-	global_immigrant_attract = 0.5
+	global_immigrant_attract = 0.1
 	land_organisation = 0.1
 	naval_organisation = 0.1 
     icon = 7
@@ -5496,4 +5491,20 @@ ARE_uprising = {
 	local_artisan_output = -0.25
 	population_growth = -0.001
     icon = 8
+}
+
+potato_blight_special = {
+    farm_RGO_eff = -0.5
+    pop_militancy_modifier = 0.05
+    pop_consciousness_modifier = 0.1
+	poor_life_needs = 0.2
+    immigrant_push = 0.25
+    population_growth = -0.001
+    icon = 20
+}
+
+severe_drought = {
+	local_RGO_output = -0.50
+	poor_life_needs = 0.2
+    icon = 14
 }

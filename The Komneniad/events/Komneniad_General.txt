@@ -179,7 +179,7 @@ country_event = {
     }
 	
 	option = {
-        name = "Add debug countryflag (NO TOUCH)"
+        name = "Add debug countryflag"
 		set_country_flag = debug_enabled
 		country_event = 169007
     }
@@ -188,6 +188,12 @@ country_event = {
         name = "Enter Spectator mode (disables events)"
 		set_country_flag = spectator
 		set_global_flag = workplace_events_disabled
+    }
+	
+	option = {
+        name = "Add 5 mil and con to every civilized country"
+		any_country = { any_pop = { militancy = 5 consciousness = 5 } }
+		country_event = 169007
     }
 	
 	option = {

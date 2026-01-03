@@ -8,21 +8,29 @@ political_decisions = {
 		allow = {
 			war = no
 			OR = {
-				owns = 411
+				411 = { owned_by = THIS }
+				411 = { owner = { in_sphere = THIS } }
 				state_n_government = 1
 			}
 		}
 		effect = {
-			badboy = 10
+			badboy = 6
 			add_accepted_culture = upper_burgundian
-			BRG = { all_core = { add_core = THIS } }
+			LOR = { all_core = { add_core = THIS } }
+			random_country = {
+				limit = {
+					tag = LOR
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
 			set_country_flag = FRA_lorraine
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.6
+                badboy = 0.7
             }
 		}
 	}
@@ -39,8 +47,9 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 		}
 		effect = {
-			badboy = 15
+			badboy = 20
 			add_accepted_culture = lower_burgundian
+			FRA_432 = { add_core = THIS }
 			FRA_451 = { add_core = THIS }
 			SAR_466 = { add_core = THIS }
 			FRA_467 = { add_core = THIS }
@@ -50,7 +59,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.4
+                badboy = 0.2
             }
 		}
 	}
@@ -67,7 +76,7 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 		}
 		effect = {
-			badboy = 15
+			badboy = 12
 			add_accepted_culture = wallonian
 			WLL = { all_core = { add_core = THIS } }
 			set_country_flag = FRA_wallonia
@@ -76,7 +85,7 @@ political_decisions = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.4
+                badboy = 0.5
             }
 		}
 	}

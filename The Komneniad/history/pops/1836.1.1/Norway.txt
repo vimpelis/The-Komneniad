@@ -285,7 +285,13 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 19310
+        size = 15310
+    }
+	
+	craftsmen = {
+        culture = norwegian
+        religion = protestant
+        size = 4000
     }
 
 	farmers = {
@@ -355,9 +361,14 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 27375
+        size = 22375
     }
-
+	
+	craftsmen = {
+        culture = norwegian
+        religion = protestant
+        size = 5000
+    }
 }
 #Ostlandet Region - 352000
 #Christiania (108000/27000 POPS)
@@ -389,7 +400,7 @@
     artisans = {
         culture = norwegian
         religion = protestant
-        size = 7000
+        size = 4000
     }
 
     soldiers = {
@@ -401,7 +412,7 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 14800
+        size = 10800
     }
 
     capitalists = {
@@ -414,6 +425,12 @@
         culture = gypsy
         religion = protestant
         size = 400
+    }
+	
+	craftsmen = {
+        culture = norwegian
+        religion = protestant
+        size = 7000
     }
 }
 #Hamar (80000/20000 POPS)

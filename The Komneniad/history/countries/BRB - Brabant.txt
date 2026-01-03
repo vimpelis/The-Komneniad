@@ -78,3 +78,10 @@ upper_house = {
 }
 
 oob = "BRB_oob.txt"
+
+foreign_investment = {
+    WES = 10000
+    FRI = 5000
+    OLD = 2500
+    NSB = 5000
+}

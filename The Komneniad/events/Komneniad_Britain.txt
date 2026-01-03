@@ -160,7 +160,7 @@ country_event = {
 	major = yes
 
     trigger = {
-		year = 1847
+		year = 1848
 		owns = 296
 		owns = 299
 		exists = LON

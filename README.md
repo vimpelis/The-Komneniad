@@ -148,6 +148,7 @@ AAL - Ard Al-Hurriyah
 176000 - Sudan
 177000 - Kurdistan
 178000 - MidEast
+179000 - Blights&Droughts
 
 **Random notes that are not present in any of the events:**
 

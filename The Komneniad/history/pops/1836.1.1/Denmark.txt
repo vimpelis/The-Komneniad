@@ -40,7 +40,13 @@
     farmers = {
         culture = danish
         religion = protestant
-        size = 48075
+        size = 45075
+    }
+	
+	craftsmen = {
+        culture = danish
+        religion = protestant
+        size = 3000
     }
 
     artisans = {
@@ -353,13 +359,13 @@
     farmers = {
         culture = danish
         religion = protestant
-        size = 49000
+        size = 44000
     }
 	
 	craftsmen = {
         culture = danish
         religion = protestant
-        size = 10000
+        size = 15000
     }
 
     artisans = {

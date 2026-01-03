@@ -236,7 +236,6 @@ country_event = {
     picture = "destroyed_forest"
 
     is_triggered_only = yes
-	major = yes
 
     option = {
         name = "Long live Napoleone II!"

@@ -33,6 +33,31 @@ NSB = {
     level = 4
     influence_value = 25
 }
+LIP = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+HEK = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+WLD = {
+    value = 50
+    level = 3
+    influence_value = 25
+}
+BRA = {
+    value = 35
+    level = 3
+    influence_value = 10
+}
+FRK = {
+    value = 35
+    level = 3
+    influence_value = 10
+}
 FRA = {
     value = 50
 }
