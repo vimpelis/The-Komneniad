@@ -22,24 +22,6 @@ army = {
     regiment = {
         name = "4. Infantry Brigade"
         type = irregular
-        home = 2116
-    }
-
-    regiment = {
-        name = "5. Infantry Brigade"
-        type = irregular
-        home = 2116
-    }
-
-    regiment = {
-        name = "6. Infantry Brigade"
-        type = irregular
-        home = 2117
-    }
-
-    regiment = {
-        name = "7. Infantry Brigade"
-        type = irregular
-        home = 2122
+        home = 2115
     }
 }

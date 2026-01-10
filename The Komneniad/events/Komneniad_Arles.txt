@@ -604,7 +604,7 @@ country_event = {
     }
 	
 	option = {
-        name = "Narbonensia: let us distance further from Rome."
+        name = "Narbonensia: let us distance ourselves further from Rome."
 		capital = 463
 		random_owned = {
 			limit = {

@@ -436,6 +436,20 @@ country_event = {
 		political_reform = no_slavery
 		country_event = 169014
     }
+	
+	option = {
+        name = "Cossackia"
+		political_reform = no_slavery
+		RUS_1182 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_979 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_955 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_1041 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_1060 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_976 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_964 = { add_core = DON secede_province = THIS secede_province = DON }
+		1048 = { add_core = DON secede_province = THIS secede_province = DON }
+		1050 = { add_core = DON secede_province = THIS secede_province = DON }
+    }
 }
 
 country_event = {

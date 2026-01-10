@@ -52,16 +52,6 @@ army = {
 	regiment = {
         name = "Emir's Guards"
 		type = irregular
-		home = 1921
-	}
-	regiment = {
-        name = "Kwa Warriors"
-        type = irregular
-		home = 1922
-    }
-	regiment = {
-        name = "Gur Warriors"
-		type = irregular
 		home = 1938
-    }
+	}
 }

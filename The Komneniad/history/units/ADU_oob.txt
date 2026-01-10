@@ -30,6 +30,8 @@ DEN = { value = 30 }
 
 JOH = { value = 150 }
 
+OMA = { value = 80 }
+
 army = {
     name = "1st Army"
     location = 489

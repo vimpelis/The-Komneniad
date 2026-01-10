@@ -1,7 +1,7 @@
 capital = 1064
 primary_culture = russian
+culture = cossack
 culture = ruthene
-culture = siberian
 religion = orthodox
 government = democracy
 plurality = 0.0

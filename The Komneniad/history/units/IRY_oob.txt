@@ -75,12 +75,12 @@ army = {
 	regiment = {
         name = "1st Irregular Infantry Regiment"
         type = irregular
-        home = 1533
+        home = 1613
     }
     regiment = {
         name = "2nd Irregular Infantry Regiment"
         type = irregular
-        home = 3249
+        home = 1582
     }
 	regiment = {
         name = "3rd Irregular Infantry Regiment"

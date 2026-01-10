@@ -37,8 +37,6 @@ POLITICS_NOT_BEFORE;We can not change ruling party again before §Y$DATE$§W.;Nous
 POLITICS_NOT_ACCEPTED;Our form of government does not allow §Y$WHICH$§W parties.;Notre forme de gouvernement n’autorise pas les partis §Y$WHICH$§W.;Unsere Regierungsform gestattet keine §Y$WHICH$en§W Parteien.;;Nuestra forma de gobierno no permite partidos §Y$WHICH$§W.;;;;;;;;;
 RELEASE_PRESTIGE;Prestige: ;Prestige : ;Prestige: ;;Prestigio: ;;;;;;;;;
 RELEASE_INFAMY;Infamy: ;Infamie : ;Infamie: ;;Infamia: ;;;;;;;;;
-PROV3247;West Hawaii;Hawaii ouest;West-Hawaii;;Hawai occidental;;;;;;;;;
-PROV3248;West Magellan Strait;Ouest du détroit de Magellan;Westliche Magellanstraße;;Estrecho de Magallanes occidental;;;;;;;;;
 SOMEONE_HAS_ADDED_STATUS_QUO;We cannot add a wargoal if someone has added a §YStatus Quo§W wargoal;Nous ne pouvons pas ajouter d’objectif de guerre si quelqu’un a ajouté l’objectif de guerre : §YStatu Quo§W.;Wir können kein Kriegsziel hinzufügen, wenn jemand ein §YStatus Quo§W-Kriegsziel hinzugefügt hat.;;No podemos añadir un objetivo bélico si alguien ya ha añadido uno de §YStatus Quo§W;;;;;;;;;
 NO_INTERVENTION_NOT_ENOUGH_OPINION;In order to intervene, a nation targeted by a wargoal need to have at least §Y$REQLEVEL$§W opinion of us;Pour intervenir, une nation visée par un objectif de guerre doit avoir au moins une opinion de nous égale à §Y$REQLEVEL$§W.;Zum Intervenieren muss eine Nation, die Ziel eines Kriegsziels ist, mindestens eine §Y$REQLEVEL$§W von uns haben.;;Para poder intervenir, un país objeto de un objetivo bélico debe tener una opinión sobre nosotros de al menos §Y$REQLEVEL$§W;;;;;;;;;
 peking_convention_title;The Peking Convention;La convention de Pékin.;Die Pekinger Konvention;;La convención de Pekín;;;;;;;;;

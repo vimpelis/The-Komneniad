@@ -62,24 +62,4 @@ army = {
 		type = irregular
         home = 1911
     }
-    regiment = {
-        name = "3rd Ashanti Warriors"
-		type = irregular
-        home = 1912
-    }
-}
-
-army = {
-    name = "Accra Garrison"
-    location = 1907
-    regiment = {
-        name = "Asantehene's Guards"
-		type = irregular
-        home = 1907
-    }
-    regiment = {
-        name = "1st Ashanti Warriors"
-		type = irregular
-		home = 1907
-    }
 }

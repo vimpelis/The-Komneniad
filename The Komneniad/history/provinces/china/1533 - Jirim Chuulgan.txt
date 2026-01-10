@@ -1,6 +1,6 @@
-owner = IRY
-controller = IRY
-add_core = IRY
+owner = KOR
+controller = KOR
+add_core = KOR
 add_core = MCK
 trade_goods = grain
-life_rating = 32 
+life_rating = 32

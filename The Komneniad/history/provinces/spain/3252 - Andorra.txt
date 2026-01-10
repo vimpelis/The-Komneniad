@@ -1,3 +1,7 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+owner = KOR
+controller = KOR
+add_core = KOR
+add_core = MCK
+trade_goods = opium
+life_rating = 32
+terrain = forest_hills

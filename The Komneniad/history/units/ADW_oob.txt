@@ -19,12 +19,12 @@ army = {
     regiment = {
         name = "1st Fulbe Warriors"
         type = irregular
-        home = 1819
+        home = 1961
     }
 
     regiment = {
         name = "2nd Fulbe Warriors"
         type = irregular
-        home = 1819
+        home = 1956
     }
 }

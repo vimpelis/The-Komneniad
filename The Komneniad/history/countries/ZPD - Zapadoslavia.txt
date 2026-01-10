@@ -88,4 +88,5 @@ foreign_investment = {
     STT = 2500
     WLG = 2500
     MEC = 2500
+    MST = 1000
 }

@@ -1,7 +1,7 @@
-owner = IRY
-controller = IRY
-add_core = IRY
-add_core = MCK
+owner = RUS
+controller = RUS
+add_core = RUS
+add_core = AMU
+add_core = MGL
 trade_goods = cattle
 life_rating = 32
-terrain = oldtianjin

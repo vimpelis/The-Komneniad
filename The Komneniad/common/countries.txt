@@ -329,6 +329,7 @@ UBD        = "countries/United Baltic Provinces.txt"
 ZPD        = "countries/Zapadoslavia.txt"
 
 #Russia
+AMU        = "countries/Amur.txt"
 VLG        = "countries/Volga.txt"
 BRY        = "countries/Buryatia.txt"
 AKH        = "countries/Astrakhan.txt"

@@ -5508,3 +5508,9 @@ severe_drought = {
 	poor_life_needs = 0.2
     icon = 14
 }
+
+impassable = {
+	movement_cost = 10
+	pop_militancy_modifier = -1
+    icon = 10
+}

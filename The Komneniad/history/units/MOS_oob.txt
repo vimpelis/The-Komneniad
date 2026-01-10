@@ -31,9 +31,4 @@ army = {
         type = irregular
 		home = 1902
 	}
-	regiment = {
-        name = "2nd Mossi Warriors"
-		type = irregular
-		home = 1903
-    }
 }

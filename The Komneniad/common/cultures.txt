@@ -344,7 +344,7 @@ finnougric = {
         }
     }
     ugrian = {
-        color = { 60 160 160 }
+        color = { 180 225 215 }
         first_names = { Aleksandr Dmitri Ivan Jukka Santeri Vladimir }
         last_names = { Kokko Likhachev Mamin Minin Sibiriak Tikhanov Zubov }
     }
@@ -1197,25 +1197,15 @@ caucasian = {
     unit = MoroccoGC
 
         dagestani = {
-            color = { 134 100 49 }
+            color = { 192 150 190 }
             first_names = {
-                Hadji Sheyh Rasul Umma Halil Gadzhimurat Ghazi "Gamzat-bek" Najmuddin Tapa Ali-Khaji Akusha Haidar Várkony Shamil Kamil Magomet Ibrahim Muhammad Mansur Dzhokhar Avshalumov Aliyeva Askerkhanov Gamzatov Puterbrot Abdulkhakim Adam Buvaysar Kuramagomed Khabib Ali Rustam
+                Hadji Sheyh Rasul Umma Halil Gadzhimurat Ghazi "Gamzat-bek" Najmuddin Tapa Ali-Khaji Akusha Haidar Várkony Shamil Kamil Magomet Ibrahim Muhammad Mansur Dzhokhar Puterbrot Abdulkhakim Adam Buvaysar Kuramagomed Khabib Ali Rustam
                 }
 
             last_names = {
-                Awaral Gamzatov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak Nogai Aghul Rutul al-Tsakhur Muhammad Hotso Bamat Gadzhiyev Fazu Gamzatovna
+                Awaral Avshalumov Aliyev Askerkhanov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak Nogai Aghul Rutul al-Tsakhur Hotso Bamat Gadzhiyev Fazu Gamzatov
             }
             radicalism = 25
-        }
-        avar = {
-        color = { 192 150 190 }
-        first_names = {
-            Hadji Sheyh Rasul Umma Halil Gadzhimurat Ghazi "Gamzat-bek" Najmuddin Tapa Ali-Khaji Akusha Haidar Várkony Shamil Kamil Magomet Ibrahim Muhammad Mansur Dzhokhar Avshalumov Aliyeva Askerkhanov Gamzatov Puterbrot Abdulkhakim Adam Buvaysar Kuramagomed Khabib Ali Rustam
-            }
-
-        last_names = {
-            Awaral Gamzatov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak Nogai Aghul Rutul al-Tsakhur Muhammad Hotso Bamat Gadzhiyev Fazu Gamzatovna
-        }
         }
         chechen = {
             color = { 46 112 99 }
@@ -1228,7 +1218,6 @@ caucasian = {
             }
             radicalism = 30
         }
-
         circassian = {
             color = { 185 206 6 }
             first_names = {
@@ -1496,7 +1485,6 @@ iranian_turanian = {
             }
         radicalism = 10
     }
-
 	ossetian = {
         color = { 228 166 73 }
         first_names = {
@@ -1531,11 +1519,12 @@ central_asian = {
     oirat = {
         color = { 255 125 55 }
         first_names = {
-                Khara Batur Erdeni Tsewang Galdan Tseren Esen Amarsana
+            Khara Batur Erdeni Tsewang Galdan Tseren Esen Amarsana Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan
+            Gonchigjalzangiin Badamdorj Chingis Otgonbayar Batbayar
         }
 
         last_names = {
-                Khan Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar
+            Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav Khan Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar
         }
     }
     uighur = {
@@ -1673,27 +1662,20 @@ central_asian = {
         }
         radicalism = 10
     }
-	kalmyk = {
-        color = { 0 161 222 }
+    tungusic = {
+        color = { 180 170 85 }
         first_names = {
-               Peljidiin Balingiin Sodnomyn Kubilai Baterdene Dogsomyn Damdin Khorloogiin Dambyan
-               Gonchigjalzangiin Badamdorj Chingis Otgonbayar Batbayar }
-
-        last_names = {
-               Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav
-        }
-    }
-	
-    siberian = {
-        color = { 40 240 240 }
-        first_names = {
-               Aleksandr Diniyar Mirsayet Sihabetdin Gabdull Afanasiy Viktor Grigory
+            Alitet Bombogor Garpancha Khadiul Kostoku Ogdo Tymancha Kabiavchan Giakan Hingerken Niuku Vasilij
+			Kayocha Libgerik Songocho Vladimir Bamba Gibi Orokto Aka Fyodor
+			Zinchay Isula Nadyga Serdi Grigory Ivan Mirivan Lyankuy Dzhansi Kili
+			Aleksandr Diniyar Mirsayet Sihabetdin Gabdull Afanasiy Viktor Grigory
         }
         last_names = {
-               Shaimiev Bilyaletdinov Shchapov Yadrintsev Krakovetsky Kolchak Potanin Shashkov
+            Lebedev Nikulin Trofimov Bugach Dutki Huldacha Kilen Gair Oninkan
+			Arseevich Ingunovich Dayuevich Dinsanovich Ingileevich Lauvich Nadygovich Kamandiga
+			Chufuevich Kompanevna Gaibovich
         }
     }
-
     yakut = {
         color = { 95 87 32 }
         first_names = {
@@ -1703,7 +1685,6 @@ central_asian = {
               Okhlopkov Shishigin Shtyrov Ondar Sivtsev
         }
     }
-
     tibetan = {
         color = { 99 43 89 }
         first_names = {
@@ -1715,15 +1696,11 @@ central_asian = {
         }
         radicalism = 10
     }
-
     nepali = {
         color = { 173 123 190 }
         first_names = { Bhimsen Amar Ranjur Bhakti Jang Renaudip Shamsher "Bir Shamsher" "Deva Shamsher" "Chandra Shamsher" "Bhim Shamsher"
-
         }
-
         last_names = { Thapa "Singh Thapa" Singh Rana "Bahadur Rana"
-
         }
     }
 }

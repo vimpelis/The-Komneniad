@@ -1347,7 +1347,6 @@ country_event = {
                 is_core = CHI
                 NOT = {
                     is_core = THIS
-                    region = CHI_1082
                     region = JAP_1086
                     region = CHI_1485
                     province_id = 1498

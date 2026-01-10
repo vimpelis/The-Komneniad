@@ -1,3 +1,5 @@
+owner = CIR
+controller = CIR
+add_core = CIR
 trade_goods = grain
-terrain = desert
-life_rating = 1
+life_rating = 35 

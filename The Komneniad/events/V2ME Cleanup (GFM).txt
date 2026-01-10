@@ -5439,10 +5439,7 @@ country_event = {
 				exists = yes
 				civilized = yes
 				war = no
-				owns = 1983
 				owns = 2001
-				owns = 1999
-				owns = 2002
 			}
 			random_owned = {
 				limit = {
@@ -5465,6 +5462,8 @@ country_event = {
 					LOA = { all_core = { remove_core = LOA } }
 					BEL_1977 = { add_core = LOA }
 					POR_1999 = { add_core = LOA }
+					BEL_1984 = { add_core = LOA }
+					BEL_1987 = { add_core = LOA }
 					LOA = {
 						all_core = { remove_core = KON }
 						add_accepted_culture = chokwe
@@ -5852,9 +5851,7 @@ country_event = {
 				exists = yes
 				civilized = yes
 				war = no
-				owns = 1990
-				owns = 1992
-				owns = 1996
+				owns = 1991
 			}
 			random_owned = {
 				limit = {
@@ -5874,9 +5871,7 @@ country_event = {
 				owner = {
 					set_global_flag = zaire_organized
 					set_country_flag = zaire_master
-					BEL_1990 = { add_core = CNG } 
-					BEL_1996 = { add_core = CNG }
-					BEL_1992 = { add_core = CNG }
+					BEL_1996 = { add_core = CNG } 
 					CNG = {
 						all_core = { remove_core = MNG remove_core = AZA }
 						set_country_flag = post_colonial_country

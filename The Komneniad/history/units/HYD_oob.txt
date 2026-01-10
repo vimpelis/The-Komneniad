@@ -10,13 +10,13 @@ army = {
     regiment = {
         name = "2. Irregular Cavalry"
         type = cavalry
-        home = 1278
+        home = 1287
     }
 
     regiment = {
         name = "3. Irregular Cavalry"
         type = cavalry
-        home = 1284
+        home = 1300
     }
 
     regiment = {

@@ -929,7 +929,6 @@ country_event = {
                     tag = BUR
                     tag = SIA
                     tag = XAN
-                    tag = NYE
                 }
                 OR = {
                     has_country_flag = post_colonial_country

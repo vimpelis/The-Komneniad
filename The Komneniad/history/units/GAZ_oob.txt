@@ -40,7 +40,7 @@ army = {
     regiment = {
         name = "Nguni Warriors"
         type = irregular
-        home = 2051
+        home = 2050
     }
 
     regiment = {

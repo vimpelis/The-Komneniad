@@ -18,7 +18,7 @@ army = {
     regiment = {
         name = "1st Lunda Warriors"
         type = irregular
-        home = 1984
+        home = 1988
     }
     regiment = {
         name = "2nd Lunda Warriors"

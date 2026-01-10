@@ -4,7 +4,7 @@ army = {
     regiment = {
         name = "Sultan Guards"
         type = irregular
-        home = 1410
+        home = 1403
     }
 }
 

@@ -847,31 +847,31 @@
     }
 
     aristocrats = {
-        culture = avar
+        culture = dagestani
         religion = sunni
         size = 225
     }
 
     clergymen = {
-        culture = avar
+        culture = dagestani
         religion = sunni
         size = 125
     }
 
     artisans = {
-        culture = avar
+        culture = dagestani
         religion = sunni
         size = 700
     }
 
     soldiers = {
-        culture = avar
+        culture = dagestani
         religion = sunni
         size = 150
     }
 
     farmers = {
-        culture = avar
+        culture = dagestani
         religion = sunni
         size = 6000
     }

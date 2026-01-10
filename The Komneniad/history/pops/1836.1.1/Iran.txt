@@ -551,8 +551,8 @@
         religion = shiite
         size = 11225
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = kurdish
         religion = yazidi
         size = 300
@@ -1489,8 +1489,8 @@
         religion = coptic
         size = 1500
     }
-	
-	slaves = {
+
+    slaves = {
         culture = amhara
         religion = coptic
         size = 500
@@ -1617,8 +1617,8 @@
         religion = coptic
         size = 1500
     }
-	
-	slaves = {
+
+    slaves = {
         culture = amhara
         religion = coptic
         size = 500
@@ -1655,26 +1655,26 @@
         religion = sunni
         size = 14450
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = kurdish
         religion = yazidi
         size = 100
     }
-	
-	clergymen = {
+
+    clergymen = {
         culture = kurdish
         religion = yazidi
         size = 50
     }
-	
-	artisans = {
+
+    artisans = {
         culture = kurdish
         religion = yazidi
         size = 200
     }
-	
-	farmers = {
+
+    farmers = {
         culture = kurdish
         religion = yazidi
         size = 9500
@@ -1705,8 +1705,8 @@
         religion = yazidi
         size = 1000
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = kurdish
         religion = sunni
         size = 175
@@ -1783,8 +1783,8 @@
         religion = shiite
         size = 6025
     }
-	
-	farmers = {
+
+    farmers = {
         culture = mashriqi
         religion = shiite
         size = 4000
@@ -1821,8 +1821,8 @@
         religion = shiite
         size = 13000
     }
-	
-	farmers = {
+
+    farmers = {
         culture = lurish
         religion = yazidi
         size = 4000
@@ -1851,8 +1851,8 @@
         religion = shiite
         size = 4950
     }
-	
-	farmers = {
+
+    farmers = {
         culture = kurdish
         religion = yazidi
         size = 2000
@@ -1887,8 +1887,8 @@
         religion = shiite
         size = 950
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = qashqai
         religion = shiite
         size = 250
@@ -2201,8 +2201,8 @@
         religion = shiite
         size = 8500
     }
-	
-	farmers = {
+
+    farmers = {
         culture = kurdish
         religion = yazidi
         size = 2100
@@ -2323,8 +2323,8 @@
         religion = shiite
         size = 3500
     }
-	
-	farmers = {
+
+    farmers = {
         culture = kurdish
         religion = yazidi
         size = 2000
@@ -2663,8 +2663,8 @@
         religion = coptic
         size = 3000
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = qashqai
         religion = shiite
         size = 500
@@ -2761,8 +2761,8 @@
         religion = shiite
         size = 5100
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = qashqai
         religion = shiite
         size = 225
@@ -3151,8 +3151,8 @@
         religion = shiite
         size = 5150
     }
-	
-	farmers = {
+
+    farmers = {
         culture = lurish
         religion = yazidi
         size = 850
@@ -3205,8 +3205,8 @@
         religion = shiite
         size = 3575
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = qashqai
         religion = shiite
         size = 50
@@ -3341,8 +3341,8 @@
         religion = shiite
         size = 4000
     }
-	
-	farmers = {
+
+    farmers = {
         culture = lurish
         religion = yazidi
         size = 1000
@@ -3353,8 +3353,8 @@
         religion = shiite
         size = 475
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = qashqai
         religion = shiite
         size = 35
@@ -3415,8 +3415,8 @@
         religion = shiite
         size = 6525
     }
-	
-	farmers = {
+
+    farmers = {
         culture = lurish
         religion = yazidi
         size = 750
@@ -3943,8 +3943,8 @@
         religion = jewish
         size = 200
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = qashqai
         religion = shiite
         size = 25
@@ -4069,33 +4069,33 @@
 #Kangan
 1078 = {
     aristocrats = {
-        culture = russian
+        culture = cossack
         religion = orthodox
-        size = 200
+        size = 157
     }
 
     bureaucrats = {
-        culture = russian
+        culture = cossack
         religion = orthodox
-        size = 30
+        size = 23
     }
 
     officers = {
-        culture = russian
+        culture = cossack
         religion = orthodox
-        size = 30
+        size = 23
     }
 
     clergymen = {
-        culture = russian
+        culture = cossack
         religion = orthodox
-        size = 175
+        size = 137
     }
 
     artisans = {
-        culture = russian
+        culture = cossack
         religion = orthodox
-        size = 850
+        size = 668
     }
 
     soldiers = {
@@ -4105,9 +4105,9 @@
     }
 
     farmers = {
-        culture = russian
+        culture = cossack
         religion = orthodox
-        size = 1750
+        size = 1378
     }
 
     aristocrats = {
@@ -4135,9 +4135,45 @@
     }
 
     farmers = {
-        culture = siberian
+        culture = tungusic
         religion = tengri
         size = 2500
+    }
+
+    aristocrats = {
+        culture = russian
+        religion = orthodox
+        size = 74
+    }
+
+    bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 11
+    }
+
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 11
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 64
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 315
+    }
+
+    farmers = {
+        culture = russian
+        religion = orthodox
+        size = 649
     }
 }
 #Sirjan (16000/4000 POPS)
@@ -4419,8 +4455,8 @@
         religion = shiite
         size = 9400
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = qashqai
         religion = shiite
         size = 125

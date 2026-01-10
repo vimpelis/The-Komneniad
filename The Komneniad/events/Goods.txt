@@ -1714,7 +1714,7 @@ province_event = {
 			}
 			AND = {
 				year = 1886
-				province_id = 3289		# Medimurje (Cakovec) #https://en.wikipedia.org/wiki/Me%C4%91imurje_County#Oil_and_gas
+				province_id = 775		# Medimurje (Cakovec) #https://en.wikipedia.org/wiki/Me%C4%91imurje_County#Oil_and_gas
 			}
 			AND = {
 				year = 1889

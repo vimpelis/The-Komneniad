@@ -28,11 +28,11 @@ RWA = {
 
 army = {
     name = "Army of Kazembe"
-    location = 2016
+    location = 2017
 	regiment = {
 		name = "Mwata's Guards"
 		type = irregular
-		home = 2016
+		home = 1987
 	}
 	regiment = {
         name = "1st Kazembe Warriors"

@@ -1,7 +1,7 @@
-capital = 1078 #Chita
+capital = 1078
 primary_culture = russian
+culture = cossack
 culture = ruthene
-culture = siberian
 religion = orthodox
 government = absolute_monarchy
 plurality = 0.0

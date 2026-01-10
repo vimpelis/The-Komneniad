@@ -201,6 +201,18 @@
         religion = mahayana
         size = 17000
     }
+	
+	farmers = {
+        culture = manchu
+        religion = mahayana
+        size = 7500
+    }
+
+    slaves = {
+        culture = manchu
+        religion = mahayana
+        size = 3200
+    }
 }
 #Kimchaek (260000/65000 POPS)
 1623 = {
@@ -238,6 +250,18 @@
         culture = korean
         religion = mahayana
         size = 12000
+    }
+	
+	farmers = {
+        culture = manchu
+        religion = mahayana
+        size = 4500
+    }
+
+    slaves = {
+        culture = manchu
+        religion = mahayana
+        size = 1200
     }
 }
 #Kyonggi Region (2620000)

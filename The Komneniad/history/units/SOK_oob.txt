@@ -99,33 +99,4 @@ army = {
         type = irregular
         home = 1947
     }
-
-    regiment = {
-        name = "6. Fulbe"
-        type = irregular
-        home = 1946
-    }
-
-    regiment = {
-        name = "7. Fulbe"
-        type = irregular
-        home = 1946
-    }
-
-}
-
-army = {
-    name = "Army of the Emir of Ilorin"
-    location = 1925
-    regiment = {
-        name = "1st Hausa Slaves"
-        type = cavalry
-        home = 1927
-    }
-
-	regiment = {
-        name = "2nd Hausa Slaves"
-        type = cavalry
-        home = 1927
-    }
 }
