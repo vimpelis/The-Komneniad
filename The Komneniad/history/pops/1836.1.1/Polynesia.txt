@@ -31,14 +31,14 @@
         religion = catholic
         size = 50
     }
-	
-	artisans = {
+
+    artisans = {
         culture = californian
         religion = catholic
         size = 50
     }
-	
-	farmers = {
+
+    farmers = {
         culture = californian
         religion = catholic
         size = 150
@@ -568,19 +568,19 @@
     aristocrats = {
         culture = polynesian
         religion = animist
-        size = 1
+        size = 0
     }
 
     clergymen = {
         culture = polynesian
         religion = animist
-        size = 1
+        size = 0
     }
 
     artisans = {
         culture = polynesian
         religion = animist
-        size = 1
+        size = 0
     }
 
     soldiers = {
@@ -592,6 +592,6 @@
     farmers = {
         culture = polynesian
         religion = animist
-        size = 30
+        size = 15
     }
 }

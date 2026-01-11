@@ -2,5 +2,6 @@ owner = RUS
 controller = RUS
 add_core = RUS
 add_core = AMU
-trade_goods = opium
+terrain = forest_hills
+trade_goods = gems
 life_rating = 32

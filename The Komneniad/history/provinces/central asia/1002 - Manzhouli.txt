@@ -4,6 +4,7 @@ add_core = RUS
 add_core = AMU
 add_core = MGL
 trade_goods = cattle
+terrain = hills
 life_rating = 32
 colonial = 2
 

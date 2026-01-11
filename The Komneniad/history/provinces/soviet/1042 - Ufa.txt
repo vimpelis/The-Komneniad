@@ -4,5 +4,5 @@ add_core = RUS
 add_core = TAR
 trade_goods = iron
 life_rating = 35
-terrain = ufa
+terrain = montane_forest
 state_building = { level = 1 building = steel_factory upgrade = yes } 
