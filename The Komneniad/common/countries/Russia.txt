@@ -1,10 +1,10 @@
-color = { 57 105 49 }
+color = { 60 105 50 }
 prov_gov_conservative = { 250 250 250 }
-absolute_monarchy = { 50 90 40 }
 absolute_empire = { 50 90 40 }
-radical_republic = { 80 80 30  }
-fascist_dictatorship = { 0 40 0 }
-presidential_dictatorship = { 100 120 90 }
+radical_republic = { 80 80 30  } #evil shit-brown-green
+fascist_dictatorship = { 0 40 0 } #very dark green
+presidential_dictatorship = { 100 120 90 } #washed-out gray
+theocracy = { 0 90 90 } #absolute monarchy color
 proletarian_dictatorship = { 200 10 10 }
 graphical_culture = RussianGC
 

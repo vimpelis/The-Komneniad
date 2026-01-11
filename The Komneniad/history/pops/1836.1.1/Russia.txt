@@ -12633,31 +12633,31 @@
     aristocrats = {
         culture = tungusic
         religion = animist
-        size = 84
+        size = 42
     }
 
     clergymen = {
         culture = tungusic
         religion = animist
-        size = 76
+        size = 38
     }
 
     artisans = {
         culture = tungusic
         religion = animist
-        size = 249
+        size = 124
     }
 
     soldiers = {
         culture = tungusic
         religion = animist
-        size = 1040
+        size = 520
     }
 
     farmers = {
         culture = tungusic
         religion = animist
-        size = 7968
+        size = 2700
     }
 
     clergymen = {
@@ -12691,15 +12691,33 @@
     }
 
     farmers = {
-        culture = manchu
-        religion = animist
-        size = 3500
-    }
-
-    farmers = {
         culture = tungusic
         religion = orthodox
-        size = 2656
+        size = 1328
+    }
+
+    aristocrats = {
+        culture = manchu
+        religion = animist
+        size = 300
+    }
+
+    clergymen = {
+        culture = manchu
+        religion = animist
+        size = 250
+    }
+
+    artisans = {
+        culture = manchu
+        religion = animist
+        size = 700
+    }
+	
+	farmers = {
+        culture = manchu
+        religion = animist
+        size = 8500
     }
 }
 #Sakhalin-Kurile Region (16200)
