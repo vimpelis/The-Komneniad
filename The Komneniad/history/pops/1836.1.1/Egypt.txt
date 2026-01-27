@@ -1587,13 +1587,7 @@
     farmers = {
         culture = misri
         religion = sunni
-        size = 2575
-    }
-
-    farmers = {
-        culture = maghrebi
-        religion = sunni
-        size = 5000
+        size = 7575
     }
 
     aristocrats = {
@@ -1715,7 +1709,7 @@
     farmers = {
         culture = copt
         religion = coptic
-        size = 315
+        size = 225
     }
 }
 #Siwa (16000/4000 POPS)

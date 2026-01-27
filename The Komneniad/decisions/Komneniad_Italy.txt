@@ -276,4 +276,234 @@ political_decisions = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	
+	AFR_victory_sicily = {
+		picture = map_sicily
+		potential = {
+			tag = AFR
+			NOT = { has_country_flag = AFR_victory_sicily }
+			NOT = { has_global_flag = hauteville_civil_war_over }
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+		}
+		allow = {
+			war = no
+			owns = 762
+			NOT = { exists = SIC }
+		}
+		effect = {
+			prestige = 10
+			badboy = 10
+			NAP = { all_core = { add_core = THIS } }
+			SIC = { all_core = { remove_core = SIC } }
+			SIC_763 = { add_core = SIC any_pop = { militancy = -3 consciousness = -3 } }
+			set_country_flag = AFR_victory_sicily
+			set_global_flag = hauteville_civil_war_over
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	SIC_annex_africa = {
+		picture = map_sicily
+		potential = {
+			tag = SIC
+			NOT = { has_global_flag = hauteville_civil_war_over }
+			NOT = { has_country_flag = SIC_annex_africa }
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+		}
+		allow = {
+			OR = {
+				truce_with = AFR
+				AND = {
+					war_with = AFR
+					war_score = 10
+				}
+				NOT = { exists = AFR }
+			}
+		}
+		effect = {
+			war_exhaustion = -25
+			AFR = { all_core = { add_core = THIS } }
+			2225 = { add_core = THIS }
+			set_country_flag = SIC_annex_africa
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	SIC_victory = {
+		picture = map_sicily
+		potential = {
+			tag = SIC
+			NOT = { has_global_flag = hauteville_civil_war_over }
+			NOT = { has_country_flag = SIC_victory }
+			has_country_flag = SIC_annex_africa
+			OR = {
+				government = absolute_monarchy
+				government = hms_government
+				government = prussian_constitutionalism
+			}
+		}
+		allow = {
+			war = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+			NOT = { exists = AFR }
+		}
+		effect = {
+			prestige = 10
+			badboy = 10
+			NAP = { all_core = { add_core = THIS } }
+			AFR = { all_core = { remove_core = AFR } }
+			TUN_1726 = { add_core = AFR any_pop = { militancy = -3 consciousness = -3 } }
+			1731 = { add_core = AFR any_pop = { militancy = -3 consciousness = -3 } }
+			1732 = { add_core = AFR any_pop = { militancy = -3 consciousness = -3 } }
+			1733 = { add_core = AFR any_pop = { militancy = -3 consciousness = -3 } }
+			1744 = { add_core = AFR any_pop = { militancy = -3 consciousness = -3 } }
+			set_global_flag = hauteville_civil_war_over
+			set_country_flag = SIC_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	AFR_annex_tripoli = {
+		picture = map_tripoli
+		potential = {
+			OR = {
+				tag = AFR
+				AND = {
+					tag = SIC
+					has_country_flag = SIC_victory
+				}
+			}
+			NOT = { has_country_flag = AFR_annex_tripoli }
+		}
+		allow = {
+			war = no
+			owns = 1731
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 5
+			badboy = 3
+			TRI = { all_core = { add_core = THIS } }
+			set_country_flag = AFR_annex_tripoli
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	AFR_stato_da_mar = {
+		picture = map_sicily
+		potential = {
+			OR = {
+				tag = AFR
+				AND = {
+					tag = SIC
+					has_country_flag = SIC_victory
+				}
+			}
+			has_country_flag = AFR_victory_sicily
+			NOT = { has_country_flag = AFR_stato_da_mar }
+		}
+		allow = {
+			war = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+			state_n_government = 1
+		}
+		effect = {
+			prestige = 25
+			badboy = 15
+			add_accepted_culture = griko
+			EGY_843 = { add_core = THIS }
+			GRE_826 = { add_core = THIS }
+			TUR_853 = { add_core = THIS }
+			TUR_832 = { add_core = THIS }
+			473 = { add_core = THIS }
+			set_country_flag = AFR_stato_da_mar
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	AFR_take_fezzan = {
+		picture = map_tripoli
+		potential = {
+			year = 1860
+			OR = {
+				tag = AFR
+				tag = TRI
+				AND = {
+					tag = SIC
+					has_country_flag = SIC_victory
+				}
+			}
+			NOT = { has_country_flag = AFR_take_fezzan }
+			OR = {
+				1729 = { empty = yes }
+				1744 = { empty = yes }
+				1741 = { empty = yes }
+			}
+		}
+		allow = {
+			war = no
+			owns = 3639
+			owns = 1731
+			owns = 1734
+			OR = {
+				invention = mission_to_civilize
+				year = 1870
+			}
+		}
+		effect = {
+			prestige = 5
+			random_owned = {
+                limit = {
+                    1729 = { empty = yes }
+                }
+                1729 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+            }
+			random_owned = {
+                limit = {
+                    1744 = { empty = yes }
+                }
+                1744 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+            }
+			random_owned = {
+                limit = {
+                    1741 = { empty = yes }
+                }
+                1741 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+            }
+			set_country_flag = AFR_take_fezzan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

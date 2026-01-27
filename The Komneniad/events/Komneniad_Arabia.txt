@@ -445,7 +445,7 @@ country_event = {
         name = "text"
 		YEM_1412 = { add_core = THIS }
 		OMA = {
-			any_owned_province = {
+			any_owned = {
 				limit = {
 					is_core = THIS
 					NOT = { province_id = 1412 }

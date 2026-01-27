@@ -9984,13 +9984,13 @@
 #Beryezovka (1000/250 POPS)
 2660 = {
     aristocrats = {
-        culture = inuit
+        culture = yakut
         religion = animist
         size = 2
     }
 
     clergymen = {
-        culture = inuit
+        culture = yakut
         religion = animist
         size = 5
     }
@@ -10002,13 +10002,13 @@
     }
 
     soldiers = {
-        culture = inuit
+        culture = yakut
         religion = animist
         size = 3
     }
 
     farmers = {
-        culture = inuit
+        culture = yakut
         religion = animist
         size = 215
     }
@@ -10016,33 +10016,39 @@
 #Beryezovka (1000/250 POPS)
 2620 = {
     aristocrats = {
-        culture = tungusic
+        culture = yakut
         religion = animist
         size = 2
     }
 
     clergymen = {
-        culture = tungusic
+        culture = yakut
         religion = animist
         size = 5
     }
 
     artisans = {
-        culture = tungusic
+        culture = yakut
         religion = animist
         size = 10
     }
 
     soldiers = {
-        culture = tungusic
+        culture = yakut
         religion = tengri
         size = 3
     }
 
     farmers = {
-        culture = tungusic
+        culture = yakut
         religion = animist
         size = 280
+    }
+	
+	farmers = {
+        culture = tungusic
+        religion = animist
+        size = 120
     }
 }
 #Aldanskiy Region (18000 POPS)
@@ -10107,25 +10113,31 @@
     farmers = {
         culture = tungusic
         religion = animist
-        size = 3975
+        size = 2975
+    }
+	
+	bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 15
     }
 
     clergymen = {
         culture = russian
         religion = orthodox
-        size = 45
+        size = 100
     }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 216
+        size = 550
     }
 
     farmers = {
         culture = russian
         religion = orthodox
-        size = 810
+        size = 2810
     }
 
     farmers = {
@@ -10162,25 +10174,25 @@
     farmers = {
         culture = tungusic
         religion = animist
-        size = 4173
+        size = 3150
     }
 
     clergymen = {
         culture = russian
         religion = orthodox
-        size = 15
+        size = 25
     }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 60
+        size = 75
     }
 
     farmers = {
         culture = russian
         religion = orthodox
-        size = 180
+        size = 680
     }
 
     farmers = {
@@ -10448,63 +10460,69 @@
     bureaucrats = {
         culture = russian
         religion = orthodox
-        size = 2
+        size = 25
     }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 45
+        size = 250
     }
 
     clergymen = {
         culture = russian
         religion = orthodox
-        size = 15
+        size = 110
     }
 
     soldiers = {
         culture = russian
         religion = orthodox
-        size = 8
+        size = 250
     }
 
     farmers = {
         culture = russian
         religion = orthodox
-        size = 680
+        size = 8780
     }
 }
 #Ayan (3000/750 POPS)
 2641 = {
     aristocrats = {
-        culture = tungusic
+        culture = yakut
         religion = animist
         size = 20
     }
 
     clergymen = {
-        culture = tungusic
+        culture = yakut
         religion = animist
         size = 20
     }
 
     artisans = {
-        culture = tungusic
+        culture = yakut
         religion = animist
         size = 50
     }
 
     soldiers = {
-        culture = tungusic
+        culture = yakut
         religion = tengri
         size = 5
     }
 
     farmers = {
+        culture = yakut
+        religion = animist
+        size = 2000
+    }
+	
+	farmers = {
         culture = tungusic
         religion = animist
-        size = 2500
+        size = 500
     }
 
     artisans = {
@@ -10554,7 +10572,25 @@
     farmers = {
         culture = tungusic
         religion = animist
-        size = 1380
+        size = 1260
+    }
+	
+	clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 40
+    }
+
+    artisans = {
+        culture = russian
+        religion = orthodox
+        size = 75
+    }
+	
+	farmers = {
+        culture = russian
+        religion = orthodox
+        size = 850
     }
 }
 #Kamchatka Region (10000)
@@ -10588,31 +10624,31 @@
     bureaucrats = {
         culture = russian
         religion = orthodox
-        size = 3
+        size = 10
     }
 
     clergymen = {
         culture = russian
         religion = orthodox
-        size = 4
+        size = 40
     }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 40
+        size = 90
     }
 
     soldiers = {
         culture = russian
         religion = orthodox
-        size = 3
+        size = 100
     }
 
     farmers = {
         culture = russian
         religion = orthodox
-        size = 660
+        size = 2660
     }
 }
 3676 = {
@@ -10707,6 +10743,24 @@
         religion = animist
         size = 54
     }
+	
+	clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 5
+    }
+	
+	artisans = {
+        culture = russian
+        religion = orthodox
+        size = 15
+    }
+	
+	farmers = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
 }
 #Korf/Tilichiki (1000/250 POPS)
 2616 = {
@@ -10738,6 +10792,24 @@
         culture = inuit
         religion = animist
         size = 276
+    }
+	
+	clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 5
+    }
+	
+	artisans = {
+        culture = russian
+        religion = orthodox
+        size = 15
+    }
+	
+	farmers = {
+        culture = russian
+        religion = orthodox
+        size = 50
     }
 }
 #Palana/Ossora (1000/250 POPS)
@@ -10771,6 +10843,24 @@
         religion = animist
         size = 230
     }
+	
+	clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 10
+    }
+	
+	artisans = {
+        culture = russian
+        religion = orthodox
+        size = 25
+    }
+	
+	farmers = {
+        culture = russian
+        religion = orthodox
+        size = 120
+    }
 }
 #Yevensk (2000/500 POPS) => Gizhiga
 1073 = {
@@ -10792,16 +10882,10 @@
         size = 50
     }
 
-    soldiers = {
-        culture = tungusic
-        religion = tengri
-        size = 30
-    }
-
     farmers = {
         culture = inuit
         religion = animist
-        size = 380
+        size = 280
     }
 
     clergymen = {
@@ -10811,21 +10895,27 @@
     }
 
     artisans = {
-        culture = inuit
-        religion = animist
+        culture = russian
+        religion = orthodox
         size = 40
+    }
+	
+	farmers = {
+        culture = russian
+        religion = orthodox
+        size = 100
     }
 
     farmers = {
         culture = tungusic
         religion = animist
-        size = 440
+        size = 340
     }
-
-    farmers = {
-        culture = russian
-        religion = orthodox
-        size = 100
+	
+	soldiers = {
+        culture = tungusic
+        religion = tengri
+        size = 30
     }
 }
 #Chukotka Region (5800)
@@ -11980,7 +12070,7 @@
     farmers = {
         culture = tungusic
         religion = animist
-        size = 4830
+        size = 3800
     }
 
     clergymen = {
@@ -11998,31 +12088,31 @@
     farmers = {
         culture = russian
         religion = orthodox
-        size = 923
+        size = 1200
     }
 
     farmers = {
         culture = tungusic
         religion = orthodox
-        size = 1610
+        size = 1600
     }
 
     farmers = {
         culture = cossack
         religion = orthodox
-        size = 810
+        size = 800
     }
 
     clergymen = {
         culture = russian
         religion = orthodox
-        size = 54
+        size = 55
     }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 103
+        size = 100
     }
 }
 #Amur-Ussuri Region (1348000)
@@ -13018,5 +13108,42 @@
         culture = pontic
         religion = orthodox
         size = 17738
+    }
+}
+3682 = {
+    aristocrats = {
+        culture = yakut
+        religion = animist
+        size = 3
+    }
+
+    clergymen = {
+        culture = yakut
+        religion = animist
+        size = 3
+    }
+
+    artisans = {
+        culture = yakut
+        religion = animist
+        size = 10
+    }
+
+    soldiers = {
+        culture = yakut
+        religion = animist
+        size = 5
+    }
+
+    farmers = {
+        culture = yakut
+        religion = animist
+        size = 150
+    }
+	
+	farmers = {
+        culture = tungusic
+        religion = animist
+        size = 75
     }
 }

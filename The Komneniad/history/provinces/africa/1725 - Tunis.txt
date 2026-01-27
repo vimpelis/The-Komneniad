@@ -1,8 +1,7 @@
-owner = SIC
-controller = SIC
-add_core = SIC
-trade_goods = grain
+owner = AFR
+controller = AFR
+add_core = AFR
+add_core = TRI
+trade_goods = fruit
 life_rating = 35
-terrain = tunis
-naval_base = 1
-add_core = TUN
+terrain = hills

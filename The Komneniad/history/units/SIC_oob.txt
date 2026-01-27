@@ -1,5 +1,14 @@
+leader = {
+    name = "Carlo II"
+    picture = european_general_35
+    date = 1835.1.1
+    type = land
+    personality = defence_2.1
+    background = attack_minus_1.1
+}
+
 army = {
-    name = "1st Army"
+    name = "Esercito Carlista"
     location = 762
 	regiment = {
         name = "1st Infantry Regiment"
@@ -9,27 +18,22 @@ army = {
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 764
+        home = 762
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 765
+        home = 764
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 766
+        home = 764
     }
-}
-
-army = {
-    name = "Army of the Kingdom of Africa"
-    location = 1725
 	regiment = {
-        name = "1st Infantry Regiment"
-        type = infantry
-        home = 1725
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 763
     }
 }
 
@@ -38,12 +42,12 @@ navy = {
     location = 762
 
     ship = {
-        name = "Regina Isabella"
+        name = "Isabella"
         type = frigate
     }
 
     ship = {
-        name = "Principe Carlo"
+        name = "Il Re"
         type = frigate
     }
 
@@ -66,10 +70,4 @@ navy = {
         name = "2a Squadrone Transporti"
         type = clipper_transport
     }
-
-    ship = {
-        name = "3a Squadrone Transporti"
-        type = clipper_transport
-    }
-
 }

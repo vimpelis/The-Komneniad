@@ -1,9 +1,8 @@
-owner = SIC
-controller = SIC
-add_core = SIC
+owner = AFR
+controller = AFR
+add_core = AFR
 add_core = TRI
 trade_goods = fruit
 life_rating = 35
-terrain = tripoli
+terrain = urban
 naval_base = 1
-add_core = TUN

@@ -1,6 +1,7 @@
-owner = TUN
-controller = TUN
-add_core = TUN
+owner = AFR
+controller = AFR
+add_core = AFR
+add_core = TRI
 trade_goods = fish
 life_rating = 35
-terrain = gabes
+terrain = coastal_desert

@@ -216,7 +216,7 @@
 }
 5 = {
     farmers = {
-        culture = native_american_minor
+        culture = inuit
         religion = animist
         size = 200
     }

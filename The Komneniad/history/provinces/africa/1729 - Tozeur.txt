@@ -1,5 +1,4 @@
-owner = TUN
-controller = TUN
-add_core = TUN
+add_core = TRI
+add_core = AFR
 trade_goods = wool
-life_rating = 10
+life_rating = 15

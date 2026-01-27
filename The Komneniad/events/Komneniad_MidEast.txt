@@ -1321,3 +1321,40 @@ country_event = {
 		900 = { remove_core = THIS }
 	}
 }
+
+country_event = {
+    id = 178042
+    title = "Conquest of Cyrenaica"
+    desc = "178042DESC"
+    picture = "cyrenaica_colonization"
+
+    trigger = {
+		owns = 1735
+		OR = {
+			AND = {
+				civilized = yes
+				invention = mission_to_civilize
+			}
+			AND = {
+				civilized = no
+				civilization_progress = 0.75
+			}
+			year = 1875
+		}
+		1738 = { empty = yes }
+		1754 = { empty = yes }
+    }
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Taming the desert is no easy task."
+		prestige = 5
+		1738 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		1754 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+	}
+}

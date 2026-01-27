@@ -1,6 +1,5 @@
-owner = TUN
-controller = TUN
-add_core = TUN
+owner = TRI
+controller = TRI
 add_core = TRI
 trade_goods = fish
 life_rating = 35

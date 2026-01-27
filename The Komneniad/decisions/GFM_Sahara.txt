@@ -1,10 +1,7 @@
 political_decisions = {
-
-    # HPM 0.4.5.2 port: upstream PR
     conquest_of_the_saharan_desert = {
         picture = form_the_ikhwan
         potential = {
-			NOT = { has_global_flag = colonial_railroading_disabled }
             has_global_flag = berlin_conference
             OR = {
                 AND = {
@@ -20,12 +17,24 @@ political_decisions = {
                     2609 = { empty = yes }
                 }
 				AND = {
+                    owns = 3639 #Africa
+                    1729 = { empty = yes }
+                }
+				AND = {
+                    owns = 1732 #Libya
+                    1744 = { empty = yes }
+                }
+				AND = {
                     owns = 1741 #Libya
-                    3668 = { empty = yes } #Libya
+                    3668 = { empty = yes }
                 }
                 AND = {
                     owns = 1761 #Egypt
                     1758 = { empty = yes }
+                }
+				AND = {
+                    owns = 1735 #Cyrenaica
+                    1738 = { empty = yes }
                 }
 				AND = {
                     owns = 1738 #Cyrenaica
@@ -36,11 +45,11 @@ political_decisions = {
                     2564 = { empty = yes }
                 }
                 AND = {
-                    owns = 1739 #Sudan
+                    owns = 1739 #Kordofan
                     3251 = { empty = yes }
                 }
                 AND = {
-                    owns = 1842 #Sudan
+                    owns = 1842 #Darfur
                     1817 = { empty = yes }
                 }
             }
@@ -111,66 +120,103 @@ political_decisions = {
 				1781 = { secede_province = THIS any_pop = { literacy = -0.99 } }
                 owner = { prestige = 1 }
             }
-            #Owner of Murzuk gets Wath, Libya
+			#Owner of Gafsa gets Tatawin
             random_owned = {
                 limit = {
                     owner = {
-                        owns = 3668
-                        1742 = { empty = yes }
-						3394 = { empty = yes }
+                        owns = 3639
+                        1729 = { empty = yes }
+                    }
+                }
+				owner = {
+					1729 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+					prestige = 1
+				}
+            }
+			#Owner of Garian gets Gadames
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1732
+                        1744 = { empty = yes }
                         NOT = { has_global_flag = libya_organized }
                     }
                 }
 				owner = {
-					1742 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
-					3394 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
+					1744 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
             }
-            #Owner of Murzuk gets Wath, Libya (LBY created)
+            #Owner of Garian gets Gadames (LBY created)
             random_owned = {
                 limit = {
                     owner = {
-                        owns = 3668
-                        1742 = { empty = yes }
-						3394 = { empty = yes }
+                        owns = 1732
+                        1744 = { empty = yes }
                         has_global_flag = libya_organized
                     }
                 }
 				owner = {
-					1742 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
-					3394 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
+					1744 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
             }
-            #Owner of Murzuk gets Wath, Libya
+			#Owner of Bonjol gets Sebha
             random_owned = {
                 limit = {
                     owner = {
-                        owns = 1741
-                        3668 = { empty = yes }
+                        owns = 1740
+                        1741 = { empty = yes }
                         NOT = { has_global_flag = libya_organized }
                     }
                 }
 				owner = {
-					3668 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
-					3394 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
-					1742 = { secede_province = THIS add_core = TRI any_pop = { literacy = -0.99 } }
+					1741 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
             }
-            #Owner of Murzuk gets Wath, Libya (LBY created)
+            #Owner of Bonjol gets Sebha (LBY created)
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1740
+                        1741 = { empty = yes }
+                        has_global_flag = libya_organized
+                    }
+                }
+				owner = {
+					1741 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
+					prestige = 1
+				}
+            }
+            #Owner of Sebha gets Murzuk
             random_owned = {
                 limit = {
                     owner = {
                         owns = 1741
                         3668 = { empty = yes }
+						1742 = { empty = yes }
+                        NOT = { has_global_flag = libya_organized }
+                    }
+                }
+				owner = {
+					3668 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+					1742 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+					prestige = 1
+				}
+            }
+            #Owner of Sebha gets Murzuk (LBY created)
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1741
+                        3668 = { empty = yes }
+						1742 = { empty = yes }
                         has_global_flag = libya_organized
                     }
                 }
 				owner = {
 					3668 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
-					3394 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					1742 = { secede_province = THIS add_core = LBY any_pop = { literacy = -0.99 } }
 					prestige = 1
 				}
@@ -186,7 +232,20 @@ political_decisions = {
                 1758 = { secede_province = THIS add_core = EGY any_pop = { literacy = -0.99 } }
                 owner = { prestige = 1 }
             }
-			#Owner of 1738 gets al-Jawf, Cyrenaica
+			#Owner of Benghazi gets al-Jaghbub, Cyrenaica
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1735
+                        1738 = { empty = yes }
+                        1754 = { empty = yes }
+                    }
+                }
+                1738 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                1754 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                owner = { prestige = 1 }
+            }
+			#Owner of al-Jaghbub gets al-Jawf, Cyrenaica
             random_owned = {
                 limit = {
                     owner = {
@@ -194,7 +253,7 @@ political_decisions = {
                         2585 = { empty = yes }
                     }
                 }
-                2585 = { secede_province = THIS add_core = EGY any_pop = { literacy = -0.99 } }
+                2585 = { secede_province = THIS any_pop = { literacy = -0.99 } }
                 owner = { prestige = 1 }
             }
             #Owner of Dongola gets Salima, Sudan
@@ -208,7 +267,7 @@ political_decisions = {
                 2564 = { secede_province = THIS add_core = SUD any_pop = { literacy = -0.99 } }
                 owner = { prestige = 1 }
             }
-            #Owner of al-Fula gets Abu Uruq, Sudan
+            #Owner of al-Fula gets Sowdari, Sudan
             random_owned = {
                 limit = {
                     owner = {
@@ -219,7 +278,7 @@ political_decisions = {
                 3251 = { secede_province = THIS any_pop = { literacy = -0.99 } }
                 owner = { prestige = 1 }
             }
-            #Owner of Junaynah gets Pulicat, Sudan
+            #Owner of Junaynah gets Mellit, Sudan
             random_owned = {
                 limit = {
                     owner = {
@@ -228,41 +287,6 @@ political_decisions = {
                     }
                 }
                 1817 = { secede_province = THIS any_pop = { literacy = -0.99 } }
-                owner = { prestige = 1 }
-            }
-            #Mellit is tied to Darfur which is often conquered after someone bordergorishly already colonized it
-            random_owned = {
-                limit = {
-                    owner = {
-                        owns = 2564
-						owns = 1739
-                        1817 = { empty = yes }
-                    }
-                }
-                1817 = { secede_province = THIS any_pop = { literacy = -0.99 } }
-                owner = { prestige = 1 }
-            }
-            random_owned = {
-                limit = { owner = { 1741 = { owned_by = THIS is_core = THIS } } }
-                1742 = { add_core = THIS }
-            }
-            random_owned = {
-                limit = { owner = { 1741 = { owned_by = THIS is_core = THIS } } }
-                3668 = { add_core = THIS }
-				3394 = { add_core = THIS }
-            }
-            random_owned = {
-                limit = { owner = { 1738 = { owned_by = THIS is_core = THIS } } }
-                2585 = { add_core = THIS add_core = CYR }
-            }
-            random_owned = {
-                limit = { owner = { 1761 = { owned_by = THIS is_core = THIS } } }
-                1758 = { add_core = THIS }
-                owner = { prestige = 1 }
-            }
-            random_owned = {
-                limit = { owner = { 1835 = { owned_by = THIS is_core = THIS } } }
-                2564 = { add_core = THIS }
                 owner = { prestige = 1 }
             }
         }

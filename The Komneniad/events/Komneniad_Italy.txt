@@ -572,24 +572,37 @@ country_event = {
 
     option = {
         name = "Long live the Buonapartes!"
-		if = {
+		random_owned = {
 			limit = {
-				ITA = { government = absolute_monarchy }
+				owner = { government = absolute_monarchy }
 			}
-			ITA = { government = absolute_empire }
+			owner = { government = absolute_empire }
 		}
-		if = {
+		random_owned = {
 			limit = {
-				ITA = { government = prussian_constitutionalism }
+				owner = { government = prussian_constitutionalism }
 			}
-			ITA = { government = semi_constitutional_empire }
+			owner = { government = semi_constitutional_empire }
 		}
-		if = {
+		random_owned = {
 			limit = {
-				ITA = { government = hms_government }
+				owner = { government = hms_government }
 			}
-			ITA = { government = constitutional_empire }
+			owner = { government = constitutional_empire }
 		}
+    }
+}
+
+country_event = {
+    id = 170017
+    title = "Hauteville Civil War"
+    desc = "170017DESC"
+    picture = "ita_map"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will reunite the Stato da Mar."
     }
 }
 

@@ -584,7 +584,7 @@ country_event = {
         name = "Are we really doomed to be a pushover?"
 		prestige = -20
 		badboy = -5
-		LOM = { any_core = { remove_core = ARE } }
+		LOM = { all_core = { remove_core = ARE } }
 		any_pop = { militancy = 1 consciousness = 1 }
 		set_country_flag = ARE_defeat_in_italy
     }

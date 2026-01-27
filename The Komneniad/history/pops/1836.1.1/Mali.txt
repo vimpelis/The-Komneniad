@@ -1257,31 +1257,31 @@
     }
 
     aristocrats = {
-        culture = maghrebi
+        culture = maures
         religion = sunni
         size = 25
     }
 
     clergymen = {
-        culture = maghrebi
+        culture = maures
         religion = sunni
         size = 50
     }
 
     artisans = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 800
     }
@@ -1315,37 +1315,37 @@
     farmers = {
         culture = tuareg
         religion = sunni
-        size = 3500
+        size = 2800
     }
 
     aristocrats = {
-        culture = maghrebi
+        culture = maures
         religion = sunni
         size = 50
     }
 
     clergymen = {
-        culture = maghrebi
+        culture = maures
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 200
     }
 
     soldiers = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = bedouin
+        culture = maures
         religion = sunni
-        size = 600
+        size = 1500
     }
 
 }

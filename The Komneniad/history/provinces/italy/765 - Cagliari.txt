@@ -1,6 +1,6 @@
-owner = SIC
-controller = SIC
-add_core = SIC
+owner = AFR
+controller = AFR
+add_core = AFR
 add_core = SRD
 add_core = ITA
 trade_goods = coal
@@ -15,4 +15,4 @@ life_rating = 35 # state_building = {
 # building = glass_factory
 # upgrade = yes
 # }
-terrain = cagliari
+terrain = farmlands

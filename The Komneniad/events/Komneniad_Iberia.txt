@@ -30,38 +30,17 @@ country_event = {
     }
 }
 
-#ADU loses Bechar if it doesn't control Tlemcen state (for pretty borders)
+#unused
 country_event = {
     id = 150002
-    title = "Bechar slips from our grasp!"
+    title = "text"
     desc = "150002DESC"
 	picture = "iberia_map"
 
-    trigger = {
-		tag = ADU
-        owns = 1698
-		owns = 1720
-		NOT = {
-			owns = 1697
-			owns = 1715
-			owns = 1713
-			owns = 1716
-			owns = 1718
-			owns = 1711
-		}
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 30 }
+    is_triggered_only = yes
 
     option = {
-        name = "What a humiliation."
-		prestige = -5
-		1720 = {
-			remove_core = ADU
-			secede_province = ZZZ
-		}
+        name = "text"
     }
 }
 

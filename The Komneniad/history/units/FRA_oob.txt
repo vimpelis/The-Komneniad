@@ -37,9 +37,8 @@ LOM = {
     value = 25
 }
 
-SIC = {
-    value = 30
-}
+SIC = { value = -30 }
+AFR = { value = 30 }
 
 CLT = {
     value = 20

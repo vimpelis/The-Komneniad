@@ -1,7 +1,7 @@
 add_core = BOH
 trade_goods = coal
 life_rating = 35
-terrain = budweis
+terrain = hills
 owner = ZPD
 controller = ZPD
 add_core = ZPD

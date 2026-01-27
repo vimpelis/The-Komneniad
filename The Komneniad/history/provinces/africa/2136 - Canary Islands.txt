@@ -2,6 +2,6 @@ owner = ADU
 controller = ADU
 add_core = ADU
 trade_goods = dye
-terrain = tenerife
+terrain = small_island
 life_rating = 35
 naval_base = 1

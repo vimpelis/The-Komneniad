@@ -1,7 +1,7 @@
-owner = SIC
-controller = SIC
-add_core = SIC
+owner = AFR
+controller = AFR
+add_core = AFR
+add_core = TRI
 trade_goods = fruit
-terrain = kairouan
+terrain = semidesert
 life_rating = 35
-add_core = TUN

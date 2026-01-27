@@ -1,0 +1,118 @@
+leader = {
+    name = "Francesco III"
+    picture = european_general_28
+    date = 1835.1.1
+    type = land
+    personality = defence_1.1
+    background = attack_2.1
+}
+
+army = {
+    name = "Esercito di Regno di Africa"
+    location = 1709
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1709
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1709
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 765
+    }
+	regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 766
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 1726
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1721
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1708
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 1727
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 1730
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 1709
+
+    ship = {
+        name = "Tunisi"
+        type = manowar
+    }
+	
+	ship = {
+        name = "Sardegna"
+        type = frigate
+    }
+
+    ship = {
+        name = "Santo Giovanni"
+        type = frigate
+    }
+
+    ship = {
+        name = "Pericoloso"
+        type = frigate
+    }
+
+    ship = {
+        name = "Belgrano"
+        type = frigate
+    }
+	
+	ship = {
+        name = "Romagnolo"
+        type = frigate
+    }
+
+    ship = {
+        name = "1a Squadrone Transporti"
+        type = clipper_transport
+    }
+
+    ship = {
+        name = "2a Squadrone Transporti"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "3a Squadrone Transporti"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "4a Squadrone Transporti"
+        type = clipper_transport
+    }
+	
+	ship = {
+        name = "5a Squadrone Transporti"
+        type = clipper_transport
+    }
+}

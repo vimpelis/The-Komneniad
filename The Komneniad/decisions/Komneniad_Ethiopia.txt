@@ -539,10 +539,10 @@ political_decisions = {
 		allow = {
 			war = no
 			civilized = yes
-			treasury = 20000
+			money = 20000
 		}
 		effect = {
-			money = -20000
+			treasury = -20000
 			remove_country_modifier = ETH_medium_modf
 			remove_country_modifier = ETH_high_modf
 			remove_country_modifier = ETH_veryhigh_modf

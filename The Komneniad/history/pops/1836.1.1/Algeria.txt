@@ -305,89 +305,23 @@
         religion = sunni
         size = 19200
     }
-
-    clergymen = {
-        culture = berber
-        religion = sunni
-        size = 10
-    }
-
-    farmers = {
-        culture = berber
-        religion = sunni
-        size = 925
-    }
-
-    farmers = {
-        culture = sephardic
-        religion = jewish
-        size = 500
-    }
-
-    clergymen = {
-        culture = sephardic
-        religion = jewish
-        size = 25
-    }
-
-    aristocrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 24
-    }
-
-    bureaucrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 48
-    }
-
-    clergymen = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 594
-    }
-
-    soldiers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 1254
-    }
-
-    farmers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 190
-    }
-
-    farmers = {
-        culture = sephardic
-        religion = jewish
-        size = 200
-    }
-
-    clergymen = {
-        culture = sephardic
-        religion = jewish
-        size = 100
-    }
-
-    clergymen = {
+	
+	clergymen = {
         culture = maghrebi
         religion = sunni
-        size = 300
+        size = 150
     }
 
     artisans = {
         culture = maghrebi
         religion = sunni
-        size = 4500
+        size = 3500
     }
 
     farmers = {
         culture = maghrebi
         religion = sunni
-        size = 27200
+        size = 18200
     }
 
     clergymen = {
@@ -406,6 +340,30 @@
         culture = berber
         religion = sunni
         size = 14675
+    }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 500
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 25
+    }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 200
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
     }
 
     aristocrats = {
@@ -442,6 +400,36 @@
         culture = sephardic
         religion = jewish
         size = 600
+    }
+	
+	aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 400
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 550
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 1400
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 1250
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 21000
     }
 }
 #Djidjelli (Formerly Chenachene)
@@ -787,7 +775,6 @@
     }
 }
 #Oranais Region (577600)
-#French in 1836 :
 #Oran (108000/27000 POPS)
 ######Jews
 ########
@@ -1129,36 +1116,6 @@
         size = 100
     }
 
-    aristocrats = {
-        culture = french
-        religion = catholic
-        size = 0
-    }
-
-    bureaucrats = {
-        culture = french
-        religion = catholic
-        size = 0
-    }
-
-    clergymen = {
-        culture = french
-        religion = catholic
-        size = 0
-    }
-
-    farmers = {
-        culture = french
-        religion = catholic
-        size = 1
-    }
-
-    soldiers = {
-        culture = french
-        religion = catholic
-        size = 0
-    }
-
     slaves = {
         culture = songhai
         religion = sunni
@@ -1193,36 +1150,6 @@
         culture = lower_burgundian
         religion = catholic
         size = 85
-    }
-
-    aristocrats = {
-        culture = french
-        religion = reformed
-        size = 1
-    }
-
-    bureaucrats = {
-        culture = french
-        religion = reformed
-        size = 1
-    }
-
-    clergymen = {
-        culture = french
-        religion = reformed
-        size = 6
-    }
-
-    farmers = {
-        culture = french
-        religion = reformed
-        size = 9
-    }
-
-    soldiers = {
-        culture = french
-        religion = reformed
-        size = 4
     }
 }
 #Mascara (60000/15000 POPS)
@@ -1288,73 +1215,27 @@
     }
 }
 #Constantinois Region (344000)
-#Ruled by France 1836
-#Bone (68000/17000 POPS)
-1709 = {
-}
 #Ruled by Aljazair 1836
 #Constantine (176000/44000 POPS)
 ######Jews
 ########
 1708 = {
     aristocrats = {
-        culture = french
-        religion = catholic
-        size = 250
-    }
-
-    farmers = {
-        culture = french
-        religion = catholic
+        culture = maghrebi
+        religion = sunni
         size = 200
     }
 
-    aristocrats = {
-        culture = french
-        religion = catholic
-        size = 25
-    }
-
-    clergymen = {
-        culture = french
-        religion = catholic
-        size = 10
-    }
-
-    soldiers = {
-        culture = french
-        religion = catholic
-        size = 100
-    }
-
-    aristocrats = {
-        culture = maghrebi
-        religion = sunni
-        size = 250
-    }
-
-    officers = {
-        culture = maghrebi
-        religion = sunni
-        size = 50
-    }
-
-    bureaucrats = {
-        culture = maghrebi
-        religion = sunni
-        size = 75
-    }
-
     clergymen = {
         culture = maghrebi
         religion = sunni
-        size = 213
+        size = 200
     }
 
     artisans = {
         culture = maghrebi
         religion = sunni
-        size = 1100
+        size = 900
     }
 
     soldiers = {
@@ -1366,7 +1247,7 @@
     farmers = {
         culture = maghrebi
         religion = sunni
-        size = 25312
+        size = 18300
     }
 
     aristocrats = {
@@ -1402,7 +1283,7 @@
     farmers = {
         culture = berber
         religion = sunni
-        size = 25550
+        size = 20550
     }
 
     aristocrats = {
@@ -1439,6 +1320,42 @@
         culture = sephardic
         religion = jewish
         size = 300
+    }
+	
+	aristocrats = {
+        culture = south_italian
+        religion = catholic
+        size = 200
+    }
+
+    bureaucrats = {
+        culture = south_italian
+        religion = catholic
+        size = 75
+    }
+
+    clergymen = {
+        culture = south_italian
+        religion = catholic
+        size = 225
+    }
+
+    artisans = {
+        culture = south_italian
+        religion = catholic
+        size = 680
+    }
+
+    soldiers = {
+        culture = south_italian
+        religion = catholic
+        size = 350
+    }
+
+    farmers = {
+        culture = south_italian
+        religion = catholic
+        size = 7800
     }
 }
 #Biskra (100000/25000 POPS)
@@ -1829,13 +1746,13 @@
     farmers = {
         culture = berber
         religion = sunni
-        size = 1300
+        size = 1700
     }
 
     farmers = {
-        culture = maures
+        culture = bedouin
         religion = sunni
-        size = 3300
+        size = 2800
     }
 }
 #Illizi (8000/2000 POPS)
@@ -1920,36 +1837,6 @@
         size = 1810
     }
 }
-#Hoggar Region (40000)
-#uncolonized in 1836
-#In Guezzam (8000/2000 POPS)
-#1721 = {
-#    aristocrats = {
-#        culture = tuareg
-#        religion = sunni
-#        size = 25
-#    }
-#
-#    clergymen = {
-#        culture = tuareg
-#        religion = sunni
-#        size = 15
-#    }
-#
-#
-#    soldiers = {
-#        culture = tuareg
-#        religion = sunni
-#        size = 65
-#    }
-#
-#    farmers = {
-#        culture = tuareg
-#        religion = sunni
-#        size = 1900
-#    }
-#}
-#Tin Zawatene (16000/4000 POPS)
 1722 = {
 }
 3430 = {
@@ -1974,12 +1861,12 @@
     farmers = {
         culture = maures
         religion = sunni
-        size = 5000
+        size = 3000
     }
 
     farmers = {
         culture = berber
         religion = sunni
-        size = 1800
+        size = 3800
     }
 }

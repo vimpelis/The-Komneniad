@@ -1,7 +1,4 @@
-owner = TUN
-controller = TUN
-add_core = TUN
 add_core = TRI
 trade_goods = wool
 terrain = desert_massif
-life_rating = 10
+life_rating = 15

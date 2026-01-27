@@ -3,4 +3,4 @@ controller = BIR
 add_core = BIR
 trade_goods = wool
 life_rating = 37
-terrain = cusco
+terrain = mountain

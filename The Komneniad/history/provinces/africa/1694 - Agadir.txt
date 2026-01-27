@@ -3,5 +3,5 @@ controller = ADU
 add_core = ADU
 trade_goods = fish
 life_rating = 32
-terrain = agadir
+terrain = coastal_desert
 add_core = MOR

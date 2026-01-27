@@ -1162,31 +1162,31 @@
 #Tarfaya (36000/9000 POPS)
 1696 = {
     aristocrats = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 262
     }
 
     clergymen = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 393
     }
 
     artisans = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 78
     }
 
     soldiers = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 393
     }
 
     farmers = {
-        culture = bedouin
+        culture = maures
         religion = sunni
         size = 1391
     }

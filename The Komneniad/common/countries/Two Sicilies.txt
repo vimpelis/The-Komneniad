@@ -1,4 +1,4 @@
-color = { 162  176  160 }
+color = { 160  175  160 }
 graphical_culture = SicilianGC
 
 party = {

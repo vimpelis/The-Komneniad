@@ -4,5 +4,5 @@ add_core = ADU
 trade_goods = cotton
 life_rating = 35
 naval_base = 1
-terrain = oran
+terrain = hills
 add_core = MOR

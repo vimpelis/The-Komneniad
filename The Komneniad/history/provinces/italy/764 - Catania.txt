@@ -1,8 +1,9 @@
 owner = SIC
 controller = SIC
 add_core = SIC
+add_core = AFR
 add_core = ITA
 trade_goods = sulphur
-terrain = catania
+terrain = hills
 life_rating = 40
 naval_base = 1

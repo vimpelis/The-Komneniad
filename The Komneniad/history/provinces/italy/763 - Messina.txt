@@ -1,6 +1,7 @@
 owner = SIC
 controller = SIC
 add_core = SIC
+add_core = AFR
 add_core = ITA
 trade_goods = sulphur
 life_rating = 40 # state_building = {
@@ -8,4 +9,4 @@ life_rating = 40 # state_building = {
 # building = winery
 # upgrade = yes
 # }
-terrain = messina
+terrain = mountain
