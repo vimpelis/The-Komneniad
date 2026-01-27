@@ -808,3 +808,7 @@ AFR_prussian_constitutionalism;Kingdom of Africa;;;;;;;;;;;;;
 AFR_democracy;Republic of Africa;;;;;;;;;;;;;
 AFR_proletarian_dictatorship;African People's Republic;;;;;;;;;;;;;
 AFR_fascist_dictatorship;African National State;;;;;;;;;;;;;
+NORMAL_WAR_RESTORE_ORDER_NAME_AFR_SIC;Hauteville Civil War;;;;;;;;;;;;;
+AGRESSION_WAR_RESTORE_ORDER_NAME_AFR_SIC;Hauteville Civil War;;;;;;;;;;;;;
+NORMAL_WAR_RESTORE_ORDER_NAME_SIC_AFR;Hauteville Civil War;;;;;;;;;;;;;
+AGRESSION_WAR_RESTORE_ORDER_NAME_SIC_AFR;Hauteville Civil War;;;;;;;;;;;;;
