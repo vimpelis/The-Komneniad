@@ -7565,8 +7565,8 @@ MEX_conservative;Partido Conservador;Partido Conservador;Partido Conservador;;Pa
 MEX_liberal;Partido Liberal;Partido Liberal;Partido Liberal;;Partido Liberal;;;;;;;;;
 MEX_radical;Partido Federalista;Partido Federalista;Partido Federalista;;Partido Federalista;;;;;;;;;
 MEX_conservative_2;Partido Moderado Liberal;Partido Moderado Liberal;Partido Moderado Liberal;;Partido Moderado Liberal;;;;;;;;;
-MEX_liberal_2;Partido Radical Liberal;Partido Radical Liberal;Partido Radical Liberal;;Partido Radical Liberal;;;;;;;;;
-MEX_liberal_3;Partido Progresista;Partido Progresista;Partido Progresista;;Partido Progresista;;;;;;;;;
+MEX_liberal_2;Partido Progresista;Partido Radical Liberal;Partido Radical Liberal;;Partido Radical Liberal;;;;;;;;;
+MEX_liberal_3;Partido Radical Liberal;Partido Progresista;Partido Progresista;;Partido Progresista;;;;;;;;;
 MEX_conservative_3;Partido Constitucionalista;Partido Constitucionalista;Partido Constitucionalista;;Partido Constitucionalista;;;;;;;;;
 MEX_liberal_4;Partido Antireelecionista;Partido Antireelecionista;Partido Antireelecionista;;Partido Antireelecionista;;;;;;;;;
 MEX_reactionary;Partido Imperialista;Partido Imperialista;Partido Imperialista;;Partido Imperialista;;;;;;;;;

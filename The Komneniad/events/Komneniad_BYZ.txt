@@ -1101,8 +1101,14 @@ country_event = {
     trigger = {
 		year = 1848
         OR = {
-			has_country_flag = greek_path
-			has_country_flag = roman_path
+			AND = {
+				tag = GRE
+				has_country_flag = greek_path
+			}
+			AND = {
+				tag = BYZ
+				has_country_flag = roman_path
+			}
 		}
 		any_owned_province = {
 			OR = {
@@ -1312,8 +1318,14 @@ country_event = {
 
     trigger = {
         OR = {
-			has_country_flag = greek_path
-			has_country_flag = roman_path
+			AND = {
+				tag = GRE
+				has_country_flag = greek_path
+			}
+			AND = {
+				tag = BYZ
+				has_country_flag = roman_path
+			}
 		}
 		has_global_flag = BYZ_slavic_revolt
 		NOT = { exists = SER }
@@ -1350,10 +1362,17 @@ country_event = {
 
     trigger = {
         OR = {
-			has_country_flag = greek_path
-			has_country_flag = roman_path
+			AND = {
+				tag = GRE
+				has_country_flag = greek_path
+			}
+			AND = {
+				tag = BYZ
+				has_country_flag = roman_path
+			}
 		}
 		has_global_flag = BYZ_slavic_revolt
+		NOT = { has_country_flag = BYZ_slavic_revolt_victory }
 		OR = {
 			AND = {
 				exists = SER
