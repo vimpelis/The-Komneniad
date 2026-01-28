@@ -1,3 +1,9 @@
+AFR = { value = -200 }
+TRI = { value = -100 }
+BYZ = { value = -50 }
+ARE = { value = 50 }
+ADU = { value = -100 }
+
 leader = {
     name = "Carlo II"
     picture = european_general_35

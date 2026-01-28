@@ -1,0 +1,38 @@
+AFR = { value = -200 }
+SIC = { value = -100 }
+BYZ = { value = -50 }
+EGY = { value = -100 }
+ADU = { value = 100 }
+
+leader = {
+    name = "Ahmad II Muradid"
+    picture = arab_general_1
+    date = 1824.1.1
+    type = land
+    personality = defence_minus_1.1
+    background = attack_2.1
+}
+
+army = {
+    name = "Muradid Army"
+    location = 1734
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1734
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1734
+    }
+}
+
+navy = {
+    name = "Muradid Corsairs"
+    location = 1734
+	ship = {
+        name = "Ifriqiya"
+        type = frigate
+    }
+}

@@ -23,9 +23,7 @@ CAT = {
 	level = 1
 }
 
-ADU = {
-    value = -150
-}
+ADU = { value = -150 }
 
 LOR = {
     value = 50

@@ -477,4 +477,60 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	TRI_return_to_tripoli = {
+		picture = map_tripoli
+		potential = {
+			tag = TRI
+			government = absolute_monarchy
+			NOT = { has_country_flag = TRI_return_to_tripoli }
+		}
+		allow = {
+			war = no
+			owns = 1731
+			is_vassal = no
+		}
+		effect = {
+			prestige = 10
+			capital = 1731
+			research_points = 10000
+			economic_reform = yes_admin_reform
+			set_country_flag = hidden_tooltip
+				random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+					owner = {
+						government = absolute_empire
+					}
+				}
+			clr_country_flag = hidden_tooltip
+			rename_muradid_tt = {}
+			set_country_flag = TRI_return_to_tripoli
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	TRI_form_ifriqiya = {
+		picture = tunisia_map
+		potential = {
+			tag = TRI
+			NOT = { exists = TUN }
+		}
+		allow = {
+			war = no
+			is_vassal = no
+			all_core = { OR = { owned_by = THIS empty = yes } }
+		}
+		effect = {
+			prestige = 25
+			research_points = 10000
+			change_tag = TUN
+			capital = 1709
+			TRI_1735 = { add_core = TUN }
+			TUN_1726 = { remove_core = TRI }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

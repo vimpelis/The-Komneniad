@@ -1,3 +1,9 @@
+SIC = { value = -200 }
+TRI = { value = -200 }
+BYZ = { value = -50 }
+ARE = { value = 50 }
+ADU = { value = -100 }
+
 leader = {
     name = "Francesco III"
     picture = european_general_28
