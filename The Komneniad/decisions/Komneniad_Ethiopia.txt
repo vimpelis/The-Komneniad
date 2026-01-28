@@ -454,23 +454,6 @@ political_decisions = {
 		}
 	}
 	
-	ETH_check_influence_level = {
-		picture = ETH_1
-		potential = {
-			tag = ETH
-			has_country_flag = ETH_long_regency
-		}
-		allow = {
-			year = 1937
-		}
-		effect = {
-			ETH_show_inf_lvl = {}
-		}
-		ai_will_do = {
-			factor = 0	
-		}
-	}
-	
 	ETH_5y_decrease_infl = {
 		picture = ETH_4
 		potential = {

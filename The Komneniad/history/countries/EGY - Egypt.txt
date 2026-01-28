@@ -7,8 +7,8 @@ religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.088
-non_state_culture_literacy = 0.01
+literacy = 0.085
+non_state_culture_literacy = 0.03
 is_releasable_vassal = no
 prestige = 5
 
@@ -63,6 +63,7 @@ foreign_artillery = yes_foreign_artillery
 foreign_weapons = yes_foreign_weapons
 monetary_reform = yes_monetary_reform
 admin_reform = yes_admin_reform
+education_reform = yes_education_reform
 
 #Technologies
 flintlock_rifles = 1

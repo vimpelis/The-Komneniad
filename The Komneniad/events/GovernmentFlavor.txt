@@ -8,6 +8,7 @@ country_event = {
     trigger = {
 		ai = no
 		NOT = { tag = BYZ }
+		NOT = { tag = ETH }
         OR = {
             government = absolute_monarchy
             government = prussian_constitutionalism

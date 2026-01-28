@@ -969,7 +969,7 @@ economic_reforms = {
             technology_cost = 12500
             civilization_progress_modifier = 0.15
 			
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } }
+            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } } }
 
             on_execute = {
                 effect = {
@@ -1005,7 +1005,7 @@ economic_reforms = {
             education_efficiency_modifier = 0.1
             civilization_progress_modifier = 0.25
 			
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } }
+            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } } }
 
             on_execute = {
                 effect = {
@@ -1045,7 +1045,7 @@ economic_reforms = {
             mine_rgo_eff = 0.25
             civilization_progress_modifier = 0.1
 			
-           allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } }
+           allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } } }
 
             on_execute = {
                 effect = {
@@ -1077,7 +1077,7 @@ economic_reforms = {
             administrative_efficiency_modifier = 0.1
             civilization_progress_modifier = 0.1
 			
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } }
+            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } } }
 
             on_execute = {
                 effect = {
@@ -1114,6 +1114,7 @@ economic_reforms = {
 			
             allow = {
                 OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes }
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
                 is_substate = no
             }
 
@@ -1173,7 +1174,7 @@ economic_reforms = {
             tax_efficiency = 0.05
             civilization_progress_modifier = 0.15
 			
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } }
+            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } } }
 
             on_execute = {
                 effect = {
@@ -1233,7 +1234,11 @@ economic_reforms = {
             mine_rgo_eff = 0.25
             civilization_progress_modifier = 0.1
 			
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = yes money = 2000 } }
+            allow = {
+				OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes }
+				OR = { ai = yes money = 2000 }
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
+			}
 
             on_execute = {
                 trigger = {
@@ -1278,7 +1283,11 @@ economic_reforms = {
         yes_firearms_production = {
             technology_cost = 16000
             civilization_progress_modifier = 0.15
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = yes money = 10000 } }
+            allow = {
+				OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes }
+				OR = { ai = yes money = 10000 }
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
+			}
 
             on_execute = {
                 effect = {
@@ -1314,7 +1323,11 @@ economic_reforms = {
         yes_pre_indust = {
             technology_cost = 18000
             civilization_progress_modifier = 0.2
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = yes money = 2000 } }
+            allow = {
+				OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes }
+				OR = { ai = yes money = 2000 }
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
+			}
 
             on_execute = {
                 trigger = { can_build_factory_in_capital_state = cement_factory # example, no trigger needed here
@@ -1351,7 +1364,11 @@ economic_reforms = {
         yes_industrial_construction = {
             technology_cost = 20000
             civilization_progress_modifier = 0.25
-            allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = yes money = 7000 } }
+            allow = {
+				OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes }
+				OR = { ai = yes money = 7000 }
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
+			}
 
             on_execute = {
                 effect = {
@@ -1397,6 +1414,7 @@ military_reforms = {
             research_points_on_conquer = 0.25
 
             allow = {
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
 			}
 
             on_execute = {
@@ -1432,6 +1450,7 @@ military_reforms = {
             civilization_progress_modifier = 0.05
 			
 			allow = {
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
 			}
 
             on_execute = {
@@ -1468,6 +1487,7 @@ military_reforms = {
             civilization_progress_modifier = 0.05
 			
             allow = {
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
 			}
 
             on_execute = {
@@ -1514,6 +1534,7 @@ military_reforms = {
             research_points_on_conquer = 0.25
 			
             allow = {
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
 			}
 
             on_execute = {
@@ -1551,6 +1572,7 @@ military_reforms = {
             civilization_progress_modifier = 0.05
             
 			allow = {
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
 			}
 
             on_execute = {
@@ -1595,6 +1617,7 @@ military_reforms = {
 					any_owned_province = { port = yes }
 					ai = yes
 				}
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
             }
 
             on_execute = {
@@ -1634,6 +1657,7 @@ military_reforms = {
 					any_owned_province = { port = yes }
 					ai = yes
 				}
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
             }
 
             on_execute = {
@@ -1673,6 +1697,7 @@ military_reforms = {
 					any_owned_province = { has_building = naval_base }
 					ai = yes
 				}
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
             }
 
             on_execute = {
@@ -1713,6 +1738,7 @@ military_reforms = {
 					any_owned_province = { port = yes }
 					ai = yes
 				}
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
             }
 
             on_execute = {
@@ -1746,6 +1772,10 @@ military_reforms = {
         yes_foreign_artillery = {
             technology_cost = 8500
             civilization_progress_modifier = 0.05
+			
+			allow = {
+				OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } }
+			}
 
             on_execute = {
                 effect = {

@@ -297,7 +297,8 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			badboy = 10
-			NAP = { all_core = { add_core = THIS } }
+			SIC_753 = { add_core = THIS }
+			SIC_754 = { add_core = THIS }
 			SIC = { all_core = { remove_core = SIC } }
 			SIC_763 = { add_core = SIC any_pop = { militancy = -3 consciousness = -3 } }
 			set_country_flag = AFR_victory_sicily
@@ -366,7 +367,8 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			badboy = 10
-			NAP = { all_core = { add_core = THIS } }
+			SIC_753 = { add_core = THIS }
+			SIC_754 = { add_core = THIS }
 			AFR = { all_core = { remove_core = AFR } }
 			TUN_1726 = { add_core = AFR any_pop = { militancy = -3 consciousness = -3 } }
 			1731 = { add_core = AFR any_pop = { militancy = -3 consciousness = -3 } }

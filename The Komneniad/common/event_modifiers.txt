@@ -5514,3 +5514,45 @@ impassable = {
 	pop_militancy_modifier = -1
     icon = 10
 }
+
+ETH_regency_lvl_1 = {
+	self_unciv_economic_modifier = 0.05
+	self_unciv_military_modifier = 0.05
+    icon = 4
+}
+
+ETH_regency_lvl_2 = {
+	self_unciv_economic_modifier = 0.1
+	self_unciv_military_modifier = 0.1
+    icon = 4
+}
+
+ETH_regency_lvl_3 = {
+	self_unciv_economic_modifier = 0.2
+	self_unciv_military_modifier = 0.2
+    icon = 4
+}
+
+ETH_regency_lvl_4 = {
+	self_unciv_economic_modifier = 0.3
+	self_unciv_military_modifier = 0.3
+    icon = 4
+}
+
+ETH_regency_lvl_5 = {
+	self_unciv_economic_modifier = 0.5
+	self_unciv_military_modifier = 0.5
+    icon = 4
+}
+
+ETH_regency_lvl_6 = {
+	self_unciv_economic_modifier = 0.7
+	self_unciv_military_modifier = 0.7
+    icon = 4
+}
+
+ETH_regency_lvl_7 = {
+	self_unciv_economic_modifier = 0.9
+	self_unciv_military_modifier = 0.9
+    icon = 4
+}
