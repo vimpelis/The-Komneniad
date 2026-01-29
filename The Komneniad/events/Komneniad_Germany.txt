@@ -232,6 +232,7 @@ country_event = {
 				OR = {
 					primary_culture = north_german
 					primary_culture = south_german
+					primary_culture = west_german
 				}
 				in_sphere = THIS
 			}
@@ -242,6 +243,7 @@ country_event = {
 				OR = {
 					primary_culture = north_german
 					primary_culture = south_german
+					primary_culture = west_german
 				}
 				NOT = { in_sphere = THIS }
 			}
@@ -312,6 +314,7 @@ country_event = {
 		OR = {
 			primary_culture = north_german
 			primary_culture = south_german
+			primary_culture = west_german
 		}
 		is_greater_power = yes
 		year = 1890
@@ -334,6 +337,9 @@ country_event = {
         name = "Long live Germany!"
 		badboy = 5
 		change_tag = GER
+		add_accepted_culture = west_german
+		add_accepted_culture = north_german
+		add_accepted_culture = south_german
 		government = hms_government
 		ruling_party_ideology = liberal
 		any_country = {
@@ -341,6 +347,7 @@ country_event = {
 				OR = {
 					primary_culture = north_german
 					primary_culture = south_german
+					primary_culture = west_german
 				}
 				OR = {
 					in_sphere = THIS
@@ -457,6 +464,7 @@ country_event = {
 				OR = {
 					primary_culture = north_german
 					primary_culture = south_german
+					primary_culture = west_german
 				}
 				part_of_sphere = no
 			}

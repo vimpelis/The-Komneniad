@@ -8,7 +8,7 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = "Not much of a lion, isn't it?"
+        name = "We will see what new ideas this age brings."
     }
 }
 

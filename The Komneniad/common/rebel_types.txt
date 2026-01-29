@@ -1332,27 +1332,6 @@ nationalist_rebels = {
                  }
              }
         }
-        # modifier = {
-            # factor = 0
-            # NOT = {
-                # location = {
-                    # any_core = {
-                        # is_cultural_union = no
-                        # OR = {
-                            # is_primary_culture = THIS
-                            # is_accepted_culture = THIS
-                        # }
-                        # exists = no
-                     # }
-                 # }
-             # }
-        # }
-        #modifier = {
-        #    factor = 0
-        #    NOT = {
-        #        country = { num_of_cities = 2 }
-        #    }
-        #}
         modifier = {
             factor = 1.01
             pop_majority_ideology = communist
@@ -3410,7 +3389,6 @@ separatist_rebels = {
     # The rebel type with the highest modifier for this pop gets picked
     spawn_chance = {
         factor = 3
-
         modifier = {
             factor = 0
             type = slaves
