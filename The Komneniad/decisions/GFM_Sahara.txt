@@ -52,6 +52,10 @@ political_decisions = {
                     owns = 1842 #Darfur
                     1817 = { empty = yes }
                 }
+				AND = {
+                    owns = 1794 #Mali
+                    1801 = { empty = yes }
+                }
             }
         }
 
@@ -289,6 +293,17 @@ political_decisions = {
                     }
                 }
                 1817 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                owner = { prestige = 1 }
+            }
+			#Owner of Bamako gets Nara, Mali
+            random_owned = {
+                limit = {
+                    owner = {
+                        owns = 1794
+                        1801 = { empty = yes }
+                    }
+                }
+                1801 = { secede_province = THIS any_pop = { literacy = -0.99 } }
                 owner = { prestige = 1 }
             }
         }

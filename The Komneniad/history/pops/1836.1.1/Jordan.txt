@@ -248,38 +248,6 @@
         size = 3725
     }
 }
-#Maan (28000/7000 POPS) #now part of Jordan
-911 = {
-    aristocrats = {
-        culture = bedouin
-        religion = sunni
-        size = 75
-    }
-
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 75
-    }
-
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 650
-    }
-
-    soldiers = {
-        culture = bedouin
-        religion = sunni
-        size = 100
-    }
-
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 4600
-    }
-}
 #Palestine Region (20000)  #see Israel-Palestine.txt for balance of region
 #under the rule of Egypt in 1836
 #Aqaba (20000/5000 POPS) #now part of Jordan

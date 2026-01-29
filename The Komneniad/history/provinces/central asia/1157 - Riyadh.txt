@@ -1,6 +1,6 @@
 owner = ARA
 controller = ARA
 trade_goods = wool
-life_rating = 32
-terrain = riyadh
+life_rating = 30
+terrain = semidesert
 add_core = ARA

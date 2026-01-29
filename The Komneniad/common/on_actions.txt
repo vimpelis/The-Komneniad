@@ -126,6 +126,9 @@ on_debtor_default_second =
 on_civilize =
 {
     100 = 90910
+    100 = 178040
+    100 = 178047
+    100 = 178048
 }
 
 on_my_factories_nationalized =

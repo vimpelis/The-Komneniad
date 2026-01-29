@@ -216,10 +216,10 @@ country_event = {
 		clr_country_flag = hidden_tooltip
 		###SMALL INCREASE FUNCTION END
 		add_accepted_culture = ethiopian_minor
-		1860 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
-		3591 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
-		3594 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
-		3596 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 } }
+		1860 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 literacy = 0.01 } }
+		3591 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 literacy = 0.01 } }
+		3594 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 literacy = 0.01 } }
+		3596 = { add_core = ETH secede_province = ETH any_pop = { literacy = -0.99 literacy = 0.01 } }
 		
     }
 }
@@ -244,6 +244,7 @@ country_event = {
 							value = 1
 						}
 					}
+					has_country_flag = ETH_long_regency
 				}
 			}
 			ETH = {
@@ -276,6 +277,7 @@ country_event = {
 							value = 3
 						}
 					}
+					has_country_flag = ETH_long_regency
 				}
 			}
 			ETH = {
@@ -308,6 +310,7 @@ country_event = {
 							value = 5
 						}
 					}
+					has_country_flag = ETH_long_regency
 				}
 			}
 			ETH = {
@@ -340,6 +343,7 @@ country_event = {
 							value = 7
 						}
 					}
+					has_country_flag = ETH_long_regency
 				}
 			}
 			ETH = {
@@ -372,6 +376,7 @@ country_event = {
 							value = 9
 						}
 					}
+					has_country_flag = ETH_long_regency
 				}
 			}
 			ETH = {
@@ -404,6 +409,7 @@ country_event = {
 							value = 11
 						}
 					}
+					has_country_flag = ETH_long_regency
 				}
 			}
 			ETH = {
@@ -430,6 +436,7 @@ country_event = {
 						which = ETH_regency_influence
 						value = 11
 					}
+					has_country_flag = ETH_long_regency
 				}
 			}
 			ETH = {
@@ -856,6 +863,7 @@ country_event = {
 		OR = {
 			year = 1875
 			medicine = 1
+			1847 = { empty = no }
 		}
     }
 

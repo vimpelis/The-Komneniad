@@ -114,8 +114,6 @@ acquire_state
 acquire_state_mid
 acquire_state_late
 acquire_any_state
-acquire_substate_region
-acquire_substate_core_region
 demand_concession_BC_casus_belli
 demand_concession_NI_casus_belli
 demand_concession_casus_belli
@@ -145,7 +143,6 @@ take_capital
 demand_concession_capital_late
 demand_concession_capital
 demand_concession_capital_early
-acquire_core_substate_region
 liberate_puppet
 cut_down_to_size_no_infamy
 liberate_puppet_no_infamy
@@ -6591,155 +6588,6 @@ install_communism = {
     }
 }
 
-# Gain control of Substate region
-acquire_substate_region = {
-    sprite_index = 6
-    is_triggered_only = yes
-    months = 12
-    crisis = no
-
-    construction_speed = 0.5
-
-    badboy_factor = 2.2
-    prestige_factor = 2
-    peace_cost_factor = 1
-    penalty_factor = 1
-
-    break_truce_prestige_factor = 1
-    break_truce_infamy_factor = 2
-    break_truce_militancy_factor = 2
-    truce_months = 48
-
-    good_relation_prestige_factor = 1
-    good_relation_infamy_factor = 1
-    good_relation_militancy_factor = 1
-
-    can_use = {
-        NOT = { is_our_vassal = THIS }
-        num_of_substates = 1 # if has any substate
-        THIS = { ai = no }
-        any_substate = {
-            OR = {
-                neighbour = THIS
-                AND = {
-                    THIS = { total_amount_of_ships = 5 }
-                    any_owned_province = { port = yes }
-                }
-            }
-            number_of_states = 1
-            any_owned_province = {
-                NOT = { is_core = THIS }
-                is_colonial = no
-            }
-        }
-    }
-
-    allowed_substate_regions = {
-        is_colonial = no
-        #owner = { NOT = { in_sphere = THIS } }
-        any_owned_province = {
-            NOT = { is_core = THIS }
-            is_colonial = no
-        }
-        OR = {
-            AND = {
-                THIS = { total_amount_of_ships = 5 }
-                any_owned_province = { port = yes }
-            }
-            any_owned_province = { any_neighbor_province = { owned_by = THIS } }
-        }
-    }
-
-    po_demand_state = yes
-
-    war_name = WAR_TAKE_SUBSTATE_REGION_NAME
-
-    on_add = {
-        move_issue_percentage = {
-            from = jingoism
-            to = pro_military
-            value = 0.25
-        }
-    }
-	on_po_accepted = {
-		add_country_modifier = { name = recently_lost_war duration = 1825 }
-	}
-}
-
-# Gain control of Substate Core region
-acquire_substate_core_region = {
-    sprite_index = 6
-    is_triggered_only = yes
-    months = 12
-    crisis = no
-    always = yes
-
-    construction_speed = 0.5
-
-    badboy_factor = 2.2
-    prestige_factor = 2
-    peace_cost_factor = 1
-    penalty_factor = 1
-
-    break_truce_prestige_factor = 1
-    break_truce_infamy_factor = 2
-    break_truce_militancy_factor = 2
-    truce_months = 48
-
-    good_relation_prestige_factor = 1
-    good_relation_infamy_factor = 1
-    good_relation_militancy_factor = 1
-
-    can_use = {
-        NOT = { is_our_vassal = THIS }
-        num_of_substates = 1 # if has any substate
-        THIS = { ai = no }
-        any_substate = {
-            any_owned_province = { is_core = THIS }
-            #NOT = { any_owned_province = { is_capital = yes } }
-            OR = {
-                THIS = { ai = no }
-                AND = {
-                    THIS = { any_owned_province = { port = yes } }
-                    any_owned_province = { port = yes }
-                }
-                any_owned_province = { any_neighbor_province = { owned_by = THIS } }
-            }
-            NOT = { in_sphere = THIS }
-            number_of_states = 1
-        }
-    }
-
-    allowed_substate_regions = {
-        any_owned_province = { is_core = THIS }
-        #NOT = { any_owned_province = { is_capital = yes } }
-        OR = {
-            THIS = { ai = no }
-            AND = {
-                THIS = { any_owned_province = { port = yes } }
-                any_owned_province = { port = yes }
-            }
-            any_owned_province = { any_neighbor_province = { owned_by = THIS } }
-        }
-        owner = { NOT = { in_sphere = THIS } }
-    }
-
-    po_demand_state = yes
-
-    war_name = WAR_TAKE_NAME
-
-    on_add = {
-        move_issue_percentage = {
-            from = jingoism
-            to = pro_military
-            value = 0.25
-        }
-    }
-	on_po_accepted = {
-		add_country_modifier = { name = recently_lost_war duration = 1825 }
-	}
-}
-
 # Colonial competition
 colonial_competition = {
     sprite_index = 31
@@ -8745,66 +8593,6 @@ demand_concession_capital_early = {
 	}
 }
 
-# Gain control of core Substate region
-acquire_core_substate_region = {
-    sprite_index = 6
-    is_triggered_only = yes
-    months = 12
-    crisis = no
-
-    construction_speed = 0.25
-
-    badboy_factor = 0.75
-    prestige_factor = 1.5
-    peace_cost_factor = 1
-    penalty_factor = 1
-
-    break_truce_prestige_factor = 1
-    break_truce_infamy_factor = 2
-    break_truce_militancy_factor = 2
-    truce_months = 0
-
-    good_relation_prestige_factor = 1
-    good_relation_infamy_factor = 1
-    good_relation_militancy_factor = 1
-
-    can_use = {
-        NOT = { is_our_vassal = THIS }
-        num_of_substates = 1 # if has any substate
-        any_substate = {
-            number_of_states = 1
-            any_owned_province = {
-                is_core = THIS
-                is_colonial = no
-            }
-        }
-    }
-
-    allowed_substate_regions = {
-        is_colonial = no
-        owner = { NOT = { in_sphere = THIS } }
-        any_owned_province = {
-            is_core = THIS
-            is_colonial = no
-        }
-    }
-
-    po_demand_state = yes
-
-    war_name = WAR_TAKE_NAME
-
-    on_add = {
-        move_issue_percentage = {
-            from = jingoism
-            to = pro_military
-            value = 0.25
-        }
-    }
-	on_po_accepted = {
-		add_country_modifier = { name = recently_lost_war duration = 1825 }
-	}
-}
-
 # Liberate puppet
 liberate_puppet = {
     sprite_index = 18
@@ -9835,6 +9623,8 @@ syriac_crisis = {
 			}
 			secede_province = THIS
 		}
+		PLS = { country_event = 178019 }
+		EGY = { country_event = 178043 }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }

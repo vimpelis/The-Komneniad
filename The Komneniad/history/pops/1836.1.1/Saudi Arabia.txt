@@ -275,31 +275,31 @@
     aristocrats = {
         culture = mashriqi
         religion = sunni
-        size = 25
+        size = 100
     }
 
     clergymen = {
         culture = mashriqi
         religion = sunni
-        size = 50
+        size = 75
     }
 
     artisans = {
         culture = mashriqi
         religion = sunni
-        size = 150
+        size = 250
     }
 
     soldiers = {
         culture = mashriqi
         religion = sunni
-        size = 25
+        size = 100
     }
 
     farmers = {
         culture = mashriqi
         religion = sunni
-        size = 1500
+        size = 3200
     }
 }
 #Abha (56000/14000 POPS)
@@ -487,37 +487,37 @@
     aristocrats = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 90
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 50
+        size = 60
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 525
+        size = 425
     }
 
     soldiers = {
         culture = bedouin
         religion = sunni
-        size = 1100
+        size = 1150
     }
 
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 10525
+        size = 8525
     }
 
     slaves = {
         culture = nilotic
         religion = animist
-        size = 4000
+        size = 3000
     }
 }
 #Hail (12000/3000 POPS)
@@ -531,43 +531,118 @@
     bureaucrats = {
         culture = bedouin
         religion = sunni
-        size = 125
+        size = 150
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 150
+        size = 165
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 2850
+        size = 1950
     }
 
     soldiers = {
         culture = bedouin
         religion = sunni
-        size = 3500
+        size = 3600
     }
 
     soldiers = {
         culture = bedouin
         religion = sunni
-        size = 1400
+        size = 1300
     }
 
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 28850
+        size = 30850
     }
 
     slaves = {
         culture = nilotic
         religion = animist
-        size = 3500
+        size = 3000
+    }
+}
+#Maan (28000/7000 POPS)
+911 = {
+    aristocrats = {
+        culture = bedouin
+        religion = sunni
+        size = 200
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = sunni
+        size = 120
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = sunni
+        size = 900
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = sunni
+        size = 600
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = sunni
+        size = 8600
+    }
+	
+	slaves = {
+        culture = nilotic
+        religion = animist
+        size = 500
+    }
+}
+3384 = {
+    aristocrats = {
+        culture = bedouin
+        religion = sunni
+        size = 75
+    }
+
+    clergymen = {
+        culture = bedouin
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = bedouin
+        religion = sunni
+        size = 500
+    }
+
+    soldiers = {
+        culture = bedouin
+        religion = sunni
+        size = 250
+    }
+
+    farmers = {
+        culture = bedouin
+        religion = sunni
+        size = 4600
+    }
+	
+	slaves = {
+        culture = nilotic
+        religion = animist
+        size = 800
     }
 }
 #Bahrain Region (204000) #see Gulf States.txt for balance of region

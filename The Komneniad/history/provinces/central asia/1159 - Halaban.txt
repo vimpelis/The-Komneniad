@@ -1,5 +1,6 @@
 owner = ARA
 controller = ARA
 trade_goods = wool
-life_rating = 20
+life_rating = 30
+terrain = desert
 add_core = ARA

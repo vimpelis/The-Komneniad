@@ -1,8 +1,8 @@
 owner = ARA
 controller = ARA
 add_core = HDJ
-trade_goods = wool
-life_rating = 20
-terrain = aqaba
 add_core = ARA
 add_core = SYR
+trade_goods = wool
+life_rating = 32
+terrain = semidesert

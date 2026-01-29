@@ -1,3 +1,6 @@
-trade_goods = grain
+owner = ARA
+controller = ARA
+add_core = ARA
+trade_goods = wool
 terrain = desert
-life_rating = 1
+life_rating = 30

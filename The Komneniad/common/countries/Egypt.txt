@@ -1,4 +1,6 @@
-color = { 255  205  155 }
+color = { 125  160  75 }
+prussian_constitutionalism = { 255  205  155 }
+hms_government = { 255  205  155 }
 graphical_culture = MoroccoGC
 
 party = {

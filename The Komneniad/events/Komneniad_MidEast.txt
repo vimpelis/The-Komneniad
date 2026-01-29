@@ -35,7 +35,7 @@ country_event = {
     option = {
         name = "And it won't be the last."
 		ARE = { country_event = 178002 }
-		913 = { any_pop = { limit = { has_pop_culture = sephardic } reduce_pop = 2 } any_pop = { limit = { has_pop_culture = lower_burgundian } reduce_pop = 1.5 } add_province_modifier = { name = EGY_beirut duration = -1 } }
+		913 = { any_pop = { limit = { has_pop_culture = sephardic } reduce_pop = 5 } any_pop = { limit = { has_pop_culture = lower_burgundian } reduce_pop = 2.5 } add_province_modifier = { name = EGY_beirut duration = -1 } }
     }
 }
 
@@ -205,14 +205,14 @@ country_event = {
 						tag = BYZ
 						exists = yes
 					}
-					country_event = 178007
+					country_event = { id = 178007 days = 3 }
 				}
 				any_country = {
 					limit = {
 						tag = GRE
 						exists = yes
 					}
-					country_event = 178007
+					country_event = { id = 178007 days = 3 }
 				}
 			}
 		}
@@ -279,6 +279,27 @@ country_event = {
 		3361 = { secede_province = LBN }
 		913 = { secede_province = LBN }
 		912 = { secede_province = LBN }
+		random_owned = {
+			limit = {
+				province_id = 900
+			}
+			add_core = LBN
+			secede_province = LBN
+		}
+		random_owned = {
+			limit = {
+				province_id = 894
+			}
+			add_core = LBN
+			secede_province = LBN
+		}
+		random_owned = {
+			limit = {
+				province_id = 898
+			}
+			add_core = LBN
+			secede_province = LBN
+		}
 		create_vassal = LBN
 		LBN = { country_event = 178041 }
 		FROM = {
@@ -295,6 +316,7 @@ country_event = {
 			factor = 2
 			issue = pro_military
 		}
+		set_country_flag = EGY_released_syria
 		ai_chance = { factor = 1 }
 	}
 	
@@ -309,6 +331,7 @@ country_event = {
 			factor = -2
 			issue = pro_military
 		}
+		set_country_flag = EGY_refused_syriac_autonomy
 		ai_chance = { factor = 4 }
 	}
 }
@@ -539,7 +562,9 @@ country_event = {
 
 	option = {
         name = "Good."
-		government = colonial_company
+		916 = { add_core = PLS secede_province = THIS secede_province = PLS }
+		EGY = { create_vassal = PLS }
+		government = theocracy
 		915 = { add_core = PLS secede_province = THIS secede_province = PLS }
 		916 = { add_core = PLS secede_province = THIS secede_province = PLS }
 		917 = { add_core = PLS secede_province = THIS secede_province = PLS }
@@ -548,16 +573,33 @@ country_event = {
 		3358 = { add_core = PLS secede_province = THIS secede_province = PLS }
 		3474 = { add_core = PLS secede_province = THIS secede_province = PLS }
 		EGY_921 = { remove_core = LBN }
-		BYZ = {
-			diplomatic_influence = {
-				who = THIS
-				value = 400
+		economic_reform = yes_education_reform
+		economic_reform = yes_land_reform
+		economic_reform = yes_admin_reform
+		capital = 917
+		primary_culture = syriac
+		add_accepted_culture = mashriqi
+		add_accepted_culture = greek
+		random_owned = {
+			limit = {
+				exists = BYZ
+			}
+			BYZ = {
+				diplomatic_influence = {
+					who = THIS
+					value = 400
+				}
 			}
 		}
-		GRE = {
-			diplomatic_influence = {
-				who = THIS
-				value = 400
+		random_owned = {
+			limit = {
+				exists = GRE
+			}
+			GRE = {
+				diplomatic_influence = {
+					who = THIS
+					value = 400
+				}
 			}
 		}
 	}
@@ -598,8 +640,12 @@ country_event = {
 			3405 = { add_core = LBN }
 			2321 = { add_core = LBN }
 		}
+		random_owned = {
+			limit = { province_id = 907 }
+			907 = { add_core = LBN }
+		}
 		release_vassal = LBN
-		LBN = { capital = 897 }
+		LBN = { capital = 897 government = democracy }
 		ai_chance = { factor = 1 modifier = { badboy = 0.7 factor = 20 } modifier = { badboy = 0.9 factor = 20 } }
 	}
 	
@@ -617,8 +663,12 @@ country_event = {
 			3405 = { add_core = LBN }
 			2321 = { add_core = LBN }
 		}
+		random_owned = {
+			limit = { province_id = 907 }
+			907 = { add_core = LBN }
+		}
 		release_vassal = LBN
-		LBN = { capital = 897 }
+		LBN = { capital = 897 government = democracy }
 		ai_chance = { factor = 10 modifier = { badboy = 0.7 factor = 20 } }
 	}
 	
@@ -670,6 +720,10 @@ country_event = {
 			3300 = { add_core = LBN }
 			3405 = { add_core = LBN }
 			2321 = { add_core = LBN }
+		}
+		random_owned = {
+			limit = { province_id = 907 }
+			907 = { add_core = LBN }
 		}
 		release_vassal = LBN
 		LBN = { capital = 897 primary_culture = greek add_accepted_culture = syriac }
@@ -729,6 +783,10 @@ country_event = {
 			3300 = { add_core = LBN }
 			3405 = { add_core = LBN }
 			2321 = { add_core = LBN }
+		}
+		random_owned = {
+			limit = { province_id = 907 }
+			907 = { add_core = LBN }
 		}
 		release_vassal = LBN
 		LBN = { capital = 897 primary_culture = greek add_accepted_culture = syriac }
@@ -987,6 +1045,7 @@ country_event = {
 	}
 }
 
+#UNION OF BETHLEHEM
 country_event = {
     id = 178030
     title = "Greek Interests in the Middle East"
@@ -1001,6 +1060,7 @@ country_event = {
 		OR = {
 			ASY = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
 			LBN = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
+			IRQ = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
 		}
 		nationalism_n_imperialism = 1
     }
@@ -1013,6 +1073,7 @@ country_event = {
 	
 	option = {
         name = "An interesting proposal."
+		BYZ_bethlehem_tt = {}
 		set_country_flag = BYZ_union_of_bethlehem_available
 	}
 }
@@ -1143,6 +1204,7 @@ country_event = {
 	}
 }
 
+#EGYPT REPUBLICAN ENDING
 country_event = {
     id = 178034
     title = "Egypt requests negotiations"
@@ -1181,6 +1243,7 @@ country_event = {
 	option = {
         name = "No deal."
 		FROM = { country_event = 178038 }
+		set_country_flag = EGY_refused_syriac_autonomy
 		ai_chance = { factor = 2 }
 	}
 }
@@ -1271,19 +1334,28 @@ country_event = {
 
 country_event = {
     id = 178040
-    title = "Creation of the Egyptian Republic"
+    title = "End of the Egyptian Monarchy"
     desc = "178040DESC"
     picture = "syria_map"
 
     is_triggered_only = yes
 	
+	trigger = {
+        tag = EGY
+		has_country_flag = EGY_ready_for_democracy
+    }
+	
+	major = yes
+	
 	option = {
         name = "Peace between peoples."
+		change_tag = LEV
 		prestige = 10
 		government = democracy
+		nationalvalue = nv_equality
 		add_accepted_culture = syriac
 		add_accepted_culture = copt
-		add_accepted_culture = ashkenazi
+		add_accepted_culture = sephardic
 		capital_scope = { add_province_modifier = { name = war_torn duration = 30 } }
 		capital = 1751
 		any_country = {
@@ -1299,6 +1371,122 @@ country_event = {
 		scaled_militancy = { factor = -2 ideology = liberal }
 		scaled_militancy = { factor = -4 ideology = socialist }
 		scaled_militancy = { factor = -4 ideology = radical }
+		#vanilla westernization effects
+		tech_school = traditional_academic
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_advisor_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_army_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = flintlock_rifles
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = post_napoleonic_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_navy_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = steamers
+				activate_technology = clipper_design
+				activate_technology = post_nelsonian_thought
+			}
+		}
+        random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
+		#add techs
+        random_owned = {
+            limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
+            owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_research_tech_on_civ } NOT = { malthusian_thought = 1 } }
+            owner = { activate_technology = malthusian_thought activate_technology = late_enlightenment_philosophy  clr_country_flag = give_research_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_monetary_tech_on_civ } NOT = { no_standard = 1 } }
+            owner = { activate_technology = no_standard  clr_country_flag = give_monetary_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_firearms_tech_on_civ } NOT = { guild_based_production = 1 } }
+            owner = { activate_technology = guild_based_production  clr_country_flag = give_firearms_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_industrial_tech_on_civ } NOT = { piston_steam_engine = 1 } }
+            owner = { activate_technology = piston_steam_engine  clr_country_flag = give_industrial_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_weapons } NOT = { flintlock_rifles = 1 } }
+            owner = { activate_technology = flintlock_rifles  clr_country_flag = using_foreign_weapons }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_constructions_tech_on_civ } NOT = { post_napoleonic_thought = 1 } }
+            owner = { activate_technology = post_napoleonic_thought  clr_country_flag = give_constructions_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_armyschools_tech_on_civ } NOT = { army_command_principle = 1 } }
+            owner = { activate_technology = army_command_principle  clr_country_flag = give_armyschools_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_shipyards } NOT = { post_nelsonian_thought = 1 } }
+            owner = { activate_technology = post_nelsonian_thought  clr_country_flag = using_foreign_shipyards }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_artillery } NOT = { bronze_muzzle_loaded_artillery = 1 } }
+            owner = { activate_technology = bronze_muzzle_loaded_artillery  clr_country_flag = using_foreign_artillery }
+        }
+        # Enable uncivilizsed nations to unlock steamers when having unlocked it in political decisions
+        random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_ships } NOT = { steamers = 1 } }
+            owner = { activate_technology = steamers  clr_country_flag = using_foreign_ships }
+        }
+        random_list = {
+            34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
+        }
+        remove_country_modifier = assegai
+        remove_country_modifier = educational_reform
+        remove_country_modifier = military_reform
+        remove_country_modifier = western_influences
+        remove_country_modifier = uncivilized_isolationism
+        remove_country_modifier = trade_restrictions
+        remove_country_modifier = sayings_of_the_dutch
+        remove_country_modifier = rangaku
+        remove_country_modifier = sakoku
+        remove_country_modifier = western_presence
+        remove_country_modifier = isolationist_foreign_naval_officers
+        remove_country_modifier = isolationist_foreign_naval_schools
+        remove_country_modifier = isolationist_foreign_officers
+        remove_country_modifier = isolationist_foreign_training
+        any_owned = {
+            remove_province_modifier = western_presence
+            remove_province_modifier = foreign_smugglers
+            remove_province_modifier = foreign_trading_post
+            remove_province_modifier = local_opium_habit
+            remove_province_modifier = european_military_mission
+            remove_province_modifier = legation_quarter
+            remove_province_modifier = kettler_denkmal
+            remove_province_modifier = extraterritoriality_granted
+            remove_province_modifier = boxer_presence
+            remove_province_modifier = boxer_agitation
+        }
 	}
 }
 
@@ -1312,13 +1500,14 @@ country_event = {
 	
 	option = {
         name = "Ok"
+		government = democracy
 		EGY = {
 			EGY_897 = { secede_province = LBN }
 			3361 = { secede_province = LBN }
 			913 = { secede_province = LBN }
 			912 = { secede_province = LBN }
 		}
-		900 = { remove_core = THIS }
+		any_owned = { remove_core = EGY }
 	}
 }
 
@@ -1356,5 +1545,593 @@ country_event = {
 		prestige = 5
 		1738 = { secede_province = THIS any_pop = { literacy = -0.99 } }
 		1754 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+	}
+}
+
+country_event = {
+    id = 178043
+    title = "Defeat in Syria"
+    desc = "178043DESC"
+    picture = "jerusalem"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "We will be back."
+		prestige = -5
+		any_pop = {
+			limit = { has_pop_culture = misri }
+			militancy = 1
+			consciousness = 1
+		}
+		any_pop = {
+			limit = { has_pop_culture = copt }
+			militancy = -1
+			consciousness = 2
+		}
+	}
+}
+
+country_event = {
+    id = 178044
+    title = "Syria granted autonomy"
+    desc = "178044DESC"
+    picture = "jerusalem"
+
+    trigger = {
+		tag = EGY
+		LBN = { vassal_of = THIS }
+		NOT = { has_country_flag = EGY_released_syria }
+		NOT = { has_country_flag = EGY_refused_syriac_autonomy }
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "To a new age!"
+		any_pop = {
+			limit = { has_pop_culture = misri }
+			militancy = 1
+			consciousness = 1
+		}
+		any_pop = {
+			limit = { has_pop_culture = copt }
+			militancy = -1
+			consciousness = -2
+		}
+		set_country_flag = EGY_released_syria
+	}
+}
+
+country_event = {
+    id = 178045
+    title = "The Majlis of Egypt"
+    desc = "178045DESC"
+    picture = "egypt_majlis"
+
+    trigger = {
+		tag = EGY
+    }
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "All of this talking it going to take us nowhere."
+		any_pop = { consciousness = 1 }
+	}
+}
+
+country_event = {
+    id = 178046
+    title = "Coup in Cairo!"
+    desc = "178046DESC"
+    picture = "syria_map"
+
+    trigger = {
+		tag = EGY
+		has_country_flag = EGY_released_syria
+		NOT = { exists = LEV }
+		civilized = yes
+    }
+
+    mean_time_to_happen = {
+        days = 60
+    }
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	option = {
+        name = "Peace between peoples."
+		change_tag = LEV
+		prestige = 10
+		government = democracy
+		nationalvalue = nv_equality
+		add_accepted_culture = syriac
+		add_accepted_culture = copt
+		add_accepted_culture = sephardic
+		capital_scope = { add_province_modifier = { name = war_torn duration = 30 } }
+		capital = 1751
+		any_country = {
+			limit = {
+				tag = LBN
+				vassal_of = THIS
+			}
+			annex_to = THIS
+			all_core = { add_core = THIS }
+		}
+		scaled_militancy = { factor = 4 ideology = reactionary }
+		scaled_militancy = { factor = 2 ideology = conservative }
+		scaled_militancy = { factor = -2 ideology = liberal }
+		scaled_militancy = { factor = -4 ideology = socialist }
+		scaled_militancy = { factor = -4 ideology = radical }
+	}
+}
+
+country_event = {
+    id = 178047
+    title = "The Arab Spring"
+    desc = "178047DESC"
+    picture = "syria_map"
+	
+	is_triggered_only = yes
+
+    trigger = {
+		tag = EGY
+		has_country_flag = EGY_refused_syriac_autonomy
+    }
+	
+	major = yes
+	
+	option = {
+        name = "The faithful respire!"
+		prestige = 15
+		government = absolute_monarchy
+		political_reform = none_voting
+		political_reform = underground_parties
+		political_reform = party_appointed
+		ruling_party_ideology = reactionary
+		upper_house = { ideology = reactionary value = 20 }
+		remove_accepted_culture = copt
+		any_country = {
+			limit = {
+				tag = PLS
+				vassal_of = THIS
+			}
+			annex_to = THIS
+			all_core = { add_core = THIS }
+			government = democracy
+			primary_culture = mashriqi
+			add_accepted_culture = syriac
+			remove_accepted_culture = greek
+		}
+		scaled_militancy = { factor = -4 ideology = reactionary }
+		scaled_militancy = { factor = -2 ideology = conservative }
+		scaled_militancy = { factor = 2 ideology = liberal }
+		scaled_militancy = { factor = 4 ideology = socialist }
+		scaled_militancy = { factor = 4 ideology = radical }
+		#vanilla westernization effects
+		tech_school = traditional_academic
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_advisor_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_army_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = flintlock_rifles
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = post_napoleonic_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_navy_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = steamers
+				activate_technology = clipper_design
+				activate_technology = post_nelsonian_thought
+			}
+		}
+        random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
+		#add techs
+        random_owned = {
+            limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
+            owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_research_tech_on_civ } NOT = { malthusian_thought = 1 } }
+            owner = { activate_technology = malthusian_thought activate_technology = late_enlightenment_philosophy  clr_country_flag = give_research_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_monetary_tech_on_civ } NOT = { no_standard = 1 } }
+            owner = { activate_technology = no_standard  clr_country_flag = give_monetary_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_firearms_tech_on_civ } NOT = { guild_based_production = 1 } }
+            owner = { activate_technology = guild_based_production  clr_country_flag = give_firearms_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_industrial_tech_on_civ } NOT = { piston_steam_engine = 1 } }
+            owner = { activate_technology = piston_steam_engine  clr_country_flag = give_industrial_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_weapons } NOT = { flintlock_rifles = 1 } }
+            owner = { activate_technology = flintlock_rifles  clr_country_flag = using_foreign_weapons }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_constructions_tech_on_civ } NOT = { post_napoleonic_thought = 1 } }
+            owner = { activate_technology = post_napoleonic_thought  clr_country_flag = give_constructions_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_armyschools_tech_on_civ } NOT = { army_command_principle = 1 } }
+            owner = { activate_technology = army_command_principle  clr_country_flag = give_armyschools_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_shipyards } NOT = { post_nelsonian_thought = 1 } }
+            owner = { activate_technology = post_nelsonian_thought  clr_country_flag = using_foreign_shipyards }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_artillery } NOT = { bronze_muzzle_loaded_artillery = 1 } }
+            owner = { activate_technology = bronze_muzzle_loaded_artillery  clr_country_flag = using_foreign_artillery }
+        }
+        # Enable uncivilizsed nations to unlock steamers when having unlocked it in political decisions
+        random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_ships } NOT = { steamers = 1 } }
+            owner = { activate_technology = steamers  clr_country_flag = using_foreign_ships }
+        }
+        random_list = {
+            34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
+        }
+        remove_country_modifier = assegai
+        remove_country_modifier = educational_reform
+        remove_country_modifier = military_reform
+        remove_country_modifier = western_influences
+        remove_country_modifier = uncivilized_isolationism
+        remove_country_modifier = trade_restrictions
+        remove_country_modifier = sayings_of_the_dutch
+        remove_country_modifier = rangaku
+        remove_country_modifier = sakoku
+        remove_country_modifier = western_presence
+        remove_country_modifier = isolationist_foreign_naval_officers
+        remove_country_modifier = isolationist_foreign_naval_schools
+        remove_country_modifier = isolationist_foreign_officers
+        remove_country_modifier = isolationist_foreign_training
+        any_owned = {
+            remove_province_modifier = western_presence
+            remove_province_modifier = foreign_smugglers
+            remove_province_modifier = foreign_trading_post
+            remove_province_modifier = local_opium_habit
+            remove_province_modifier = european_military_mission
+            remove_province_modifier = legation_quarter
+            remove_province_modifier = kettler_denkmal
+            remove_province_modifier = extraterritoriality_granted
+            remove_province_modifier = boxer_presence
+            remove_province_modifier = boxer_agitation
+        }
+	}
+}
+
+country_event = {
+    id = 178048
+    title = "Cairo's Longest Night"
+    desc = "178048DESC"
+    picture = "syria_map"
+	
+	is_triggered_only = yes
+
+    trigger = {
+		tag = EGY
+		NOT = { has_country_flag = EGY_refused_syriac_autonomy }
+		NOT = { has_country_flag = EGY_ready_for_democracy }
+    }
+	
+	option = {
+        name = "The Sultanate is proclaimed!"
+		prestige = 15
+		government = absolute_monarchy
+		political_reform = none_voting
+		political_reform = underground_parties
+		political_reform = party_appointed
+		ruling_party_ideology = reactionary
+		upper_house = { ideology = reactionary value = 0.3 }
+		remove_accepted_culture = copt
+		any_country = {
+			limit = {
+				tag = PLS
+				vassal_of = THIS
+			}
+			annex_to = THIS
+			all_core = { add_core = THIS }
+		}
+		scaled_militancy = { factor = -4 ideology = reactionary }
+		scaled_militancy = { factor = -2 ideology = conservative }
+		scaled_militancy = { factor = 2 ideology = liberal }
+		scaled_militancy = { factor = 4 ideology = socialist }
+		scaled_militancy = { factor = 4 ideology = radical }
+		#vanilla westernization effects
+		tech_school = traditional_academic
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_advisor_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_army_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = flintlock_rifles
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = post_napoleonic_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_navy_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = steamers
+				activate_technology = clipper_design
+				activate_technology = post_nelsonian_thought
+			}
+		}
+        random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
+		#add techs
+        random_owned = {
+            limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
+            owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_research_tech_on_civ } NOT = { malthusian_thought = 1 } }
+            owner = { activate_technology = malthusian_thought activate_technology = late_enlightenment_philosophy  clr_country_flag = give_research_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_monetary_tech_on_civ } NOT = { no_standard = 1 } }
+            owner = { activate_technology = no_standard  clr_country_flag = give_monetary_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_firearms_tech_on_civ } NOT = { guild_based_production = 1 } }
+            owner = { activate_technology = guild_based_production  clr_country_flag = give_firearms_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_industrial_tech_on_civ } NOT = { piston_steam_engine = 1 } }
+            owner = { activate_technology = piston_steam_engine  clr_country_flag = give_industrial_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_weapons } NOT = { flintlock_rifles = 1 } }
+            owner = { activate_technology = flintlock_rifles  clr_country_flag = using_foreign_weapons }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_constructions_tech_on_civ } NOT = { post_napoleonic_thought = 1 } }
+            owner = { activate_technology = post_napoleonic_thought  clr_country_flag = give_constructions_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_armyschools_tech_on_civ } NOT = { army_command_principle = 1 } }
+            owner = { activate_technology = army_command_principle  clr_country_flag = give_armyschools_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_shipyards } NOT = { post_nelsonian_thought = 1 } }
+            owner = { activate_technology = post_nelsonian_thought  clr_country_flag = using_foreign_shipyards }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_artillery } NOT = { bronze_muzzle_loaded_artillery = 1 } }
+            owner = { activate_technology = bronze_muzzle_loaded_artillery  clr_country_flag = using_foreign_artillery }
+        }
+        # Enable uncivilizsed nations to unlock steamers when having unlocked it in political decisions
+        random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_ships } NOT = { steamers = 1 } }
+            owner = { activate_technology = steamers  clr_country_flag = using_foreign_ships }
+        }
+        random_list = {
+            34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
+        }
+        remove_country_modifier = assegai
+        remove_country_modifier = educational_reform
+        remove_country_modifier = military_reform
+        remove_country_modifier = western_influences
+        remove_country_modifier = uncivilized_isolationism
+        remove_country_modifier = trade_restrictions
+        remove_country_modifier = sayings_of_the_dutch
+        remove_country_modifier = rangaku
+        remove_country_modifier = sakoku
+        remove_country_modifier = western_presence
+        remove_country_modifier = isolationist_foreign_naval_officers
+        remove_country_modifier = isolationist_foreign_naval_schools
+        remove_country_modifier = isolationist_foreign_officers
+        remove_country_modifier = isolationist_foreign_training
+        any_owned = {
+            remove_province_modifier = western_presence
+            remove_province_modifier = foreign_smugglers
+            remove_province_modifier = foreign_trading_post
+            remove_province_modifier = local_opium_habit
+            remove_province_modifier = european_military_mission
+            remove_province_modifier = legation_quarter
+            remove_province_modifier = kettler_denkmal
+            remove_province_modifier = extraterritoriality_granted
+            remove_province_modifier = boxer_presence
+            remove_province_modifier = boxer_agitation
+        }
+	}
+	
+	option = {
+        name = "The Majlis arrests the King!"
+		change_tag = LEV
+		prestige = 10
+		government = democracy
+		nationalvalue = nv_equality
+		add_accepted_culture = syriac
+		add_accepted_culture = copt
+		add_accepted_culture = sephardic
+		capital_scope = { add_province_modifier = { name = war_torn duration = 30 } }
+		capital = 1751
+		any_country = {
+			limit = {
+				tag = LBN
+				vassal_of = THIS
+			}
+			annex_to = THIS
+			all_core = { add_core = THIS }
+		}
+		scaled_militancy = { factor = 4 ideology = reactionary }
+		scaled_militancy = { factor = 2 ideology = conservative }
+		scaled_militancy = { factor = -2 ideology = liberal }
+		scaled_militancy = { factor = -4 ideology = socialist }
+		scaled_militancy = { factor = -4 ideology = radical }
+		#vanilla westernization effects
+		tech_school = traditional_academic
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_advisor_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_army_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = flintlock_rifles
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = post_napoleonic_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_navy_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = steamers
+				activate_technology = clipper_design
+				activate_technology = post_nelsonian_thought
+			}
+		}
+        random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
+		#add techs
+        random_owned = {
+            limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
+            owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_research_tech_on_civ } NOT = { malthusian_thought = 1 } }
+            owner = { activate_technology = malthusian_thought activate_technology = late_enlightenment_philosophy  clr_country_flag = give_research_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_monetary_tech_on_civ } NOT = { no_standard = 1 } }
+            owner = { activate_technology = no_standard  clr_country_flag = give_monetary_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_firearms_tech_on_civ } NOT = { guild_based_production = 1 } }
+            owner = { activate_technology = guild_based_production  clr_country_flag = give_firearms_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_industrial_tech_on_civ } NOT = { piston_steam_engine = 1 } }
+            owner = { activate_technology = piston_steam_engine  clr_country_flag = give_industrial_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_weapons } NOT = { flintlock_rifles = 1 } }
+            owner = { activate_technology = flintlock_rifles  clr_country_flag = using_foreign_weapons }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_constructions_tech_on_civ } NOT = { post_napoleonic_thought = 1 } }
+            owner = { activate_technology = post_napoleonic_thought  clr_country_flag = give_constructions_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_armyschools_tech_on_civ } NOT = { army_command_principle = 1 } }
+            owner = { activate_technology = army_command_principle  clr_country_flag = give_armyschools_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_shipyards } NOT = { post_nelsonian_thought = 1 } }
+            owner = { activate_technology = post_nelsonian_thought  clr_country_flag = using_foreign_shipyards }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_artillery } NOT = { bronze_muzzle_loaded_artillery = 1 } }
+            owner = { activate_technology = bronze_muzzle_loaded_artillery  clr_country_flag = using_foreign_artillery }
+        }
+        # Enable uncivilizsed nations to unlock steamers when having unlocked it in political decisions
+        random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_ships } NOT = { steamers = 1 } }
+            owner = { activate_technology = steamers  clr_country_flag = using_foreign_ships }
+        }
+        random_list = {
+            34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
+        }
+        remove_country_modifier = assegai
+        remove_country_modifier = educational_reform
+        remove_country_modifier = military_reform
+        remove_country_modifier = western_influences
+        remove_country_modifier = uncivilized_isolationism
+        remove_country_modifier = trade_restrictions
+        remove_country_modifier = sayings_of_the_dutch
+        remove_country_modifier = rangaku
+        remove_country_modifier = sakoku
+        remove_country_modifier = western_presence
+        remove_country_modifier = isolationist_foreign_naval_officers
+        remove_country_modifier = isolationist_foreign_naval_schools
+        remove_country_modifier = isolationist_foreign_officers
+        remove_country_modifier = isolationist_foreign_training
+        any_owned = {
+            remove_province_modifier = western_presence
+            remove_province_modifier = foreign_smugglers
+            remove_province_modifier = foreign_trading_post
+            remove_province_modifier = local_opium_habit
+            remove_province_modifier = european_military_mission
+            remove_province_modifier = legation_quarter
+            remove_province_modifier = kettler_denkmal
+            remove_province_modifier = extraterritoriality_granted
+            remove_province_modifier = boxer_presence
+            remove_province_modifier = boxer_agitation
+        }
 	}
 }
