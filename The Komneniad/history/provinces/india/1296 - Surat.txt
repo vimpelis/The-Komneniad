@@ -1,8 +1,8 @@
-owner = FRI
-controller = FRI
+owner = BRB
+controller = BRB
 add_core = HND
 add_core = BER
 trade_goods = fish
 life_rating = 32
 colonial = 2
-terrain = surat
+terrain = plains

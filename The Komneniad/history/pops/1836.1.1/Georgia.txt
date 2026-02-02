@@ -81,36 +81,6 @@
     }
 
     aristocrats = {
-        culture = volga_german
-        religion = catholic
-        size = 25
-    }
-
-    clergymen = {
-        culture = volga_german
-        religion = catholic
-        size = 25
-    }
-
-    artisans = {
-        culture = volga_german
-        religion = catholic
-        size = 150
-    }
-
-    soldiers = {
-        culture = volga_german
-        religion = catholic
-        size = 25
-    }
-
-    farmers = {
-        culture = volga_german
-        religion = catholic
-        size = 775
-    }
-
-    aristocrats = {
         culture = armenian
         religion = coptic
         size = 50

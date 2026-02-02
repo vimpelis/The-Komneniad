@@ -33,11 +33,11 @@ school_reforms = no_schools
 #New Reforms
 conscription = two_year_draft
 debt_law = peonage
-penal_system = capital_punishment
-child_labor = child_labor_restricted
+penal_system = colonial_transportation
+child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
-centralization = federalism
+centralization = unitary
 colonial_policy = exploitation
 
 ruling_party = CLT_conservative_92
@@ -76,6 +76,13 @@ piston_steam_engine = 1
 mechanical_production = 1
 hot_blast = 1
 basic_chemistry = 1
+battleship_column_doctrine = 1
+high_pressure_steam_engine = 1
+stock_exchange = 1
+market_structure = 1
+
+#Inventions
+steam_powered_sugar_mills = yes
 
 set_country_flag = catholic_country
 

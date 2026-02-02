@@ -9,7 +9,7 @@ army = {
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 582
+        home = 581
     }
 	regiment = {
         name = "3rd Infantry Regiment"
@@ -24,31 +24,31 @@ army = {
     regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 578
+        home = 582
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 2561
+        home = 582
     }
 	regiment = {
         name = "2nd Artillery Regiment"
         type = artillery
-        home = 565
+        home = 3267
     }
 	regiment = {
         name = "3rd Artillery Regiment"
         type = artillery
-        home = 565
+        home = 3267
     }
 	regiment = {
         name = "4th Artillery Regiment"
         type = artillery
-        home = 3267
+        home = 583
     }
 	regiment = {
         name = "1st Engineer Regiment"
         type = engineer
-        home = 535
+        home = 583
     }
 }

@@ -86,31 +86,31 @@
     clergymen = {
         culture = norwegian
         religion = protestant
-        size = 50
+        size = 75
     }
 
     artisans = {
         culture = norwegian
         religion = protestant
-        size = 500
+        size = 750
     }
 
     soldiers = {
         culture = norwegian
         religion = protestant
-        size = 100
+        size = 150
     }
 
     labourers = {
         culture = norwegian
         religion = protestant
-        size = 9350
+        size = 14025
     }
 
     labourers = {
         culture = swedish
         religion = protestant
-        size = 1100
+        size = 1650
     }
 }
 #Umea (56000/14000 POPS)
@@ -312,8 +312,8 @@
         religion = protestant
         size = 20650
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = swedish
         religion = protestant
         size = 4000
@@ -559,61 +559,61 @@
     aristocrats = {
         culture = norwegian
         religion = protestant
-        size = 250
+        size = 375
     }
 
     bureaucrats = {
         culture = norwegian
         religion = protestant
-        size = 100
+        size = 150
     }
 
     officers = {
         culture = norwegian
         religion = protestant
-        size = 250
+        size = 375
     }
 
     clergymen = {
         culture = norwegian
         religion = protestant
-        size = 250
+        size = 375
     }
 
     artisans = {
         culture = norwegian
         religion = protestant
-        size = 3000
+        size = 4500
     }
 
     soldiers = {
         culture = norwegian
         religion = protestant
-        size = 1100
+        size = 1650
     }
 
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 23550
+        size = 35325
     }
 
     artisans = {
         culture = swedish
         religion = protestant
-        size = 2000
+        size = 3000
     }
 
     farmers = {
         culture = swedish
         religion = protestant
-        size = 10000
+        size = 15000
     }
 
     farmers = {
         culture = gypsy
         religion = protestant
-        size = 200
+        size = 300
     }
 }
 #Boras (220000/55000 POPS)
@@ -800,13 +800,13 @@
     farmers = {
         culture = danish
         religion = protestant
-        size = 60000
+        size = 55000
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = danish
         religion = protestant
-        size = 9000
+        size = 14000
     }
 
     farmers = {
@@ -844,15 +844,12 @@
     farmers = {
         culture = danish
         religion = protestant
-        size = 55625
+        size = 50625
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = danish
         religion = protestant
-        size = 5000
+        size = 10000
     }
-}
-#Jan Mayen, now St Barths
-3246 = {
 }

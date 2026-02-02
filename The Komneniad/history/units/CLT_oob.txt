@@ -197,122 +197,358 @@ navy = {
 		name = "Man'o'war"
         type = manowar
     }
-
     ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
 	ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
 	ship = {
 		name = "Frigate"
         type = frigate

@@ -1,6 +1,7 @@
 owner = FRI
 controller = FRI
 add_core = FRI
+add_core = GER
 trade_goods = tobacco
-terrain = arnhem
+terrain = farmlands
 life_rating = 35 

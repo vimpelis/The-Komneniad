@@ -4,5 +4,5 @@ add_core = DEN
 trade_goods = coal
 life_rating = 35
 naval_base = 1
-terrain = karlskrona
+terrain = farmlands
 add_core = SWE

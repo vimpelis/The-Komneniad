@@ -1,7 +1,7 @@
-owner = FRK
-controller = FRK
-add_core = FRK
+owner = DRM
+controller = DRM
+add_core = DRM
 add_core = GER
 trade_goods = timber
 life_rating = 40
-terrain = aschaffenburg
+terrain = forest_hills

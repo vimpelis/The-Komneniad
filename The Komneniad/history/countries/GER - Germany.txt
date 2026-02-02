@@ -54,8 +54,3 @@ upper_house = {
 }
 
 schools = army_tech_school
-
-govt_flag = {
-    government = radical_republic
-    flag = colonial_company
-}

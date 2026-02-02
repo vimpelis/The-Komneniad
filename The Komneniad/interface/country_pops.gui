@@ -452,7 +452,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			position = { x = 45 y = 2 }
+			position = { x = 55 y = 2 }
 			name = "poplist_name"
 			font = "vic_18_black"
 			borderSize = { x = 0 y = 0 }
@@ -478,15 +478,15 @@ guiTypes = {
 		{
 			name = "colonial_state_icon"
 			quadTextureSprite = "GFX_pops_colonial_state_icon"
-			position = { x = 45 y = 18 }
+			position = { x = 55 y = 18 }
 			Orientation = "UPPER_LEFT"
 			clicksound = click
 		}
 		
 		guiButtonType = {
 			name = "state_focus"
-			position = { x = 65 y = 18 }
-			quadTextureSprite = "GFX_province_natfocus_strip_small"
+			position = { x = 18 y = 1 }
+			quadTextureSprite ="GFX_province_natfocus_strip"
 			clicksound = click
 		}
 		

@@ -1,6 +1,6 @@
 capital = 355
 primary_culture = latvian
-culture = volga_german
+culture = north_german
 religion = catholic
 government = theocracy
 plurality = 0.2
@@ -53,7 +53,7 @@ basic_chemistry = 1
 
 #New Reforms
 conscription = two_year_draft
-debt_law = peonage
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only

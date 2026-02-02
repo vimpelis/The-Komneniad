@@ -1,7 +1,7 @@
-owner = BAV
-controller = BAV
-add_core = BAV
+owner = AUG
+controller = AUG
+add_core = AUG
 add_core = GER
 trade_goods = cattle
 life_rating = 40
-terrain = augsburg
+terrain = hills

@@ -2,6 +2,6 @@ owner = DAN
 controller = DAN
 add_core = ENG
 trade_goods = coal
-terrain = nottingham
+terrain = mining_district
 life_rating = 35
 add_core = DAN

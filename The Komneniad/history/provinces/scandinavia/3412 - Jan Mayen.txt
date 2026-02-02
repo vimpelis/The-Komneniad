@@ -3,5 +3,5 @@ controller = DEN
 add_core = DEN
 add_core = NOR
 trade_goods = fish
-terrain = janmayen
+terrain = arctic
 life_rating = 10

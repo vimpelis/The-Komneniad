@@ -1,7 +1,7 @@
 owner = DAN
 controller = DAN
 add_core = ENG
-trade_goods = coal
+trade_goods = cattle
 life_rating = 35
-terrain = coventry
+terrain = plains
 add_core = DAN

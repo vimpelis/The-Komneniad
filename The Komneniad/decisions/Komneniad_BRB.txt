@@ -30,46 +30,10 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	BRB_reorganise_holland = {
-		picture = bel_lion
-		potential = {
-			tag = BRB
-			NOT = { has_country_flag = BRB_reorganise_holland }
-		}
-		allow = {
-			war = no
-			ideological_thought = 1
-		}
-		effect = {
-			prestige = 5
-			badboy = 3
-			HLL = { all_core = { add_core = BRB } }
-			any_country = {
-				limit = {
-					tag = HLL
-					OR = {
-						vassal_of = BRB
-						in_sphere = BRB
-					}
-				}
-				annex_to = BRB
-			}
-			set_country_flag = BRB_reorganise_holland
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.8
-            }
-		}
-	}
-	
 	BRB_take_friesland = {
 		picture = bel_lion
 		potential = {
 			tag = BRB
-			has_country_flag = BRB_reorganise_holland
 			NOT = { has_country_flag = BRB_take_friesland }
 		}
 		allow = {

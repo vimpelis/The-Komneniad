@@ -59,7 +59,13 @@
     labourers = {
         culture = scottish
         religion = anglican
-        size = 20250
+        size = 12250
+    }
+	
+	craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 8000
     }
 
     farmers = {
@@ -563,13 +569,7 @@
     farmers = {
         culture = irish
         religion = anglican
-        size = 34000
-    }
-
-    craftsmen = {
-        culture = irish
-        religion = anglican
-        size = 10000
+        size = 44000
     }
 
     officers = {
@@ -623,7 +623,13 @@
     farmers = {
         culture = irish
         religion = anglican
-        size = 110375
+        size = 100375
+    }
+	
+	craftsmen = {
+        culture = irish
+        religion = anglican
+        size = 10000
     }
 }
 #Kildare (532000/133000 POPs)

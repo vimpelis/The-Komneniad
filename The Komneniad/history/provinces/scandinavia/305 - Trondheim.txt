@@ -3,6 +3,6 @@ controller = DEN
 add_core = DEN
 trade_goods = iron
 naval_base = 1
-terrain = trondheim
+terrain = stavanger
 life_rating = 35
 add_core = NOR

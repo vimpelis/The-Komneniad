@@ -1,7 +1,7 @@
-owner = BAD
-controller = BAD
-add_core = BAD
+owner = DRM
+controller = DRM
+add_core = DRM
 add_core = GER
 trade_goods = timber
-terrain = heidelberg
+terrain = forest_hills
 life_rating = 40

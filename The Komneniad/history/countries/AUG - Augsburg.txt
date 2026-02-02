@@ -1,13 +1,13 @@
-capital = 2560
+capital = 592
 primary_culture = south_german
-culture = west_german
 religion = catholic
 government = absolute_monarchy
 plurality = 25.0
 nationalvalue = nv_order
 literacy = 0.8
 civilized = yes
-prestige = 5
+prestige = 2
+
 
 #Political Reforms
 slavery = no_slavery
@@ -28,6 +28,7 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
+
 #New Reforms
 conscription = two_year_draft
 debt_law = debtors_prisons
@@ -38,15 +39,14 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
 
-
 set_country_flag = catholic_country
 
-ruling_party = HED_reactionary
+ruling_party = PRU_conservative
 upper_house = {
     fascist = 0
-    liberal = 35
-    conservative = 55
-    reactionary = 10
+    liberal = 27
+    conservative = 57
+    reactionary = 16
     radical = 0
     socialist = 0
     communist = 0
@@ -61,9 +61,6 @@ military_staff_system = 1
 army_command_principle = 1
 post_nelsonian_thought = 1
 clipper_design = 1
-naval_design_bureaus = 1
-alphabetic_flag_signaling = 1
-the_command_principle = 1
 classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 malthusian_thought = 1
@@ -80,9 +77,10 @@ hot_blast = 1
 basic_chemistry = 1
 
 #Inventions
+steam_powered_sugar_mills = yes
 
 #Starting Consciousness
 consciousness = 3
 nonstate_consciousness = 1
 
-oob = "HES_oob.txt"
+oob = "AUG_oob.txt"

@@ -1,40 +1,61 @@
-leader = {
-    name = "von Leysser"
-    date = 1829.1.1
-    type = land
-    personality = no_personality
-    background = no_background
-    prestige = 0.1
-}
-
-leader = {
-    name = "von Zezschwitz"
-    date = 1817.1.1
-    type = land
-    personality = defence_3.1
-    background = no_background
-    prestige = 0.2
-}
+ALM = { value = -150 }
+ANH = { value = -150 }
+THU = { value = -150 }
+BRB = { value = -75 }
+BRA = { value = -50 }
+PRU = { value = 50 }
 
 army = {
-    name = "Königlich Sächsische Armee"
+    name = "1st Army"
     location = 558
-    regiment = {
-        name = "1. Infanteriebrigade"
+	regiment = {
+        name = "1st Infantry Regiment"
         type = infantry
         home = 558
     }
-
     regiment = {
-        name = "2. Infanteriebrigade"
+        name = "2nd Infantry Regiment"
         type = infantry
-        home = 559
+        home = 558
     }
-
-    regiment = {
-        name = "3. Infanteriebrigade"
+	regiment = {
+        name = "3rd Infantry Regiment"
         type = infantry
         home = 560
     }
-
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 560
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 559
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 559
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 556
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 556
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 552
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 3416
+    }
 }

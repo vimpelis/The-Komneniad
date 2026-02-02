@@ -8,6 +8,7 @@ literacy = 0.8
 non_state_culture_literacy = 0.8
 civilized = yes
 prestige = 5
+consciousness = 3
 
 
 # Political reforms

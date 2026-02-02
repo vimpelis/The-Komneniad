@@ -8,7 +8,7 @@ nationalvalue = nv_productivity
 literacy = 0.8
 non_state_culture_literacy = 0.02
 civilized = yes
-prestige = 10
+prestige = 15
 
 #Political Reforms
 slavery = no_slavery
@@ -33,8 +33,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legal
-citizens_rights = primary_culture_only
+child_labor = child_labor_restricted
+citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
@@ -77,6 +77,15 @@ piston_steam_engine = 1
 mechanical_production = 1
 hot_blast = 1
 basic_chemistry = 1
+battleship_column_doctrine = 1
+steamers = 1
+high_pressure_steam_engine = 1
+interchangeable_parts = 1
+experimental_railroad = 1
+stock_exchange = 1
+ad_hoc_money_bill_printing = 1
+late_classical_theory = 1
+market_structure = 1
 
 #Inventions
 commerce_raiders = yes

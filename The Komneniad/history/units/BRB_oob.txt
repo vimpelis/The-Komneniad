@@ -1,17 +1,12 @@
-OLD = {
+NAS = {
     value = 125
     level = 5
     influence_value = 25
 }
 FRI = {
-    value = 75
-    level = 5
-    influence_value = 25
-}
-HLL = {
     value = 200
     level = 5
-    influence_value = 100
+    influence_value = 75
 }
 WES = {
     value = 150
@@ -34,18 +29,13 @@ NSB = {
     influence_value = 25
 }
 LIP = {
-    value = 50
-    level = 3
-    influence_value = 25
-}
-HEK = {
-    value = 50
-    level = 3
+    value = -25
+    level = 2
     influence_value = 25
 }
 WLD = {
-    value = 50
-    level = 3
+    value = -25
+    level = 2
     influence_value = 25
 }
 BRA = {
@@ -53,20 +43,26 @@ BRA = {
     level = 3
     influence_value = 10
 }
-FRK = {
-    value = 35
-    level = 3
-    influence_value = 10
-}
-FRA = {
+HES = {
     value = 50
+    level = 3
+    influence_value = 25
 }
-DAN = {
-    value = 75
-}
-DEN = {
-    value = 75
-}
+DEN = { value = 75 }
+DAN = { value = 75 }
+FRA = { value = 75 }
+BAV = { value = -200 }
+DRM = { value = -50 }
+FRK = { value = -50 }
+BAD = { value = -25 }
+WUR = { value = -25 }
+SWI = { value = -25 }
+AUG = { value = 50 }
+THU = { value = -10 }
+SAX = { value = 25 }
+ALM = { value = 25 }
+ANH = { value = 10 }
+ZPD = { value = 100 }
 ARE = {
     value = 150
 	level = 4
@@ -76,156 +72,46 @@ ADU = { value = -100 }
 
 army = {
     name = "1st Army"
-    location = 387
+    location = 400
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 387
+        home = 400
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 389
-    }
-	regiment = {
-        name = "3rd Infantry Regiment"
-        type = infantry
-        home = 388
-    }
-    regiment = {
-        name = "4th Infantry Regiment"
-        type = infantry
-        home = 3383
-    }
-    regiment = {
-        name = "1st Cavalry Regiment"
-        type = hussar
-        home = 391
-    }
-    regiment = {
-        name = "1st Artillery Regiment"
-        type = artillery
-        home = 378
-    }
-	regiment = {
-        name = "2nd Artillery Regiment"
-        type = artillery
-        home = 380
-    }
-	regiment = {
-        name = "3rd Artillery Regiment"
-        type = artillery
-        home = 379
-    }
-	regiment = {
-        name = "4th Artillery Regiment"
-        type = artillery
-        home = 381
-    }
-	regiment = {
-        name = "1st Engineer Regiment"
-        type = engineer
-        home = 577
-    }
-}
-
-army = {
-    name = "2nd Army"
-    location = 3314
-	regiment = {
-        name = "1st Infantry Regiment"
-        type = infantry
-        home = 399
-    }
-    regiment = {
-        name = "2nd Infantry Regiment"
-        type = infantry
-        home = 399
-    }
-	regiment = {
-        name = "3rd Infantry Regiment"
-        type = infantry
-        home = 575
-    }
-    regiment = {
-        name = "4th Infantry Regiment"
-        type = infantry
-        home = 575
-    }
-    regiment = {
-        name = "1st Cavalry Regiment"
-        type = hussar
-        home = 576
-    }
-    regiment = {
-        name = "1st Artillery Regiment"
-        type = artillery
         home = 400
     }
 	regiment = {
-        name = "2nd Artillery Regiment"
-        type = artillery
-        home = 392
-    }
-	regiment = {
-        name = "3rd Artillery Regiment"
-        type = artillery
-        home = 400
-    }
-	regiment = {
-        name = "4th Artillery Regiment"
-        type = artillery
-        home = 401
-    }
-	regiment = {
-        name = "1st Engineer Regiment"
-        type = engineer
-        home = 399
-    }
-}
-
-army = {
-    name = "3rd Army"
-    location = 574
-	regiment = {
-        name = "1st Infantry Regiment"
-        type = infantry
-        home = 399
-    }
-    regiment = {
-        name = "2nd Infantry Regiment"
-        type = infantry
-        home = 392
-    }
-	regiment = {
         name = "3rd Infantry Regiment"
         type = infantry
-        home = 395
+        home = 3314
     }
     regiment = {
         name = "4th Infantry Regiment"
         type = infantry
-        home = 397
+        home = 3314
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 398
+        home = 399
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 395
+        home = 399
     }
 	regiment = {
         name = "2nd Artillery Regiment"
         type = artillery
-        home = 394
+        home = 399
     }
 	regiment = {
         name = "3rd Artillery Regiment"
         type = artillery
-        home = 397
+        home = 393
     }
 	regiment = {
         name = "4th Artillery Regiment"
@@ -235,43 +121,349 @@ army = {
 	regiment = {
         name = "1st Engineer Regiment"
         type = engineer
+        home = 394
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 3383
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 394
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 388
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 388
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 389
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 389
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 389
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 387
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 387
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 3383
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 3383
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 375
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 3383
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 3383
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 378
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 378
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 391
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 391
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 380
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 376
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 375
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 375
+    }
+}
+
+army = {
+    name = "4th Army"
+    location = 575
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 375
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 379
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 381
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 377
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 577
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 577
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 575
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 575
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 578
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 2561
+    }
+}
+
+army = {
+    name = "5th Army"
+    location = 395
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 392
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 392
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 395
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 395
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
         home = 396
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 398
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 397
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 572
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 576
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 578
     }
 }
 
 navy = {
     name = "1st Fleet"
-    location = 378
+    location = 400
     ship = {
 		name = "Man'o'war"
         type = manowar
     }
-
     ship = {
 		name = "Man'o'war"
         type = manowar
     }
-	
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
 	ship = {
 		name = "Frigate"
         type = frigate
     }
-	
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
 	ship = {
 		name = "Frigate"
         type = frigate
@@ -280,12 +472,11 @@ navy = {
 
 navy = {
     name = "2nd Fleet"
-    location = 3314
+    location = 375
 	ship = {
         name = "Transport Flotilla"
         type = clipper_transport
     }
-
     ship = {
         name = "Transport Flotilla"
         type = clipper_transport
@@ -294,7 +485,6 @@ navy = {
         name = "Transport Flotilla"
         type = clipper_transport
     }
-
     ship = {
         name = "Transport Flotilla"
         type = clipper_transport
@@ -303,7 +493,6 @@ navy = {
         name = "Transport Flotilla"
         type = clipper_transport
     }
-
     ship = {
         name = "Transport Flotilla"
         type = clipper_transport
@@ -312,7 +501,6 @@ navy = {
         name = "Transport Flotilla"
         type = clipper_transport
     }
-
     ship = {
         name = "Transport Flotilla"
         type = clipper_transport
@@ -321,7 +509,6 @@ navy = {
         name = "Transport Flotilla"
         type = clipper_transport
     }
-
     ship = {
         name = "Transport Flotilla"
         type = clipper_transport

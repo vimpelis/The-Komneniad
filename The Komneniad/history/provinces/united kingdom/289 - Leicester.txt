@@ -3,5 +3,5 @@ controller = DAN
 add_core = ENG
 trade_goods = coal
 life_rating = 35
-terrain = leicester
+terrain = mining_district
 add_core = DAN

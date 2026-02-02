@@ -1,7 +1,8 @@
 owner = BRB
 controller = BRB
 add_core = BRB
+add_core = FLA
 trade_goods = grain
 life_rating = 35
 naval_base = 1
-terrain = bruges
+terrain = farmlands

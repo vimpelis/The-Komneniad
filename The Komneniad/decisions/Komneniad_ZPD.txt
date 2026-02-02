@@ -119,7 +119,7 @@ political_decisions = {
 			diplomatic_influence = { who = MEC value = 100 }
 			diplomatic_influence = { who = MST value = 100 }
 			diplomatic_influence = { who = ANH value = 100 }
-			diplomatic_influence = { who = MAG value = 100 }
+			diplomatic_influence = { who = ALM value = 100 }
 			set_country_flag = ZPD_influence_ngf
 		}
 		ai_will_do = {
@@ -198,7 +198,7 @@ political_decisions = {
 			has_country_flag = ZPD_create_ngf
 			is_our_vassal = NGF
 			OR = {
-				exists = MAG
+				exists = ALM
 				exists = ANH
 				exists = THU
 			}
@@ -206,7 +206,7 @@ political_decisions = {
 		allow = {
 			war = no
 			OR = {
-				MAG = { in_sphere = THIS war = no }
+				ALM = { in_sphere = THIS war = no }
 				ANH = { in_sphere = THIS war = no }
 				THU = { in_sphere = THIS war = no }
 			}
@@ -217,7 +217,7 @@ political_decisions = {
 				limit = {
 					OR = {
 						AND = {
-							tag = MAG
+							tag = ALM
 							in_sphere = THIS
 							war = no
 						}

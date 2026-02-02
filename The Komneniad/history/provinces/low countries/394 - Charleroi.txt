@@ -3,7 +3,7 @@ controller = BRB
 add_core = BRB
 trade_goods = coal
 life_rating = 35
-terrain = charleroi
+terrain = mining_district
 add_core = WLL
 state_building = { level = 2 building = liquor_distillery upgrade = yes } 
 state_building = { level = 2 building = cement_factory upgrade = yes } 

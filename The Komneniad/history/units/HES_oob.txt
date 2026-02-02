@@ -1,27 +1,24 @@
-leader = {
-    name = "Prince Georg"
-    date = 1820.1.1
-    type = land
-    personality = defence_minus_2.1
-    background = attack_1.1
-    prestige = 0.2
-}
-
-leader = {
-    name = "Prince Karl"
-    date = 1836.1.1
-    type = land
-    personality = no_personality
-    background = no_background
-}
-
 army = {
-    name = "Groﬂherzogliche Armee"
-    location = 2560
-    regiment = {
-        name = "1. Groﬂherzogliche Infanterie"
+    name = "1st Army"
+    location = 566
+	regiment = {
+        name = "1st Infantry Regiment"
         type = infantry
-        home = 2560
+        home = 566
     }
-
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 566
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 567
+    }
+	regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 568
+    }
 }

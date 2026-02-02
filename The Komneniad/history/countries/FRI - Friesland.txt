@@ -1,12 +1,13 @@
 capital = 385
-primary_culture = frisian
-culture = west_german
-religion = protestant
-government = democracy
+primary_culture = west_german
+culture = frisian
+culture = dutch
+religion = reformed
+government = colonial_company
 plurality = 15.0
 nationalvalue = nv_equality
-literacy = 0.75
-prestige = 10
+literacy = 0.65
+prestige = 5
 
 civilized = yes
 
@@ -21,16 +22,16 @@ school_reforms = no_schools
 
 #Political Reforms
 slavery = yes_slavery
-vote_franschise = wealth_voting
+vote_franschise = landed_voting
 upper_house_composition = state_equal_weight
 voting_system = jefferson_method
 public_meetings = yes_meeting
 press_rights = censored_press
-trade_unions = non_socialist
-political_parties = non_secret_ballots
+trade_unions = no_trade_unions
+political_parties = harassment
 
 #New Reforms
-conscription = one_year_draft
+conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
@@ -76,3 +77,8 @@ private_banks = 1
 piston_steam_engine = 1
 
 oob = "FRI_oob.txt"
+
+govt_flag = {
+	government = colonial_company
+	flag = theocracy
+}

@@ -1,7 +1,7 @@
-owner = BRN
-controller = BRN
-add_core = BRN
+owner = ALM
+controller = ALM
+add_core = ALM
 add_core = GER
 trade_goods = grain
 life_rating = 40
-terrain = stendal
+terrain = plains

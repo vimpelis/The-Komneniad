@@ -11,10 +11,9 @@ alliance = {
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
-
 alliance = {
-    first = WES
-    second = FRI
+    first = BRB
+    second = NAS
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
@@ -102,7 +101,13 @@ alliance = {
 }
 alliance = {
     first = BAV
-    second = HEK
+    second = DRM
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+alliance = {
+    first = BAV
+    second = AUG
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
@@ -138,7 +143,7 @@ alliance = {
 }
 alliance = {
     first = BAV
-    second = MAG
+    second = ALM
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
@@ -194,13 +199,6 @@ alliance = {
 alliance = {
     first = ZPD
     second = WLG
-    start_date = 1836.1.1
-    end_date = 1936.1.1
-}
-
-alliance = {
-    first = BRB
-    second = OLD
     start_date = 1836.1.1
     end_date = 1936.1.1
 }

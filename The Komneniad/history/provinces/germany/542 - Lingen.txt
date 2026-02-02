@@ -1,7 +1,8 @@
-owner = WES
-controller = WES
-add_core = WES
+owner = BRB
+controller = BRB
+add_core = BRB
+add_core = RHI
 add_core = GER
-trade_goods = cattle
+trade_goods = coal
 life_rating = 40
-terrain = lingen
+terrain = farmlands

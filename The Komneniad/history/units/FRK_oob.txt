@@ -16,4 +16,14 @@ army = {
         type = artillery
         home = 597
     }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 595
+    }
+	regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 597
+    }
 }

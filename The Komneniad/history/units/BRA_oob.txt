@@ -1,9 +1,24 @@
 army = {
-    name = "Braunschweigische Armee"
+    name = "1st Army"
     location = 536
-    regiment = {
-        name = "1. Braunschweigische Infanterie-Brigade"
+	regiment = {
+        name = "1st Infantry Regiment"
         type = infantry
         home = 536
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 534
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 534
+    }
+	regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 537
     }
 }

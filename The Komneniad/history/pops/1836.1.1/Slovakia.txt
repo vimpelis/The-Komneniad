@@ -41,16 +41,16 @@
         size = 12075
     }
 
-    serfs = {
+    farmers = {
         culture = slovak
         religion = catholic
-        size = 20000
+        size = 17000
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 800
+        size = 680
     }
 
     aristocrats = {
@@ -227,10 +227,10 @@
         size = 59400
     }
 
-    serfs = {
+    farmers = {
         culture = slovak
         religion = catholic
-        size = 27000
+        size = 22950
     }
 
     clergymen = {
@@ -298,6 +298,24 @@
         religion = catholic
         size = 35
     }
+
+    farmers = {
+        culture = slovak
+        religion = protestant
+        size = 3000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 120
+    }
+
+    farmers = {
+        culture = slovak
+        religion = protestant
+        size = 4050
+    }
 }
 #Nitra (3279752/819938 POPS)
 635 = {
@@ -325,16 +343,16 @@
         size = 20300
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 3000
+        size = 2550
     }
 
-    serfs = {
+    farmers = {
         culture = slovak
         religion = catholic
-        size = 32000
+        size = 27200
     }
 
     aristocrats = {
@@ -426,6 +444,18 @@
         religion = catholic
         size = 2750
     }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 450
+    }
+
+    farmers = {
+        culture = slovak
+        religion = protestant
+        size = 4800
+    }
 }
 #Banska Bystrica (340000/85000 POPS)
 636 = {
@@ -459,10 +489,10 @@
         size = 1000
     }
 
-    serfs = {
+    farmers = {
         culture = slovak
         religion = catholic
-        size = 26000
+        size = 22100
     }
 
     clergymen = {
@@ -548,6 +578,12 @@
         religion = catholic
         size = 900
     }
+
+    farmers = {
+        culture = slovak
+        religion = protestant
+        size = 3900
+    }
 }
 #Felvidek Region (860000) #see Hungary.txt and Ukraine.txt for balance of Region
 #under the rule of Austria in 1836
@@ -583,10 +619,10 @@
         size = 1100
     }
 
-    serfs = {
+    farmers = {
         culture = slovak
         religion = catholic
-        size = 12000
+        size = 10200
     }
 
     farmers = {
@@ -739,10 +775,16 @@
         size = 100
     }
 
-    serfs = {
+    farmers = {
         culture = ruthene
         religion = orthodox
         size = 4450
+    }
+
+    farmers = {
+        culture = slovak
+        religion = protestant
+        size = 1800
     }
 }
 #Roznava (160400/40100 POPS)
@@ -765,10 +807,10 @@
         size = 120
     }
 
-    serfs = {
+    farmers = {
         culture = slovak
         religion = catholic
-        size = 5625
+        size = 4781
     }
 
     farmers = {
@@ -825,9 +867,15 @@
         size = 30
     }
 
-    serfs = {
+    farmers = {
         culture = ruthene
         religion = orthodox
         size = 4433
+    }
+
+    farmers = {
+        culture = slovak
+        religion = protestant
+        size = 844
     }
 }

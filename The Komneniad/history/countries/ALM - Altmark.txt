@@ -4,7 +4,7 @@ religion = protestant
 government = absolute_monarchy
 plurality = 0
 nationalvalue = nv_order
-literacy = 0.5
+literacy = 0.8
 
 civilized = yes
 
@@ -76,4 +76,6 @@ upper_house =
 consciousness = 0
 nonstate_consciousness = 0
 
-prestige = 0
+prestige = 5
+
+oob = "ALM_oob.txt"

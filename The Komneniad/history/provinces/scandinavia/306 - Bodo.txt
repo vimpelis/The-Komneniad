@@ -3,6 +3,6 @@ controller = DEN
 add_core = DEN
 add_core = SMI
 trade_goods = fish
-terrain = bodo
+terrain = stavanger
 life_rating = 32
 add_core = NOR

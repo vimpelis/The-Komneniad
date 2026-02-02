@@ -1,12 +1,12 @@
-owner = HES
-controller = HES
-add_core = HES
+owner = DRM
+controller = DRM
+add_core = DRM
 add_core = GER
 trade_goods = fruit
 life_rating = 40
-#state_building = {
-#    level = 1
-#    building = fabric_factory
-#    upgrade = yes
-#}
-terrain = darmstadt
+state_building = {
+    level = 1
+    building = fabric_factory
+    upgrade = yes
+}
+terrain = hills

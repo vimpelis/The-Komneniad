@@ -1,3 +1,9 @@
-PRU = {
-    value = 125
+army = {
+    name = "1st Army"
+    location = 555
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 555
+    }
 }

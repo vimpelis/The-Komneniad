@@ -1,7 +1,8 @@
 owner = FRA
 controller = FRA
-add_core = OCC
 add_core = FRA
-terrain = montpellier
+add_core = OCC
+terrain = plains
 trade_goods = cattle
 life_rating = 30
+naval_base = 1

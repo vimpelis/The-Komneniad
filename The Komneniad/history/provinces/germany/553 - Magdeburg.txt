@@ -1,7 +1,7 @@
-owner = MAG
-controller = MAG
+owner = ALM
+controller = ALM
+add_core = ALM
 add_core = GER
-add_core = MAG
 trade_goods = sugar
 life_rating = 40
-terrain = magdeburg
+terrain = plains

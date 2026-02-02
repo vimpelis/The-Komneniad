@@ -3,6 +3,5 @@ controller = DAN
 add_core = ENG
 trade_goods = coal
 life_rating = 35
-terrain = sheffield
+terrain = hills
 add_core = DAN
-party_loyalty = { ideology = liberal loyalty_value = 20 } 

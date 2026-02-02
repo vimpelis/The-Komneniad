@@ -208,7 +208,7 @@ political_decisions = {
 						OR = {
 							has_pop_culture = estonian
 							has_pop_culture = latvian
-							has_pop_culture = volga_german
+							has_pop_culture = north_german
 							has_pop_culture = finnish
 						}
 					}
@@ -286,7 +286,7 @@ political_decisions = {
 				}
 			}
 			UBD = {
-				any_pop = { limit = { has_pop_culture = volga_german } literacy = 0.2 }
+				any_pop = { limit = { has_pop_culture = north_german } literacy = 0.2 }
 				any_pop = { limit = { has_pop_culture = swedish } literacy = 0.79 }
 				any_pop = { limit = { has_pop_culture = russian } literacy = -0.46 }
 				any_pop = { limit = { OR = { has_pop_culture = polish has_pop_culture = lithuanian } } literacy = 0.19 }
@@ -294,7 +294,7 @@ political_decisions = {
 				any_pop = { limit = { is_culture_group = finnougric NOT = { has_pop_culture = estonian } } literacy = 0.49 }
 			}
 			EST = {
-				any_pop = { limit = { has_pop_culture = volga_german } literacy = 0.2 }
+				any_pop = { limit = { has_pop_culture = north_german } literacy = 0.2 }
 				any_pop = { limit = { has_pop_culture = swedish } literacy = 0.79 }
 				any_pop = { limit = { has_pop_culture = russian } literacy = -0.46 }
 				any_pop = { limit = { OR = { has_pop_culture = polish has_pop_culture = lithuanian } } literacy = 0.19 }
@@ -302,7 +302,7 @@ political_decisions = {
 				any_pop = { limit = { is_culture_group = finnougric NOT = { has_pop_culture = estonian } } literacy = 0.49 }
 			}
 			LAT = {
-				any_pop = { limit = { has_pop_culture = volga_german } literacy = 0.2 }
+				any_pop = { limit = { has_pop_culture = north_german } literacy = 0.2 }
 				any_pop = { limit = { has_pop_culture = swedish } literacy = 0.79 }
 				any_pop = { limit = { has_pop_culture = russian } literacy = -0.46 }
 				any_pop = { limit = { OR = { has_pop_culture = polish has_pop_culture = lithuanian } } literacy = 0.19 }
@@ -730,7 +730,7 @@ political_decisions = {
 			CAT = { country_event = 150003 }
 			BRB = { country_event = 156000 }
 			CLT = { country_event = 157000 }
-			DAN = { country_event = 157000 }
+			DAN = { country_event = 157000 any_pop = { limit = { has_pop_culture = anglo_saxon } militancy = 2 } }
 			BYZ = { country_event = 151000 }
 			RUS = { country_event = 152000 }
 			WAL = { country_event = 153000 }

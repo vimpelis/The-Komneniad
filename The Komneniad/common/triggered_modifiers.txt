@@ -405,22 +405,6 @@ small_but_efficient = {
     rich_income_modifier = 5
 }
 
-microstate = {
-    trigger = {
-        exists = yes
-        capital_scope = { continent = europe }
-        civilized = yes
-        NOT = { number_of_states = 2 }
-        NOT = { num_of_cities = 2 }
-        NOT = { total_pops = 50000 }
-        NOT = { year = 1886 }
-    }
-    icon = 9
-    core_pop_militancy_modifier = -0.2
-    core_pop_consciousness_modifier = -0.2
-    diplomatic_points_modifier = -0.6
-}
-
 sound_dues = {
     trigger = {
         capital_scope = { continent = europe }
@@ -1102,31 +1086,21 @@ fairer_taxation3 = {
     icon = 9
 }
 
-DVG_badboy_1 = {
-    trigger = {
-        has_global_flag = sw_set
-        is_greater_power = yes
-    }
-    badboy = -0.40
-    icon = 1
-}
-
-DVG_badboy_2 = {
-    trigger = {
-        has_global_flag = sw_set
-        is_greater_power = no
-    }
-    badboy = -0.20
-    icon = 1
-}
-
 #Komneniad
+constantinople_accords = {
+    trigger = {
+		NOT = { has_global_flag = const_accords_gone }
+    }
+    badboy = -0.1
+    icon = 7
+}
+
 NZL_overpop = {
     trigger = {
 		tag = NZL
 		total_pops = 750000
     }
-    global_immigrant_attract = -1
+    global_immigrant_attract = -5
     icon = 2
 }
 
@@ -1168,6 +1142,6 @@ SAF_overpop = {
 			}
 		}
     }
-    global_immigrant_attract = -1
+    global_immigrant_attract = -5
     icon = 2
 }

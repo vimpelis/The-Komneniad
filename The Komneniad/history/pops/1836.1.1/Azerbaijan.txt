@@ -570,12 +570,6 @@
         size = 22890
     }
 
-    farmers = {
-        culture = volga_german
-        religion = protestant
-        size = 400
-    }
-
     aristocrats = {
         culture = armenian
         religion = coptic

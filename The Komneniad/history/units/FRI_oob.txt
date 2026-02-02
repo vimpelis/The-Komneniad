@@ -17,9 +17,14 @@ army = {
         home = 383
     }
     regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 386
+    }
+    regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 386
+        home = 540
     }
     regiment = {
         name = "1st Artillery Regiment"
@@ -30,5 +35,97 @@ army = {
         name = "2nd Artillery Regiment"
         type = artillery
         home = 384
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 535
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 382
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 382
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 540
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+    ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
     }
 }

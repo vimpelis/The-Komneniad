@@ -200,38 +200,38 @@
 #Antigua (25000/6250 POPS) #now independent
 2224 = {
     bureaucrats = {
-        culture = dutch
-        religion = protestant
+        culture = frisian
+        religion = reformed
         size = 20
     }
 
     clergymen = {
-        culture = dutch
-        religion = protestant
+        culture = frisian
+        religion = reformed
         size = 50
     }
 
     farmers = {
-        culture = dutch
-        religion = protestant
+        culture = frisian
+        religion = reformed
         size = 2400
     }
 
     artisans = {
         culture = afro_dutch
-        religion = protestant
+        religion = reformed
         size = 250
     }
 
     soldiers = {
         culture = afro_dutch
-        religion = protestant
+        religion = reformed
         size = 100
     }
 
     farmers = {
         culture = afro_dutch
-        religion = protestant
+        religion = reformed
         size = 8070
     }
 }

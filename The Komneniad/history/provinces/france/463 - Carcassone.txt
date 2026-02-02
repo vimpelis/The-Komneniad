@@ -1,7 +1,7 @@
 owner = FRA
 controller = FRA
-add_core = OCC
 add_core = FRA
+add_core = OCC
 trade_goods = fruit
-terrain = narbonne
+terrain = plains
 life_rating = 30

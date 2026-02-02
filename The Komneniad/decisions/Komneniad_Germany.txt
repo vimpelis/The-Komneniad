@@ -80,16 +80,10 @@ political_decisions = {
 					add_core = THIS
 				}
 			}
-			HES = { all_core = { add_core = THIS } }
+			DRM = { all_core = { add_core = THIS } }
 			FRM = { all_core = { add_core = THIS } }
 			ALS = { all_core = { add_core = THIS } }
-			any_owned = {
-				limit = {
-					province_id = 567
-				}
-				secede_province = HEK
-				remove_core = THIS
-			}
+			AUG = { all_core = { add_core = THIS } }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -380,14 +374,14 @@ political_decisions = {
 			MEC = { all_core = { add_core = THIS } }
 			MST = { all_core = { add_core = THIS } }
 			ANH = { all_core = { add_core = THIS } }
-			MAG = { all_core = { add_core = THIS } }
+			ALM = { all_core = { add_core = THIS } }
 			WES = { all_core = { add_core = THIS } }
 			THU = { all_core = { add_core = THIS } }
 			SAX = { all_core = { add_core = THIS } }
 			NSB = { all_core = { add_core = THIS } }
-			HEK = { all_core = { add_core = THIS } }
+			DRM = { all_core = { add_core = THIS } }
 			HES = { all_core = { add_core = THIS } }
-			OLD = { all_core = { add_core = THIS } }
+			AUG = { all_core = { add_core = THIS } }
 			WLD = { all_core = { add_core = THIS } }
 			LIP = { all_core = { add_core = THIS } }
 			FRM = { all_core = { add_core = THIS } }

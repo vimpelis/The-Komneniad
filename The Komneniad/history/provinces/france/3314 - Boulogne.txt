@@ -3,5 +3,5 @@ controller = BRB
 add_core = BRB
 trade_goods = sugar
 life_rating = 30
-terrain = bolougne
+terrain = plains
 add_core = WLL

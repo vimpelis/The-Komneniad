@@ -100,7 +100,6 @@ political_decisions = {
 			badboy = 12
 			add_accepted_culture = latvian
 			add_accepted_culture = estonian
-			add_accepted_culture = volga_german
 			UBD = { all_core = { add_core = THIS } }
 			set_country_flag = SCA_claim_baltics
 		}

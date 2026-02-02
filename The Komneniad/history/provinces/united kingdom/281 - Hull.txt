@@ -4,5 +4,5 @@ add_core = ENG
 trade_goods = fish
 life_rating = 35
 naval_base = 2
-terrain = hull
+terrain = farmlands
 add_core = DAN

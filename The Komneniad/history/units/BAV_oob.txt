@@ -19,7 +19,7 @@ SWI = {
 FRK = {
     value = 200
     level = 5
-    influence_value = 75
+    influence_value = 100
     military_access = yes
 }
 ALS = {
@@ -29,63 +29,69 @@ ALS = {
     military_access = yes
 }
 HES = {
-    value = 150
+    value = 100
     level = 5
-    influence_value = 50
+    influence_value = 10
     military_access = yes
 }
-HEK = {
-    value = 150
+DRM = {
+    value = 200
     level = 5
-    influence_value = 25
+    influence_value = 75
+    military_access = yes
+}
+AUG = {
+    value = 175
+    level = 5
+    influence_value = 50
     military_access = yes
 }
 THU = {
-    value = 150
+    value = 100
     level = 5
-    influence_value = 50
+    influence_value = 10
     military_access = yes
 }
 ANH = {
-    value = 150
+    value = 100
     level = 5
-    influence_value = 50
+    influence_value = 10
     military_access = yes
 }
-MAG = {
-    value = 150
+ALM = {
+    value = 100
     level = 5
-    influence_value = 50
+    influence_value = 10
     military_access = yes
 }
 BRA = {
-    value = 150
+    value = 75
     level = 5
-    influence_value = 30
+    influence_value = 10
     military_access = yes
 }
 LIP = {
-    value = 150
+    value = 75
     level = 5
-    influence_value = 25
+    influence_value = 10
     military_access = yes
 }
 WLD = {
-    value = 150
+    value = 75
     level = 5
-    influence_value = 25
+    influence_value = 10
     military_access = yes
 }
 MST = {
-    value = 150
+    value = 75
     level = 5
-    influence_value = 50
+    influence_value = 10
     military_access = yes
 }
 MEC = {
-    value = 150
+    value = 75
     level = 5
-    influence_value = 50
+    influence_value = 10
     military_access = yes
 }
 FRM = {
@@ -95,14 +101,14 @@ FRM = {
     military_access = yes
 }
 NSB = {
-    value = 100
+    value = 50
     level = 4
     influence_value = 25
 }
 SAX = {
-    value = -25
+    value = -50
     level = 4
-    influence_value = 25
+    influence_value = 10
 }
 BRN = {
     value = -25
@@ -110,29 +116,24 @@ BRN = {
     influence_value = 25
 }
 WLG = {
-    value = -10
+    value = -25
     level = 3
     influence_value = 25
 }
 STT = {
-    value = -10
+    value = -25
     level = 3
     influence_value = 25
 }
 PRU = {
     value = 75
     level = 4
-    influence_value = 25
+    influence_value = 10
 }
 BNE = {
     value = 25
     level = 3
     influence_value = 10
-}
-OLD = {
-    value = -25
-    level = 3
-    influence_value = 25
 }
 FRI = {
     value = 50
@@ -198,7 +199,7 @@ army = {
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 614
+        home = 599
     }
 	regiment = {
         name = "2nd Artillery Regiment"
@@ -335,7 +336,15 @@ army = {
 navy = {
     name = "1st Fleet"
     location = 736
-    ship = {
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
 		name = "Man'o'war"
         type = manowar
     }
@@ -346,5 +355,41 @@ navy = {
 	ship = {
 		name = "Frigate"
         type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
     }
 }

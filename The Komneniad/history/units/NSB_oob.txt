@@ -31,12 +31,25 @@ army = {
         type = artillery
         home = 369
     }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 539
+    }
 }
 
 navy = {
     name = "1st Fleet"
     location = 528
     ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
 		name = "Man'o'war"
         type = manowar
     }
@@ -57,6 +70,22 @@ navy = {
         type = frigate
     }
 	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
         name = "Transport Flotilla"
         type = clipper_transport
     }
@@ -64,7 +93,14 @@ navy = {
         name = "Transport Flotilla"
         type = clipper_transport
     }
-
+    ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
     ship = {
         name = "Transport Flotilla"
         type = clipper_transport

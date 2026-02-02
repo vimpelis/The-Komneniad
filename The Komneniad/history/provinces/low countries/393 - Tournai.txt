@@ -1,7 +1,8 @@
 owner = BRB
 controller = BRB
 add_core = BRB
+add_core = FLA
 trade_goods = coal
 life_rating = 35
-terrain = tournai
+terrain = mining_district
 add_core = WLL

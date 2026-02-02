@@ -171,13 +171,13 @@ DEN_372 = { 372 373 374 3667 } #Sjaelland
 
 NET_375 = { 375 376 377 } #Holland
 
-NET_379 = { 379 378 380 381 577 } #Zeeland
+NET_379 = { 379 378 380 381 } #Zeeland
 
 NET_385 = { 385 383 384 386 382 1743 543 533 } #Friesland
 
 BEL_387 = { 387 388 389 391 3383 } #Flanders
 
-BEL_394 = { 394 392 393 395 398 } #Wallonia
+BEL_394 = { 392 395 396 397 398 } #Wallonia
 
 
 ### France
@@ -186,7 +186,7 @@ FRA_399 = { 403 402 2570 } #Picardie
 
 FRA_406 = { 406 408 407 2622 } #Champagne
 
-FRA_404 = { 399 400 401 404 3314 } #Nord-Pas-De-Calais/Artois
+FRA_404 = { 393 394 399 400 401 404 3314 } #Nord-Pas-De-Calais/Artois
 
 FRA_411 = { 411 413 414 3409 } #Lorraine
 
@@ -254,7 +254,7 @@ POR_2134 = { 2134 2135 2136 } #Macaronesia
 
 HAN_528 = { 528 531 532 539 } #Lower Elbe
 
-HAN_540 = { 540 542 538 541 535 } #East Friesland
+HAN_540 = { 540 538 541 535 } #East Friesland
 
 PRU_544 = { 544 545 3493 } #Mecklenburg
 
@@ -266,27 +266,27 @@ PRU_553 = { 553 555 557 534 536 537  } #Magdeburg
 
 SAX_558 = { 558 559 560 687 3416 556 552 } #Saxony
 
-HES_2560 = { 564 566 567 568 2560 3257 } #Hessen
+HES_2560 = { 564 566 567 568 3257 } #Hessen
 
-PRU_570 = { 570 573 571 3270 } #Palatinate
+PRU_570 = { 412 570 571 573 3270 } #Palatinate
 
-PRU_575 = { 575 576 572 397 396 574 } #Rheinland
+PRU_575 = { 572 574 575 576 577 } #Rheinland
 
-PRU_578 = { 578 2561 565 } #Eastern Rheinland
+PRU_578 = { 542 565 578 2561 } #Eastern Rheinland
 
 PRU_581 = { 581 580 582 583 585 3267 } #Westfalen
 
-BAD_586 = { 586 587 588 569 3481 } #Baden
+BAD_586 = { 586 587 588 569 } #Baden
 
 WUR_589 = { 589 590 591 593 594 } #Wurttemburg
 
-BAV_595 = { 595 596 597 598 } #Franconia
+BAV_595 = { 595 596 597 598 2560 3481 } #Franconia
 
 BAV_599 = { 599 592 600 601 602 } #Upper Bavaria
 
 #BAV_601 = { 601 602 } #Lower Bavaria
 
-SWI_603 = { 603 606 604 611 } #Swiss Mittelland
+SWI_603 = { 603 604 606 611 614 } #Swiss Mittelland
 
 SWI_607 = { 3250 3271 3272 605 } #Région Lémanique
 
@@ -303,7 +303,7 @@ PRU_701 = { 701 699 700 } #Posen
 
 ### Austria
 
-AUS_612 = { 612 613 614 615 735 } #Tirol
+AUS_612 = { 612 613 615 735 } #Tirol
 
 AUS_613 = { 616 617 618 3370 3670 } #KÃ¤rnten-Steiermark
 
@@ -1262,7 +1262,7 @@ USA_2543 = { 2543 2544 } #Samoa Islands
 FRA_801 = { 801 2551 2552 2553 } #Tahiti
 
 #Komneniad
-DEBUG_REGION = { 353 405 412 623 633 677 778 781 794 828 829 831 1701 3290 3291 3614 3393 3355 3556 3569 3653 3368 3367 3606 3400 3480 3397 3341 3343 3344 3483 3332 3379 3372 3303 3423 3306 3420 3307 3421 3562 3417 } #Unused provinces
+DEBUG_REGION = { 353 405 623 633 677 778 781 794 828 829 831 1701 3290 3291 3614 3393 3355 3556 3569 3653 3368 3367 3606 3400 3480 3397 3341 3343 3344 3483 3332 3379 3372 3303 3423 3306 3420 3307 3421 3562 3417 } #Unused provinces
 
 tooltip_1 = {} #Each Ayllonian boy...
 tooltip_2 = {}

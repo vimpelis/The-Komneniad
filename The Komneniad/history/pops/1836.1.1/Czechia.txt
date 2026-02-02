@@ -50,16 +50,16 @@
         size = 30560
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 500
+        size = 425
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 12000
+        size = 8400
     }
 
     aristocrats = {
@@ -175,8 +175,8 @@
         religion = catholic
         size = 20000
     }
-	
-	craftsmen = {
+
+    craftsmen = {
         culture = czech
         religion = catholic
         size = 30000
@@ -188,16 +188,16 @@
         size = 100
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 10000
+        size = 8500
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 62000
+        size = 43400
     }
 
     aristocrats = {
@@ -241,6 +241,30 @@
         religion = catholic
         size = 775
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 3600
+    }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 18600
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 75
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 1500
+    }
 }
 #Prague (Praha) (XXX/XXX POPS)
 3483 = {
@@ -283,16 +307,16 @@
         size = 35000
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 3500
+        size = 2975
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 45000
+        size = 31500
     }
 
     aristocrats = {
@@ -353,6 +377,18 @@
         culture = ashkenazi
         religion = jewish
         size = 400
+    }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 13500
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 525
     }
 }
 #Pribram (400000/100000 POPS)
@@ -393,16 +429,16 @@
         size = 35000
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 3500
+        size = 2975
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 45000
+        size = 31500
     }
 
     aristocrats = {
@@ -464,6 +500,18 @@
         religion = jewish
         size = 400
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 13500
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 525
+    }
 }
 #Hradec Kralove (441600/110400 POPS)
 626 = {
@@ -491,10 +539,10 @@
         size = 62950
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 30000
+        size = 21000
     }
 
     aristocrats = {
@@ -550,6 +598,12 @@
         religion = jewish
         size = 625
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 9000
+    }
 }
 #Brno (1094000/273500 POPS)
 631 = {
@@ -589,16 +643,16 @@
         size = 100000
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 3550
+        size = 3017
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 53000
+        size = 37100
     }
 
     aristocrats = {
@@ -666,6 +720,18 @@
         religion = jewish
         size = 1370
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 15900
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 533
+    }
 }
 #Zlin (232000/58000 POPS)
 3335 = {
@@ -705,16 +771,16 @@
         size = 74323
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 850
+        size = 722
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 12500
+        size = 8750
     }
 
     aristocrats = {
@@ -782,6 +848,18 @@
         religion = jewish
         size = 370
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 3750
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 128
+    }
 }
 #Sudetes Region
 #under the rule of Austria in 1836
@@ -805,10 +883,10 @@
         size = 250
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 15800
+        size = 11060
     }
 
     aristocrats = {
@@ -883,10 +961,10 @@
         size = 925
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 1250
+        size = 1062
     }
 
     aristocrats = {
@@ -924,6 +1002,18 @@
         religion = catholic
         size = 33780
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 4740
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 188
+    }
 }
 #Aussig (317600/79400 POPS)
 ######Jews
@@ -947,10 +1037,10 @@
         size = 100
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 8325
+        size = 5827
     }
 
     aristocrats = {
@@ -989,10 +1079,10 @@
         size = 43928
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 670
+        size = 569
     }
 
     soldiers = {
@@ -1054,6 +1144,18 @@
         religion = catholic
         size = 18827
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 2498
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 101
+    }
 }
 #Pilsen (490400/122600 POPS)
 629 = {
@@ -1081,16 +1183,16 @@
         size = 16000
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 2100
+        size = 1785
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 16000
+        size = 11200
     }
 
     aristocrats = {
@@ -1188,6 +1290,18 @@
         religion = catholic
         size = 19425
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 4800
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 315
+    }
 }
 #Budejovice (405600/101400 POPS)
 630 = {
@@ -1221,10 +1335,10 @@
         size = 4000
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 10100
+        size = 7070
     }
 
     aristocrats = {
@@ -1263,10 +1377,10 @@
         size = 19478
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 1210
+        size = 1028
     }
 
     clergymen = {
@@ -1364,6 +1478,18 @@
         religion = catholic
         size = 29217
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 3030
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 182
+    }
 }
 #Znaim
 3426 = {
@@ -1397,10 +1523,10 @@
         size = 400
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 4625
+        size = 3237
     }
 
     aristocrats = {
@@ -1445,10 +1571,10 @@
         size = 6646
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 270
+        size = 229
     }
 
     clergymen = {
@@ -1558,6 +1684,18 @@
         religion = catholic
         size = 9970
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 1388
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 41
+    }
 }
 #Olomouc (372800/93200 POPS)
 632 = {
@@ -1609,10 +1747,10 @@
         size = 8
     }
 
-    serfs = {
+    farmers = {
         culture = south_german
         religion = catholic
-        size = 26030
+        size = 22125
     }
 
     farmers = {
@@ -1621,10 +1759,10 @@
         size = 900
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 780
+        size = 663
     }
 
     clergymen = {
@@ -2430,6 +2568,18 @@
         religion = catholic
         size = 180
     }
+
+    farmers = {
+        culture = south_german
+        religion = protestant
+        size = 3905
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 117
+    }
 }
 #Silesia Region (220000) #see Poland.txt for balance of region
 #under the rule of Austria in 1836
@@ -2465,10 +2615,10 @@
         size = 80
     }
 
-    serfs = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 9385
+        size = 6569
     }
 
     aristocrats = {
@@ -2513,10 +2663,10 @@
         size = 4350
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 120
+        size = 102
     }
 
     aristocrats = {
@@ -2800,6 +2950,18 @@
         religion = catholic
         size = 1305
     }
+
+    farmers = {
+        culture = czech
+        religion = protestant
+        size = 2816
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 18
+    }
 }
 #Teschen (116000/29000 POPS)
 689 = {
@@ -2875,15 +3037,27 @@
         size = 150
     }
 
-    serfs = {
+    farmers = {
         culture = polish
         religion = catholic
-        size = 22200
+        size = 18870
     }
 
-    serfs = {
+    farmers = {
         culture = gypsy
         religion = catholic
-        size = 450
+        size = 382
+    }
+
+    farmers = {
+        culture = polish
+        religion = protestant
+        size = 3330
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = protestant
+        size = 68
     }
 }
