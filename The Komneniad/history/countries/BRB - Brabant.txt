@@ -87,3 +87,5 @@ foreign_investment = {
     FRI = 20000
     NSB = 5000
 }
+
+schools = industrial_tech_school

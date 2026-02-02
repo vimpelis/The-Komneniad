@@ -85,3 +85,5 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "NSB_oob.txt"
+
+schools = commerce_tech_school

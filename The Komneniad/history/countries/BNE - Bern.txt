@@ -3,12 +3,12 @@ primary_culture = lower_burgundian
 culture = upper_burgundian
 culture = south_german
 religion = reformed
-government = democracy
+government = league
 plurality = 40.0
 nationalvalue = nv_liberty
 literacy = 0.8
 civilized = yes
-prestige = 10
+prestige = 5
 
 #Political Reforms
 slavery = no_slavery
@@ -41,7 +41,7 @@ colonial_policy = no_colonies
 
 set_country_flag = protestant_country
 
-ruling_party = SWI_conservative
+ruling_party = FRA_conservative
 last_election = 1835.1.1
 upper_house = {
     fascist = 0
@@ -86,15 +86,8 @@ column_still = yes
 juice_extraction_through_maceration = yes
 steam_powered_sugar_mills = yes
 
-schools = industrial_tech_school
-
 #Starting Consciousness
 consciousness = 3
 nonstate_consciousness = 1
 
 oob = "BNE_oob.txt"
-
-govt_flag = {
-	government = radical_republic
-	flag = colonial_company
-}

@@ -55,7 +55,13 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 85250
+        size = 80250
+    }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 5000
     }
 
     clergymen = {
@@ -171,7 +177,13 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 33500
+        size = 32500
+    }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 1000
     }
 }
 #Lower Elbe Region (557600)
@@ -207,7 +219,7 @@
     artisans = {
         culture = west_german
         religion = protestant
-        size = 18950
+        size = 14950
     }
 
     soldiers = {
@@ -219,13 +231,13 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 19320
+        size = 13320
     }
 
     craftsmen = {
         culture = west_german
         religion = catholic
-        size = 10000
+        size = 20000
     }
 
     farmers = {
@@ -306,13 +318,19 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 47800
+        size = 45800
     }
 
     farmers = {
         culture = gypsy
         religion = protestant
         size = 250
+    }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 2000
     }
 }
 #Lunenburg (180000/45000 POPS)
@@ -344,7 +362,13 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 45900
+        size = 43900
+    }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 2000
     }
 }
 #Under rule of Britain 1836
@@ -413,13 +437,13 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 2880
+        size = 4880
     }
 
     craftsmen = {
         culture = west_german
         religion = catholic
-        size = 6000
+        size = 4000
     }
 
     farmers = {
@@ -1080,7 +1104,7 @@
     artisans = {
         culture = west_german
         religion = protestant
-        size = 9350
+        size = 7350
     }
 
     soldiers = {
@@ -1092,13 +1116,13 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 9435
+        size = 7435
     }
 
     craftsmen = {
         culture = west_german
         religion = protestant
-        size = 500
+        size = 4500
     }
 
     farmers = {

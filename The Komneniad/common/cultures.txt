@@ -409,13 +409,17 @@ celtic = {
 		MacEachainn MacGilleathain MacIlleGhlais MacIllIosa MacMhunna MacRiada MacUisdein Marnach "O Deargain"
 		Peutan Robasdan Siosal Stiubhartach Taillear Ualas }
     }
+	#credit to Arleck for the wonderful Welsh names
     welsh = {
         color = { 35 100 20 }
-        first_names = { Huw David Dafydd Iwan Bartholemew Henry John Morgan James Owen
-        Owain Lloyd Floyd Michael}
+        first_names = {
+		Llywelyn Llew Llewelyn Emlyn Gwarthaf Elffin Cemais Aeron Kyffin Guto Ifor Islwyn Rhys Rowan Cadeyrn Dai Deiniol Emrys Taliesin Ednyfed Goronwy Anarawd Gwgon Dafydd Gwilym Gwil Maldwyn Samwyl
+		}
 
-        last_names = { Griffiths Gruffydd Griffin Roberts Jones Davids Davies "ap Morgan" welsh
-        Peters George Morgannwg Evans Williams}
+        last_names = {
+		Tudur Maredudd Weallin Kyffin Fychan Ednyfed Iorwerth "ap Tudur" Sais Meurig "ap Rowan" "Dew ap Llywellyn" "Goch ap Owen" "ap Goch ap Cynwring" "ap Cyrwryd" "ap Rhodri" "ap Meuring" "ap Gwilym" "ap Trefaldwyn" "ap Meirion"
+		Goch Gam Hir Leiaf Llwyd Hywel
+		}
     }
     breton = {
         color = { 100 110 100 }

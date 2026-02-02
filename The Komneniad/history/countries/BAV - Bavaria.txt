@@ -72,11 +72,12 @@ piston_steam_engine = 1
 mechanical_production = 1
 hot_blast = 1
 basic_chemistry = 1
+muzzle_loaded_rifles = 1
 
 #Inventions
 steam_powered_sugar_mills = yes
 
-schools = industrial_tech_school
+schools = army_tech_school
 
 #Starting Consciousness
 consciousness = 2

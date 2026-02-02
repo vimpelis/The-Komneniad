@@ -109,38 +109,111 @@ army = {
 }
 
 navy = {
-    name = "Royal Navy"
+    name = "1st Fleet"
     location = 281
     ship = {
-        name = "Daneland"
+		name = "Man'o'war"
         type = manowar
     }
     ship = {
-        name = "Diana"
-        type = frigate
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
     }
     ship = {
-        name = "Freya"
-        type = frigate
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+	ship = {
+		name = "Commerce Raider"
+        type = commerce_raider
+    }
+}
+
+navy = {
+    name = "2nd Fleet"
+    location = 296
+	ship = {
+        name = "Transport Flotilla"
+        type = steam_transport
     }
     ship = {
-        name = "Havfruen"
-        type = frigate
+        name = "Transport Flotilla"
+        type = steam_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = steam_transport
     }
     ship = {
-        name = "Bellona"
-        type = frigate
+        name = "Transport Flotilla"
+        type = steam_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = steam_transport
     }
     ship = {
-        name = "1st Transport Flotilla"
-        type = clipper_transport
+        name = "Transport Flotilla"
+        type = steam_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = steam_transport
     }
     ship = {
-        name = "2nd Transport Flotilla"
-        type = clipper_transport
+        name = "Transport Flotilla"
+        type = steam_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = steam_transport
     }
     ship = {
-        name = "3rd Transport Flotilla"
-        type = clipper_transport
-	}
+        name = "Transport Flotilla"
+        type = steam_transport
+    }
 }

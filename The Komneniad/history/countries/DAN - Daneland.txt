@@ -97,3 +97,5 @@ consciousness = 2
 nonstate_consciousness = 0
 
 oob = "DAN_oob.txt"
+
+schools = industrial_tech_school
