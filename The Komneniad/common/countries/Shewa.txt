@@ -1,5 +1,5 @@
 color = { 128  128  64 }
-graphical_culture = EthiopianGC
+graphical_culture = AfricanGC
 
 party = {
     name = "SHW_conservative"
