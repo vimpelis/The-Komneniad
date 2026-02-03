@@ -149,6 +149,7 @@ AAL - Ard Al-Hurriyah
 177000 - Kurdistan
 178000 - MidEast
 179000 - Blights&Droughts
+180000 - Ideologies&Revolutions
 
 **Random notes that are not present in any of the events:**
 

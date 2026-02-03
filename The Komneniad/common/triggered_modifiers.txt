@@ -302,40 +302,6 @@ vassal_nation = {
     prestige = -1
 }
 
-substate_nation = {
-    trigger = {
-        exists = yes
-        is_substate = yes
-        civilized = yes
-        ai = yes
-    }
-
-    prestige = -1
-    max_loan_modifier = -1.0
-    min_tax = 0.25
-    max_military_spending = -0.25
-    min_tariff = 1.2
-    tax_efficiency = 0.3
-
-    icon = 10
-}
-
-substate_nation_player = {
-    trigger = {
-        exists = yes
-        is_substate = yes
-        civilized = yes
-        ai = no
-    }
-
-    prestige = -0.25
-    max_loan_modifier = -1.0
-    max_military_spending = -0.25
-    tax_efficiency = 0.3
-
-    icon = 10
-}
-
 own_kiel_canal = {
     trigger = {
         exists = yes
@@ -624,56 +590,6 @@ bread_basket = {
     war_exhaustion = -0.1
 }
 
-colonial_administration = {
-    trigger = {
-        ai = no
-        civilized = yes
-        OR = {
-            capital_scope = { continent = europe }
-            capital_scope = { continent = asia }
-            capital_scope = { continent = north_america }
-            capital_scope = { continent = south_america }
-        }
-        NOT = {
-            total_amount_of_ships = 35
-        }
-        OR = {
-            #Warri
-            1931 = { is_colonial = yes owned_by = THIS }
-            #Calabar
-            1934 = { is_colonial = yes owned_by = THIS }
-            #Aro
-            1935 = { is_colonial = yes owned_by = THIS }
-            #Benin
-            1928 = { is_colonial = yes owned_by = THIS }
-            #Oyo
-            1926 = { is_colonial = yes owned_by = THIS }
-            #Sokoto
-            1948 = { is_colonial = yes owned_by = THIS }
-            #Loango
-            2624 = { is_colonial = yes owned_by = THIS }
-            #Ashanti
-            1910 = { is_colonial = yes owned_by = THIS }
-            #Dahomey
-            1919 = { is_colonial = yes owned_by = THIS }
-            #Bambara
-            1800 = { is_colonial = yes owned_by = THIS }
-            #Mali
-            1804 = { is_colonial = yes owned_by = THIS }
-            #Mossi
-            1901 = { is_colonial = yes owned_by = THIS }
-            #Ethopia
-            1857 = { is_colonial = yes owned_by = THIS }
-            1852 = { is_colonial = yes owned_by = THIS }
-            1859 = { is_colonial = yes owned_by = THIS }
-        }
-    }
-    icon = 10
-    supply_consumption = 0.1
-    tax_efficiency = -0.05
-    administrative_efficiency_modifier = -0.05
-}
-
 pashtunwali = {
     trigger = {
         owns = 1209
@@ -701,16 +617,6 @@ help_ai_secondary_power = {
     }
     supply_consumption = -0.1
     icon = 19
-}
-
-gorkha_kingdom = {
-    trigger = {
-        is_culture_group = central_asian
-        has_pop_culture = nepali
-        NOT = { total_pops = 1250000 } #1.25 million POPs/5 Million population
-    }
-    global_population_growth = 0.01
-    icon = 17
 }
 
 tariff_efficiency_boost = {
@@ -1090,8 +996,22 @@ fairer_taxation3 = {
 constantinople_accords = {
     trigger = {
 		NOT = { has_global_flag = const_accords_gone }
+		capital_scope = { continent = europe }
+		NOT = { has_country_flag = refused_constantinople_accords }
     }
     badboy = -0.1
+    icon = 7
+}
+
+no_international_system = {
+    trigger = {
+		NOT = { has_global_flag = const_accords_gone }
+		OR = {
+			NOT = { capital_scope = { continent = europe } }
+			has_country_flag = refused_constantinople_accords
+		}
+    }
+    badboy = -0.2
     icon = 7
 }
 

@@ -74,5 +74,6 @@ mechanical_production = 1
 basic_chemistry = 1
 
 set_country_flag = sunni_country
+set_country_flag = refused_constantinople_accords
 
 oob = "ADU_oob.txt"

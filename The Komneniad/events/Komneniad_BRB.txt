@@ -10,23 +10,317 @@ country_event = {
     option = {
         name = "I wish we lived in simpler times."
 		any_pop = {
+			militancy = 1
+		}
+		any_pop = {
 			limit = { has_pop_culture = west_german }
+			militancy = 1
+			consciousness = 1
+		}
+		any_pop = {
+			limit = { has_pop_culture = wallonian }
 			militancy = 2
 			consciousness = 2
 		}
 		any_pop = {
-			limit = { has_pop_culture = wallonian }
+			limit = { has_pop_culture = anglo_saxon }
 			militancy = 3
 			consciousness = 3
-		}
-		any_pop = {
-			limit = { has_pop_culture = anglo_saxon }
-			militancy = 4
-			consciousness = 4
 		}
 		add_country_modifier = {
 			name = BRB_feudalism
 			duration = -1
 		}
+    }
+}
+
+country_event = {
+    id = 156001
+    title = "Trouble in Franconia"
+    desc = "156001DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Things look bleak for the King."
+		any_pop = {
+			consciousness = 1
+			ideology = { factor = 0.1 value = liberal }
+		}
+    }
+}
+
+country_event = {
+    id = 156002
+    title = "The Geregistreerde"
+    desc = "156002DESC"
+    picture = "nederlandsch_congres"
+
+    trigger = {
+		tag = BRB
+		year = 1837
+		debt_law = peonage
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 60
+    }
+
+    option = {
+        name = "Who will be brave enough to do it?"
+		new_decisions_tt = {}
+		set_country_flag = BRB_can_cancel_serfdom
+    }
+}
+
+country_event = {
+    id = 156003
+    title = "The 60th Anniversary of the Fourty Days War"
+    desc = "156003DESC"
+    picture = "nederlandsch_congres"
+
+    trigger = {
+		tag = BRB
+		year = 1842
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "We did it once, we can do it again!"
+		prestige = 10
+		any_pop = {
+			militancy = -0.5
+			consciousness = -0.5
+		}
+    }
+}
+
+country_event = {
+    id = 156004
+    title = "Hinrich I and the Frisians"
+    desc = "156004DESC"
+    picture = "nederlandsch_congres"
+
+    trigger = {
+		tag = FRI
+		year = 1843
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+    }
+
+    option = {
+        name = "I love Frisia!"
+		prestige = 10
+		capital = 386
+		primary_culture = frisian
+		add_accepted_culture = west_german
+		385 = { change_province_name = "Ljouwert" }
+		383 = { change_province_name = "Grins" }
+		540 = { change_province_name = "Rjustringen" }
+		any_pop = {
+			limit = { has_pop_culture = frisian }
+			militancy = -4
+			consciousness = -4
+		}
+		any_pop = {
+			limit = { has_pop_culture = west_german }
+			consciousness = 2
+		}
+		BRB = { country_event = 156005 }
+    }
+}
+
+country_event = {
+    id = 156005
+    title = "Hinrich I and the Frisians"
+    desc = "156004DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "And we're going to be the ones blamed for it."
+		any_pop = {
+			limit = { has_pop_culture = frisian }
+			consciousness = 2
+		}
+		FRI = {
+			capital = 386
+			primary_culture = frisian
+			add_accepted_culture = west_german
+			385 = { change_province_name = "Ljouwert" }
+			383 = { change_province_name = "Grins" }
+			540 = { change_province_name = "Rjustringen" }
+		}
+    }
+}
+
+country_event = {
+    id = 156006
+    title = "War in the East"
+    desc = "156006DESC"
+    picture = "nederlandsch_congres"
+
+    trigger = {
+		tag = BRB
+		BAV = { war_with = ZPD }
+		NOT = { has_global_flag = const_accords_gone }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "The States General convene ones again..."
+		country_event = { id = 156007 days = 1 }
+    }
+}
+
+country_event = {
+    id = 156007
+    title = "Crisis of the Constantinople System"
+    desc = "156007DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "Send out the invitations."
+		any_country = {
+			limit = {
+				capital_scope = { continent = europe }
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+				NOT = {
+					OR = {
+						tag = FRA
+						tag = BYZ
+						tag = GRE
+						tag = BAV
+						tag = ADU
+						tag = SPA
+					}
+				}
+			}
+			country_event = { id = 156008 days = 2 }
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = FRA
+					tag = BYZ
+					tag = GRE
+					tag = BAV
+				}
+			}
+			country_event = { id = 156009 days = 2 }
+		}
+    }
+}
+
+#accepting does nothing, as the proposal will always get shot down
+country_event = {
+    id = 156008
+    title = "Brabantian Invitation"
+    desc = "156008DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We accept. Let's see what we can work out."
+		relation = { who = BRB value = 25 }
+		relation = { who = FRA value = -25 }
+		random_owned = {
+			limit = { exists = BYZ }
+			owner = { relation = { who = BYZ value = -25 } }
+		}
+		random_owned = {
+			limit = { exists = GRE }
+			owner = { relation = { who = GRE value = -25 } }
+		}
+		ai_chance = {
+            factor = 1
+			modifier = { tag = CLT factor = 4 }
+			modifier = { tag = DAN factor = 4 }
+			modifier = { tag = DEN factor = 2 }
+			modifier = { tag = ZPD factor = 100 }
+			modifier = { tag = RUS factor = 4 }
+			modifier = { tag = ARE factor = 0 }
+			modifier = { tag = NSB factor = 100 }
+			modifier = { tag = LOM factor = 0 }
+			modifier = { tag = WES factor = 100 }
+			modifier = { tag = SWI factor = 0 }
+        }
+    }
+	
+	option = {
+        name = "The current system works fine."
+		relation = { who = BRB value = -25 }
+		relation = { who = FRA value = 25 }
+		random_owned = {
+			limit = { exists = BYZ }
+			owner = { relation = { who = BYZ value = 25 } }
+		}
+		random_owned = {
+			limit = { exists = GRE }
+			owner = { relation = { who = GRE value = 25 } }
+		}
+		ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {
+    id = 156009
+    title = "Brabantian Invitation"
+    desc = "156009DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Decline and send a note of protest."
+		prestige = 5
+		relation = { who = BRB value = -50 }
+		set_global_flag = BRB_proposal_failed
+		random_owned = {
+			limit = { NOT = { has_global_flag = BRB_proposal_failed } }
+			owner = { BRB = { country_event = { id = 156009 days = 2 } } }
+		}
+    }
+}
+
+country_event = {
+    id = 156010
+    title = "Proposal shot down"
+    desc = "156010DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "Time will show that we were right."
+		prestige = -10
     }
 }

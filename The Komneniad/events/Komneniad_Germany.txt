@@ -144,6 +144,7 @@ country_event = {
 			consciousness = 2
 		}
 		BAV = { country_event = 155007 }
+		BRB = { country_event = { id = 156001 days = 5 } }
 		set_global_flag = FRK_uprising
     }
 }
@@ -299,7 +300,7 @@ country_event = {
     is_triggered_only = yes
 	
     option = {
-        name = "Do these warmongers want a repeat of the Martletist Wars?"
+        name = "Do they want a repeat of the Forty Days War?"
     }
 }
 
@@ -330,7 +331,7 @@ country_event = {
     fire_only_once = yes
 
     mean_time_to_happen = {
-        months = 60
+        months = 120
     }
 
     option = {

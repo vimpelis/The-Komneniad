@@ -207,8 +207,8 @@ country_event = {
 				value = 400
 			}
 		}
-		BYZ = { country_event = 177011 }
-		GRE = { country_event = 177011 }
+		BYZ = { country_event = { id = 177011 days = 3 } }
+		GRE = { country_event = { id = 177011 days = 3 } }
     }
 	
 	option = {
@@ -218,14 +218,14 @@ country_event = {
 				tag = GRE
 				exists = yes
 			}
-			country_event = 177012
+			country_event = { id = 177012 days = 3 }
 		}
 		any_country = {
 			limit = {
 				tag = BYZ
 				exists = yes
 			}
-			country_event = 177012
+			country_event = { id = 177012 days = 3 }
 		}
     }
 }

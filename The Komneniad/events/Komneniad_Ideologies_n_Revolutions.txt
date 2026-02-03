@@ -1,0 +1,108 @@
+country_event = {
+    id = 180000
+    title = "The Spring of Nations"
+    desc = "180000DESC"
+    picture = "spring_of_nations"
+
+    trigger = {
+		year = 1848
+		OR = {
+			tag = FRA
+			tag = OCC
+			tag = BYZ
+			tag = GRE
+			tag = BAV
+			tag = DAN
+			tag = ARE
+			tag = ZPD
+			tag = LOM
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Aux armes, citoyens!"
+		any_country = {
+			limit = { capital_scope = { continent = europe } }
+			any_pop = { consciousness = 1 }
+		}
+    }
+}
+
+country_event = {
+    id = 180001
+    title = "Failure of the Constantinople Accords"
+    desc = "180001DESC"
+    picture = "spring_of_nations"
+
+    trigger = {
+		year = 1849
+		is_greater_power = yes
+		war = no
+		NOT = {
+			OR = {
+				tag = FRA
+				tag = BYZ
+				tag = GRE
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Let's try this again."
+		any_country = {
+			limit = { capital_scope = { continent = europe } }
+			country_event = { id = 180002 days = 3 }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = { id = 180003 days = 15 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+    }
+}
+
+country_event = {
+    id = 180002
+    title = "A new international system"
+    desc = "180002DESC"
+    picture = "spring_of_nations"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We need to work something new out."
+		relation = { who = FROM value = 25 }
+    }
+}
+
+country_event = {
+    id = 180003
+    title = "The $CAPITAL$ Convention of $YEAR$"
+    desc = "180003DESC"
+    picture = "spring_of_nations"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "A toast for diplomacy!"
+		badboy = -5
+		prestige = 15
+		any_country = { limit = { is_greater_power = yes } prestige = 20 }
+		set_global_flag = const_accords_gone
+    }
+}
