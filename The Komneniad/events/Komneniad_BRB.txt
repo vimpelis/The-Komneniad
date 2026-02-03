@@ -305,7 +305,7 @@ country_event = {
 		set_global_flag = BRB_proposal_failed
 		random_owned = {
 			limit = { NOT = { has_global_flag = BRB_proposal_failed } }
-			owner = { BRB = { country_event = { id = 156009 days = 2 } } }
+			owner = { BRB = { country_event = { id = 156010 days = 2 } } }
 		}
     }
 }
