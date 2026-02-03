@@ -5510,8 +5510,8 @@ severe_drought = {
 }
 
 impassable = {
-	movement_cost = 10
-	pop_militancy_modifier = -1
+	movement_cost = 99.99
+    supply_limit = -16
     icon = 10
 }
 
