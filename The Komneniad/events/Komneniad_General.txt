@@ -1,15 +1,15 @@
 country_event = {
-    id = 169003
+    id = 169001
     title = "Komneniad Menu"
     desc = "Welcome to the Menu! Select what you'd like to check out."
     picture = "india_map"
 
     is_triggered_only = yes
 	allow_multiple_instances = yes
-
+	
 	option = {
-        name = "Let me see the GFM-related info (and credits)"
-		country_event = 60168151
+        name = "Open the Information Menu"
+		country_event = 169003
     }
 	
 	option = {
@@ -19,7 +19,7 @@ country_event = {
 	
 	option = {
         name = "Page 2"
-		country_event = 169006
+		country_event = 169002
     }
 	
 	option = {
@@ -29,7 +29,7 @@ country_event = {
 }
 
 country_event = {
-    id = 169006
+    id = 169002
     title = "Komneniad Menu: Page 2"
     desc = "Welcome to the Menu! Select what you'd like to check out."
     picture = "india_map"
@@ -39,7 +39,7 @@ country_event = {
 	
 	option = {
         name = "Back to Page 1"
-		country_event = 169003
+		country_event = 169001
     }
 	
 	option = {
@@ -49,14 +49,69 @@ country_event = {
     }
 	
 	option = {
-        name = "What are the gameplay changes?"
-		country_event = 169004
-    }
-	
-	option = {
         name = "Enable multiplayer mode"
 		set_global_flag = you_are_playing_mp
     }
+}
+
+country_event = {
+    id = 169003
+    title = "Komneniad: Information Menu"
+    desc = "Welcome to the Information Menu. Select what you'd like to check out."
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Let me see the GFM-related info (and credits)"
+		country_event = 60168151
+    }
+	
+	option = {
+        name = "What are the gameplay changes?"
+		country_event = 169004
+    }
+}
+
+#Credits
+country_event = {
+    id = 60168151
+    title = "EVTNAME60168151"
+    desc = "EVTDESC60168151"
+    picture = "gettysburg_address"
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+        name = "Cool."
+		country_event = 60168153
+    }
+}
+#Speed
+country_event = {
+    id = 60168153
+    title = "Speed"
+    desc = "SPEEDEXPLAINED"
+    picture = "speedy_car"
+    is_triggered_only = yes
+
+    option = {
+        name = "Hm, I'll consider it."
+		country_event = 4207008
+    }
+}
+
+country_event = {
+	id = 4207008
+	title = "Straits"
+	desc = "EVTDESC4207008"
+	picture = "straits_explained"
+	is_triggered_only = yes
+
+	option = {
+		name = "Got it."
+		country_event = 169003
+	}
 }
 
 country_event = {
@@ -68,15 +123,15 @@ country_event = {
     is_triggered_only = yes
 
 	option = {
-        name = "Ok"
-		country_event = 169006
+        name = "Back to Information Menu"
+		country_event = 169003
     }
 }
 
 country_event = {
-    id = 169002
+    id = 169200
     title = "Bavaria tips"
-    desc = "169002DESC"
+    desc = "169200DESC"
     picture = "india_map"
 
     is_triggered_only = yes
@@ -124,7 +179,7 @@ country_event = {
 	
 	option = {
         name = "Summon govtype event"
-		country_event = 169001
+		country_event = 169100
     }
 	
 	option = {
@@ -191,7 +246,7 @@ country_event = {
     }
 	
 	option = {
-        name = "Add 5 mil and con to every civilized country"
+        name = "Add 5 mil and con to every country"
 		any_country = { any_pop = { militancy = 5 consciousness = 5 } }
 		country_event = 169007
     }
@@ -237,7 +292,7 @@ country_event = {
 }
 
 country_event = {
-    id = 169001
+    id = 169100
     title = "Gov type event"
     desc = "Choose which gov type you'd like to be."
     picture = "guinea_coast"
@@ -248,47 +303,47 @@ country_event = {
     option = {
         name = "Republic"
 		government = democracy
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Const. Monarchy"
 		government = hms_government
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Semi-Const. Monarchy"
 		government = prussian_constitutionalism
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Absolute Monarchy"
 		government = absolute_monarchy
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Absolute Empire"
 		government = absolute_empire
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Radical Republic"
 		government = radical_republic
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Theocracy"
 		government = theocracy
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Proletarian Dictatorship"
 		government = proletarian_dictatorship
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Fascist Dictatorship"
 		government = fascist_dictatorship
-		country_event = 169001
+		country_event = 169100
     }
 	option = {
         name = "Close event"
@@ -321,7 +376,7 @@ country_event = {
 country_event = {
     id = 169009
     title = "Spawn a country"
-    desc = "Select a late-game country to spawn"
+    desc = "Select a country to spawn"
     picture = "india_map"
 
     is_triggered_only = yes
@@ -455,7 +510,7 @@ country_event = {
 country_event = {
     id = 169010
     title = "Options"
-    desc = "Select an option"
+    desc = "Select an option."
     picture = "india_map"
 
     is_triggered_only = yes
@@ -522,7 +577,7 @@ country_event = {
 	
 	option = {
         name = "Back to Menu"
-        country_event = 169003
+        country_event = 169001
     }
 }
 
@@ -576,19 +631,6 @@ country_event = {
         }
 		add_country_modifier = { name = lower_infamy_d duration = -1 }
 		country_event = 169010
-	}
-}
-
-country_event = {
-	id = 4207008
-	title = "Straits"
-	desc = "EVTDESC4207008"
-	picture = "straits_explained"
-	is_triggered_only = yes
-
-	option = {
-		name = "Got it."
-		country_event = 169003
 	}
 }
 
@@ -724,23 +766,6 @@ country_event = {
 		economic_reform = yes_firearms_production
 		economic_reform = yes_research_reform
 		economic_reform = monetary_reform_two
-    }
-}
-
-country_event = {
-    id = 169013
-    title = "UH test"
-    desc = "wow"
-    picture = "india_map"
-
-    is_triggered_only = yes
-	
-	option = {
-        name = "Ok"
-		upper_house = {
-			ideology = conservative
-			value = -0.1
-		}
     }
 }
 

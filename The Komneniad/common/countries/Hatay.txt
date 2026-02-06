@@ -1,5 +1,5 @@
 color = { 130  100  200 }
-graphical_culture = OttomanGC
+graphical_culture = MiddleEasternGC
 
 party = {
     name = "TUR_reactionary"

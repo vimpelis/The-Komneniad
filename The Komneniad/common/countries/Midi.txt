@@ -109,65 +109,26 @@ party = {
 
 unit_names = {
     dreadnought = {
-        "Dunkerque" "Strasbourg" "Richelieu" "Clemenceau" "Petain" "Napolйon" "Poincare"
-        "Louis XIV" "Alsace" "Bourgogne" "Poitou" "Calais" "Rouen" "Brest" "Dйvastation"
-        "Courbet" "Amiral Duperrй" "Terrible" "Indomptable" "Caiman" "Requin" "Admiral Baudin"
-        "Formidable" "Hoche" "Marceau" "Magenta" "Neptune" "Brennus" "Charles Martel" "Carnot"
-        "Jaurйguiberry" "Massйna" "Bouvet" "Charlemagne" "Saint Louis" "Gaulois" "Henri IV"
-        "Iйna" "Suffren" "Rйpublique" "Patrie" "Dйmocratie" "Justice" "Libertй" "Veritй"
-        "Danton" "Diderot" "Mirabeau" "Vergniaud" "Voltaire" "Condorcet" "Courbet" "France"
-        "Jean Bart" "Paris" "Fleurus" "Bretagne" "Lorraine" "Provence" "Bearn" "Flandre"
-        "Gascoigne" "Languedoc" "Normandie" "Guyenne" "Champagne" "Auvergne" "Lille" "Lyon"
-        "Orleans" "La Rochelle" "Bourdeaux"
+		"Alemanha" "Angieus" "Arièja" "Auts Aups" "Batistou" "Benasc" "Bertomieu" "Blanhac" "Caçairòla" "Carmauç" "Charanta" "Criu" "Dordonha" "Emília" "Ermengarda" "Esteveneta" "Felibèrt" "Francilh" "Gasconha" "Grand" "Guilhèm" "Ives" "Jausèpa" "Lestang" "Loís" "Marsiho" "Miglòs" "Nercamp" "Nourjat" "Parpalhon" "Petit" "Polit" "Ponç" "Provença" "Rachid" "Renada" "Samotràcia" "Septimània" "Supervièla" "Tolosa" "Tortoirac" "Ugues" "Vaison" "Valadin" "Vauclusa" "Zèus" "Benvengut" "Castèl" "Devastacion" "Enrique" "Infernal" "Escantilhant" "Vodreuil" "Naiad" "Venjaire" "Trionfant" "Victoriós" "Floral"
     }
     ironclad = {
-        "Congreve" "Foudroyante" "Lave" "Tonnante" "Gloire" "Invincible" "Normandie" "Couronne"
-        "Magenta" "Solferino" "Flandre" "Gauloise" "Magnanime" "Provence" "Revanche" "Savoie"
-        "Surveillante" "Valeureuse" "Hйroпne"
+		"Alemanha" "Angieus" "Arièja" "Auts Aups" "Batistou" "Benasc" "Bertomieu" "Blanhac" "Caçairòla" "Carmauç" "Charanta" "Criu" "Dordonha" "Emília" "Ermengarda" "Esteveneta" "Felibèrt" "Francilh" "Gasconha" "Grand" "Guilhèm" "Ives" "Jausèpa" "Lestang" "Loís" "Marsiho" "Miglòs" "Nercamp" "Nourjat" "Parpalhon" "Petit" "Polit" "Ponç" "Provença" "Rachid" "Renada" "Samotràcia" "Septimània" "Supervièla" "Tolosa" "Tortoirac" "Ugues" "Vaison" "Valadin" "Vauclusa" "Zèus" "Benvengut" "Castèl" "Devastacion" "Enrique" "Infernal" "Escantilhant" "Vodreuil" "Naiad" "Venjaire" "Trionfant" "Victoriós" "Floral"
     }
     manowar = {
-        "Alexandre" "Breslaw" "Prince Jйrфme" "Ville de Paris" "Ville de Nantes" "Duguay-Trouin"
-        "Tage" "Donawerth" "Saint Louis" "Fontenoy" "Turenne" "Ville de Bordeaux" "Castiglione"
-        "Massйna" "Bayard" "Ville de Lyon" "Louis XIV"
+		"Alemanha" "Angieus" "Arièja" "Auts Aups" "Batistou" "Benasc" "Bertomieu" "Blanhac" "Caçairòla" "Carmauç" "Charanta" "Criu" "Dordonha" "Emília" "Ermengarda" "Esteveneta" "Felibèrt" "Francilh" "Gasconha" "Grand" "Guilhèm" "Ives" "Jausèpa" "Lestang" "Loís" "Marsiho" "Miglòs" "Nercamp" "Nourjat" "Parpalhon" "Petit" "Polit" "Ponç" "Provença" "Rachid" "Renada" "Samotràcia" "Septimània" "Supervièla" "Tolosa" "Tortoirac" "Ugues" "Vaison" "Valadin" "Vauclusa" "Zèus" "Benvengut" "Castèl" "Devastacion" "Enrique" "Infernal" "Escantilhant" "Vodreuil" "Naiad" "Venjaire" "Trionfant" "Victoriós" "Floral"
     }
     cruiser = {
-        "Clovis" "Maurice de Saxe" "Vercingetorix" "Richemont" "Dunois" "Ney" "Leger" "Vauban"
-        "Conde" "Turenne" "Montebello" "Austerlitz" "Souverain" "Navarin" "Ulm" "Wagram"
-        "Algйsiras" "Arcole" "Friedland" "Impйrial" "Eylau" "Tilsitt" "Jena" "Auerstadt"
-        "Marengo" "Toulon" "Bellone" "Glorieuse" "Gracieuse" "Audacieuse" "Impйtueuse" "Ardente"
-        "Victoire" "Guerriиre" "Tйmйraire" "Triomphant" "Tigre" "Persйvйrante" "Vigilant"
-        "Tenace" "Йlan" "Duguay Trouin" "Lamotte-Picquet" "Primaguet" "Duquesne" "Tourville"
-        "Colbert" "Foch" "Algйrie" "Jeanne D'Arc" "Maroc" "Lafayette" "Davout" "Suchet" "Forbin"
-        "Surcouf" "Cosmao" "Lalande" "Galilйe" "Lavoisier" "Linois" "La Galissionere"
-        "Jean de Vienne" "Gloire" "Marseillaise" "Georges Leygues" "De Grasse" "La Fantasque"
-        "Iphigenie" "Naiade" "Arethuse" "Dubourdieu" "Milan" "Belliqueuse" "Sfax" "Tage"
-        "Amiral Cйcille" "Davout" "Suchet" "Coлtlogon" "Forbin" "Surcouf" "Cosmao" "Lalande"
-        "Troude" "Galilйe" "Lavoisier" "Linois" "Tunisiй" "Isly" "Bugeaud" "Chasseloup-Laubat"
-        "Friant" "Descartes" "Pascal" "Cassard" "D'Assas" "Du Chayla" "Catinat" "Protet"
-        "D'Entrecasteaux" "Guichen" "Chвteaurenault" "D'Estrйes" "Infernet" "Jurien de la Graviиre"
-        "Pluton" "Emile Bertin" "Dupuy de Lome" "Admiral Charner" "Bruix" "Chanzy" "Latouche-Treville"
-        "Pothau" "Dupetit-Thouars" "Gueydon" "Montcalm" "Desaix" "Dupleix" "Kleber"
-        "Amiral Aube" "Conde" "Sully" "Leon Gambetta" "Victor Hugo" "Jules Michelet"
-        "Ernest Renan" "Edgar Quinet" "Waldeck-Rousseau" "Thionville" "Metz" "Mulhouse" "Colmar"
-        "D'Assas" "Du Chayla" "Catinat" "Protet" "D'Entrecasteaux" "Guichen" "Chвteaurenault"
+		"Alemanha" "Angieus" "Arièja" "Auts Aups" "Batistou" "Benasc" "Bertomieu" "Blanhac" "Caçairòla" "Carmauç" "Charanta" "Criu" "Dordonha" "Emília" "Ermengarda" "Esteveneta" "Felibèrt" "Francilh" "Gasconha" "Grand" "Guilhèm" "Ives" "Jausèpa" "Lestang" "Loís" "Marsiho" "Miglòs" "Nercamp" "Nourjat" "Parpalhon" "Petit" "Polit" "Ponç" "Provença" "Rachid" "Renada" "Samotràcia" "Septimània" "Supervièla" "Tolosa" "Tortoirac" "Ugues" "Vaison" "Valadin" "Vauclusa" "Zèus" "Benvengut" "Castèl" "Devastacion" "Enrique" "Infernal" "Escantilhant" "Vodreuil" "Naiad" "Venjaire" "Trionfant" "Victoriós" "Floral"
     }
     frigate = {
-        "Condor" "Epervier" "Faucon" "Vautour" "Wattignies" "Levrier" "Casablanca" "D'Iberville"
-        "Cassini" "Lahire" "Circй" "Hermione" "Pallas" "Sйmiramis" "Armorique" "Junon"
-        "Magicienne" "Thйmis" "Flore"
+		"Alemanha" "Angieus" "Arièja" "Auts Aups" "Batistou" "Benasc" "Bertomieu" "Blanhac" "Caçairòla" "Carmauç" "Charanta" "Criu" "Dordonha" "Emília" "Ermengarda" "Esteveneta" "Felibèrt" "Francilh" "Gasconha" "Grand" "Guilhèm" "Ives" "Jausèpa" "Lestang" "Loís" "Marsiho" "Miglòs" "Nercamp" "Nourjat" "Parpalhon" "Petit" "Polit" "Ponç" "Provença" "Rachid" "Renada" "Samotràcia" "Septimània" "Supervièla" "Tolosa" "Tortoirac" "Ugues" "Vaison" "Valadin" "Vauclusa" "Zèus" "Benvengut" "Castèl" "Devastacion" "Enrique" "Infernal" "Escantilhant" "Vodreuil" "Naiad" "Venjaire" "Trionfant" "Victoriós" "Floral"
     }
     monitor = {
-        "Ocйan" "Marengo" "Suffren" "Friedland" "Richelieu" "Colbert" "Trident"
+		"Alemanha" "Angieus" "Arièja" "Auts Aups" "Batistou" "Benasc" "Bertomieu" "Blanhac" "Caçairòla" "Carmauç" "Charanta" "Criu" "Dordonha" "Emília" "Ermengarda" "Esteveneta" "Felibèrt" "Francilh" "Gasconha" "Grand" "Guilhèm" "Ives" "Jausèpa" "Lestang" "Loís" "Marsiho" "Miglòs" "Nercamp" "Nourjat" "Parpalhon" "Petit" "Polit" "Ponç" "Provença" "Rachid" "Renada" "Samotràcia" "Septimània" "Supervièla" "Tolosa" "Tortoirac" "Ugues" "Vaison" "Valadin" "Vauclusa" "Zèus" "Benvengut" "Castèl" "Devastacion" "Enrique" "Infernal" "Escantilhant" "Vodreuil" "Naiad" "Venjaire" "Trionfant" "Victoriós" "Floral"
     }
-    clipper_transport = {
-    }
-    steam_transport = {
-    }
+    clipper_transport = {}
+    steam_transport = {}
     commerce_raider = {
-        "Asmodйe" "Gomer" "Darien" "Labrador" "Ulloa" "Cacique" "Canada" "Christophe Colomb"
-        "Eldorado" "Magellan" "Montezuma" "Orйnoque" "Panama" "Albatros" "Descartes" "Vauban"
-        "Caffarelli" "Mogador" "Pomone" "Isly" "Bellone" "Foudre" "Impйratrice Eugйnie"
-        "Souveraine" "Audacieuse" "Impйtueuse" "Ardente" "Victoire" "Guerriиre" "Renommйe"
-        "Danaй" "Pandore" "Zйnobie" "Clorinde" "Astrйe"
+		"Alemanha" "Angieus" "Arièja" "Auts Aups" "Batistou" "Benasc" "Bertomieu" "Blanhac" "Caçairòla" "Carmauç" "Charanta" "Criu" "Dordonha" "Emília" "Ermengarda" "Esteveneta" "Felibèrt" "Francilh" "Gasconha" "Grand" "Guilhèm" "Ives" "Jausèpa" "Lestang" "Loís" "Marsiho" "Miglòs" "Nercamp" "Nourjat" "Parpalhon" "Petit" "Polit" "Ponç" "Provença" "Rachid" "Renada" "Samotràcia" "Septimània" "Supervièla" "Tolosa" "Tortoirac" "Ugues" "Vaison" "Valadin" "Vauclusa" "Zèus" "Benvengut" "Castèl" "Devastacion" "Enrique" "Infernal" "Escantilhant" "Vodreuil" "Naiad" "Venjaire" "Trionfant" "Victoriós" "Floral"
     }
 }

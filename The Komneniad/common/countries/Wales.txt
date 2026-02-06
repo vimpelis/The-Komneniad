@@ -1,5 +1,5 @@
 color = { 100  130  50 }
-graphical_culture = WelshGC
+graphical_culture = IrishGC
 
 party = {
     name = "WHA_liberal"

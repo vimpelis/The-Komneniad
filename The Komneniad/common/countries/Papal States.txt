@@ -1,5 +1,5 @@
 color = { 229 150 87 }
-graphical_culture = PapalGC
+graphical_culture = ItalianGC
 
 party = {
     name = "PAP_reactionary"

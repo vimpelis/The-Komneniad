@@ -1,5 +1,5 @@
 capital_mobilisation = {
-	supply_limit = 1000
+	max_attrition = -1000
 	icon = 17
 }
 
@@ -25,11 +25,6 @@ gov_legit_in_question = {
 
 removed_pm_cd = {
 	icon = 12
-}
-
-half_research_startup = { #DON'T TOUCH THIS WITHOUT TALKING TO ABE AND GETTING APPROVAL, ABE WILL WORK ON THIS SOON
-	research_points_modifier = -0.5
-	icon = 4
 }
 
 ##################################################################################################
@@ -5491,6 +5486,13 @@ ARE_uprising = {
 	local_artisan_output = -0.25
 	population_growth = -0.001
     icon = 8
+}
+
+BRB_flemish_modf = {
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
+	farm_rgo_eff = -0.25
+    icon = 6
 }
 
 potato_blight_special = {

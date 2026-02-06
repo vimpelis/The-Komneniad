@@ -79,6 +79,7 @@ piston_steam_engine = 1
 mechanical_production = 1
 hot_blast = 1
 basic_chemistry = 1
+high_pressure_steam_engine = 1
 
 oob = "ZPD_oob.txt"
 

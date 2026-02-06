@@ -48,6 +48,13 @@ country_event = {
 			consciousness = 1
 			ideology = { factor = 0.1 value = liberal }
 		}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = { id = 156011 days = 7 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
     }
 }
 
@@ -166,6 +173,12 @@ country_event = {
 		}
     }
 }
+
+#################################################################
+#																#
+#						New Internat. Conf						#
+#																#
+#################################################################
 
 country_event = {
     id = 156006
@@ -322,5 +335,70 @@ country_event = {
     option = {
         name = "Time will show that we were right."
 		prestige = -10
+    }
+}
+
+#################################################################
+#																#
+#					New Internat. Conf End						#
+#																#
+#################################################################
+
+country_event = {
+    id = 156011
+    title = "Flemish Delegates speak out against the King"
+    desc = "156011DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "A united front against the King?"
+		any_pop = {
+			limit = { has_pop_culture = flemish has_pop_type = aristocrats }
+			militancy = 2
+			consciousness = 4
+			ideology = { factor = 0.2 value = reactionary }
+		}
+		FLA = {
+			all_core = {
+				add_province_modifier = { name = BRB_flemish_modf duration = -1 }
+			}
+		}
+    }
+}
+
+country_event = {
+    id = 156012
+    title = "The States General of Brabant"
+    desc = "156012DESC"
+    picture = "nederlandsch_congres"
+
+    trigger = {
+		tag = BRB
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "The States General are a pride of Brabant!"
+    }
+}
+
+country_event = {
+    id = 156013
+    title = "End of the Flemish Rights"
+    desc = "156013DESC"
+    picture = "nederlandsch_congres"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "text"
+		any_owned = { remove_province_modifier = BRB_flemish_modf }
     }
 }

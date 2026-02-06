@@ -154,6 +154,14 @@ country_event = {
                 NOT = { tag = RUS }
                 neighbour = THIS
             }
+			OR = {
+                NOT = { tag = BYZ }
+                neighbour = THIS
+            }
+			OR = {
+                NOT = { tag = GRE }
+                neighbour = THIS
+            }
             nationalism_n_imperialism = 1
             NOT = {
                 war_policy = pacifism
@@ -188,11 +196,6 @@ country_event = {
                 tag = TUN
                 tag = MOR
             }
-        }
-        modifier = {
-            factor = 5
-            tag = EGY
-            sphere_owner = { tag = TUR }
         }
     }
 

@@ -1,5 +1,5 @@
 color = { 215  222  252 }
-graphical_culture = FinnishGC
+graphical_culture = DanishGC
 
 party = {
     name = "FIN_conservative"

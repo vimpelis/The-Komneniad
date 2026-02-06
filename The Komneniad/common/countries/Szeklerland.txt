@@ -3,7 +3,7 @@ presidential_dictatorship = { 135 167 229 }
 fascist_dictatorship = { 135 167 229 }
 democracy = { 135 167 229 }
 proletarian_dictatorship = { 193 112 136 }
-graphical_culture = AustriaHungaryGC
+graphical_culture = HungarianGC
 
 party = {
     name = "HUN_liberal"

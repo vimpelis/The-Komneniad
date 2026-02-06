@@ -5,6 +5,7 @@ trade_goods = grain
 life_rating = 35
 terrain = farmlands
 add_core = DAN
+railroad = 1
 state_building = { level = 2 building = steamer_shipyard upgrade = yes } 
 state_building = { level = 2 building = glass_factory upgrade = yes } 
 state_building = { level = 1 building = cement_factory upgrade = yes } 

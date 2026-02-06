@@ -11,7 +11,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = komneniad_menu
-			country_event = 169003
+			country_event = 169001
 		}
 		ai_will_do = { factor = 0 }
 	}
@@ -29,7 +29,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = komneniad_tips
-			country_event = 169002
+			country_event = 169200
 		}
 		ai_will_do = { factor = 0 }
 	}

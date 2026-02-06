@@ -4,7 +4,7 @@ fascist_dictatorship = { 120 120 120 }
 proletarian_dictatorship = { 155 78 75 }
 presidential_dictatorship = { 150 150 150 }
 democracy = { 226 133 129 }
-graphical_culture = AustriaHungaryGC
+graphical_culture = BavarianGC
 
 party = {
     name = "AUS_conservative"

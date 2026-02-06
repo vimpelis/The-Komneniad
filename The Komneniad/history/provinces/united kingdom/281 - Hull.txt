@@ -6,3 +6,4 @@ life_rating = 35
 naval_base = 2
 terrain = farmlands
 add_core = DAN
+railroad = 1

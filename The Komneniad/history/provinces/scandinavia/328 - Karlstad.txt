@@ -2,4 +2,5 @@ owner = SWE
 controller = SWE
 add_core = SWE
 trade_goods = timber
+terrain = forest
 life_rating = 35

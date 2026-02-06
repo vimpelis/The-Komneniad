@@ -1,6 +1,6 @@
 color = { 25 25 125 }
 radical_republic = { 54 155 151 }
-graphical_culture = SwedishGC
+graphical_culture = DanishGC
 
 party = {
     name = "SWE_conservative"

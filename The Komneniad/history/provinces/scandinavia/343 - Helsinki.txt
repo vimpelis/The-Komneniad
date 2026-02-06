@@ -3,5 +3,6 @@ controller = FIN
 add_core = FIN
 trade_goods = grain
 life_rating = 35
-terrain = helsinki
+terrain = farmlands
 naval_base = 1
+state_building = { level = 1 building = canned_food_factory upgrade = yes }

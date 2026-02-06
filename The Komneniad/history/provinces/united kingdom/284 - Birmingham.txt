@@ -5,6 +5,7 @@ trade_goods = coal
 life_rating = 35
 terrain = mining_district
 add_core = DAN
+railroad = 1
 state_building = { level = 3 building = steel_factory upgrade = yes } 
 state_building = { level = 1 building = fabric_factory upgrade = yes } 
 state_building = { level = 1 building = ammunition_factory upgrade = yes } 

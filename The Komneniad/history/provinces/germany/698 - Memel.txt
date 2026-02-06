@@ -5,5 +5,5 @@ add_core = LIT
 add_core = GER
 trade_goods = fish
 life_rating = 40
-terrain = memel
+terrain = farmlands
 naval_base = 1

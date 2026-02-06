@@ -2754,37 +2754,6 @@ country_event = {
         }
     }
 }
-#Credits
-country_event = {
-    id = 60168151
-    title = "EVTNAME60168151"
-    desc = "EVTDESC60168151"
-    picture = "gettysburg_address"
-    fire_only_once = yes
-	is_triggered_only = yes
-
-    immediate = {
-        set_global_flag = GFM_MOD_ACTIVE
-    }
-
-	option = {
-        name = "Cool."
-		country_event = 60168153
-    }
-}
-#Speed
-country_event = {
-    id = 60168153
-    title = "Speed"
-    desc = "SPEEDEXPLAINED"
-    picture = "speedy_car"
-    is_triggered_only = yes
-
-    option = {
-        name = "Hm, I'll consider it."
-		country_event = 4207008
-    }
-}
 #End war with non-existent nations
 country_event = {
     id = 1412204

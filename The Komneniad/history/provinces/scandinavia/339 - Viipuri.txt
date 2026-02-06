@@ -9,4 +9,4 @@ life_rating = 35 # state_building = {
 # building = lumber_mill
 # upgrade = yes
 # }
-terrain = viipuri
+terrain = forest

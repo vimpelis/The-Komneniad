@@ -310,13 +310,13 @@
     farmers = {
         culture = swedish
         religion = protestant
-        size = 20650
+        size = 16650
     }
 
     craftsmen = {
         culture = swedish
         religion = protestant
-        size = 4000
+        size = 8000
     }
 
     farmers = {
@@ -386,7 +386,13 @@
     farmers = {
         culture = swedish
         religion = protestant
-        size = 19525
+        size = 17525
+    }
+	
+	craftsmen = {
+        culture = swedish
+        religion = protestant
+        size = 2000
     }
 }
 #Norrkoping (221000/55250 POPS)
@@ -480,7 +486,13 @@
     farmers = {
         culture = swedish
         religion = protestant
-        size = 48700
+        size = 44700
+    }
+	
+	craftsmen = {
+        culture = swedish
+        religion = protestant
+        size = 4000
     }
 
     farmers = {
@@ -550,7 +562,13 @@
     farmers = {
         culture = swedish
         religion = protestant
-        size = 43300
+        size = 39300
+    }
+	
+	craftsmen = {
+        culture = swedish
+        religion = protestant
+        size = 4000
     }
 }
 #Gotaland Region : 1457000
@@ -645,7 +663,13 @@
     farmers = {
         culture = swedish
         religion = protestant
-        size = 50750
+        size = 47750
+    }
+	
+	craftsmen = {
+        culture = swedish
+        religion = protestant
+        size = 3000
     }
 }
 #Visby (40000/10000 POPS)

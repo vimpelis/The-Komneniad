@@ -1,5 +1,5 @@
 color = { 131  141  142 }
-graphical_culture = BelgianGC
+graphical_culture = FrenchGC
 
 party = {
     name = "WLL_conservative"

@@ -1,5 +1,9 @@
 PNJ = { value = -100 }
 ARA = { value = -200 }
+SOM = {
+    value = -200
+	truce_until = 1840.1.1
+}
 
 army = {
     name = "Army of the Sultan of Muscat"
