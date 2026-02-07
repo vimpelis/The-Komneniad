@@ -10,3 +10,4 @@ life_rating = 40 # state_building = {
 # upgrade = yes
 # }
 terrain = mountain
+fort = 1

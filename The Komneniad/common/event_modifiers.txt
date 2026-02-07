@@ -5558,3 +5558,19 @@ ETH_regency_lvl_7 = {
 	self_unciv_military_modifier = 0.9
     icon = 4
 }
+
+uprising_10percent_mob_modf = {
+    pop_militancy_modifier = -0.05
+    mobilisation_size = 0.1
+    war_exhaustion = -0.5
+    tax_efficiency = 0.25
+    tariff_efficiency_modifier = 0.1
+    icon = 18
+}
+
+BRB_states_resistance = {
+	prestige = -0.5
+	war_exhaustion = 0.1
+    pop_militancy_modifier = 0.05
+    icon = 6
+}

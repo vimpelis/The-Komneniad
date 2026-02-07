@@ -112,6 +112,34 @@ political_decisions = {
 		}
 	}
 	
+	SCA_reclaim_daneland = {
+		picture = british_isles
+		potential = {
+			tag = SCA
+			NOT = { has_country_flag = SCA_reclaim_daneland }
+		}
+		allow = {
+			war = no
+			rank = 4
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			badboy = 24.5
+			add_accepted_culture = danelander
+			add_accepted_culture = anglo_saxon
+			ENG = { all_core = { add_core = THIS } }
+			set_country_flag = SCA_reclaim_daneland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.1
+            }
+		}
+	}
+	
 	DEN_claim_finland = {
 		picture = old_finnish_map
 		potential = {

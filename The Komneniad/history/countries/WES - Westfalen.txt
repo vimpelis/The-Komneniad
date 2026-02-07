@@ -60,7 +60,7 @@ border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
 
-set_country_flag = catholic_country
+set_country_flag = protestant_country
 
 ruling_party = WES_conservative_2
 upper_house = {
@@ -74,8 +74,16 @@ upper_house = {
 }
 
 govt_flag = {
-	government = colonial_company
-	flag = theocracy
+	government = absolute_empire
+	flag = colonial_company
+}
+govt_flag = {
+	government = semi_constitutional_empire
+	flag = colonial_company
+}
+govt_flag = {
+	government = constitutional_empire
+	flag = colonial_company
 }
 
 oob = "WES_oob.txt"

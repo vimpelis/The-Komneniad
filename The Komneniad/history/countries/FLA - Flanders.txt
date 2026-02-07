@@ -1,8 +1,8 @@
 capital = 388
 primary_culture = flemish
 culture = dutch
-religion = reformed
-government = democracy
+religion = catholic
+government = absolute_monarchy
 plurality = 0.05
 nationalvalue = nv_liberty
 literacy = 0.48

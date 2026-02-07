@@ -3,7 +3,7 @@ country_event = {
     id = 156000
     title = "Neither a state, nor a nation"
     desc = "156000DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_1"
 
     is_triggered_only = yes
 
@@ -38,7 +38,7 @@ country_event = {
     id = 156001
     title = "Trouble in Franconia"
     desc = "156001DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_3"
 
     is_triggered_only = yes
 
@@ -62,7 +62,7 @@ country_event = {
     id = 156002
     title = "The Geregistreerde"
     desc = "156002DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_4"
 
     trigger = {
 		tag = BRB
@@ -87,7 +87,7 @@ country_event = {
     id = 156003
     title = "The 60th Anniversary of the Fourty Days War"
     desc = "156003DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_5"
 
     trigger = {
 		tag = BRB
@@ -114,7 +114,7 @@ country_event = {
     id = 156004
     title = "Hinrich I and the Frisians"
     desc = "156004DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_6"
 
     trigger = {
 		tag = FRI
@@ -153,7 +153,7 @@ country_event = {
     id = 156005
     title = "Hinrich I and the Frisians"
     desc = "156004DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_6"
 
     is_triggered_only = yes
 
@@ -184,7 +184,7 @@ country_event = {
     id = 156006
     title = "War in the East"
     desc = "156006DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_7"
 
     trigger = {
 		tag = BRB
@@ -208,7 +208,7 @@ country_event = {
     id = 156007
     title = "Crisis of the Constantinople System"
     desc = "156007DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_8"
 
     is_triggered_only = yes
 	major = yes
@@ -254,7 +254,7 @@ country_event = {
     id = 156008
     title = "Brabantian Invitation"
     desc = "156008DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_8"
 
     is_triggered_only = yes
 
@@ -307,7 +307,7 @@ country_event = {
     id = 156009
     title = "Brabantian Invitation"
     desc = "156009DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_8"
 
     is_triggered_only = yes
 
@@ -327,7 +327,7 @@ country_event = {
     id = 156010
     title = "Proposal shot down"
     desc = "156010DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_8"
 
     is_triggered_only = yes
 	major = yes
@@ -348,7 +348,7 @@ country_event = {
     id = 156011
     title = "Flemish Delegates speak out against the King"
     desc = "156011DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_2"
 
     is_triggered_only = yes
 
@@ -372,7 +372,7 @@ country_event = {
     id = 156012
     title = "The States General of Brabant"
     desc = "156012DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_2"
 
     trigger = {
 		tag = BRB
@@ -393,12 +393,489 @@ country_event = {
     id = 156013
     title = "End of the Flemish Rights"
     desc = "156013DESC"
-    picture = "nederlandsch_congres"
+    picture = "BRB_9"
+
+    trigger = {
+		tag = BRB
+		NOT = { has_country_flag = BRB_cancel_serfdom }
+		any_owned_province = { has_province_modifier = BRB_flemish_modf }
+		debt_law = debtors_prisons
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "The Catholic nobility is defeated."
+		random_owned = {
+			limit = { NOT = { year = 1848 } }
+			owner = { BRB_flemish_revolt_tt = {} set_country_flag = hidden_tooltip }
+		}
+		any_owned = { remove_province_modifier = BRB_flemish_modf }
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = { id = 156014 days = 14 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_country_flag = BRB_cancel_serfdom
+    }
+}
+
+country_event = {
+    id = 156014
+    title = "Flanders rises up in revolt!"
+    desc = "156014DESC"
+    picture = "BRB_10"
 
     is_triggered_only = yes
 
     option = {
-        name = "text"
-		any_owned = { remove_province_modifier = BRB_flemish_modf }
+        name = "The Army must move in no matter what!"
+		any_owned = {
+			limit = { is_core = FLA }
+			reduce_pop = 0.8
+			any_pop = { militancy = 6 }
+			any_pop = { consciousness = 6 }
+			add_province_modifier = { name = war_torn duration = 730 }
+		}
+		ai_chance = { factor = 1 modifier = { war = yes factor = 20 } }
+    }
+	
+	option = {
+        name = "The Army shall retreat and regroup, even if the revolt strengthens."
+		FLA = {
+			government = absolute_monarchy
+			all_core = { secede_province = FLA }
+			388 = { sub_unit = { type = infantry value = current } }
+			388 = { sub_unit = { type = infantry value = current } }
+			388 = { sub_unit = { type = artillery value = current } }
+			388 = { sub_unit = { type = artillery value = current } }
+			388 = { sub_unit = { type = artillery value = current } }
+			add_country_modifier = { name = uprising_10percent_mob_modf duration = 1625 }
+		}
+		war = {
+			target = FLA
+			attacker_goal = { casus_belli = annex_core_country }
+			defender_goal = { casus_belli = status_quo }
+			call_ally = yes
+		}
+		set_global_flag = FLA_revolt
+		ai_chance = { factor = 3 }
+    }
+}
+
+country_event = {
+    id = 156015
+    title = "Unrest engulfs Brussels"
+    desc = "156015DESC"
+    picture = "BRB_11"
+
+    trigger = {
+		tag = BRB
+		has_global_flag = spring_of_nations_flag
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Hopefully that 'kill' is not literal."
+		any_pop = { militancy = 1 }
+		any_pop = { consciousness = 1 }
+		add_country_modifier = { name = global_liberal_agitation duration = 1625 }
+		country_event = { id = 156016 days = 7 }
+    }
+}
+
+country_event = {
+    id = 156016
+    title = "Frederick II locked out from the States!"
+    desc = "156016DESC"
+    picture = "BRB_11"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "What a travesty!"
+		prestige = -10
+		scaled_consciousness = { factor = 3 ideology = conservative }
+		scaled_consciousness = { factor = 6 ideology = reactionary }
+		add_country_modifier = { name = BRB_states_resistance duration = -1 }
+		country_event = { id = 156017 days = 7 }
+    }
+}
+
+country_event = {
+    id = 156017
+    title = "Abdication of King Frederick II"
+    desc = "156017DESC"
+    picture = "BRB_11"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "Andries I strikes a deal with the States General."
+		political_reform = wealth_weighted_voting
+		any_pop = { militancy = -2 }
+		any_pop = { consciousness = -4 }
+		remove_country_modifier = BRB_states_resistance
+		remove_country_modifier = global_liberal_agitation
+		ai_chance = { factor = 5 }
+    }
+	
+	option = {
+        name = "The legacy of Frederick II shall live on!"
+		political_reform = none_voting
+		political_reform = party_appointed
+		ruling_party_ideology = reactionary
+		scaled_militancy = { factor = 6 ideology = radical }
+		scaled_militancy = { factor = 2 ideology = liberal }
+		scaled_militancy = { factor = 1 ideology = conservative }
+		scaled_militancy = { factor = -2 ideology = reactionary }
+		remove_country_modifier = global_liberal_agitation
+		set_country_flag = BRB_absolutism
+		ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = 156018
+    title = "Dealing with the States General"
+    desc = "156018DESC"
+    picture = "BRB_11"
+
+    trigger = {
+		OR = {
+			tag = BRB
+			tag = DIE
+		}
+		government = absolute_monarchy
+		year = 1850
+		has_country_flag = BRB_absolutism
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 180
+    }
+
+    option = {
+        name = "Andries I will dissolve the states himself."
+		prestige = 5
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = { id = 156019 days = 7 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		ai_chance = { factor = 1 }
+    }
+	
+	option = {
+        name = "Let's not repeat Frederick II's mistakes."
+		prestige = -5
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = { id = 156020 days = 7 }
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		ai_chance = { factor = 3 }
+    }
+}
+
+country_event = {
+    id = 156019
+    title = "Andries I arrested, The Triumvirate assumes power"
+    desc = "156019DESC"
+    picture = "BRB_12"
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "The end of Brabantian absolutism?"
+		government = presidential_dictatorship
+		political_reform = none_voting
+		political_reform = appointed
+		ruling_party_ideology = conservative
+		remove_country_modifier = BRB_states_resistance
+		any_pop = { militancy = -2 }
+		scaled_militancy = { factor = 2 ideology = radical }
+		scaled_militancy = { factor = 1 ideology = liberal }
+		scaled_militancy = { factor = -1 ideology = conservative }
+		scaled_militancy = { factor = -4 ideology = reactionary }
+    }
+}
+
+country_event = {
+    id = 156020
+    title = "Andries I dissolves the States"
+    desc = "156020DESC"
+    picture = "BRB_11"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Now the King's power is truly absolute."
+		any_pop = { militancy = -2 }
+		remove_country_modifier = BRB_states_resistance
+    }
+}
+
+country_event = {
+    id = 156021
+    title = "Flanders is free!"
+    desc = "156021DESC"
+    picture = "BRB_15"
+
+    trigger = {
+		tag = FLA
+		has_global_flag = FLA_revolt
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "The King concedes some power."
+		any_pop = { militancy = -2 }
+		government = hms_government
+		political_reform = universal_weighted_voting
+		political_reform = non_secret_ballots
+		remove_country_modifier = uprising_10percent_mob_modf
+		clr_global_flag = FLA_revolt
+		BRB = { country_event = 156022 }
+    }
+	
+	option = {
+        name = "The Martletists overthrow the monarchy!"
+		any_pop = { militancy = -2 }
+		government = radical_republic
+		political_reform = wealth_voting
+		political_reform = harassment
+		remove_country_modifier = uprising_10percent_mob_modf
+		clr_global_flag = FLA_revolt
+		BRB = { country_event = 156022 }
+    }
+}
+
+country_event = {
+    id = 156022
+    title = "Flanders breaks free"
+    desc = "156022DESC"
+    picture = "BRB_15"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Their independence won't last long."
+		prestige = -25
+		any_pop = {
+            ideology = {
+                value = liberal
+                factor = 0.1
+            }
+			ideology = {
+                value = radical
+                factor = 0.05
+            }
+            consciousness = 2
+        }
+        BEL_394 = {
+            add_province_modifier = {
+                name = liberal_agitation
+                duration = 730
+            }
+        }
+		BEL_387 = {
+            add_province_modifier = {
+                name = liberal_agitation
+                duration = 730
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 156023
+    title = "The League of Ghent defeated"
+    desc = "156023DESC"
+    picture = "BRB_15"
+
+    trigger = {
+		OR = {
+			tag = BRB
+			tag = DIE
+		}
+		has_global_flag = FLA_revolt
+		FLA = { exists = no }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "And thus to all enemies of Brabant!"
+		prestige = 5
+		any_pop = {
+            limit = { has_pop_culture = flemish }
+            consciousness = 2
+        }
+		FLA = {
+			all_core = {
+				add_province_modifier = {
+					name = liberal_agitation
+					duration = 730
+				}
+			}
+		}
+		clr_global_flag = FLA_revolt
+    }
+}
+
+country_event = {
+    id = 156024
+    title = "A nation with a state, a state with a nation"
+    desc = "156024DESC"
+    picture = "BRB_16"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Glory to Dietsland!"
+		prestige = 25
+		any_pop = {
+            militancy = -2
+            consciousness = -2
+        }
+    }
+}
+
+country_event = {
+    id = 156025
+    title = "Prince Hinrich removed"
+    desc = "156025DESC"
+    picture = "BRB_14"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "The Frisians still got what they wanted..."
+		385 = { remove_core = THIS secede_province = FRI }
+		383 = { remove_core = THIS secede_province = FRI }
+		543 = { remove_core = THIS secede_province = FRI }
+		540 = { remove_core = THIS secede_province = FRI }
+		create_vassal = FRI
+		FRI = {
+			government = democracy
+			capital = 385
+			primary_culture = frisian
+			remove_accepted_culture = west_german
+		}
+    }
+}
+
+country_event = {
+    id = 156026
+    title = "Reorganization of Lower Saxony"
+    desc = "156026DESC"
+    picture = "BRB_17"
+
+    trigger = {
+		OR = {
+			tag = BRB
+			tag = DIE
+		}
+		WES = { exists = yes }
+		owns = 538
+		owns = 541
+		owns = 535
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "Let's make a new deal with the Germans."
+		WES = { country_event = 156027 }
+		create_alliance = WES
+		relation = { who = WES value = 400 }
+		diplomatic_influence = { who = WES value = 400 }
+		WES = { government = semi_constitutional_empire }
+		538 = { remove_core = THIS secede_province = WES add_core = WES }
+		541 = { remove_core = THIS secede_province = WES add_core = WES }
+		535 = { remove_core = THIS secede_province = WES add_core = WES }
+    }
+	
+	option = {
+        name = "We will incorporate Lower Saxony directly."
+		538 = { any_pop = { militancy = -2 consciousness = -2 } }
+		541 = { any_pop = { militancy = -2 consciousness = -2 } }
+		535 = { any_pop = { militancy = -2 consciousness = -2 } }
+    }
+}
+
+country_event = {
+    id = 156027
+    title = "Brabant proposes a deal"
+    desc = "156027DESC"
+    picture = "BRB_17"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Sounds like a good idea."
+		government = semi_constitutional_empire
+		create_alliance = FROM
+		relation = { who = FROM value = 400 }
+		FROM = {
+			diplomatic_influence = { who = WES value = 400 }
+			538 = { remove_core = THIS secede_province = WES add_core = WES }
+			541 = { remove_core = THIS secede_province = WES add_core = WES }
+			535 = { remove_core = THIS secede_province = WES add_core = WES }
+		}
+		set_global_flag = BRB_low_saxony_available
+    }
+	
+	option = {
+        name = "Haha, no."
+		BRB = { country_event = 156028 }
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 156028
+    title = "Westphalia refused"
+    desc = "For whatever reason, Westphalia said no. It seems like the age of our petty deals with the Germans is over."
+    picture = "BRB_17"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Shame."
+		prestige = -5
     }
 }

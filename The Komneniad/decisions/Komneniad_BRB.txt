@@ -1,35 +1,4 @@
 political_decisions = {
-	BRB_form_dietsland = {
-		picture = bel_lion
-		potential = {
-			tag = BRB
-			NOT = { exists = DIE }
-		}
-		allow = {
-			war = no
-			year = 1849
-			OR = {
-				nationalism_n_imperialism = 1
-				exists = SGF
-				exists = NGF
-				exists = GER
-			}
-			owns = 375
-			owns = 385
-			OR = {
-				NOT = { government = absolute_monarchy }
-				year = 1870
-			}
-		}
-		effect = {
-			prestige = 15
-			change_tag = DIE
-			remove_country_modifier = BRB_feudalism
-			BRB = { all_core = { remove_core = BRB } }
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
 	BRB_cancel_serfdom = {
 		picture = bel_lion
 		potential = {
@@ -48,7 +17,7 @@ political_decisions = {
 				ruling_party_ideology = liberal
 				ruling_party_ideology = radical
 				ruling_party_ideology = socialist
-				year = 1860
+				year = 1850
 			}
 		}
 		effect = {
@@ -79,28 +48,52 @@ political_decisions = {
 	}
 	
 	BRB_take_friesland = {
-		picture = bel_lion
+		picture = frisian_king
 		potential = {
-			tag = BRB
+			OR = {
+				tag = BRB
+				tag = DIE
+			}
+			FRI = { vassal_of = THIS }
+			NOT = { has_country_flag = BRB_take_friesland }
+		}
+		allow = {
+			war = no
+			OR = {
+				state_n_government = 1
+				year = 1848
+			}
+		}
+		effect = {
+			prestige = 5
+			badboy = 3
+			FRI = { annex_to = THIS }
+			FRI = { all_core = { add_core = THIS } }
+			country_event = 156025
+			set_country_flag = BRB_take_friesland
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.7
+            }
+		}
+	}
+	
+	BRB_conquer_friesland = {
+		picture = frisian_king
+		potential = {
+			OR = {
+				tag = BRB
+				tag = DIE
+			}
+			FRI = { NOT = { vassal_of = THIS } }
 			NOT = { has_country_flag = BRB_take_friesland }
 		}
 		allow = {
 			war = no
 			state_n_government = 1
-			owns = 375
-			OR = {
-				AND = {
-					FRI = {
-						in_sphere = THIS
-					}
-					relation = {
-						who = FRI
-						value = 200
-					}
-				}
-				NOT = { exists = FRI }
-				ai = yes
-			}
 		}
 		effect = {
 			prestige = 5
@@ -128,8 +121,126 @@ political_decisions = {
 		}
 	}
 	
-	BRB_unify_low_franconia = {
+	BRB_accept_frisia = {
+		picture = frisia_map
+		potential = {
+			OR = {
+				tag = BRB
+				tag = DIE
+			}
+			has_country_flag = BRB_take_friesland
+			385 = { NOT = { is_core = THIS } }
+			NOT = { has_country_flag = BRB_accept_frisia }
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 5
+			badboy = 2
+			add_accepted_culture = frisian
+			FRI = { all_core = { add_core = THIS } }
+			any_country = {
+				limit = {
+					tag = FRI
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			set_country_flag = BRB_accept_frisia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	BRB_puppet_low_saxony = {
+		picture = westphalia_map
+		potential = {
+			OR = {
+				tag = BRB
+				tag = DIE
+			}
+			exists = WES
+			has_global_flag = BRB_low_saxony_available
+		}
+		allow = {
+			war = no
+			WES = { in_sphere = THIS ai = yes }
+			LIP = { in_sphere = THIS ai = yes }
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 10
+			badboy = 2
+			create_vassal = WES
+			WES = { government = semi_constitutional_empire inherit = LIP }
+			3257 = { add_core = WES }
+			534 = { add_core = WES }
+			536 = { add_core = WES }
+			537 = { add_core = WES }
+			any_country = {
+				limit = {
+					OR = {
+						tag = BRA
+						tag = WLD
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = WES
+			}
+			clr_global_flag = BRB_low_saxony_available
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.9
+            }
+		}
+	}
+	
+	BRB_form_dietsland = {
 		picture = bel_lion
+		potential = {
+			tag = BRB
+			NOT = { exists = DIE }
+		}
+		allow = {
+			war = no
+			OR = {
+				nationalism_n_imperialism = 1
+				exists = SGF
+				exists = NGF
+				exists = GER
+			}
+			OR = {
+				NOT = { government = absolute_monarchy }
+				year = 1860
+			}
+		}
+		effect = {
+			change_tag = DIE
+			country_event = 156024
+			remove_country_modifier = BRB_feudalism
+			BRB = { all_core = { remove_core = BRB } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	BRB_unify_low_franconia = {
+		picture = westphalia_map
 		potential = {
 			tag = DIE
 			NOT = { has_country_flag = BRB_unify_low_franconia }
@@ -190,6 +301,10 @@ political_decisions = {
 			war = no
 			rank = 4
 			all_core = { owned_by = THIS }
+			OR = {
+				nationalism_n_imperialism = 1
+				exists = ENG
+			}
 		}
 		effect = {
 			prestige = 20

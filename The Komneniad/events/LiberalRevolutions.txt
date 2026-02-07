@@ -11,8 +11,8 @@ country_event = {
         NOT = { tag = RUS }
         NOT = { tag = FIN }
         NOT = { tag = SWE }
+        NOT = { tag = BRB }
         OR = {
-            tag = BRB
             tag = ZPD
             tag = HUN
             tag = MOL
@@ -134,7 +134,7 @@ country_event = {
                 vote_franschise = universal_voting
             }
         }
-        year = 1847
+        year = 1848
     }
 
     mean_time_to_happen = {

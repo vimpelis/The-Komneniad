@@ -154,6 +154,8 @@ country_event = {
 		1604 = {
 			remove_core = CHI
 			remove_core = HUI
+			remove_core = KOR
+			remove_core = TUT
 		}
     }
 }
@@ -504,6 +506,7 @@ country_event = {
 		CHI_2221 = { add_core = THIS }
 		CHI_1604 = { add_core = THIS }
 		CHI_1470 = { add_core = THIS }
+		1604 = { add_core = THIS }
 		set_country_flag = KOR_beijing
 		clr_global_flag = yan_war_ongoing
     }

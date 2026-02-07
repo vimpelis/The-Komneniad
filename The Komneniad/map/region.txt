@@ -1323,6 +1323,7 @@ rename_rhomania_tt = {}
 rename_muradid_tt = {}
 potato_blight_tt = {}
 BYZ_bethlehem_tt = {}
+BRB_flemish_revolt_tt = {}
 new_decisions_tt = {}
 options_tt_1 = {}
 options_tt_2 = {}

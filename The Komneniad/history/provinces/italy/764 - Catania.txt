@@ -7,3 +7,4 @@ trade_goods = sulphur
 terrain = hills
 life_rating = 40
 naval_base = 1
+fort = 1
