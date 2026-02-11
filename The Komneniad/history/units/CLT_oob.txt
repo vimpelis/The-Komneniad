@@ -190,6 +190,62 @@ army = {
     }
 }
 
+army = {
+    name = "4th Army"
+    location = 277
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 279
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 280
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 272
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 270
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 268
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 268
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 266
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 266
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 267
+    }
+	regiment = {
+        name = "1st Engineer Regiment"
+        type = engineer
+        home = 267
+    }
+}
+
+
 navy = {
     name = "1st Fleet"
     location = 271

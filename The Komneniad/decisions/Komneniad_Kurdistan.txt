@@ -1,4 +1,66 @@
 political_decisions = {
+	KDS_collect_tribute = {
+		picture = kurdistan_map
+		potential = {
+			OR = {
+				primary_culture = kurdish
+				tag = BTL
+			}
+			NOT = { tag = KDS }
+			NOT = { has_country_modifier = KDS_tribute_cooldown }
+		}
+		allow = {
+			exists = yes
+		}
+		effect = {
+			treasury = 1000
+			cattle = 25
+			wool = 25
+			grain = 100
+			any_pop = { limit = { OR = { has_pop_culture = kurdish has_pop_culture = turkish } } militancy = 1 }
+			add_country_modifier = {
+				name = KDS_tribute_cooldown
+				duration = 365
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                average_militancy = 5
+				money = 1000
+            }
+		}
+	}
+	
+	KDS_rein_in_the_tribes = {
+		picture = kurdistan_map
+		potential = {
+			OR = {
+				tag = KDS
+				tag = TUR
+			}
+			has_country_flag = KDS_assyrian_genocide
+			NOT = { has_country_flag = KDS_rein_in_the_tribes }
+		}
+		allow = {
+			war = no
+			bureaucrats = 0.006
+		}
+		effect = {
+			prestige = 5
+			military_reform = yes_army_schools
+			any_pop = {
+				limit = { type = soldiers }
+				militancy = 3
+			}
+			set_country_flag = KDS_rein_in_the_tribes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	KDS_consolidate_lake_van = {
 		picture = kurdistan_map
 		potential = {
@@ -300,6 +362,24 @@ political_decisions = {
 		}
 	}
 	
+	ASY_unify_education = {
+		picture = kurdistan_map
+		potential = {
+			tag = ASY
+			year = 1937
+			NOT = { has_country_flag = ASY_unify_education }
+		}
+		allow = {
+			exists = yes
+		}
+		effect = {
+			set_country_flag = ASY_unify_education
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	ASY_exarchate_of_assyria = {
 		picture = kurdistan_map
 		potential = {
@@ -320,86 +400,6 @@ political_decisions = {
 		effect = {
 			overlord = { country_event = 177014 }
 			set_country_flag = ASY_exarchate_of_assyria
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	ASY_unify_education = {
-		picture = kurdistan_map
-		potential = {
-			tag = ASY
-			year = 1937
-			NOT = { has_country_flag = ASY_unify_education }
-		}
-		allow = {
-			exists = yes
-		}
-		effect = {
-			set_country_flag = ASY_unify_education
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	KDS_collect_tribute = {
-		picture = kurdistan_map
-		potential = {
-			OR = {
-				primary_culture = kurdish
-				tag = BTL
-			}
-			NOT = { tag = KDS }
-			NOT = { has_country_modifier = KDS_tribute_cooldown }
-		}
-		allow = {
-			exists = yes
-		}
-		effect = {
-			treasury = 1000
-			cattle = 25
-			wool = 25
-			grain = 100
-			any_pop = { limit = { OR = { has_pop_culture = kurdish has_pop_culture = turkish } } militancy = 1 }
-			add_country_modifier = {
-				name = KDS_tribute_cooldown
-				duration = 365
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                average_militancy = 5
-				money = 1000
-            }
-		}
-	}
-	
-	KDS_rein_in_the_tribes = {
-		picture = kurdistan_map
-		potential = {
-			OR = {
-				tag = KDS
-				tag = TUR
-			}
-			has_country_flag = KDS_assyrian_genocide
-			NOT = { has_country_flag = KDS_rein_in_the_tribes }
-		}
-		allow = {
-			war = no
-			bureaucrats = 0.006
-		}
-		effect = {
-			prestige = 5
-			military_reform = yes_army_schools
-			any_pop = {
-				limit = { type = soldiers }
-				militancy = 3
-			}
-			set_country_flag = KDS_rein_in_the_tribes
 		}
 		ai_will_do = {
 			factor = 1

@@ -4,6 +4,7 @@
 REB        = "countries/rebels.txt"
 UTI        = "countries/Utility Tag.txt"
 CLN        = "countries/Cleanup.txt"
+OBS        = "countries/Observer.txt"
 
 #Africa
 TAQ        = "countries/Taqali.txt"

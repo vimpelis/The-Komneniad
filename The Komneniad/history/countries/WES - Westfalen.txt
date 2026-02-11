@@ -73,17 +73,4 @@ upper_house = {
     communist = 0
 }
 
-govt_flag = {
-	government = absolute_empire
-	flag = colonial_company
-}
-govt_flag = {
-	government = semi_constitutional_empire
-	flag = colonial_company
-}
-govt_flag = {
-	government = constitutional_empire
-	flag = colonial_company
-}
-
 oob = "WES_oob.txt"

@@ -67,7 +67,7 @@ country_event = {
     trigger = {
 		tag = BRB
 		year = 1837
-		debt_law = peonage
+		debt_law = serfdom
     }
 
     fire_only_once = yes
@@ -119,6 +119,11 @@ country_event = {
     trigger = {
 		tag = FRI
 		year = 1843
+		OR = {
+			government = absolute_monarchy
+			government = hms_government
+			government = prussian_constitutionalism
+		}
     }
 
     fire_only_once = yes
@@ -171,6 +176,8 @@ country_event = {
 			383 = { change_province_name = "Grins" }
 			540 = { change_province_name = "Rjustringen" }
 		}
+		new_decisions_tt = {}
+		set_country_flag = BRB_can_take_friesland
     }
 }
 
@@ -398,8 +405,8 @@ country_event = {
     trigger = {
 		tag = BRB
 		NOT = { has_country_flag = BRB_cancel_serfdom }
+		NOT = { debt_law = serfdom }
 		any_owned_province = { has_province_modifier = BRB_flemish_modf }
-		debt_law = debtors_prisons
     }
 
     fire_only_once = yes
@@ -616,6 +623,7 @@ country_event = {
 		scaled_militancy = { factor = 1 ideology = liberal }
 		scaled_militancy = { factor = -1 ideology = conservative }
 		scaled_militancy = { factor = -4 ideology = reactionary }
+		set_country_flag = BRB_triumvirate
     }
 }
 
@@ -780,10 +788,12 @@ country_event = {
 
     option = {
         name = "The Frisians still got what they wanted..."
-		385 = { remove_core = THIS secede_province = FRI }
-		383 = { remove_core = THIS secede_province = FRI }
-		543 = { remove_core = THIS secede_province = FRI }
-		540 = { remove_core = THIS secede_province = FRI }
+		FRI = { all_core = { remove_core = FRI } }
+		385 = { add_core = FRI remove_core = THIS secede_province = FRI }
+		383 = { add_core = FRI remove_core = THIS secede_province = FRI }
+		543 = { add_core = FRI remove_core = THIS secede_province = FRI }
+		540 = { add_core = FRI remove_core = THIS secede_province = FRI }
+		386 = { add_core = FRI }
 		create_vassal = FRI
 		FRI = {
 			government = democracy
@@ -819,6 +829,7 @@ country_event = {
 
     option = {
         name = "Let's make a new deal with the Germans."
+		badboy = -4
 		WES = { country_event = 156027 }
 		create_alliance = WES
 		relation = { who = WES value = 400 }
@@ -847,6 +858,7 @@ country_event = {
 
     option = {
         name = "Sounds like a good idea."
+		WES_puppet_warning_tt = {}
 		government = semi_constitutional_empire
 		create_alliance = FROM
 		relation = { who = FROM value = 400 }
@@ -877,5 +889,55 @@ country_event = {
     option = {
         name = "Shame."
 		prestige = -5
+    }
+}
+
+country_event = {
+    id = 156029
+    title = "The Future of Brabant"
+    desc = "The Triumvirate had been ruling Brabant for a long time now. Disagreements have plagued the three leaders, and more calls are heard for a permanent system to be established. What should become of Brabant?"
+    picture = "BRB_12"
+
+    trigger = {
+		OR = {
+			tag = BRB
+			tag = DIE
+		}
+		has_country_flag = BRB_triumvirate
+		government = presidential_dictatorship
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = "Restore the Luxemburgs as Constitutional monarchs."
+		government = hms_government
+		political_reform = universal_weighted_voting
+		political_reform = non_secret_ballots
+		political_reform = state_equal_weight
+		ruling_party_ideology = conservative
+		scaled_militancy = { factor = 4 ideology = radical }
+		scaled_militancy = { factor = 2 ideology = liberal }
+		scaled_militancy = { factor = -2 ideology = conservative }
+		scaled_militancy = { factor = -4 ideology = reactionary }
+		clr_country_flag = BRB_triumvirate
+    }
+	
+	option = {
+        name = "Proclaim a Republic!"
+		government = democracy
+		political_reform = universal_weighted_voting
+		political_reform = non_secret_ballots
+		political_reform = state_equal_weight
+		ruling_party_ideology = liberal
+		scaled_militancy = { factor = -4 ideology = radical }
+		scaled_militancy = { factor = -2 ideology = liberal }
+		scaled_militancy = { factor = 2 ideology = conservative }
+		scaled_militancy = { factor = 4 ideology = reactionary }
+		clr_country_flag = BRB_triumvirate
     }
 }

@@ -396,7 +396,7 @@ celtic = {
 		"Mac Torcaill" "Mag Mailin" "Mac Raghnaill" "O Tiarnaigh" "O Faolain" }
     }
 	scottish = {
-        color = { 0 71 182 }
+        color = { 0 150 110 }
         first_names = { Ailean Alasdair Amhlaigh Brian Beathan Cathal Coiseam Domhnall Dughlas Eachann Eosaph
 		Fionnlagh Filib Gilleasbaig Goraidh Gordan Huisdean Iomhair Iagan Iain Labhrainn Lucas Maol-Iosa Mata
 		Murchadh Micheal Niall Oisean Peadar Parlan Raghnall Ruiseart Raild Seonaidh Somhairle Stiubhart Torcall 

@@ -46,7 +46,7 @@
     labourers = {
         culture = wallonian
         religion = reformed
-        size = 42605
+        size = 30605
     }
 	
 	aristocrats = {
@@ -70,7 +70,7 @@
     labourers = {
         culture = dutch
         religion = reformed
-        size = 13000
+        size = 9000
     }
 
     aristocrats = {
@@ -94,13 +94,37 @@
 	soldiers = {
         culture = flemish
         religion = catholic
-        size = 2300
+        size = 1100
     }
 
     labourers = {
         culture = flemish
         religion = catholic
-        size = 48845
+        size = 26845
+    }
+	
+	serfs = {
+        culture = dutch
+        religion = reformed
+        size = 5000
+    }
+	
+	serfs = {
+        culture = wallonian
+        religion = reformed
+        size = 10000
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 22000
+    }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 1000
     }
 }
 #Dunkirk (396000/99000 POPS)
@@ -132,7 +156,7 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 43375
+        size = 39375
     }
 
     soldiers = {
@@ -164,12 +188,6 @@
         religion = reformed
         size = 7000
     }
-	
-	farmers = {
-        culture = flemish
-        religion = catholic
-        size = 26625
-    }
 
     aristocrats = {
         culture = dutch
@@ -193,6 +211,12 @@
         culture = dutch
         religion = reformed
         size = 4925
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 30625
     }
 }
 #Arras (428000/107000 POPS)
@@ -248,7 +272,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 10900
+        size = 9900
     }
 
     aristocrats = {
@@ -272,7 +296,19 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 19075
+        size = 17075
+    }
+	
+	serfs = {
+        culture = dutch
+        religion = reformed
+        size = 1000
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 2000
     }
 }
 3314 = {
@@ -327,7 +363,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 12310
+        size = 10000
     }
 
     aristocrats = {
@@ -351,7 +387,19 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 20050
+        size = 16050
+    }
+	
+	serfs = {
+        culture = dutch
+        religion = reformed
+        size = 2300
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 4000
     }
 	
 	farmers = {
@@ -678,7 +726,7 @@
     farmers = {
         culture = wallonian
         religion = reformed
-        size = 42500
+        size = 38500
     }
 	
 	aristocrats = {
@@ -702,7 +750,25 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 11100
+        size = 10100
+    }
+	
+	serfs = {
+        culture = wallonian
+        religion = reformed
+        size = 2000
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 1000
+    }
+	
+	serfs = {
+        culture = wallonian
+        religion = reformed
+        size = 2000
     }
 }
 #Charleville (308000/77000 POPS)

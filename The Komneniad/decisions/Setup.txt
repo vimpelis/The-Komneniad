@@ -14,6 +14,7 @@ political_decisions = {
 		effect = {
 			set_global_flag = global_setup_complete
 			add_country_modifier = { name = neutrality_modifier duration = -1 }
+			OBS = { add_country_modifier = { name = neutrality_modifier duration = -1 } }
 			1687 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
 			512 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
 			3572 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
@@ -142,8 +143,6 @@ political_decisions = {
 				enable_canal = 43
 				enable_canal = 44
 				enable_canal = 45
-				WAL = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
-				MOL = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
 			}
 			EGY = {
 				any_pop = {
@@ -274,20 +273,6 @@ political_decisions = {
 			}
 			DEN = {
 				any_pop = { limit = { OR = { has_pop_culture = ashkenazi has_pop_culture = north_german } } literacy = 0.58 }
-				add_country_modifier = {
-					name = global_baby_boom
-					duration = 3650
-				}
-				any_owned = {
-					limit = {
-						is_core = DEN
-						is_overseas = no
-					}
-					add_province_modifier = {
-						name = baby_boom
-						duration = 1825
-					}
-				}
 				any_pop = {
 					limit = {
 						OR = {
@@ -314,18 +299,6 @@ political_decisions = {
 						}
 					}
 				literacy = -0.99
-				}
-				NOR = {
-					add_country_modifier = {
-						name = global_baby_boom
-						duration = 1825
-					}
-					all_core = {
-						add_province_modifier = {
-							name = baby_boom
-							duration = 1095
-						}
-					}
 				}
 			}
 			UBD = {
@@ -665,18 +638,6 @@ political_decisions = {
             }
             #################Isolationist Uncivs Setup######################
             ZUL = { add_country_modifier = { name = assegai duration = -1 } }
-            NEJ = {
-                add_country_modifier = { name = wahhabism_in_nejd duration = -1 }
-				add_country_modifier = {
-					name = global_baby_boom
-					duration = 1825
-				}
-                any_pop = { limit = { is_state_religion = yes }
-                    dominant_issue = { factor = 0.6 value = moralism }
-                    dominant_issue = { factor = 0.3 value = jingoism }
-                    ideology = { factor = 0.75 value = conservative }
-                }
-            }
             any_pop = { limit = { has_pop_religion = animist } literacy = -0.5 }
             any_country = { limit = { exists = yes } any_pop = { limit = { has_pop_religion = animist } literacy = -0.5 } }
             serfs = { militancy = -9 consciousness = -9 literacy = -0.99 }

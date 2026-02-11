@@ -910,3 +910,7 @@ WES_semi_constitutional_empire;Lower Saxony;;;;;;;;;;;;;
 WES_semi_constitutional_empire_ADJ;Lower Saxony;;;;;;;;;;;;;
 WES_constitutional_empire;Lower Saxony;;;;;;;;;;;;;
 WES_constitutional_empire_ADJ;Lower Saxony;;;;;;;;;;;;;
+OBS;Observer;;;;;;;;;;;;;
+OBS_ADJ;Observer;;;;;;;;;;;;;
+EGY_colonial_company;Exarchate of Egypt;;;;;;;;;;;;;
+WES_puppet_warning_tt;§RIf our rank falls below 16, we may be puppeted by Brabant!\n§!;;;;;;;;;;;;;

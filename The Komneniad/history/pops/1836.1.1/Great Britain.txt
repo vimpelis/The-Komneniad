@@ -634,7 +634,13 @@
     farmers = {
         culture = scottish
         religion = anglican
-        size = 33600
+        size = 32500
+    }
+	
+	soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 1100
     }
 
     farmers = {
@@ -1371,16 +1377,16 @@
         size = 150
     }
 
-    soldiers = {
-        culture = danelander
-        religion = protestant
-        size = 102
-    }
-
     labourers = {
         culture = danelander
         religion = protestant
         size = 715
+    }
+	
+	farmers = {
+        culture = danelander
+        religion = protestant
+        size = 450
     }
 
     labourers = {
@@ -1408,12 +1414,6 @@
     }
 
     farmers = {
-        culture = danelander
-        religion = protestant
-        size = 300
-    }
-
-    farmers = {
         culture = scottish
         religion = anglican
         size = 2500
@@ -1429,12 +1429,6 @@
         culture = anglo_saxon
         religion = protestant
         size = 4850
-    }
-
-    farmers = {
-        culture = danelander
-        religion = protestant
-        size = 150
     }
 }
 #Carlisle (216000/54000 POPS)
@@ -1466,13 +1460,13 @@
     soldiers = {
         culture = scottish
         religion = anglican
-        size = 500
+        size = 1100
     }
 
     farmers = {
         culture = scottish
         religion = anglican
-        size = 43320
+        size = 42720
     }
 
     farmers = {
@@ -1535,13 +1529,13 @@
     soldiers = {
         culture = scottish
         religion = anglican
-        size = 1500
+        size = 3500
     }
 
     labourers = {
         culture = scottish
         religion = anglican
-        size = 64615
+        size = 62615
     }
 
     labourers = {

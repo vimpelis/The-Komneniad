@@ -29,7 +29,7 @@
     soldiers = {
         culture = irish
         religion = anglican
-        size = 1250
+        size = 3700
     }
 
     artisans = {
@@ -47,7 +47,7 @@
     farmers = {
         culture = irish
         religion = anglican
-        size = 53000
+        size = 50250
     }
 
     craftsmen = {
@@ -251,13 +251,13 @@
     soldiers = {
         culture = irish
         religion = anglican
-        size = 500
+        size = 3500
     }
 
     labourers = {
         culture = irish
         religion = anglican
-        size = 93250
+        size = 90250
     }
 
     clergymen = {
@@ -282,12 +282,6 @@
         culture = scottish
         religion = anglican
         size = 2250
-    }
-
-    soldiers = {
-        culture = scottish
-        religion = anglican
-        size = 125
     }
 
     farmers = {

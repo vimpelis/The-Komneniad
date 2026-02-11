@@ -11,9 +11,17 @@ alliance = {
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
+
 alliance = {
     first = BRB
     second = NAS
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = BRB
+    second = CLT
     start_date = 1836.1.1
     end_date = 1936.1.1
 }

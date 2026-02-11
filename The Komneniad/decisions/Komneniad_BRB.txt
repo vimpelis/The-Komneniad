@@ -1,12 +1,12 @@
 political_decisions = {
 	BRB_cancel_serfdom = {
-		picture = bel_lion
+		picture = BRB_1_dcs
 		potential = {
 			OR = {
 				tag = BRB
 				tag = DIE
 			}
-			debt_law = peonage
+			debt_law = serfdom
 			has_country_flag = BRB_can_cancel_serfdom
 			NOT = { has_country_flag = BRB_cancel_serfdom }
 		}
@@ -55,6 +55,7 @@ political_decisions = {
 				tag = DIE
 			}
 			FRI = { vassal_of = THIS }
+			has_country_flag = BRB_can_take_friesland
 			NOT = { has_country_flag = BRB_take_friesland }
 		}
 		allow = {
@@ -284,7 +285,7 @@ political_decisions = {
 	}
 	
 	BRB_save_england = {
-		picture = bel_lion
+		picture = BRB_2_dcs
 		potential = {
 			tag = DIE
 			OR = {

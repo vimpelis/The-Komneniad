@@ -61,11 +61,6 @@ upper_house = {
     communist = 0
 }
 
-govt_flag = {
-    government = presidential_dictatorship
-    flag = theocracy
-}
-
 #Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
@@ -100,13 +95,3 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "SPA_oob.txt"
-
-govt_flag = {
-	government = radical_republic
-	flag = colonial_company
-}
-
-govt_flag = {
-	government = prov_gov_liberal
-	flag = colonial_company_2
-}

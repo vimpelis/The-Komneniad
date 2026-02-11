@@ -346,6 +346,11 @@ country_event = {
 		country_event = 169100
     }
 	option = {
+        name = "Colonial Company"
+		government = colonial_company
+		country_event = 169100
+    }
+	option = {
         name = "Close event"
 		country_event = 169007
     }

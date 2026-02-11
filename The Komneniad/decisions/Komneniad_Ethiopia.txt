@@ -162,7 +162,12 @@ political_decisions = {
 	ETH_ransack_province = {
 		picture = ETH_2
 		potential = {
-			tag = ETH
+			OR = {
+				tag = ETH
+				tag = SHW
+				tag = TIG
+				tag = JIM
+			}
 			civilized = no
 		}
 		allow = {
@@ -847,6 +852,41 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	ETH_restore_empire = {
+		picture = ETH_2
+		potential = {
+			tag = ETH
+			has_global_flag = second_zemene_mesafint
+		}
+		allow = {
+			war = no
+			OR = {
+				civilization_progress = 0.5
+				civilized = yes
+				year = 1875
+			}
+		}
+		effect = {
+			prestige = 10
+			badboy = 15
+			add_accepted_culture = oromo
+			add_accepted_culture = afar
+			ENG_1848 = { add_core = THIS }
+			ETH_3590 = { add_core = THIS }
+			ETH_1867 = { add_core = THIS }
+			ETH_3591 = { add_core = THIS }
+			1867 = { add_core = THIS }
+			1873 = { add_core = THIS }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }	
 		}
 	}
 	

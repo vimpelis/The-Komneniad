@@ -57,6 +57,11 @@ ARM = {
     level = 5
     influence_value = 25
 }
+IRY = {
+    value = -200
+    level = 0
+    influence_value = 0
+}
 
 army = {
     name = "1st Army"

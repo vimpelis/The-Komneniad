@@ -4,36 +4,6 @@
 ########
 375 = {
     aristocrats = {
-        culture = ashkenazi
-        religion = jewish
-        size = 90
-    }
-
-    officers = {
-        culture = ashkenazi
-        religion = jewish
-        size = 90
-    }
-
-    clergymen = {
-        culture = ashkenazi
-        religion = jewish
-        size = 90
-    }
-
-    artisans = {
-        culture = ashkenazi
-        religion = jewish
-        size = 2700
-    }
-
-    farmers = {
-        culture = ashkenazi
-        religion = jewish
-        size = 2870
-    }
-
-    aristocrats = {
         culture = dutch
         religion = reformed
         size = 1205
@@ -50,6 +20,12 @@
         religion = reformed
         size = 1389
     }
+	
+	capitalists = {
+        culture = dutch
+        religion = reformed
+        size = 300
+    }
 
     clergymen = {
         culture = dutch
@@ -60,7 +36,7 @@
     artisans = {
         culture = dutch
         religion = reformed
-        size = 10429
+        size = 8229
     }
 
     soldiers = {
@@ -72,7 +48,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 29268
+        size = 23268
     }
 
     craftsmen = {
@@ -114,7 +90,49 @@
 	farmers = {
         culture = frisian
         religion = reformed
-        size = 22651
+        size = 16651
+    }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 8000
+    }
+	
+	craftsmen = {
+        culture = frisian
+        religion = reformed
+        size = 6000
+    }
+	
+	aristocrats = {
+        culture = ashkenazi
+        religion = jewish
+        size = 90
+    }
+
+    officers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 90
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 90
+    }
+
+    artisans = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2700
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 2870
     }
 }
 #Rotterdam (567000/141750 POPS)
@@ -154,19 +172,19 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 62586
+        size = 42586
     }
 
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 1710
+        size = 12710
     }
 
     farmers = {
         culture = dutch
         religion = reformed
-        size = 22603
+        size = 31603
     }
 
     artisans = {
@@ -246,7 +264,7 @@
     artisans = {
         culture = dutch
         religion = reformed
-        size = 9644
+        size = 4644
     }
 
     soldiers = {
@@ -258,7 +276,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 18710
+        size = 19710
     }
 
     aristocrats = {
@@ -283,6 +301,12 @@
         culture = flemish
         religion = catholic
         size = 2037
+    }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 5000
     }
 }
 #Middelburg (170000/42500 POPS)
@@ -338,7 +362,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 22370
+        size = 13370
     }
 
     artisans = {
@@ -400,6 +424,18 @@
         religion = catholic
         size = 5493
     }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 4000
+    }
+	
+	serfs = {
+        culture = dutch
+        religion = reformed
+        size = 5000
+    }
 }
 #Limburg-Gelderland Region - 979400
 #Eindhoven (230000/57500 POPS)
@@ -451,7 +487,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 44650
+        size = 36650
     }
 
     clergymen = {
@@ -464,12 +500,6 @@
         culture = dutch
         religion = reformed
         size = 134
-    }
-
-    farmers = {
-        culture = dutch
-        religion = reformed
-        size = 2679
     }
 
     aristocrats = {
@@ -555,6 +585,12 @@
         religion = catholic
         size = 141
     }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 10680
+    }
 }
 #Breda (173200/43300 POPS)
 380 = {
@@ -585,7 +621,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 30300
+        size = 20300
     }
 
     aristocrats = {
@@ -610,6 +646,12 @@
         culture = flemish
         religion = catholic
         size = 2650
+    }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 10000
     }
 }
 3344 = {
@@ -685,7 +727,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 23725
+        size = 24725
     }
 
     aristocrats = {
@@ -715,7 +757,13 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 16434
+        size = 8434
+    }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 7000
     }
 }
 #Arnhem (412000/103000 POPS)
@@ -1475,7 +1523,7 @@
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 38000
+        size = 10000
     }
 
     artisans = {
@@ -1493,7 +1541,7 @@
 	labourers = {
         culture = dutch
         religion = reformed
-        size = 30000
+        size = 58000
     }
 	
 	aristocrats = {
@@ -1613,7 +1661,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 35499
+        size = 30499
     }
 
     aristocrats = {
@@ -1637,7 +1685,7 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 45000
+        size = 24000
     }
 	
 	aristocrats = {
@@ -1660,6 +1708,24 @@
 
     farmers = {
         culture = wallonian
+        religion = reformed
+        size = 5000
+    }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 1000
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 20000
+    }
+	
+	serfs = {
+        culture = dutch
         religion = reformed
         size = 5000
     }
@@ -1699,7 +1765,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 57809
+        size = 50809
     }
 	
 	aristocrats = {
@@ -1747,7 +1813,19 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 44000
+        size = 24000
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 20000
+    }
+	
+	serfs = {
+        culture = dutch
+        religion = reformed
+        size = 7000
     }
 }
 #Antwerp (354000/88500 POPS)
@@ -1784,7 +1862,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 89599
+        size = 81600
     }
 	
 	aristocrats = {
@@ -1810,6 +1888,12 @@
         religion = catholic
         size = 3500
     }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 8000
+    }
 }
 3383 = {
     aristocrats = {
@@ -1827,7 +1911,7 @@
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 380
+        size = 5380
     }
 
     artisans = {
@@ -1851,7 +1935,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 48452
+        size = 43452
     }
 	
 	aristocrats = {
@@ -1980,7 +2064,7 @@
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 18900
+        size = 7900
     }
 
     artisans = {
@@ -1998,7 +2082,7 @@
     labourers = {
         culture = dutch
         religion = reformed
-        size = 81120
+        size = 92120
     }
 
     clergymen = {
@@ -2060,7 +2144,7 @@
     farmers = {
         culture = wallonian
         religion = reformed
-        size = 23420
+        size = 19420
     }
 
     clergymen = {
@@ -2078,19 +2162,13 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 9720
+        size = 16220
     }
 
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 8100
-    }
-
-    craftsmen = {
-        culture = dutch
-        religion = reformed
-        size = 2565
+        size = 2100
     }
 
     aristocrats = {
@@ -2120,7 +2198,7 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 30550
+        size = 18550
     }
 
     clergymen = {
@@ -2145,6 +2223,24 @@
         culture = flemish
         religion = catholic
         size = 1900
+    }
+	
+	serfs = {
+        culture = dutch
+        religion = reformed
+        size = 2000
+    }
+	
+	serfs = {
+        culture = wallonian
+        religion = reformed
+        size = 4000
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 12000
     }
 }
 #Charleroi (396000/99000 POPS)
@@ -2172,13 +2268,13 @@
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 11160
+        size = 3160
     }
 
     farmers = {
         culture = dutch
         religion = reformed
-        size = 47500
+        size = 55500
     }
 
     aristocrats = {
@@ -2202,7 +2298,7 @@
     craftsmen = {
         culture = wallonian
         religion = reformed
-        size = 10440
+        size = 4440
     }
 
     soldiers = {
@@ -2214,7 +2310,7 @@
     farmers = {
         culture = wallonian
         religion = reformed
-        size = 41640
+        size = 43640
     }
 
     aristocrats = {
@@ -2274,7 +2370,19 @@
     farmers = {
         culture = flemish
         religion = catholic
-        size = 10150
+        size = 9150
+    }
+	
+	serfs = {
+        culture = flemish
+        religion = catholic
+        size = 1000
+    }
+	
+	serfs = {
+        culture = dutch
+        religion = reformed
+        size = 4000
     }
 }
 #Liege (212000/53000 POPS)
@@ -2300,7 +2408,7 @@
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 8100
+        size = 3100
     }
 
     artisans = {
@@ -2318,7 +2426,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 35676
+        size = 40676
     }
 
     aristocrats = {
@@ -2386,7 +2494,7 @@
     farmers = {
         culture = dutch
         religion = reformed
-        size = 46897
+        size = 42897
     }
 
     aristocrats = {
@@ -2411,6 +2519,12 @@
         culture = west_german
         religion = protestant
         size = 13942
+    }
+	
+	craftsmen = {
+        culture = dutch
+        religion = reformed
+        size = 4000
     }
 }
 #Luxembourg Region (172000)
@@ -2443,13 +2557,13 @@
     craftsmen = {
         culture = dutch
         religion = reformed
-        size = 3848
+        size = 2900
     }
 
     farmers = {
         culture = dutch
         religion = reformed
-        size = 21758
+        size = 22758
     }
 
     artisans = {

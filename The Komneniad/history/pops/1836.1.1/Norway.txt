@@ -249,13 +249,13 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 20250
+        size = 23250
     }
 	
 	craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 6000
+        size = 3000
     }
 }
 #Christiansand (82000/20500 POPS)
@@ -287,13 +287,13 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 20965
+        size = 22965
     }
 
     craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 8000
+        size = 6000
     }
 
     farmers = {
@@ -331,13 +331,13 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 18612
+        size = 23612
     }
 	
 	craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 7000
+        size = 2000
     }
 }
 #Drammen (132000/33000 POPS)
@@ -369,13 +369,13 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 28562
+        size = 38562
     }
 
     craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 12500
+        size = 2500
     }
 }
 #Ostlandet Region - 352000
@@ -420,7 +420,7 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 12200
+        size = 17200
     }
 
     capitalists = {
@@ -438,7 +438,7 @@
     craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 14500
+        size = 9500
     }
 }
 #Hamar (80000/20000 POPS)
@@ -540,13 +540,7 @@
     farmers = {
         culture = norwegian
         religion = protestant
-        size = 16037
-    }
-
-    craftsmen = {
-        culture = norwegian
-        religion = protestant
-        size = 1200
+        size = 21237
     }
 
     clerks = {
@@ -558,7 +552,7 @@
 	craftsmen = {
         culture = norwegian
         religion = protestant
-        size = 8000
+        size = 4000
     }
 }
 3412 = {

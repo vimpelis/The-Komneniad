@@ -66,7 +66,7 @@ country_event = {
         name = "The joy of rape was not their only reward this day."
 		clr_country_flag = ETH_search_in_progress
 		any_owned = { remove_province_modifier = ETH_insurgency }
-		country_event = 175003
+		country_event = { id = 175003 days = 3 }
     }
 }
 
@@ -128,7 +128,7 @@ country_event = {
 		clr_country_flag = ETH_active_insurgency
 		any_pop = { militancy = 2 }
 		any_owned = { remove_province_modifier = ETH_insurgency }
-		country_event = 175015
+		country_event = { id = 175015 days = 3 }
     }
 }
 
@@ -778,7 +778,6 @@ country_event = {
 	}
 }
 
-#End of Second Zemene Mesafint
 country_event = {
 	id = 175016
 	title = "End of the Second Zemene Mesafint"
@@ -808,6 +807,7 @@ country_event = {
 		name = "Perhaps. But I wouldn't try."
 		remove_country_modifier = zemene_mesafint
 		any_pop = { militancy = -2 }
+		SHW = { all_core = { remove_core = SHW } }
 	}
 }
 

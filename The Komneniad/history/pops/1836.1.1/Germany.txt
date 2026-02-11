@@ -1340,7 +1340,7 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 12075
+        size = 8075
     }
 
     clergymen = {
@@ -1365,6 +1365,12 @@
         culture = west_german
         religion = catholic
         size = 2260
+    }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 4000
     }
 }
 #Emden (84000/21000 POPS)
@@ -4445,7 +4451,7 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 13787
+        size = 11787
     }
 
     aristocrats = {
@@ -4507,6 +4513,12 @@
         religion = reformed
         size = 8900
     }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 2000
+    }
 }
 #Rhineland Region (1908000)
 #under the rule of Prussia in 1836
@@ -4553,7 +4565,7 @@
     craftsmen = {
         culture = west_german
         religion = catholic
-        size = 8998
+        size = 5998
     }
 
     artisans = {
@@ -4571,7 +4583,7 @@
     farmers = {
         culture = west_german
         religion = catholic
-        size = 25482
+        size = 28482
     }
 
     farmers = {
@@ -4827,7 +4839,13 @@
 	farmers = {
         culture = west_german
         religion = protestant
-        size = 23620
+        size = 20620
+    }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 3000
     }
 }
 #Dusseldorf (364000/91000 POPS)
@@ -5078,13 +5096,19 @@
     farmers = {
         culture = west_german
         religion = protestant
-        size = 31080
+        size = 26080
     }
 
     farmers = {
         culture = gypsy
         religion = protestant
         size = 1670
+    }
+	
+	craftsmen = {
+        culture = west_german
+        religion = protestant
+        size = 5000
     }
 }
 #Westphalia Region (1390000)

@@ -303,6 +303,14 @@ country_event = {
 			}
 			political_reform = confederalism
 		}
+		any_country = {
+			limit = {
+				tag = EGY
+				civilized = no
+				NOT = { government = prussian_constitutionalism }
+			}
+			government = prussian_constitutionalism
+		}
 		#KOMNENIAD: reused GFM colonial gov system
 		#Alaska
 		any_country = {
