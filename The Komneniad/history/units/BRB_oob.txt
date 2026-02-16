@@ -127,7 +127,7 @@ army = {
 
 army = {
     name = "2nd Army"
-    location = 3383
+    location = 390
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
@@ -171,12 +171,12 @@ army = {
 	regiment = {
         name = "4th Artillery Regiment"
         type = artillery
-        home = 3383
+        home = 390
     }
 	regiment = {
         name = "1st Engineer Regiment"
         type = engineer
-        home = 3383
+        home = 390
     }
 }
 
@@ -186,12 +186,12 @@ army = {
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 3383
+        home = 390
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 3383
+        home = 390
     }
 	regiment = {
         name = "3rd Infantry Regiment"

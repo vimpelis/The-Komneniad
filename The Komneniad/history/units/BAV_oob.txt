@@ -184,7 +184,7 @@ army = {
 	regiment = {
         name = "3rd Infantry Regiment"
         type = infantry
-        home = 592
+        home = 601
     }
     regiment = {
         name = "4th Infantry Regiment"

@@ -914,3 +914,8 @@ OBS;Observer;;;;;;;;;;;;;
 OBS_ADJ;Observer;;;;;;;;;;;;;
 EGY_colonial_company;Exarchate of Egypt;;;;;;;;;;;;;
 WES_puppet_warning_tt;§RIf our rank falls below 16, we may be puppeted by Brabant!\n§!;;;;;;;;;;;;;
+info_menu_tt;See the credits, gameplay changes and lore.§b;;;;;;;;;;;;;
+options_menu_tt;Change gameplay settings.§b;;;;;;;;;;;;;
+debug_menu_tt;Developer tools that you won't need unless you are a dev.§b;;;;;;;;;;;;;
+mp_menu_tt;Makes this country a host.\n§RThe host is recommended to play as the Observer tag in Kerguelen!§b;;;;;;;;;;;;;
+mp_menu_tt_temp;§RMP tools have not yet been implemented.§b;;;;;;;;;;;;;

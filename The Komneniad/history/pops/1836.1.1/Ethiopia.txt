@@ -1613,7 +1613,7 @@
     farmers = {
         culture = ethiopian_minor #sidama
         religion = animist
-        size = 10208
+        size = 5208
     }
 
     farmers = {
@@ -1655,13 +1655,7 @@
     farmers = {
         culture = ethiopian_minor
         religion = coptic
-        size = 15200
-    }
-	
-    farmers = {
-        culture = oromo
-        religion = animist
-        size = 4670
+        size = 9200
     }
 
     aristocrats = {
@@ -1691,13 +1685,13 @@
     farmers = {
         culture = nilotic
         religion = coptic
-        size = 13390
+        size = 6390
     }
 
     farmers = {
         culture = nilotic
         religion = animist
-        size = 6670
+        size = 4670
     }
 
     farmers = {
@@ -1968,6 +1962,86 @@
         size = 5450
     }
 }
+#25k from 3595, 10k from 517, 5k from 517 to 1847
+3597 = {
+	aristocrats = {
+        culture = ethiopian_minor
+        religion = animist
+        size = 300
+    }
+
+    clergymen = {
+        culture = ethiopian_minor
+        religion = animist
+        size = 50
+    }
+
+    artisans = {
+        culture = ethiopian_minor
+        religion = animist
+        size = 750
+    }
+
+    soldiers = {
+        culture = ethiopian_minor
+        religion = animist
+        size = 500
+    }
+
+    farmers = {
+        culture = ethiopian_minor
+        religion = animist
+        size = 16900
+    }
+	
+	clergymen = {
+        culture = ethiopian_minor
+        religion = coptic
+        size = 75
+    }
+	
+	farmers = {
+        culture = ethiopian_minor
+        religion = coptic
+        size = 4000
+    }
+
+    aristocrats = {
+        culture = nilotic
+        religion = animist
+        size = 300
+    }
+
+    clergymen = {
+        culture = nilotic
+        religion = animist
+        size = 50
+    }
+
+    artisans = {
+        culture = nilotic
+        religion = animist
+        size = 750
+    }
+
+    soldiers = {
+        culture = nilotic
+        religion = animist
+        size = 500
+    }
+
+    farmers = {
+        culture = nilotic
+        religion = animist
+        size = 9400
+    }
+	
+	farmers = {
+        culture = nilotic
+        religion = coptic
+        size = 1500
+    }
+}
 #Negele (720000/180000 POPS)
 1864 = {
     aristocrats = {
@@ -2107,25 +2181,13 @@
     farmers = {
         culture = ethiopian_minor
         religion = coptic
-        size = 2650
-    }
-
-    farmers = {
-        culture = nilotic
-        religion = animist
-        size = 2400
-    }
-
-    farmers = {
-        culture = ethiopian_minor
-        religion = coptic
-        size = 7770
+        size = 4770
     }
 
     farmers = {
         culture = ethiopian_minor
         religion = animist
-        size = 16500
+        size = 9500
     }
 	
 	farmers = {

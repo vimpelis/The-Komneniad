@@ -2326,7 +2326,7 @@
     farmers = {
         culture = ethiopian_minor
         religion = animist
-        size = 9100
+        size = 11100
     }
 
     aristocrats = {
@@ -2350,7 +2350,7 @@
     farmers = {
         culture = nilotic
         religion = animist
-        size = 5610
+        size = 8000
     }
 
     slaves = {
@@ -2358,11 +2358,11 @@
         religion = animist
         size = 1100
     }
-
-    slaves = {
-        culture = lendu
-        religion = animist
-        size = 365
+	
+	farmers = {
+        culture = ethiopian_minor
+        religion = coptic
+        size = 650
     }
 }
 #Dunqish, former Kufra (16000/4000 POPS)

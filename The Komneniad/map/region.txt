@@ -1,6 +1,6 @@
 ### Canada & the Far North
 
-USA_1 = { 2 3 4 5 6 2599 2631 3601 3597 } #Alaska (Russia)
+USA_1 = { 2 3 4 5 6 2599 2631 3601 } #Alaska (Russia)
 
 CAN_13 = { 15 19 16 17 1 368 } #Nutka north (California)
 
@@ -175,7 +175,7 @@ NET_379 = { 379 378 380 381 } #Zeeland
 
 NET_385 = { 385 383 384 386 382 1743 543 533 } #Friesland
 
-BEL_387 = { 387 388 389 391 3383 } #Flanders
+BEL_387 = { 387 388 389 390 391 } #Flanders
 
 BEL_394 = { 392 395 396 397 398 } #Wallonia
 
@@ -305,7 +305,7 @@ PRU_701 = { 701 699 700 } #Posen
 
 AUS_612 = { 612 613 615 735 } #Tirol
 
-AUS_613 = { 616 617 618 3370 3670 } #Kärnten-Steiermark
+AUS_613 = { 616 617 618 623 3670 } #Kärnten-Steiermark
 
 AUS_624 = { 624 3671 } #Burgenland
 
@@ -378,7 +378,7 @@ WAL_665 = { 664 665 666 668 667 669 } #Wallachia
 
 MOL_673 = { 672 670 671 663 662 } #Moldavia
 
-TUR_674 = { 674 675 818 3371 } #Dobrudja
+TUR_674 = { 674 675 818 } #Dobrudja
 
 MOL_676 = { 676 678 673 } #Bessarabia
 
@@ -390,7 +390,7 @@ MON_2582 = { 2583 2569 2577 800 2582 } #Montenegro
 
 TUR_803 = { 798 799 809 810 3347 795 } #Southern Serbia
 
-TUR_805 = { 805 819 820 821 822 3342 823 } #Southern Macedonia
+TUR_805 = { 805 819 820 821 822 823 828 } #Southern Macedonia
 
 TUR_806 = { 806 807 858 808 } #Northern Macedonia
 
@@ -597,7 +597,7 @@ RUS_1026 = { 1029 1028 } #Perm
 
 RUS_1064 = { 1064 1066 1061 2658 } #Tobolsk
 
-RUS_1048 = { 390 1048 1050 1051 3392 3315 } #Circassia
+RUS_1048 = { 1048 1050 1051 3315 3392 3393 } #Circassia
 
 RUS_1052 = { 1052 1053 3388 } #Daghestan
 
@@ -885,7 +885,7 @@ MOR_1686 = { 1685 1681 1682 1680 1683 } #Fez
 
 MOR_1688 = { 1688 1687 } #al Rif
 
-FRA_1700 = { 1700 1706 1813 1717 } #Algiers
+FRA_1700 = { 1700 1701 1706 1717 } #Algiers
 
 ALD_1704 = { 1704 1705 1707 1715 1684 1697 } #Oran
 
@@ -934,7 +934,7 @@ ETH_1859 = { 45 1853 1859 3491 3499 } ###Shewa/Ankober
 
 ETH_3590 = { 1861 1865 1874 3590 } ###Harar
 
-ETH_3591 = { 517 1847 1860 3591 3595 3596 } ###Kaffa
+ETH_3591 = { 517 1847 1860 3591 3595 3596 3597 } ###Kaffa
 
 ETH_1867 = { 1864 1866 3434 3594 } ###Ogaden
 
@@ -967,11 +967,11 @@ MLI_1883 = { 1878 1879 1880 1791 1793 } #Futa Jallon
 
 MLI_1878 = { 1785 1792 1876 1877 } #Coast of Gambia
 
-MLI_1887 = { 1884 1885 1886 1887 1889 1890 } #Pepper Coast
+MLI_1887 = { 1884 1885 1886 1887 1889 1890 3341 3342 } #Pepper Coast
 
 MLI_1892 = { 1892 1894 1895 1897 } #Ivory Coast
 
-MLI_1893 = { 1888 1891 1893 1896 } #Ivory Coast-Liberia border (Kru)
+MLI_1893 = { 1813 1888 1891 1893 1896 } #Ivory Coast-Liberia border (Kru)
 
 MLI_1898 = { 1898 1899 1900 } #Kong
 
@@ -1126,11 +1126,11 @@ ENG_2228 = { 2229 2231 2233 2237 2227 2234 2228 } #Lesser Antilles
 
 ### South America
 
-ENG_1979 = { 2239 2240 2241 2245 2246 } #Guyana
+ENG_1979 = { 2239 2240 2241 2242 2243 2245 2246 } #Guyana
 
 VNZ_2234 = { 2265 2268 2270 2271 2272 2273 2274 } #Zulia
 
-VNZ_2278 = { 2264 2266 2267 2269 2276 } #Bolivar
+VNZ_2278 = { 2264 2266 2267 2269 2276 3367 3368 } #Bolivar
 
 CLM_2259 = { 2250 2248 2256 2257 2258 } #Cauca
 
@@ -1167,15 +1167,15 @@ BRZ_2450 = { 2450 2306 2455 2452 2456 2453 2457 2460 } #Sao Paulo
 
 BRZ_2467 = { 2463 2466 2465 2461 2459 2458 2554 3568 2462 } #Rio Grande do Sul & Santa Catharina
 
-AMZ_2408 = { 2402 2403 2407 2408 2410 2411 2412 2415 } #Amazon delta
+AMZ_2408 = { 2402 2403 2404 2407 2408 2410 2411 2412 2415 3370 } #Amazon delta
 
-BRZ_2410 = { 2429 2424 2425 2426 2430 2371 } #Maranh�o
+BRZ_2410 = { 2429 2424 2425 2426 2430 2371 } #Maranhao
 
-AMZ_2404 = { 2404 3326 3359 3381 3435 3651 3652 } #Western Amazonas
+AMZ_2404 = { 3326 3359 3381 3651 3652 } #Western Amazonas
 
-AMZ_2550 = { 2405 2600 2417 2413 2418 2550 } #Eastern Amazonas
+AMZ_2550 = { 2405 2600 2417 2413 2418 2550 3435 } #Eastern Amazonas
 
-AMZ_2243 = { 696 2242 2243 2275 2277 2278 2532 3411 } #Guyanan borderlands
+AMZ_2243 = { 696 2275 2277 2278 2532 3371 3372 3411 } #Guyanan borderlands
 
 BRZ_2421 = { 2421 2422 2423 2427 2438 2444 2445 } #Central Plains
 
@@ -1247,7 +1247,7 @@ AST_2454 = { 2454 2527 2541 2542 2520 2523 } #Fiji
 
 SPA_2517 = { 2517 2521 } #Mariana Islands
 
-AST_2528 = { 2528 2529 } #Southern New Guina
+AST_2528 = { 2528 2529 } #Southern New Guinea
 
 GER_2530 = { 2531 1531 2530 2537 } #Northern New Guinea
 
@@ -1262,7 +1262,7 @@ USA_2543 = { 2543 2544 } #Samoa Islands
 FRA_801 = { 801 2551 2552 2553 } #Tahiti
 
 #Komneniad
-DEBUG_REGION = { 353 405 623 633 677 778 781 794 828 829 831 1701 3290 3291 3614 3393 3355 3556 3569 3653 3368 3367 3606 3400 3480 3397 3341 3343 3344 3483 3332 3379 3372 3303 3423 3306 3420 3307 3421 3562 3417 } #Unused provinces
+DEBUG_REGION = { 353 405 633 677 778 781 794 829 831 3290 3291 3303 3306 3307 3332 3343 3344 3355 3379 3383 3397 3400 3417 3420 3421 3423 3480 3483 3556 3562 3569 3606 3614 3653 } #Unused provinces
 
 tooltip_1 = {} #Each Ayllonian boy...
 tooltip_2 = {}
@@ -1332,6 +1332,11 @@ options_tt_3 = {}
 options_tt_4 = {}
 options_tt_on = {}
 options_tt_off = {}
+info_menu_tt = {}
+options_menu_tt = {}
+debug_menu_tt = {}
+mp_menu_tt = {}
+mp_menu_tt_temp = {}
 
 any_sea_province = {
 

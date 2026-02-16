@@ -5,7 +5,7 @@
     aristocrats = {
         culture = amazonian
         religion = animist
-        size = 40
+        size = 30
     }
 
     soldiers = {
@@ -17,7 +17,7 @@
     farmers = {
         culture = amazonian
         religion = animist
-        size = 2425
+        size = 1405
     }
 
     clergymen = {
@@ -29,19 +29,19 @@
     artisans = {
         culture = janatiyin
         religion = sunni
-        size = 5
+        size = 25
     }
 
     soldiers = {
         culture = janatiyin
         religion = sunni
-        size = 5
+        size = 20
     }
 
     farmers = {
         culture = janatiyin
         religion = sunni
-        size = 20
+        size = 50
     }
 }
 #Equia (11000/2750 POPS)
@@ -125,9 +125,8 @@
         religion = animist
         size = 200
     }
-}
-3435 = {
-    aristocrats = {
+	
+	aristocrats = {
         culture = amazonian
         religion = animist
         size = 25
@@ -143,6 +142,55 @@
         culture = amazonian
         religion = animist
         size = 300
+    }
+}
+3435 = {
+	aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 25
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 15
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 700
+    }
+	
+	slaves = {
+        culture = amazonian
+        religion = animist
+        size = 300
+    }
+	
+	aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 10
+    }
+
+    bureaucrats = {
+        culture = faruduan
+        religion = sunni
+        size = 5
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 25
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 650
     }
 }
 #Grão - Pará Region (80000)
@@ -349,25 +397,25 @@
     aristocrats = {
         culture = amazonian
         religion = animist
-        size = 86
+        size = 50
     }
 
     soldiers = {
         culture = amazonian
         religion = animist
-        size = 43
+        size = 30
     }
 
     farmers = {
         culture = amazonian
         religion = animist
-        size = 3470
+        size = 2600
     }
 
     slaves = {
         culture = amazonian
         religion = animist
-        size = 1493
+        size = 1200
     }
 }
 #Tabatinga (4000/1000 POPS)
@@ -475,43 +523,43 @@
     aristocrats = {
         culture = amazonian
         religion = animist
-        size = 7
+        size = 25
     }
 
     soldiers = {
         culture = amazonian
         religion = animist
-        size = 10
+        size = 50
     }
 
     farmers = {
         culture = amazonian
         religion = animist
-        size = 650
+        size = 2250
     }
 
     clergymen = {
         culture = faruduan
         religion = sunni
-        size = 25
+        size = 40
     }
 
     artisans = {
         culture = faruduan
         religion = sunni
-        size = 50
+        size = 125
     }
 
     soldiers = {
         culture = faruduan
         religion = sunni
-        size = 200
+        size = 210
     }
 
     farmers = {
         culture = faruduan
         religion = sunni
-        size = 150
+        size = 1250
     }
 }
 #Bonfim
@@ -5849,5 +5897,42 @@
         culture = amazonian
         religion = animist
         size = 2000
+    }
+}
+3370 = {
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 10
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 5
+    }
+
+    artisans = {
+        culture = amazonian
+        religion = animist
+        size = 30
+    }
+
+    soldiers = {
+        culture = amazonian
+        religion = animist
+        size = 15
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 1000
+    }
+	
+	farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 100
     }
 }

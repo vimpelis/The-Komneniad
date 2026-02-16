@@ -1,0 +1,78 @@
+#Starting event
+country_event = {
+    id = 181000
+    title = "The Colony of Montserrado"
+    desc = "181000DESC"
+    picture = "montserrado"
+
+    trigger = {
+		tag = SPA
+		owns = 1887
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+
+    option = {
+        name = "The only good thing to come of crime."
+		1887 = {
+			any_pop = {
+				limit = { has_pop_culture = spanish }
+				militancy = 2
+				consciousness = 4
+				ideology = { factor = 0.3 value = radical }
+				ideology = { factor = 0.2 value = liberal }
+			}
+			add_province_modifier = { name = penal_colony duration = -1 }
+		}
+    }
+}
+
+country_event = {
+    id = 181001
+    title = "The Liberia Uprising"
+    desc = "181001DESC"
+    picture = "liberia_uprising"
+
+    trigger = {
+		owns = 1887
+		year = 1849
+    }
+
+    mean_time_to_happen = {
+        days = 90
+    }
+	
+	fire_only_once = yes
+
+    option = {
+        name = "Worrying."
+		3341 = { secede_province = THIS any_pop = { literacy = -0.99 } add_province_modifier = { name = war_torn duration = 365 } }
+		1884 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		1887 = { any_pop = { militancy = 1 consciousness = 2 } }
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			1813 = { owner = { country_event = { id = 181002 days = 30 } } }
+		}
+		clr_country_flag = hidden_tooltip
+    }
+}
+
+country_event = {
+    id = 181002
+    title = "Expansion of Malaguetta"
+    desc = "181002DESC"
+    picture = "malaguetta"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		1888 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		1813 = { any_pop = { consciousness = 1 } }
+    }
+}
+

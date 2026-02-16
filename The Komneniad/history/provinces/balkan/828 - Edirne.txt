@@ -1,3 +1,7 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+add_core = MCD
+trade_goods = cotton
+life_rating = 35
+terrain = farmlands

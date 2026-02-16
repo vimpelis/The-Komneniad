@@ -10,6 +10,6 @@ army = {
     regiment = {
         name = "2nd Division"
         type = irregular
-        home = 1358
+        home = 1372
     }
 }

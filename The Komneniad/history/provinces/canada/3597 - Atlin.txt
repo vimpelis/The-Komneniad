@@ -1,6 +1,4 @@
-owner = RUS
-controller = RUS
-add_core = LSK
-trade_goods = timber
-life_rating = 10
-colonial = 2
+trade_goods = fruit
+life_rating = 15
+terrain = montane_forest
+add_core = KAF

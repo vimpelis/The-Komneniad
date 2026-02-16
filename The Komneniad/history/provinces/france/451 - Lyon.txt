@@ -3,7 +3,7 @@ controller = ARE
 add_core = ARE
 trade_goods = grain
 life_rating = 35
-terrain = lyon
+terrain = hills
 railroad = 1
-state_building = { level = 1 building = winery upgrade = yes } 
-state_building = { level = 1 building = luxury_clothes_factory upgrade = yes } 
+state_building = { level = 1 building = steel_factory upgrade = yes } 
+state_building = { level = 1 building = small_arms_factory upgrade = yes } 

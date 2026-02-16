@@ -383,7 +383,7 @@
         size = 1200
     }
 }
-3370 = {
+623 = {
     farmers = {
         culture = south_german
         religion = catholic

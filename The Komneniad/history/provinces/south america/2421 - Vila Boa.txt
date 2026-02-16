@@ -1,6 +1,6 @@
 owner = KIB
 trade_goods = cattle
-terrain = vila_boa
+terrain = hills
 life_rating = 25
 controller = KIB
 add_core = KIB

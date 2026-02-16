@@ -20,7 +20,6 @@ country_event = {
     picture = "marseilles"
 
     trigger = {
-		NOT = { has_country_flag = BAE_annexed }
 		is_our_vassal = BAE
 		OR = {
 			NOT = { exists = CAT }
@@ -36,7 +35,6 @@ country_event = {
 
     option = {
         name = "At last."
-		set_country_flag = BAE_annexed
 		502 = { add_core = THIS }
 		inherit = BAE
     }
@@ -154,6 +152,8 @@ country_event = {
 		PAP = { country_event = { id = 171007 days = 2 } }
 		TUS = { country_event = { id = 171007 days = 1 } }
 		set_country_flag = ARE_padania_conquered
+		clr_country_flag = ARE_invade_padania
+		clr_country_flag = ARE_ready_to_kill_LOM
     }
 }
 
@@ -587,6 +587,8 @@ country_event = {
 		LOM = { all_core = { remove_core = ARE } }
 		any_pop = { militancy = 1 consciousness = 1 }
 		set_country_flag = ARE_defeat_in_italy
+		clr_country_flag = ARE_invade_padania
+		clr_country_flag = ARE_ready_to_kill_LOM
     }
 }
 
@@ -624,5 +626,105 @@ country_event = {
 			}
 			owner = { government = constitutional_empire }
 		}
+    }
+}
+
+country_event = {
+    id = 171029
+    title = "The Issue of Palmeto"
+    desc = "171029DESC"
+    picture = "marseilles"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Let them go."
+		badboy = -1
+		1813 = { secede_province = LIB }
+		LIB = {
+			prestige = 5
+			government = democracy
+			1813 = {
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+						type = soldiers
+					}
+					reduce_pop = 10
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+			}
+		}
+		relation = { who = LIB value = 200 }
+		diplomatic_influence = { who = LIB value = 200 }
+    }
+	
+	option = {
+        name = "Arles wouldn't mind a new colony."
+		prestige = 5
+		1813 = { secede_province = LIB }
+		LIB = {
+			prestige = 5
+			government = democracy
+			1813 = {
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+						type = soldiers
+					}
+					reduce_pop = 10
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+			}
+		}
+		war = {
+			target = LIB
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = status_quo }
+		}
+    }
+	
+	option = {
+        name = "171029A"
+		badboy = -1
+		1813 = { secede_province = LIB }
+		LIB = {
+			prestige = 5
+			government = democracy
+			1813 = {
+				any_pop = {
+					limit = {
+						has_pop_culture = north_italian
+						type = soldiers
+					}
+					reduce_pop = 10
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+			}
+		}
+		relation = { who = LIB value = 200 }
+		diplomatic_influence = { who = LIB value = 200 }
+		change_tag_no_core_switch = LIB
     }
 }

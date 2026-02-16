@@ -42,3 +42,99 @@ country_event = {
 		ai_chance = { factor = 30 }
     }
 }
+
+country_event = {
+    id = 173001
+    title = "Down the Maranian"
+    desc = "173001DESC"
+    picture = "guinea_coast"
+
+    trigger = {
+		owns = 2402
+		OR = {
+			year = 1880
+			invention = colonial_negotiations
+		}
+		2403 = { empty = yes }
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 15
+    }
+
+    option = {
+        name = "What riches does the jungle hide?"
+		prestige = 5
+		2403 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		2404 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		3370 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+    }
+}
+
+country_event = {
+    id = 173002
+    title = "Conquest of the Orinoko"
+    desc = "173002DESC"
+    picture = "orinoco"
+
+    trigger = {
+		owns = 3368
+		OR = {
+			AND = {
+				tag = FRD
+				year = 1850
+			}
+			AND = {
+				tag = WEL
+				year = 1850
+			}
+			year = 1870
+			invention = mission_to_civilize
+		}
+		3367 = { empty = yes }
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Warao beware!"
+		prestige = 5
+		3367 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { tag = KIB }
+					NOT = { tag = FRD }
+					NOT = { tag = WEL }
+					NOT = { tag = ARJ }
+					NOT = { tag = AAL }
+				}
+			}
+			3367 = { add_core = CRB }
+			3368 = { add_core = CRB }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					tag = KIB
+					tag = FRD
+					tag = WEL
+					tag = ARJ
+					tag = AAL
+				}
+			}
+			3367 = { add_core = THIS }
+			3368 = { add_core = THIS }
+		}
+		2404 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		3370 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+    }
+}

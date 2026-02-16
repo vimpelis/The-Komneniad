@@ -9,12 +9,26 @@ country_event = {
 	
 	option = {
         name = "Open the Information Menu"
-		country_event = 169003
+		info_menu_tt = {}
+		set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					country_event = 169003
+				}
+			}
+		clr_country_flag = hidden_tooltip
     }
 	
 	option = {
-        name = "Open the Options menu"
-		country_event = 169010
+        name = "Open the Options Menu"
+		options_menu_tt = {}
+		set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					country_event = 169020
+				}
+			}
+		clr_country_flag = hidden_tooltip
     }
 	
 	option = {
@@ -23,7 +37,7 @@ country_event = {
     }
 	
 	option = {
-        name = "Exit menu"
+        name = "Exit Menu"
 		clr_country_flag = komneniad_menu
     }
 }
@@ -44,12 +58,20 @@ country_event = {
 	
 	option = {
         name = "Open Debug"
-		country_event = 169007
+		debug_menu_tt = {}
+		set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					country_event = 169007
+				}
+			}
+		clr_country_flag = hidden_tooltip
 		clr_country_flag = komneniad_menu
     }
 	
 	option = {
         name = "Enable multiplayer mode"
+		mp_menu_tt_temp = {}
 		set_global_flag = you_are_playing_mp
     }
 }
@@ -398,21 +420,23 @@ country_event = {
     }
 	
 	option = {
-        name = "Pakistan"
+        name = "Cossackia"
 		political_reform = no_slavery
-		SIN_1288 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		PAN_1227 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		KAL_1221 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		AFG_1218 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		AFG_1209 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		PAN_1224 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		AFG_1215 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		3512 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		3258 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		1146 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		1144 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		1143 = { add_core = PAK secede_province = THIS secede_province = PAK }
-		3496 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		RUS_1182 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_979 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_955 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_1041 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_1060 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_976 = { add_core = DON secede_province = THIS secede_province = DON }
+		RUS_964 = { add_core = DON secede_province = THIS secede_province = DON }
+		1048 = { add_core = DON secede_province = THIS secede_province = DON }
+		1050 = { add_core = DON secede_province = THIS secede_province = DON }
+    }
+	
+	option = {
+        name = "Middle East options"
+		political_reform = no_slavery
+		country_event = 169014
     }
 	
 	option = {
@@ -456,6 +480,179 @@ country_event = {
     }
 	
 	option = {
+        name = "Page 2"
+		country_event = 169010
+    }
+}
+
+country_event = {
+    id = 169010
+    title = "Spawn a country: Page 2"
+    desc = "Select a country to spawn"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to page 1"
+		country_event = 169009
+    }
+	
+	option = {
+        name = "1750 borders Persia-Ethiopia"
+		political_reform = no_slavery
+		#Turki Empire
+		ZND = { all_core = { add_core = TUR secede_province = THIS secede_province = TUR } }
+		MGT = { all_core = { add_core = TUR secede_province = THIS secede_province = TUR } }
+		KOK = { all_core = { add_core = TUR } }
+		KAZ = { all_core = { add_core = TUR } }
+		1190 = { remove_core = TUR }
+		1182 = { remove_core = TUR }
+		2610 = { remove_core = TUR }
+		1187 = { remove_core = TUR }
+		1188 = { remove_core = TUR }
+		1186 = { remove_core = TUR }
+		PER_1116 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		RUS_1102 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AZB_1105 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AFG_1213 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		935 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1052 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1053 = { add_core = DAG secede_province = THIS secede_province = DAG }
+		1055 = { add_core = DAG secede_province = THIS secede_province = DAG }
+		3391 = { add_core = DAG secede_province = THIS secede_province = DAG }
+		TUR = { create_vassal = ARM create_vassal = DAG }
+		SIN_1288 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		PAN_1227 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		KAL_1221 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AFG_1218 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AFG_1209 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1224 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AFG_1215 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		3512 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		3258 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1146 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1144 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1143 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		3496 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		NEJ_1164 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1162 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1165 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1167 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		3515 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1168 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		2664 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		TUR = { all_core = { secede_province = THIS secede_province = TUR } }
+		#India
+		ENG_1264 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1237 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1236 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1270 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1272 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1271 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1240 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1239 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1241 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1243 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1245 = { add_core = RAJ secede_province = THIS secede_province = RAJ }
+		1275 = { add_core = NAG secede_province = THIS secede_province = NAG }
+		1276 = { add_core = NAG secede_province = THIS secede_province = NAG }
+		1278 = { add_core = NAG secede_province = THIS secede_province = NAG }
+		1277 = { add_core = NAG secede_province = THIS secede_province = NAG }
+		1280 = { add_core = NAG secede_province = THIS secede_province = NAG }
+		1281 = { add_core = NAG secede_province = THIS secede_province = NAG }
+		1284 = { add_core = HYD secede_province = THIS secede_province = HYD }
+		1298 = { add_core = HYD secede_province = THIS secede_province = HYD }
+		1299 = { add_core = HYD secede_province = THIS secede_province = HYD }
+		1301 = { add_core = HYD secede_province = THIS secede_province = HYD }
+		1297 = { add_core = HYD secede_province = THIS secede_province = HYD }
+		#Oirat
+		1187 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		1188 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		1186 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		1067 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		1068 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		2674 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		2691 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		1469 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		1488 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		1535 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		CHI_1600 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		CHI_1468 = { add_core = TNT secede_province = THIS secede_province = TNT }
+		#Ethiopia
+		EGY = { all_core = { add_core = ETH } }
+		SUD = { all_core = { add_core = ETH } }
+		2564 = { remove_core = ETH }
+		1758 = { remove_core = ETH }
+		2585 = { remove_core = ETH }
+		1754 = { remove_core = ETH }
+		1738 = { remove_core = ETH }
+		ETH = { all_core = { secede_province = THIS secede_province = ETH } }
+		ASY = { all_core = { add_core = ETH secede_province = THIS secede_province = ETH } }
+		AWS = { all_core = { add_core = ETH secede_province = THIS secede_province = ETH } }
+		JIM = { all_core = { add_core = ETH secede_province = THIS secede_province = ETH } }
+		UQA = { all_core = { add_core = ETH secede_province = THIS secede_province = ETH } }
+		1739 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1838 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1828 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1839 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		ETH_3590 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		3434 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1867 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1873 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1872 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1871 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1866 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		3594 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		1860 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		3591 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		3596 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		2029 = { add_core = ZAN secede_province = THIS secede_province = ZAN }
+		2037 = { add_core = ZAN secede_province = THIS secede_province = ZAN }
+		2036 = { add_core = ZAN secede_province = THIS secede_province = ZAN }
+		2048 = { add_core = ZAN secede_province = THIS secede_province = ZAN }
+		ETH = { create_vassal = SOM }
+		#Other
+		TIB = { all_core = { add_core = TIB secede_province = THIS secede_province = TIB } }
+    }
+	
+	option = {
+        name = "Pakistan to Turki Empire"
+		political_reform = no_slavery
+		SIN_1288 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		PAN_1227 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		KAL_1221 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AFG_1218 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AFG_1209 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		PAN_1224 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		AFG_1215 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		3512 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		3258 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1146 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1144 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		1143 = { add_core = TUR secede_province = THIS secede_province = TUR }
+		3496 = { add_core = TUR secede_province = THIS secede_province = TUR }
+    }
+	
+	option = {
+        name = "Pakistan"
+		political_reform = no_slavery
+		SIN_1288 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		PAN_1227 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		KAL_1221 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		AFG_1218 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		AFG_1209 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		PAN_1224 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		AFG_1215 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		3512 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		3258 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		1146 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		1144 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		1143 = { add_core = PAK secede_province = THIS secede_province = PAK }
+		3496 = { add_core = PAK secede_province = THIS secede_province = PAK }
+    }
+	
+	option = {
         name = "Mega Kurdish Empire"
 		political_reform = no_slavery
 		BYZ_921 = { add_core = KDS secede_province = THIS secede_province = KDS }
@@ -489,153 +686,6 @@ country_event = {
 	option = {
 		name = "Decolonize Africa"
 		country_event = 169011
-	}
-	
-	option = {
-        name = "Middle East options"
-		political_reform = no_slavery
-		country_event = 169014
-    }
-	
-	option = {
-        name = "Cossackia"
-		political_reform = no_slavery
-		RUS_1182 = { add_core = DON secede_province = THIS secede_province = DON }
-		RUS_979 = { add_core = DON secede_province = THIS secede_province = DON }
-		RUS_955 = { add_core = DON secede_province = THIS secede_province = DON }
-		RUS_1041 = { add_core = DON secede_province = THIS secede_province = DON }
-		RUS_1060 = { add_core = DON secede_province = THIS secede_province = DON }
-		RUS_976 = { add_core = DON secede_province = THIS secede_province = DON }
-		RUS_964 = { add_core = DON secede_province = THIS secede_province = DON }
-		1048 = { add_core = DON secede_province = THIS secede_province = DON }
-		1050 = { add_core = DON secede_province = THIS secede_province = DON }
-    }
-}
-
-country_event = {
-    id = 169010
-    title = "Options"
-    desc = "Select an option."
-    picture = "india_map"
-
-    is_triggered_only = yes
-	allow_multiple_instances = yes
-	
-	option = {
-        name = "Unlock Crisis in 1870"
-		options_tt_1 = {}
-		set_country_flag = hidden_tooltip
-		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
-			owner = {
-				country_event = 169010
-			}
-		}
-		clr_country_flag = hidden_tooltip
-		set_global_flag = unlock_crisis_in_1870
-    }
-	
-	option = {
-        name = "Enable Crisis from the Start"
-		options_tt_2 = {}
-		set_country_flag = hidden_tooltip
-		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
-			owner = {
-				country_event = 169010
-			}
-		}
-		clr_country_flag = hidden_tooltip
-		set_global_flag = revolution_n_counter_researched
-    }
-	
-	option = {
-        name = "Disable Workplace Events"
-		options_tt_3 = {}
-		set_country_flag = hidden_tooltip
-		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
-			owner = {
-				country_event = 169010
-			}
-		}
-		clr_country_flag = hidden_tooltip
-		set_global_flag = workplace_events_disabled
-    }
-	
-	option = {
-        name = "Disable the Bankruptcy Events"
-		options_tt_4 = {}
-		set_country_flag = hidden_tooltip
-		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
-			owner = {
-				country_event = 169010
-			}
-		}
-		clr_country_flag = hidden_tooltip
-		set_country_flag = bankruptcy_events_disabled
-        any_country = { limit = { ai = no } set_country_flag = bankruptcy_events_disabled }
-    }
-	
-	option = {
-        name = "Adjust Infamy Reduction"
-		set_global_flag = one_point_five_infamy_reduction
-        country_event = 123641
-    }
-	
-	option = {
-        name = "Back to Menu"
-        country_event = 169001
-    }
-}
-
-country_event = {
-    id = 123641
-    title = "More Infamy Reduction"
-    desc = "You have taken the option to increase infamy reduction. To what level do you wish to set it?"
-    fire_only_once = yes
-	is_triggered_only = yes
-	picture = "infamy"
-    option = {
-        name = "I'd like to have -0.15 infamy reduction."
-        any_country = {
-			add_country_modifier = {
-                name = lower_infamy_a
-				duration = -1
-			}
-        }
-		add_country_modifier = { name = lower_infamy_a duration = -1 }
-		country_event = 169010
-	}
-    option = {
-        name = "-0.2 is the way to go."
-        any_country = {
-			add_country_modifier = {
-                name = lower_infamy_b
-				duration = -1
-			}
-        }
-		add_country_modifier = { name = lower_infamy_b duration = -1 }
-		country_event = 169010
-	}
-    option = {
-        name = "Make it -0.25."
-        any_country = {
-			add_country_modifier = {
-                name = lower_infamy_c
-				duration = -1
-			}
-        }
-		add_country_modifier = { name = lower_infamy_c duration = -1 }
-		country_event = 169010
-	}
-    option = {
-        name = "-0.3 sounds more like it!"
-        any_country = {
-			add_country_modifier = {
-                name = lower_infamy_d
-				duration = -1
-			}
-        }
-		add_country_modifier = { name = lower_infamy_d duration = -1 }
-		country_event = 169010
 	}
 }
 
@@ -756,25 +806,6 @@ country_event = {
 }
 
 country_event = {
-    id = 169012
-    title = "Get westernized"
-    desc = "wow"
-    picture = "india_map"
-
-    is_triggered_only = yes
-	
-	option = {
-        name = "Ok"
-		research_points = 25000
-		economic_reform = yes_industrial_construction
-		economic_reform = yes_pre_indust
-		economic_reform = yes_firearms_production
-		economic_reform = yes_research_reform
-		economic_reform = monetary_reform_two
-    }
-}
-
-country_event = {
     id = 169014
     title = "Middle East Countries"
     desc = "wip"
@@ -880,4 +911,131 @@ country_event = {
 	option = {
         name = "Close"
     }
+}
+
+country_event = {
+    id = 169020
+    title = "Options"
+    desc = "Select an option."
+    picture = "india_map"
+
+    is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	option = {
+        name = "Unlock Crisis in 1870"
+		options_tt_1 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169020
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_global_flag = unlock_crisis_in_1870
+    }
+	
+	option = {
+        name = "Enable Crisis from the Start"
+		options_tt_2 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169020
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_global_flag = revolution_n_counter_researched
+    }
+	
+	option = {
+        name = "Disable Workplace Events"
+		options_tt_3 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169020
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_global_flag = workplace_events_disabled
+    }
+	
+	option = {
+        name = "Disable the Bankruptcy Events"
+		options_tt_4 = {}
+		set_country_flag = hidden_tooltip
+		random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				country_event = 169020
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		set_country_flag = bankruptcy_events_disabled
+        any_country = { limit = { ai = no } set_country_flag = bankruptcy_events_disabled }
+    }
+	
+	option = {
+        name = "Adjust Infamy Reduction"
+		set_global_flag = one_point_five_infamy_reduction
+        country_event = 123641
+    }
+	
+	option = {
+        name = "Back to Menu"
+        country_event = 169001
+    }
+}
+
+country_event = {
+    id = 123641
+    title = "More Infamy Reduction"
+    desc = "You have taken the option to increase infamy reduction. To what level do you wish to set it?"
+    fire_only_once = yes
+	is_triggered_only = yes
+	picture = "infamy"
+    option = {
+        name = "I'd like to have -0.15 infamy reduction."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_a
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_a duration = -1 }
+		country_event = 169020
+	}
+    option = {
+        name = "-0.2 is the way to go."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_b
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_b duration = -1 }
+		country_event = 169020
+	}
+    option = {
+        name = "Make it -0.25."
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_c
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_c duration = -1 }
+		country_event = 169020
+	}
+    option = {
+        name = "-0.3 sounds more like it!"
+        any_country = {
+			add_country_modifier = {
+                name = lower_infamy_d
+				duration = -1
+			}
+        }
+		add_country_modifier = { name = lower_infamy_d duration = -1 }
+		country_event = 169020
+	}
 }

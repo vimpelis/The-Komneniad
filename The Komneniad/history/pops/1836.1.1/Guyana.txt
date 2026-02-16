@@ -59,34 +59,40 @@
 }
 #Mahdia (4000/1000 POPS)
 2242 = {
+	aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 150
+    }
+
     clergymen = {
         culture = faruduan
-        religion = protestant
-        size = 125
+        religion = sunni
+        size = 250
     }
 
     artisans = {
         culture = faruduan
-        religion = protestant
-        size = 350
+        religion = sunni
+        size = 850
     }
 
     soldiers = {
         culture = faruduan
-        religion = protestant
-        size = 300
+        religion = sunni
+        size = 700
     }
 
     farmers = {
         culture = faruduan
-        religion = protestant
-        size = 4560
+        religion = sunni
+        size = 14060
     }
 	
 	slaves = {
         culture = faruduan
-        religion = protestant
-        size = 1200
+        religion = sunni
+        size = 3200
     }
 
     aristocrats = {
@@ -149,5 +155,60 @@
         culture = faruduan
         religion = sunni
         size = 1200
+    }
+}
+3372 = {
+	aristocrats = {
+        culture = faruduan
+        religion = sunni
+        size = 50
+    }
+
+    clergymen = {
+        culture = faruduan
+        religion = sunni
+        size = 75
+    }
+
+    artisans = {
+        culture = faruduan
+        religion = sunni
+        size = 250
+    }
+
+    soldiers = {
+        culture = faruduan
+        religion = sunni
+        size = 120
+    }
+
+    farmers = {
+        culture = faruduan
+        religion = sunni
+        size = 5600
+    }
+	
+	slaves = {
+        culture = faruduan
+        religion = sunni
+        size = 900
+    }
+
+    aristocrats = {
+        culture = amazonian
+        religion = animist
+        size = 15
+    }
+
+    clergymen = {
+        culture = amazonian
+        religion = animist
+        size = 30
+    }
+
+    farmers = {
+        culture = amazonian
+        religion = animist
+        size = 175
     }
 }

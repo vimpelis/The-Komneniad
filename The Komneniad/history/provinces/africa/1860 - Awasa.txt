@@ -1,3 +1,4 @@
 trade_goods = fruit
-life_rating = 10
+life_rating = 15
 terrain = forest_hills
+add_core = KAF

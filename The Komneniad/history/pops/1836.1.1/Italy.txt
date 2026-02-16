@@ -55,13 +55,7 @@
     soldiers = {
         culture = north_italian
         religion = catholic
-        size = 5000
-    }
-
-    soldiers = {
-        culture = north_italian
-        religion = catholic
-        size = 5000
+        size = 10000
     }
 
     farmers = {
@@ -105,8 +99,6 @@
         religion = jewish
         size = 100
     }
-}
-3434 = {
 }
 #Aosta (156000/39000 POPS)
 721 = {
@@ -533,7 +525,7 @@
     soldiers = {
         culture = north_italian
         religion = catholic
-        size = 3350
+        size = 6500
     }
 
     farmers = {
@@ -633,7 +625,7 @@
     soldiers = {
         culture = north_italian
         religion = catholic
-        size = 1750
+        size = 3400
     }
 
     farmers = {
@@ -1987,7 +1979,7 @@
     soldiers = {
         culture = south_italian
         religion = catholic
-        size = 941
+        size = 1200
     }
 
     farmers = {
@@ -2044,18 +2036,6 @@
         size = 131
     }
 
-    bureaucrats = {
-        culture = south_italian
-        religion = orthodox
-        size = 7
-    }
-
-    officers = {
-        culture = south_italian
-        religion = orthodox
-        size = 6
-    }
-
     clergymen = {
         culture = south_italian
         religion = orthodox
@@ -2066,12 +2046,6 @@
         culture = south_italian
         religion = orthodox
         size = 122
-    }
-
-    soldiers = {
-        culture = south_italian
-        religion = orthodox
-        size = 39
     }
 
     farmers = {

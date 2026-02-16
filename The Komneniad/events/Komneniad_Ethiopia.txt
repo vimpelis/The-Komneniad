@@ -876,6 +876,7 @@ country_event = {
 	option = {
 		name = "Malaria won't stop us!"
 		random_owned = { limit = { 3595 = { empty = yes } } 3595 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
+		random_owned = { limit = { 3597 = { empty = yes } } 3597 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
 		random_owned = { limit = { 1847 = { empty = yes } } 1847 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
 		random_owned = { limit = { 3377 = { empty = yes } } 3377 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 	}

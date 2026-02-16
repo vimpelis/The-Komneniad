@@ -1,3 +1,506 @@
+#Here lies Leonia
+#Monrovia (252000/63000 POPS)
+1887 = {
+	aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 250
+    }
+	
+	bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 100
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 325
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 680
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 7950
+    }
+
+    farmers = {
+        culture = kru
+        religion = catholic
+        size = 2775
+    }
+
+    aristocrats = {
+        culture = kru
+        religion = fetishist
+        size = 675
+    }
+
+    clergymen = {
+        culture = kru
+        religion = fetishist
+        size = 450
+    }
+
+    artisans = {
+        culture = kru
+        religion = fetishist
+        size = 2350
+    }
+
+    soldiers = {
+        culture = kru
+        religion = fetishist
+        size = 450
+    }
+
+    farmers = {
+        culture = kru
+        religion = fetishist
+        size = 10659
+    }
+
+    farmers = {
+        culture = western_nigritic
+        religion = fetishist
+        size = 10000
+    }
+
+    aristocrats = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    clergymen = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    artisans = {
+        culture = mande
+        religion = fetishist
+        size = 200
+    }
+
+    soldiers = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    farmers = {
+        culture = mande
+        religion = fetishist
+        size = 1625
+    }
+
+    aristocrats = {
+        culture = mande
+        religion = fetishist
+        size = 150
+    }
+
+    clergymen = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    artisans = {
+        culture = mande
+        religion = fetishist
+        size = 450
+    }
+
+    soldiers = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    farmers = {
+        culture = mande
+        religion = fetishist
+        size = 5225
+    }
+
+    aristocrats = {
+        culture = mande
+        religion = sunni
+        size = 500
+    }
+
+    officers = {
+        culture = mande
+        religion = sunni
+        size = 100
+    }
+
+    clergymen = {
+        culture = mande
+        religion = sunni
+        size = 100
+    }
+
+    farmers = {
+        culture = mande
+        religion = sunni
+        size = 1010
+    }
+
+    artisans = {
+        culture = mande
+        religion = sunni
+        size = 300
+    }
+
+    soldiers = {
+        culture = mande
+        religion = sunni
+        size = 1100
+    }
+}
+#uncolonized in 1836
+#Bopulu (124000/31000 POPS)
+#was african minor
+1889 = {
+    aristocrats = {
+        culture = western_nigritic
+        religion = sunni
+        size = 475
+    }
+
+    clergymen = {
+        culture = western_nigritic
+        religion = sunni
+        size = 250
+    }
+
+    artisans = {
+        culture = western_nigritic
+        religion = sunni
+        size = 1250
+    }
+
+    soldiers = {
+        culture = western_nigritic
+        religion = sunni
+        size = 250
+    }
+
+    farmers = {
+        culture = western_nigritic
+        religion = sunni
+        size = 24875
+    }
+
+    farmers = {
+        culture = kru
+        religion = fetishist
+        size = 4975
+    }
+
+    aristocrats = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    clergymen = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    artisans = {
+        culture = mande
+        religion = fetishist
+        size = 300
+    }
+
+    soldiers = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    farmers = {
+        culture = mande
+        religion = fetishist
+        size = 38400
+    }
+}
+#Gbarnga (132000/33000 POPS)
+1890 = {
+    aristocrats = {
+        culture = western_nigritic
+        religion = sunni
+        size = 200
+    }
+
+    clergymen = {
+        culture = western_nigritic
+        religion = sunni
+        size = 100
+    }
+
+    artisans = {
+        culture = western_nigritic
+        religion = sunni
+        size = 550
+    }
+
+    soldiers = {
+        culture = western_nigritic
+        religion = sunni
+        size = 125
+    }
+
+    farmers = {
+        culture = western_nigritic
+        religion = sunni
+        size = 28915
+    }
+
+    aristocrats = {
+        culture = mande
+        religion = fetishist
+        size = 425
+    }
+
+    clergymen = {
+        culture = mande
+        religion = fetishist
+        size = 225
+    }
+
+    artisans = {
+        culture = mande
+        religion = fetishist
+        size = 1100
+    }
+
+    soldiers = {
+        culture = mande
+        religion = fetishist
+        size = 225
+    }
+
+    farmers = {
+        culture = mande
+        religion = fetishist
+        size = 51145
+    }
+}
+3341 = {
+	aristocrats = {
+        culture = kru
+        religion = fetishist
+        size = 200
+    }
+	
+	farmers = {
+        culture = kru
+        religion = fetishist
+        size = 9000
+    }
+
+	aristocrats = {
+        culture = mande
+        religion = fetishist
+        size = 150
+    }
+
+    clergymen = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    artisans = {
+        culture = mande
+        religion = fetishist
+        size = 450
+    }
+
+    soldiers = {
+        culture = mande
+        religion = fetishist
+        size = 100
+    }
+
+    farmers = {
+        culture = mande
+        religion = fetishist
+        size = 5225
+    }
+
+    aristocrats = {
+        culture = mande
+        religion = sunni
+        size = 300
+    }
+
+    clergymen = {
+        culture = mande
+        religion = sunni
+        size = 250
+    }
+
+    artisans = {
+        culture = mande
+        religion = sunni
+        size = 800
+    }
+
+    soldiers = {
+        culture = mande
+        religion = sunni
+        size = 100
+    }
+
+    farmers = {
+        culture = mande
+        religion = sunni
+        size = 7625
+    }
+	
+	farmers = {
+        culture = western_nigritic
+        religion = sunni
+        size = 5000
+    }
+	
+	farmers = {
+        culture = western_nigritic
+        religion = fetishist
+        size = 18000
+    }
+}
+3342 = {
+	aristocrats = {
+        culture = spanish
+        religion = catholic
+        size = 100
+    }
+	
+	bureaucrats = {
+        culture = spanish
+        religion = catholic
+        size = 75
+    }
+
+    clergymen = {
+        culture = spanish
+        religion = catholic
+        size = 350
+    }
+
+    artisans = {
+        culture = spanish
+        religion = catholic
+        size = 880
+    }
+
+    farmers = {
+        culture = spanish
+        religion = catholic
+        size = 3520
+    }
+
+    aristocrats = {
+        culture = mande
+        religion = sunni
+        size = 200
+    }
+
+    clergymen = {
+        culture = mande
+        religion = sunni
+        size = 200
+    }
+
+    artisans = {
+        culture = mande
+        religion = sunni
+        size = 600
+    }
+
+    soldiers = {
+        culture = mande
+        religion = sunni
+        size = 250
+    }
+
+    farmers = {
+        culture = mande
+        religion = sunni
+        size = 5500
+    }
+	
+	aristocrats = {
+        culture = western_nigritic
+        religion = sunni
+        size = 300
+    }
+
+    clergymen = {
+        culture = western_nigritic
+        religion = sunni
+        size = 300
+    }
+
+    artisans = {
+        culture = western_nigritic
+        religion = sunni
+        size = 900
+    }
+
+    soldiers = {
+        culture = western_nigritic
+        religion = sunni
+        size = 425
+    }
+
+    farmers = {
+        culture = western_nigritic
+        religion = sunni
+        size = 7750
+    }
+	
+	aristocrats = {
+        culture = wolof
+        religion = sunni
+        size = 150
+    }
+
+    clergymen = {
+        culture = wolof
+        religion = sunni
+        size = 250
+    }
+
+    artisans = {
+        culture = wolof
+        religion = sunni
+        size = 1300
+    }
+
+    farmers = {
+        culture = wolof
+        religion = sunni
+        size = 4500
+    }
+}
 #Sierra Leone Region (752000)
 #uncolonized in 1836/Britain has trade post in 1836
 #Freetown (400000/100000 POPS)
@@ -35,7 +538,7 @@
     farmers = {
         culture = mande
         religion = sunni
-        size = 32125
+        size = 14125
     }
 
     aristocrats = {
@@ -71,7 +574,7 @@
     farmers = {
         culture = western_nigritic
         religion = sunni
-        size = 48275
+        size = 17275
     }
 
     aristocrats = {
@@ -101,7 +604,7 @@
     farmers = {
         culture = western_nigritic
         religion = animist
-        size = 6800
+        size = 5800
     }
 }
 #uncolonized in 1836

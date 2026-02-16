@@ -4,19 +4,49 @@
 ######Jews
 ########
 1700 = {
+    aristocrats = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 250
+    }
+
+    officers = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 100
+    }
+
+    bureaucrats = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 150
+    }
+
+    clergymen = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 125
+    }
+
+    artisans = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 950
+    }
+
+    soldiers = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 4000
+    }
+
     farmers = {
-        culture = sephardic
-        religion = jewish
-        size = 400
+        culture = lower_burgundian
+        religion = catholic
+        size = 10000
     }
-
-    clergymen = {
-        culture = sephardic
-        religion = jewish
-        size = 300
-    }
-
-    clergymen = {
+	
+	clergymen = {
         culture = maghrebi
         religion = sunni
         size = 100
@@ -37,7 +67,7 @@
     farmers = {
         culture = maghrebi
         religion = sunni
-        size = 20000
+        size = 15000
     }
 
     clergymen = {
@@ -61,7 +91,7 @@
     farmers = {
         culture = berber
         religion = sunni
-        size = 30875
+        size = 20875
     }
 
     aristocrats = {
@@ -85,7 +115,7 @@
     clergymen = {
         culture = sephardic
         religion = jewish
-        size = 100
+        size = 400
     }
 
     artisans = {
@@ -103,92 +133,11 @@
     farmers = {
         culture = sephardic
         religion = jewish
-        size = 600
-    }
-
-    aristocrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 238
-    }
-
-    officers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 95
-    }
-
-    bureaucrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 143
-    }
-
-    clergymen = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 24
-    }
-
-    artisans = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 950
-    }
-
-    soldiers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 18300
-    }
-
-    farmers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 214
-    }
-
-    aristocrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 11
-    }
-
-    officers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 5
-    }
-
-    bureaucrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 6
-    }
-
-    clergymen = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 1
-    }
-
-    artisans = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 46
-    }
-
-    farmers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 10
+        size = 1000
     }
 }
-#Tizi Ouzou (Formerly Arlit)
-######Jews
-########
-1813 = {
-    farmers = {
+1700 = {
+	farmers = {
         culture = sephardic
         religion = jewish
         size = 400
@@ -631,6 +580,114 @@
 #Ruled by Aljaziar 1836
 #Bougie (448000/112000 POPS)
 1701 = {
+	clergymen = {
+        culture = berber
+        religion = sunni
+        size = 25
+    }
+
+    soldiers = {
+        culture = berber
+        religion = sunni
+        size = 1300
+    }
+
+    farmers = {
+        culture = berber
+        religion = sunni
+        size = 14675
+    }
+
+    clergymen = {
+        culture = maghrebi
+        religion = sunni
+        size = 300
+    }
+
+    artisans = {
+        culture = maghrebi
+        religion = sunni
+        size = 4200
+    }
+
+    farmers = {
+        culture = maghrebi
+        religion = sunni
+        size = 10700
+    }
+	
+    aristocrats = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 110
+    }
+	
+    artisans = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 110
+    }
+	
+    farmers = {
+        culture = lower_burgundian
+        religion = catholic
+        size = 300
+    }
+
+    ######Jews
+    aristocrats = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    officers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    soldiers = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 100
+    }
+
+    artisans = {
+        culture = sephardic
+        religion = jewish
+        size = 175
+    }
+
+    farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 1000
+    }
+	
+	farmers = {
+        culture = sephardic
+        religion = jewish
+        size = 400
+    }
+
+    clergymen = {
+        culture = sephardic
+        religion = jewish
+        size = 300
+    }
+    ########
+    farmers = {
+        culture = songhai
+        religion = sunni
+        size = 3500
+    }
 }
 #Setif (240000/60000 POPS)
 1702 = {
@@ -735,7 +792,7 @@
     farmers = {
         culture = maghrebi
         religion = sunni
-        size = 25500
+        size = 20500
     }
 
     aristocrats = {
@@ -765,7 +822,7 @@
     farmers = {
         culture = berber
         religion = sunni
-        size = 28500
+        size = 22000
     }
 
     slaves = {
@@ -1065,13 +1122,13 @@
     soldiers = {
         culture = maghrebi
         religion = sunni
-        size = 420
+        size = 1200
     }
 
     farmers = {
         culture = maghrebi
         religion = sunni
-        size = 27550
+        size = 24550
     }
 
     aristocrats = {
@@ -1095,13 +1152,13 @@
     soldiers = {
         culture = berber
         religion = sunni
-        size = 240
+        size = 100
     }
 
     farmers = {
         culture = berber
         religion = sunni
-        size = 12575
+        size = 10675
     }
 
     farmers = {
@@ -1143,13 +1200,7 @@
     farmers = {
         culture = lower_burgundian
         religion = catholic
-        size = 190
-    }
-
-    soldiers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 85
+        size = 250
     }
 }
 #Mascara (60000/15000 POPS)

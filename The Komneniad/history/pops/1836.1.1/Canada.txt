@@ -476,19 +476,6 @@
         size = 900
     }
 }
-3597 = {
-    artisans = {
-        culture = russian
-        religion = orthodox
-        size = 3
-    }
-
-    farmers = {
-        culture = native_american_minor
-        religion = animist
-        size = 100
-    }
-}
 #Fort St John (2400/600 POPS)
 18 = {
     aristocrats = {

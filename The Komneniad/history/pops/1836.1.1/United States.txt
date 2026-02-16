@@ -64,46 +64,45 @@
 }
 #Juneau / Saint Dionysius (4000/1000 POPS)
 2 = {
-    clergymen = {
+	aristocrats = {
         culture = russian
         religion = orthodox
         size = 10
     }
+	
+	bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 50
+    }
+
+    clergymen = {
+        culture = russian
+        religion = orthodox
+        size = 40
+    }
 
     artisans = {
         culture = russian
         religion = orthodox
-        size = 5
+        size = 25
     }
 
     soldiers = {
         culture = russian
         religion = orthodox
-        size = 11
+        size = 150
     }
 
     farmers = {
         culture = russian
         religion = orthodox
-        size = 31
+        size = 300
     }
-
-    artisans = {
-        culture = russian
-        religion = protestant
-        size = 5
-    }
-
-    soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 5
-    }
-
     farmers = {
         culture = native_american_minor
         religion = animist
-        size = 310
+        size = 410
     }
 }
 #Kenai/Kasilof (2400/600 POPS)
@@ -3127,19 +3126,6 @@
         size = 500
     }
 }
-#3597 = {
-#	farmers = {
-#        culture = pueblo
-#        religion = animist
-#        size = 50
-#    }
-#
-#    farmers = {
-#        culture = native_american_minor
-#        religion = animist
-#        size = 200
-#    }
-#}
 3589 = {
     farmers = {
         culture = pueblo

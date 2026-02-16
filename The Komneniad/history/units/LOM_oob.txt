@@ -22,22 +22,27 @@ army = {
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 720
+        home = 726
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 2568
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 728
+        home = 727
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 727
+        home = 728
     }
 	regiment = {
         name = "2nd Artillery Regiment"
         type = artillery
-        home = 726
+        home = 728
     }
 }
 
@@ -62,17 +67,17 @@ army = {
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 727
+        home = 720
     }
 	regiment = {
         name = "2nd Artillery Regiment"
         type = artillery
-        home = 723
+        home = 722
     }
 	regiment = {
         name = "1st Engineer Regiment"
         type = engineer
-        home = 722
+        home = 723
     }
 }
 
@@ -87,12 +92,12 @@ army = {
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 725
+        home = 724
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 472
+        home = 725
     }
 }
 
@@ -131,6 +136,16 @@ army = {
     }
 }
 
+army = {
+    name = "Lorano Colonial Garrison"
+    location = 3368
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 726
+    }
+}
+
 navy = {
     name = "Fleet of the Genoese Republic"
     location = 724
@@ -161,5 +176,18 @@ navy = {
 	ship = {
 		name = "Frigate"
         type = frigate
+    }
+}
+
+navy = {
+    name = "Transport Fleet"
+    location = 3368
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
     }
 }

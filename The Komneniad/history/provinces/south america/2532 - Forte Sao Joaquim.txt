@@ -1,6 +1,6 @@
 owner = FRD
 controller = FRD
+terrain = jungle_mountains
 trade_goods = tropical_wood
-life_rating = 10
-terrain = jungle_hills
+life_rating = 25
 add_core = FRD

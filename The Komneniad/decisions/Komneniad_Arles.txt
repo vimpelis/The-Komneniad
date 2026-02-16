@@ -541,4 +541,30 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	#sends an event to ARE right upon LOM annexation
+	CLN_malaguetta_independence = {
+		picture = gtfo
+		potential = {
+			tag = CLN
+			NOT = { has_country_flag = ARE_malaguetta_done }
+			NOT = { exists = LOM }
+			ARE = {
+				owns = 726
+				owns = 1813
+				has_country_flag = ARE_invade_padania
+				NOT = { has_country_flag = ARE_padania_conquered }
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			ARE = { country_event = 171029 }
+			set_country_flag = ARE_malaguetta_done
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

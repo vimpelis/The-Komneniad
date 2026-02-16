@@ -148,8 +148,9 @@ AAL - Ard Al-Hurriyah
 176000 - Sudan
 177000 - Kurdistan
 178000 - MidEast
-179000 - Blights&Droughts
-180000 - Ideologies&Revolutions
+179000 - Blights & Droughts
+180000 - Ideologies & Revolutions
+181000 - African Colonization
 
 **Random notes that are not present in any of the events:**
 

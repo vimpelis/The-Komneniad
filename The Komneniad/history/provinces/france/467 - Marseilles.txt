@@ -3,5 +3,6 @@ controller = ARE
 add_core = ARE
 trade_goods = coal
 life_rating = 35
-terrain = marseille
-state_building = { level = 2 building = clipper_shipyard upgrade = yes } 
+terrain = plains
+state_building = { level = 2 building = fabric_factory upgrade = yes } 
+state_building = { level = 1 building = clipper_shipyard upgrade = yes } 

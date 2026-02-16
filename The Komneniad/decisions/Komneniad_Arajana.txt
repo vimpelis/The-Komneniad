@@ -107,7 +107,13 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			all_core = { owned_by = THIS }
+			all_core = {
+				OR = {
+					owned_by = THIS
+					province_id = 3368
+					province_id = 3367
+				}
+			}
 		}
 		effect = {
 			prestige = 15
@@ -131,7 +137,7 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			all_core = { owned_by = THIS }
+			market_structure = 1
 		}
 		effect = {
 			prestige = 5
@@ -199,6 +205,69 @@ political_decisions = {
 		effect = {
 			prestige = 5
 			AMZ_2550 = { secede_province = THIS }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	FRD_colonize_interior = {
+		picture = gtfo
+		potential = {
+			OR = {
+				AND = {
+					owns = 3372
+					2275 = { empty = yes }
+				}
+				AND = {
+					owns = 2240
+					2245 = { empty = yes }
+				}
+				AND = {
+					owns = 2402
+					2408 = { empty = yes }
+				}
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				state_n_government = 1
+				year = 1850
+			}
+		}
+		effect = {
+			random_owned = {
+                limit = {
+                    owner = {
+                        owns = 3372
+                        2275 = { empty = yes }
+                    }
+                }
+                2275 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                2278 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                3411 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                owner = { prestige = 5 }
+            }
+			random_owned = {
+                limit = {
+                    owner = {
+                        owns = 2240
+                        2245 = { empty = yes }
+                    }
+                }
+                2245 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                2246 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                owner = { prestige = 5 }
+            }
+			random_owned = {
+                limit = {
+                    owner = {
+                        owns = 2402
+                        2408 = { empty = yes }
+                    }
+                }
+                2408 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+                owner = { prestige = 5 }
+            }
 		}
 		ai_will_do = { factor = 1 }
 	}

@@ -358,7 +358,7 @@
     soldiers = {
         culture = lower_burgundian
         religion = reformed
-        size = 1320
+        size = 3400
     }
 
     farmers = {
@@ -397,22 +397,10 @@
         size = 3000
     }
 
-    soldiers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 1320
-    }
-
     farmers = {
         culture = lower_burgundian
         religion = catholic
         size = 21110
-    }
-
-    farmers = {
-        culture = french
-        religion = catholic
-        size = 40
     }
 
     farmers = {
@@ -451,12 +439,6 @@
         size = 4000
     }
 
-    soldiers = {
-        culture = lower_burgundian
-        religion = reformed
-        size = 1320
-    }
-
     farmers = {
         culture = lower_burgundian
         religion = reformed
@@ -493,12 +475,6 @@
         size = 3000
     }
 
-    soldiers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 1320
-    }
-
     farmers = {
         culture = lower_burgundian
         religion = catholic
@@ -509,152 +485,6 @@
         culture = lower_burgundian
         religion = catholic
         size = 9500
-    }
-
-    farmers = {
-        culture = french
-        religion = reformed
-        size = 460
-    }
-}
-#Neuchatel (56000/14000 POPS)
-608 = {
-    aristocrats = {
-        culture = french
-        religion = catholic
-        size = 6
-    }
-
-    officers = {
-        culture = french
-        religion = catholic
-        size = 1
-    }
-
-    bureaucrats = {
-        culture = french
-        religion = catholic
-        size = 2
-    }
-
-    clergymen = {
-        culture = occitan
-        religion = catholic
-        size = 218
-    }
-
-    artisans = {
-        culture = french
-        religion = catholic
-        size = 33
-    }
-
-    artisans = {
-        culture = catalan
-        religion = catholic
-        size = 924
-    }
-
-    soldiers = {
-        culture = occitan
-        religion = catholic
-        size = 434
-    }
-
-    farmers = {
-        culture = occitan
-        religion = catholic
-        size = 13692
-    }
-
-    farmers = {
-        culture = french
-        religion = catholic
-        size = 151
-    }
-
-    farmers = {
-        culture = gypsy
-        religion = catholic
-        size = 100
-    }
-
-    aristocrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 1436
-    }
-
-    officers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 358
-    }
-
-    bureaucrats = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 878
-    }
-
-    artisans = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 7980
-    }
-
-    farmers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 35932
-    }
-
-    clergymen = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 873
-    }
-
-    soldiers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 1740
-    }
-
-    farmers = {
-        culture = lower_burgundian
-        religion = catholic
-        size = 54768
-    }
-
-    aristocrats = {
-        culture = french
-        religion = reformed
-        size = 68
-    }
-
-    officers = {
-        culture = french
-        religion = reformed
-        size = 16
-    }
-
-    bureaucrats = {
-        culture = french
-        religion = reformed
-        size = 42
-    }
-
-    artisans = {
-        culture = french
-        religion = reformed
-        size = 386
-    }
-
-    farmers = {
-        culture = french
-        religion = reformed
-        size = 1740
     }
 }
 #Sitten (72000/18000 POPS)

@@ -3067,6 +3067,84 @@
 #under the rule of the Ottoman Empire in 1836
 #Constanta (128000/32000 POPS)
 674 = {
+	aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 100
+    }
+
+    officers = {
+        culture = greek
+        religion = orthodox
+        size = 100
+    }
+	
+	bureaucrats = {
+        culture = greek
+        religion = orthodox
+        size = 45
+    }
+	
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 100
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 200
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 400
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 650
+    }
+
+    bureaucrats = {
+        culture = greek
+        religion = orthodox
+        size = 75
+    }
+
+    officers = {
+        culture = greek
+        religion = orthodox
+        size = 100
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 100
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 1100
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 9200
+    }
+	
+	soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 1650
+    }
+
     aristocrats = {
         culture = romanian
         religion = orthodox
@@ -3169,12 +3247,6 @@
         size = 40
     }
 
-    soldiers = {
-        culture = greek
-        religion = orthodox
-        size = 40
-    }
-
     clergymen = {
         culture = greek
         religion = orthodox
@@ -3218,12 +3290,6 @@
     }
 
     artisans = {
-        culture = greek
-        religion = orthodox
-        size = 440
-    }
-
-    soldiers = {
         culture = greek
         religion = orthodox
         size = 440
@@ -3289,12 +3355,6 @@
         size = 390
     }
 
-    bureaucrats = {
-        culture = greek
-        religion = orthodox
-        size = 45
-    }
-
     officers = {
         culture = bulgarian
         religion = orthodox
@@ -3324,9 +3384,8 @@
         religion = orthodox
         size = 7620
     }
-}
-3371 = {
-    aristocrats = {
+	
+	aristocrats = {
         culture = romanian
         religion = orthodox
         size = 100
@@ -3353,13 +3412,7 @@
     farmers = {
         culture = romanian
         religion = orthodox
-        size = 1810
-    }
-
-    farmers = {
-        culture = romanian
-        religion = orthodox
-        size = 105
+        size = 3915
     }
 
     farmers = {
@@ -3404,88 +3457,10 @@
         size = 11950
     }
 
-    aristocrats = {
-        culture = greek
-        religion = orthodox
-        size = 100
-    }
-
-    officers = {
-        culture = greek
-        religion = orthodox
-        size = 100
-    }
-
-    soldiers = {
-        culture = greek
-        religion = orthodox
-        size = 1100
-    }
-
-    clergymen = {
-        culture = greek
-        religion = orthodox
-        size = 100
-    }
-
-    artisans = {
-        culture = greek
-        religion = orthodox
-        size = 200
-    }
-
-    farmers = {
-        culture = greek
-        religion = orthodox
-        size = 400
-    }
-
-    aristocrats = {
-        culture = greek
-        religion = orthodox
-        size = 650
-    }
-
-    bureaucrats = {
-        culture = greek
-        religion = orthodox
-        size = 75
-    }
-
-    officers = {
-        culture = greek
-        religion = orthodox
-        size = 100
-    }
-
-    clergymen = {
-        culture = greek
-        religion = orthodox
-        size = 100
-    }
-
-    artisans = {
-        culture = greek
-        religion = orthodox
-        size = 1100
-    }
-
-    farmers = {
-        culture = greek
-        religion = orthodox
-        size = 9200
-    }
-
     farmers = {
         culture = gypsy
         religion = orthodox
         size = 300
-    }
-
-    farmers = {
-        culture = romanian
-        religion = orthodox
-        size = 2000
     }
 }
 #Tulcea (40000/10000 POPS)

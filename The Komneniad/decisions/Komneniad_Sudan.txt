@@ -373,6 +373,7 @@ political_decisions = {
 			random_owned = { limit = { 2028 = { empty = yes } } 2028 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			random_owned = { limit = { 2033 = { empty = yes } } 2033 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			random_owned = { limit = { 3595 = { empty = yes } } 3595 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 3597 = { empty = yes } } 3597 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			2019 = { add_core = THIS }
 			2020 = { add_core = THIS }
 			2023 = { add_core = THIS }
@@ -382,6 +383,7 @@ political_decisions = {
 			3331 = { add_core = THIS }
 			2047 = { add_core = THIS }
 			3595 = { add_core = THIS }
+			3597 = { add_core = THIS }
 			2033 = { add_core = THIS }
 			set_country_flag = TAQ_empire_of_the_nile
 			add_country_modifier = { name = religious_effort duration = 1825 }

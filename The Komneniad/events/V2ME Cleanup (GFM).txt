@@ -1122,6 +1122,10 @@ country_event = {
 						owns = 2116
 						NOT = { 2116 = { trade_goods = iron } }
 					}
+					AND = {
+						owns = 1890
+						NOT = { 1890 = { trade_goods = iron } }
+					}
 					########coal
 					AND = {
 						owns = 1935
@@ -1914,7 +1918,14 @@ country_event = {
 				}
 				trade_goods = iron
 			}
-				########coal
+			any_owned = {
+				limit = {
+					province_id = 1890
+					NOT = { trade_goods = iron }
+				}
+				trade_goods = iron
+			}
+			########coal
 			any_owned = {
 				limit = {
 					province_id = 1935

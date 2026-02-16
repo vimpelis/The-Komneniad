@@ -1,6 +1,7 @@
 owner = SPA
 controller = SPA
-trade_goods = coffee
+trade_goods = grain
 life_rating = 35
-terrain = monrovia
+terrain = savanna
 add_core = SLE
+colonial = 2

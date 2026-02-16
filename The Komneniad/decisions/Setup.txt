@@ -77,6 +77,9 @@ political_decisions = {
 			1866 = { add_province_modifier = { name = impassable duration = -1 } }
 			517 = { add_province_modifier = { name = impassable duration = -1 } }
 			2025 = { add_province_modifier = { name = impassable duration = -1 } }
+			1860 = { add_province_modifier = { name = impassable duration = -1 } }
+			3594 = { add_province_modifier = { name = impassable duration = -1 } }
+			1887 = { add_province_modifier = { name = penal_colony duration = -1 } }
 			any_country = {
 				set_country_flag = you_can_rename
 				relation = {
