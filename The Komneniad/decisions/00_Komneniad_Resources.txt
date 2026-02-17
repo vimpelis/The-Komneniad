@@ -1,0 +1,1220 @@
+political_decisions = {
+	prospect_resources = {
+        picture = mining_union_upper_katanga
+        potential = {
+			OR = {
+				civilized = yes
+				year = 1890
+			}
+			OR = {
+			#Iron
+				2491 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				766 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1108 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1705 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1708 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				478 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				513 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1507 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				479 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				276 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3453 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2252 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2482 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				724 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1092 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1702 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				958 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				971 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				972 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				961 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1270 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1688 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1681 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2138 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				306 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				511 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1209 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				124 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				147 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				173 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				418 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				417 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3443 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				158 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				157 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				102 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2662 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				235 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				101 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				94 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				95 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3457 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3458 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				88 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1653 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1275 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1130 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1139 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2323 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3467 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3564 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1427 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1642 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2175 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				74 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2137 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1726 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2087 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2108 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2110 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1522 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1303 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1528 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2492 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				795 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2495 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2475 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2489 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2487 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1128 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3413 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2169 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				856 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1018 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				75 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+			#Coal
+				480 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2584 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				156 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1124 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2282 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3648 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3473 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2330 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				745 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3347 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				221 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				224 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				179 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				182 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				180 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2565 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				765 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				191 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1660 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1669 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2267 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1479 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2147 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2152 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2101 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2251 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2255 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2399 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				595 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1532 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1573 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1575 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2105 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1643 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2114 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3663 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2099 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				25 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				118 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				838 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3468 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				110 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3374 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				108 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3374 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				232 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2098 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2101 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2103 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2100 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2113 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2112 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				717 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				701 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				699 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1619 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1047 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1045 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1423 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				215 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				216 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2556 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				171 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2590 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				195 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				164 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				151 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				152 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				109 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3560 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				953 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				714 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				704 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				117 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3529 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1211 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3497 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1126 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1149 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3354 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1147 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1150 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3516 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				391 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				449 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2332 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1408 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2481 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2472 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2471 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2470 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2473 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				280 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1582 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2062 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2461 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				809 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1490 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1526 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1250 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1255 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1635 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+			#Oil
+				1102 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1102 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				705 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				54 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				667 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				228 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				672 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2291 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2237 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1645 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				89 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2627 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				236 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				409 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3505 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2271 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				951 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				181 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1406 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1202 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				775 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1335 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1260 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3317 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				126 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1424 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1055 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3449 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3450 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				43 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1450 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				129 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1183 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				534 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				132 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2159 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2163 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2164 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1429 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2510 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2396 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1133 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				738 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				135 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3586 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1771 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				634 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2272 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2270 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				35 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1399 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2249 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				90 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				11 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				350 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				133 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				26 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2283 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1683 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2479 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2318 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3352 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3349 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				925 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1134 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				852 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1086 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1393 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3429 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1400 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1972 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1162 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2162 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+			#Sulphur
+				452 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				561 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				555 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3455 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				308 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				205 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				311 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				199 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1727 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2494 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				554 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				141 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				410 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				840 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				566 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				1670 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3647 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				716 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				587 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				3658 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				983 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+				2563 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+			}
+        }
+
+        allow = {
+            OR = {
+			#-1849
+				AND = {
+					OR = {
+						mechanized_mining = 1
+						year = 1850
+					}
+					OR = {
+					#Iron
+						2491 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						766 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1108 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Coal
+						480 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2584 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Sulphur
+						452 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						561 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						555 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					}
+				}
+			#1850-1869
+				AND = {
+					OR = {
+						regenerative_furnaces = 1
+						year = 1870
+					}
+					OR = {
+					#Iron
+						1705 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1708 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						478 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						513 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1507 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						479 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						276 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3453 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2252 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Coal
+						156 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1124 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2282 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3648 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3473 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2330 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						745 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3347 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						221 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						224 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						179 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						182 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						180 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2565 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						765 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						191 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Oil
+						1102 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						705 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						54 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						667 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						228 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						672 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2291 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2237 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Sulphur
+						3455 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						308 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						205 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					}
+				}
+			#1870-1889
+				AND = {
+					OR = {
+						drilling_and_blasting = 1
+						year = 1890
+					}
+					OR = {
+					#Iron
+						2482 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						724 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1092 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1702 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						958 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						971 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						972 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						961 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1270 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1688 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1681 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2138 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						306 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						511 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1209 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						124 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						147 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						173 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						418 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						417 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3443 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						158 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						157 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						102 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2662 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						235 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						101 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						94 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						95 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3457 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3458 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						88 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1653 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1275 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1130 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1139 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2323 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3467 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3564 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1427 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Coal
+						1660 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1669 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2267 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1479 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2147 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2152 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2101 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2251 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2255 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2399 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						595 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1532 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1573 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1575 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2105 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1643 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2114 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3663 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2099 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						25 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						118 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						838 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3468 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						110 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3374 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						108 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3374 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						232 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2098 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2101 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2103 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2100 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2113 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2112 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						717 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						701 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						699 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1619 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1047 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1045 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1423 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						215 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						216 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2556 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						171 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2590 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						195 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						164 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						151 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						152 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						109 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3560 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						953 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						714 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						704 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						117 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Oil
+						1645 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						89 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2627 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						236 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						409 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3505 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2271 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						951 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						181 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1406 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1202 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						775 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1335 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1260 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3317 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Sulphur
+						311 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						199 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1727 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					}
+				}
+			#1890-1904
+				AND = {
+					OR = {
+						advanced_metallurgy = 1
+						year = 1905
+					}
+					OR = {
+					#Iron
+						1642 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2175 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						74 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2137 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1726 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2087 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2108 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2110 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1522 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1303 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1528 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2492 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						795 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2495 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2475 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2489 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2487 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1128 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3413 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Coal
+						3529 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1211 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3497 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1126 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1149 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3354 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1147 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1150 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }	
+						3516 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						391 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						449 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2332 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1408 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2481 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2472 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2471 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2470 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2473 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						280 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1582 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2062 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2461 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						809 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Oil
+						126 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1424 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1055 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3449 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3450 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						43 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1450 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						129 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1183 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						534 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						132 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2159 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2163 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Sulphur
+						2494 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						554 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						141 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						410 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					}
+				}
+			#1905-1920
+				AND = {
+					OR = {
+						electric_furnace = 1
+						year = 1920
+					}
+					OR = {
+					#Iron
+						2169 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						856 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1018 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						75 = { owned_by = THIS NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Coal
+						1490 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1526 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1250 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1255 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1635 = { owned_by = THIS NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Oil
+						2164 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1429 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2510 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2396 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1133 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						738 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						135 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3586 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1771 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						634 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2272 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2270 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						35 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1399 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2249 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Sulphur
+						840 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						566 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1670 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3647 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					}
+				}
+			#1920-
+				AND = {
+					year = 1920
+					electric_furnace = 1
+					electrical_power_generation = 1
+					shift_work = 1
+					OR = {
+					#Oil
+						90 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						11 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						350 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						133 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						26 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2283 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1683 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2479 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2318 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3352 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3349 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						925 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1134 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						852 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1086 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1393 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3429 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1400 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1972 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						1162 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2162 = { owned_by = THIS NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					#Sulphur
+						716 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						587 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						3658 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						983 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+						2563 = { owned_by = THIS NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal } }
+					}
+				}
+			}
+        }
+
+        effect = {
+		#Iron
+			#-1849
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { mechanized_mining = 1 }
+						year = 1850
+					}
+					OR = {
+						province_id = 2491
+						province_id = 766
+						province_id = 1108
+					}
+					NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = iron
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1850-1869
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { regenerative_furnaces = 1 }
+						year = 1870
+					}
+					OR = {
+						province_id = 1705
+						province_id = 1708
+						province_id = 478
+						province_id = 513
+						province_id = 1507
+						province_id = 479
+						province_id = 276
+						province_id = 3453
+						province_id = 2252
+					}
+					NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = iron
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1870-1889
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { drilling_and_blasting = 1 }
+						year = 1890
+					}
+					OR = {
+						province_id = 2482
+						province_id = 724
+						province_id = 1092
+						province_id = 1702
+						province_id = 958
+						province_id = 971
+						province_id = 972
+						province_id = 961
+						province_id = 1270
+						province_id = 1688
+						province_id = 1681
+						province_id = 2138
+						province_id = 306
+						province_id = 511
+						province_id = 1209
+						province_id = 124
+						province_id = 147
+						province_id = 173
+						province_id = 418
+						province_id = 417
+						province_id = 3443
+						province_id = 158
+						province_id = 157
+						province_id = 102
+						province_id = 2662
+						province_id = 235
+						province_id = 101
+						province_id = 94
+						province_id = 95
+						province_id = 3457
+						province_id = 3458
+						province_id = 88
+						province_id = 1653
+						province_id = 1275
+						province_id = 1130
+						province_id = 1139
+						province_id = 2323
+						province_id = 3467
+						province_id = 3564
+						province_id = 1427
+					}
+					NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = iron
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1890-1904
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { advanced_metallurgy = 1 }
+						year = 1905
+					}
+					OR = {
+						province_id = 1642
+						province_id = 2175
+						province_id = 74
+						province_id = 2137
+						province_id = 1726
+						province_id = 2087
+						province_id = 2108
+						province_id = 2110
+						province_id = 1522
+						province_id = 1303
+						province_id = 1528
+						province_id = 2492
+						province_id = 795
+						province_id = 2495
+						province_id = 2475
+						province_id = 2489
+						province_id = 2487
+						province_id = 1128
+						province_id = 3413
+					}
+					NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = iron
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1905-1920
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { electric_furnace = 1 }
+						year = 1920
+					}
+					OR = {
+						province_id = 2169
+						province_id = 856
+						province_id = 1018
+						province_id = 75
+					}
+					NOT = { trade_goods = iron } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = iron
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+		#Coal
+			#-1849
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { mechanized_mining = 1 }
+						year = 1850
+					}
+					OR = {
+						province_id = 480
+						province_id = 2584
+					}
+					NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = coal
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1850-1869
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { regenerative_furnaces = 1 }
+						year = 1870
+					}
+					OR = {
+						province_id = 156
+						province_id = 1124
+						province_id = 2282
+						province_id = 3648
+						province_id = 3473
+						province_id = 2330
+						province_id = 745
+						province_id = 3347
+						province_id = 221
+						province_id = 224
+						province_id = 179
+						province_id = 182
+						province_id = 180
+						province_id = 2565
+						province_id = 765
+						province_id = 191
+					}
+					NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = coal
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1870-1889
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { drilling_and_blasting = 1 }
+						year = 1890
+					}
+					OR = {
+						province_id = 1660
+						province_id = 1669
+						province_id = 2267
+						province_id = 1479
+						province_id = 2147
+						province_id = 2152
+						province_id = 2101
+						province_id = 2251
+						province_id = 2255
+						province_id = 2399
+						province_id = 595
+						province_id = 1532
+						province_id = 1573
+						province_id = 1575
+						province_id = 2105
+						province_id = 1643
+						province_id = 2114
+						province_id = 3663
+						province_id = 2099
+						province_id = 25
+						province_id = 118
+						province_id = 838
+						province_id = 3468
+						province_id = 110
+						province_id = 3374
+						province_id = 108
+						province_id = 3374
+						province_id = 232
+						province_id = 2098
+						province_id = 2101
+						province_id = 2103
+						province_id = 2100
+						province_id = 2113
+						province_id = 2112
+						province_id = 717
+						province_id = 701
+						province_id = 699
+						province_id = 1619
+						province_id = 1047
+						province_id = 1045
+						province_id = 1423
+						province_id = 215
+						province_id = 216
+						province_id = 2556
+						province_id = 171
+						province_id = 2590
+						province_id = 195
+						province_id = 164
+						province_id = 151
+						province_id = 152
+						province_id = 109
+						province_id = 3560
+						province_id = 953
+						province_id = 714
+						province_id = 704
+						province_id = 117
+					}
+					NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = coal
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1890-1904
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { advanced_metallurgy = 1 }
+						year = 1905
+					}
+					OR = {
+						province_id = 3529
+						province_id = 1211
+						province_id = 3497
+						province_id = 1126
+						province_id = 1149
+						province_id = 3354
+						province_id = 1147
+						province_id = 1150	
+						province_id = 3516
+						province_id = 391
+						province_id = 449
+						province_id = 2332
+						province_id = 1408
+						province_id = 2481
+						province_id = 2472
+						province_id = 2471
+						province_id = 2470
+						province_id = 2473
+						province_id = 280
+						province_id = 1582
+						province_id = 2062
+						province_id = 2461
+						province_id = 809
+					}
+					NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = coal
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1905-1920
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { electric_furnace = 1 }
+						year = 1920
+					}
+					OR = {
+						province_id = 1490
+						province_id = 1526
+						province_id = 1250
+						province_id = 1255
+						province_id = 1635
+					}
+					NOT = { trade_goods = coal } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = coal
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+		#Oil
+			#1850-1869
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { regenerative_furnaces = 1 }
+						year = 1870
+					}
+					OR = {
+						province_id = 1102
+						province_id = 705
+						province_id = 54
+						province_id = 667
+						province_id = 228
+						province_id = 672
+						province_id = 2291
+						province_id = 2237
+					}
+					NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = oil
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1870-1889
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { drilling_and_blasting = 1 }
+						year = 1890
+					}
+					OR = {
+						province_id = 1645	
+						province_id = 89	
+						province_id = 2627	
+						province_id = 236	
+						province_id = 409	
+						province_id = 3505	
+						province_id = 2271	
+						province_id = 951	
+						province_id = 181	
+						province_id = 1406	
+						province_id = 1202	
+						province_id = 775
+						province_id = 1335	
+						province_id = 1260
+						province_id = 3317
+					}
+					NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = oil
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1890-1904
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { advanced_metallurgy = 1 }
+						year = 1905
+					}
+					OR = {
+						province_id = 126	
+						province_id = 1424	
+						province_id = 1055	
+						province_id = 3449	
+						province_id = 3450	
+						province_id = 43	
+						province_id = 1450	
+						province_id = 129
+						province_id = 1183	
+						province_id = 534	
+						province_id = 132	
+						province_id = 2159	
+						province_id = 2163	
+					}
+					NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = oil
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1905-1920
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { electric_furnace = 1 }
+						year = 1920
+					}
+					OR = {
+						province_id = 2164	
+						province_id = 1429	
+						province_id = 2510	
+						province_id = 2396	
+						province_id = 1133	
+						province_id = 738	
+						province_id = 135
+						province_id = 3586	
+						province_id = 1771
+						province_id = 634	
+						province_id = 2272	
+						province_id = 2270	
+						province_id = 35
+						province_id = 1399	
+						province_id = 2249
+					}
+					NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = oil
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1920-
+			any_owned = {
+				limit = {
+					year = 1920
+					owner = {
+						electric_furnace = 1
+						electrical_power_generation = 1
+						shift_work = 1
+					}
+					OR = {
+						province_id = 90	
+						province_id = 11
+						province_id = 350	
+						province_id = 133	
+						province_id = 26
+						province_id = 2283	
+						province_id = 1683	
+						province_id = 2479	
+						province_id = 2318
+						province_id = 3352	
+						province_id = 3349	
+						province_id = 925
+						province_id = 1134	
+						province_id = 852	
+						province_id = 1086	
+						province_id = 1393	
+						province_id = 3429	
+						province_id = 1400	
+						province_id = 1972	
+						province_id = 1162	
+						province_id = 2162	
+					}
+					NOT = { trade_goods = oil } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = oil
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+		#Sulphur
+			#-1849
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { mechanized_mining = 1 }
+						year = 1850
+					}
+					OR = {
+						province_id = 452
+						province_id = 561
+						province_id = 555
+					}
+					NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = sulphur
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1850-1869
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { regenerative_furnaces = 1 }
+						year = 1870
+					}
+					OR = {
+						province_id = 3455
+						province_id = 308
+						province_id = 205
+					}
+					NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = sulphur
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1870-1889
+            any_owned = {
+				limit = {
+					OR = {
+						owner = { drilling_and_blasting = 1 }
+						year = 1890
+					}
+					OR = {
+						province_id = 311
+						province_id = 199
+						province_id = 1727
+					}
+					NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = sulphur
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1890-1904
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { advanced_metallurgy = 1 }
+						year = 1905
+					}
+					OR = {
+						province_id = 2494
+						province_id = 554
+						province_id = 141
+						province_id = 410
+					}
+					NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = sulphur
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1905-1920
+			any_owned = {
+				limit = {
+					OR = {
+						owner = { electric_furnace = 1 }
+						year = 1920
+					}
+					OR = {
+						province_id = 840
+						province_id = 566
+						province_id = 1670
+						province_id = 3647
+					}
+					NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = sulphur
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+			#1920-
+			any_owned = {
+				limit = {
+					year = 1920
+					owner = {
+						electric_furnace = 1
+						electrical_power_generation = 1
+						shift_work = 1
+					}
+					OR = {
+						province_id = 716
+						province_id = 587
+						province_id = 3658
+						province_id = 983
+						province_id = 2563
+					}
+					NOT = { trade_goods = sulphur } NOT = { trade_goods = gold } NOT = { trade_goods = precious_metal }
+				}
+				trade_goods = sulphur
+				add_province_modifier = { name = switched_production duration = 365 }
+			}
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

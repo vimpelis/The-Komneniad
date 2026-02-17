@@ -718,24 +718,6 @@ country_event = {
 }
 
 country_event = {
-    id = 123489
-    title = "Copper deposits discovered in Bor"
-    desc = "A French company has discovered large copper deposits in the area around Bor."
-    fire_only_once = yes
-    picture = "south_africa_gold_miners"
-    mean_time_to_happen = { months = 5 }
-    trigger = {
-        owns = 795
-        year = 1904
-        NOT = { has_global_flag = bor_copper }
-    }
-    option = {
-        name = "Start mining!"
-        set_global_flag = bor_copper
-        795 = { trade_goods = iron }
-    }
-}
-country_event = {
     id = 123518
     title = "The California Genocide"
     desc = "The endless search for gold has sent the forty-niners into nominally Indian lands, leading to widespread conflict and diplacement of the natives, which often resulted in massacres and large amounts of them being taken as forced labor."
@@ -1100,25 +1082,6 @@ country_event = {
         name = "Huzzah!"
         prestige = 30
         enable_canal = 11
-    }
-}
-country_event = {
-    id = 123562
-    title = "The Eure Expedition"
-    desc = "The Eure, a French dispatch boat, is being sent to finalize our claims to the Kerguelen islands."
-    fire_only_once = yes
-    picture = "kerguelen"
-    mean_time_to_happen = { months = 3 }
-    trigger = {
-        3414 = { empty = yes }
-        year = 1893
-        owns = 425
-		NOT = { has_global_flag = colonial_railroading_disabled }
-    }
-    option = {
-        name = "Glory to our Empire!"
-        3414 = { secede_province = THIS trade_goods = coal }
-		3414 = { change_province_name = "Port-Christmas" }
     }
 }
 country_event = {

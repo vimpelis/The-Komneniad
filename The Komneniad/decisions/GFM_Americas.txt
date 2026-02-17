@@ -112,53 +112,6 @@ political_decisions = {
         }
         ai_will_do = { factor = 1 }
     }
-
-    the_iron_range = {
-		picture = iron_range
-        potential = {
-            OR = {
-				owns = 158
-				owns = 157
-				owns = 102
-				owns = 2662
-				owns = 3453
-				owns = 98
-				owns = 101
-				owns = 94
-				owns = 95
-				owns = 96
-				owns = 3457
-				owns = 3458
-				owns = 88
-			}
-            NOT = { has_global_flag = iron_ranges }
-        }
-
-        allow = {
-            war = no
-            regenerative_furnaces = 1
-        }
-
-        effect = {
-            set_global_flag = iron_ranges
-            158 = { trade_goods = iron }
-            157 = { trade_goods = iron }
-            102 = { trade_goods = iron }
-            2662 = { trade_goods = iron }
-            3453 = { trade_goods = iron }
-            235 = { trade_goods = iron }
-            98 = { trade_goods = iron }
-            101 = { trade_goods = iron }
-            94 = { trade_goods = iron }
-            95 = { trade_goods = mercury }
-            96 = { trade_goods = iron }
-            3457 = { trade_goods = iron }
-            3458 = { trade_goods = iron }
-			88 = { trade_goods = iron }
-        }
-
-        ai_will_do = { factor = 1 }
-    }
 	
 	chaco_cotton = {
         picture = conquest_of_the_chaco
