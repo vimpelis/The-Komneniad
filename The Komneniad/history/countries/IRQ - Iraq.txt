@@ -37,8 +37,7 @@ centralization = unitary
 colonial_policy = no_colonies
 
 
-ruling_party = IRQ_conservative
-last_election = 1834.1.1
+ruling_party = ARA_conservative
 upper_house = {
     fascist = 0
     liberal = 35
@@ -61,8 +60,3 @@ pre_indust = yes_pre_indust
 #Technologies
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-
-govt_flag = {
-	government = colonial_company_4
-	flag = theocracy
-}

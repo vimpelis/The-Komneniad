@@ -1,7 +1,6 @@
-owner = ZND
-controller = ZND
-add_core = ZND
+owner = TUR
+controller = TUR
+add_core = TUR
 trade_goods = cattle
 life_rating = 40
 terrain = isfahan
-add_core = ZND

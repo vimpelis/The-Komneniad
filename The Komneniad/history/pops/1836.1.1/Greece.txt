@@ -1169,78 +1169,6 @@
         size = 150
     }
 }
-######Jews
-########
-3306 = {
-}
-#Arta (220000/55000 POPS)
-825 = {
-    aristocrats = {
-        culture = greek
-        religion = orthodox
-        size = 99
-    }
-
-    bureaucrats = {
-        culture = greek
-        religion = orthodox
-        size = 110
-    }
-
-    officers = {
-        culture = greek
-        religion = orthodox
-        size = 27
-    }
-
-    clergymen = {
-        culture = greek
-        religion = orthodox
-        size = 247
-    }
-
-    artisans = {
-        culture = greek
-        religion = orthodox
-        size = 3465
-    }
-
-    soldiers = {
-        culture = greek
-        religion = orthodox
-        size = 1100
-    }
-
-    farmers = {
-        culture = greek
-        religion = orthodox
-        size = 19800
-    }
-
-    aristocrats = {
-        culture = anatolian
-        religion = orthodox
-        size = 11
-    }
-
-    clergymen = {
-        culture = anatolian
-        religion = orthodox
-        size = 28
-    }
-
-    artisans = {
-        culture = anatolian
-        religion = orthodox
-        size = 385
-    }
-
-    farmers = {
-        culture = anatolian
-        religion = orthodox
-        size = 2200
-    }
-}
 #Ionian Islands Region (188000)
 #under the rule of Britain/Ionian Islands in 1836
 #Corfu (112200/28000 POPS)
@@ -1630,10 +1558,6 @@
     }
 }
 #Thrace Region (144000) #see Turkey.txt for balance of region
-#under the rule of Ottoman Empire in 1836
-#Xanthe (72000/18000 POPS)
-829 = {
-}
 3304 = {
     aristocrats = {
         culture = greek
@@ -1674,7 +1598,7 @@
     clergymen = {
         culture = greek
         religion = orthodox
-        size = 600
+        size = 1000
     }
 
     artisans = {
@@ -1723,54 +1647,6 @@
         culture = gypsy
         religion = orthodox
         size = 915
-    }
-
-    soldiers = {
-        culture = greek
-        religion = orthodox
-        size = 420
-    }
-
-    clergymen = {
-        culture = greek
-        religion = orthodox
-        size = 300
-    }
-
-    artisans = {
-        culture = greek
-        religion = orthodox
-        size = 360
-    }
-
-    farmers = {
-        culture = greek
-        religion = orthodox
-        size = 17010
-    }
-
-    soldiers = {
-        culture = greek
-        religion = orthodox
-        size = 504
-    }
-
-    clergymen = {
-        culture = greek
-        religion = orthodox
-        size = 360
-    }
-
-    artisans = {
-        culture = greek
-        religion = orthodox
-        size = 432
-    }
-
-    farmers = {
-        culture = greek
-        religion = orthodox
-        size = 20412
     }
 }
 #Thessaly Region (408000)

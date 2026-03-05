@@ -6,12 +6,12 @@ political_decisions = {
 			NOT = { has_country_flag = FRA_lorraine }
 		}
 		allow = {
-			war = no
 			OR = {
 				411 = { owned_by = THIS }
 				411 = { owner = { in_sphere = THIS } }
 				state_n_government = 1
 			}
+			war = no
 		}
 		effect = {
 			badboy = 6
@@ -43,8 +43,8 @@ political_decisions = {
 			NOT = { has_country_flag = FRA_arles }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			badboy = 20
@@ -72,8 +72,8 @@ political_decisions = {
 			NOT = { has_country_flag = FRA_wallonia }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			badboy = 12

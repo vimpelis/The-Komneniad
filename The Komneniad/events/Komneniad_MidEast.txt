@@ -851,17 +851,17 @@ country_event = {
 			who = ASY
 			value = 100
 		}
-		ai_chance = { factor = 10 modifier = { ASY = { NOT = { in_sphere = THIS } } factor = 0 } modifier = { owns = 3389 factor = 0 } }
+		ai_chance = { factor = 1 modifier = { ASY = { NOT = { in_sphere = THIS } } factor = 0 } modifier = { owns = 3389 factor = 0 } }
 	}
 	
 	option = {
-        name = "No."
+        name = "Sorry, but our generosity has limits."
 		FROM = { country_event = 178026 }
 		relation = {
 			who = ASY
 			value = -25
 		}
-		ai_chance = { factor = 1 modifier = { ASY = { in_sphere = THIS } factor = 0.1 } }
+		ai_chance = { factor = 1 modifier = { ASY = { in_sphere = THIS } factor = 0 } }
 	}
 }
 

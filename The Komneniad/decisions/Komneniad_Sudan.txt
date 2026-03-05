@@ -66,7 +66,6 @@ political_decisions = {
 			NOT = { has_country_flag = NUB_increase_taxation }
 		}
 		allow = {
-			war = no
 			all_core = { OR = { owned_by = THIS empty = yes } }
 			OR = { relation = { who = ETH value = 100 } year = 1845 }
 		}
@@ -91,11 +90,11 @@ political_decisions = {
 			NOT = { has_country_flag = NUB_eat_fashoda }
 		}
 		allow = {
-			war = no
 			OR = {
 				owns = 1832
 				year = 1839
 			}
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -129,11 +128,11 @@ political_decisions = {
 			NOT = { has_country_flag = NUB_retake_kordofan }
 		}
 		allow = {
-			war = no
 			OR = {
 				civilization_progress = 0.5
 				year = 1850
 			}
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -157,11 +156,11 @@ political_decisions = {
 			NOT = { has_country_flag = NUB_annex_darfur }
 		}
 		allow = {
-			war = no
 			OR = {
 				civilized = yes
 				year = 1880
 			}
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -186,7 +185,6 @@ political_decisions = {
 			NOT = { has_country_flag = NUB_integrate_nilotic }
 		}
 		allow = {
-			war = no
 			owns = 1832
 			state_n_government = 1
 		}
@@ -213,12 +211,12 @@ political_decisions = {
 			NOT = { has_country_flag = TAQ_import_intellectuals }
 		}
 		allow = {
-			war = no
 			OR = {
 				literacy = 0.05
 				relation = { who = SUD value = 100 }
 			}
 			money = 10000
+			war = no
 		}
 		effect = {
 			treasury = -10000
@@ -242,7 +240,6 @@ political_decisions = {
 			slavery = yes_slavery
 		}
 		allow = {
-			war = no
 			literacy = 0.05
 		}
 		effect = {
@@ -265,11 +262,11 @@ political_decisions = {
 			NOT = { has_country_flag = TAQ_cross_the_nile }
 		}
 		allow = {
-			war = no
 			OR = {
 				literacy = 0.1
 				year = 1865
 			}
+			war = no
 		}
 		effect = {
 			research_points = 500
@@ -292,12 +289,12 @@ political_decisions = {
 			NOT = { has_country_flag = TAQ_southern_expansion }
 		}
 		allow = {
-			war = no
 			money = 5000
 			OR = {
 				military_constructions = yes_military_constructions
 				year = 1875
 			}
+			war = no
 		}
 		effect = {
 			treasury = -5000
@@ -330,7 +327,6 @@ political_decisions = {
 			NOT = { has_country_flag = TAQ_reform_governance }
 		}
 		allow = {
-			war = no
 			OR = {
 				AND = {
 					admin_reform = yes_admin_reform
@@ -338,6 +334,7 @@ political_decisions = {
 				}
 				has_country_flag = maniyel_dead
 			}
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -364,8 +361,8 @@ political_decisions = {
 			NOT = { has_country_flag = TAQ_empire_of_the_nile }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -406,9 +403,9 @@ political_decisions = {
 			NOT = { has_country_flag = TAQ_march_to_the_sea }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 5

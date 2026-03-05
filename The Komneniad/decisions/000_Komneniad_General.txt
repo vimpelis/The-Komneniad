@@ -16,41 +16,6 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 	
-	#this will be expanded to all countries which need a tip to function properly
-	komneniad_tips_BAV = {
-		picture = komneniad
-		potential = {
-			ai = no
-			tag = BAV
-			NOT = { has_country_flag = komneniad_tips year = 1837 }
-		}
-		allow = {
-			NOT = { year = 1837 }
-		}
-		effect = {
-			set_country_flag = komneniad_tips
-			country_event = 169200
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
-	komneniad_tips_BYZ = {
-		picture = komneniad
-		potential = {
-			ai = no
-			tag = BYZ
-			NOT = { has_country_flag = komneniad_tips year = 1837 }
-		}
-		allow = {
-			NOT = { year = 1837 }
-		}
-		effect = {
-			set_country_flag = komneniad_tips
-			country_event = 169005
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
 	#GFM remnant, here just in case
 	option_disable_hpm_crisis = {
         picture = starting_options

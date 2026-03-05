@@ -5,3 +5,4 @@ add_core = SYR
 add_core = UQA
 trade_goods = wool
 life_rating = 35 
+terrain = steppe

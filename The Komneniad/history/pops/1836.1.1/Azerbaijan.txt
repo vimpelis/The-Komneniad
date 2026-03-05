@@ -758,44 +758,6 @@
         size = 2243
     }
 }
-#Lankaran (56000/14000 POPS)
-1107 = {
-    aristocrats = {
-        culture = persian
-        religion = shiite
-        size = 225
-    }
-
-    clergymen = {
-        culture = persian
-        religion = shiite
-        size = 125
-    }
-
-    artisans = {
-        culture = persian
-        religion = shiite
-        size = 700
-    }
-
-    soldiers = {
-        culture = persian
-        religion = shiite
-        size = 150
-    }
-
-    farmers = {
-        culture = persian
-        religion = shiite
-        size = 33000
-    }
-
-    farmers = {
-        culture = azerbaijani
-        religion = shiite
-        size = 5800
-    }
-}
 #Elisu
 3316 = {
     aristocrats = {

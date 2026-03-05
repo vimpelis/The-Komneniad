@@ -3,10 +3,8 @@ political_decisions = {
 		picture = ETH_1
 		potential = {
 			tag = ETH
-			ai = no
 			has_country_flag = ETH_active_insurgency
-			NOT = { has_country_flag = ETH_gottem }
-			NOT = { has_country_flag = ETH_couped }
+			ai = no
 		}
 		allow = {
 			money = 2000
@@ -84,10 +82,8 @@ political_decisions = {
 		picture = ETH_1
 		potential = {
 			tag = ETH
-			ai = yes
 			has_country_flag = ETH_active_insurgency
-			NOT = { has_country_flag = ETH_gottem }
-			NOT = { has_country_flag = ETH_couped }
+			ai = yes
 		}
 		allow = {
 			money = 2000
@@ -206,7 +202,6 @@ political_decisions = {
 			tag = ETH
 			has_country_flag = ETH_expansion_unlocked
 			NOT = { has_country_flag = ETH_kill_jimmy }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
 			war = no
@@ -238,16 +233,15 @@ political_decisions = {
 			civilized = no
 			has_country_flag = ETH_kill_jimmy
 			NOT = { has_country_flag = ETH_invade_somalia }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
-			war = no
 			OR = {
 				NOT = { SOM = { brigades_compare = 0.51 } }
 				year = 1840
 			}
 			all_core = { owned_by = THIS }
 			NOT = { truce_with = SOM }
+			war = no
 		}
 		effect = {
 			set_country_flag = ETH_invade_somalia
@@ -268,16 +262,15 @@ political_decisions = {
 			tag = ETH
 			has_country_flag = ETH_invade_somalia
 			NOT = { has_country_flag = ETH_wild_oromos }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
-			war = no
 			OR = {
 				year = 1849
 				civilization_progress = 0.5
 				transport_improv = yes_transport_improv
 			}
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			random_owned = { limit = { 1864 = { empty = yes } } 1864 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
@@ -296,16 +289,15 @@ political_decisions = {
 			tag = ETH
 			has_country_flag = ETH_invade_somalia
 			NOT = { has_country_flag = ETH_integrate_afar }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
-			war = no
 			OR = {
 				land_reform = yes_land_reform
 				admin_reform = yes_admin_reform
 				year = 1850
 			}
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			add_accepted_culture = afar
@@ -331,12 +323,11 @@ political_decisions = {
 			civilized = no
 			has_country_flag = ETH_invade_somalia
 			NOT = { has_country_flag = ETH_invade_nubia }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
-			war = no
 			civilization_progress = 0.5
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			###MEDIUM INCREASE FUNCTION
@@ -374,15 +365,14 @@ political_decisions = {
 			civilized = no
 			has_country_flag = ETH_invade_nubia
 			NOT = { has_country_flag = ETH_invade_kordofan }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
-			war = no
 			OR = {
 				year = 1860
 				transport_improv = yes_transport_improv
 			}
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			###SMALL INCREASE FUNCTION
@@ -417,15 +407,14 @@ political_decisions = {
 			civilized = no
 			has_country_flag = ETH_invade_nubia
 			NOT = { has_country_flag = ETH_invade_egypt }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
-			war = no
 			OR = {
 				year = 1870
 				firearms_production = yes_firearms_production
 			}
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			###VERY LARGE INCREASE FUNCTION
@@ -525,7 +514,6 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war = no
 			civilized = yes
 			money = 20000
 		}
@@ -549,7 +537,6 @@ political_decisions = {
 			NOT = { has_country_flag = ETHSOM_fullannex }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = {
 				OR = {
@@ -564,6 +551,7 @@ political_decisions = {
 					}
 				}
 			}
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -610,7 +598,6 @@ political_decisions = {
 			NOT = { 2024 = { is_core = ETH } }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = {
 				OR = {
@@ -625,6 +612,7 @@ political_decisions = {
 					}
 				}
 			}
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -649,9 +637,9 @@ political_decisions = {
 			NOT = { has_country_flag = ETH_invade_equatoria }
 		}
 		allow = {
-			war = no
 			year = 1880
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			badboy = 7.5
@@ -678,9 +666,9 @@ political_decisions = {
 			NOT = { has_country_flag = ETH_invade_nubia }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			badboy = 15
@@ -709,8 +697,8 @@ political_decisions = {
 			NOT = { has_country_flag = ETH_invade_kordofan }
 		}
 		allow = {
-			war = no
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -736,10 +724,10 @@ political_decisions = {
 			NOT = { has_country_flag = ETH_invade_egypt }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			rank = 12
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			badboy = 22.5
@@ -771,9 +759,9 @@ political_decisions = {
 			NOT = { has_country_flag = ETH_invade_syria }
 		}
 		allow = {
-			war = no
 			year = 1905
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 20
@@ -808,9 +796,9 @@ political_decisions = {
 			NOT = { has_country_flag = ETH_invade_armenia }
 		}
 		allow = {
-			war = no
 			mass_politics = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 15
@@ -834,12 +822,12 @@ political_decisions = {
 	form_ethiopia = {
 		picture = ETH_2
 		potential = {
-			has_global_flag = second_zemene_mesafint
 			OR = {
 				tag = SHW
 				tag = TIG
 				tag = JIM
 			}
+			has_global_flag = second_zemene_mesafint
 		}
 		allow = {
 			NOT = { exists = ETH }
@@ -862,12 +850,12 @@ political_decisions = {
 			has_global_flag = second_zemene_mesafint
 		}
 		allow = {
-			war = no
 			OR = {
 				civilization_progress = 0.5
 				civilized = yes
 				year = 1875
 			}
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -914,15 +902,15 @@ political_decisions = {
 		picture = oromo
 		potential = {
 			tag = SOM
+			is_vassal = no
 			NOT = { has_country_flag = SOM_subjugate_the_oromo }
 		}
 		allow = {
-			war = no
-			is_vassal = no
 			OR = {
 				admin_reform = yes_admin_reform
 				state_n_government = 1
 			}
+			war = no
 		}
 		effect = {
 			add_accepted_culture = oromo
@@ -945,17 +933,17 @@ political_decisions = {
 		picture = zanzibar_oman
 		potential = {
 			tag = SOM
+			is_vassal = no
 			NOT = { has_country_flag = SOM_safeguard_zanj }
 		}
 		allow = {
-			war = no
-			is_vassal = no
-			all_core = { owned_by = THIS }
 			OR = {
 				year = 1875
 				civilization_progress = 0.5
 				breech_loaded_rifles = 1
 			}
+			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			add_accepted_culture = swahili
@@ -976,13 +964,14 @@ political_decisions = {
 		picture = ETH_1
 		potential = {
 			tag = SOM
+			civilized = yes
 			any_owned_province = { is_core = TIG }
 			NOT = { has_country_flag = SOM_accept_tigray }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			TIG = { all_core = { owned_by = THIS } }
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -1124,14 +1113,13 @@ political_decisions = {
 		potential = {
 			tag = ETH
 			ai = yes
-			1827 = { is_core = THIS }
 			exists = SUD
+			1827 = { is_core = THIS }
 			NOT = { truce_with = SUD }
 			SUD = { owns = 1827 }
 			NOT = { SUD = { part_of_sphere = yes } }
 		}
 		allow = {
-			tag = ETH
 			war = no
 		}
 		effect = {
@@ -1153,8 +1141,8 @@ political_decisions = {
 		potential = {
 			tag = ETH
 			ai = yes
-			1835 = { is_core = THIS }
 			exists = SUD
+			1835 = { is_core = THIS }
 			NOT = { truce_with = SUD }
 			SUD = { owns = 1835 }
 			NOT = { SUD = { part_of_sphere = yes } }
@@ -1182,8 +1170,8 @@ political_decisions = {
 		potential = {
 			tag = ETH
 			ai = yes
-			3395 = { is_core = THIS }
 			exists = SUD
+			3395 = { is_core = THIS }
 			NOT = { truce_with = SUD }
 			SUD = { owns = 3395 }
 			NOT = { SUD = { part_of_sphere = yes } }

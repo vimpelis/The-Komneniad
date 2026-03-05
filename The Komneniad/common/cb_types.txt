@@ -8872,8 +8872,6 @@ liberate_puppet_no_infamy = {
             THIS = { NOT = { has_country_flag = in_great_war } }
             FROM = { involved_in_crisis = yes }
             THIS = { ai = no }
-			primary_culture = kurdish
-			primary_culture = turkish
         }
 	}
 

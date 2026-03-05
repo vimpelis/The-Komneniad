@@ -165,7 +165,7 @@ political_decisions = {
 				any_pop = {
 					limit = {
 						OR = {
-							has_pop_culture = turkish
+							has_pop_culture = rumi
 							has_pop_culture = persian
 							has_pop_culture = azerbaijani
 							has_pop_culture = circassian
@@ -190,7 +190,7 @@ political_decisions = {
 			}
 			MGT = {
 				any_pop = {
-					limit = { OR = { has_pop_culture = turkish has_pop_culture = circassian has_pop_culture = chechen } }
+					limit = { OR = { has_pop_culture = rumi has_pop_culture = circassian has_pop_culture = chechen } }
 					literacy = 0.01
 				}
 				any_pop = {
@@ -776,10 +776,6 @@ political_decisions = {
 			3608 = { add_province_modifier = { name = celtification duration = -1 } }
 			285 = { add_province_modifier = { name = celtification duration = -1 } }
 			1827 = { add_province_modifier = { name = recently_built_city duration = 3650 } }
-			892 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
-			3532 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
-			899 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
-			3279 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
 			BZD = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
 			any_country = {
 				limit = {

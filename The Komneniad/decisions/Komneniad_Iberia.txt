@@ -6,8 +6,8 @@ political_decisions = {
 			NOT = { has_country_flag = ADU_absorb_catalonia }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			CAT = { all_core = { add_core = THIS } }
@@ -31,9 +31,9 @@ political_decisions = {
 			NOT = { has_country_flag = ADU_restore_northern_rule }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 24.5
@@ -60,8 +60,8 @@ political_decisions = {
 			NOT = { has_country_flag = ADU_western_sahara }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			badboy = 3
@@ -104,11 +104,11 @@ political_decisions = {
 			NOT = { has_country_flag = ADU_enact_conversion_decree }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			biologism = 1
 			money = 300000
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -170,6 +170,7 @@ political_decisions = {
 					year = 1840
 				}
 			}
+			war = no
 		}
 		effect = {
 			SPA_507 = { add_core = THIS }
@@ -197,7 +198,6 @@ political_decisions = {
 			NOT = { has_country_flag = SPA_kill_catalonia }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
 			OR = {
 				state_n_government = 1
@@ -206,6 +206,7 @@ political_decisions = {
 					year = 1847
 				}
 			}
+			war = no
 		}
 		effect = {
 			country_event = 150004
@@ -229,10 +230,10 @@ political_decisions = {
 			NOT = { has_country_flag = SPA_annex_catalan_puppet }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
 			revolution_n_counterrevolution = 1
 			relation = { who = CAT value = 200 }
+			war = no
 		}
 		effect = {
 			CAT = { annex_to = SPA all_core = { add_core = SPA } }
@@ -257,9 +258,9 @@ political_decisions = {
 			NOT = { has_country_flag = SPA_press_gothic_claim }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			FRA_461 = { add_core = CAT }
@@ -291,6 +292,7 @@ political_decisions = {
 		allow = {
 			all_core = { owned_by = THIS }
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			SPA_489 = { add_core = THIS }
@@ -317,6 +319,7 @@ political_decisions = {
 		allow = {
 			all_core = { owned_by = THIS }
 			revolution_n_counterrevolution = 1
+			war = no
 		}
 		effect = {
 			SPA_512 = { add_core = THIS }
@@ -336,12 +339,14 @@ political_decisions = {
 	SPA_mauretanian_crusade = {
 		picture = moroccan_partition
 		potential = {
+			tag = SPA
 			has_country_flag = SPA_finish_reconquista
 			NOT = { has_country_flag = mauretanian_crusade }
 		}
 		allow = {
 			all_core = { owned_by = THIS }
 			rank = 6
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -364,8 +369,8 @@ political_decisions = {
 			has_country_flag = ADU_to_MOR
 		}
 		allow = {
-			war = no
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			prestige = 25
@@ -385,13 +390,14 @@ political_decisions = {
 	SPA_reverse_arabization = {
 		picture = ADU_map
 		potential = {
+			tag = SPA
 			has_country_flag = SPA_reconquista_center
 			NOT = { has_country_flag = SPA_reverse_arabization }
 		}
 		allow = {
-			war = no
 			functionalism = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -424,14 +430,15 @@ political_decisions = {
 	SPA_great_language_reform = {
 		picture = guano_act #yes, guano act.
 		potential = {
+			tag = SPA
 			has_country_modifier = SPA_bureaucratic_mess
 		}
 		allow = {
-			war = no
 			biologism = 1
 			nationalism_n_imperialism = 1
 			money = 300000
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 25

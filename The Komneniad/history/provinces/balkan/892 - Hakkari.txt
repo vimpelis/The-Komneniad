@@ -5,3 +5,4 @@ add_core = KDS
 add_core = BDN
 trade_goods = fruit
 life_rating = 35 
+terrain = montane_forest

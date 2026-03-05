@@ -2,8 +2,8 @@ political_decisions = {
 	CRP_call_for_unification = {
 		picture = carpathia
 		potential = {
-			NOT = { OR = { has_global_flag = szeged_conference has_global_flag = CRP_nationalism } }
 			has_country_flag = CRP_nation
+			NOT = { OR = { has_global_flag = szeged_conference has_global_flag = CRP_nationalism } }
 		}
 		allow = {
 			NOT = { year = 1848 }
@@ -80,9 +80,9 @@ political_decisions = {
 	form_romania = {
 		picture = create_romania
 		potential = {
+			primary_culture = romanian
 			has_global_flag = CRP_nationalism
 			NOT = { exists = ROM }
-			primary_culture = romanian
 		}
 		allow = {
 			war = no
@@ -163,10 +163,10 @@ political_decisions = {
 	CRP_ai_force_HUN = {
 		picture = carpathia
 		potential = {
-			ai = yes
 			has_country_flag = CRP_leader
 			has_global_flag = CRP_war
 			war_with = HUN
+			ai = yes
 			NOT = { has_country_flag = CRP_ai_force_HUN }
 		}
 		allow = {

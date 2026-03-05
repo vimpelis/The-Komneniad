@@ -6033,7 +6033,7 @@
     }
 
     farmers = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 2500
     }
@@ -6595,38 +6595,6 @@
         culture = sephardic
         religion = jewish
         size = 335
-    }
-}
-#al-Qa'im
-3389 = {
-    aristocrats = {
-        culture = bedouin
-        religion = sunni
-        size = 90
-    }
-
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 50
-    }
-
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 240
-    }
-
-    soldiers = {
-        culture = bedouin
-        religion = sunni
-        size = 650
-    }
-
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 4950
     }
 }
 3393 = {

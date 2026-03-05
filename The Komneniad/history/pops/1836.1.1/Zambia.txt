@@ -49,6 +49,72 @@
         religion = animist
         size = 2000
     }
+	
+	bureaucrats = {
+        culture = bemba
+        religion = animist
+        size = 25
+    }
+
+    officers = {
+        culture = bemba
+        religion = animist
+        size = 190
+    }
+
+    clergymen = {
+        culture = bemba
+        religion = animist
+        size = 1000
+    }
+
+    artisans = {
+        culture = lunda
+        religion = animist
+        size = 4390
+    }
+
+    soldiers = {
+        culture = bemba
+        religion = animist
+        size = 3000
+    }
+
+    farmers = {
+        culture = bemba
+        religion = animist
+        size = 100000
+    }
+
+    clergymen = {
+        culture = bemba
+        religion = animist
+        size = 460
+    }
+
+    artisans = {
+        culture = bemba
+        religion = animist
+        size = 2380
+    }
+
+    soldiers = {
+        culture = bemba
+        religion = animist
+        size = 1375
+    }
+
+    farmers = {
+        culture = bemba
+        religion = animist
+        size = 20000
+    }
+
+    slaves = {
+        culture = chokwe
+        religion = animist
+        size = 10000
+    }
 }
 #Kazembe (168000/42000 POPS)
 2016 = {

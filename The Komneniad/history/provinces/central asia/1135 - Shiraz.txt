@@ -1,7 +1,6 @@
-owner = ZND
-controller = ZND
-add_core = QAS
+owner = TUR
+controller = TUR
+add_core = TUR
 trade_goods = opium
 life_rating = 40
-terrain = shiraz
-add_core = ZND
+terrain = dry_mountains

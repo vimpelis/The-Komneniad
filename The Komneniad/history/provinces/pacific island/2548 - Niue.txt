@@ -3,5 +3,5 @@ controller = ARM
 add_core = ARM
 trade_goods = fruit
 life_rating = 35
-terrain = igdir
+terrain = mountain
 add_core = KDS

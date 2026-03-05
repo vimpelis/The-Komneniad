@@ -5,5 +5,5 @@ add_core = CLC
 add_core = SYR
 trade_goods = grain
 life_rating = 35
-terrain = semidesert
+terrain = hills
 add_core = KDS

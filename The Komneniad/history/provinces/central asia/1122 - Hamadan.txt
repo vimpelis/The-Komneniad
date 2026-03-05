@@ -1,6 +1,6 @@
-owner = ZND
-controller = ZND
+owner = TUR
+add_core = TUR
+controller = MGT
 trade_goods = sulphur
 life_rating = 35
-terrain = hamadan
-add_core = ZND
+terrain = mountain

@@ -3,5 +3,5 @@ controller = EGY
 add_core = EGY
 trade_goods = iron
 life_rating = 35
-terrain = dry_mountains
+terrain = hills
 add_core = SYR

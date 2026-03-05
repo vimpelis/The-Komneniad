@@ -4,4 +4,4 @@ add_core = KHR
 trade_goods = wool
 life_rating = 35
 terrain = semi_desert_mountains
-add_core = ZND
+add_core = TUR

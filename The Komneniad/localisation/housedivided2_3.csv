@@ -117,12 +117,6 @@ PLC_communist;Partia Socjaldemokracja;Parti social-démocrate;Partia Socjaldemokr
 PLC_fascist;Stronnictwo Narodowe;Parti national;Stronnictwo Narodowe;;Stronnictwo Narodowe;;;;;;;;;x
 ARA;Arabia;Arabie;Arabien;;Arabia;;;;;;;;;x
 ARA_ADJ;Arab;arabe;Arabisch;;Arab;;;;;;;;;x
-ARA_conservative;Conservatives;Conservateurs;Konservative;;;;;;;;;;;x
-ARA_liberal;Liberals;Libéraux;Liberale;;;;;;;;;;;x
-ARA_reactionary;Reactionaries;Réactionnaires;Reaktionäre;;;;;;;;;;;x
-ARA_socialist;Socialists;Socialistes;Sozialisten;;;;;;;;;;;x
-ARA_communist;Communists;Communistes;Kommunisten;;;;;;;;;;;x
-ARA_fascist;National Socialist Party;Parti national-socialiste;Faschisten;;;;;;;;;;;x
 GCO;Gran Colombia;Grande Colombie;Großkolumbien;;;;;;;;;;;x
 GCO_ADJ;Gran Colombian;grand-colombien;Großkolumbisch;;;;;;;;;;;x
 form_gran_colombia_title;Form Gran Colombia;Formez la Grande Colombie;Gründe Großkolumbien;;Forme Gran Colombia;;;;;;;;;x

@@ -1,26 +1,22 @@
-capital = 1121
-primary_culture = persian
-culture = tajik
-culture = azerbaijani
-culture = lurish
-culture = talysh
-culture = mazanderani
-culture = qashqai
-religion = shiite
-government = absolute_empire
+capital = 923
+primary_culture = assyrian
+culture = persian
+culture = turki
+religion = nestorian
+government = absolute_monarchy
 plurality = 0.0
-nationalvalue = nv_tradition
-literacy = 0.1
-non_state_culture_literacy = 0.1
+nationalvalue = nv_order
+literacy = 0.10
+civilized = no
 
 #Political Reforms
-slavery = yes_slavery
+slavery = no_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = no_meeting
 press_rights = state_press
 trade_unions = no_trade_unions
-voting_system = first_past_the_post
+voting_system = jefferson_method
 political_parties = underground_parties
 
 #Social Reforms
@@ -32,44 +28,38 @@ unemployment_subsidies = no_subsidies
 pensions = no_pensions
 school_reforms = no_schools
 
+
 #New Reforms
-conscription = four_year_draft
-debt_law = peonage
+conscription = no_draft
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
-centralization = regionalism
+centralization = unitary
 colonial_policy = no_colonies
 
-ruling_party = PER_conservative
+set_country_flag = orthodox_country
+
+ruling_party = ASY_conservative_3
 upper_house = {
     fascist = 0
-    liberal = 12
-    conservative = 60
-    reactionary = 28
+    liberal = 35
+    conservative = 55
+    reactionary = 10
     radical = 0
     socialist = 0
     communist = 0
 }
-
-set_country_flag = shiite_country
 
 foreign_training = yes_foreign_training
 foreign_weapons = yes_foreign_weapons
 foreign_artillery = yes_foreign_artillery
 monetary_reform = yes_monetary_reform
 education_reform = yes_education_reform
+finance_reform = yes_finance_reform
+land_reform = yes_land_reform
 
 #Technologies
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-
-#Inventions
-small_arms_production = yes
-ammunition_production = yes
-
-
-#Starting Consciousness
-consciousness = 0
-nonstate_consciousness = 0

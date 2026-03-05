@@ -114,7 +114,7 @@ country_migration_target = {
     }
 
     modifier = {
-        factor = 1.5
+        factor = 3
         OR = {
             AND = {
                 THIS = { is_culture_group = germanic }

@@ -1,6 +1,6 @@
 OMA = { value = -100 }
 EGY = { value = -150 }
-ZND = { value = -100 }
+TUR = { value = -100 }
 HAD = { value = -100 }
 YEM = { value = -200 }
 

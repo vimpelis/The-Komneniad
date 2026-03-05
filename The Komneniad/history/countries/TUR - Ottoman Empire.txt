@@ -1,13 +1,14 @@
-capital = 860
-primary_culture = turkish
+capital = 1135
+primary_culture = turki
+culture = persian
+culture = azerbaijani
 religion = sunni
-government = absolute_empire
-plurality = 5.0
-nationalvalue = nv_autocracy
-literacy = 0.03
+government = absolute_monarchy
+plurality = 0.0
+nationalvalue = nv_tradition
+literacy = 0.06
 non_state_culture_literacy = 0.01
-civilized = yes
-prestige = 0
+prestige = 10
 
 #Political Reforms
 slavery = yes_slavery
@@ -29,53 +30,58 @@ pensions = no_pensions
 school_reforms = no_schools
 
 #New Reforms
-conscription = no_draft
-debt_law = serfdom
+conscription = four_year_draft
+debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
-border_policy = closed_borders
-centralization = regionalism
-colonial_policy = exploitation
-
+border_policy = open_borders
+centralization = unitary
+colonial_policy = no_colonies
 
 ruling_party = TUR_conservative
 upper_house = {
     fascist = 0
-    liberal = 25
+    liberal = 12
     conservative = 60
-    reactionary = 15
+    reactionary = 28
     radical = 0
     socialist = 0
     communist = 0
 }
 
 set_country_flag = sunni_country
-set_country_flag = christian_oppression
-set_country_flag = istanbul_not_renamed
+
+foreign_training = yes_foreign_training
+foreign_weapons = yes_foreign_weapons
+foreign_artillery = yes_foreign_artillery
+monetary_reform = yes_monetary_reform
+education_reform = yes_education_reform
+
+govt_flag = {
+    government = absolute_empire
+    flag = theocracy
+}
+govt_flag = {
+    government = semi_constitutional_empire
+    flag = theocracy
+}
+govt_flag = {
+    government = constitutional_empire
+    flag = theocracy
+}
 
 #Technologies
-post_napoleonic_thought = 1
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-post_nelsonian_thought = 1
-private_banks = 1
-no_standard = 1
-guild_based_production = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-piston_steam_engine = 1
-#mechanical_production = 1
-clipper_design = 1
-malthusian_thought = 1
-basic_chemistry = 1
 
 #Inventions
-dragoon_activation = yes
-steam_powered_sugar_mills = yes
+small_arms_production = yes
+ammunition_production = yes
+
 
 #Starting Consciousness
-consciousness = 1
+consciousness = 0
 nonstate_consciousness = 0
 
 oob = "TUR_oob.txt"

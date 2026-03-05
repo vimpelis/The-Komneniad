@@ -9,7 +9,6 @@ political_decisions = {
 			NOT = { exists = YUE }
 		}
 		allow = {
-			war = no
 			civilized = yes
 			OR = {
 				AND = {
@@ -37,6 +36,7 @@ political_decisions = {
 					}
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 20
@@ -66,11 +66,11 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_annex_taiwan }
 		}
 		allow = {
-			war = no
 			OR = {
 				state_n_government = 1
 				owns = 2681
 			}
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -90,12 +90,12 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_annam_hegemony }
 		}
 		allow = {
-			war = no
 			OR = {
 				owns = 1374
 				owns = 1375
 				year = 1845
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -121,10 +121,10 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_formalize_southern_borders }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			DAI_1369 = { owned_by = THIS }
 			DAI_1375 = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -150,9 +150,9 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_northern_expedition }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			rank = 12
+			war = no
 		}
 		effect = {
 			badboy = 15
@@ -177,9 +177,9 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_liberate_wu }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			rank = 12
+			war = no
 		}
 		effect = {
 			badboy = 7
@@ -207,7 +207,6 @@ political_decisions = {
 			NOT = { has_global_flag = YUE_reinforce_bo_ni }
 		}
 		allow = {
-			war = no
 			OR = {
 				ideological_thought = 1
 				AND = {
@@ -215,6 +214,7 @@ political_decisions = {
 					year = 1845
 				}
 			}
+			war = no
 		}
 		effect = {
 			badboy = 7.5
@@ -244,7 +244,6 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_proclaim_scs_hegemony }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			rank = 5
 			total_amount_of_ships = 100
@@ -253,9 +252,8 @@ political_decisions = {
 			has_country_flag = YUE_formalize_southern_borders
 			has_country_flag = YUE_annex_taiwan
 			has_global_flag = YUE_reinforce_bo_ni
-			all_core = {
-				owned_by = THIS
-			}
+			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 25
@@ -289,12 +287,12 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_accept_tawalisi }
 		}
 		allow = {
-			war = no
 			PHL = {
 				all_core = {
 					owned_by = THIS
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -313,12 +311,12 @@ political_decisions = {
 			NOT = { has_country_flag = YUE_accept_minors }
 		}
 		allow = {
-			war = no
 			CMP = {
 				all_core = {
 					owned_by = THIS
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -335,7 +333,6 @@ political_decisions = {
 			NOT = { exists = CHI }
 		}
 		allow = {
-			war = no
 			CHI = {
 				all_core = {
 					OR = {
@@ -344,6 +341,7 @@ political_decisions = {
 					}
 				}
 			}
+			war = no
 		}
 		effect = {
 			change_tag = CHI
@@ -367,7 +365,6 @@ political_decisions = {
 		}
 		allow = {
 			year = 1850
-			war = no
 			all_core = {
 				owned_by = THIS
 			}
@@ -375,6 +372,7 @@ political_decisions = {
 				civilized = yes
 				prestige = 100
 			}
+			war = no
 		}
 		effect = {
 			badboy = 20
@@ -413,10 +411,10 @@ political_decisions = {
 		}
 		allow = {
 			year = 1848
-			war = no
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -447,7 +445,6 @@ political_decisions = {
 			NOT = { has_country_flag = CHI_freedom_of_religion }
 		}
 		allow = {
-			war = no
 			OR = {
 				AND = {
 					social_science = 1
@@ -458,6 +455,7 @@ political_decisions = {
 				}
 				government = democracy
 			}
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -479,9 +477,9 @@ political_decisions = {
 			NOT = { has_country_flag = CHI_integrate_the_southerners }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -507,13 +505,13 @@ political_decisions = {
 			NOT = { has_country_flag = CHI_reclaim_taiwan }
 		}
 		allow = {
-			war = no
-			1493 = { owned_by = THIS }
-			1482 = { owned_by = THIS }
 			OR = {
 				civilized = yes
 				NOT = { exists = TAI }
 			}
+			1493 = { owned_by = THIS }
+			1482 = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -536,11 +534,11 @@ political_decisions = {
 			NOT = { has_country_flag = CHI_northern_frontier }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -565,11 +563,11 @@ political_decisions = {
 			has_country_flag = arsenal_available
 		}
 		allow = {
-			war = no
-			money = 25000
 			invention = ammunition_production
 			invention = small_arms_production
 			invention = artillery_production
+			money = 25000
+			war = no
 		}
 		effect = {
 			treasury = -25000
@@ -587,7 +585,6 @@ political_decisions = {
 			NOT = { has_country_flag = KOR_fail_china }
 		}
 		allow = {
-			war = no
 			all_core = {
 				OR = {
 					owned_by = THIS
@@ -598,6 +595,7 @@ political_decisions = {
 			owns = 1616
 			owns = 2221
 			NOT = { exists = HUI }
+			war = no
 		}
 		effect = {
 			change_tag = TUT
@@ -618,11 +616,11 @@ political_decisions = {
 			NOT = { has_country_flag = KOR_eat_manchuria }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -654,9 +652,9 @@ political_decisions = {
 			1087 = { empty = yes }
 		}
 		allow = {
-			war = no
 			year = 1852
 			owns = 1083
+			war = no
 		}
 		effect = {
 			badboy = 2
@@ -689,12 +687,12 @@ political_decisions = {
 			NOT = { has_country_flag = KOR_end_to_chaos }
 		}
 		allow = {
-			war = no
 			HUB = { all_core = { owned_by = THIS } }
 			HNN = { all_core = { owned_by = THIS } }
 			SXI = { all_core = { owned_by = THIS } }
 			SZC = { all_core = { owned_by = THIS } }
 			JIA = { all_core = { owned_by = THIS } }
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -731,10 +729,10 @@ political_decisions = {
 			NOT = { has_country_flag = KOR_china_united }
 		}
 		allow = {
-			war = no
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			prestige = 20
@@ -755,7 +753,6 @@ political_decisions = {
 			NOT = { has_country_flag = IRY_middle_kingdoms_intervention }
 		}
 		allow = {
-			war = no
 			all_core = {
 				owned_by = THIS
 			}
@@ -769,6 +766,7 @@ political_decisions = {
 				}
 				year = 1840
 			}
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -792,10 +790,10 @@ political_decisions = {
 			NOT = { has_country_flag = IRY_into_the_chaos }
 		}
 		allow = {
-			war = no
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -820,10 +818,10 @@ political_decisions = {
 			NOT = { has_country_flag = IRY_the_open_plains }
 		}
 		allow = {
-			war = no
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -848,12 +846,12 @@ political_decisions = {
 			NOT = { exists = XIE }
 		}
 		allow = {
-			war = no
 			owns = 1616
 			owns = 2221
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			change_tag = XIE
@@ -871,11 +869,11 @@ political_decisions = {
 			NOT = { has_country_flag = IRY_liberate_manchuria }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			MCK = { all_core = { add_core = THIS } }
@@ -893,10 +891,10 @@ political_decisions = {
 			NOT = { has_country_flag = HUI_southern_reclamation }
 		}
 		allow = {
-			war = no
 			all_core = {
 				owned_by = THIS
 			}
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -929,7 +927,6 @@ political_decisions = {
 			NOT = { has_global_flag = YUE_kapok_war }
 		}
 		allow = {
-			war = no
 			OR = {
 				year = 1880
 				state_n_government = 1
@@ -964,6 +961,7 @@ political_decisions = {
 					}
 				}
 			}
+			war = no
 		}
 		effect = {
 			set_global_flag = YUE_kapok_war

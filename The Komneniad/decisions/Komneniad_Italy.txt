@@ -11,12 +11,12 @@ political_decisions = {
 			NOT = { has_country_flag = ITA_magna_graecia }
 		}
 		allow = {
-			war = no
 			OR = {
 				state_n_government = 1
 				year = 1850
 			}
 			SIC_753 = { owned_by = ITA }
+			war = no
 		}
 		effect = {
 			add_accepted_culture = griko
@@ -56,9 +56,9 @@ political_decisions = {
 			NOT = { 729 = { is_core = THIS } }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 12
@@ -84,9 +84,9 @@ political_decisions = {
 			NOT = { has_country_flag = italia_irredenta_next }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 8
@@ -111,9 +111,9 @@ political_decisions = {
 			NOT = { has_country_flag = ITA_claim_africa }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			owns = 854
+			war = no
 		}
 		effect = {
 			badboy = 6
@@ -166,12 +166,12 @@ political_decisions = {
 			NOT = { has_country_flag = LOM_punish_tuscany }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
 			OR = {
 				muzzle_loaded_rifles = 1
 				ideological_thought = 1
 			}
+			war = no
 		}
 		effect = {
 			badboy = 8
@@ -195,12 +195,12 @@ political_decisions = {
 			NOT = { has_country_flag = LOM_march_on_rome }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
 			OR = {
 				state_n_government = 1
 				PAP = { government = radical_republic }
 			}
+			war = no
 		}
 		effect = {
 			badboy = 12
@@ -223,7 +223,6 @@ political_decisions = {
 			NOT = { exists = ITA }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			726 = {
 				OR = {
@@ -253,6 +252,7 @@ political_decisions = {
 					owner = { vassal_of = THIS }
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 20
@@ -290,9 +290,9 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war = no
 			owns = 762
 			NOT = { exists = SIC }
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -350,9 +350,9 @@ political_decisions = {
 		picture = map_sicily
 		potential = {
 			tag = SIC
+			has_country_flag = SIC_annex_africa
 			NOT = { has_global_flag = hauteville_civil_war_over }
 			NOT = { has_country_flag = SIC_victory }
-			has_country_flag = SIC_annex_africa
 			OR = {
 				government = absolute_monarchy
 				government = hms_government
@@ -360,9 +360,9 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war = no
 			all_core = { OR = { owned_by = THIS empty = yes } }
 			NOT = { exists = AFR }
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -396,9 +396,9 @@ political_decisions = {
 			NOT = { has_country_flag = AFR_annex_tripoli }
 		}
 		allow = {
-			war = no
 			owns = 1731
 			state_n_government = 1
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -429,9 +429,9 @@ political_decisions = {
 			NOT = { has_country_flag = AFR_stato_da_mar }
 		}
 		allow = {
-			war = no
 			all_core = { OR = { owned_by = THIS empty = yes } }
 			state_n_government = 1
+			war = no
 		}
 		effect = {
 			prestige = 25
@@ -473,7 +473,6 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war = no
 			owns = 3639
 			owns = 1731
 			owns = 1734
@@ -481,6 +480,7 @@ political_decisions = {
 				invention = mission_to_civilize
 				year = 1870
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5

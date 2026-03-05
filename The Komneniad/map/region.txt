@@ -451,11 +451,11 @@ EGY_921 = { 915 916 917 918 919 3474 3358 } #Palestine
 
 EGY_908 = { 908 909 922 } #Jordan
 
-TUR_923 = { 923 928 3532 892 3537 3294 3353 } #Mosul
+TUR_923 = { 923 928 3532 892 3294 3353 3537 3562 } #Mosul
 
-TUR_931 = { 926 929 934 3292 930 3389 927 925 } #Baghdad
+TUR_931 = { 926 929 934 3291 3292 3296 930 3389 927 925 3355 } #Baghdad
 
-TUR_935 = { 935 932 933 3406 3407 } #Basra
+TUR_935 = { 935 932 933 1131 3290 3351 3406 3407 } #Basra
 
 RUS_1090 = { 1090 1093 1091 3427 3429 } #Georgia - split into West and East
 
@@ -473,9 +473,9 @@ PER_1121 = { 1121 1124 1125 1107 1129 } #Irakajemi - now Northern Irakajami
 
 PER_1112 = { 1108 3504 1123 1111 1118 } #East Azerbaijan
 
-PER_1132 = { 1131 1133 3349 3351 } #Khuzestan
+PER_1120 = { 1120 1122 1128 1133 } ###Khoramabad
 
-PER_1127 = { 1127 1128 1122 1120 1134 } #Isfahan - now Southern Irakajami
+PER_1127 = { 1127 1134 3349 } ###Isfahan
 
 PER_1130 = { 1130 1149 3497 1126 } #Yazd-Semnan
 
@@ -1025,7 +1025,7 @@ FRA_1965 = { 1965 1968 1970 1971 1969 1995 1998 } #Ubangi-Shari
 
 ENG_2014 = { 2006 2007 2011 2013 2014 2015 2081 } #Zambia
 
-ENG_2016 = { 790 1987 2012 2016 2017 3266 3296 3675 3649 } #Kazembe
+ENG_2016 = { 790 1987 2012 2016 2017 3266 3675 3649 } #Kazembe
 
 ENG_2019 = { 2019 2020 2021 2022 2023 2028 2034 2035 3610 3674 } #Uganda
 
@@ -1262,7 +1262,7 @@ USA_2543 = { 2543 2544 } #Samoa Islands
 FRA_801 = { 801 2551 2552 2553 } #Tahiti
 
 #Komneniad
-DEBUG_REGION = { 353 405 633 677 778 781 794 829 831 3290 3291 3303 3306 3307 3332 3343 3344 3355 3379 3383 3397 3400 3417 3420 3421 3423 3480 3483 3556 3562 3569 3606 3614 3653 } #Unused provinces
+DEBUG_REGION = { 353 405 633 677 778 781 794 829 831 3303 3306 3307 3332 3343 3344 3379 3383 3397 3400 3417 3420 3421 3423 3480 3483 3556 3569 3606 3614 3653 } #Unused provinces
 
 tooltip_1 = {} #Each Ayllonian boy...
 tooltip_2 = {}
@@ -1321,6 +1321,7 @@ ASY_kurd_integration_tt = {}
 BYZ_syria_infamy_notf = {}
 rename_rhomania_tt = {}
 rename_muradid_tt = {}
+rename_nahrain_tt = {}
 potato_blight_tt = {}
 BYZ_bethlehem_tt = {}
 BRB_flemish_revolt_tt = {}
@@ -1336,7 +1337,14 @@ info_menu_tt = {}
 options_menu_tt = {}
 debug_menu_tt = {}
 mp_menu_tt = {}
-mp_menu_tt_temp = {}
+nopaths_menu_tt = {}
+ASY_persia_warning_tt = {}
+PER_eshaya_tt = {}
+PER_zazoyo_tt = {}
+PER_qavam_tt = {}
+PER_absolute_reward_tt = {}
+PER_semiabsolute_reward_tt = {}
+PER_constitutional_reward_tt = {}
 
 any_sea_province = {
 

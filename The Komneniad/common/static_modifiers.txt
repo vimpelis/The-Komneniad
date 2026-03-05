@@ -184,12 +184,13 @@ war_exhaustion = {
     administrative_efficiency_modifier = -0.002
     cb_generation_speed_modifier = -0.01
     RGO_throughput = -0.01
-	global_immigrant_attract = -0.02
+	global_immigrant_attract = -0.005
 }
 
 
 badboy = {
     global_pop_consciousness_modifier = 0.001
+	global_immigrant_attract = -0.002
 }
 
 

@@ -1,6 +1,7 @@
-owner = ZND
-controller = MGT
+owner = AZB
+controller = AZB
 add_core = AZB
 trade_goods = cattle
 life_rating = 35
-add_core = ZND
+terrain = mountain
+add_core = TUR

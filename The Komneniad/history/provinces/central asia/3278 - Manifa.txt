@@ -1,8 +1,8 @@
-owner = ZND
-controller = ZND
+owner = TUR
+controller = TUR
+add_core = TUR
 add_core = KWT
 trade_goods = fish
 life_rating = 32
 terrain = coastal_desert
-add_core = ZND
 add_core = IRQ

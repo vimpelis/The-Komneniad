@@ -49,12 +49,12 @@ political_decisions = {
 			NOT = { has_country_flag = RUS_georgievsk }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			OR = {
 				owns = 1090
 				GEO = { in_sphere = THIS }
 			}
+			war = no
 		}
 		effect = {
 			set_country_flag = RUS_georgievsk
@@ -88,7 +88,6 @@ political_decisions = {
 			NOT = { has_country_flag = RUS_integrate_little_russia }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			OR = {
 				all_core = { OR = { owned_by = THIS empty = yes } }
@@ -104,6 +103,7 @@ political_decisions = {
 					}
 				}
 			}
+			war = no
 		}
 		effect = {
 			set_country_flag = RUS_integrate_little_russia
@@ -139,9 +139,9 @@ political_decisions = {
 			NOT = { has_country_flag = RUS_finish_unification }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			set_country_flag = RUS_finish_unification
@@ -168,9 +168,9 @@ political_decisions = {
 			NOT = { has_country_flag = RUS_window_to_europe }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			set_country_flag = RUS_window_to_europe
@@ -197,9 +197,9 @@ political_decisions = {
 			NOT = { has_country_flag = RUS_incorporate_lithuania }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
 		}
 		effect = {
 			set_country_flag = RUS_incorporate_lithuania
@@ -226,7 +226,6 @@ political_decisions = {
 			NOT = { has_country_flag = RUS_accept_baltics }
 		}
 		allow = {
-			war = no
 			mass_politics = 1
 			all_core = { OR = { owned_by = THIS empty = yes } }
 			OR = {
@@ -234,6 +233,7 @@ political_decisions = {
 				government = democracy
 				government = proletarian_dictatorship
 			}
+			war = no
 		}
 		effect = {
 			set_country_flag = RUS_accept_baltics

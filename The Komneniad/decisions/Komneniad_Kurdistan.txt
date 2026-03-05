@@ -14,10 +14,11 @@ political_decisions = {
 		}
 		effect = {
 			treasury = 1000
+			canned_food = 10
 			cattle = 25
 			wool = 25
 			grain = 100
-			any_pop = { limit = { OR = { has_pop_culture = kurdish has_pop_culture = turkish } } militancy = 1 }
+			any_pop = { limit = { OR = { has_pop_culture = kurdish has_pop_culture = rumi } } militancy = 1 }
 			add_country_modifier = {
 				name = KDS_tribute_cooldown
 				duration = 365
@@ -44,8 +45,8 @@ political_decisions = {
 			NOT = { has_country_flag = KDS_rein_in_the_tribes }
 		}
 		allow = {
-			war = no
 			bureaucrats = 0.006
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -72,10 +73,10 @@ political_decisions = {
 			NOT = { has_country_flag = KDS_consolidate_lake_van }
 		}
 		allow = {
-			war = no
 			owns = 890
 			owns = 891
 			owns = 3348
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -88,6 +89,7 @@ political_decisions = {
 				add_core = THIS
 			}
 			892 = { remove_core = BDN add_core = THIS }
+			3353 = { add_core = THIS }
 			set_country_flag = KDS_consolidate_lake_van
 		}
 		ai_will_do = {
@@ -106,10 +108,10 @@ political_decisions = {
 			NOT = { exists = KDS }
 		}
 		allow = {
-			war = no
 			owns = 890
 			owns = 893
 			owns = 923
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -120,8 +122,6 @@ political_decisions = {
 				remove_core = BDN
 				remove_core = MKU
 				remove_core = BZD
-				remove_core = TSI
-				remove_core = MLN
 			}
 			any_country = {
 				limit = {
@@ -130,6 +130,7 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
+			add_country_modifier = { name = religious_effort duration = 3650 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -139,92 +140,66 @@ political_decisions = {
 	KDS_kurdish_uprising = {
 		picture = kurdistan_map
 		potential = {
-			has_country_flag = KDS_uprising_available
 			OR = {
-				ASY = { owns = 3279 }
-				ASY = { owns = 3532 }
+				primary_culture = kurdish
+				tag = BTL
+			}
+			has_country_flag = KDS_uprising_available
+			892 = {
+				OR = {
+					owned_by = ASY
+					owned_by = PER
+				}
 			}
 			NOT = { exists = KDS }
 			NOT = { has_global_flag = kurdish_uprising }
 		}
 		allow = {
-			war = no
 			OR = {
 				BYZ = { war = yes }
 				GRE = { war = yes }
 				relation = { who = BYZ value = 150 }
 				relation = { who = GRE value = 150 }
 			}
+			war = no
 		}
 		effect = {
 			badboy = 5
-			ASY = {
-				any_owned = {
-					limit = {
-						province_id = 892
+			892 = {
+				owner = {
+					war = {
+						target = THIS
+						attacker_goal = { casus_belli = conquest_any }
+						defender_goal = { casus_belli = conquest_any }
 					}
-					secede_province = THIS
-					add_core = THIS
-				}
-				any_owned = {
-					limit = {
-						province_id = 3532
+					892 = {
+						secede_province = THIS add_core = THIS
 					}
-					secede_province = THIS
-					secede_province = TSI
-				}
-				any_owned = {
-					limit = {
-						OR = {
-							province_id = 3279
-							province_id = 899
-						}
+					3353 = {
+						secede_province = THIS add_core = THIS
 					}
-					secede_province = THIS
-					secede_province = MLN
+					country_event = 177009
 				}
 			}
-			create_vassal = TSI
-			create_vassal = MLN
-			create_alliance = TSI
-			create_alliance = MLN
 			any_country = {
 				limit = {
 					tag = BYZ
 					exists = yes
 				}
-				leave_alliance = ASY
-				diplomatic_influence = {
-					who = ASY
-					value = -400
-				}
-				country_event = 177010
+				country_event = { id = 177010 days = 1 }
 			}
 			any_country = {
 				limit = {
 					tag = GRE
 					exists = yes
 				}
-				leave_alliance = ASY
-				diplomatic_influence = {
-					who = ASY
-					value = -400
-				}
-				country_event = 177010
+				country_event = { id = 177010 days = 1 }
 			}
-			war = {
-				target = ASY
-				attacker_goal = { casus_belli = conquest_any }
-				defender_goal = { casus_belli = conquest_any }
-				call_ally = yes
-			}
-			ASY = { country_event = 177009 }
 			add_country_modifier = {
 				name = KDS_more_mob
 				duration = 3650
 			}
 			set_country_flag = KDS_kurdish_uprising
-			ASY = { set_country_flag = ASY_kurdish_uprising }
 			set_global_flag = kurdish_uprising
 		}
 		ai_will_do = {
@@ -243,10 +218,10 @@ political_decisions = {
 			NOT = { has_country_flag = KDS_eastern_bulwark }
 		}
 		allow = {
-			war = no
 			owns = 925
 			owns = 1118
 			owns = 1119
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -267,14 +242,14 @@ political_decisions = {
 	}
 	
 	KDS_caucasus = {
-		picture = kurdistan_map
+		picture = ASY_caucasus_dcs
 		potential = {
 			tag = KDS
 			NOT = { has_country_flag = KDS_caucasus }
 		}
 		allow = {
-			war = no
 			owns = 885
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -303,9 +278,9 @@ political_decisions = {
 			NOT = { has_country_flag = KDS_empire }
 		}
 		allow = {
-			war = no
 			civilized = yes
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			random_owned = {
@@ -319,34 +294,127 @@ political_decisions = {
 				}
 				owner = { government = absolute_empire }
 			}
+			add_country_modifier = { name = religious_effort duration = 3650 }
 			set_country_flag = KDS_empire
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	KDS_king_of_kings = {
+		picture = kurdistan_map
+		potential = {
+			tag = KDS
+			OR = {
+				government = absolute_empire
+				government = semi_constitutional_empire
+				government = constitutional_empire
+				AND = {
+					government = fascist_dictatorship
+					rank = 12
+				}
+			}
+			NOT = { has_country_flag = KDS_king_of_kings }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			rank = 12
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			badboy = 24.5
+			add_accepted_culture = turki
+			add_accepted_culture = persian
+			add_accepted_culture = baluchi
+			add_accepted_culture = pashtun
+			add_accepted_culture = tajik
+			add_country_modifier = { name = religious_effort duration = 3650 }
+			PER_1120 = { add_core = THIS }
+			PER_1121 = { add_core = THIS }
+			PER_1112 = { add_core = THIS }
+			RUS_1102 = { add_core = THIS }
+			PER_1116 = { add_core = THIS }
+			PER_1127 = { add_core = THIS }
+			PER_1136 = { add_core = THIS }
+			PER_1130 = { add_core = THIS }
+			PER_1140 = { add_core = THIS }
+			PER_1148 = { add_core = THIS }
+			AFG_1212 = { add_core = THIS }
+			AFG_1215 = { add_core = THIS }
+			KAL_1221 = { add_core = THIS }
+			AFG_1209 = { add_core = THIS }
+			AFG_1218 = { add_core = THIS }
+			AFG_1214 = { add_core = THIS }
+			AFG_1213 = { add_core = THIS }
+			RUS_1196 = { add_core = THIS }
+			set_country_flag = KDS_king_of_kings
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.1
+                badboy = 0.05
             }
 		}
 	}
 	
-	ASY_crush_the_kurds = {
+	RUM_form_rumelia = {
 		picture = kurdistan_map
 		potential = {
-			tag = ASY
-			NOT = { has_country_flag = ASY_crush_the_kurds }
-			NOT = { has_country_flag = ASY_attacked }
+			tag = BTL
+			primary_culture = rumi
+			NOT = { exists = RUM }
 		}
 		allow = {
-			war = no
+			owns = 891
+			owns = 893
 			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			change_tag = RUM
+			add_country_modifier = { name = religious_effort duration = 3650 }
+			all_core = { remove_core = BTL }
+			TUR_893 = { add_core = RUM }
+			901 = { add_core = RUM }
+			3532 = { add_core = RUM }
+			3562 = { add_core = RUM }
+			923 = { add_core = RUM }
+			3294 = { add_core = RUM }
+			892 = { add_core = RUM }
+			928 = { add_core = RUM }
+			3353 = { add_core = RUM }
+			896 = { add_core = RUM }
+			898 = { add_core = RUM }
+			government = absolute_empire
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ASY_crush_the_kurds = {
+		picture = ASY_kurd
+		potential = {
+			OR = {
+				tag = ASY
+				tag = PER
+			}
+			NOT = { has_country_flag = ASY_crush_the_kurds }
+			NOT = { has_country_flag = ASY_kurdish_uprising }
+		}
+		allow = {
 			OR = {
 				civilized = yes
 				owns = 890
 			}
+			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
-			badboy = 10
+			badboy = 5
 			any_owned = { remove_province_modifier = KDS_powerful_tribe }
 			TUR_890 = { add_core = THIS }
 			set_country_flag = ASY_crush_the_kurds
@@ -357,23 +425,756 @@ political_decisions = {
 			factor = 1
 			modifier = {
                 factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ASY_unite_mesopotamia = {
+		picture = ASY_mesopotamia
+		potential = {
+			tag = ASY
+			NOT = { has_country_flag = ASY_unite_mesopotamia }
+			NOT = { has_country_flag = ASY_persia_conquest }
+		}
+		allow = {
+			OR = {
+				owns = 926
+				AND = {
+					state_n_government = 1
+					rank = 16
+				}
+			}
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			badboy = 15
+			TUR_931 = { add_core = ASY }
+			TUR_935 = { add_core = ASY }
+			3278 = { add_core = ASY }
+			set_country_flag = ASY_unite_mesopotamia
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	ASY_subdue_euphrates_bedouins = {
+		picture = ASY_bedouins
+		potential = {
+			OR = {
+				tag = ASY
+				tag = PER
+			}
+			owns = 3325
+			NOT = { has_country_flag = ASY_subdue_euphrates_bedouins }
+		}
+		allow = {
+			OR = {
+				owns = 3300
+				civilized = yes
+			}
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			prestige = 10
+			badboy = 5
+			3300 = { add_core = THIS }
+			924 = { add_core = THIS }
+			3405 = { add_core = THIS }
+			3325 = { remove_core = UQA remove_core = EGY remove_core = SYR }
+			3428 = { remove_core = UQA remove_core = EGY remove_core = SYR }
+			set_country_flag = ASY_subdue_euphrates_bedouins
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ASY_form_beth_nahrain = {
+		picture = ASY_beth_nahrain_dcs
+		potential = {
+			tag = ASY
+			has_country_flag = ASY_unite_mesopotamia
+			has_country_flag = ASY_subdue_euphrates_bedouins
+			NOT = { has_global_flag = beth_nahrain_exists }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+			NOT = { government = theocracy }
+			war = no
+		}
+		effect = {
+			prestige = 25
+			badboy = 5
+			add_accepted_culture = syriac
+			PER_1122 = { add_core = THIS }
+			931 = { add_core = THIS }
+			3404 = { add_core = THIS }
+			2321 = { add_core = THIS }
+			set_country_flag = hidden_tooltip
+				random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+					owner = {
+						government = absolute_empire
+					}
+				}
+			clr_country_flag = hidden_tooltip
+			rename_nahrain_tt = {}
+			set_global_flag = beth_nahrain_exists
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ASY_unite_aramaeans = {
+		picture = ASY_syria_dcs
+		potential = {
+			OR = {
+				AND = {
+					tag = ASY
+					accepted_culture = syriac
+				}
+				tag = PER
+			}
+			NOT = { has_country_flag = ASY_unite_aramaeans }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			rank = 12
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = syriac
+			EGY_897 = { add_core = THIS }
+			EGY_903 = { add_core = THIS }
+			EGY_921 = { add_core = THIS }
+			907 = { add_core = THIS }
+			LBN = { all_core = { add_core = THIS } }
+			random_owned = {
+				limit = {
+					OR = {
+						LBN = { vassal_of = BYZ }
+						897 = { owned_by = BYZ }
+					}
+				}
+				owner = { BYZ = { country_event = 177025 } }
+			}
+			random_owned = {
+				limit = {
+					OR = {
+						LBN = { vassal_of = GRE }
+						897 = { owned_by = GRE }
+					}
+				}
+				owner = { GRE = { country_event = 177025 } }
+			}
+			set_country_flag = ASY_unite_aramaeans
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+		}
+	}
+	
+	ASY_accept_armenians = {
+		picture = ASY_armenians_dcs
+		potential = {
+			OR = {
+				AND = {
+					tag = ASY
+					has_country_flag = ASY_unite_aramaeans
+				}
+				tag = PER
+			}
+			has_country_flag = ASY_crush_the_kurds
+			NOT = { accepted_culture = armenian }
+		}
+		allow = {
+			owns = 1098
+			war = no
+		}
+		effect = {
+			prestige = 10
+			random_owned = {
+				limit = {
+					owner = { tag = PER }
+				}
+				owner = {
+					badboy = 10
+					BYZ_894 = { add_core = THIS }
+					BYZ_879 = { add_core = THIS }
+					RUS_1098 = { add_core = THIS }
+					AZB_1105 = { add_core = THIS }
+				}
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = armenian
+				}
+				militancy = -4
+				consciousness = -4
+			}
+			add_accepted_culture = armenian
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+				tag = PER
                 badboy = 0.6
             }
 		}
 	}
 	
-	ASY_unify_education = {
+	ASY_future_of_the_assyrian_church = {
+		picture = ASY_council_dcs
+		potential = {
+			OR = {
+				tag = ASY
+				tag = PER
+			}
+			has_country_modifier = ASY_nestorian_isolation
+			NOT = { has_country_flag = ASY_took_church_decision }
+		}
+		allow = {
+			OR = {
+				invention = clericalism_vs._anticlericalism
+				year = 1870
+			}
+		}
+		effect = {
+			prestige = 5
+			any_pop = {
+				limit = {
+					has_pop_culture = assyrian
+				}
+				militancy = -1
+			}
+			country_event = 177024
+			set_country_flag = ASY_took_church_decision
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ASY_formalize_governance = {
+		picture = ASY_patriarch
+		potential = {
+			tag = ASY
+			government = theocracy
+			NOT = { has_country_modifier = ASY_conquest_of_persia_modf }
+		}
+		allow = {
+			OR = {
+				state_n_government = 1
+				AND = {
+					civilized = yes
+					militancy = 4
+				}
+			}
+		}
+		effect = {
+			prestige = 5
+			any_pop = { militancy = -2 }
+			government = absolute_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ASY_build_university = {
+		picture = ASY_university_dcs
+		potential = {
+			OR = {
+				tag = ASY
+				AND = {
+					tag = PER
+					capital = 926
+				}
+			}
+			NOT = { has_country_modifier = ASY_university_1 }
+			NOT = { has_country_modifier = ASY_university_2 }
+			civilized = yes
+		}
+		allow = {
+			functionalism = 1
+			inorganic_chemistry = 1
+			late_classical_theory = 1
+			treasury = 50000
+		}
+		effect = {
+			prestige = 5
+			country_event = 177028
+			random_owned = {
+				limit = { owner = { capital_scope = { province_id = 923 } } }
+				owner = { add_country_modifier = { name = ASY_university_1 duration = -1 } }
+			}
+			random_owned = {
+				limit = { owner = { capital_scope = { province_id = 926 } } }
+				owner = { add_country_modifier = { name = ASY_university_2 duration = -1 } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ASY_reform_education = {
+		picture = ASY_school
+		potential = {
+			OR = {
+				AND = {
+					tag = ASY
+					accepted_culture = syriac
+				}
+				tag = PER
+			}
+			OR = {
+				has_country_modifier = ASY_university_1
+				has_country_modifier = ASY_university_2
+			}
+			NOT = { has_country_flag = culture_conversion }
+			NOT = { has_country_flag = ASY_rescinded_conversion }
+		}
+		allow = {
+			invention = philosophy_of_language
+			NOT = { exists = IRQ }
+			NOT = { exists = KWT }
+			NOT = { exists = UQA }
+			OR = {
+				AND = {
+					tag = ASY
+					NOT = { exists = SYR }
+				}
+				AND = {
+					tag = PER
+					NOT = { exists = KHR }
+					NOT = { exists = TUR }
+					NOT = { exists = ASY }
+				}
+			}
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			badboy = 5
+			remove_accepted_culture = turki
+			any_pop = {
+				limit = {
+					is_accepted_culture = no
+				}
+				militancy = 2
+				consciousness = 4
+			}
+			set_country_flag = culture_conversion
+			IRQ = { all_core = { add_core = ASY remove_core = IRQ remove_core = TUR } }
+			KWT = { all_core = { add_core = ASY remove_core = KWT remove_core = TUR } }
+			UQA = { all_core = { add_core = ASY remove_core = UQA } }
+			random_owned = {
+				limit = {
+					owner = { tag = ASY }
+					owns = 897
+				}
+				SYR = { all_core = { remove_core = SYR } }
+			}
+			random_owned = {
+				limit = {
+					owner = { tag = PER }
+				}
+				IRQ = { all_core = { add_core = ASY remove_core = IRQ } }
+				KWT = { all_core = { add_core = ASY remove_core = KWT } }
+				TUR = { all_core = { add_core = KHR remove_core = TUR } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+		}
+	}
+	
+	ASY_rescind_convesrion = {
+		picture = ASY_school
+		potential = {
+			OR = {
+				tag = ASY
+				tag = PER
+			}
+			has_country_modifier = ASY_resitance_to_conversion
+		}
+		allow = {
+			has_country_modifier = ASY_resitance_to_conversion
+			average_militancy = 2
+		}
+		effect = {
+			remove_country_modifier = ASY_resitance_to_conversion
+			any_pop = {
+				limit = {
+					is_accepted_culture = no
+				}
+				militancy = -1
+				consciousness = -2
+			}
+			random_owned = {
+				limit = {
+					owner = { tag = PER }
+				}
+				owner = { add_accepted_culture = turki } 
+			}
+			clr_country_flag = culture_conversion
+			set_country_flag = ASY_rescinded_conversion
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                NOT = { average_militancy = 6 }
+            }
+		}
+	}
+	
+	ASY_assyrian_mesopotamia = {
+		picture = iraq_map
+		potential = {
+			OR = {
+				tag = ASY
+				tag = PER
+			}
+			owns = 926
+			NOT = { has_country_flag = ASY_assyrian_mesopotamia }
+			NOT = { has_global_flag = assyrian_mesopotamia }
+		}
+		allow = {
+			OR = {
+				early_railroad = 1
+				late_classical_theory = 1
+			}
+			war = no
+		}
+		effect = {
+			prestige = 10
+			random_owned = {
+				limit = {
+					owner = { tag = PER }
+				}
+				owner = { capital = 926 }
+			}
+			capital_scope = { add_province_modifier = { name = recently_built_city duration = 3650 } }
+			926 = { state_scope = { change_region_name = "Beth Aramaye" } }
+			932 = { state_scope = { change_region_name = "Maišan" } }
+			3389 = { change_province_name = "Hadatha" }
+			3291 = { change_province_name = "Tagrit" }
+			927 = { change_province_name = "Ballgutha" }
+			934 = { change_province_name = "Hilla" }
+			930 = { change_province_name = "Qtespon" }
+			929 = { change_province_name = "Baniqia" }
+			3296 = { change_province_name = "Bet Ya'qub" }
+			3355 = { change_province_name = "Sumra" }
+			925 = { change_province_name = "Mazamua" }
+			3407 = { change_province_name = "Maišan" }
+			3290 = { change_province_name = "Samawa" }
+			1131 = { change_province_name = "Beth Huzaye" }
+			3351 = { change_province_name = "Mašara" }
+			935 = { change_province_name = "Beth Qatraye" }
+			set_country_flag = ASY_assyrian_mesopotamia
+			set_global_flag = assyrian_mesopotamia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ASY_invade_iran = {
+		picture = greater_iran
+		potential = {
+			tag = ASY
+			has_country_flag = ASY_iran_available
+		}
+		allow = {
+			NOT = { year = 1842 }
+			army_schools = yes_army_schools
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			badboy = 24.5
+			country_event = 177021
+			TUR_931 = { add_core = ASY }
+			TUR_935 = { add_core = ASY }
+			3278 = { add_core = ASY }
+			PER_1122 = { add_core = ASY }
+			PER_1120 = { add_core = ASY }
+			PER_1127 = { add_core = ASY }
+			PER_1136 = { add_core = ASY }
+			PER_1112 = { add_core = ASY }
+			PER_1121 = { add_core = ASY }
+			random_owned = {
+				limit = {
+					926 = { owned_by = TUR }
+					owner = { neighbour = TUR }
+				}
+				owner = {
+					war = {
+						target = TUR
+						attacker_goal = {
+							casus_belli = acquire_all_cores
+							country = ASY
+						}
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					926 = { owned_by = MGT }
+					owner = { neighbour = MGT }
+				}
+				owner = {
+					war = {
+						target = MGT
+						attacker_goal = {
+							casus_belli = acquire_all_cores
+							country = ASY
+						}
+					}
+				}
+			}
+			clr_country_flag = ASY_iran_available
+			set_country_flag = ASY_persia_conquest
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.1
+            }
+		}
+	}
+	
+	ASY_retreat_from_iran = {
+		picture = greater_iran
+		potential = {
+			tag = ASY
+			has_country_modifier = ASY_conquest_of_persia_modf
+		}
+		allow = {
+			NOT = { owns = 926 }
+			war = no
+		}
+		effect = {
+			prestige = -10
+			any_owned = {
+				limit = {
+					is_core = IRQ
+					NOT = { province_id = 3537 }
+				}
+				secede_province = IRQ
+				remove_core = ASY
+			}
+			any_owned = {
+				limit = {
+					is_core = AZB
+				}
+				secede_province = AZB
+				remove_core = ASY
+			}
+			any_owned = {
+				limit = {
+					is_core = TUR
+				}
+				secede_province = TUR
+				remove_core = ASY
+			}
+			any_owned = {
+				limit = {
+					is_core = MGT
+				}
+				secede_province = MGT
+				remove_core = ASY
+			}
+			remove_country_modifier = ASY_conquest_of_persia_modf
+			clr_country_flag = ASY_persia_conquest
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                NOT = { year = 1848 }
+            }
+		}
+	}
+	
+	ASY_become_persia = {
 		picture = kurdistan_map
 		potential = {
 			tag = ASY
-			year = 1937
-			NOT = { has_country_flag = ASY_unify_education }
+			has_country_modifier = ASY_conquest_of_persia_modf
 		}
 		allow = {
-			exists = yes
+			has_country_modifier = ASY_conquest_of_persia_modf
+			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
-			set_country_flag = ASY_unify_education
+			prestige = 50
+			war_exhaustion = -50
+			any_pop = { militancy = -4 }
+			country_event = 177023
+			remove_country_modifier = ASY_conquest_of_persia_modf
+			clr_country_flag = ASY_persia_conquest
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PER_caucasus = {
+		picture = ASY_caucasus_dcs
+		potential = {
+			tag = PER
+			NOT = { accepted_culture = mazanderani }
+			has_country_flag = ASY_crush_the_kurds
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			badboy = 10
+			PER_1116 = { add_core = THIS }
+			RUS_1102 = { add_core = THIS }
+			AZB_1105 = { add_core = THIS }
+			RUS_1098 = { add_core = THIS }
+			add_accepted_culture = mazanderani
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	PER_accept_iranians = {
+		picture = ASY_iranians
+		potential = {
+			tag = PER
+			year = 1870
+			NOT = { accepted_culture = azerbaijani }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			OR = {
+				citizenship_policy = full_citizenship
+				ruling_party_ideology = communist
+				ruling_party_ideology = fascist
+			}
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			prestige = -25
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = azerbaijani
+						has_pop_culture = pashtun
+						has_pop_culture = baluchi
+						has_pop_culture = tajik
+					}
+				}
+				militancy = -2
+			}
+			add_accepted_culture = azerbaijani
+			add_accepted_culture = pashtun
+			add_accepted_culture = baluchi
+			add_accepted_culture = tajik
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PER_sword_and_fire = {
+		picture = ASY_holywar
+		potential = {
+			tag = PER
+			has_country_flag = PER_sword_and_fire_available
+		}
+		allow = {
+			government = absolute_monarchy
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			badboy = -1000
+			badboy = 24.99
+			add_country_modifier = { name = PER_sword_and_fire_modf duration = -1 }
+			any_pop = {
+				limit = {
+					is_state_religion = no
+				}
+				militancy = 3
+				consciousness = 6
+			}
+			remove_country_modifier = religious_effort
+			set_country_flag = large_religious_effort
+			clr_country_flag = PER_sword_and_fire_available
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PER_end_sword_and_fire = {
+		picture = ASY_holywar
+		potential = {
+			tag = PER
+			has_country_modifier = PER_sword_and_fire_modf
+		}
+		allow = {
+			OR = {
+				state_n_government = 1
+				badboy = 1
+			}
+		}
+		effect = {
+			badboy = -5
+			remove_country_modifier = PER_sword_and_fire_modf
+			any_pop = {
+				limit = {
+					is_state_religion = no
+				}
+				militancy = -2
+				consciousness = -4
+			}
+			clr_country_flag = large_religious_effort
 		}
 		ai_will_do = {
 			factor = 1
@@ -381,7 +1182,7 @@ political_decisions = {
 	}
 	
 	ASY_exarchate_of_assyria = {
-		picture = kurdistan_map
+		picture = ASY_greeks_welcomed
 		potential = {
 			tag = ASY
 			OR = {
@@ -407,7 +1208,7 @@ political_decisions = {
 	}
 	
 	BYZ_exarchate_of_assyria = {
-		picture = kurdistan_map
+		picture = ASY_greeks_welcomed
 		potential = {
 			OR = {
 				tag = BYZ
@@ -418,8 +1219,8 @@ political_decisions = {
 			NOT = { exists = ASY }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			prestige = 10

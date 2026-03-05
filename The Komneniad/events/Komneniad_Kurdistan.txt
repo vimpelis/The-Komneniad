@@ -1,4 +1,5 @@
-#177000 - Starting event
+#177000 - Starting event (KDS)
+#177006 - Starting event (ASY)
 
 #Starting event
 country_event = {
@@ -10,7 +11,7 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = "Odds mean nothing."
+        name = "Tawusi Melek is with us."
     }
 }
 
@@ -48,6 +49,16 @@ country_event = {
 		add_country_modifier = {
 			name = KDS_more_mob
 			duration = 3650
+		}
+		3536 = {
+			sub_unit = { 
+				type = infantry
+				value = current 
+			}
+			sub_unit = { 
+				type = infantry
+				value = current 
+			}
 		}
 		war = {
 			target = BDN
@@ -108,7 +119,7 @@ country_event = {
 			name = KDS_more_mob
 			duration = 3650
 		}
-		primary_culture = turkish
+		primary_culture = rumi
 		add_accepted_culture = kurdish
 		define_general = {
 			name = "Hizir Bey"
@@ -116,11 +127,11 @@ country_event = {
 			background = attack_3.1
 		}
 		any_pop = {
-			limit = { type = soldiers has_pop_culture = turkish }
+			limit = { type = soldiers has_pop_culture = rumi }
 			reduce_pop = 1.2
 		}
 		any_pop = {
-			limit = { type = farmers has_pop_culture = turkish }
+			limit = { type = farmers has_pop_culture = rumi }
 			reduce_pop = 1.05
 		}
 			war = {
@@ -142,7 +153,10 @@ country_event = {
 
     trigger = {
 		has_country_flag = KDS_consolidate_lake_van
-		exists = ASY
+		OR = {
+			exists = ASY
+			exists = PER
+		}
 		war = no
 		is_vassal = no
     }
@@ -175,11 +189,11 @@ country_event = {
 			secede_province = UQA
 		}
 		random_owned = {
-			limit = { exists = ZND }
+			limit = { exists = TUR }
 			owner = {
 				any_owned = {
 					limit = { is_core = IRQ }
-					secede_province = ZND
+					secede_province = TUR
 				}
 			}
 		}
@@ -232,14 +246,17 @@ country_event = {
 
 country_event = {
     id = 177006
-    title = "An Uneasy Kingdom"
+    title = "Between the two rivers"
     desc = "177006DESC"
     picture = "kurdistan"
 
     is_triggered_only = yes
 
     option = {
-        name = "Enemies all around."
+        name = "The Patriarch will guide us forward."
+		add_country_modifier = { name = ASY_nestorian_isolation duration = -1 }
+		892 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
+		3353 = { add_province_modifier = { name = KDS_powerful_tribe duration = -1 } }
     }
 }
 
@@ -298,7 +315,7 @@ country_event = {
 
     option = {
         name = "Expel the savages!"
-		set_country_flag = ASY_attacked
+		set_country_flag = ASY_kurdish_uprising
     }
 }
 
@@ -527,9 +544,9 @@ country_event = {
 	option = {
         name = "The ends justify the means."
 		relation = { who = ASY value = -100 }
-		1109 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.1 } }
-		891 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.1 } }
-		890 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.1 } }
+		1109 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.2 } }
+		891 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.2 } }
+		890 = { any_pop = { limit = { has_pop_culture = assyrian } reduce_pop = 0.2 } }
     }
 }
 
@@ -606,5 +623,767 @@ country_event = {
         name = "Their opinion is of no importance to us."
 		badboy = 2
 		TUR_890 = { any_pop = { limit = { has_pop_culture = kurdish } reduce_pop = 0.9 } any_pop = { limit = { type = soldiers } reduce_pop = 0.1 } }
+    }
+}
+
+country_event = {
+    id = 177020
+    title = "The Assyrian Diaspora"
+    desc = "177020DESC"
+    picture = "ASY_shiraz"
+
+    trigger = {
+		tag = ASY
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 90
+		modifier = {
+            factor = 0.1
+            month = 6
+        }
+		modifier = {
+            factor = 0.01
+            year = 1837
+        }
+    }
+
+	option = {
+        name = "Assyria protects its sons."
+		set_country_flag = ASY_iran_available
+		research_points = 500
+		923 = {
+			any_pop = {
+				limit = {
+					type = clergymen
+				}
+				reduce_pop = 2
+			}
+		}
+		add_country_modifier = { name = ASY_persian_refugees duration = 1825 }
+		new_decisions_tt = {}
+    }
+}
+
+country_event = {
+    id = 177021
+    title = "Greek Military Mission arrives in Nineveh"
+    desc = "177021DESC"
+    picture = "ASY_military_mission"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Thank you Uncle Samouil!"
+		treasury = 25000
+		artillery = 50
+		canned_food = 100
+		small_arms = 100
+		ammunition = 100
+		regular_clothes = 150
+		define_general = {
+			name = "Yannis Makriyannis"
+			personality = defence_3.1
+			background = attack_1.1
+		}
+		random_owned = {
+			limit = {
+				exists = BYZ
+			}
+			BYZ = { diplomatic_influence = { who = ASY value = 100 } relation = { who = ASY value = 100 } }
+		}
+		random_owned = {
+			limit = {
+				exists = GRE
+			}
+			GRE = { diplomatic_influence = { who = ASY value = 100 } relation = { who = ASY value = 100 } }
+		}
+		add_country_modifier = { name = ASY_conquest_of_persia_modf duration = 3650 }
+		ASY_persia_warning_tt = {}
+    }
+}
+
+country_event = {
+    id = 177022
+    title = "Collapse of the Assyrian state"
+    desc = "177022DESC"
+    picture = "taiping_defeated"
+
+    trigger = {
+		tag = ASY
+		has_country_flag = ASY_persia_conquest
+		NOT = { has_country_modifier = ASY_conquest_of_persia_modf }
+		NOT = { all_core = { owned_by = THIS } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+	option = {
+        name = "Today's lesson: decapitation is only as effective if you're not fighting a hydra."
+		prestige = -50
+		remove_random_economic_reforms = 1
+		remove_random_military_reforms = 1
+		end_war = MGT
+		end_war = TUR
+		end_war = AZB
+		any_owned = {
+			limit = {
+				is_core = IRQ
+				NOT = { province_id = 3537 }
+			}
+			secede_province = IRQ
+			remove_core = ASY
+		}
+		any_owned = {
+			limit = {
+				is_core = AZB
+			}
+			secede_province = AZB
+			remove_core = ASY
+		}
+		any_owned = {
+			limit = {
+				is_core = TUR
+			}
+			secede_province = TUR
+			remove_core = ASY
+		}
+		any_owned = {
+			limit = {
+				is_core = MGT
+			}
+			secede_province = MGT
+			remove_core = ASY
+		}
+		clr_country_flag = ASY_persia_conquest
+    }
+}
+
+country_event = {
+    id = 177023
+    title = "Elections of the King of Persia"
+    desc = "177023DESC"
+    picture = "ASY_king_elections"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "An Eshaya!"
+		PER_eshaya_tt = {}
+		change_tag = PER
+		add_accepted_culture = persian
+		add_accepted_culture = turki
+		government = absolute_monarchy
+		political_reform = none_voting
+		political_reform = underground_parties
+		political_reform = appointed
+		political_reform = primary_culture_only
+		nationalvalue = nv_autocracy
+		KHR = { all_core = { add_core = PER } }
+		1141 = { add_core = PER }
+		1142 = { add_core = PER }
+		1071 = { add_core = PER }
+		all_core = { remove_core = ASY }
+		TUR_893 = { add_core = ASY }
+		TUR_923 = { add_core = ASY }
+		901 = { add_core = ASY }
+		3428 = { add_core = ASY }
+		3325 = { add_core = ASY }
+		set_country_flag = PER_absolute
+    }
+	
+	#Zazoyo
+	option = {
+        name = "A Zazoyo!"
+		PER_zazoyo_tt = {}
+		change_tag = PER
+		add_accepted_culture = persian
+		add_accepted_culture = turki
+		government = prussian_constitutionalism
+		political_reform = wealth_weighted_voting
+		political_reform = harassment
+		political_reform = appointed
+		political_reform = culture_voting_only
+		nationalvalue = nv_order
+		KHR = { all_core = { add_core = PER } }
+		1141 = { add_core = PER }
+		1142 = { add_core = PER }
+		1071 = { add_core = PER }
+		all_core = { remove_core = ASY }
+		TUR_893 = { add_core = ASY }
+		TUR_923 = { add_core = ASY }
+		901 = { add_core = ASY }
+		3428 = { add_core = ASY }
+		3325 = { add_core = ASY }
+		set_country_flag = PER_semiabsolute
+    }
+	
+	#Qavam
+	option = {
+        name = "A Qavam!"
+		PER_qavam_tt = {}
+		change_tag = PER
+		add_accepted_culture = persian
+		add_accepted_culture = turki
+		government = hms_government
+		political_reform = universal_weighted_voting
+		political_reform = gerrymandering
+		political_reform = state_equal_weight
+		political_reform = culture_voting_only
+		nationalvalue = nv_productivity
+		KHR = { all_core = { add_core = PER } }
+		1141 = { add_core = PER }
+		1142 = { add_core = PER }
+		1071 = { add_core = PER }
+		all_core = { remove_core = ASY }
+		TUR_893 = { add_core = ASY }
+		TUR_923 = { add_core = ASY }
+		901 = { add_core = ASY }
+		3428 = { add_core = ASY }
+		3325 = { add_core = ASY }
+		set_country_flag = PER_constitutional
+    }
+}
+
+country_event = {
+    id = 177024
+    title = "Synod convenes in $CAPITAL$"
+    desc = "177024DESC"
+    picture = "ASY_council"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "We will enter communion with the Greek Church."
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = PER_semiabsolute }
+			}
+			owner = {
+				PER_semiabsolute_reward_tt = {}
+				prestige = 10
+				any_pop = {
+					limit = { is_state_religion = yes }
+					literacy = 0.05
+				}
+				add_country_modifier = { name = PER_orthodox_alliance duration = -1 }
+			}
+		}
+		random_owned = {
+			limit = {
+				exists = BYZ
+			}
+			BYZ = { relation = { who = THIS value = 100 } }
+		}
+		random_owned = {
+			limit = {
+				exists = GRE
+			}
+			GRE = { relation = { who = THIS value = 100 } }
+		}
+		random_owned = {
+			limit = {
+				exists = PAP
+			}
+			PAP = { relation = { who = THIS value = -50 } }
+		}
+		random_owned = {
+			limit = {
+				exists = ITS
+			}
+			ITS = { relation = { who = THIS value = -50 } }
+		}
+		any_pop = {
+			limit = {
+				has_pop_religion = orthodox
+			}
+			militancy = -4
+			consciousness = -4
+		}
+		remove_country_modifier = ASY_nestorian_isolation
+		add_country_modifier = { name = religious_effort duration = 1825 }
+		clr_country_flag = ASY_took_church_decision
+		ai_chance = {
+			factor = 10
+			modifier = {
+                factor = 0
+				tag = PER
+                nationalvalue = nv_productivity
+            }
+			modifier = {
+                factor = 0
+				tag = PER
+                nationalvalue = nv_autocracy
+            }
+			modifier = {
+                factor = 100
+				in_sphere = BYZ
+            }
+			modifier = {
+                factor = 100
+				in_sphere = GRE
+            }
+		}
+    }
+	
+	option = {
+        name = "We will enter communion with the Roman Church."
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = PER_constitutional }
+			}
+			owner = {
+				PER_constitutional_reward_tt = {}
+				prestige = 10
+				plurality = 20
+				add_country_modifier = { name = PER_catholic_alliance duration = -1 }
+			}
+		}
+		random_owned = {
+			limit = {
+				exists = BYZ
+			}
+			BYZ = { relation = { who = THIS value = -100 } }
+		}
+		random_owned = {
+			limit = {
+				exists = GRE
+			}
+			GRE = { relation = { who = THIS value = -100 } }
+		}
+		random_owned = {
+			limit = {
+				exists = PAP
+			}
+			PAP = { relation = { who = THIS value = 100 } }
+		}
+		random_owned = {
+			limit = {
+				exists = ITS
+			}
+			ITS = { relation = { who = THIS value = 100 } }
+		}
+		any_pop = {
+			limit = {
+				has_pop_religion = catholic
+			}
+			militancy = -4
+			consciousness = -4
+		}
+		remove_country_modifier = ASY_nestorian_isolation
+		add_country_modifier = { name = religious_effort duration = 1825 }
+		clr_country_flag = ASY_took_church_decision
+		ai_chance = {
+			factor = 5
+			modifier = {
+                factor = 0
+				tag = PER
+                nationalvalue = nv_autocracy
+            }
+			modifier = {
+                factor = 0
+				tag = PER
+                nationalvalue = nv_order
+            }
+			modifier = {
+                factor = 0
+				vassal_of = BYZ
+            }
+			modifier = {
+                factor = 0
+				vassal_of = GRE
+            }
+		}
+    }
+	
+	option = {
+        name = "We will reaffirm the Nestorian theology and remain independent."
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = PER_absolute }
+			}
+			owner = {
+				PER_absolute_reward_tt = {}
+				prestige = 10
+				activate_technology = state_n_government
+				activate_technology = nationalism_n_imperialism
+				add_country_modifier = { name = PER_independent_nestorianism duration = -1 }
+			}
+		}
+		random_owned = {
+			limit = {
+				exists = BYZ
+			}
+			BYZ = { relation = { who = THIS value = -50 } }
+		}
+		random_owned = {
+			limit = {
+				exists = GRE
+			}
+			GRE = { relation = { who = THIS value = -50 } }
+		}
+		random_owned = {
+			limit = {
+				exists = PAP
+			}
+			PAP = { relation = { who = THIS value = -50 } }
+		}
+		random_owned = {
+			limit = {
+				exists = ITS
+			}
+			ITS = { relation = { who = THIS value = -50 } }
+		}
+		any_pop = {
+			limit = {
+				has_pop_religion = nestorian
+			}
+			militancy = -4
+			consciousness = -4
+		}
+		remove_country_modifier = ASY_nestorian_isolation
+		add_country_modifier = { name = religious_effort duration = 1825 }
+		clr_country_flag = ASY_took_church_decision
+		ai_chance = {
+			factor = 1
+			modifier = {
+                factor = 0
+				tag = PER
+                nationalvalue = nv_productivity
+            }
+			modifier = {
+                factor = 0
+				tag = PER
+                nationalvalue = nv_order
+            }
+			modifier = {
+                factor = 50
+				is_greater_power = yes
+            }
+			modifier = {
+                factor = 0
+				vassal_of = BYZ
+            }
+			modifier = {
+                factor = 0
+				vassal_of = GRE
+            }
+		}
+    }
+}
+
+country_event = {
+    id = 177025
+    title = "Unification of the Syrias?"
+    desc = "177025DESC"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "A strong ally is better than another troublesome province."
+		any_country = {
+			limit = {
+				tag = LBN
+				vassal_of = THIS
+			}
+			annex_to = THIS
+		}
+		any_owned = {
+			limit = {
+				is_core = LBN
+				NOT = { is_core = THIS }
+			}
+			secede_province = FROM
+		}
+		any_owned = {
+			limit = {
+				is_core = FROM
+				is_core = THIS
+			}
+			remove_core = FROM
+		}
+		FROM = { country_event = 177026 }
+		ai_chance = {
+			factor = 5
+			modifier = {
+                factor = 2
+				FROM = { is_greater_power = yes }
+				relation = { who = FROM value = 100 }
+            }
+			modifier = {
+                factor = 4
+				FROM = { in_sphere = THIS }
+            }
+			modifier = {
+                factor = 10
+				alliance_with = FROM
+				FROM = { ai = no }
+            }
+			modifier = {
+                factor = 0
+				NOT = { relation = { who = FROM value = 0 } }
+            }
+			modifier = {
+                factor = 0
+				897 = { is_core = THIS }
+            }
+		}
+    }
+	
+	option = {
+        name = "Asking for the entirety of Syria?! What audacity!"
+		FROM = { country_event = 177027 }
+		relation = { who = FROM value = -100 }
+		ai_chance = {
+			factor = 2
+		}
+    }
+}
+
+country_event = {
+    id = 177026
+    title = "The Syrias are united!"
+    desc = "The Greeks have accepted our plea for unification of the Aramaeans. We are now in control of both sides of the Euphrates!"
+    picture = "syria_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "What a wonderful ally we have."
+		relation = { who = FROM value = 100 }
+    }
+}
+
+country_event = {
+    id = 177027
+    title = "The Greeks keep Syria"
+    desc = "Despite our compelling arguments, the Greeks have refused to allow unification of the Aramaeans. They intend to keep Syria to fulfill whatever imperialist desires they have."
+    picture = "syria_map"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "We will take it by other means."
+    }
+}
+
+country_event = {
+    id = 177028
+    title = "Foundation of the University of $CAPITAL$"
+    desc = "177028DESC"
+    picture = "ASY_university_evt"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Fund the Social Sciences faculty."
+		treasury = -50000
+		tech_school = culture_tech_school
+    }
+	
+	option = {
+        name = "Fund the Economic Theory faculty."
+		treasury = -50000
+		tech_school = commerce_tech_school
+    }
+	
+	option = {
+        name = "Fund the Natural Sciences faculty."
+		treasury = -50000
+		tech_school = industrial_tech_school
+    }
+}
+
+country_event = {
+    id = 177029
+    title = "Resitance to the new education system"
+    desc = "177029DESC"
+    picture = "ASY_unrest"
+
+    trigger = {
+		OR = {
+			tag = ASY
+			tag = PER
+		}
+		has_country_flag = culture_conversion
+		NOT = { has_country_modifier = ASY_resitance_to_conversion }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+	option = {
+        name = "You may resist, but your children will not."
+		any_pop = {
+			limit = {
+				is_accepted_culture = no
+			}
+			militancy = 1
+			consciousness = 2
+		}
+		add_country_modifier = { name = ASY_resitance_to_conversion duration = -1 }
+    }
+}
+
+province_event = {
+    id = 177030
+    title = "Nationalism takes hold in $STATE$"
+    desc = "177030DESC"
+
+    trigger = {
+		OR = {
+			province_id = 3495
+			province_id = 1127
+			province_id = 1135
+			province_id = 1120
+			province_id = 1121
+		}
+		owner = {
+			OR = {
+				tag = ASY
+				tag = PER
+			}
+			has_country_modifier = ASY_resitance_to_conversion
+			invention = nostalgic_romanticism
+		}
+		OR = {
+			pop_majority_culture = turki
+			year = 1900
+		}
+		NOT = {
+			is_core = TUR
+		}
+    }
+	
+    mean_time_to_happen = {
+        days = 1440
+    }
+
+	option = {
+        name = "Terrible news for assimilation advocates."
+		add_core = TUR
+		add_province_modifier = { name = nationalist_agitation duration = 720 }
+		any_pop = { limit = { has_pop_culture = turki } militancy = 2 consciousness = 4 }
+		state_scope = {
+            any_owned = {
+                add_core = TUR
+				add_province_modifier = { name = nationalist_agitation duration = 720 }
+				any_pop = { limit = { has_pop_culture = turki } militancy = 2 consciousness = 4 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = 177031
+    title = "Birth of Arab Nationalism"
+    desc = "177031DESC"
+	picture = "arab_nationalists"
+
+    trigger = {
+		OR = {
+			tag = ASY
+			tag = PER
+		}
+		has_country_modifier = ASY_resitance_to_conversion
+		invention = nostalgic_romanticism
+		NOT = { has_country_flag = ASY_arab_nationalism }
+    }
+	
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+        days = 3650
+		modifier = {
+            factor = 0.1
+            exists = ARU
+        }
+		modifier = {
+            factor = 0.5
+            year = 1890
+        }
+		modifier = {
+            factor = 0.1
+            year = 1900
+        }
+    }
+
+	option = {
+        name = "We defeated them once, we will defeat them again if needed."
+		any_pop = { limit = { has_pop_culture = mashriqi } militancy = 2 consciousness = 4 }
+		any_pop = { limit = { has_pop_culture = bedouin } militancy = 2 consciousness = 4 }
+		TUR_931 = { add_core = IRQ }
+		TUR_935 = { add_core = IRQ }
+		3278 = { add_core = IRQ }
+		3404 = { add_core = IRQ }
+		931 = { add_core = IRQ }
+		3300 = { add_core = SYR }
+		924 = { add_core = SYR }
+		3405 = { add_core = SYR }
+		2321 = { add_core = SYR }
+		EGY_897 = { add_core = SYR }
+		EGY_903 = { add_core = SYR }
+		any_owned = {
+			limit = {
+				OR = {
+					is_core = IRQ
+					is_core = SYR
+				}
+			}
+			add_province_modifier = { name = nationalist_agitation duration = 720 }
+		}
+		set_country_flag = ASY_arab_nationalism
+    }
+}
+
+country_event = {
+    id = 177032
+    title = "Missionary rebirth in the Assyrian Church"
+    desc = "177032DESC"
+	picture = "ASY_missionaries"
+
+    trigger = {
+		OR = {
+			AND = {
+				tag = ASY
+				owns = 926
+			}
+			tag = PER
+		}
+    }
+	
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+        days = 365
+    }
+
+	option = {
+        name = "The Eastern Martyrs smile at us!"
+		add_country_modifier = { name = religious_effort duration = 3650 }
+		any_pop = {
+			limit = {
+				is_state_religion = no
+			}
+			consciousness = 1
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = PER_absolute
+				}
+			}
+			owner = { new_decisions_tt = {} set_country_flag = PER_sword_and_fire_available }
+		}
     }
 }

@@ -311,6 +311,14 @@ country_event = {
 			}
 			government = prussian_constitutionalism
 		}
+		any_country = {
+			limit = {
+				tag = ASY
+				has_country_flag = ASY_iran_available
+				year = 1842
+			}
+			clr_country_flag = ASY_iran_available
+		}
 		#KOMNENIAD: reused GFM colonial gov system
 		#Alaska
 		any_country = {
@@ -9297,6 +9305,95 @@ country_event = {
 			}
 			set_global_flag = pula_rename_italian
 			770 = { change_province_name = "Pola" }
+		}
+		#Kermanshah
+		any_country = {
+			limit = {
+				owns = 3495
+				OR = {
+					primary_culture = assyrian
+					primary_culture = syriac
+				}
+				NOT = { has_global_flag = aramaic_kermanshah }
+			}
+			set_global_flag = aramaic_kermanshah
+			3495 = {
+				state_scope = { change_region_name = "Kermanšah" }
+			}
+			1117 = { change_province_name = "Sinna" }
+			1119 = { change_province_name = "Saymara" }
+		}
+		any_country = {
+			limit = {
+				owns = 3495
+				NOT = {
+					primary_culture = assyrian
+					primary_culture = syriac
+				}
+				has_global_flag = aramaic_kermanshah
+			}
+			clr_global_flag = aramaic_kermanshah
+			3495 = {
+				state_scope = { change_region_name = "Kordestan" }
+			}
+			1117 = { change_province_name = "Sanandaj" }
+			1119 = { change_province_name = "Ilam" }
+		}
+		#Mesopotamia
+		any_country = {
+			limit = {
+				owns = 926
+				owns = 932
+				owns = 935
+				OR = {
+					is_culture_group = arab
+					is_culture_group = turko_semitic
+				}
+				has_global_flag = assyrian_mesopotamia
+			}
+			clr_global_flag = assyrian_mesopotamia
+			926 = { state_scope = { change_region_name = "Baghdad" } }
+			932 = { state_scope = { change_region_name = "Basra" } }
+			3389 = { change_province_name = "Haditha" }
+			3291 = { change_province_name = "Tikrit" }
+			927 = { change_province_name = "Fallujah" }
+			934 = { change_province_name = "Hillah" }
+			930 = { change_province_name = "al-Mada'in" }
+			929 = { change_province_name = "Najaf" }
+			3296 = { change_province_name = "Baqubah" }
+			3355 = { change_province_name = "Samarra" }
+			925 = { change_province_name = "Sulaymaniah" }
+			3407 = { change_province_name = "Maysan" }
+			3290 = { change_province_name = "as-Samawah" }
+			1131 = { change_province_name = "Ahvaz" }
+			3351 = { change_province_name = "Mahshahr" }
+			935 = { change_province_name = "Kuwait" }
+		}
+		any_country = {
+			limit = {
+				owns = 926
+				owns = 932
+				owns = 935
+				has_country_flag = ASY_assyrian_mesopotamia
+				NOT = { has_global_flag = assyrian_mesopotamia }
+			}
+			926 = { state_scope = { change_region_name = "Beth Aramaye" } }
+			932 = { state_scope = { change_region_name = "Maišan" } }
+			3389 = { change_province_name = "Hadatha" }
+			3291 = { change_province_name = "Tagrit" }
+			927 = { change_province_name = "Ballgutha" }
+			934 = { change_province_name = "Hilla" }
+			930 = { change_province_name = "Qtespon" }
+			929 = { change_province_name = "Baniqia" }
+			3296 = { change_province_name = "Bet Ya'qub" }
+			3355 = { change_province_name = "Sumra" }
+			925 = { change_province_name = "Mazamua" }
+			3407 = { change_province_name = "Maišan" }
+			3290 = { change_province_name = "Samawa" }
+			1131 = { change_province_name = "Beth Huzaye" }
+			3351 = { change_province_name = "Mašara" }
+			935 = { change_province_name = "Beth Qatraye" }
+			set_global_flag = assyrian_mesopotamia
 		}
 		
 		ETH = { change_variable = { which = ETH_provinces_ransacked value = -2 } }

@@ -3,5 +3,5 @@ controller = KND
 add_core = AFG
 trade_goods = timber
 life_rating = 35
-terrain = jalalabad
+terrain = montane_forest
 add_core = KND

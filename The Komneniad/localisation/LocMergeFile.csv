@@ -875,7 +875,7 @@ formosan;Formosan;;;;;;;;;;;;;
 mazanderani;Caspian;;;;;;;;;;;;;
 talysh;Talysh;;;;;;;;;;;;;
 beta_israeli;Beta Israeli;;;;;;;;;;;;;
-qashqai;Iranian Turkoman;;;;;;;;;;;;;
+qashqai;Turki;;;;;;;;;;;;;
 afro_dutch;Afro-Germanic;;;;;;;;;;;;;
 parsi;Parsi;;;;;;;;;;;;;
 luri;Luri;;;;;;;;;;;;;
@@ -2011,7 +2011,7 @@ rename_artois_FRA_desc;The region of Artois is finally back in $COUNTRY_ADJ$ han
 build_neuschwanstein_title;The Neuschwanstein Castle;;;;;;;;;;;;;
 build_neuschwanstein_desc;The Neuschwanstein Castle is a nineteenth-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau. The palace was commissioned paid out of his personal fortune by Ludwig II of Bavaria, "The Swan King", as a retreat and as a homage to Richard Wagner. The palace was intended as a personal refuge for the reclusive sovereign: it is said that from his bedroom in Hohenschwangau, Ludwig trained a telescope on a ridge to keep an eye on Neuschwanstein as it was being constructed.;;;;;;;;;;;;;
 EVTNAME110082;Smuggle Tea to $COUNTRY$;;;;;;;;;;;;;
-EVTDESC110082;After a failed attempt to cultivate tea in $COUNTRY$ in 1882 with seeds from India, Prince Mohammad Mirza known as "Kashef Al Saltaneh" who was born in Lahijan, imported Indian tea and started its cultivation in Lahijan. Kashef, who was the first mayor of Tehran and an Iranian ambassador to India under British rule, knew that the British would not allow him to learn about the secrets of tea production, as it was it is their biggest business in India. So being fluent in French, the prince pretended to be a French laborer and started to work in the tea plantations and factories to learn how to produce tea. Ultimately his plan was to take back some samples of this tea to $COUNTRY$ to cultivate. He was successful in this endeavor only because of his diplomatic immunity which stopped the British from searching his secretly stashed sample. At the time, Kashef brought 3000 saplings into his country from the Northern part of India, Kangra and he started the cultivation in the region Gilan, south of the Caspian Sea. The climate there was well suited for tea cultivation, and the tea industry quickly expanded in Gilan and Mazanderan region.;;;;;;;;;;;;;
+EVTDESC110082;Tea production is one of the biggest businesses of India, and we would not be given the secrets of it freely. We will send agents to disguise themselves as plantation workers, who will bring saplings from the Northern part of India, so we can start the cultivation in Gilan, south of the Caspian Sea. The climate there is well suited for tea cultivation, and the tea industry will quickly expand in Gilan and Mazanderan regions.;;;;;;;;;;;;;
 EVT110082OPTA;A wonderful initiative!;;;;;;;;;;;;;
 EVT110082OPTB;No thanks.;;;;;;;;;;;;;
 EVTNAME110083;A Trip To Europe;;;;;;;;;;;;;

@@ -1,4 +1,4 @@
-ZND = { value = 75 }
+TUR = { value = -50 }
 MGT = { value = -200 }
 
 army = {

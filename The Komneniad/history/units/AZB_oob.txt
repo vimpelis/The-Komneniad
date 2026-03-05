@@ -1,0 +1,46 @@
+TUR = {
+    value = -200
+	truce_until = 1838.1.1
+}
+MGT = { value = -200 }
+ASY = { value = -50 }
+RUS = { value = -200 }
+ARM = { value = -100 }
+
+army = {
+    name = "1st Army"
+    location = 1108
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1108
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1108
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1108
+    }
+
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3504
+    }
+	
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1111
+    }
+	
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1123
+    }
+}

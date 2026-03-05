@@ -1,9 +1,8 @@
 owner = BYZ
 controller = BYZ
 add_core = BYZ
-trade_goods = fish
+trade_goods = tobacco
 life_rating = 35
 terrain = forest_hills
 add_core = ANT
 add_core = PNT
-state_building = { level = 1 building = steel_factory upgrade = yes } 

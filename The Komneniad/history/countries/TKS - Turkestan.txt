@@ -1,6 +1,6 @@
 capital = 1195
 primary_culture = uzbek
-culture = turkmen
+culture = turki
 culture = kirgiz
 culture = kazak
 culture = uighur

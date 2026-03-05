@@ -2,7 +2,6 @@ owner = ASY
 controller = ASY
 add_core = ASY
 add_core = KDS
-add_core = TSI
 trade_goods = wool
 terrain = dryhills
 life_rating = 35 

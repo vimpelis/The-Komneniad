@@ -2100,13 +2100,6 @@ province_event = {
             factor = 1.1
             average_militancy = 5
         }
-        modifier = {
-            factor = 2
-            owner = {
-                ai = yes
-                primary_culture = turkish
-            }
-        }
     }
 
     option = {

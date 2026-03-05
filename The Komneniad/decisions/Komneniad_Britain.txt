@@ -2,6 +2,10 @@ political_decisions = {
 	break_caerlleon = {
 		picture = gtfo
 		potential = {
+			OR = {
+				tag = CLT
+				tag = DAN
+			}
 			has_country_flag = caerlleon_member
 		}
 		allow = {
@@ -55,10 +59,10 @@ political_decisions = {
 			NOT = { has_country_flag = CLT_invade_midlands }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
 			NOT = { has_country_flag = caerlleon_member }
+			war = no
 		}
 		effect = {
 			badboy = 12
@@ -83,9 +87,9 @@ political_decisions = {
 			NOT = { has_country_flag = CLT_unify_britain }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 20
@@ -111,9 +115,9 @@ political_decisions = {
 			NOT = { has_country_flag = CLT_peace_on_the_isles }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 30
@@ -132,11 +136,11 @@ political_decisions = {
 			NOT = { has_country_flag = DAN_ask_for_NZ }
 		}
 		allow = {
-			war = no
 			OR = {
 				medicine = 1
 				year = 1839
 			}
+			war = no
 		}
 		effect = {
 			DEN = { country_event = 157002 }
@@ -152,8 +156,8 @@ political_decisions = {
 			NOT = { has_country_flag = DAN_southeastern_cession }
 		}
 		allow = {
-			war = no
 			ideological_thought = 1
+			war = no
 		}
 		effect = {
 			badboy = 4
@@ -182,9 +186,9 @@ political_decisions = {
 			NOT = { has_country_flag = DAN_integrate_london }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 2
@@ -211,10 +215,10 @@ political_decisions = {
 			NOT = { has_country_flag = DAN_claim_britain }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
 			NOT = { has_country_flag = caerlleon_member }
+			war = no
 		}
 		effect = {
 			badboy = 15
@@ -239,9 +243,9 @@ political_decisions = {
 			NOT = { has_country_flag = DAN_unify_britain }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 15
@@ -266,9 +270,9 @@ political_decisions = {
 			NOT = { has_country_flag = DAN_integrate_celts }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 20
@@ -286,10 +290,10 @@ political_decisions = {
 			NOT = { has_country_flag = ENG_claim_north }
 		}
 		allow = {
-			war = no
 			is_vassal = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 15

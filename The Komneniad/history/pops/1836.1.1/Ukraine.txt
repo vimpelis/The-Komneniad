@@ -305,19 +305,7 @@
         religion = orthodox
         size = 3500
     }
-
-    farmers = {
-        culture = turkish
-        religion = sunni
-        size = 800
-    }
-
-    serfs = {
-        culture = turkish
-        religion = sunni
-        size = 500
-    }
-
+	
     clergymen = {
         culture = ashkenazi
         religion = jewish
@@ -469,25 +457,25 @@
     }
 
     clergymen = {
-        culture = turkish #gagauz
+        culture = tatar #gagauz
         religion = orthodox
         size = 100
     }
 
     artisans = {
-        culture = turkish
+        culture = tatar
         religion = orthodox
         size = 150
     }
 
     soldiers = {
-        culture = turkish
+        culture = tatar
         religion = orthodox
         size = 100
     }
 
     farmers = {
-        culture = turkish
+        culture = tatar
         religion = orthodox
         size = 2775
     }

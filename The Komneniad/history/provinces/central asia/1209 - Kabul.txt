@@ -3,6 +3,6 @@ controller = KND
 add_core = AFG
 trade_goods = grain
 life_rating = 40
-terrain = kabul
+terrain = dry_mountains
 fort = 1
 add_core = KND

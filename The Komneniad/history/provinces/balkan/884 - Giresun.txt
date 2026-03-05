@@ -1,7 +1,7 @@
 owner = BYZ
 controller = BYZ
 add_core = BYZ
-trade_goods = tobacco
+trade_goods = fruit
 life_rating = 35
 terrain = montane_forest
 add_core = ANT

@@ -1,198 +1,194 @@
 leader = {
     name = "Mir Hussein bin Haydar"
-    date = 1826.1.1
+    date = 1821.1.1
     type = land
     personality = defence_2.1
     background = attack_4.1
     prestige = 0.7
 }
+TUR = { value = -200 }
 
 army = {
     name = "1st Army"
-    location = 1118
+    location = 1122
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 1192
+        home = 1107
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 1192
+        home = 1124
     }
 	regiment = {
         name = "3rd Infantry Regiment"
         type = infantry
-        home = 1191
+        home = 1125
     }
     regiment = {
         name = "4th Infantry Regiment"
         type = infantry
-        home = 1191
+        home = 1121
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 1129
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = cavalry
-        home = 3441
+        home = 1116
     }
     regiment = {
         name = "2nd Cavalry Regiment"
         type = cavalry
-        home = 3441
-    }
-	regiment = {
-        name = "3rd Cavalry Regiment"
-        type = cavalry
-        home = 1198
+        home = 3501
     }
 	regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 1121
+        home = 1130
     }
 }
 
 army = {
     name = "2nd Army"
-    location = 1125
+    location = 1128
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 1124
+        home = 1139
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 1125
+        home = 1140
     }
 	regiment = {
         name = "3rd Infantry Regiment"
         type = infantry
-        home = 1129
+        home = 1148
     }
     regiment = {
         name = "4th Infantry Regiment"
         type = infantry
-        home = 1130
+        home = 1214
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 3528
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = cavalry
-        home = 1148
+        home = 1212
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1212
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 1147
-    }
-	regiment = {
-        name = "2nd Artillery Regiment"
-        type = artillery
-        home = 3528
-    }
-	regiment = {
-        name = "3rd Artillery Regiment"
-        type = artillery
-        home = 1212
-    }
-	regiment = {
-        name = "4th Artillery Regiment"
-        type = artillery
-        home = 2519
+        home = 3354
     }
 }
 
 army = {
-    name = "1st Army"
+    name = "3rd Army"
     location = 1130
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 1198
+        home = 1147
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 1198
+        home = 3514
     }
 	regiment = {
         name = "3rd Infantry Regiment"
         type = infantry
-        home = 1198
+        home = 2519
     }
     regiment = {
         name = "4th Infantry Regiment"
         type = infantry
-        home = 1199
+        home = 2519
+    }
+	regiment = {
+        name = "5th Infantry Regiment"
+        type = infantry
+        home = 3516
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = cavalry
-        home = 1199
+        home = 1211
     }
     regiment = {
         name = "2nd Cavalry Regiment"
-        type = cavalry
-        home = 3522
-    }
-	regiment = {
-        name = "3rd Cavalry Regiment"
         type = cavalry
         home = 3519
     }
 	regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 3520
+        home = 1147
     }
 }
 
 army = {
-    name = "1st Army"
-    location = 1140
+    name = "4th Army"
+    location = 1139
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 3521
+        home = 3522
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 3501
+        home = 3521
     }
 	regiment = {
         name = "3rd Infantry Regiment"
         type = infantry
-        home = 3500
+        home = 3520
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = cavalry
-        home = 3516
+        home = 1199
     }
     regiment = {
         name = "2nd Cavalry Regiment"
         type = cavalry
-        home = 2519
+        home = 1199
     }
 	regiment = {
         name = "3rd Cavalry Regiment"
         type = cavalry
-        home = 1212
+        home = 1199
     }
 	regiment = {
         name = "4th Cavalry Regiment"
         type = cavalry
-        home = 1212
+        home = 1198
     }
 	regiment = {
         name = "5th Cavalry Regiment"
         type = cavalry
-        home = 1211
+        home = 1198
     }
 	regiment = {
         name = "6th Cavalry Regiment"
         type = cavalry
-        home = 1214
+        home = 1198
     }
 }

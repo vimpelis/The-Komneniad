@@ -3,6 +3,7 @@ primary_culture = greek
 culture = anatolian
 culture = pontic
 culture = griko
+culture = rumi
 religion = orthodox
 government = absolute_empire
 plurality = 0.0

@@ -119,11 +119,7 @@ country_event = {
     trigger = {
 		tag = FRI
 		year = 1843
-		OR = {
-			government = absolute_monarchy
-			government = hms_government
-			government = prussian_constitutionalism
-		}
+		government = colonial_company
     }
 
     fire_only_once = yes

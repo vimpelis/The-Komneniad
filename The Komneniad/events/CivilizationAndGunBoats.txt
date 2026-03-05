@@ -92,8 +92,8 @@ country_event = {
                 is_vassal = yes
             }
             modifier = {
-                 factor = 1.5
-                 nationalvalue = nv_tradition
+                factor = 1.5
+                nationalvalue = nv_tradition
             }
 			modifier = {
                 factor = 0
@@ -106,6 +106,8 @@ country_event = {
 					tag = GNG
 					tag = FJN
 					tag = IRO
+					tag = ASY
+					tag = LBN
 				}	
             }
         }

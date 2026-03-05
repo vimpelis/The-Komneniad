@@ -942,12 +942,12 @@ urgell_channels_construction = {
 }
 
 small_immigration_boom = {
-    global_immigrant_attract = 0.5
+    global_immigrant_attract = 0.25
     icon = 17
 }
 
 land_of_opportunity = {
-    global_immigrant_attract = 0.25
+    global_immigrant_attract = 0.15
 	global_assimilation_rate = 0.5
     icon = 13
 }
@@ -961,7 +961,7 @@ swiss_banking = {
 freedom_of_religion = {
     core_pop_militancy_modifier = -0.01
     global_pop_consciousness_modifier = 0.01
-    global_immigrant_attract = 0.1
+    global_immigrant_attract = 0.05
     icon = 5
 }
 
@@ -1804,7 +1804,7 @@ silver_rush = {
 }
 
 witwatersrand_gold_rush = {
-    global_immigrant_attract = 0.5
+    global_immigrant_attract = 0.25
     prestige = 0.01
     icon = 11
 }
@@ -2586,7 +2586,7 @@ vancouver_boom = {
 }
 
 america_new_world = {
-    global_immigrant_attract = 0.5
+    global_immigrant_attract = 0.2
     global_population_growth = 0.01
 	assimilation_rate = 0.5
     icon = 17
@@ -4131,7 +4131,7 @@ withdrew_from_geneva_convention = {
 }
 
 slow_immigration_boom = {
-    global_immigrant_attract = 0.25
+    global_immigrant_attract = 0.1
     icon = 17
 }
 
@@ -5573,4 +5573,76 @@ BRB_states_resistance = {
 	war_exhaustion = 0.1
     pop_militancy_modifier = 0.05
     icon = 6
+}
+
+ASY_persian_refugees = {
+	research_points_modifier = 0.05
+	self_unciv_economic_modifier = -0.05
+	self_unciv_military_modifier = -0.1
+    icon = 17
+}
+
+ASY_conquest_of_persia_modf = {
+	tax_efficiency = 0.15
+	land_organisation = 0.1
+	leadership_modifier = 0.1
+	mobilisation_size = 0.2
+	research_points_on_conquer = -0.25
+    education_efficiency_modifier = -0.25
+	war_exhaustion = 0.5
+    icon = 16
+}
+
+ASY_nestorian_isolation = {
+	prestige = -0.2
+	diplomatic_points_modifier = -0.25
+    icon = 8
+}
+
+ASY_university_1 = {
+	research_points_modifier = 0.1
+	education_efficiency_modifier = 0.15
+    icon = 3
+}
+
+ASY_university_2 = {
+	research_points_modifier = 0.1
+	education_efficiency_modifier = 0.15
+    icon = 3
+}
+
+ASY_resitance_to_conversion = {
+	badboy = 0.02
+	assimilation_rate = -0.5
+	non_accepted_pop_militancy_modifier = 0.01
+	non_accepted_pop_consciousness_modifier = 0.01
+    icon = 6
+}
+
+PER_sword_and_fire_modf = {
+	badboy = 0.1
+	non_accepted_pop_militancy_modifier = 0.05
+	non_accepted_pop_consciousness_modifier = 0.05
+    icon = 6
+}
+
+PER_orthodox_alliance = {
+	pop_militancy_modifier = -0.01
+	education_efficiency_modifier = 0.1
+	land_organisation = 0.1
+    icon = 7
+}
+
+PER_catholic_alliance = {
+	pop_militancy_modifier = -0.01
+	research_points_modifier = 0.2
+	diplomatic_points_modifier = 0.1
+    icon = 7
+}
+
+PER_independent_nestorianism = {
+	pop_militancy_modifier = -0.05
+	war_exhaustion = -0.25
+	leadership_modifier = 0.25
+    icon = 7
 }

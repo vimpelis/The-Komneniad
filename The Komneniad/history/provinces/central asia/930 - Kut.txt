@@ -1,6 +1,7 @@
-owner = ZND
-controller = ZND
+owner = TUR
+controller = TUR
+add_core = TUR
 add_core = IRQ
 trade_goods = grain
 life_rating = 35
-add_core = ZND
+terrain = farmlands

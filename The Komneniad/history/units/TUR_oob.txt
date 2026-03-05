@@ -1,0 +1,168 @@
+leader = {
+    name = "Ali II Benderlid"
+    date = 1829.1.1
+    type = land
+    personality = defence_2.1
+    background = attack_minus_1.1
+    prestige = 0.2
+}
+MGT = { value = -200 }
+
+army = {
+    name = "1st Army"
+    location = 1127
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1117
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 3495
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1119
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 3407
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1120
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1127
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1127
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 1122
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1128
+    }
+}
+
+army = {
+    name = "2nd Army"
+    location = 1135
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1137
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1135
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 1135
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 1135
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 2643
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1122
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1120
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 925
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 1131
+    }
+}
+
+army = {
+    name = "3rd Army"
+    location = 3352
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 927
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 3292
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 929
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 930
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 933
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 3351
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 926
+    }
+	regiment = {
+        name = "4th Cavalry Regiment"
+        type = cavalry
+        home = 932
+    }
+}
+
+
+navy = {
+    name = "1st Navy"
+    location = 932
+    ship = {
+        name = "Frigate"
+        type = frigate
+    }
+    ship = {
+        name = "Frigate"
+        type = frigate
+    }
+}

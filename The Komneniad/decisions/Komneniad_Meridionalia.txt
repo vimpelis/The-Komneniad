@@ -6,11 +6,11 @@ political_decisions = {
 			NOT = { has_country_flag = AST_claim_new_holland }
 		}
 		allow = {
-			war = no
 			OR = {
 				ENG_2497 = { owned_by = THIS }
 				state_n_government = 1
 			}
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -51,13 +51,13 @@ political_decisions = {
 			NOT = { has_country_flag = AST_claim_occitania }
 		}
 		allow = {
-			war = no
 			OR = {
 				government = presidential_dictatorship
 				government = absolute_monarchy
 				government = prussian_constitutionalism
 			}
 			rank = 12
+			war = no
 		}
 		effect = {
 			badboy = 24.5
@@ -82,8 +82,8 @@ political_decisions = {
 			NOT = { exists = OCC }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 50
@@ -110,11 +110,11 @@ political_decisions = {
 			}
 		}
 		allow = {
-			war = no
 			OR = {
 				year = 1850
 				total_pops = 250000
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -160,8 +160,8 @@ political_decisions = {
 			has_country_flag = AST_claim_new_holland
 		}
 		allow = {
-			war = no
 			2507 = { empty = no }
+			war = no
 		}
 		effect = {
 			prestige = 5

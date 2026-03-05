@@ -61,11 +61,11 @@ political_decisions = {
 			war = no
 			OR = {
 				AND = {
-					902 = { average_consciousness = 5 }
-					897 = { average_consciousness = 5 }
-					913 = { average_consciousness = 5 }
+					902 = { average_consciousness = 6 }
+					897 = { average_consciousness = 6 }
+					913 = { average_consciousness = 6 }
 				}
-				average_consciousness = 4
+				average_consciousness = 5
 				land_reform = yes_land_reform
 				year = 1855
 			}
@@ -98,12 +98,12 @@ political_decisions = {
 			NOT = { has_country_flag = EGY_annex_uqaydat }
 		}
 		allow = {
-			war = no
 			OR = {
 				land_reform = yes_land_reform
 				year = 1855
 				NOT = { owns = 897 }
 			}
+			war = no
 		}
 		effect = {
 			UQA = {

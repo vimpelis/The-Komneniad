@@ -40,10 +40,10 @@ political_decisions = {
 			NOT = {	has_country_flag = ILD_beyond_the_arctic_circle }
 		}
 		allow = {
-			war = no
 			is_vassal = no
 			nationalism_n_imperialism = 1
 			owns = 11
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -70,8 +70,8 @@ political_decisions = {
 			9 = { empty = yes }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -91,9 +91,9 @@ political_decisions = {
 			39 = { empty = yes }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			breech_loaded_rifles = 1
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -112,8 +112,8 @@ political_decisions = {
 			NOT = { has_global_flag = IRO_overlord_annex }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			badboy = 7.5
@@ -240,9 +240,9 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_kill_ayllonia }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 20
@@ -270,9 +270,9 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_take_AYL_borderlands }
 		}
 		allow = {
-			war = no
 			state_n_government = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -297,9 +297,9 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_accept_ayllonians }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			prestige = 10
@@ -317,9 +317,9 @@ political_decisions = {
 			NOT = { OR = { has_country_flag = VRI_expand_frontier 178 = { is_core = AYL } } }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 10
@@ -345,8 +345,8 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_manifest_destiny }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -370,8 +370,8 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_liberate_acadia }
 		}
 		allow = {
-			war = no
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 18
@@ -396,9 +396,9 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_great_lakes }
 		}
 		allow = {
-			war = no
 			revolution_n_counterrevolution = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 20
@@ -422,9 +422,9 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_ildathach }
 		}
 		allow = {
-			war = no
 			military_directionism = 1
 			all_core = { owned_by = THIS }
+			war = no
 		}
 		effect = {
 			badboy = 24.5
@@ -450,11 +450,11 @@ political_decisions = {
 			NOT = { has_country_flag = VRI_liberate_antillean }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
 			owns = 2209
 			owns = 2217
 			owns = 2222
+			war = no
 		}
 		effect = {
 			add_accepted_culture = afro_latino
@@ -476,7 +476,6 @@ political_decisions = {
 			115 = { empty = yes }
 		}
 		allow = {
-			war = no
 			OR = {
 				state_n_government = 1
 				AND = {
@@ -484,6 +483,7 @@ political_decisions = {
 					year = 1850
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -505,7 +505,6 @@ political_decisions = {
 			32 = { empty = yes }
 		}
 		allow = {
-			war = no
 			owns = 115
 			OR = {
 				inorganic_chemistry = 1
@@ -514,6 +513,7 @@ political_decisions = {
 					year = 1855
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -536,7 +536,6 @@ political_decisions = {
 			116 = { empty = yes }
 		}
 		allow = {
-			war = no
 			OR = {
 				nationalism_n_imperialism = 1
 				AND = {
@@ -544,6 +543,7 @@ political_decisions = {
 					year = 1860
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -570,7 +570,6 @@ political_decisions = {
 			30 = { empty = yes }
 		}
 		allow = {
-			war = no
 			OR = {
 				nationalism_n_imperialism = 1
 				AND = {
@@ -578,6 +577,7 @@ political_decisions = {
 					year = 1860
 				}
 			}
+			war = no
 		}
 		effect = {
 			prestige = 5
@@ -619,8 +619,8 @@ political_decisions = {
 	ACA_independence = {
 		picture = organize_acadia
 		potential = {
-			has_country_flag = ACA_rush_over
 			any_owned_province = { is_core = ACA }
+			has_country_flag = ACA_rush_over
 			NOT = { exists = ACA }
 		}
 		allow = {

@@ -1,10 +1,10 @@
 capital = 923
 primary_culture = assyrian
 religion = nestorian
-government = absolute_monarchy
+government = theocracy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.09
+literacy = 0.10
 civilized = no
 prestige = 5
 
@@ -40,8 +40,7 @@ colonial_policy = no_colonies
 
 set_country_flag = orthodox_country
 
-ruling_party = ARM_conservative
-last_election = 1834.1.1
+ruling_party = ASY_conservative
 upper_house = {
     fascist = 0
     liberal = 35
@@ -58,12 +57,23 @@ foreign_artillery = yes_foreign_artillery
 monetary_reform = yes_monetary_reform
 education_reform = yes_education_reform
 finance_reform = yes_finance_reform
-army_schools = yes_army_schools
 land_reform = yes_land_reform
 
 #Technologies
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-army_command_principle = 1
 
 oob = "ASY_oob.txt"
+
+govt_flag = {
+	government = absolute_monarchy
+	flag = theocracy
+}
+govt_flag = {
+	government = prussian_constitutionalism
+	flag = theocracy
+}
+govt_flag = {
+	government = hms_government
+	flag = theocracy
+}

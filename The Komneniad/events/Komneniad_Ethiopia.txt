@@ -123,7 +123,6 @@ country_event = {
 
     option = {
         name = "The pendulum swings, unbothered."
-		set_country_flag = ETH_couped
 		clr_country_flag = ETH_search_in_progress
 		clr_country_flag = ETH_active_insurgency
 		any_pop = { militancy = 2 }
@@ -774,6 +773,14 @@ country_event = {
 		remove_country_modifier = ETH_regency_lvl_6
 		remove_country_modifier = ETH_regency_lvl_7
 		clr_country_flag = ETH_power_struggle
+		clr_country_flag = ETH_expansion_unlocked
+		clr_country_flag = ETH_kill_jimmy
+		clr_country_flag = ETH_invade_somalia
+		clr_country_flag = ETH_wild_oromos
+		clr_country_flag = ETH_integrate_afar
+		clr_country_flag = ETH_invade_nubia
+		clr_country_flag = ETH_invade_kordofan
+		clr_country_flag = ETH_invade_egypt
 		set_global_flag = second_zemene_mesafint
 	}
 }

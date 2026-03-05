@@ -644,6 +644,11 @@ country_event = {
 		LIB = {
 			prestige = 5
 			government = democracy
+			political_reform = universal_weighted_voting
+			political_reform = non_secret_ballots
+			political_reform = population_equal_weight
+			political_reform = yes_meeting
+			political_reform = free_press
 			1813 = {
 				any_pop = {
 					limit = {
@@ -664,6 +669,7 @@ country_event = {
 		}
 		relation = { who = LIB value = 200 }
 		diplomatic_influence = { who = LIB value = 200 }
+		ai_chance = { factor = 2 }
     }
 	
 	option = {
@@ -673,6 +679,11 @@ country_event = {
 		LIB = {
 			prestige = 5
 			government = democracy
+			political_reform = universal_weighted_voting
+			political_reform = non_secret_ballots
+			political_reform = population_equal_weight
+			political_reform = yes_meeting
+			political_reform = free_press
 			1813 = {
 				any_pop = {
 					limit = {
@@ -696,6 +707,7 @@ country_event = {
 			attacker_goal = { casus_belli = conquest_any }
 			defender_goal = { casus_belli = status_quo }
 		}
+		ai_chance = { factor = 8 }
     }
 	
 	option = {
@@ -705,6 +717,11 @@ country_event = {
 		LIB = {
 			prestige = 5
 			government = democracy
+			political_reform = universal_weighted_voting
+			political_reform = non_secret_ballots
+			political_reform = population_equal_weight
+			political_reform = yes_meeting
+			political_reform = free_press
 			1813 = {
 				any_pop = {
 					limit = {
@@ -726,5 +743,6 @@ country_event = {
 		relation = { who = LIB value = 200 }
 		diplomatic_influence = { who = LIB value = 200 }
 		change_tag_no_core_switch = LIB
+		ai_chance = { factor = 0 }
     }
 }

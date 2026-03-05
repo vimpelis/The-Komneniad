@@ -1,8 +1,8 @@
-name = "4th Uzbeki-Zandiyeh War"
+name = "Manghit Conquest of Iran"
 
 1836.1.1 = {
 	add_attacker = MGT
-	add_defender = ZND
+	add_defender = TUR
 	
 	# actor
 	# receiver
@@ -12,13 +12,13 @@ name = "4th Uzbeki-Zandiyeh War"
 	war_goal = {
 		casus_belli = conquest
 		actor = MGT
-		receiver = ZND
+		receiver = TUR
 	}
 
 	war_goal = {
 		casus_belli = acquire_all_cores
-		country = ZND
-		actor = ZND
+		country = TUR
+		actor = TUR
 		receiver = MGT
 	}
 
@@ -26,5 +26,5 @@ name = "4th Uzbeki-Zandiyeh War"
 
 1837.1.1 = {
 	rem_attacker = MGT
-	rem_defender = ZND  
+	rem_defender = TUR  
 }

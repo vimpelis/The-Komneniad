@@ -1178,7 +1178,7 @@ turko_semitic = {
     leader = arab
 
     unit = OttomanGC
-    turkish = {
+    rumi = {
         color = { 250 55 55 }
         first_names = {
             Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif
@@ -1197,23 +1197,35 @@ turko_semitic = {
         }
     }
 	#turko-persian
-    qashqai = {
-        color = { 17 144 192 }
+    turki = {
+        color = { 165 160 0 }
         first_names = {
-            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
-            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
-            Mahmoud Massoud Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
-            "Naser ed-Din" Nosret Reza
+            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
+            Mahmoud Massoud Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin "Naser ed-Din" Nosret Reza
+			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif Bahaeddin Bekir Cemal Cevad Celaleddin Cevdet Daud Edhem Emin Enver Fahri Fevzi
+			Ferid Fuat Hafiz Hamza Halil Halim Hasan Hayrullah Husrev Ibrahim Iskender Ismet Izzet Kamil Kazim Kemal Lutfi Mahmut Mehmet Mithat Muhtar
+			Murat Musa Mustafa Namik Nazim Nurettin Nuri Numan Omar Osman Pertev Rauf Receb Reshad Refet Rifat Riza Sabaheddin Said Selim Shevket Shukru
+			Suleyman Talat Tevfik Vefik Yusuf Yunus Ziya Ziyauddin
+			Ahmed Haydar Nurberdi Qiliç
+            Çagri Çaka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz Aydin
+            Aydogan Aydogdu Aytekin Böru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars Bayezid Baytas
+            Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud_David Demir Dogan Dogukan
+            Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hizir Ibrahim Ilgazi Inal Iskender
+            Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun Kemal Kiliç Korkut Kutalmis Kutay
+            Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad Mustafa Orhan Osman Porsuk Rustem Ramazan
+            Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk Saruca Savtekin Savur Sehinsah Selçuk Selim Sencer
+            Sinan Tanrivermis Tekin Timurtas Togay Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan
+            Tutus Uluç Umur Yakut Yaman Yinal Yunus
             }
         last_names = {
             Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani
             Jahanbani Kashani Khan Khuzai
             Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti
-            Shirazi Tabrizi Tahmasebi Zahedi
+            Shirazi Tabrizi Tahmasebi Zahedi Bey Pasha Hoca Efendi
             }
     }
     azerbaijani = {
-        color = { 47 44 107 }
+        color = { 50 45 110 }
         first_names = {
             Ahmad Aliagha Ali Bahram Elbay Farhad Firudin Hamid Hasan Heydar
             Huseyin Ibrahim Ismayil Jalil Mahmud Malik Mehdi Mohammad Murad Samad
@@ -1234,35 +1246,47 @@ caucasian = {
     unit = MoroccoGC
 
         dagestani = {
-            color = { 192 150 190 }
+            color = { 125 110 140 }
             first_names = {
-                Hadji Sheyh Rasul Umma Halil Gadzhimurat Ghazi "Gamzat-bek" Najmuddin Tapa Ali-Khaji Akusha Haidar Várkony Shamil Kamil Magomet Ibrahim Muhammad Mansur Dzhokhar Puterbrot Abdulkhakim Adam Buvaysar Kuramagomed Khabib Ali Rustam
+                Hadji Sheyh Rasul Umma Halil Gadzhimurat Ghazi "Gamzat-bek" Najmuddin Tapa Ali-Khaji Akusha Haidar Várkony Shamil Kamil Magomet Ibrahim
+				Muhammad Mansur Dzhokhar Puterbrot Abdulkhakim Adam Buvaysar Kuramagomed Khabib Ali Rustam
                 }
 
             last_names = {
-                Awaral Avshalumov Aliyev Askerkhanov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak Nogai Aghul Rutul al-Tsakhur Hotso Bamat Gadzhiyev Fazu Gamzatov
+                Awaral Avshalumov Aliyev Askerkhanov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal
+				Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak
+				Nogai Aghul Rutul al-Tsakhur Hotso Bamat Gadzhiyev Fazu Gamzatov
             }
             radicalism = 25
         }
         chechen = {
-            color = { 46 112 99 }
+            color = { 40 130 100 }
             first_names = {
-                Abuu Ayub Adam Ahmad Alikhan Alkhazur Aluu Andarbek Anzor Aptii Arzu Aslan Aslanbek Asuu Balavdi Baudi Bekkhan Bislan Bula Buvaisar Bworz Chabworz Deni Duqvaakha Eela Elbek Elbrus Elberd Emin Gada Ghanii Hassuh Hamid Hamzat Haaron Hasan Hooza Humid Husein Ibraahim Iljas Kanta Katii Kazbek Khasboolat Khasmohmad Khavazh Kyyra Lyoma Lecha "Madii Nel" Mairbek Mamed Mikaail Mohmad Movldi Movsar Mumaadi Murad Muusa Nezh Nurdi Ortsa Ramzan Ruman Ruslan Rustam Saida Saidali Saipuddi Shamsuuddi Sha'raani Sherip Shirvani Siraazhdi Sols Suliim Suliman Supjan Surkho "T'aaus" Umalt Turpal Vaakha Vaakhiita Yaaqub Visiita Yunaadi Yunus Yusup Yousef Zaindi Zakrii Zeelim Zhabii Zhamal Zhamalaila Zovra Mansur
+                Abuu Ayub Adam Ahmad Alikhan Alkhazur Aluu Andarbek Anzor Aptii Arzu Aslan Aslanbek Asuu Balavdi Baudi Bekkhan Bislan Bula Buvaisar Bworz
+				Chabworz Deni Duqvaakha Eela Elbek Elbrus Elberd Emin Gada Ghanii Hassuh Hamid Hamzat Haaron Hasan Hooza Humid Husein Ibraahim Iljas Kanta
+				Katii Kazbek Khasboolat Khasmohmad Khavazh Kyyra Lyoma Lecha "Madii Nel" Mairbek Mamed Mikaail Mohmad Movldi Movsar Mumaadi Murad Muusa Nezh
+				Nurdi Ortsa Ramzan Ruman Ruslan Rustam Saida Saidali Saipuddi Shamsuuddi Sha'raani Sherip Shirvani Siraazhdi Sols Suliim Suliman Supjan Surkho
+				"T'aaus" Umalt Turpal Vaakha Vaakhiita Yaaqub Visiita Yunaadi Yunus Yusup Yousef Zaindi Zakrii Zeelim Zhabii Zhamal Zhamalaila Zovra Mansur
                 }
 
             last_names = {
-                Ajndi Shishani Akhmadov Dudayev Yamadayev Abramov Alkhanov Bargishev Basayev Dudaev Kadyrov Maskhadov Saidullayev Umarov Zakayev Akkiy Myalkiy Nokhchmakhkakhoy Alaroy Beltagoy Benoy Biltoy Dishni Chartoy Elistanzhkhoy Centoroy Enganoy Ersenoy Gendargenoy Gunoi Kharachoi Zandakhoi Terloy Beshni Chinkhoi Chanti Cheberloy Mutawakil Rigakhoy Buni Sharoy Shotoy Varandoy Batsbi al-Ingush al-Kist Tchermoeff
+                Ajndi Shishani Akhmadov Dudayev Yamadayev Abramov Alkhanov Bargishev Basayev Dudaev Kadyrov Maskhadov Saidullayev Umarov Zakayev Akkiy Myalkiy
+				Nokhchmakhkakhoy Alaroy Beltagoy Benoy Biltoy Dishni Chartoy Elistanzhkhoy Centoroy Enganoy Ersenoy Gendargenoy Gunoi Kharachoi Zandakhoi Terloy
+				Beshni Chinkhoi Chanti Cheberloy Mutawakil Rigakhoy Buni Sharoy Shotoy Varandoy Batsbi al-Ingush al-Kist Tchermoeff
             }
             radicalism = 30
         }
         circassian = {
             color = { 185 206 6 }
             first_names = {
-                Aghwrbiy Abatiy Albech Albot "Alhx'es" "Alhx'o" Alijiqwe Bale Batirbiy Biylhosten Blaneshu Bubeird Chetsu "Ch'ischiqwe" Chawis Dariqwe Dokshiqua Dzeghaschte Dzune Foqwe Ghwaze Gushina Gushipsa Hegwtsire Hanaqua Hetsu Jirandiqwe Kwshbiy Lhostenasch Mamsriqwe Menshaq Meshiqwe Nalbiy Nartshu Nerzan Pschimaxwe Qideghaze Schebet Shumaxwe Shupashe Takwu Tsumash Tighwenbiy Tighwen Werdeschawe Wezroqwe Yedij Zhore
+                Aghwrbiy Abatiy Albech Albot "Alhx'es" "Alhx'o" Alijiqwe Bale Batirbiy Biylhosten Blaneshu Bubeird Chetsu "Ch'ischiqwe" Chawis Dariqwe
+				Dokshiqua Dzeghaschte Dzune Foqwe Ghwaze Gushina Gushipsa Hegwtsire Hanaqua Hetsu Jirandiqwe Kwshbiy Lhostenasch Mamsriqwe Menshaq Meshiqwe
+				Nalbiy Nartshu Nerzan Pschimaxwe Qideghaze Schebet Shumaxwe Shupashe Takwu Tsumash Tighwenbiy Tighwen Werdeschawe Wezroqwe Yedij Zhore
                 }
 
             last_names = {
-                Neghwey al-Shishani Shapsug Zhaney Temirgoy Natukhai Syupako Abadzehs Kerzedzh Kuytsuk Khatirame Birdzh Cherch Ubykhs Mamkhegh Kabarday Cherkess Hatuqwai Bzhedug Kabardi Adyghe
+                Neghwey al-Shishani Shapsug Zhaney Temirgoy Natukhai Syupako Abadzehs Kerzedzh Kuytsuk Khatirame Birdzh Cherch Ubykhs Mamkhegh Kabarday
+				Cherkess Hatuqwai Bzhedug Kabardi Adyghe
             }
             radicalism = 20
         }
@@ -1431,17 +1455,7 @@ iranian_turanian = {
         }
         radicalism = 10
     }
-    lurish = {
-        color = { 191 127 95 }
-        first_names = {
-            Abdal Abdulkarim Bedr Hafid Ihsan Mahmud Mohammed Qazi Reshid Said Ubaydallah
-            }
-
-        last_names = {
-            Badirkhan Barzani Khan Shilak
-        }
-        radicalism = 10
-    }
+	#Tat
     talysh = {
         color = { 137 81 55 }
         first_names = {
@@ -1670,24 +1684,6 @@ central_asian = {
         last_names = {
             Beg
             }
-    }
-    turkmen = {
-        color = { 192 150 190 }
-        first_names = {
-            Ahmed Haydar Nurberdi Qiliç
-            Çagri Çaka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp Arslan" "Alp Yurek" Alptigin Artuk Ayaz Aydin
-            Aydogan Aydogdu Aytekin Böru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars Bayezid Baytas
-            Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud_David Demir Dogan Dogukan
-            Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hizir Ibrahim Ilgazi Inal Iskender
-            Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun Kemal Kiliç Korkut Kutalmis Kutay
-            Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad Mustafa Orhan Osman Porsuk Rustem Ramazan
-            Ridvan Söbuk Sökmen Sönmez Suleyman Saim Saltuk Saruca Savtekin Savur Sehinsah Selçuk Selim Sencer
-            Sinan Tanrivermis Tekin Timurtas Togay Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan
-            Tutus Uluç Umur Yakut Yaman Yinal Yunus
-        }
-        last_names = {
-            Beg Khan
-        }
     }
     tatar = {
         color = { 45 87 99 }

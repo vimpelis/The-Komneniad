@@ -5,4 +5,4 @@ add_core = SYR
 add_core = UQA
 trade_goods = cattle
 life_rating = 35
-terrain = desert
+terrain = steppe

@@ -68,12 +68,6 @@ country_event = {
 		clr_country_flag = hidden_tooltip
 		clr_country_flag = komneniad_menu
     }
-	
-	option = {
-        name = "Enable multiplayer mode"
-		mp_menu_tt_temp = {}
-		set_global_flag = you_are_playing_mp
-    }
 }
 
 country_event = {
@@ -83,6 +77,7 @@ country_event = {
     picture = "india_map"
 
     is_triggered_only = yes
+	allow_multiple_instances = yes
 	
 	option = {
         name = "Let me see the GFM-related info (and credits)"
@@ -92,6 +87,46 @@ country_event = {
 	option = {
         name = "What are the gameplay changes?"
 		country_event = 169004
+    }
+	
+	option = {
+        name = "Let me see the country paths"
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { tag = ASY }
+					NOT = { tag = BYZ }
+					NOT = { tag = EGY }
+					NOT = { tag = ARE }
+				}
+			}
+			owner = {
+				nopaths_menu_tt = {}
+				set_country_flag = hidden_tooltip
+					random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+						owner = {
+							country_event = 169003
+						}
+					}
+				clr_country_flag = hidden_tooltip
+			}
+		}
+		random_owned = {
+			limit = { owner = { tag = ASY } }
+			owner = { country_event = 169050 }
+		}
+		random_owned = {
+			limit = { owner = { tag = BYZ } }
+			owner = { country_event = 169051 }
+		}
+		random_owned = {
+			limit = { owner = { tag = EGY } }
+			owner = { country_event = 169052 }
+		}
+		random_owned = {
+			limit = { owner = { tag = ARE } }
+			owner = { country_event = 169053 }
+		}
     }
 }
 
@@ -147,35 +182,6 @@ country_event = {
 	option = {
         name = "Back to Information Menu"
 		country_event = 169003
-    }
-}
-
-country_event = {
-    id = 169200
-    title = "Bavaria tips"
-    desc = "169200DESC"
-    picture = "india_map"
-
-    is_triggered_only = yes
-
-	option = {
-        name = "Thanks!"
-		clr_country_flag = komneniad_tips
-    }
-}
-
-country_event = {
-    id = 169005
-    title = "Byzantium tips"
-    desc = "169005DESC"
-    picture = "india_map"
-
-    is_triggered_only = yes
-	
-	immediate = { clr_country_flag = komneniad_tips }
-
-	option = {
-        name = "Thanks!"
     }
 }
 
@@ -502,7 +508,7 @@ country_event = {
         name = "1750 borders Persia-Ethiopia"
 		political_reform = no_slavery
 		#Turki Empire
-		ZND = { all_core = { add_core = TUR secede_province = THIS secede_province = TUR } }
+		TUR = { all_core = { add_core = TUR secede_province = THIS secede_province = TUR } }
 		MGT = { all_core = { add_core = TUR secede_province = THIS secede_province = TUR } }
 		KOK = { all_core = { add_core = TUR } }
 		KAZ = { all_core = { add_core = TUR } }
@@ -673,7 +679,7 @@ country_event = {
 		PER_1116 = { add_core = KDS secede_province = THIS secede_province = KDS }
 		PER_1121 = { add_core = KDS secede_province = THIS secede_province = KDS }
 		PER_1127 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1132 = { add_core = KDS secede_province = THIS secede_province = KDS }
+		PER_1120 = { add_core = KDS secede_province = THIS secede_province = KDS }
 		PER_1136 = { add_core = KDS secede_province = THIS secede_province = KDS }
 		PER_1130 = { add_core = KDS secede_province = THIS secede_province = KDS }
 		PER_1140 = { add_core = KDS secede_province = THIS secede_province = KDS }
@@ -991,7 +997,6 @@ country_event = {
     id = 123641
     title = "More Infamy Reduction"
     desc = "You have taken the option to increase infamy reduction. To what level do you wish to set it?"
-    fire_only_once = yes
 	is_triggered_only = yes
 	picture = "infamy"
     option = {
@@ -1037,5 +1042,57 @@ country_event = {
         }
 		add_country_modifier = { name = lower_infamy_d duration = -1 }
 		country_event = 169020
+	}
+}
+
+country_event = {
+    id = 169050
+    title = "Assyria: Country Paths"
+    desc = "169050DESC"
+	picture = "india_map"
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = "Thanks!"
+	}
+}
+
+country_event = {
+    id = 169051
+    title = "Byzantium: Country Paths"
+    desc = "169051DESC"
+	picture = "india_map"
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = "Thanks!"
+	}
+}
+
+country_event = {
+    id = 169052
+    title = "Egypt: Country Paths"
+    desc = "169052DESC"
+	picture = "india_map"
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = "Thanks!"
+	}
+}
+
+country_event = {
+    id = 169053
+    title = "Arles: Country Paths"
+    desc = "169053DESC"
+	picture = "india_map"
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = "Thanks!"
 	}
 }

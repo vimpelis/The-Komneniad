@@ -3,3 +3,4 @@ trade_goods = wool
 life_rating = 20
 add_core = HAL
 add_core = SYR
+terrain = semidesert

@@ -5,3 +5,4 @@ add_core = BLC
 trade_goods = wool
 life_rating = 35
 add_core = KND
+terrain = semi_desert_mountains

@@ -50,15 +50,15 @@
         size = 33050
     }
 
-	farmers = {
+    farmers = {
         culture = uzbek
         religion = sunni
         size = 5000
     }
 
     slaves = {
-        culture = persian
-        religion = shiite
+        culture = turki
+        religion = sunni
         size = 9750
     }
 
@@ -67,15 +67,16 @@
         religion = orthodox
         size = 250
     }
+
     clergymen = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 25
     }
 
     farmers = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 1605
     }
 }
@@ -117,7 +118,7 @@
         size = 13325
     }
 
-	farmers = {
+    farmers = {
         culture = kazak
         religion = sunni
         size = 4325
@@ -154,8 +155,8 @@
     }
 
     slaves = {
-        culture = persian
-        religion = shiite
+        culture = turki
+        religion = sunni
         size = 5900
     }
 
@@ -166,31 +167,31 @@
     }
 
     aristocrats = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 75
     }
 
     clergymen = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 75
     }
 
     artisans = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 175
     }
 
     soldiers = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 25
     }
 
     farmers = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 3650
     }
@@ -263,31 +264,31 @@
     }
 
     aristocrats = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 75
     }
 
     clergymen = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 75
     }
 
     artisans = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 175
     }
 
     soldiers = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 25
     }
 
     farmers = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 3650
     }
@@ -399,14 +400,14 @@
     }
 
     clergymen = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 40
     }
 
     farmers = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 1150
     }
 }
@@ -478,7 +479,7 @@
         size = 1050
     }
 
-	bureaucrats = {
+    bureaucrats = {
         culture = uzbek
         religion = sunni
         size = 200
@@ -571,7 +572,7 @@
         size = 52000
     }
 
-	farmers = {
+    farmers = {
         culture = uzbek
         religion = sunni
         size = 7950
@@ -656,20 +657,20 @@
     }
 
     slaves = {
-        culture = persian
-        religion = shiite
+        culture = turki
+        religion = sunni
         size = 30000
     }
 
     clergymen = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 50
     }
 
     farmers = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 2200
     }
 }
@@ -834,31 +835,31 @@
     }
 
     aristocrats = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 50
     }
 
     artisans = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 300
     }
 
     soldiers = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 75
     }
 
     farmers = {
-        culture = turkmen
+        culture = turki
         religion = sunni
         size = 6425
     }
@@ -870,21 +871,19 @@
     }
 
     clergymen = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 95
     }
 
     farmers = {
-        culture = persian
-        religion = zoroastrian
+        culture = turki
+        religion = sunni
         size = 2850
     }
 }
-
 #Kyzyl Kum - Former Medicine Hat (8000/2000 POPS)
 29 = {
-
     clergymen = {
         culture = uzbek
         religion = sunni

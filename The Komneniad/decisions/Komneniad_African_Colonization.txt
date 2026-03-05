@@ -12,12 +12,12 @@ political_decisions = {
 			NOT = {	has_country_flag = ADU_kill_MAD }
 		}
 		allow = {
-			war = no
 			OR = {
 				iron_steamers = 1
 				year = 1867
 			}
 			NOT = { truce_with = MAD }
+			war = no
 		}
 		effect = {
 			badboy = 5
@@ -46,13 +46,13 @@ political_decisions = {
 	ADU_annex_AKR = {
 		picture = madagascar_old
 		potential = {
-			AKR = { vassal_of = THIS }
 			year = 1880
+			AKR = { vassal_of = THIS }
 			NOT = {	has_country_flag = ADU_annex_AKR }
 		}
 		allow = {
-			war = no
 			nationalism_n_imperialism = 1
+			war = no
 		}
 		effect = {
 			badboy = 2
