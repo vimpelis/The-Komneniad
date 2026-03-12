@@ -2,6 +2,6 @@ owner = BYZ
 controller = BYZ
 add_core = BYZ
 trade_goods = grain
-terrain = podgorica
+terrain = mountain
 life_rating = 35
 add_core = SER

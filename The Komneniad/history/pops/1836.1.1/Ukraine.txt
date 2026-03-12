@@ -426,12 +426,6 @@
         size = 19825
     }
 
-    farmers = {
-        culture = albanian
-        religion = orthodox
-        size = 675
-    }
-
     clergymen = {
         culture = ruthene
         religion = orthodox

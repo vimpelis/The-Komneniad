@@ -442,49 +442,9 @@ country_event = {
 	option = {
         name = "Middle East options"
 		political_reform = no_slavery
-		country_event = 169014
+		country_event = 169012
     }
-	
-	option = {
-        name = "Anag"
-		political_reform = no_slavery
-		ENG_1844 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		ENG_2036 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		1840 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		1832 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		3377 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		3595 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		1847 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		3331 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2022 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2028 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2023 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2019 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2021 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		3610 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2020 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2026 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2024 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2027 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2032 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		3672 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		2033 = { add_core = TAQ secede_province = THIS secede_province = TAQ }
-		TAQ = { government = absolute_empire }
-    }
-	
-	option = {
-        name = "Big Somalia"
-		political_reform = no_slavery
-		ETH_1867 = { add_core = SOM secede_province = THIS secede_province = SOM }
-		ENG_1848 = { add_core = SOM secede_province = THIS secede_province = SOM }
-		ETH_1853 = { add_core = SOM secede_province = THIS secede_province = SOM }
-		ENG_2036 = { add_core = SOM secede_province = THIS secede_province = SOM }
-		3499 = { add_core = SOM secede_province = THIS secede_province = SOM }
-		2025 = { add_core = SOM secede_province = THIS secede_province = SOM }
-		2024 = { add_core = SOM secede_province = THIS secede_province = SOM }
-		2027 = { add_core = SOM secede_province = THIS secede_province = SOM }
-    }
-	
+
 	option = {
         name = "Page 2"
 		country_event = 169010
@@ -659,37 +619,6 @@ country_event = {
     }
 	
 	option = {
-        name = "Mega Kurdish Empire"
-		political_reform = no_slavery
-		BYZ_921 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		BYZ_894 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		BYZ_879 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		TUR_893 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		EGY_897 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		TUR_3300 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		TUR_890 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		TUR_923 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		TUR_931 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		TUR_935 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1122 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1112 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		RUS_1098 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		AZB_1105 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		RUS_1102 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1116 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1121 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1127 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1120 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1136 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1130 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1140 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		PER_1148 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		AFG_1212 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		AFG_1215 = { add_core = KDS secede_province = THIS secede_province = KDS }
-		KAL_1221 = { add_core = KDS secede_province = THIS secede_province = KDS }
-    }
-	
-	option = {
 		name = "Decolonize Africa"
 		country_event = 169011
 	}
@@ -812,7 +741,7 @@ country_event = {
 }
 
 country_event = {
-    id = 169014
+    id = 169012
     title = "Middle East Countries"
     desc = "wip"
     picture = "india_map"
@@ -826,7 +755,7 @@ country_event = {
 		898 = { secede_province = THIS secede_province = BYZ }
 		900 = { secede_province = THIS secede_province = BYZ }
 		3362 = { secede_province = THIS secede_province = BYZ }
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
@@ -836,13 +765,13 @@ country_event = {
 		914 = { secede_province = THIS secede_province = LBN }
 		EGY_903 = { secede_province = THIS secede_province = LBN }
 		EGY_921 = { secede_province = THIS secede_province = LBN }
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
         name = "Release Palestine"
 		EGY_921 = { secede_province = THIS secede_province = PLS }
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
@@ -852,7 +781,7 @@ country_event = {
 		3278 = { secede_province = THIS secede_province = IRQ }
 		931 = { secede_province = THIS secede_province = IRQ }
 		3404 = { secede_province = THIS secede_province = IRQ }
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
@@ -860,21 +789,21 @@ country_event = {
 		TUR_3300 = { secede_province = THIS secede_province = IRQ }
 		2321 = { secede_province = THIS secede_province = IRQ }
 		3537 = { secede_province = THIS secede_province = IRQ }
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
         name = "Release Jordan"
 		EGY_908 = { secede_province = THIS secede_province = JOR }
 		910 = { secede_province = THIS secede_province = JOR }
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
-        name = "Sayhad Placeholder"
-		ABU_1162 = { secede_province = THIS secede_province = OMA }
-		YEM_1412 = { secede_province = THIS secede_province = OMA }
-		country_event = 169014
+        name = "Sayhad"
+		ABU_1162 = { add_core = SAY secede_province = THIS secede_province = SAY }
+		YEM_1412 = { add_core = SAY secede_province = THIS secede_province = SAY }
+		country_event = 169012
     }
 	
 	option = {
@@ -887,7 +816,7 @@ country_event = {
 		911 = { secede_province = THIS secede_province = ARU }
 		1156 = { secede_province = THIS secede_province = ARU }
 		change_tag_no_core_switch = ARU
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
@@ -896,7 +825,7 @@ country_event = {
 		YEM_1412 = { secede_province = THIS secede_province = ARU }
 		OMA_1166 = { secede_province = THIS secede_province = ARU }
 		change_tag_no_core_switch = ARU
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
@@ -911,7 +840,7 @@ country_event = {
 		1758 = { secede_province = THIS secede_province = ARU }
 		2585 = { secede_province = THIS secede_province = ARU }
 		change_tag_no_core_switch = ARU
-		country_event = 169014
+		country_event = 169012
     }
 	
 	option = {
@@ -990,6 +919,114 @@ country_event = {
 	option = {
         name = "Back to Menu"
         country_event = 169001
+    }
+}
+
+country_event = {
+    id = 169040
+    title = "Iran lore: Page 1"
+    desc = "169040DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Page 2"
+		country_event = 169041
+    }
+}
+
+country_event = {
+    id = 169041
+    title = "Iran lore: Page 2"
+    desc = "169041DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to Page 1"
+		country_event = 169040
+    }
+	
+	option = {
+        name = "Page 3"
+		country_event = 169042
+    }
+}
+
+country_event = {
+    id = 169042
+    title = "Iran lore: Page 3"
+    desc = "169042DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to Page 2"
+		country_event = 169041
+    }
+	
+	option = {
+        name = "Page 4"
+		country_event = 169043
+    }
+}
+
+country_event = {
+    id = 169043
+    title = "Iran lore: Page 4"
+    desc = "169043DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to Page 3"
+		country_event = 169042
+    }
+	
+	option = {
+        name = "Page 5"
+		country_event = 169044
+    }
+}
+
+country_event = {
+    id = 169044
+    title = "Iran lore: Page 5"
+    desc = "169044DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to Page 4"
+		country_event = 169043
+    }
+	
+	option = {
+        name = "Page 6"
+		country_event = 169045
+    }
+}
+
+country_event = {
+    id = 169045
+    title = "Iran lore: Page 6"
+    desc = "169045DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to Page 5"
+		country_event = 169044
+    }
+	
+	option = {
+        name = "That was a lot of text."
     }
 }
 

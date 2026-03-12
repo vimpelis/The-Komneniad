@@ -134,7 +134,5 @@ country_event = {
 			3367 = { add_core = THIS }
 			3368 = { add_core = THIS }
 		}
-		2404 = { secede_province = THIS any_pop = { literacy = -0.99 } }
-		3370 = { secede_province = THIS any_pop = { literacy = -0.99 } }
     }
 }

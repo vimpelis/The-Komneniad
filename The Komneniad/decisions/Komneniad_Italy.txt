@@ -508,4 +508,28 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	NAP_proclaim_republic = {
+		picture = map_sicily
+		potential = {
+			tag = NAP
+			government = presidential_dictatorship
+			NOT = { has_country_flag = NAP_proclaim_republic }
+		}
+		allow = {
+			OR = {
+				war_with = SIC
+				war_with = AFR
+				year = 1842
+			}
+		}
+		effect = {
+			prestige = 10
+			government = democracy
+			set_country_flag = NAP_proclaim_republic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

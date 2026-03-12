@@ -2,6 +2,6 @@ owner = BYZ
 controller = BYZ
 add_core = BYZ
 add_core = SER
-terrain = pristina
+terrain = forest_hills
 trade_goods = iron
 life_rating = 35 

@@ -476,7 +476,7 @@
     }
 
     farmers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 9169
     }

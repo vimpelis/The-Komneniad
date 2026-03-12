@@ -27,25 +27,25 @@
     }
 
     clergymen = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 200
     }
 
     artisans = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 200
     }
 
     soldiers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 200
     }
 
     farmers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 2450
     }
@@ -292,7 +292,7 @@
     }
 
     farmers = {
-        culture = albanian
+        culture = epirote
         religion = catholic
         size = 350
     }
@@ -409,5 +409,127 @@
         culture = croat
         religion = orthodox
         size = 800
+    }
+}
+#Shkoder
+850 = {
+    aristocrats = {
+        culture = serb
+        religion = orthodox
+        size = 300
+    }
+
+    clergymen = {
+        culture = serb
+        religion = orthodox
+        size = 225
+    }
+
+    artisans = {
+        culture = serb
+        religion = orthodox
+        size = 750
+    }
+
+    soldiers = {
+        culture = serb
+        religion = orthodox
+        size = 500
+    }
+
+    farmers = {
+        culture = serb
+        religion = orthodox
+        size = 9500
+    }
+	
+	aristocrats = {
+        culture = epirote
+        religion = orthodox
+        size = 250
+    }
+
+    clergymen = {
+        culture = epirote
+        religion = orthodox
+        size = 150
+    }
+
+    artisans = {
+        culture = epirote
+        religion = orthodox
+        size = 400
+    }
+
+    soldiers = {
+        culture = epirote
+        religion = orthodox
+        size = 400
+    }
+
+    farmers = {
+        culture = epirote
+        religion = orthodox
+        size = 8300
+    }
+
+    aristocrats = {
+        culture = epirote
+        religion = catholic
+        size = 150
+    }
+
+    clergymen = {
+        culture = epirote
+        religion = catholic
+        size = 125
+    }
+
+    artisans = {
+        culture = epirote
+        religion = catholic
+        size = 300
+    }
+
+    soldiers = {
+        culture = epirote
+        religion = catholic
+        size = 250
+    }
+
+    farmers = {
+        culture = epirote
+        religion = catholic
+        size = 5000
+    }
+
+    aristocrats = {
+        culture = greek
+        religion = orthodox
+        size = 200
+    }
+
+    clergymen = {
+        culture = greek
+        religion = orthodox
+        size = 100
+    }
+
+    artisans = {
+        culture = greek
+        religion = orthodox
+        size = 300
+    }
+
+    soldiers = {
+        culture = greek
+        religion = orthodox
+        size = 250
+    }
+
+    farmers = {
+        culture = greek
+        religion = orthodox
+        size = 4600
     }
 }

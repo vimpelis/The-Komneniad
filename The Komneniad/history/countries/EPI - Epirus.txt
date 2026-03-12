@@ -1,6 +1,6 @@
 capital = 849
-primary_culture = albanian
-religion = sunni
+primary_culture = epirote
+religion = orthodox
 government = democracy
 plurality = 0.4
 nationalvalue = nv_order
@@ -9,13 +9,13 @@ civilized = yes
 
 #Political Reforms
 slavery = no_slavery
-upper_house_composition = appointed
-vote_franschise = none_voting
-public_meetings = no_meeting
+upper_house_composition = state_equal_weight
+vote_franschise = universal_weighted_voting
+public_meetings = yes_meeting
 press_rights = censored_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
-political_parties = underground_parties
+political_parties = non_secret_ballots
 
 #Social Reforms
 wage_reform = no_minimum_wage
@@ -71,14 +71,4 @@ upper_house = {
     communist = 0
 }
 
-set_country_flag = sunni_country
-
-
-govt_flag = {
-	government = absolute_monarchy
-	flag = theocracy
-}
-govt_flag = {
-	government = prussian_constitutionalism
-	flag = absolute_monarchy
-}
+set_country_flag = orthodox_country

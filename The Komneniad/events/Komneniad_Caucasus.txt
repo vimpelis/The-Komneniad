@@ -1,0 +1,201 @@
+#Default event
+country_event = {
+    id = 182000
+    title = "Unification of the Caucasus"
+    desc = "182000DESC"
+    picture = "caucasus_mountain"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will mend the rifts!"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = orthodox_country
+						has_country_flag = coptic_country
+					}
+				}
+			}
+			owner = {
+				add_accepted_culture = armenian
+				add_accepted_culture = georgian
+				add_accepted_culture = circassian
+				add_accepted_culture = ossetian
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = AZB
+							is_core = DAG
+							is_core = CHY
+						}
+					}
+					any_pop = { militancy = 2 consciousness = 4 }
+					add_province_modifier = { name = nationalist_agitation duration = 1825 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = sunni_country
+						has_country_flag = shiite_country
+					}
+				}
+			}
+			owner = {
+				add_accepted_culture = azerbaijani
+				add_accepted_culture = chechen
+				add_accepted_culture = dagestani
+				add_accepted_culture = talysh
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = ARM
+							is_core = GEO
+							is_core = CIR
+						}
+					}
+					any_pop = { militancy = 2 consciousness = 4 }
+					add_province_modifier = { name = nationalist_agitation duration = 1825 }
+				}
+			}
+		}
+    }
+}
+
+#For Armenian primary
+country_event = {
+    id = 182001
+    title = "Unification of the Caucasus"
+    desc = "182000DESC"
+    picture = "caucasus_mountain"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We will mend the rifts!"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = orthodox_country
+						has_country_flag = coptic_country
+					}
+				}
+			}
+			owner = {
+				add_accepted_culture = armenian
+				add_accepted_culture = georgian
+				add_accepted_culture = circassian
+				add_accepted_culture = ossetian
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = AZB
+							is_core = DAG
+							is_core = CHY
+						}
+					}
+					any_pop = { militancy = 2 consciousness = 4 }
+					add_province_modifier = { name = nationalist_agitation duration = 1825 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = sunni_country
+						has_country_flag = shiite_country
+					}
+				}
+			}
+			owner = {
+				add_accepted_culture = azerbaijani
+				add_accepted_culture = chechen
+				add_accepted_culture = dagestani
+				add_accepted_culture = talysh
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = ARM
+							is_core = GEO
+							is_core = CIR
+						}
+					}
+					any_pop = { militancy = 2 consciousness = 4 }
+					add_province_modifier = { name = nationalist_agitation duration = 1825 }
+				}
+			}
+		}
+    }
+	
+	option = {
+        name = "We will mend the rifts, and make them bow to Armenia."
+		set_country_flag = hidden_tooltip
+			random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
+				owner = {
+					government = absolute_empire
+				}
+			}
+		clr_country_flag = hidden_tooltip
+		rename_armenia_tt = {}
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = orthodox_country
+						has_country_flag = coptic_country
+					}
+				}
+			}
+			owner = {
+				add_accepted_culture = armenian
+				add_accepted_culture = georgian
+				add_accepted_culture = circassian
+				add_accepted_culture = ossetian
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = AZB
+							is_core = DAG
+							is_core = CHY
+						}
+					}
+					any_pop = { militancy = 2 consciousness = 4 }
+					add_province_modifier = { name = nationalist_agitation duration = 1825 }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						has_country_flag = sunni_country
+						has_country_flag = shiite_country
+					}
+				}
+			}
+			owner = {
+				add_accepted_culture = azerbaijani
+				add_accepted_culture = chechen
+				add_accepted_culture = dagestani
+				add_accepted_culture = talysh
+				any_owned = {
+					limit = {
+						OR = {
+							is_core = ARM
+							is_core = GEO
+							is_core = CIR
+						}
+					}
+					any_pop = { militancy = 2 consciousness = 4 }
+					add_province_modifier = { name = nationalist_agitation duration = 1825 }
+				}
+			}
+		}
+    }
+}

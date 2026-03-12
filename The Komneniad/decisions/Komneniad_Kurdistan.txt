@@ -484,7 +484,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 10
-			badboy = 5
+			badboy = 3
 			3300 = { add_core = THIS }
 			924 = { add_core = THIS }
 			3405 = { add_core = THIS }
@@ -561,7 +561,7 @@ political_decisions = {
 			war = no
 		}
 		effect = {
-			badboy = 15
+			badboy = 10
 			add_accepted_culture = syriac
 			EGY_897 = { add_core = THIS }
 			EGY_903 = { add_core = THIS }
@@ -780,7 +780,7 @@ political_decisions = {
 			war = no
 		}
 		effect = {
-			badboy = 5
+			badboy = 2.5
 			remove_accepted_culture = turki
 			any_pop = {
 				limit = {

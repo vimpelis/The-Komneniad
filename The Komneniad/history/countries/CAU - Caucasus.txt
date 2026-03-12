@@ -1,15 +1,18 @@
 capital = 1090
 primary_culture = georgian
 culture = armenian
-culture = russian
+culture = circassian
+culture = azerbaijani
+culture = ossetian
+culture = chechen
+culture = dagestani
+culture = talysh
 religion = orthodox
-government = colonial_company
+government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_autocracy
 literacy = 0.04
-non_state_culture_literacy = 0.02
 civilized = yes
-prestige = 4
 
 #Political Reforms
 slavery = no_slavery
@@ -41,10 +44,8 @@ centralization = unitary
 colonial_policy = no_colonies
 
 set_country_flag = orthodox_country
-set_country_flag = serfdom_not_abolished
-set_country_flag = russian_accepted
 
-ruling_party = GEO_conservative
+ruling_party = default_conservative
 upper_house = {
     fascist = 0
     liberal = 15
@@ -54,8 +55,6 @@ upper_house = {
     socialist = 0
     communist = 0
 }
-
-oob = "TCA_oob.txt"
 
 #Technologies
 post_napoleonic_thought = 1
@@ -84,3 +83,23 @@ piston_steam_engine = 1
 
 #Inventions
 steam_powered_sugar_mills = yes
+
+govt_flag = {
+	government = absolute_empire
+	flag = theocracy
+}
+
+govt_flag = {
+	government = semi_constitutional_empire
+	flag = theocracy
+}
+
+govt_flag = {
+	government = constitutional_empire
+	flag = theocracy
+}
+
+govt_flag = {
+	government = theocracy
+	flag = absolute_monarchy
+}

@@ -388,6 +388,13 @@ country_event = {
 		#End of cleanup for colonial govs
 		any_land_province = {
 			limit = {
+				has_province_modifier = impassable
+				empty = no
+			}
+			remove_province_modifier = impassable
+		}
+		any_land_province = {
+			limit = {
 				owner = {
 					invention = machine_tools
 					invention = nitroglycerin

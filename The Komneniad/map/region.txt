@@ -386,13 +386,13 @@ TUR_788 = { 783 787 789 788 786 785 784 } #Bosnia
 
 SER_794 = { 797 796 3374 3346 802 804 } #Northern Serbia
 
-MON_2582 = { 2583 2569 2577 800 2582 } #Montenegro
+MON_2582 = { 850 803 2583 2569 2577 800 2582 } #Montenegro
 
 TUR_803 = { 798 799 809 810 3347 795 } #Southern Serbia
 
 TUR_805 = { 805 819 820 821 822 823 828 } #Southern Macedonia
 
-TUR_806 = { 806 807 858 808 } #Northern Macedonia
+TUR_806 = { 806 807 808 858 1780 } #Northern Macedonia
 
 TUR_809 = { 817 816 3373 } #Eastern Rumelia
 
@@ -406,7 +406,7 @@ GRE_837 = { 834 835 3288 832 } #Attica - Central Greece
 
 EGY_843 = { 848 844 846 847 845 838 } #Aegean Islands
 
-TUR_853 = { 849 852 851 850 3308 803 1780 } #Albania
+TUR_853 = { 849 852 851 3308 } #Albania
 
 TUR_855 = { 855 856 857 } #Cyprus
 
@@ -1322,6 +1322,7 @@ BYZ_syria_infamy_notf = {}
 rename_rhomania_tt = {}
 rename_muradid_tt = {}
 rename_nahrain_tt = {}
+rename_armenia_tt = {}
 potato_blight_tt = {}
 BYZ_bethlehem_tt = {}
 BRB_flemish_revolt_tt = {}

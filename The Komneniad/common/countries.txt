@@ -342,7 +342,7 @@ RUS        = "countries/Russia.txt"
 #Balkans and Byz
 VOJ        = "countries/Vojvodina.txt"
 MCD        = "countries/Macedonia.txt"
-ALB        = "countries/Albania.txt"
+EPI        = "countries/Epirus.txt"
 BUL        = "countries/Bulgaria.txt"
 CRO        = "countries/Croatia.txt"
 GRE        = "countries/Greece.txt"
@@ -364,12 +364,11 @@ BYZ        = "countries/Byzantium.txt"
 #Caucasus
 OSS        = "countries/Ossetia.txt"
 CHY        = "countries/Chechnya.txt"
-ABK        = "countries/Abkhazia.txt"
 ARM        = "countries/Armenia.txt"
 AZB        = "countries/Azerbaijan.txt"
 GEO        = "countries/Georgia.txt"
-TCA        = "countries/Transcaucasia.txt"
 DAG        = "countries/Dagestan.txt"
+CAU        = "countries/Caucasus.txt"
 
 #Persia
 KUN        = "countries/Kunduz.txt"

@@ -215,7 +215,6 @@ From;To;Type;Through;Data;Comment
 #Iran;;;;;
 ;;;;;
 1112;1113;impassable;0;0;scary mountain #Ardabil-Rasht
-1113;3503;impassable;0;0;scary mountain #Ardabil-Parsabad
 1121;1114;impassable;0;0;scary mountain #Tehran-Noshehr
 1121;1115;impassable;0;0;scary mountain #Tehran-Sari
 1114;1124;impassable;0;0;scary mountain #Noshehr-Qazvin
@@ -223,7 +222,6 @@ From;To;Type;Through;Data;Comment
 1134;1133;impassable;0;0;scary mountain #Dehkord-Dezful
 1120;1119;impassable;0;0;scary mountain #Khoramabad-Ilam
 892;3348;impassable;0;0;scary mountain #Bay-Maku
-3536;3348;impassable;0;0;scary mountain #Bayazid-Maku
 890;3348;impassable;0;0;scary mountain
 2548;3348;impassable;0;0;scary mountain
 3353;892;impassable;0;0;scary mountain #Bay-Chihriq

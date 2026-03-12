@@ -1,8 +1,170 @@
 political_decisions = {
+	CAU_form = {
+		picture = caucasus
+		potential = {
+			OR = {
+				tag = ARM
+				tag = CLC
+				tag = GEO
+				tag = CIR
+				tag = OSS
+				tag = AZB
+				tag = DAG
+				tag = CHY
+			}
+			NOT = { exists = CAU }
+		}
+		allow = {
+			is_secondary_power = yes
+			state_n_government = 1
+			OR = {
+				AND = {
+					OR = {
+						primary_culture = georgian
+						primary_culture = armenian
+					}
+					1090 = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+							owner = { in_sphere = THIS }
+						}
+					}
+					1098 = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+				AND = {
+					OR = {
+						primary_culture = circassian
+						primary_culture = azerbaijani
+						primary_culture = ossetian
+						primary_culture = chechen
+						primary_culture = dagestani
+					}
+					1051 = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+							owner = { in_sphere = THIS }
+						}
+					}
+					3390 = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+							owner = { in_sphere = THIS }
+						}
+					}
+					1102 = {
+						OR = {
+							owned_by = THIS
+							owner = { vassal_of = THIS }
+							owner = { in_sphere = THIS }
+						}
+					}
+				}
+			}
+			war = no
+		}
+		effect = {
+			prestige = 25
+			change_tag = CAU
+			random_owned = {
+				limit = {
+					owner = { NOT = { primary_culture = armenian } }
+				}
+				owner = { country_event = 182000 }
+			}
+			random_owned = {
+				limit = {
+					owner = { primary_culture = armenian }
+				}
+				owner = { country_event = 182001 }
+			}
+			RUS_1090 = { add_core = CAU }
+			RUS_1092 = { add_core = CAU }
+			BYZ_1096 = { add_core = CAU }
+			RUS_1098 = { add_core = CAU }
+			RUS_1102 = { add_core = CAU }
+			AZB_1105 = { add_core = CAU }
+			RUS_1052 = { add_core = CAU }
+			RUS_3390 = { add_core = CAU }
+			3393 = { add_core = CAU }
+			1051 = { add_core = CAU }
+			3315 = { add_core = CAU }
+			3392 = { add_core = CAU }
+			any_country = {
+				limit = {
+					OR = {
+						tag = ARM
+						tag = CLC
+						tag = GEO
+						tag = CIR
+						tag = OSS
+						tag = AZB
+						tag = DAG
+						tag = CHY
+					}
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	CAU_unity = {
+		picture = caucasus_mountain
+		potential = {
+			tag = CAU
+			NOT = { has_country_flag = CAU_unity }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			prestige = 10
+			any_pop = { militancy = -1 }
+			add_accepted_culture = armenian
+			add_accepted_culture = georgian
+			add_accepted_culture = circassian
+			add_accepted_culture = ossetian
+			add_accepted_culture = azerbaijani
+			add_accepted_culture = chechen
+			add_accepted_culture = dagestani
+			add_accepted_culture = talysh
+			PER_1112 = { add_core = CAU }
+			3503 = { add_core = CAU }
+			1112 = { add_core = CAU }
+			set_country_flag = CAU_unity
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	ARM_greater_armenia = {
 		picture = greater_armenia
 		potential = {
-			tag = ARM
+			OR = {
+				tag = ARM
+				AND = {
+					tag = CAU
+					has_country_flag = CAU_unity
+				}
+			}
 			NOT = { has_country_flag = ARM_greater_armenia }
 		}
 		allow = {
@@ -17,10 +179,11 @@ political_decisions = {
 					nationalism_n_imperialism = 1
 				}
 			}
+			all_core = { owned_by = THIS }
 			war = no
 		}
 		effect = {
-			badboy = 20
+			badboy = 15
 			TUR_890 = { add_core = THIS }
 			TUR_893 = { add_core = THIS }
 			BYZ_879 = { add_core = THIS }
@@ -34,7 +197,119 @@ political_decisions = {
 			factor = 1
 			modifier = {
                 factor = 0
-                badboy = 0.2
+                badboy = 0.4
+            }
+		}
+	}
+	
+	CAU_assyrians = {
+		picture = kurdistan_map
+		potential = {
+			tag = CAU
+			has_country_flag = ARM_greater_armenia
+			OR = {
+				has_country_flag = orthodox_country
+				has_country_flag = coptic_country
+			}
+			NOT = { has_country_flag = CAU_assyrians_kurds }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+			rank = 8
+			ASY = {
+				OR = {
+					exists = no
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			war = no
+		}
+		effect = {
+			badboy = 10
+			add_accepted_culture = assyrian
+			TUR_923 = { add_core = THIS }
+			901 = { add_core = THIS }
+			3325 = { add_core = THIS }
+			3428 = { add_core = THIS }
+			any_country = {
+				limit = { 
+					tag = ASY
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			set_country_flag = CAU_assyrians_kurds
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+		}
+	}
+	
+	CAU_kurds = {
+		picture = kurdistan_map
+		potential = {
+			tag = CAU
+			has_country_flag = ARM_greater_armenia
+			OR = {
+				has_country_flag = sunni_country
+				has_country_flag = shiite_country
+			}
+			NOT = { has_country_flag = CAU_assyrians_kurds }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			all_core = { owned_by = THIS }
+			rank = 8
+			KDS = {
+				OR = {
+					exists = no
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			war = no
+		}
+		effect = {
+			badboy = 10
+			add_accepted_culture = kurdish
+			PER_1122 = { add_core = THIS }
+			901 = { add_core = THIS }
+			3532 = { add_core = THIS }
+			3562 = { add_core = THIS }
+			3294 = { add_core = THIS }
+			923 = { add_core = THIS }
+			928 = { add_core = THIS }
+			892 = { add_core = THIS }
+			3353 = { add_core = THIS }
+			3355 = { add_core = THIS }
+			925 = { add_core = THIS }
+			3296 = { add_core = THIS }
+			any_country = {
+				limit = { 
+					tag = KDS
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			set_country_flag = CAU_assyrians_kurds
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
             }
 		}
 	}

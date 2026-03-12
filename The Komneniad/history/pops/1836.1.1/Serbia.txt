@@ -1530,31 +1530,31 @@
     }
 
     soldiers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 133
     }
 
     clergymen = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 133
     }
 
     artisans = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 146
     }
 
     soldiers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 146
     }
 
     farmers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 5280
     }
@@ -1699,31 +1699,31 @@
     }
 
     soldiers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 100
     }
 
     clergymen = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 100
     }
 
     artisans = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 110
     }
 
     soldiers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 110
     }
 
     farmers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 8970
     }
@@ -1845,7 +1845,7 @@
     }
 
     farmers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 10900
     }
@@ -1927,31 +1927,31 @@
 #Pristina (208000/52000 POPS)
 802 = {
     soldiers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 1100
     }
 
     clergymen = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 100
     }
 
     artisans = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 900
     }
 
     farmers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 19920
     }
 
     farmers = {
-        culture = serb
+        culture = epirote
         religion = orthodox
         size = 2000
     }
@@ -2081,10 +2081,6 @@
         religion = orthodox
         size = 1200
     }
-}
-3420 = {
-}
-3421 = {
 }
 #Prizren (186000/46000 POPS)
 803 = {
@@ -2239,43 +2235,43 @@
     }
 
     aristocrats = {
-        culture = albanian
+        culture = serb
         religion = orthodox
-        size = 100
+        size = 150
     }
 
     officers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 100
     }
 
     clergymen = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 100
     }
 
     artisans = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 900
     }
 
     soldiers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 100
     }
 
     farmers = {
-        culture = albanian
+        culture = serb
         religion = orthodox
         size = 31200
     }
 
     farmers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 3550
     }
@@ -2367,7 +2363,7 @@
     }
 
     farmers = {
-        culture = albanian
+        culture = epirote
         religion = orthodox
         size = 3500
     }

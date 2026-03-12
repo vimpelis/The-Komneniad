@@ -785,11 +785,11 @@ country_event = {
 		political_reform = appointed
 		political_reform = primary_culture_only
 		nationalvalue = nv_autocracy
+		all_core = { remove_core = ASY remove_core = MGT }
 		KHR = { all_core = { add_core = PER } }
 		1141 = { add_core = PER }
 		1142 = { add_core = PER }
 		1071 = { add_core = PER }
-		all_core = { remove_core = ASY }
 		TUR_893 = { add_core = ASY }
 		TUR_923 = { add_core = ASY }
 		901 = { add_core = ASY }
@@ -811,11 +811,11 @@ country_event = {
 		political_reform = appointed
 		political_reform = culture_voting_only
 		nationalvalue = nv_order
+		all_core = { remove_core = ASY remove_core = MGT }
 		KHR = { all_core = { add_core = PER } }
 		1141 = { add_core = PER }
 		1142 = { add_core = PER }
 		1071 = { add_core = PER }
-		all_core = { remove_core = ASY }
 		TUR_893 = { add_core = ASY }
 		TUR_923 = { add_core = ASY }
 		901 = { add_core = ASY }
@@ -837,11 +837,11 @@ country_event = {
 		political_reform = state_equal_weight
 		political_reform = culture_voting_only
 		nationalvalue = nv_productivity
+		all_core = { remove_core = ASY remove_core = MGT }
 		KHR = { all_core = { add_core = PER } }
 		1141 = { add_core = PER }
 		1142 = { add_core = PER }
 		1071 = { add_core = PER }
-		all_core = { remove_core = ASY }
 		TUR_893 = { add_core = ASY }
 		TUR_923 = { add_core = ASY }
 		901 = { add_core = ASY }

@@ -2448,7 +2448,7 @@
     }
 
     clergymen = {
-        culture = albanian
+        culture = epirote
         religion = sunni
         size = 700
     }
@@ -2460,7 +2460,7 @@
     }
 
     artisans = {
-        culture = albanian
+        culture = epirote
         religion = sunni
         size = 250
     }

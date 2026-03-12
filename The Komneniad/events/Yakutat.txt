@@ -450,8 +450,8 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
     option = {
-		name = "The Albanian alphabet... a marvel to behold."
-		any_pop = { limit = { has_pop_culture = albanian } consciousness = 1 }
+		name = "The Epirote alphabet... a marvel to behold."
+		any_pop = { limit = { has_pop_culture = epirote } consciousness = 1 }
 	}
 }
 country_event = {
