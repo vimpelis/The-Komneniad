@@ -762,7 +762,6 @@ political_decisions = {
 		allow = {
 			invention = philosophy_of_language
 			NOT = { exists = IRQ }
-			NOT = { exists = KWT }
 			NOT = { exists = UQA }
 			OR = {
 				AND = {
@@ -791,7 +790,6 @@ political_decisions = {
 			}
 			set_country_flag = culture_conversion
 			IRQ = { all_core = { add_core = ASY remove_core = IRQ remove_core = TUR } }
-			KWT = { all_core = { add_core = ASY remove_core = KWT remove_core = TUR } }
 			UQA = { all_core = { add_core = ASY remove_core = UQA } }
 			random_owned = {
 				limit = {
@@ -805,7 +803,6 @@ political_decisions = {
 					owner = { tag = PER }
 				}
 				IRQ = { all_core = { add_core = ASY remove_core = IRQ } }
-				KWT = { all_core = { add_core = ASY remove_core = KWT } }
 				TUR = { all_core = { add_core = KHR remove_core = TUR } }
 			}
 		}

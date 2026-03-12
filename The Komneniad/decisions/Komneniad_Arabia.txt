@@ -695,7 +695,7 @@ political_decisions = {
 				annex_to = THIS
 				all_core = { add_core = THIS }
 			}
-			all_core = { remove_core = OMA remove_core = HAD remove_core = ARU remove_core = QAT remove_core = BHR remove_core = ABU }
+			all_core = { remove_core = OMA remove_core = HAD remove_core = ARU remove_core = QAT remove_core = HAJ }
 			set_country_flag = culture_conversion
 		}
 		ai_will_do = { factor = 1 }

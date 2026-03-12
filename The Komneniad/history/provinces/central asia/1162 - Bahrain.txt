@@ -1,7 +1,8 @@
 owner = OMA
 controller = OMA
 add_core = OMA
-add_core = BHR
+add_core = QAT
+add_core = HAJ
 trade_goods = fruit
-terrain = bahrain
-life_rating = 34
+terrain = small_island
+life_rating = 35

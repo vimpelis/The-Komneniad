@@ -1,13 +1,14 @@
-capital = 935
+capital = 1167
 primary_culture = bedouin
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.03
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 #Political Reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = appointed
 vote_franschise = none_voting
 public_meetings = no_meeting
@@ -32,31 +33,32 @@ penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = primary_culture_only
 border_policy = open_borders
-centralization = unitary
+centralization = federalism
 colonial_policy = no_colonies
 
 
-ruling_party = ARA_conservative
+ruling_party = ABU_conservative
 upper_house = {
     fascist = 0
-    liberal = 35
-    conservative = 55
-    reactionary = 10
+    liberal = 10
+    conservative = 75
+    reactionary = 15
     radical = 0
     socialist = 0
     communist = 0
 }
 
 set_country_flag = sunni_country
-schools = unciv_tech_school
 
-foreign_artillery = yes_foreign_artillery
-foreign_weapons = yes_foreign_weapons
-
-small_arms_production = yes
-ammunition_production = yes
-
+foreign_naval_officers = yes_foreign_naval_officers
 
 #Technologies
 flintlock_rifles = 1
-bronze_muzzle_loaded_artillery = 1
+
+#Inventions
+small_arms_production = yes
+ammunition_production = yes
+
+#Starting Consciousness
+consciousness = 0
+nonstate_consciousness = 0

@@ -1,6 +1,7 @@
 owner = QAT
 controller = QAT
 add_core = QAT
+add_core = HAJ
 trade_goods = fish
-terrain = doha
-life_rating = 34
+terrain = coastal_desert
+life_rating = 35
