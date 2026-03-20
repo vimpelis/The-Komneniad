@@ -383,6 +383,7 @@ political_decisions = {
 				tag = CLM
 				tag = CAL
 			}
+			owns = 93
 			NOT = {	has_country_flag = CLM_rockies_borderlands }
 		}
 		allow = {
