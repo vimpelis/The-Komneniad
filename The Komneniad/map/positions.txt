@@ -72409,15 +72409,6 @@
             y = 1357.166667
         }
 
-        naval_base = {
-            x = 2711.800000
-            y = 1355.650000
-        }
-
-    }
-
-    building_rotation = {
-        naval_base = 0.369334
     }
 
 } # Tetouan
