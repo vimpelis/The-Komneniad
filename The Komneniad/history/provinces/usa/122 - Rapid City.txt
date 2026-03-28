@@ -2,3 +2,4 @@ trade_goods = grain
 life_rating = 25
 terrain = hills
 add_core = SIO
+colonial = 1

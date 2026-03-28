@@ -3,3 +3,4 @@ life_rating = 30
 terrain = santafe
 add_core = RGR
 add_core = AYL
+colonial = 1

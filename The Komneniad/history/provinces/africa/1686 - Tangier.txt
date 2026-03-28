@@ -1,3 +1,4 @@
 trade_goods = timber
 terrain = temiscaming
-life_rating = 25 
+life_rating = 25
+colonial = 1

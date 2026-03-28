@@ -3,3 +3,4 @@ life_rating = 30
 terrain = omaha
 add_core = AYL
 add_core = SIO
+colonial = 1

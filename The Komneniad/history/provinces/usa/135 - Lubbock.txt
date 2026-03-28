@@ -3,3 +3,4 @@ terrain = steppe
 life_rating = 35
 add_core = MEX
 add_core = RGR
+colonial = 1

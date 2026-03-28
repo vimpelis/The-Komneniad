@@ -2,5 +2,5 @@ owner = IRO
 controller = IRO
 add_core = IRO
 trade_goods = fruit
-terrain = mobile
+terrain = forest
 life_rating = 35 
