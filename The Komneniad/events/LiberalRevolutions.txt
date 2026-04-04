@@ -16,7 +16,7 @@ country_event = {
             tag = ZPD
             tag = HUN
             tag = MOL
-            tag = WAL
+            tag = MUN
             tag = SIE
             literacy = 0.3
         }

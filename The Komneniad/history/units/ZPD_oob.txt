@@ -63,7 +63,7 @@ RUS = {
 BYZ = {
     value = 75
 }
-WAL = {
+MUN = {
     value = 50
     level = 3
     influence_value = 25

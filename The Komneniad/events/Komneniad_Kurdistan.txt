@@ -677,12 +677,12 @@ country_event = {
 
 	option = {
         name = "Thank you Uncle Samouil!"
-		treasury = 25000
-		artillery = 50
-		canned_food = 100
-		small_arms = 100
-		ammunition = 100
-		regular_clothes = 150
+		treasury = 15000
+		artillery = 10
+		canned_food = 25
+		small_arms = 25
+		ammunition = 25
+		regular_clothes = 50
 		define_general = {
 			name = "Yannis Makriyannis"
 			personality = defence_3.1
@@ -700,7 +700,7 @@ country_event = {
 			}
 			GRE = { diplomatic_influence = { who = ASY value = 100 } relation = { who = ASY value = 100 } }
 		}
-		add_country_modifier = { name = ASY_conquest_of_persia_modf duration = 3650 }
+		add_country_modifier = { name = ASY_conquest_of_persia_modf duration = 1825 }
 		ASY_persia_warning_tt = {}
     }
 }

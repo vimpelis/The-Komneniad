@@ -1,8 +1,8 @@
 owner = BYZ
 controller = BYZ
 add_core = BYZ
+add_core = WAL
 add_core = BUL
-add_core = ROM
 trade_goods = grain
 life_rating = 35
 terrain = silistre

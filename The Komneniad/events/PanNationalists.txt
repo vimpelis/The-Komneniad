@@ -46,7 +46,7 @@ country_event = {
                 is_culture_group = THIS
                 OR = {
                     is_greater_power = yes
-                    tag = WAL
+                    tag = MUN
                     tag = MOL
                     tag = DEN
                     tag = SWE
@@ -1232,7 +1232,7 @@ country_event = {
         }
         random_country = {
             limit = {
-                tag = ROM
+                tag = WAL
                 exists = yes
             }
             diplomatic_influence = {
@@ -1247,14 +1247,14 @@ country_event = {
         }
         random_owned = {
             limit = {
-                ROM = { exists = no }
+                WAL = { exists = no }
             }
             owner = { set_country_flag = crown_from_the_gutter }
         }
         random_country = {
             limit = {
                 ai = no
-                ROM = { exists = no }
+                WAL = { exists = no }
                 is_culture_group = pan_romanian
                 NOT = { tag = THIS }
             }

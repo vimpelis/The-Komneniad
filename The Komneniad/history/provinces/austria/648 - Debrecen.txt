@@ -5,4 +5,4 @@ trade_goods = grain
 life_rating = 35
 terrain = debrecen
 add_core = HUN
-add_core = ROM
+add_core = WAL

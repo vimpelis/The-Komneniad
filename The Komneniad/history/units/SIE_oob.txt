@@ -1,8 +1,7 @@
 MOL = {
     value = 200
 }
-
-WAL = {
+MUN = {
     value = 200
 }
 HUN = {

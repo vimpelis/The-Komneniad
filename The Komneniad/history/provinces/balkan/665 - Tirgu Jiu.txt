@@ -1,7 +1,7 @@
-owner = WAL
-controller = WAL
+owner = MUN
+controller = MUN
+add_core = MUN
 add_core = WAL
-add_core = ROM
 trade_goods = coal
 life_rating = 35
 terrain = targujiu

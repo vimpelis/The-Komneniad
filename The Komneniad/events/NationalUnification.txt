@@ -89,7 +89,7 @@ country_event = {
                         has_country_flag = wants_to_unify
                         has_country_modifier = kalmar_union
                     }
-                    tag = WAL
+                    tag = MUN
                     tag = MOL
                 }
                 num_of_cities = 1
@@ -111,7 +111,7 @@ country_event = {
                 factor = 200
                 OR = {
                     tag = MOL
-                    tag = WAL
+                    tag = MUN
                 }
             }
             modifier = {

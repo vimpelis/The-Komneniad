@@ -256,7 +256,7 @@ country_event = {
 				has_country_flag = CRP_defiant
 				exists = no
 			}
-			WAL = {
+			MUN = {
 				has_country_flag = CRP_defiant
 				exists = no
 			}
@@ -298,7 +298,7 @@ country_event = {
     trigger = {
 		has_country_flag = CRP_leader
 		HUN = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
-		WAL = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
+		MUN = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
 		SIE = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
 		MOL = { OR = { has_country_flag = CRP_accepted has_country_flag = CRP_leader } }
     }

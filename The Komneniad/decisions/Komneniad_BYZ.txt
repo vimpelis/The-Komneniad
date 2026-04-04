@@ -260,7 +260,7 @@ political_decisions = {
 			tag = GRE
 			has_country_flag = greek_path
 			CRP = { exists = no }
-			ROM = { exists = no }
+			WAL = { exists = no }
 			NOT = { has_country_flag = BYZ_influence_romania }
         }
 
@@ -295,13 +295,13 @@ political_decisions = {
         potential = {
 			tag = GRE
 			has_country_flag = greek_path
-			WAL = { exists = yes }
+			MUN = { exists = yes }
 			has_country_flag = BYZ_influence_romania
 			NOT = { has_country_flag = BYZ_vassalize_wallachia }
         }
 
         allow = {
-			WAL = {
+			MUN = {
 				war = no
 				in_sphere = THIS
 				is_vassal = no
@@ -312,7 +312,7 @@ political_decisions = {
         effect = {
             set_country_flag = BYZ_vassalize_wallachia
             badboy = 4
-			create_vassal = WAL
+			create_vassal = MUN
         }
 
         ai_will_do = {
@@ -397,7 +397,7 @@ political_decisions = {
         potential = {
 			tag = GRE
 			has_country_flag = greek_path
-			ROM = { exists = yes }
+			WAL = { exists = yes }
 			NOT = { has_country_flag = BYZ_conquer_romania }
         }
 
@@ -411,7 +411,7 @@ political_decisions = {
             set_country_flag = BYZ_conquer_romania
             badboy = 18
 			casus_belli = {
-				target = ROM
+				target = WAL
 				type = conquest
 				months = 24
 			}
@@ -447,7 +447,7 @@ political_decisions = {
         allow = {
 			state_n_government = 1
 			OR = {
-				ROM = {
+				WAL = {
 					all_core = {
 						OR = {
 							owned_by = THIS
@@ -460,12 +460,12 @@ political_decisions = {
 				}
 				AND = {
 					OR = {
-						WAL = { vassal_of = THIS }
+						MUN = { vassal_of = THIS }
 						MOL = { vassal_of = THIS }
 						SIE = { vassal_of = THIS }
 					}
 					OR = {
-						WAL = { 
+						MUN = { 
 							OR = {
 								exists = no 
 								AND = {
@@ -502,7 +502,7 @@ political_decisions = {
             set_country_flag = BYZ_integrate_romania
             badboy = 5
 			prestige = 15
-			ROM = {
+			WAL = {
 				all_core = {
 					add_core = THIS
 				}

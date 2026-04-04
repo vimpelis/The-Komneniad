@@ -3,16 +3,16 @@ political_decisions = {
         potential = {
             NOT = {
                 OR = {
-					exists = ROM
+					exists = WAL
 					exists = CRP
 				}
                 is_culture_group = pan_romanian
             }
             OR = {
                 any_owned_province = {
-                    any_neighbor_province = { is_core = ROM }
+                    any_neighbor_province = { is_core = WAL }
                 }
-                is_sphere_leader_of = WAL
+                is_sphere_leader_of = MUN
                 is_sphere_leader_of = MOL
                 is_sphere_leader_of = SIE
             }
@@ -21,7 +21,7 @@ political_decisions = {
         allow = {
             war = no
             is_greater_power = yes
-            ROM = {
+            WAL = {
                 all_core = {
                     OR = {
                         owned_by = THIS
@@ -40,7 +40,7 @@ political_decisions = {
             any_country = {
                 limit = {
                     OR = {
-                        is_our_vassal = WAL
+                        is_our_vassal = MUN
                         is_our_vassal = MOL
                         is_our_vassal = SIE
                     }
@@ -69,7 +69,7 @@ political_decisions = {
 				}
 				any_owned = {
 					limit = {
-						is_core = ROM
+						is_core = WAL
 					}
 					secede_province = THIS
 				}
@@ -77,20 +77,20 @@ political_decisions = {
             any_owned = {
                 limit = {
                     is_core = THIS
-                    is_core = ROM
+                    is_core = WAL
                 }
-                remove_core = ROM
+                remove_core = WAL
             }
 			any_owned = {
 				limit = {
-					is_core = ROM
+					is_core = WAL
 				}
-				secede_province = ROM
+				secede_province = WAL
 			}
-            create_vassal = ROM
-            create_alliance = ROM
+            create_vassal = WAL
+            create_alliance = WAL
             diplomatic_influence = {
-                who = ROM
+                who = WAL
                 value = 300
             }
             any_country = {
@@ -106,22 +106,22 @@ political_decisions = {
                     value = -50
                 }
                 relation = {
-                    who = ROM
+                    who = WAL
                     value = -50
                 }
             }
-            ROM = {
+            WAL = {
                 any_owned = {
                     limit = {
-						is_core = ROM
+						is_core = WAL
 					}
-                    remove_core = WAL
+                    remove_core = MUN
                     remove_core = MOL
                 }
             }
 			random_owned = {
-				limit = { WAL = { exists = no } }
-				owner = { WAL = { all_core = { remove_core = WAL } } }
+				limit = { MUN = { exists = no } }
+				owner = { MUN = { all_core = { remove_core = MUN } } }
 			}
 			random_owned = {
 				limit = { MOL = { exists = no } }
@@ -149,10 +149,10 @@ political_decisions = {
         picture = create_romania
         potential = {
             is_culture_group = pan_romanian
-            exists = ROM
+            exists = WAL
             NOT = {
                 has_country_flag = unite_with_romania
-                tag = ROM
+                tag = WAL
                 tag = MOL
             }
             NOT = { has_global_flag = sw_set }
@@ -163,13 +163,13 @@ political_decisions = {
             NOT = { is_mobilised = yes }
             OR = {
                 is_vassal = no
-                overlord = { is_our_vassal = ROM }
+                overlord = { is_our_vassal = WAL }
             }
             OR = {
                 part_of_sphere = no
-                sphere_owner = { is_sphere_leader_of = ROM }
+                sphere_owner = { is_sphere_leader_of = WAL }
             }
-            ROM = {
+            WAL = {
                 war = no
                 neighbour = THIS
             }
@@ -183,7 +183,7 @@ political_decisions = {
             }
             random_country = {
                 limit = {
-                    tag = ROM
+                    tag = WAL
                     ai = yes
                     THIS = { ai = yes }
                 }
@@ -191,7 +191,7 @@ political_decisions = {
             }
             random_country = {
                 limit = {
-                    tag = ROM
+                    tag = WAL
                     ai = yes
                     THIS = { ai = no }
                 }
@@ -201,23 +201,23 @@ political_decisions = {
                         limit = { province_id = 664 }
                         owner = { capital = 664 }
                     }
-                    change_tag = ROM
+                    change_tag = WAL
                     795 = { remove_core = SIE }
                 }
             }
             random_country = {
                 limit = {
-                    tag = ROM
+                    tag = WAL
                     ai = no
                 }
                 country_event = 60130
             }
-            ROM = {
+            WAL = {
 				any_owned = {
 					limit = {
-						is_core = ROM
+						is_core = WAL
 					}
-					remove_core = WAL
+					remove_core = MUN
 					remove_core = MOL
 				}
 			}

@@ -778,7 +778,7 @@ pan_romanian = {
         }
         radicalism = 10
     }
-    union = ROM
+    union = WAL
 }
 
 polish_culture_group = {

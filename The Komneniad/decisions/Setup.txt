@@ -740,7 +740,7 @@ political_decisions = {
 			DAN = { country_event = 157000 any_pop = { limit = { has_pop_culture = anglo_saxon } militancy = 2 } }
 			BYZ = { country_event = 151000 }
 			RUS = { country_event = 152000 }
-			WAL = { country_event = 153000 }
+			MUN = { country_event = 153000 }
 			MOL = { country_event = 153000 }
 			SIE = { country_event = 153000 }
 			HUN = { country_event = 153000 }

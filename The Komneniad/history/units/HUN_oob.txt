@@ -1,4 +1,4 @@
-WAL = { value = -50 }
+MUN = { value = -50 }
 SIE = { value = -100 }
 MOL = { value = -50 }
 

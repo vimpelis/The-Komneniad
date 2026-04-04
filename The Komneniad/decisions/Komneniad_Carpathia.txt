@@ -22,7 +22,7 @@ political_decisions = {
 							relation = { who = THIS value = 150 }
 						}
 					}
-					WAL = {
+					MUN = {
 						OR = {
 							ai = no
 							alliance_with = THIS
@@ -51,13 +51,13 @@ political_decisions = {
 						OR = {
 							MOL = { ai = no }
 							SIE = { ai = no }
-							WAL = { ai = no }
+							MUN = { ai = no }
 						}
 					}
 					year = 1839
 					OR = {
 						alliance_with = MOL
-						alliance_with = WAL
+						alliance_with = MUN
 						alliance_with = SIE
 					}
 				}
@@ -82,12 +82,12 @@ political_decisions = {
 		potential = {
 			primary_culture = romanian
 			has_global_flag = CRP_nationalism
-			NOT = { exists = ROM }
+			NOT = { exists = WAL }
 		}
 		allow = {
 			war = no
 			state_n_government = 1
-			ROM = {
+			WAL = {
 				all_core = {
 					OR = {
 						owned_by = THIS
@@ -104,7 +104,7 @@ political_decisions = {
 			}
 		}
 		effect = {
-			change_tag = ROM
+			change_tag = WAL
 			any_country = {
 				limit = { primary_culture = romanian }
 				country_event = 11101

@@ -56,13 +56,13 @@ alliance = {
 
 alliance = {
     first = SIE
-    second = WAL
+    second = MUN
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
 
 alliance = {
-    first = WAL
+    first = MUN
     second = MOL
     start_date = 1836.1.1
     end_date = 1936.1.1

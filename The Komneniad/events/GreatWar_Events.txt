@@ -571,7 +571,7 @@ country_event = {
                 exists = no
                 OR = {
                     is_cultural_union = no
-                    tag = ROM
+                    tag = WAL
                 }
                 NOT = {
                     AND = {

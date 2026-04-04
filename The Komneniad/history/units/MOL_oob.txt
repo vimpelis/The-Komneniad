@@ -1,7 +1,6 @@
-WAL = {
+MUN = {
     value = 200
 }
-
 SIE = {
     value = 200
 }
