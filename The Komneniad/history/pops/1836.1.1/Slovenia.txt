@@ -283,6 +283,12 @@
         religion = catholic
         size = 19650
     }
+	
+	farmers = {
+        culture = croat
+        religion = catholic
+        size = 1500
+    }
 
     aristocrats = {
         culture = hungarian

@@ -479,25 +479,25 @@
 #Uzgorod (856000/214000 POPS) #Part of Ukraine today
 950 = {
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 50
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 100
     }
 
     soldiers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 50
     }
 
     farmers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 700
     }
@@ -629,7 +629,7 @@
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = orthodox
         size = 1425
     }

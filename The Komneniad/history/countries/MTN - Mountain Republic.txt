@@ -1,8 +1,6 @@
-capital = 1053
-primary_culture = dagestani
-culture = talysh
+capital = 1052
+primary_culture = nakh_dagestani
 culture = azerbaijani
-culture = chechen
 culture = circassian
 religion = sunni
 government = theocracy
@@ -46,8 +44,6 @@ nonstate_consciousness = 0
 
 set_country_flag = sunni_country
 set_country_flag = theocratic_government
-
-oob = "DAG_oob.txt"
 
 foreign_weapons = yes_foreign_weapons
 foreign_artillery = yes_foreign_artillery

@@ -837,7 +837,7 @@ czecho_slovak_culture_group = {
         radicalism = 5
     }
 
-    slovak = {
+    moravian = {
         color = { 120 255 255 }
         first_names = { Albín Alexander Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
         Eugen Fedor Ferdinand František Frico Gabriel Gustáv Imrich Ján
@@ -1237,27 +1237,13 @@ turko_semitic = {
 
 caucasian = {
     leader = arab
-
     unit = MoroccoGC
-
-        dagestani = {
+        nakh_dagestani = {
             color = { 125 110 140 }
             first_names = {
                 Hadji Sheyh Rasul Umma Halil Gadzhimurat Ghazi "Gamzat-bek" Najmuddin Tapa Ali-Khaji Akusha Haidar Várkony Shamil Kamil Magomet Ibrahim
 				Muhammad Mansur Dzhokhar Puterbrot Abdulkhakim Adam Buvaysar Kuramagomed Khabib Ali Rustam
-                }
-
-            last_names = {
-                Awaral Avshalumov Aliyev Askerkhanov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal
-				Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak
-				Nogai Aghul Rutul al-Tsakhur Hotso Bamat Gadzhiyev Fazu Gamzatov
-            }
-            radicalism = 25
-        }
-        chechen = {
-            color = { 40 130 100 }
-            first_names = {
-                Abuu Ayub Adam Ahmad Alikhan Alkhazur Aluu Andarbek Anzor Aptii Arzu Aslan Aslanbek Asuu Balavdi Baudi Bekkhan Bislan Bula Buvaisar Bworz
+				Abuu Ayub Adam Ahmad Alikhan Alkhazur Aluu Andarbek Anzor Aptii Arzu Aslan Aslanbek Asuu Balavdi Baudi Bekkhan Bislan Bula Buvaisar Bworz
 				Chabworz Deni Duqvaakha Eela Elbek Elbrus Elberd Emin Gada Ghanii Hassuh Hamid Hamzat Haaron Hasan Hooza Humid Husein Ibraahim Iljas Kanta
 				Katii Kazbek Khasboolat Khasmohmad Khavazh Kyyra Lyoma Lecha "Madii Nel" Mairbek Mamed Mikaail Mohmad Movldi Movsar Mumaadi Murad Muusa Nezh
 				Nurdi Ortsa Ramzan Ruman Ruslan Rustam Saida Saidali Saipuddi Shamsuuddi Sha'raani Sherip Shirvani Siraazhdi Sols Suliim Suliman Supjan Surkho
@@ -1265,11 +1251,14 @@ caucasian = {
                 }
 
             last_names = {
-                Ajndi Shishani Akhmadov Dudayev Yamadayev Abramov Alkhanov Bargishev Basayev Dudaev Kadyrov Maskhadov Saidullayev Umarov Zakayev Akkiy Myalkiy
+                Awaral Avshalumov Aliyev Askerkhanov Mussayassul Aliev Murad "Ma'arulal" "X'indalal" Andis Didoi Anchikh Bagulal Bezhta Archin Chamalal
+				Hinukhs Ratsitl Godoberi Khvarshi Rachabalda Karata Tokita Tindi Akhvakh Botlikh Hunzib al-Shishani Dargwa Kumyk Lezgiyar Tabasaran Lak
+				Nogai Aghul Rutul al-Tsakhur Hotso Bamat Gadzhiyev Fazu Gamzatov
+				Ajndi Shishani Akhmadov Dudayev Yamadayev Abramov Alkhanov Bargishev Basayev Dudaev Kadyrov Maskhadov Saidullayev Umarov Zakayev Akkiy Myalkiy
 				Nokhchmakhkakhoy Alaroy Beltagoy Benoy Biltoy Dishni Chartoy Elistanzhkhoy Centoroy Enganoy Ersenoy Gendargenoy Gunoi Kharachoi Zandakhoi Terloy
 				Beshni Chinkhoi Chanti Cheberloy Mutawakil Rigakhoy Buni Sharoy Shotoy Varandoy Batsbi al-Ingush al-Kist Tchermoeff
             }
-            radicalism = 30
+            radicalism = 25
         }
         circassian = {
             color = { 185 206 6 }
@@ -1449,22 +1438,6 @@ iranian_turanian = {
             Badirkhan Barzani Khan Shilak
         }
         radicalism = 10
-    }
-	#Tat
-    talysh = {
-        color = { 137 81 55 }
-        first_names = {
-            Abbas Abolghasem Abdolhossein Abdolsamad Abdolazim Ahmad Ali Bahram
-            Ebrahim Esmail "Fath Ali" Fazlollah Hamzeh Hasan Hossein Kamran Karim "Lotf Ali"
-            Mahmoud Massoud Mohammad "Moin ed-Din" "Mozzafer ed-Din" Murad Muhsin
-            "Naser ed-Din" Nosret Reza
-            }
-        last_names = {
-            Airom Ansari Ayrum Buzarjomehri Davallu Esfahani Farhani
-            Jahanbani Kashani Khan Khuzai
-            Meshhedi Nakhchevani Pesyan Rokni Shafaei Shahbakhti
-            Shirazi Tabrizi Tahmasebi Zahedi
-            }
     }
     mazanderani = {
         color = { 204 136 63 }

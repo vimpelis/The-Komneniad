@@ -1,16 +1,10 @@
 owner = BAV
 controller = BAV
 add_core = BAV
-add_core = SLO
+add_core = KRA
 add_core = VEN
 trade_goods = grain
 life_rating = 40
-terrain = trieste
-naval_base = 1 # state_building = {
-################################################################################
-# level = 1
-# building = liquor_distillery
-# upgrade = yes
-# }
-################################################################################
+terrain = plains
+naval_base = 1
 state_building = { level = 1 building = steamer_shipyard upgrade = yes } 

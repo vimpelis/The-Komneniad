@@ -3444,7 +3444,7 @@ province_event = {
             culture = czech
             culture = polish
             culture = hungarian
-            culture = slovak
+            culture = moravian
         }
         controlled_by = owner
     }

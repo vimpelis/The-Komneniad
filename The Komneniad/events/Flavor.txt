@@ -53,7 +53,7 @@ country_event = {
 	trigger = {
 		owns = 636
 		year = 1863
-		NOT = { primary_culture = slovak }
+		NOT = { primary_culture = moravian }
 		realism = 1
 		month = 8
 	}
@@ -64,25 +64,25 @@ country_event = {
 		name = "Donate to help them out."
 		plurality = 1
 		money = -1000
-		any_pop = { limit = { has_pop_culture = slovak } consciousness = 1 }
-		any_pop = { limit = { has_pop_culture = slovak } militancy = -1 }
+		any_pop = { limit = { has_pop_culture = moravian } consciousness = 1 }
+		any_pop = { limit = { has_pop_culture = moravian } militancy = -1 }
 		ai_chance = {
             factor = 1
             modifier = {
                 factor = 0
-                AND = { tag = HUN NOT = { accepted_culture = slovak } }
+                AND = { tag = HUN NOT = { accepted_culture = moravian } }
             }
         }
 	}
 	
 	option = {
 		name = "How interesting."
-		any_pop = { limit = { has_pop_culture = slovak } consciousness = 1 }
+		any_pop = { limit = { has_pop_culture = moravian } consciousness = 1 }
 		ai_chance = {
             factor = 0
             modifier = {
                 factor = 1
-                AND = { tag = HUN NOT = { accepted_culture = slovak } }
+                AND = { tag = HUN NOT = { accepted_culture = moravian } }
             }
         }
 	}
@@ -97,7 +97,7 @@ country_event = {
 	trigger = {
 		owns = 636
 		year = 1863
-		primary_culture = slovak
+		primary_culture = moravian
 		realism = 1
 		month = 8
 	}
@@ -109,7 +109,7 @@ country_event = {
 		prestige = 5
 		plurality = 1
 		years_of_research = 0.3
-		any_pop = { limit = { has_pop_culture = slovak } consciousness = -1 }
+		any_pop = { limit = { has_pop_culture = moravian } consciousness = -1 }
 	}
 }
 

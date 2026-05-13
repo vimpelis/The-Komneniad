@@ -1554,7 +1554,7 @@
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 5625
     }
@@ -1620,67 +1620,67 @@
     }
 
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 7
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 84
     }
 
     farmers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 699
     }
 
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 8
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 16
     }
 
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 4
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 50
     }
 
     farmers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 419
     }
 
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 5
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 10
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 1415
     }
@@ -2690,79 +2690,6 @@
         culture = western_slavic
         religion = catholic
         size = 27270
-    }
-}
-3425 = {
-    aristocrats = {
-        culture = south_german
-        religion = catholic
-        size = 49
-    }
-
-    clergymen = {
-        culture = south_german
-        religion = protestant
-        size = 62
-    }
-
-    clerks = {
-        culture = south_german
-        religion = protestant
-        size = 6
-    }
-
-    artisans = {
-        culture = south_german
-        religion = protestant
-        size = 790
-    }
-
-    soldiers = {
-        culture = south_german
-        religion = catholic
-        size = 182
-    }
-
-    farmers = {
-        culture = south_german
-        religion = protestant
-        size = 12038
-    }
-
-    aristocrats = {
-        culture = czech
-        religion = catholic
-        size = 26
-    }
-
-    clergymen = {
-        culture = czech
-        religion = protestant
-        size = 33
-    }
-
-    clerks = {
-        culture = czech
-        religion = protestant
-        size = 4
-    }
-
-    artisans = {
-        culture = czech
-        religion = protestant
-        size = 425
-    }
-
-    soldiers = {
-        culture = czech
-        religion = catholic
-        size = 98
-    }
-
-    farmers = {
-        culture = czech
-        religion = protestant
-        size = 6482
     }
 }
 3375 = {

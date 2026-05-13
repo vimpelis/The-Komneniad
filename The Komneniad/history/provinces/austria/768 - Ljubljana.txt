@@ -1,8 +1,8 @@
 owner = BAV
 controller = BAV
 add_core = BAV
-add_core = SLO
+add_core = KRA
+add_core = AUS
 trade_goods = grain
 life_rating = 35
-terrain = ljubljana
-add_core = AUS
+terrain = forest_hills

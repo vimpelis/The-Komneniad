@@ -2,6 +2,7 @@ owner = BZD
 controller = BZD
 add_core = BZD
 add_core = KDS
+add_core = ARM
 trade_goods = wool
 life_rating = 35
 terrain = forest_hills

@@ -1179,25 +1179,25 @@
     }
 
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 261
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 1425
     }
 
     soldiers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 384
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 29925
     }
@@ -1742,34 +1742,10 @@
         size = 1258
     }
 
-    clergymen = {
-        culture = slovak
-        religion = catholic
-        size = 95
-    }
-
-    artisans = {
-        culture = slovak
-        religion = catholic
-        size = 285
-    }
-
-    soldiers = {
-        culture = slovak
-        religion = catholic
-        size = 127
-    }
-
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
-        size = 6600
-    }
-
-    aristocrats = {
-        culture = occitan
-        religion = catholic
-        size = 323
+        size = 1600
     }
 }
 #Partium Region (1112000) #See Romania.txt for balance of region
@@ -1855,19 +1831,19 @@
     }
 
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 100
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 100
     }
 
     farmers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 915
     }

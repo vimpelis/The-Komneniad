@@ -6123,37 +6123,37 @@
 #Derbent (160000/40000 POPS)
 1052 = {
     aristocrats = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 70
     }
 
     clergymen = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 40
     }
 
     officers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 75
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 195
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 2290
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 14910
     }
@@ -6177,61 +6177,61 @@
     }
 
     aristocrats = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 45
     }
 
     clergymen = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 25
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 120
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 1025
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 4475
     }
 
     aristocrats = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 175
     }
 
     clergymen = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 75
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 480
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 2295
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 20900
     }
@@ -6273,31 +6273,31 @@
     }
 
     aristocrats = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 140
     }
 
     clergymen = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 60
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 255
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 210
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 2950
     }
@@ -6339,31 +6339,31 @@
     }
 
     aristocrats = {
-        culture = talysh
+        culture = persian
         religion = shiite
         size = 100
     }
 
     clergymen = {
-        culture = talysh
+        culture = persian
         religion = shiite
         size = 100
     }
 
     artisans = {
-        culture = talysh
+        culture = persian
         religion = shiite
         size = 4000
     }
 
     soldiers = {
-        culture = talysh
+        culture = persian
         religion = shiite
         size = 210
     }
 
     farmers = {
-        culture = talysh
+        culture = persian
         religion = shiite
         size = 2950
     }
@@ -6464,37 +6464,37 @@
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 50
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 80
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 2050
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 50
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 80
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 250
     }
@@ -6520,61 +6520,61 @@
 #Gunib (164000/41000 POPS)
 1053 = {
     aristocrats = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 360
     }
 
     clergymen = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 200
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 1010
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 4720
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 40775
     }
 
     aristocrats = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 20
     }
 
     clergymen = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 10
     }
 
     artisans = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 50
     }
 
     soldiers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 1140
     }
 
     farmers = {
-        culture = dagestani
+        culture = nakh_dagestani
         religion = sunni
         size = 4090
     }
@@ -6691,31 +6691,31 @@
     }
 
     aristocrats = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 350
     }
 
     clergymen = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 200
     }
 
     artisans = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 1100
     }
 
     soldiers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 2270
     }
 
     farmers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 36060
     }
@@ -6803,19 +6803,19 @@
     }
 
     farmers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 6000
     }
 
     farmers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = animist
         size = 12000
     }
 
     farmers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = orthodox
         size = 2000
     }
@@ -6823,31 +6823,31 @@
 #Grozny (68000/17000 POPS) - now Shali
 1055 = {
     aristocrats = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 1325
     }
 
     clergymen = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 675
     }
 
     artisans = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 850
     }
 
     soldiers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 12650
     }
 
     farmers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 49000
     }
@@ -6885,31 +6885,31 @@
     }
 
     aristocrats = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 750
     }
 
     clergymen = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 1175
     }
 
     artisans = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 450
     }
 
     soldiers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 3200
     }
 
     farmers = {
-        culture = chechen
+        culture = nakh_dagestani
         religion = sunni
         size = 31025
     }

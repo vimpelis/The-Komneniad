@@ -4,13 +4,12 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ARM
-				tag = CLC
+				tag = ARV
 				tag = GEO
 				tag = CIR
 				tag = OSS
 				tag = AZB
-				tag = DAG
-				tag = CHY
+				tag = MTN
 			}
 			NOT = { exists = CAU }
 		}
@@ -43,8 +42,7 @@ political_decisions = {
 						primary_culture = circassian
 						primary_culture = azerbaijani
 						primary_culture = ossetian
-						primary_culture = chechen
-						primary_culture = dagestani
+						primary_culture = nakh_dagestani
 					}
 					1051 = {
 						OR = {
@@ -102,13 +100,12 @@ political_decisions = {
 				limit = {
 					OR = {
 						tag = ARM
-						tag = CLC
+						tag = ARV
 						tag = GEO
 						tag = CIR
 						tag = OSS
 						tag = AZB
-						tag = DAG
-						tag = CHY
+						tag = MTN
 					}
 					OR = {
 						vassal_of = THIS
@@ -142,9 +139,7 @@ political_decisions = {
 			add_accepted_culture = circassian
 			add_accepted_culture = ossetian
 			add_accepted_culture = azerbaijani
-			add_accepted_culture = chechen
-			add_accepted_culture = dagestani
-			add_accepted_culture = talysh
+			add_accepted_culture = nakh_dagestani
 			PER_1112 = { add_core = CAU }
 			3503 = { add_core = CAU }
 			1112 = { add_core = CAU }

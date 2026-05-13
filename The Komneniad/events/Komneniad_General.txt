@@ -484,10 +484,10 @@ country_event = {
 		AFG_1213 = { add_core = TUR secede_province = THIS secede_province = TUR }
 		935 = { add_core = TUR secede_province = THIS secede_province = TUR }
 		1052 = { add_core = TUR secede_province = THIS secede_province = TUR }
-		1053 = { add_core = DAG secede_province = THIS secede_province = DAG }
-		1055 = { add_core = DAG secede_province = THIS secede_province = DAG }
-		3391 = { add_core = DAG secede_province = THIS secede_province = DAG }
-		TUR = { create_vassal = ARM create_vassal = DAG }
+		1053 = { add_core = MTN secede_province = THIS secede_province = MTN }
+		1055 = { add_core = MTN secede_province = THIS secede_province = MTN }
+		3391 = { add_core = MTN secede_province = THIS secede_province = MTN }
+		TUR = { create_vassal = ARM create_vassal = MTN }
 		SIN_1288 = { add_core = TUR secede_province = THIS secede_province = TUR }
 		PAN_1227 = { add_core = TUR secede_province = THIS secede_province = TUR }
 		KAL_1221 = { add_core = TUR secede_province = THIS secede_province = TUR }

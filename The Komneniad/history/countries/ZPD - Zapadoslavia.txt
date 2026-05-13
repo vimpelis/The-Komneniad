@@ -1,7 +1,7 @@
-capital = 625 #Prague
+capital = 3417 #Prague
 primary_culture = czech
 culture = polish
-culture = slovak
+culture = moravian
 religion = catholic
 government = prussian_constitutionalism
 plurality = 0.5

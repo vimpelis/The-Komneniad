@@ -3,6 +3,6 @@ controller = BAV
 add_core = BAV
 add_core = CRO
 add_core = VEN
-terrain = pola
+terrain = hills
 trade_goods = grain
 life_rating = 35 

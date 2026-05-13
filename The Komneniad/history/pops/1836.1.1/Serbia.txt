@@ -117,13 +117,13 @@
     }
 
     soldiers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 65
     }
 
     farmers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 2713
     }
@@ -281,7 +281,7 @@
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 625
     }
@@ -377,7 +377,7 @@
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 625
     }
@@ -557,7 +557,7 @@
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 725
     }
@@ -641,19 +641,19 @@
     }
 
     clergymen = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 95
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 42
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 1975
     }

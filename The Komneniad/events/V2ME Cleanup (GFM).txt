@@ -716,6 +716,20 @@ country_event = {
 				add_province_modifier = { name = ATA_meteorite_iron duration = -1 }
 			}
 		}
+		
+		#stiavnica silver mines
+		any_country = {
+			limit = {
+				any_owned_province = {
+					province_id = 635
+					trade_goods = precious_metal
+					NOT = { has_province_modifier = stiavnica_silver_mines }
+				}
+			}
+			635 = {
+				add_province_modifier = { name = stiavnica_silver_mines duration = -1 }
+			}
+		}
 
 		#stop vassal payments
 		any_country = {

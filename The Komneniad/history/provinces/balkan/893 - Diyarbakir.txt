@@ -1,8 +1,9 @@
 owner = ASY
 controller = ASY
 add_core = ASY
+add_core = ARV
 add_core = KDS
+add_core = RUM
 trade_goods = iron
 life_rating = 35
 terrain = hills
-add_core = RUM

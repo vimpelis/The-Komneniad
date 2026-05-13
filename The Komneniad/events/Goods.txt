@@ -130,6 +130,30 @@ province_event = {
     }
 }
 
+province_event = {
+
+    id = 132016
+    title = "132016TITLE"
+    desc = "132016DESC"
+
+    trigger = {
+        trade_goods = precious_metal
+        province_id = 635
+        year = 1895
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "Oh well."
+		trade_goods = coal
+		add_province_modifier = { name = switched_production duration = 365 }
+		remove_province_modifier = stiavnica_silver_mines
+    }
+}
+
 #############################
 #        GOLD EVENTS        #
 #############################

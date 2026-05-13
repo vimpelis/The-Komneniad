@@ -511,13 +511,13 @@
     }
 
     clergymen = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 50
     }
 
     artisans = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 5850
     }
@@ -583,67 +583,67 @@
     }
 
     aristocrats = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 871
     }
 
     bureaucrats = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 636
     }
 
     officers = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 123
     }
 
     clergymen = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 564
     }
 
     artisans = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 2050
     }
 
     artisans = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 2050
     }
 
     artisans = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 2050
     }
 
     artisans = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 2050
     }
 
     artisans = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 1538
     }
 
     soldiers = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 2400
     }
 
     farmers = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 37669
     }
@@ -733,7 +733,7 @@
     farmers = {
         culture = south_german
         religion = catholic
-        size = 31776
+        size = 30000
     }
 
     craftsmen = {
@@ -749,39 +749,118 @@
     }
 
     aristocrats = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 333
     }
 
     clergymen = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 225
     }
 
     artisans = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 1116
     }
 
     soldiers = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 954
     }
 
     farmers = {
-        culture = czech
+        culture = moravian
         religion = catholic
         size = 17874
     }
 
-    craftsmen = {
+    farmers = {
         culture = czech
         religion = catholic
-        size = 54
+        size = 2000
+    }
+}
+3425 = {
+    aristocrats = {
+        culture = south_german
+        religion = catholic
+        size = 49
+    }
+
+    clergymen = {
+        culture = south_german
+        religion = catholic
+        size = 62
+    }
+
+    clerks = {
+        culture = south_german
+        religion = catholic
+        size = 6
+    }
+
+    artisans = {
+        culture = south_german
+        religion = catholic
+        size = 790
+    }
+
+    soldiers = {
+        culture = south_german
+        religion = catholic
+        size = 182
+    }
+
+    farmers = {
+        culture = south_german
+        religion = catholic
+        size = 12038
+    }
+
+    aristocrats = {
+        culture = czech
+        religion = catholic
+        size = 26
+    }
+
+    clergymen = {
+        culture = czech
+        religion = catholic
+        size = 33
+    }
+
+    clerks = {
+        culture = czech
+        religion = catholic
+        size = 4
+    }
+
+    artisans = {
+        culture = czech
+        religion = catholic
+        size = 425
+    }
+
+    soldiers = {
+        culture = czech
+        religion = catholic
+        size = 98
+    }
+
+    farmers = {
+        culture = czech
+        religion = catholic
+        size = 6482
+    }
+	
+	farmers = {
+        culture = moravian
+        religion = catholic
+        size = 2000
     }
 }
 #Linz (588000/147000 POPS)

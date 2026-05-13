@@ -1,13 +1,11 @@
-capital = 636 #Banská Bystrica was originally proposed, Pressburg by decision later
-primary_culture = slovak
-culture = czech
+capital = 768
+primary_culture = slovene
 religion = catholic
-government = absolute_monarchy
+government = colonial_company
 plurality = 0.05
-nationalvalue = nv_order
-literacy = 0.65
+nationalvalue = nv_liberty
+literacy = 0.35
 civilized = yes
-
 
 #Political Reforms
 slavery = no_slavery
@@ -51,38 +49,25 @@ mechanical_production = 1
 hot_blast = 1
 basic_chemistry = 1
 
-#Inventions
-steam_powered_sugar_mills = yes
-
 #New Reforms
-conscription = two_year_draft
+conscription = no_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = culture_voting_only
+citizens_rights = primary_culture_only
 border_policy = open_borders
 centralization = unitary
 colonial_policy = no_colonies
 
 set_country_flag = catholic_country
 
-ruling_party = SLV_conservative
+ruling_party = SLO_conservative
 upper_house = {
     fascist = 0
-    liberal = 25
-    conservative = 60
-    reactionary = 10
-    radical = 5
+    liberal = 20
+    conservative = 65
+    reactionary = 15
+    radical = 0
     socialist = 0
     communist = 0
-}
-
-govt_flag = {
-    government = prov_gov_liberal
-    flag = colonial_company
-}
-
-govt_flag = {
-    government = colonial_company
-    flag = theocracy
 }

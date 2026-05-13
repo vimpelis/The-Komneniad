@@ -647,7 +647,12 @@ political_decisions = {
 					state_n_government = 1
 				}
 			}
-			all_core = { owned_by = THIS }
+			all_core = {
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
+			}
 			war = no
         }
         effect = {
@@ -897,7 +902,7 @@ political_decisions = {
 			OR = {
 				tag = SER
 				tag = CRO
-				tag = SLO
+				tag = KRA
 			}
 			NOT = { exists = YUG }
         }
@@ -932,7 +937,7 @@ political_decisions = {
 			add_accepted_culture = slovene
 			SER = { all_core = { add_core = YUG } }
 			CRO = { all_core = { add_core = YUG } }
-			SLO = { all_core = { add_core = YUG } }
+			KRA = { all_core = { add_core = YUG } }
 			3330 = { add_core = YUG }
 			792 = { add_core = YUG }
 			3370 = { add_core = YUG }
@@ -941,7 +946,7 @@ political_decisions = {
 					OR = {
 						tag = CRO
 						tag = SER
-						tag = SLO
+						tag = KRA
 					}
 					OR = {
 						vassal_of = THIS

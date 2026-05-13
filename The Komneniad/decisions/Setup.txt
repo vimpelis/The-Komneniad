@@ -169,7 +169,7 @@ political_decisions = {
 							has_pop_culture = persian
 							has_pop_culture = azerbaijani
 							has_pop_culture = circassian
-							has_pop_culture = chechen
+							has_pop_culture = nakh_dagestani
 							has_pop_culture = armenian
 						}
 					}
@@ -190,7 +190,7 @@ political_decisions = {
 			}
 			MGT = {
 				any_pop = {
-					limit = { OR = { has_pop_culture = rumi has_pop_culture = circassian has_pop_culture = chechen } }
+					limit = { OR = { has_pop_culture = rumi has_pop_culture = circassian has_pop_culture = nakh_dagestani } }
 					literacy = 0.01
 				}
 				any_pop = {

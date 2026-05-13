@@ -27,8 +27,7 @@ country_event = {
 					limit = {
 						OR = {
 							is_core = AZB
-							is_core = DAG
-							is_core = CHY
+							is_core = MTN
 						}
 					}
 					any_pop = { militancy = 2 consciousness = 4 }
@@ -47,9 +46,7 @@ country_event = {
 			}
 			owner = {
 				add_accepted_culture = azerbaijani
-				add_accepted_culture = chechen
-				add_accepted_culture = dagestani
-				add_accepted_culture = talysh
+				add_accepted_culture = nakh_dagestani
 				any_owned = {
 					limit = {
 						OR = {
@@ -95,8 +92,7 @@ country_event = {
 					limit = {
 						OR = {
 							is_core = AZB
-							is_core = DAG
-							is_core = CHY
+							is_core = MTN
 						}
 					}
 					any_pop = { militancy = 2 consciousness = 4 }
@@ -115,9 +111,7 @@ country_event = {
 			}
 			owner = {
 				add_accepted_culture = azerbaijani
-				add_accepted_culture = chechen
-				add_accepted_culture = dagestani
-				add_accepted_culture = talysh
+				add_accepted_culture = nakh_dagestani
 				any_owned = {
 					limit = {
 						OR = {
@@ -161,8 +155,7 @@ country_event = {
 					limit = {
 						OR = {
 							is_core = AZB
-							is_core = DAG
-							is_core = CHY
+							is_core = MTN
 						}
 					}
 					any_pop = { militancy = 2 consciousness = 4 }
@@ -181,9 +174,7 @@ country_event = {
 			}
 			owner = {
 				add_accepted_culture = azerbaijani
-				add_accepted_culture = chechen
-				add_accepted_culture = dagestani
-				add_accepted_culture = talysh
+				add_accepted_culture = nakh_dagestani
 				any_owned = {
 					limit = {
 						OR = {

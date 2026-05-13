@@ -5646,3 +5646,7 @@ PER_independent_nestorianism = {
 	leadership_modifier = 0.25
     icon = 7
 }
+stiavnica_silver_mines = {
+    local_RGO_output = -0.75
+    icon = 11
+}

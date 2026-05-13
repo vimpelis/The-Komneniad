@@ -4,5 +4,5 @@ add_core = MOL
 add_core = MOL
 trade_goods = fruit
 life_rating = 35
-terrain = chisinau
+terrain = plains
 add_core = WAL

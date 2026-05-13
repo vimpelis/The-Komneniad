@@ -1,8 +1,7 @@
 capital = 619
 primary_culture = south_german
-culture = north_german
 religion = catholic
-government = absolute_empire
+government = absolute_monarchy
 plurality = 10.0
 nationalvalue = nv_autocracy
 literacy = 0.45
@@ -39,8 +38,6 @@ centralization = unitary
 colonial_policy = no_colonies
 
 set_country_flag = catholic_country
-
-govt_flag = { government = absolute_monarchy flag = theocracy }
 
 ruling_party = AUS_conservative
 upper_house = {

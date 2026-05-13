@@ -1,10 +1,9 @@
 capital = 631
-primary_culture = czech
-culture = slovak
+primary_culture = moravian
 religion = catholic
-government = absolute_monarchy
+government = democracy
 plurality = 0
-nationalvalue = nv_order
+nationalvalue = nv_liberty
 literacy = 0.066917
 
 civilized = yes
@@ -64,7 +63,7 @@ basic_chemistry = 1
 #Inventions
 steam_powered_sugar_mills = yes
 
-ruling_party = MRV_reactionary
+ruling_party = MRV_conservative
 upper_house =
 {
     fascist = 0
@@ -80,4 +79,7 @@ upper_house =
 consciousness = 2
 nonstate_consciousness = 0
 
-prestige = 0
+govt_flag = {
+	government = presidential_dictatorship
+	flag = colonial_company
+}

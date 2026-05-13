@@ -74,7 +74,7 @@ political_decisions = {
 				all_core = {
 					limit = {
 						OR = {
-							is_core = SLV
+							is_core = MRV
 							is_core = SLS 
 						}
 					}

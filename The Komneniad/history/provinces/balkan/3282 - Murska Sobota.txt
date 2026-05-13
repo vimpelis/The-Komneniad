@@ -1,8 +1,8 @@
 owner = BAV
 controller = BAV
 add_core = BAV
-add_core = SLO
-trade_goods = grain
-life_rating = 35
+add_core = KRA
 add_core = AUS
 add_core = HUN
+trade_goods = grain
+life_rating = 35

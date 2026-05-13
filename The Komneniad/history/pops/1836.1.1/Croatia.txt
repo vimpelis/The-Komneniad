@@ -677,7 +677,7 @@
     farmers = {
         culture = croat
         religion = catholic
-        size = 8080
+        size = 8580
     }
 
     farmers = {
@@ -689,7 +689,7 @@
     farmers = {
         culture = croat
         religion = catholic
-        size = 5000
+        size = 3000
     }
 
     soldiers = {
@@ -1144,13 +1144,13 @@
     }
 
     soldiers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 120
     }
 
     farmers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 1225
     }
@@ -1799,13 +1799,13 @@
     }
 
     soldiers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 10
     }
 
     farmers = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 113
     }

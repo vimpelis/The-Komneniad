@@ -123,7 +123,7 @@
     }
 
     artisans = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 150
     }
@@ -575,7 +575,7 @@
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 310
     }
@@ -775,7 +775,7 @@
     }
 
     serfs = {
-        culture = slovak
+        culture = moravian
         religion = catholic
         size = 1365
     }
