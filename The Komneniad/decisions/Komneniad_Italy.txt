@@ -526,6 +526,8 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			government = democracy
+			political_reform = universal_weighted_voting
+			political_reform = non_secret_ballots
 			set_country_flag = NAP_proclaim_republic
 		}
 		ai_will_do = {

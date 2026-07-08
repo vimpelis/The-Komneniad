@@ -1200,14 +1200,13 @@ political_decisions = {
 			tag = JIM
 			NOT = { year = 1840 }
 			NOT = { has_country_flag = JIM_call_mcgill }
-			NOT = { has_global_flag = second_zemene_mesafint }
 		}
 		allow = {
 			NOT = { year = 1840 }
-			money = 50000
+			money = 25000
 		}
 		effect = {
-			treasury = -50000
+			treasury = -25000
 			define_general = {
                 name = "Slippin' Jimmy"
                 personality = defence_5.1

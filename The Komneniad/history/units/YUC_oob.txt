@@ -1,4 +1,4 @@
-SPA = { value = -50 }
+LEO = { value = -50 }
 AYL = { value = -50 }
 CAL = { value = -50 }
 MEX = { value = -200 }

@@ -161,31 +161,14 @@ theocracy = {
     appoint_ruling_party = yes
 }
 
-prov_gov_conservative = {
+provisional_government = {
     reactionary = yes
 	liberal = yes
 	radical = yes
     conservative = yes
     election = no
     appoint_ruling_party = yes
-}
-
-prov_gov_liberal = {
-    #which ideology of parties.
-	liberal = yes
-	radical = yes
-    election = no
-    appoint_ruling_party = yes
 	flagType = republic
-}
-
-prov_gov_liberal_two = {
-    #which ideology of parties.
-	liberal = yes
-	radical = yes
-    election = no
-    appoint_ruling_party = yes
-	flagType = monarchy
 }
 
 absolute_empire = {

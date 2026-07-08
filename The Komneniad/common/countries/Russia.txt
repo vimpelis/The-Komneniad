@@ -1,5 +1,5 @@
 color = { 60 105 50 }
-prov_gov_conservative = { 250 250 250 }
+provisional_government = { 250 250 250 }
 absolute_empire = { 50 90 40 }
 radical_republic = { 80 80 30  } #evil shit-brown-green
 fascist_dictatorship = { 0 40 0 } #very dark green

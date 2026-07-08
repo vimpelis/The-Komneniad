@@ -232,7 +232,7 @@ country_event = {
 						tag = GRE
 						tag = BAV
 						tag = ADU
-						tag = SPA
+						tag = LEO
 					}
 				}
 			}
@@ -935,5 +935,42 @@ country_event = {
 		scaled_militancy = { factor = 2 ideology = conservative }
 		scaled_militancy = { factor = 4 ideology = reactionary }
 		clr_country_flag = BRB_triumvirate
+    }
+}
+
+country_event = {
+    id = 156031
+    title = "Unification of Low Franconia"
+    desc = "Dietsland has proclaimed its desire for the Low Franconian states to accede to Dietsland, while maintaining some autonomy. Shall we accept?"
+    picture = "BRB_12"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Yes, let us accept."
+		annex_to = FROM
+		ai_chance = { factor = 1 }
+    }
+	
+	option = {
+        name = "We refuse!"
+		leave_alliance = FROM
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+			relation = {
+				who = THIS
+				value = -400
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				relation = { who = FROM value = 1 }
+			}
+		}
     }
 }

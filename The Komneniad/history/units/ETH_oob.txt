@@ -12,7 +12,7 @@ AWS = { value = 100 }
 SOM = { value = -200 }
 SUD = { value = 25 }
 EGY = { value = -25 }
-SPA = { value = 50 }
+LEO = { value = 50 }
 BYZ = { value = -50 }
 
 army = {

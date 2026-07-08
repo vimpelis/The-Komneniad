@@ -3272,19 +3272,19 @@
     aristocrats = {
         culture = persian
         religion = shiite
-        size = 200
+        size = 150
     }
 
     clergymen = {
         culture = persian
         religion = shiite
-        size = 100
+        size = 75
     }
 
     artisans = {
         culture = persian
         religion = shiite
-        size = 425
+        size = 325
     }
 
     soldiers = {
@@ -3296,13 +3296,13 @@
     farmers = {
         culture = persian
         religion = shiite
-        size = 5150
+        size = 3150
     }
 
     farmers = {
         culture = persian
         religion = yazidi
-        size = 850
+        size = 650
     }
 	
 	clergymen = {
@@ -3320,7 +3320,7 @@
     farmers = {
         culture = mashriqi
         religion = shiite
-        size = 2925
+        size = 1825
     }
 
     aristocrats = {
@@ -3362,7 +3362,57 @@
     farmers = {
         culture = turki
         religion = sunni
-        size = 4575
+        size = 3575
+    }
+}
+#Behbahan
+3344 = {
+    aristocrats = {
+        culture = persian
+        religion = shiite
+        size = 50
+    }
+
+    clergymen = {
+        culture = persian
+        religion = shiite
+        size = 25
+    }
+
+    artisans = {
+        culture = persian
+        religion = shiite
+        size = 120
+    }
+
+    farmers = {
+        culture = persian
+        religion = shiite
+        size = 2200
+    }
+
+    farmers = {
+        culture = persian
+        religion = yazidi
+        size = 300
+    }
+	
+	clergymen = {
+        culture = persian
+        religion = nestorian
+        size = 2
+    }
+	
+	farmers = {
+        culture = persian
+        religion = nestorian
+        size = 50
+    }
+
+    farmers = {
+        culture = mashriqi
+        religion = shiite
+        size = 1200
     }
 
     aristocrats = {
@@ -3392,7 +3442,7 @@
     farmers = {
         culture = turki
         religion = sunni
-        size = 1275
+        size = 4275
     }
 }
 #Abadan (44000/11000 POPS)
@@ -3542,7 +3592,7 @@
     farmers = {
         culture = persian
         religion = shiite
-        size = 4525
+        size = 4025
     }
 
     farmers = {
@@ -3590,7 +3640,7 @@
     farmers = {
         culture = turki
         religion = sunni
-        size = 7275
+        size = 6275
     }
 }
 #Qa'nat
@@ -4172,7 +4222,7 @@
     farmers = {
         culture = turki
         religion = sunni
-        size = 15000
+        size = 14000
     }
 
     aristocrats = {
@@ -4202,7 +4252,7 @@
     farmers = {
         culture = mashriqi
         religion = shiite
-        size = 8800
+        size = 8400
     }
 
     artisans = {

@@ -1,0 +1,44 @@
+political_decisions = {
+	colonize_centralasian_desert = {
+		picture = central_asia_desert
+		potential = {
+			OR = {
+				AND = {
+					owns = 3505
+					1205 = { empty = yes }
+				}
+				AND = {
+					owns = 3441
+					29 = { empty = yes }
+				}
+				AND = {
+					owns = 1193
+					3298 = { empty = yes }
+				}
+				AND = {
+					owns = 1183
+					2702 = { empty = yes }
+				}
+				AND = {
+					owns = 1194
+					2656 = { empty = yes }
+				}
+			}
+		}
+		allow = {
+			invention = mission_to_civilize
+			war = no
+		}
+		effect = {
+			prestige = 2
+			random_owned = { limit = { 1205 = { empty = yes } owner = { owns = 3505 } } 1205 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 29 = { empty = yes } owner = { owns = 3441 } } 29 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 3298 = { empty = yes } owner = { owns = 1193 } } 3298 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2702 = { empty = yes } owner = { owns = 1183 } } 2702 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 2656 = { empty = yes } owner = { owns = 1194 } } 2656 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

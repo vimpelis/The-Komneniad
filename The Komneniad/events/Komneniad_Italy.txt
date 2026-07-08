@@ -198,7 +198,7 @@ country_event = {
 				consciousness = 2
 			}
 		}
-		government = prov_gov_conservative
+		government = provisional_government
 		ruling_party_ideology = reactionary
 		country_event = {
 			id = 170010
@@ -217,7 +217,7 @@ country_event = {
 				consciousness = 2
 			}
 		}
-		government = prov_gov_liberal
+		government = provisional_government
 		ruling_party_ideology = radical
 		country_event = {
 			id = 170011
@@ -460,7 +460,7 @@ country_event = {
 				value = -400
 			}
 		}
-		SPA = {
+		LEO = {
 			diplomatic_influence = {
 				who = PAP
 				value = -400

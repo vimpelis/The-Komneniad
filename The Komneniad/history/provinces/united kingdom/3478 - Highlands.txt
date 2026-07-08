@@ -5,5 +5,3 @@ add_core = SCO
 trade_goods = wool
 life_rating = 35
 terrain = highlands
-party_loyalty = { ideology = conservative loyalty_value = 17 } 
-party_loyalty = { ideology = liberal loyalty_value = 12 } 

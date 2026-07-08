@@ -77,6 +77,6 @@ upper_house = {
 }
 
 govt_flag = {
-	government = prov_gov_liberal
+	government = provisional_government
 	flag = colonial_company
 }

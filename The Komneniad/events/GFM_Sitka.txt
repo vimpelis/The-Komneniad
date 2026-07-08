@@ -317,7 +317,7 @@ country_event = {
 		year = 1917
 		OR = {
 			tag = SPA
-			tag = IBR
+			tag = LEO
 		}
     }
 

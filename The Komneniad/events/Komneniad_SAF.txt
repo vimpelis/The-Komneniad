@@ -73,7 +73,7 @@ country_event = {
 		prestige = 5
 		release_vassal = SAF
 		leave_alliance = VOC
-		government = prov_gov_conservative
+		government = provisional_government
 		remove_country_modifier = great_trek
 		VOC = { country_event = 167003 }
     }
@@ -136,7 +136,7 @@ country_event = {
 		is_vassal = no
 		year = 1837
 		XHO = { exists = yes owns = 2096 }
-		NOT = { government = prov_gov_conservative }
+		NOT = { government = provisional_government }
     }
 
     fire_only_once = yes
@@ -202,7 +202,7 @@ country_event = {
     trigger = {
 		tag = SAF
 		war = no
-		government = prov_gov_conservative
+		government = provisional_government
     }
 
     fire_only_once = yes

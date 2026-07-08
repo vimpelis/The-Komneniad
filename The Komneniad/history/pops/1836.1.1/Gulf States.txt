@@ -521,7 +521,7 @@
     }
 }
 #Liwa
-12 = {
+3383 = {
     aristocrats = {
         culture = bedouin
         religion = sunni

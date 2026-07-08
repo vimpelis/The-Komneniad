@@ -70,7 +70,7 @@ govt_flag = {
 }
 
 govt_flag = {
-    government = prov_gov_conservative
+    government = provisional_government
     flag = absolute_monarchy
 }
 

@@ -1,6 +1,6 @@
-owner = SPA
-controller = SPA
-add_core = SPA
+owner = LEO
+controller = LEO
+add_core = LEO
 trade_goods = fruit
-terrain = azores
+terrain = small_island
 life_rating = 35

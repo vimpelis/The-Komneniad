@@ -1,7 +1,7 @@
 color = { 56 130 98 }
 proletarian_dictatorship = { 114 57 44 }
 fascist_dictatorship = { 19 51 36 }
-prov_gov_conservative = { 97 146 135 }
+provisional_government = { 97 146 135 }
 graphical_culture = WildwestGC
 
 party = {

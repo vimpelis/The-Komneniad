@@ -502,8 +502,8 @@
         religion = sunni
         size = 4500
     }
-	
-	clergymen = {
+
+    clergymen = {
         culture = assyrian
         religion = nestorian
         size = 2
@@ -522,235 +522,235 @@
     aristocrats = {
         culture = mashriqi
         religion = sunni
-        size = 500
+        size = 720
     }
 
     artisans = {
         culture = mashriqi
         religion = sunni
-        size = 1500
+        size = 2160
     }
 
     soldiers = {
         culture = mashriqi
         religion = sunni
-        size = 1200
+        size = 1728
     }
 
     farmers = {
         culture = mashriqi
         religion = sunni
-        size = 8000
+        size = 11520
     }
 
     aristocrats = {
         culture = mashriqi
         religion = shiite
-        size = 600
+        size = 864
     }
 
     bureaucrats = {
         culture = mashriqi
         religion = shiite
-        size = 220
+        size = 316
     }
 
     clergymen = {
         culture = mashriqi
         religion = shiite
-        size = 270
+        size = 388
     }
 
     artisans = {
         culture = mashriqi
         religion = shiite
-        size = 2000
+        size = 2880
     }
 
     soldiers = {
         culture = mashriqi
         religion = shiite
-        size = 25
+        size = 36
     }
 
     farmers = {
         culture = mashriqi
         religion = shiite
-        size = 12525
+        size = 18036
     }
 
     aristocrats = {
         culture = turki
         religion = sunni
-        size = 750
+        size = 1080
     }
 
     bureaucrats = {
         culture = turki
         religion = sunni
-        size = 500
+        size = 720
     }
 
     artisans = {
         culture = turki
         religion = sunni
-        size = 750
+        size = 1080
     }
 
     soldiers = {
         culture = turki
         religion = sunni
-        size = 500
+        size = 720
     }
 
     clergymen = {
         culture = turki
         religion = sunni
-        size = 1000
+        size = 1440
     }
 
     farmers = {
         culture = turki
         religion = sunni
-        size = 4800
+        size = 6912
     }
 
     aristocrats = {
         culture = persian
         religion = shiite
-        size = 100
+        size = 144
     }
 
     clergymen = {
         culture = persian
         religion = shiite
-        size = 100
+        size = 144
     }
 
     artisans = {
         culture = persian
         religion = shiite
-        size = 150
+        size = 216
     }
 
     farmers = {
         culture = persian
         religion = shiite
-        size = 2750
+        size = 3960
     }
 
     aristocrats = {
         culture = assyrian
         religion = nestorian
-        size = 100
+        size = 144
     }
 
     officers = {
         culture = assyrian
         religion = nestorian
-        size = 100
+        size = 144
     }
 
     soldiers = {
         culture = assyrian
         religion = nestorian
-        size = 100
+        size = 144
     }
 
     clergymen = {
         culture = assyrian
         religion = nestorian
-        size = 100
+        size = 144
     }
 
     artisans = {
         culture = assyrian
         religion = nestorian
-        size = 2000
+        size = 2880
     }
 
     farmers = {
         culture = assyrian
         religion = nestorian
-        size = 3650
+        size = 5256
     }
 
     clergymen = {
         culture = assyrian
         religion = coptic
-        size = 100
+        size = 144
     }
 
     artisans = {
         culture = assyrian
         religion = coptic
-        size = 1500
+        size = 2160
     }
 
     farmers = {
         culture = assyrian
         religion = coptic
-        size = 2425
+        size = 3492
     }
 
     clergymen = {
         culture = sephardic
         religion = jewish
-        size = 100
+        size = 144
     }
 
     artisans = {
         culture = sephardic
         religion = jewish
-        size = 3925
+        size = 5652
     }
 
     aristocrats = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 144
     }
 
     clergymen = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 144
     }
 
     artisans = {
         culture = bedouin
         religion = sunni
-        size = 371
+        size = 534
     }
 
     soldiers = {
         culture = bedouin
         religion = sunni
-        size = 100
+        size = 144
     }
 
     farmers = {
         culture = bedouin
         religion = sunni
-        size = 4350
+        size = 6264
     }
 
     farmers = {
         culture = amhara
         religion = coptic
-        size = 2450
+        size = 3528
     }
 
     slaves = {
         culture = ethiopian_minor #african_minor
         religion = animist
-        size = 1000
+        size = 1440
     }
 
     artisans = {
         culture = armenian
         religion = coptic
-        size = 600
+        size = 864
     }
 }
 #Samarra (92000/23000 POPS)
@@ -1015,8 +1015,8 @@
         religion = shiite
         size = 3540
     }
-	
-	clergymen = {
+
+    clergymen = {
         culture = assyrian
         religion = nestorian
         size = 10
@@ -1149,8 +1149,8 @@
         religion = shiite
         size = 7500
     }
-	
-	clergymen = {
+
+    clergymen = {
         culture = assyrian
         religion = nestorian
         size = 45
@@ -1577,8 +1577,8 @@
         religion = shiite
         size = 12350
     }
-	
-	clergymen = {
+
+    clergymen = {
         culture = assyrian
         religion = nestorian
         size = 25
@@ -1763,8 +1763,8 @@
         religion = shiite
         size = 18375
     }
-	
-	clergymen = {
+
+    clergymen = {
         culture = assyrian
         religion = nestorian
         size = 80
@@ -1855,8 +1855,8 @@
         religion = sunni
         size = 8355
     }
-	
-	aristocrats = {
+
+    aristocrats = {
         culture = turki
         religion = sunni
         size = 175
@@ -1940,8 +1940,8 @@
         religion = sunni
         size = 800
     }
-	
-	clergymen = {
+
+    clergymen = {
         culture = assyrian
         religion = nestorian
         size = 5

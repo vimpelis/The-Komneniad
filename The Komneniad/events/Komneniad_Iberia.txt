@@ -95,7 +95,7 @@ country_event = {
 country_event = {
     id = 150005
     title = "Monarchist coup in Barcelona!"
-    desc = "The Espanians have funded the Monarchists in a bid to restore the Duchy of Barcelona as their vassal. The republican government was quickly ousted and the Barcelona Dynasty was restored, swearing oath to the King of Espania."
+    desc = "The Leonese have funded the Monarchists in a bid to restore the Duchy of Barcelona as their vassal. The republican government was quickly ousted and the Barcelona Dynasty was restored, swearing oath to the King of Espania."
 	picture = "iberia_map"
 
     is_triggered_only = yes
@@ -106,7 +106,7 @@ country_event = {
 		political_reform = wealth_weighted_voting
 		political_reform = non_secret_ballots
 		political_reform = no_trade_unions
-		SPA = { create_vassal = CAT }
+		FROM = { create_vassal = CAT }
     }
 }
 

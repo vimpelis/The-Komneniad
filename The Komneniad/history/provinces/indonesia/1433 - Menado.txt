@@ -1,5 +1,5 @@
-owner = SPA
-controller = SPA
+owner = LEO
+controller = LEO
 add_core = SLW
 trade_goods = dye
 life_rating = 32

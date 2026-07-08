@@ -613,3 +613,12 @@
         size = 50
     }
 }
+
+#Turkish soldiers for Bitlis
+3549 = { 
+	soldiers = {
+        culture = rumi
+        religion = sunni
+        size = 500
+    }
+}

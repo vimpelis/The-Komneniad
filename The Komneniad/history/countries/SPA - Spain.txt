@@ -13,10 +13,6 @@ literacy = 0.27
 non_state_culture_literacy = 0.1
 civilized = yes
 
-
-#GreaterPowers = prestige
-prestige = 17
-
 #Political Reforms
 slavery = yes_slavery
 upper_house_composition = state_equal_weight
@@ -47,7 +43,6 @@ centralization = regionalism
 colonial_policy = civilizing
 
 set_country_flag = catholic_country
-set_country_flag = refused_constantinople_accords
 
 ruling_party = SPA_conservative
 last_election = 1834.1.1
@@ -89,9 +84,3 @@ basic_chemistry = 1
 
 #Inventions
 steam_powered_sugar_mills = yes
-
-#Starting Consciousness
-consciousness = 3
-nonstate_consciousness = 1
-
-oob = "SPA_oob.txt"

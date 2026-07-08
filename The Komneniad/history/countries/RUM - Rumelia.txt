@@ -6,7 +6,6 @@ plurality = 5.0
 nationalvalue = nv_autocracy
 literacy = 0.1
 non_state_culture_literacy = 0.01
-civilized = yes
 
 #Political Reforms
 slavery = yes_slavery
@@ -51,39 +50,12 @@ upper_house = {
 
 set_country_flag = orthodox_country
 
-#Technologies
-post_napoleonic_thought = 1
+foreign_training = yes_foreign_training
+foreign_weapons = yes_foreign_weapons
+foreign_officers = yes_foreign_officers
+foreign_artillery = yes_foreign_artillery
+monetary_reform = yes_monetary_reform
+education_reform = yes_education_reform
+
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
-post_nelsonian_thought = 1
-private_banks = 1
-no_standard = 1
-guild_based_production = 1
-late_enlightenment_philosophy = 1
-enlightenment_thought = 1
-piston_steam_engine = 1
-#mechanical_production = 1
-clipper_design = 1
-malthusian_thought = 1
-basic_chemistry = 1
-
-#Inventions
-dragoon_activation = yes
-steam_powered_sugar_mills = yes
-
-#Starting Consciousness
-consciousness = 1
-nonstate_consciousness = 0
-
-govt_flag = {
-	government = absolute_monarchy
-	flag = theocracy
-}
-govt_flag = {
-	government = prussian_constitutionalism
-	flag = theocracy
-}
-govt_flag = {
-	government = hms_government
-	flag = theocracy
-}

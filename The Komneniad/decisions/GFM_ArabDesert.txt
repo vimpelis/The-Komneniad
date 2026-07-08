@@ -5,7 +5,7 @@ political_decisions = {
             OR = {
                 AND = { #Trucial States
                     owns = 1167 #Abu Dhabi
-                    12 = { empty = yes } #Liwa
+                    3383 = { empty = yes } #Liwa
                 }
                 AND = { #North Yemen
                     owns = 1178 #Sana'a
@@ -65,7 +65,7 @@ political_decisions = {
             OR = {
                 AND = { #Trucial States
                     owns = 1167 #Abu Dhabi
-                    12 = { empty = yes } #Liwa
+                    3383 = { empty = yes } #Liwa
                     OR = {
                         year = 1860
                         state_n_government = 1
@@ -215,10 +215,10 @@ political_decisions = {
                 limit = {
                     owner = {
                         owns = 1167 #Abu Dhabi
-                        12 = { empty = yes }
+                        3383 = { empty = yes }
                     }
                 }
-                12 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
+                3383 = { secede_province = THIS any_pop = { literacy = -0.99 } life_rating = 5 }
                 owner = { prestige = 1 }
             }
             #North Yemen#

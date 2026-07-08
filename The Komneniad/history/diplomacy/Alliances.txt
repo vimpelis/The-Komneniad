@@ -1,6 +1,6 @@
 alliance = {
     first = FRA
-    second = SPA
+    second = LEO
     start_date = 1836.1.1
     end_date = 1936.1.1
 }

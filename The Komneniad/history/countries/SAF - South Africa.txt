@@ -77,6 +77,6 @@ upper_house = {
 oob = "SAF_oob.txt"
 
 govt_flag = {
-	government = prov_gov_conservative
+	government = provisional_government
 	flag = theocracy
 }

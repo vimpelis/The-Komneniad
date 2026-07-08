@@ -1,4 +1,4 @@
-SPA = {
+LEO = {
     value = 200
     level = 5
     influence_value = 50

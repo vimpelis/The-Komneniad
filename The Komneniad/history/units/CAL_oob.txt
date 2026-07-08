@@ -2,7 +2,7 @@ VRI = { value = -150 }
 MEX = { value = -200 }
 YUC = { value = -50 }
 NBS = { value = 100 }
-SPA = { value = 50 }
+LEO = { value = 50 }
 
 army = {
     name = "1st Army"

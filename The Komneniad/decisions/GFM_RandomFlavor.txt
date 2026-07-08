@@ -295,7 +295,7 @@ political_decisions = {
 				425 = { has_province_modifier = the_eiffel_tower }
 				498 = { has_province_modifier = the_eiffel_tower }
 				SPA = { has_country_modifier = eiffel_torre_construction }
-				IBR = { has_country_modifier = eiffel_torre_construction }
+				LEO = { has_country_modifier = eiffel_torre_construction }
 				CAT = { has_country_modifier = eiffel_torre_construction }
 			}
             OR = {

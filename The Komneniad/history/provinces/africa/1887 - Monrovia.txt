@@ -1,5 +1,5 @@
-owner = SPA
-controller = SPA
+owner = LEO
+controller = LEO
 trade_goods = grain
 life_rating = 35
 terrain = savanna

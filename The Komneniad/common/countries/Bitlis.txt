@@ -1,4 +1,7 @@
 color = { 80 100 50 }
+absolute_empire = { 0 125 255 }
+constitutional_empire = { 0 125 255 }
+semi_constitutional_empire = { 0 125 255 }
 graphical_culture = MiddleEasternGC
 
 party = {

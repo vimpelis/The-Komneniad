@@ -652,11 +652,22 @@ political_decisions = {
 		potential = {
 			tag = AYL
 			owns = 200
-			relation = {
-				who = SPA
-				value = 1
+			OR = {
+				AND = {
+					2209 = { owned_by = SPA }
+					relation = {
+						who = SPA
+						value = 1
+					}
+				}
+				AND = {
+					2209 = { owned_by = LEO }
+					relation = {
+						who = LEO
+						value = 1
+					}
+				}
 			}
-			2209 = { owned_by = SPA }
 			NOT = { has_country_flag = AYL_buy_cuba }
 		}
 		allow = {
@@ -666,7 +677,7 @@ political_decisions = {
 			war = no
 		}
 		effect = {
-			SPA = { country_event = 159004 }
+			2209 = { owner = { country_event = 159004 } }
 			set_country_flag = AYL_buy_cuba
 		}
 		ai_will_do = { factor = 1 }
@@ -679,12 +690,19 @@ political_decisions = {
 			OR = {
 				AND = {
 					NOT = { 2209 = { owned_by = SPA } }
+					NOT = { 2209 = { owned_by = LEO } }
 					tag = AYL
 				}
 				AND = {
 					NOT = {
 						relation = {
 							who = SPA
+							value = 1
+						}
+					}
+					NOT = {
+						relation = {
+							who = LEO
 							value = 1
 						}
 					}

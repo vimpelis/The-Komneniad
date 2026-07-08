@@ -135,8 +135,8 @@ country_event = {
 #SPA says yes
 country_event = {
     id = 159005
-    title = "Espania agrees!"
-    desc = "Espania has agreed to sell us Cuba. With that, our former Metropole no longer ownes any substantial land in the New World, and we are left as the sole the inheritors of Espanian legacy."
+    title = "$FROMCOUNTRY$ agrees!"
+    desc = "$FROMCOUNTRY$ has agreed to sell us Cuba. With that, our former Metropole no longer ownes any substantial land in the New World, and we are left as the sole the inheritors of Spanish colonial legacy."
     picture = "us_cuba"
 
     is_triggered_only = yes
@@ -151,8 +151,8 @@ country_event = {
 #SPA says no
 country_event = {
     id = 159006
-    title = "Espania refuses!"
-    desc = "Unexpectedly, Espania said no. It seems like friendship is over with our Metropole - clearly, war is the only option left."
+    title = "$FROMCOUNTRY$ refuses!"
+    desc = "Unexpectedly, $FROMCOUNTRY$ said no. It seems like friendship is over with our Metropole - clearly, war is the only option left."
     picture = "us_cuba"
 
     is_triggered_only = yes

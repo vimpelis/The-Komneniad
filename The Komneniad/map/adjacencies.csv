@@ -336,6 +336,7 @@ From;To;Type;Through;Data;Comment
 1690;1699;impassable;0;0;Atlas Mountains
 1698;1692;impassable;0;0;Atlas Mountains
 1698;1690;impassable;0;0;Atlas Mountains
+1686;1687;impassable;0;0;Gibraltar #Exists so Andalusia's name stretches across the strait
 ;;;;;
 ;;;;;
 #New Guinea Mountains;;;;;
@@ -389,7 +390,7 @@ From;To;Type;Through;Data;Comment
 3576;2711;canal;372;19;Danish Straits #Kopenhagen
 3576;2832;canal;372;29;Danish Straits #Kopenhagen
 2747;2925;canal;1687;18;Strait of Gibraltar #Tetouan
-2747;2746;canal;512;21;Strait of Gibraltar #Gibraltar
+2747;2746;canal;1686;21;Strait of Gibraltar #Gibraltar
 2925;2746;canal;512;22;Strait of Gibraltar #Tangier
 2776;2777;canal;966;17;Kerch Strait #Kerch
 2829;2843;canal;1640;20;Strait of Shimonoseki #Yamaguchi

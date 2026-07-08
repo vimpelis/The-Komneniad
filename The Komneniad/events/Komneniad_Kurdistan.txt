@@ -12,6 +12,7 @@ country_event = {
 
     option = {
         name = "Tawusi Melek is with us."
+		has_paths_notf = {}
     }
 }
 
@@ -153,6 +154,7 @@ country_event = {
 
     trigger = {
 		has_country_flag = KDS_consolidate_lake_van
+		NOT = { tag = BTL }
 		OR = {
 			exists = ASY
 			exists = PER
@@ -482,7 +484,6 @@ country_event = {
 			tag = GRE
 		}
 		ASY = { vassal_of = THIS }
-		has_country_flag = BYZ_assyria_war
 		owns = 891
 		owns = 890
 		owns = 1109
@@ -1385,5 +1386,306 @@ country_event = {
 			}
 			owner = { new_decisions_tt = {} set_country_flag = PER_sword_and_fire_available }
 		}
+    }
+}
+
+country_event = {
+    id = 177033
+    title = "Zenith"
+    desc = "177033DESC"
+	picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "A Kurdish state we were, a Kurdish state we will remain!"
+		prestige = 15
+		add_accepted_culture = assyrian
+		add_accepted_culture = mashriqi
+		add_accepted_culture = persian
+		PER_1120 = { add_core = KDS }
+		PER_1127 = { add_core = KDS }
+		1136 = { add_core = KDS }
+		add_country_modifier = { name = religious_effort duration = 3650 }
+    }
+	
+	option = {
+        name = "We are but a part of the greater whole. We must stake our claim to Iran!"
+		KDS_canformiran_tt = {}
+		add_accepted_culture = persian
+		PER_1121 = { add_core = KDS }
+		PER_1120 = { add_core = KDS }
+		PER_1127 = { add_core = KDS }
+		PER_1130 = { add_core = KDS }
+		PER_1136 = { add_core = KDS }
+		1139 = { add_core = KDS }
+		1140 = { add_core = KDS }
+		set_country_flag = KDS_can_form_iran
+		set_country_flag = IRA_eat_assyria
+		add_country_modifier = { name = religious_effort duration = 3650 }
+    }
+}
+
+country_event = {
+    id = 177034
+    title = "A Kurdish Empire"
+    desc = "177034DESC"
+	picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Perhaps this day will be tomorrow."
+		prestige = 5
+		any_pop = { militancy = -1 }
+		set_country_flag = KDS_empire_activated
+		KDS_empire_activation_tt = {}
+    }
+}
+
+country_event = {
+    id = 177035
+    title = "The Turks revolt in Kirkuk!"
+    desc = "177035DESC"
+	picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "Damn them!"
+		any_pop = { limit = { has_pop_culture = rumi } militancy = 4 }
+    }
+}
+
+country_event = {
+    id = 177036
+    title = "Trouble in Assyria"
+    desc = "177036DESC"
+	picture = "kurdistan"
+
+    trigger = {
+		OR = {
+			tag = BYZ
+			tag = GRE
+		}
+		owns = 889
+		has_global_flag = RUM_liberate_gokyurt
+		NOT = { exists = ASY }
+		BTL = { owns = 923 }
+    }
+	
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+
+	option = {
+        name = "How many times do we have to teach you this lesson, Turkoman?"
+		badboy = 7.5
+		war = {
+			target = BTL
+			attacker_goal = { casus_belli = liberate_puppet_no_infamy country = ASY }
+		}
+		any_pop = { limit = { has_pop_culture = rumi } militancy = 4 }
+		BTL = { country_event = 177037 }
+		set_country_flag = BYZ_assyria_war
+		ai_chance = { factor = 1 modifier = { factor = 0 badboy = 0.7 } }
+    }
+	
+    option = {
+        name = "We're not saving these idiots again, even a Turkish state is preferable to them"
+		prestige = -10
+		BTL = { country_event = 177038 }
+		any_pop = { militancy = 2 }
+		ai_chance = { factor = 1 modifier = { factor = 0 NOT = { badboy = 0.7 } } }
+    }
+}
+
+country_event = {
+    id = 177037
+    title = "The Second Mahiv"
+    desc = "177037DESC"
+	picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "To the last man."
+    }
+}
+
+country_event = {
+    id = 177038
+    title = "An Awkward Silence"
+    desc = "177038DESC"
+	picture = "kurdistan"
+
+    is_triggered_only = yes
+
+	option = {
+        name = "It's afraid!"
+    }
+}
+
+country_event = {
+    id = 177039
+    title = "End of the Blue Turks"
+    desc = "177039DESC"
+	picture = "kurdistan"
+
+    trigger = {
+		tag = BTL
+		government = absolute_empire
+		owns = 891
+		NOT = { owns = 923 }
+		war = no
+    }
+	
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+        days = 30
+    }
+
+	option = {
+        name = "The Rumi homeland is lost, perhaps this time forever."
+		change_tag = KDS
+		primary_culture = kurdish
+		add_accepted_culture = rumi
+		government = theocracy
+    }
+}
+
+country_event = {
+    id = 177040
+    title = "Sunrise over Rumelia"
+    desc = "177040DESC"
+	picture = "kurdistan"
+
+    trigger = {
+		tag = BTL
+		government = absolute_empire
+		OR = {
+			BYZ = { has_country_flag = BYZ_assyria_war }
+			GRE = { has_country_flag = BYZ_assyria_war }
+		}
+		war = no
+		owns = 923
+    }
+	
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+
+	option = {
+        name = "And this is just the beginning."
+		prestige = 25
+		change_tag = RUM
+		research_points = 10000
+		add_country_modifier = { name = religious_effort duration = 3650 }
+		all_core = { remove_core = BTL }
+    }
+}
+
+country_event = {
+    id = 177041
+    title = "Triumph of the Will"
+    desc = "177041DESC"
+	picture = "kurdistan"
+
+    trigger = {
+		has_country_modifier = exceptional_willpower
+		war = no
+    }
+	
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+        days = 60
+    }
+	
+	immediate = {
+		remove_country_modifier = exceptional_willpower
+	}
+
+	option = {
+        name = "It hurts."
+		any_pop = { militancy = 5 consciousness = 5 }
+		war_exhaustion = 75
+		add_country_modifier = { name = wartime_recovery duration = 1825 }
+    }
+}
+
+country_event = {
+    id = 177042
+    title = "A Minority in Power"
+    desc = "177042DESC"
+	picture = "kurdistan"
+
+    trigger = {
+		tag = BTL
+		primary_culture = rumi
+		has_country_flag = KDS_consolidate_lake_van
+    }
+	
+	fire_only_once = yes
+	
+    mean_time_to_happen = {
+        days = 30
+    }
+
+	option = {
+        name = "More Turks will have to be made."
+		any_pop = { limit = { NOT = { has_pop_culture = rumi } } militancy = 2 }
+		set_country_flag = RUM_minority_gov
+    }
+}
+
+province_event = {
+    id = 177043
+    title = "New Tribes in $PROVINCENAME$"
+    desc = "177043DESC"
+
+    trigger = {
+		owner = { tag = BTL }
+		owner = { has_country_flag = RUM_minority_gov }
+		NOT = { year = 1860 }
+		NOT = { has_province_modifier = RUM_new_tribes }
+		any_pop = { has_pop_culture = rumi }
+		is_core = THIS
+    }
+	
+    mean_time_to_happen = {
+        days = 180
+		modifier = {
+            factor = 2
+            owner = { any_owned_province = { has_province_modifier = RUM_new_tribes } }
+        }
+		modifier = {
+            factor = 2
+            owner = { war = yes }
+        }
+		modifier = {
+            factor = 4
+            year = 1850
+        }
+		modifier = {
+            factor = 1000
+            OR = {
+				war_with = BYZ
+				war_with = GRE
+			}
+        }
+    }
+
+	option = {
+        name = "It's as if the Rum Sultanate is alive again."
+		owner = { research_points = 100 }
+		add_province_modifier = { name = RUM_new_tribes duration = 600 }
+		any_pop = { limit = { location = { NOT = { pop_majority_culture = rumi } } has_pop_culture = rumi } reduce_pop = 1.25 }
+		any_pop = { limit = { location = { pop_majority_culture = rumi } has_pop_culture = rumi } reduce_pop = 1.1 }
     }
 }

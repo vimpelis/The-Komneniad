@@ -3496,7 +3496,7 @@
         size = 2000
     }
 }
-1686 = {
+12 = {
     farmers = {
         culture = cree
         religion = animist

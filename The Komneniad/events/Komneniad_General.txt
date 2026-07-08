@@ -90,6 +90,11 @@ country_event = {
     }
 	
 	option = {
+        name = "I'd like to learn the lore, please."
+		country_event = 169039
+    }
+	
+	option = {
         name = "Let me see the country paths"
 		random_owned = {
 			limit = {
@@ -98,6 +103,8 @@ country_event = {
 					NOT = { tag = BYZ }
 					NOT = { tag = EGY }
 					NOT = { tag = ARE }
+					NOT = { tag = BTL }
+					NOT = { primary_culture = kurdish }
 				}
 			}
 			owner = {
@@ -127,6 +134,15 @@ country_event = {
 			limit = { owner = { tag = ARE } }
 			owner = { country_event = 169053 }
 		}
+		random_owned = {
+			limit = { owner = { OR = { tag = BTL primary_culture = kurdish } } }
+			owner = { country_event = 169054 }
+		}
+    }
+	
+	option = {
+        name = "Back to the Main Menu"
+		country_event = 169001
     }
 }
 
@@ -449,6 +465,10 @@ country_event = {
         name = "Page 2"
 		country_event = 169010
     }
+	
+	option = {
+        name = "Close"
+    }
 }
 
 country_event = {
@@ -619,8 +639,8 @@ country_event = {
     }
 	
 	option = {
-		name = "Decolonize Africa"
-		country_event = 169011
+		name = "Turkey options"
+		country_event = 169013
 	}
 }
 
@@ -849,6 +869,97 @@ country_event = {
 }
 
 country_event = {
+    id = 169013
+    title = "Turkey"
+    desc = "wip"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	allow_multiple_instances = yes
+	
+	option = {
+        name = "Smol turk"
+		BYZ_921 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_894 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_879 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_893 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_890 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_923 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		901 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3325 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3428 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3293 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3362 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		country_event = 169013
+    }
+	
+	option = {
+        name = "Anatolian turk"
+		BYZ_921 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_894 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_879 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_893 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_890 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_923 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		901 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3325 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3428 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3362 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_882 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_883 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_873 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		875 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		895 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		country_event = 169013
+    }
+	
+	option = {
+        name = "Giga panturk"
+		BYZ_921 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_894 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_879 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_893 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_890 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		TUR_923 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		901 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3325 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3428 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3293 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3362 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		RUS_1098 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		BYZ_1096 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		AZB_1105 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		RUS_1102 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		PER_1112 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3503 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1112 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		925 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3296 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3355 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1131 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3351 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		PER_1122 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		PER_1127 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		PER_1120 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		PER_1136 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		PER_1121 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		PER_1130 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1139 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1140 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1142 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1141 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1071 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		1116 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		3501 = { add_core = RUM secede_province = THIS secede_province = RUM }
+		country_event = 169013
+    }
+
+	option = {
+        name = "Close"
+    }
+}
+
+country_event = {
     id = 169020
     title = "Options"
     desc = "Select an option."
@@ -921,6 +1032,26 @@ country_event = {
         country_event = 169001
     }
 }
+
+country_event = {
+    id = 169039
+    title = "Komneniad: Lore"
+    desc = "169039DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "I want to hear about Iran."
+		country_event = 169040
+    }
+	
+	option = {
+        name = "Back to Information Menu"
+		country_event = 169003
+    }
+}
+
 
 country_event = {
     id = 169040
@@ -1026,7 +1157,8 @@ country_event = {
     }
 	
 	option = {
-        name = "That was a lot of text."
+        name = "That was a lot of text. Take me back to the Lore Menu."
+		country_event = 169039
     }
 }
 
@@ -1092,6 +1224,7 @@ country_event = {
 	
     option = {
         name = "Thanks!"
+		clr_country_flag = komneniad_menu
 	}
 }
 
@@ -1105,6 +1238,7 @@ country_event = {
 	
     option = {
         name = "Thanks!"
+		clr_country_flag = komneniad_menu
 	}
 }
 
@@ -1118,6 +1252,7 @@ country_event = {
 	
     option = {
         name = "Thanks!"
+		clr_country_flag = komneniad_menu
 	}
 }
 
@@ -1131,5 +1266,20 @@ country_event = {
 	
     option = {
         name = "Thanks!"
+		clr_country_flag = komneniad_menu
+	}
+}
+
+country_event = {
+    id = 169054
+    title = "Kurdistan: Country Paths"
+    desc = "169054DESC"
+	picture = "india_map"
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = "Thanks!"
+		clr_country_flag = komneniad_menu
 	}
 }

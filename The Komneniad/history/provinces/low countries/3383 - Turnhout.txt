@@ -1,3 +1,4 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+add_core = HAJ
+add_core = OMA
+trade_goods = wool
+life_rating = 20

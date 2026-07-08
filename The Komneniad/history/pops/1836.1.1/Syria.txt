@@ -385,6 +385,30 @@
         religion = orthodox
         size = 1920
     }
+	
+	aristocrats = {
+        culture = rumi
+        religion = sunni
+        size = 75
+    }
+	
+	clergymen = {
+        culture = rumi
+        religion = sunni
+        size = 150
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = sunni
+        size = 250
+    }
+
+    farmers = {
+        culture = rumi
+        religion = sunni
+        size = 2300
+    }
 }
 #Afrin
 3362 = {
@@ -476,36 +500,6 @@
         culture = mashriqi
         religion = sunni
         size = 450
-    }
-
-    aristocrats = {
-        culture = bedouin
-        religion = sunni
-        size = 50
-    }
-
-    clergymen = {
-        culture = bedouin
-        religion = sunni
-        size = 75
-    }
-
-    artisans = {
-        culture = bedouin
-        religion = sunni
-        size = 100
-    }
-
-    soldiers = {
-        culture = bedouin
-        religion = sunni
-        size = 50
-    }
-
-    farmers = {
-        culture = bedouin
-        religion = sunni
-        size = 725
     }
 
     clergymen = {
@@ -728,6 +722,30 @@
         culture = armenian
         religion = coptic
         size = 6
+    }
+	
+	aristocrats = {
+        culture = rumi
+        religion = sunni
+        size = 25
+    }
+	
+	clergymen = {
+        culture = rumi
+        religion = sunni
+        size = 50
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = sunni
+        size = 75
+    }
+
+    farmers = {
+        culture = rumi
+        religion = sunni
+        size = 1600
     }
 }
 #Suriye Region (720000)  #see Jordan.txt & Lebanon.txt for balance of region

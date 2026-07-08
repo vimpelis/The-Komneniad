@@ -1,6 +1,6 @@
-owner = SPA
-controller = SPA
-add_core = SPA
+owner = LEO
+controller = LEO
+add_core = LEO
 trade_goods = timber
 terrain = la_coruna
 life_rating = 35

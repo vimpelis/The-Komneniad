@@ -16,7 +16,7 @@ political_decisions = {
 			add_country_modifier = { name = neutrality_modifier duration = -1 }
 			OBS = { add_country_modifier = { name = neutrality_modifier duration = -1 } }
 			1687 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
-			512 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
+			1686 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
 			3572 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
 			1875 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
 			766 = { add_province_modifier = { name = strait_control_tile duration = -1 } }
@@ -37,7 +37,7 @@ political_decisions = {
 			#Rub al Khali
 			1172 = { add_province_modifier = { name = impassable duration = -1 } }
 			3385 = { add_province_modifier = { name = impassable duration = -1 } }
-			12 = { add_province_modifier = { name = impassable duration = -1 } }
+			3383 = { add_province_modifier = { name = impassable duration = -1 } }
 			3273 = { add_province_modifier = { name = impassable duration = -1 } }
 			2586 = { add_province_modifier = { name = impassable duration = -1 } }
 			#Syrian Desert
@@ -732,13 +732,13 @@ political_decisions = {
 			PNJ = { country_event = 164009 treasury = 30000 }
 			BAV = { country_event = 155000 }
 			SAF = { country_event = 167000 }
-			SPA = { country_event = 150000 }
+			LEO = { country_event = 150000 }
 			ADU = { country_event = 150001 }
 			CAT = { country_event = 150003 }
 			BRB = { country_event = 156000 }
 			CLT = { country_event = 157000 }
 			DAN = { country_event = 157000 any_pop = { limit = { has_pop_culture = anglo_saxon } militancy = 2 } }
-			BYZ = { country_event = 151000 }
+			BYZ = { country_event = 151000 badboy = 7 }
 			RUS = { country_event = 152000 }
 			MUN = { country_event = 153000 }
 			MOL = { country_event = 153000 }

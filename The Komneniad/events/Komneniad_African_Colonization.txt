@@ -6,7 +6,10 @@ country_event = {
     picture = "montserrado"
 
     trigger = {
-		tag = SPA
+		OR = {
+			tag = SPA
+			tag = LEO
+		}
 		owns = 1887
     }
 

@@ -5453,7 +5453,8 @@ HDJ_mob_modifier = {
 	mobilisation_economy_impact = -0.25
     land_unit_start_experience = 5
     supply_consumption = -0.15
-    mobilisation_size = 0.025
+    mobilisation_size = 0.2
+    mobilization_impact = 10
     icon = 15
 }
 
@@ -5461,7 +5462,8 @@ ARA_mob_modifier = {
 	mobilisation_economy_impact = -0.25
     land_unit_start_experience = 5
     supply_consumption = -0.15
-    mobilisation_size = 0.025
+    mobilisation_size = 0.2
+    mobilization_impact = 10
     icon = 15
 }
 
@@ -5560,8 +5562,9 @@ ETH_regency_lvl_7 = {
 }
 
 uprising_10percent_mob_modf = {
-    pop_militancy_modifier = -0.05
+    global_pop_militancy_modifier = -0.05
     mobilisation_size = 0.1
+    mobilization_impact = 10
     war_exhaustion = -0.5
     tax_efficiency = 0.25
     tariff_efficiency_modifier = 0.1
@@ -5571,7 +5574,7 @@ uprising_10percent_mob_modf = {
 BRB_states_resistance = {
 	prestige = -0.5
 	war_exhaustion = 0.1
-    pop_militancy_modifier = 0.05
+    global_pop_militancy_modifier = 0.05
     icon = 6
 }
 
@@ -5627,26 +5630,59 @@ PER_sword_and_fire_modf = {
 }
 
 PER_orthodox_alliance = {
-	pop_militancy_modifier = -0.01
+	global_pop_militancy_modifier = -0.01
 	education_efficiency_modifier = 0.1
 	land_organisation = 0.1
     icon = 7
 }
 
 PER_catholic_alliance = {
-	pop_militancy_modifier = -0.01
+	global_pop_militancy_modifier = -0.01
 	research_points_modifier = 0.2
 	diplomatic_points_modifier = 0.1
     icon = 7
 }
 
 PER_independent_nestorianism = {
-	pop_militancy_modifier = -0.05
+	global_pop_militancy_modifier = -0.05
 	war_exhaustion = -0.25
 	leadership_modifier = 0.25
     icon = 7
 }
+
 stiavnica_silver_mines = {
     local_RGO_output = -0.75
     icon = 11
+}
+
+exceptional_willpower = {
+	land_organisation = 0.25
+	mobilisation_size = 0.75
+	mobilization_impact = 10
+	leadership_modifier = 1
+	supply_consumption = -0.25
+	tax_efficiency = 0.5
+    global_pop_militancy_modifier = -0.1
+	war_exhaustion = -5
+	research_points_modifier = -0.75
+	diplomatic_points_modifier = -0.75
+	education_efficiency_modifier = -0.75
+	global_population_growth = -0.005
+    icon = 15
+}
+
+wartime_recovery = {
+	global_population_growth = -0.001
+	land_organisation = -0.1
+	mobilisation_size = -0.05
+	tax_efficiency = -0.1
+    global_pop_militancy_modifier = 0.05
+	war_exhaustion = 0.25
+    icon = 15
+}
+
+RUM_new_tribes = {
+	global_population_growth = 0.0005
+    pop_consciousness_modifier = 0.01
+    icon = 19
 }

@@ -272,7 +272,7 @@ political_decisions = {
 						in_sphere = THIS
 					}
 				}
-				annex_to = THIS
+				country_event = 156031
 			}
 			set_country_flag = BRB_unify_low_franconia
 		}

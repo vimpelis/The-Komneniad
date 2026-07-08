@@ -760,6 +760,12 @@
         religion = orthodox
         size = 1100
     }
+	
+	bureaucrats = {
+        culture = greek
+        religion = orthodox
+        size = 500
+    }
 
     clergymen = {
         culture = greek
@@ -980,7 +986,7 @@
     bureaucrats = {
         culture = greek
         religion = orthodox
-        size = 96
+        size = 1000
     }
 
     officers = {
@@ -1341,17 +1347,23 @@
         religion = coptic
         size = 1210
     }
-
-    artisans = {
+	
+	clergymen = {
         culture = rumi
         religion = orthodox
-        size = 50
+        size = 35
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = orthodox
+        size = 120
     }
 
     farmers = {
         culture = rumi
         religion = orthodox
-        size = 250
+        size = 1050
     }
 }
 #Kutahya (112000/28000 POPS)
@@ -1469,13 +1481,13 @@
     artisans = {
         culture = rumi
         religion = orthodox
-        size = 50
+        size = 75
     }
 
     farmers = {
         culture = rumi
         religion = orthodox
-        size = 150
+        size = 500
     }
 }
 #Aydin Region (988000)
@@ -1673,13 +1685,13 @@
     artisans = {
         culture = rumi
         religion = orthodox
-        size = 50
+        size = 75
     }
 
     farmers = {
         culture = rumi
         religion = orthodox
-        size = 150
+        size = 500
     }
 }
 #Denizli (308000/77000 POPS)
@@ -1879,7 +1891,7 @@
     farmers = {
         culture = anatolian
         religion = orthodox
-        size = 33360
+        size = 30360
     }
 
     aristocrats = {
@@ -1906,7 +1918,19 @@
         size = 1500
     }
 
-    artisans = {
+    aristocrats = {
+        culture = rumi
+        religion = orthodox
+        size = 100
+    }
+	
+	clergymen = {
+        culture = rumi
+        religion = orthodox
+        size = 250
+    }
+	
+	artisans = {
         culture = rumi
         religion = orthodox
         size = 350
@@ -1915,7 +1939,7 @@
     farmers = {
         culture = rumi
         religion = orthodox
-        size = 3500
+        size = 6500
     }
 }
 3604 = {
@@ -2101,17 +2125,23 @@
         religion = orthodox
         size = 1050
     }
-
-    artisans = {
+	
+	clergymen = {
         culture = rumi
         religion = orthodox
-        size = 75
+        size = 50
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = orthodox
+        size = 150
     }
 
     farmers = {
         culture = rumi
         religion = orthodox
-        size = 400
+        size = 1700
     }
 }
 #Antalya (204000/51000 POPS)
@@ -2150,18 +2180,6 @@
         culture = anatolian
         religion = orthodox
         size = 28000
-    }
-
-    artisans = {
-        culture = rumi
-        religion = orthodox
-        size = 50
-    }
-
-    farmers = {
-        culture = rumi
-        religion = orthodox
-        size = 500
     }
 }
 #Central Anatolia Region (692000)
@@ -3229,6 +3247,12 @@
         religion = orthodox
         size = 779
     }
+	
+	bureaucrats = {
+        culture = pontic
+        religion = orthodox
+        size = 250
+    }
 
     clergymen = {
         culture = pontic
@@ -3722,12 +3746,6 @@
         culture = georgian
         religion = yazidi
         size = 3200
-    }
-
-    farmers = {
-        culture = rumi
-        religion = sunni
-        size = 5200
     }
 
     farmers = {
@@ -4463,25 +4481,25 @@
     clergymen = {
         culture = kurdish
         religion = yazidi
-        size = 350
+        size = 200
     }
 
     artisans = {
         culture = kurdish
         religion = yazidi
-        size = 750
+        size = 400
     }
 
     soldiers = {
         culture = kurdish
         religion = yazidi
-        size = 1250
+        size = 1150
     }
 
     farmers = {
         culture = kurdish
         religion = yazidi
-        size = 8000
+        size = 3500
     }
 
     artisans = {
@@ -4609,19 +4627,7 @@
     farmers = {
         culture = kurdish
         religion = yazidi
-        size = 9700	
-    }
-
-    artisans = {
-        culture = rumi
-        religion = yazidi
-        size = 125
-    }
-
-    farmers = {
-        culture = rumi
-        religion = yazidi
-        size = 2750
+        size = 4200	
     }
 
     artisans = {
@@ -4633,7 +4639,19 @@
     farmers = {
         culture = rumi
         religion = orthodox
-        size = 2100
+        size = 4600
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = yazidi
+        size = 125
+    }
+
+    farmers = {
+        culture = rumi
+        religion = yazidi
+        size = 5750
     }
 }
 #Cilicia Region (540000)
@@ -4757,7 +4775,7 @@
     bureaucrats = {
         culture = misri
         religion = sunni
-        size = 15
+        size = 150
     }
 
     officers = {
@@ -4813,17 +4831,41 @@
         religion = orthodox
         size = 3015
     }
-
-    bureaucrats = {
-        culture = copt
-        religion = coptic
-        size = 14
+	
+	aristocrats = {
+        culture = rumi
+        religion = orthodox
+        size = 75
+    }
+	
+	clergymen = {
+        culture = rumi
+        religion = orthodox
+        size = 150
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = orthodox
+        size = 300
     }
 
-    bureaucrats = {
-        culture = misri
-        religion = sunni
-        size = 1
+    farmers = {
+        culture = rumi
+        religion = orthodox
+        size = 3200
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = yazidi
+        size = 120
+    }
+
+    farmers = {
+        culture = rumi
+        religion = yazidi
+        size = 1550
     }
 }
 #Kozen
@@ -4954,18 +4996,6 @@
         culture = anatolian
         religion = orthodox
         size = 15000
-    }
-
-    artisans = {
-        culture = rumi
-        religion = orthodox
-        size = 75
-    }
-
-    farmers = {
-        culture = rumi
-        religion = orthodox
-        size = 600
     }
 
     aristocrats = {
@@ -5139,7 +5169,7 @@
     farmers = {
         culture = armenian
         religion = coptic
-        size = 14025
+        size = 13025
     }
 
     aristocrats = {
@@ -5224,6 +5254,24 @@
         culture = anatolian
         religion = orthodox
         size = 3315
+    }
+	
+	clergymen = {
+        culture = rumi
+        religion = orthodox
+        size = 25
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = orthodox
+        size = 75
+    }
+
+    farmers = {
+        culture = rumi
+        religion = orthodox
+        size = 1000
     }
 }
 #Antioch (160000/40000 POPS)
@@ -5388,6 +5436,30 @@
         culture = anatolian
         religion = orthodox
         size = 4150
+    }
+	
+	aristocrats = {
+        culture = rumi
+        religion = yazidi
+        size = 50
+    }
+	
+	clergymen = {
+        culture = rumi
+        religion = yazidi
+        size = 50
+    }
+	
+	artisans = {
+        culture = rumi
+        religion = yazidi
+        size = 150
+    }
+
+    farmers = {
+        culture = rumi
+        religion = yazidi
+        size = 1200
     }
 }
 #Bayburt
@@ -5661,13 +5733,13 @@
     artisans = {
         culture = rumi
         religion = orthodox
-        size = 100
+        size = 250
     }
 
     farmers = {
         culture = rumi
         religion = orthodox
-        size = 2250
+        size = 3250
     }
 
     aristocrats = {

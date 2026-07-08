@@ -157,7 +157,7 @@ political_decisions = {
 	SPA_reconquista_east = {
 		picture = iberia_map
 		potential = {
-			tag = SPA
+			tag = LEO
 			NOT = { has_country_flag = SPA_reconquista_east }
 		}
 		allow = {
@@ -190,7 +190,7 @@ political_decisions = {
 	SPA_kill_catalonia = {
 		picture = catalan_occitania
 		potential = {
-			tag = SPA
+			tag = LEO
 			has_country_flag = SPA_reconquista_east
 			owns = 495
 			exists = CAT
@@ -225,8 +225,11 @@ political_decisions = {
 	SPA_annex_catalan_puppet = {
 		picture = catalan_occitania
 		potential = {
-			tag = SPA
-			CAT = { vassal_of = SPA }
+			OR = {
+				tag = SPA
+				tag = LEO
+			}
+			CAT = { vassal_of = THIS }
 			NOT = { has_country_flag = SPA_annex_catalan_puppet }
 		}
 		allow = {
@@ -236,7 +239,7 @@ political_decisions = {
 			war = no
 		}
 		effect = {
-			CAT = { annex_to = SPA all_core = { add_core = SPA } }
+			CAT = { annex_to = THIS all_core = { add_core = THIS } }
 			add_accepted_culture = catalan
 			badboy = 4
 			set_country_flag = SPA_annex_catalan_puppet
@@ -253,8 +256,11 @@ political_decisions = {
 	SPA_press_gothic_claim = {
 		picture = spanish_march
 		potential = {
-			tag = SPA
-			CAT = { vassal_of = SPA }
+			OR = {
+				tag = SPA
+				tag = LEO
+			}
+			CAT = { vassal_of = THIS }
 			NOT = { has_country_flag = SPA_press_gothic_claim }
 		}
 		allow = {
@@ -285,7 +291,7 @@ political_decisions = {
 	SPA_reconquista_center = {
 		picture = iberia_map
 		potential = {
-			tag = SPA
+			tag = LEO
 			has_country_flag = SPA_reconquista_east
 			NOT = { has_country_flag = SPA_reconquista_center }
 		}
@@ -312,7 +318,7 @@ political_decisions = {
 	SPA_finish_reconquista = {
 		picture = iberia_map
 		potential = {
-			tag = SPA
+			tag = LEO
 			has_country_flag = SPA_reconquista_center
 			NOT = { has_country_flag = SPA_finish_reconquista }
 		}
@@ -320,11 +326,14 @@ political_decisions = {
 			all_core = { owned_by = THIS }
 			revolution_n_counterrevolution = 1
 			war = no
+			NOT = { exists = SPA }
 		}
 		effect = {
+			change_tag = SPA
+			prestige = 25
+			badboy = 15
 			SPA_512 = { add_core = THIS }
 			SPA_513 = { add_core = THIS }
-			badboy = 15
 			set_country_flag = SPA_finish_reconquista
 		}
 		ai_will_do = {

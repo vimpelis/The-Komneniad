@@ -7794,36 +7794,6 @@
 }
 #Cadiz (336000/84000 POPS)
 512 = {
-    aristocrats = {
-        culture = andalusian
-        religion = sunni
-        size = 39
-    }
-
-    clergymen = {
-        culture = andalusian
-        religion = sunni
-        size = 30
-    }
-
-    artisans = {
-        culture = andalusian
-        religion = sunni
-        size = 360
-    }
-
-    artisans = {
-        culture = andalusian
-        religion = sunni
-        size = 234
-    }
-
-    farmers = {
-        culture = andalusian
-        religion = sunni
-        size = 2274
-    }
-
     farmers = {
         culture = gypsy
         religion = sunni
@@ -7857,7 +7827,7 @@
     artisans = {
         culture = andalusian
         religion = sunni
-        size = 7566
+        size = 6566
     }
 
     soldiers = {
@@ -7869,7 +7839,33 @@
     farmers = {
         culture = andalusian
         religion = sunni
-        size = 73537
+        size = 60537
+    }
+}
+#Gibraltar
+1686 = {
+    aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 500
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 200
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 1600
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 14600
     }
 }
 #Alpujarras Region (1296000)

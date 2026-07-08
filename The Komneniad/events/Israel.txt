@@ -2423,7 +2423,7 @@ country_event = {
 			}
 			secede_province = PLS
 		}
-		PLS = { government = prov_gov_conservative }
+		PLS = { government = provisional_government }
 
 		917 = { secede_province = PLS }
 		918 = { secede_province = PLS }

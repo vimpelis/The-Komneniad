@@ -1,4 +1,5 @@
 ARA = { value = -150 }
+TRI	 = { value = -100 }
 
 navy = {
     name = "Taba"

@@ -559,7 +559,7 @@ political_decisions = {
 							assimilate = yes
 							any_pop = { pop_type = serfs move_pop = 1172 }
 						}
-						12 = {
+						3383 = {
 							any_pop = {
 								limit = { has_pop_religion = ibadi type = farmers }
 								move_pop = 3544
@@ -567,7 +567,7 @@ political_decisions = {
 						}
 						3544 = {
 							assimilate = yes
-							any_pop = { pop_type = serfs move_pop = 12 }
+							any_pop = { pop_type = serfs move_pop = 3383 }
 						}
 						3273 = {
 							any_pop = {

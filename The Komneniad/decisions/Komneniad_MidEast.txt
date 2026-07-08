@@ -43,6 +43,7 @@ political_decisions = {
 		effect = {
 			add_accepted_culture = syriac
 			any_owned = { remove_province_modifier = EGY_syriac_unrest }
+			EGY_wishful_thinking = {}
 		}
 		ai_will_do = {
 			factor = 0

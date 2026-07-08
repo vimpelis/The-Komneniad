@@ -1,4 +1,4 @@
-SPA = {
+LEO = {
     value = -150
 }
 AYL = {
