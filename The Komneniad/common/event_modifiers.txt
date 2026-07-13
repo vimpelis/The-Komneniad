@@ -5686,3 +5686,11 @@ RUM_new_tribes = {
     pop_consciousness_modifier = 0.01
     icon = 19
 }
+
+OMA_sold_out_country = {
+	research_points_modifier = -0.1
+	education_efficiency_modifier = -0.2
+	tax_efficiency = -0.1
+	global_pop_militancy_modifier = 0.05
+    icon = 4
+}

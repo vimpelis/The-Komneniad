@@ -19,7 +19,7 @@ political_decisions = {
                     3273 = { empty = yes } #Rumah
                 }
                 AND = { #Oman
-                    owns = 1166 #Muscat
+                    owns = 1174 #Salalah
                     1172 = { empty = yes } #Duqm
                 }
                 AND = { #Arabia
@@ -97,7 +97,7 @@ political_decisions = {
                     }
                 }
                 AND = { #Oman
-                    owns = 1166 #Muscat
+                    owns = 1174 #Salalah
                     1172 = { empty = yes } #Duqm
                     OR = {
                         year = 1860
@@ -250,7 +250,7 @@ political_decisions = {
             random_owned = {
                 limit = {
                     owner = {
-                        owns = 1166 #Muscat
+                        owns = 1174 #Salalah
                         1172 = { empty = yes } #Duqm
                     }
                 }

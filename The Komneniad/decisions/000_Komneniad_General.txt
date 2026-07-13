@@ -1680,7 +1680,7 @@ political_decisions = {
         picture = skoda_works
         potential = {
             NOT = { tech_school = czech_tech_school }
-            is_culture_group = czecho_slovak_culture_group
+            primary_culture = czech
         }
 
         allow = {

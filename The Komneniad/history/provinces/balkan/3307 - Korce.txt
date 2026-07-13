@@ -1,3 +1,6 @@
+owner = ADU
+controller = ADU
+add_core = ADU
 trade_goods = grain
-terrain = desert
-life_rating = 1
+life_rating = 35
+terrain = plains

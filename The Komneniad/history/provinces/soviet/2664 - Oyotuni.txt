@@ -1,6 +1,6 @@
-owner = OMA
-controller = OMA
-add_core = OMA
+owner = MUS
+controller = MUS
+add_core = MUS
 add_core = HAJ
 trade_goods = fish
 terrain = semi_desert_mountains

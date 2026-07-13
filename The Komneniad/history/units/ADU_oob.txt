@@ -7,7 +7,7 @@ BRB = { value = -100 }
 CLT = { value = 25 }
 DEN = { value = 30 }
 JOH = { value = 150 }
-OMA = { value = 100 }
+MUS = { value = 100 }
 
 army = {
     name = "1st Army"

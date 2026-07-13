@@ -1,6 +1,6 @@
-owner = OMA
-controller = OMA
-add_core = OMA
+owner = MUS
+controller = MUS
+add_core = MUS
 add_core = HAD
 trade_goods = fish
 life_rating = 20

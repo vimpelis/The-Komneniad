@@ -1,7 +1,3 @@
-owner = BRB
-controller = BRB
-add_core = BRB
-trade_goods = sugar
-life_rating = 30
-terrain = plains
-add_core = WLL
+trade_goods = grain
+terrain = desert
+life_rating = 1

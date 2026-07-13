@@ -1,7 +1,7 @@
 capital = 1166
 primary_culture = bedouin
 religion = ibadi
-government = absolute_empire
+government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.019
@@ -66,4 +66,4 @@ ammunition_production = yes
 consciousness = 0
 nonstate_consciousness = 0
 
-oob = "OMA_oob.txt"
+oob = "MUS_oob.txt"

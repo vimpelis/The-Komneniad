@@ -28,16 +28,16 @@ TKG = {
 
 army = {
     name = "1st Army"
-    location = 521
+    location = 522
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 521
+        home = 477
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 521
+        home = 474
     }
 	regiment = {
         name = "3rd Infantry Regiment"
@@ -87,7 +87,7 @@ army = {
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 3433
+        home = 487
     }
     regiment = {
         name = "2nd Infantry Regiment"
@@ -177,7 +177,7 @@ leader = {
 
 navy = {
     name = "1st Fleet"
-    location = 521
+    location = 518
     ship = {
 		name = "Man'o'war"
         type = manowar

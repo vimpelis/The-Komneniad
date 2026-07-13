@@ -525,7 +525,7 @@ YEM = {
 }
 
 # Oman
-OMA = {
+MUS = {
     color1 = { 198 22 16  }
     color2 = { 123 16 21  }
     color3 = { 17 16 203  }

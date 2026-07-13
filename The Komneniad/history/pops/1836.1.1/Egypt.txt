@@ -1889,25 +1889,25 @@
     }
 
     aristocrats = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 10
     }
 
     clergymen = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 20
     }
 
     artisans = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 444
     }
 
     farmers = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 727
     }
@@ -2023,51 +2023,27 @@
     }
 
     aristocrats = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 8
     }
 
     clergymen = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 12
     }
 
     artisans = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 119
     }
 
     farmers = {
-        culture = copt
+        culture = syriac
         religion = coptic
         size = 427
-    }
-
-    aristocrats = {
-        culture = misri
-        religion = sunni
-        size = 0
-    }
-
-    clergymen = {
-        culture = misri
-        religion = sunni
-        size = 1
-    }
-
-    artisans = {
-        culture = misri
-        religion = sunni
-        size = 6
-    }
-
-    farmers = {
-        culture = misri
-        religion = sunni
-        size = 23
     }
 }
 #Hariga Region (56000)

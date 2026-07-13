@@ -22,7 +22,7 @@ army = {
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 3363
+        home = 3483
     }
 }
 

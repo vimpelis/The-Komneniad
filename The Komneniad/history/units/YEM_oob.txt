@@ -1,5 +1,5 @@
 HAD = { value = -100 }
-OMA = { value = -100 }
+MUS = { value = -100 }
 
 leader = {
     name = "Muhsin ibn al-Fadl al-Abdali"

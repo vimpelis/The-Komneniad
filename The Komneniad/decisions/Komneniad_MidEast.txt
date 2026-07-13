@@ -8,7 +8,7 @@ political_decisions = {
 		allow = {
 			war = no
 			OR = {
-				ARA = { war_with = OMA }
+				ARA = { war_with = MUS }
 				prestige = 15
 				state_n_government = 1
 			}
@@ -110,7 +110,7 @@ political_decisions = {
 			UQA = {
 				annex_to = THIS
 			}
-			3300 = { add_core = THIS }
+			3300 = { add_core = THIS fort = 1 }
 			924 = { add_core = THIS }
 			3405 = { add_core = THIS }
 			set_country_flag = EGY_annex_uqaydat
@@ -120,7 +120,7 @@ political_decisions = {
 		}
 	}
 	
-	BYZ_release_exarchate_syria = {
+	BYZ_offensive_in_syria = {
 		picture = map_syria
 		potential = {
 			OR = {
@@ -130,40 +130,96 @@ political_decisions = {
 			has_country_flag = BYZ_refused_to_release_SYR_3
 			NOT = { exists = LBN }
 			owns = 897
+			NOT = { has_country_flag = BYZ_syria_menu_open }
 		}
 		allow = {
 			war = no
 		}
 		effect = {
-			badboy = -2
-			900 = { remove_core = LBN }
-			3362 = { remove_core = LBN }
 			random_owned = {
 				limit = {
-					province_id = 3300
+					owner = { ai = no }
 				}
-				924 = { add_core = LBN }
-				3300 = { add_core = LBN }
-				3405 = { add_core = LBN }
-				2321 = { add_core = LBN }
-			}
-			release_vassal = LBN
-			LBN = { capital = 897 primary_culture = greek add_accepted_culture = syriac }
-			random_owned = {
-				limit = {
-					owner = { tag = GRE }
+				owner = {
+					country_event = 178049
+					set_country_flag = BYZ_syria_menu_open
 				}
-				LBN = { government = colonial_company_2 }
 			}
 			random_owned = {
 				limit = {
-					owner = { tag = BYZ }
+					owner = { ai = yes has_country_flag = AISTRATEGY_BYZGRE_assasinatesyria invention = secret_police money = 50000 }
 				}
-				LBN = { government = colonial_company }
+				owner = {
+					treasury = -50000
+					clr_country_flag = BYZ_refused_to_release_SYR_3
+					any_owned = {
+						limit = { is_core = LBN }
+						remove_province_modifier = BYZ_syriac_revolt
+						add_province_modifier = { name = BYZ_syriac_revolt duration = 1825 }
+						any_pop = { limit = { has_pop_culture = syriac } militancy = 4 consciousness = 4 }
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { ai = yes has_country_flag = AISTRATEGY_BYZGRE_revoltsyria war = no }
+				}
+				owner = {
+					clr_country_flag = BYZ_refused_to_release_SYR_3
+					any_owned = {
+						limit = { is_core = LBN }
+						remove_province_modifier = BYZ_syriac_revolt
+						secede_province = LBN
+					}
+					LBN = {
+						add_country_modifier = { name = uprising_10percent_mob_modf duration = 1825 }
+						capital_scope = {
+							sub_unit = { 
+								type = infantry
+								value = current 
+							}
+							sub_unit = { 
+								type = infantry
+								value = current 
+							}
+							sub_unit = { 
+								type = artillery
+								value = current 
+							}
+							sub_unit = { 
+								type = artillery
+								value = current 
+							}
+							sub_unit = { 
+								type = artillery
+								value = current 
+							}
+							sub_unit = { 
+								type = artillery
+								value = current 
+							}
+						}
+					}
+					war = {
+						target = LBN
+						attacker_goal = { casus_belli = conquest_any }
+						defender_goal = { casus_belli = status_quo }
+					}
+				}
 			}
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+                factor = 0
+                has_country_flag = AISTRATEGY_BYZGRE_assasinatesyria
+				NOT = { invention = secret_police money = 50000 }
+            }
+			modifier = {
+                factor = 0
+                has_country_flag = AISTRATEGY_BYZGRE_revoltsyria
+				war = yes
+            }
 		}
 	}
 	
@@ -252,6 +308,7 @@ political_decisions = {
 		allow = {
 			war = no
 			plurality = 75
+			citizens_rights = all_voting_pops
 			great_wars_enabled = yes
 			ASY = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
 			LBN = { OR = { government = colonial_company government = colonial_company_2 } vassal_of = THIS }
@@ -291,6 +348,42 @@ political_decisions = {
 		}
 	}
 	
+	BYZ_institutionalize_melkites = {
+		picture = map_syria
+		potential = {
+			OR = {
+				tag = BYZ
+				tag = GRE
+			}
+			has_country_flag = BYZ_melkites
+			LBN = { all_core = { owned_by = THIS } }
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			political_parties = secret_ballots
+			LBN = { all_core = { NOT = { average_militancy = 3 } } }
+		}
+		effect = {
+			prestige = 10
+			add_accepted_culture = syriac
+			any_country = {
+				limit = {
+					tag = LBN
+					vassal_of = THIS
+					OR = { government = colonial_company government = colonial_company_2 }
+				}
+				annex_to = THIS
+				all_core = { add_core = THIS }
+				government = democracy
+			}
+			clr_country_flag = BYZ_melkites
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	EGY_integrate_hedjaz = {
 		picture = map_syria
 		potential = {
@@ -300,7 +393,7 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			state_n_government = 1
+			civilized = yes
 		}
 		effect = {
 			prestige = 5
@@ -320,13 +413,17 @@ political_decisions = {
 			LBN = { vassal_of = THIS }
 			NOT = { has_country_flag = EGY_annex_LBN_puppet }
 			NOT = { has_country_flag = EGY_refused_syriac_autonomy }
+			civilized = no
 		}
 		allow = {
 			war = no
+			year = 1870
 			OR = {
-				year = 1870
 				research_reform = yes_research_reform
-				civilized = yes
+				AND = {
+					ai = yes
+					year = 1885
+				}
 			}
 		}
 		effect = {
@@ -390,20 +487,18 @@ political_decisions = {
 					owner = { vassal_of = THIS }
 				}
 			}
-			OR = {
-				1751 = {
-					OR = {
-						owned_by = THIS
-						owner = { in_sphere = THIS }
-						owner = { vassal_of = THIS }
-					}
+			1751 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
 				}
-				926 = {
-					OR = {
-						owned_by = THIS
-						owner = { in_sphere = THIS }
-						owner = { vassal_of = THIS }
-					}
+			}
+			926 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
 				}
 			}
 		}
@@ -422,7 +517,7 @@ political_decisions = {
 			HAL = { all_core = { add_core = ARU } }
 			ARA = { all_core = { add_core = ARU } }
 			YEM = { all_core = { add_core = ARU } }
-			OMA = { all_core = { add_core = ARU } }
+			MUS = { all_core = { add_core = ARU } }
 			HAD = { all_core = { add_core = ARU } }
 			QAT = { all_core = { add_core = ARU } }
 			NAJ = { all_core = { add_core = ARU } }

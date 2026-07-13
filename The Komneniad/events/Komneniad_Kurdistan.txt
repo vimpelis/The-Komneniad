@@ -503,6 +503,7 @@ country_event = {
 	option = {
         name = "The Exarchate will manage it effectively."
 		TUR_890 = { secede_province = ASY }
+		ASY = { country_event = 177016 }
     }
 }
 
@@ -1674,9 +1675,11 @@ province_event = {
         }
 		modifier = {
             factor = 1000
-            OR = {
-				war_with = BYZ
-				war_with = GRE
+            owner = {
+				OR = {
+					war_with = BYZ
+					war_with = GRE
+				}
 			}
         }
     }

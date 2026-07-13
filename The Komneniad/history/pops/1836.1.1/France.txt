@@ -311,7 +311,7 @@
         size = 2000
     }
 }
-3314 = {
+405 = {
     aristocrats = {
         culture = wallonian
         religion = reformed

@@ -43,7 +43,7 @@ political_decisions = {
 		effect = {
 			badboy = 15
 			war = {
-				target = OMA
+				target = MUS
 				attacker_goal = {
 					casus_belli = conquest_any
 				}
@@ -73,11 +73,11 @@ political_decisions = {
 			NOT = { has_country_flag = ARA_unification_call }
 		}
 		allow = {
-			OMA = { exists = no }
+			MUS = { exists = no }
 			owns = 1166
 		}
 		effect = {
-			OMA = { all_core = { add_core = THIS } }
+			MUS = { all_core = { add_core = THIS } }
 			YEM = { all_core = { add_core = THIS } }
 			QAT = { all_core = { add_core = THIS } }
 			IRQ = { all_core = { add_core = THIS } }
@@ -268,13 +268,12 @@ political_decisions = {
 	OMA_annex_hadhramaut = {
 		picture = oman_map
 		potential = {
-			tag = OMA
+			tag = MUS
 			is_our_vassal = HAD
 			NOT = { has_country_flag = OMA_annex_hadhramaut }
 		}
 		allow = {
 			war = no
-			year = 1850
 			OR = {
 				AND = {
 					civilization_progress = 0.5
@@ -289,6 +288,19 @@ political_decisions = {
 			HAD = {
 				annex_to = THIS
 				all_core = { add_core = THIS }
+			}
+			random_owned = {
+				limit = {
+					DHO = { vassal_of = MUS }
+				}
+				MUS = {
+					any_owned = {
+						limit = {
+							is_core = DHO
+						}
+						secede_province = DHO
+					}
+				}
 			}
 			set_country_flag = OMA_annex_hadhramaut
 			set_country_flag = hidden_tooltip
@@ -317,7 +329,7 @@ political_decisions = {
 		picture = oman_map
 		potential = {
 			OR = {
-				tag = OMA
+				tag = MUS
 				tag = SAY
 			}
 			NOT = { has_country_flag = OMA_spread_ibadism }
@@ -343,10 +355,11 @@ political_decisions = {
 		picture = oman_map
 		potential = {
 			OR = {
-				tag = OMA
+				tag = MUS
 				tag = SAY
 			}
 			NOT = { has_country_flag = OMA_reconquer_zanj_coast }
+			NOT = { has_country_flag = OMA_lost_zanj }
 		}
 		allow = {
 			war = no
@@ -369,11 +382,12 @@ political_decisions = {
 		picture = oman_map
 		potential = {
 			OR = {
-				tag = OMA
+				tag = MUS
 				tag = SAY
 			}
 			has_country_flag = OMA_reconquer_zanj_coast
 			NOT = { has_country_flag = OMA_hegemony_over_eastafrica }
+			NOT = { has_country_flag = OMA_lost_zanj }
 		}
 		allow = {
 			war = no
@@ -399,7 +413,7 @@ political_decisions = {
 	OMA_form_sayhad = {
 		picture = oman_map
 		potential = {
-			tag = OMA
+			tag = MUS
 			NOT = { exists = SAY }
 			has_country_flag = OMA_annex_hadhramaut
 		}
@@ -422,7 +436,8 @@ political_decisions = {
 			remove_accepted_culture = mashriqi
 			remove_accepted_culture = bedouin
 			set_country_flag = hidden_tooltip
-			OMA = { all_core = { remove_core = OMA } }
+			MUS = { all_core = { remove_core = MUS } }
+			DHO = { all_core = { remove_core = DHO } }
 			all_core = { remove_core = ARU }
 				random_owned = { limit = { owner = { has_country_flag = hidden_tooltip } }
 					owner = {
@@ -695,7 +710,7 @@ political_decisions = {
 				annex_to = THIS
 				all_core = { add_core = THIS }
 			}
-			all_core = { remove_core = OMA remove_core = HAD remove_core = ARU remove_core = QAT remove_core = HAJ }
+			all_core = { remove_core = MUS remove_core = HAD remove_core = ARU remove_core = QAT remove_core = HAJ }
 			set_country_flag = culture_conversion
 		}
 		ai_will_do = { factor = 1 }
@@ -714,7 +729,7 @@ political_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = OMA_sayhadi_education
-				duration = -1
+				duration = 7300
 			}
 			set_country_flag = OMA_enforce_sayhadi_education
 		}
@@ -835,6 +850,39 @@ political_decisions = {
 				attacker_goal = { casus_belli = annex_core_country }
 				call_ally = yes
 			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	DHO_foreign_power_support = {
+		picture = oman_map
+		potential = {
+			is_greater_power = yes
+			exists = DHO
+			DHO = { vassal_of = MUS }
+			any_owned_province = {
+				OR = {
+					continent = east_africa
+					continent = asia
+				}
+			}
+			NOT = { has_global_flag = DHO_claimed }
+		}
+		allow = {
+			war = no
+			DHO = { in_sphere = THIS }
+		}
+		effect = {
+			badboy = 2
+			relation = { who = DHO value = 400 }
+			relation = { who = MUS value = -400 }
+			MUS = {
+				release_vassal = DHO
+				country_event = 168215
+			}
+			DHO = { create_alliance = THIS }
+			set_global_flag = DHO_claimed
+			set_country_flag = DHO_supporter
 		}
 		ai_will_do = { factor = 1 }
 	}

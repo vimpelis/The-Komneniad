@@ -1,4 +1,4 @@
 add_core = HAJ
-add_core = OMA
+add_core = MUS
 trade_goods = wool
 life_rating = 20

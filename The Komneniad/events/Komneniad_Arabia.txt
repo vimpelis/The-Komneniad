@@ -353,42 +353,6 @@ country_event = {
 }
 
 country_event = {
-    id = 168016
-    title = "An Opportunity in Africa"
-    desc = "168016DESC"
-    picture = "arab_revolt"
-
-    trigger = {
-		tag = OMA
-		war = no
-		SOM = { owns = 2029 war = yes }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = {
-        days = 10
-    }
-
-    option = {
-        name = "text"
-		war = {
-			target = SOM
-			attacker_goal = {
-				casus_belli = acquire_core_state
-				state_province_id = 2029
-			}
-		}
-	}
-	
-	option = {
-        name = "text"
-		prestige = -5
-		ai_chance = { factor = 0 }
-    }
-}
-
-country_event = {
     id = 168017
     title = "War for Yemen"
     desc = "168017DESC"
@@ -419,16 +383,22 @@ country_event = {
     option = {
         name = "text"
 		YEM = {
+			set_country_flag = YEM_eat_najran
 			YEM_1178 = { add_core = YEM }
 			1161 = { add_core = YEM }
 			1145 = { add_core = YEM }
-			set_country_flag = YEM_eat_najran
+			war = {
+				target = NAJ
+				attacker_goal = { conquest_any }
+				defender_goal = { conquest_any }
+				call_ally = yes
+			}
 		}
 		NAJ = {
+			set_country_flag = NAJ_yemen_available
 			YEM_1178 = { add_core = NAJ }
 			1161 = { add_core = NAJ }
 			1145 = { add_core = NAJ }
-			set_country_flag = NAJ_yemen_available
 		}
 	}
 }
@@ -444,13 +414,14 @@ country_event = {
     option = {
         name = "text"
 		YEM_1412 = { add_core = THIS }
-		OMA = {
+		MUS = {
 			any_owned = {
 				limit = {
 					is_core = THIS
 					NOT = { province_id = 1412 }
 					NOT = { province_id = 3273 }
 					NOT = { province_id = 1175 }
+					NOT = { province_id = 1173 }
 					NOT = { province_id = 1177 }
 				}
 				secede_province = THIS
@@ -672,7 +643,7 @@ country_event = {
 		release = YEM
 		release = QAT
 		release = HAJ
-		release = OMA
+		release = MUS
 		release = IRQ
 		release = JOR
 		release = SYR
@@ -685,4 +656,544 @@ country_event = {
 		1157 = { change_province_name = "Riyadh" }
 		set_global_flag = ARA_dead
     }
+}
+
+########################################	MUSCAT	###################################################
+
+country_event = {
+    id = 168200
+    title = "An Opportunity in Africa"
+    desc = "168200DESC"
+    picture = "zanzibar"
+
+    trigger = {
+		tag = MUS
+		war = no
+		SOM = { owns = 2029 war = yes }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Seize the moment!"
+		war = {
+			target = SOM
+			attacker_goal = {
+				casus_belli = acquire_core_state
+				state_province_id = 2029
+			}
+		}
+	}
+	
+	option = {
+        name = "Africa is not worth it."
+		prestige = -5
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 168201
+    title = "Looming Succession Crisis in Muscat"
+    desc = "168201DESC"
+    picture = "zanzibar"
+
+    trigger = {
+		tag = MUS
+		year = 1852
+		NOT = { year = 1860 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 150
+    }
+
+    option = {
+        name = "We should get ready."
+		random_owned = {
+			limit = {
+				MUS = { owns = 2048 }
+				ADU = { exists = yes }
+			}
+			owner = { country_event = { id = 168202 days = 10 } }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = hidden_tooltip }
+			}
+			owner = { country_event = { id = 168206 days = 1460 } }
+		}
+		clr_country_flag = hidden_tooltip
+    }
+}
+
+country_event = {
+    id = 168202
+    title = "Bilarab bribes the Nobility"
+    desc = "168202DESC"
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Faisal chooses to contact Cordoba."
+		badboy = -2
+		ADU = { country_event = 168203 }
+	}
+	
+	option = {
+        name = "Faisal will fare on his own."
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 168203
+    title = "Muscat in Trouble"
+    desc = "168203DESC"
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Deal!"
+		ADU_2infamy_tt = {}
+		FROM = { country_event = 168204 }
+	}
+	
+	option = {
+        name = "We don't really need it."
+		FROM = { country_event = 168205 }
+		ai_chance = {
+			factor = 0
+		}
+    }
+}
+
+country_event = {
+    id = 168204
+    title = "Cordoba agrees"
+    desc = "168204DESC"
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Nice."
+		set_country_flag = OMA_agreed_with_ADU
+	}
+}
+
+country_event = {
+    id = 168205
+    title = "Cordoba refuses"
+    desc = "168205DESC"
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Not good!"
+	}
+}
+
+country_event = {
+    id = 168206
+    title = "The Muscati Palace Coup of 1855"
+    desc = "168206DESC"
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+	
+	allow_multiple_instances = yes
+	
+	option = {
+        name = "The Andalusi fleet arrives and bombards Muscat!"
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = OMA_agreed_with_ADU
+				}
+			}
+			owner = {
+				research_points = 5000
+				economic_reform = yes_finance_reform
+				economic_reform = yes_education_reform
+				military_reform = yes_foreign_officers
+				remove_country_modifier = uncivilized_isolationism
+				add_country_modifier = {
+					name = "western_influences"
+					duration = -1
+				}
+				relation = { who = ADU value = 100 }
+				any_owned = {
+					limit = {
+						continent = east_africa
+					}
+					secede_province = ADU
+				}
+				any_country = {
+					limit = {
+						capital_scope = {
+							continent = east_africa
+						}
+						vassal_of = THIS
+					}
+					country_event = 168209
+				}
+				all_core = {
+					limit = {
+						continent = east_africa
+					}
+					remove_core = THIS
+				}
+				ADU = { country_event = 168208 }
+				clr_country_flag = OMA_succession_crisis
+				clr_country_flag = OMA_agreed_with_ADU
+				set_country_flag = OMA_lost_zanj
+				1166 = { add_province_modifier = { name = war_torn duration = 1825 } }
+			}
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = hidden_tooltip
+					NOT = { has_country_flag = OMA_agreed_with_ADU }
+				}
+			}
+			owner = {
+				country_event = 168206
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		random_owned = {
+			limit = { owner = { NOT = { has_country_flag = OMA_agreed_with_ADU } } }
+			owner = { req_nodeal_with_ADU = {} }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = OMA_agreed_with_ADU }
+			}
+		}
+	}
+	
+	option = {
+        name = "Faisal bribes Bilarab's supporters at the last moment."
+		random_owned = {
+			limit = { owner = { NOT = { money = 50000 } } }
+			owner = { req_nomoney50k = {} }
+		}
+		random_owned = {
+			limit = { owner = { has_country_flag = OMA_agreed_with_ADU } }
+			owner = { req_NOT_deal_with_ADU = {} }
+		}
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = {
+				owner = { has_country_flag = hidden_tooltip }
+				OR = {
+					NOT = { owner = { money = 50000 } }
+					has_country_flag = OMA_agreed_with_ADU
+				}
+			}
+			owner = {
+				country_event = 168206
+			}
+		}
+		clr_country_flag = hidden_tooltip
+		random_owned = {
+			limit = {
+				owner = { money = 50000 }
+				NOT = { has_country_flag = OMA_agreed_with_ADU }
+			}
+			owner = {
+				treasury = -50000
+				research_points = 5000
+				economic_reform = yes_finance_reform
+				economic_reform = yes_education_reform
+				military_reform = yes_foreign_officers
+				remove_country_modifier = uncivilized_isolationism
+				add_country_modifier = {
+					name = "western_influences"
+					duration = -1
+				}
+				clr_country_flag = OMA_succession_crisis
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = OMA_agreed_with_ADU
+			}
+			modifier = {
+				factor = 0
+				NOT = { money = 50000 }
+			}
+		}
+	}
+	
+	option = {
+        name = "Help doesn't come, and Faisal is killed in epic personal combat with Bilarab!"
+		relation = { who = ADU value = -100 }
+		ADU = { country_event = 168210 }
+		add_country_modifier = {
+            name = "OMA_sold_out_country"
+            duration = 7300
+        }
+		remove_country_modifier = western_influences
+		add_country_modifier = {
+            name = "uncivilized_isolationism"
+            duration = -1
+        }
+		1172 = { add_core = DHO }
+		1173 = { add_core = DHO }
+		1174 = { add_core = DHO }
+		1175 = { add_core = DHO }
+		3273 = { add_core = DHO }
+		release_vassal = DHO
+		random_owned = {
+			limit = {
+				HAD = {
+					vassal_of = THIS
+				}
+			}
+			HAD = {
+				any_owned = {
+					limit = {
+						is_core = DHO
+					}
+					secede_province = DHO
+				}
+			}
+		}
+		clr_country_flag = OMA_succession_crisis
+		clr_country_flag = OMA_agreed_with_ADU
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = OMA_agreed_with_ADU
+			}
+			modifier = {
+				factor = 0
+				money = 50000
+			}
+		}
+	}
+}
+
+country_event = {
+    id = 168208
+    title = "The Bombardment of Muscat"
+    desc = "168208DESC"
+    picture = "algiers_bombardment"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Salute to our friends in Muscat."
+		badboy = 2
+		received_land_tt = {}
+	}
+}
+
+country_event = {
+    id = 168209
+    title = "We are free!"
+    desc = "168209DESC"
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Hooray!"
+		FROM = { release_vassal = THIS }
+	}
+}
+
+country_event = {
+    id = 168210
+    title = "Faisal fails in Muscat!"
+    desc = "168210DESC"
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Idiot."
+		prestige = -5
+	}
+}
+
+country_event = {
+    id = 168211
+    title = "Our claims in Zanzibar"
+    desc = "We have claimed the East African coast for quite some time now, but it has slipped enough from our hands now for our claims to not be recognized as legitimate now."
+    picture = "zanzibar"
+
+    trigger = {
+		OR = {
+			tag = MUS
+			tag = SAY
+		}
+		year = 1885
+		any_core = { continent = east_africa }
+		NOT = { any_owned_province = { continent = east_africa } }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 120
+    }
+
+    option = {
+        name = "Sad."
+		prestige = -5
+		all_core = {
+			limit = {
+				continent = east_africa
+			}
+			remove_core = THIS
+		}
+	}
+}
+
+country_event = {
+    id = 168212
+    title = "The Dhofar War"
+    desc = "168212DESC"
+    picture = "zanzibar"
+
+    trigger = {
+		tag = MUS
+		DHO = { vassal_of = THIS }
+		civilized = yes
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 120
+    }
+
+    option = {
+        name = "Out of here!"
+		release_vassal = DHO
+		war = {
+			target = DHO
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+		}
+	}
+}
+
+#Triggered by monthly cleanup
+country_event = {
+    id = 168213
+    title = "Victory in the Dhofar War"
+    desc = "We have successfully repelled the Muscati and saved Dhofar. Now they will become a protectorate of ours."
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Great!"
+		prestige = 5
+		create_vassal = DHO
+		DHO = { government = absolute_monarchy }
+		clr_country_flag = DHO_supporter
+	}
+}
+
+country_event = {
+    id = 168214
+    title = "The Yemeni Rebellion"
+    desc = "The loss of Dhofar makes our holdings in Yemen almost inaccessible. Knowing that we can only get to Yemen by sea, the locals have revolted against us."
+    picture = "zanzibar"
+
+    trigger = {
+		tag = MUS
+		1174 = {
+			NOT = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+		}
+		any_owned_province = { is_core = HAD }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        months = 12
+    }
+	
+	immediate = {
+		any_owned = {
+			limit = {
+				is_core = HAD
+				NOT = { province_id = 1412 }
+				NOT = { province_id = 1177 }
+			}
+			secede_province = HAD
+		}
+	}
+
+    option = {
+        name = "KILL THEM"
+		war = {
+			target = HAD
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+        name = "Muscat is done for, I'm ragequitting."
+		prestige = -5
+		1412 = { secede_province = HAD }
+		ai_chance = { factor = 80 }
+	}
+}
+
+country_event = {
+    id = 168215
+    title = "The Dhofar War"
+    desc = "A foreign power has supported the independence of Dhofar, which is ruled by a particularly selfish nobleman. We have to fight them now."
+    picture = "zanzibar"
+
+    is_triggered_only = yes
+	
+    option = {
+        name = "That's exactly what we needed right now."
+		war = {
+			target = DHO
+			attacker_goal = {
+				casus_belli = conquest_any
+			}
+			defender_goal = {
+				casus_belli = acquire_all_cores
+				country = DHO
+			}
+			call_ally = yes
+		}
+	}
 }

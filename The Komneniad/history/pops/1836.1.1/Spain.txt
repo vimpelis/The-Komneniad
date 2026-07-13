@@ -46,7 +46,7 @@
     soldiers = {
         culture = spanish
         religion = catholic
-        size = 4232
+        size = 6500
     }
 
     farmers = {
@@ -306,7 +306,7 @@
     soldiers = {
         culture = spanish
         religion = catholic
-        size = 1849
+        size = 3400
     }
 
     craftsmen = {
@@ -858,7 +858,7 @@
     farmers = {
         culture = spanish
         religion = catholic
-        size = 40299
+        size = 36299
     }
 
     slaves = {
@@ -894,7 +894,7 @@
     farmers = {
         culture = andalusian
         religion = sunni
-        size = 26558
+        size = 20558
     }
 
     aristocrats = {
@@ -1906,7 +1906,7 @@
     farmers = {
         culture = spanish
         religion = sunni
-        size = 279
+        size = 4279
     }
 
     aristocrats = {
@@ -2188,7 +2188,7 @@
     farmers = {
         culture = andalusian
         religion = sunni
-        size = 838
+        size = 6838
     }
 }
 #Siguenza (204000/51000 POPS)
@@ -4114,7 +4114,7 @@
     farmers = {
         culture = spanish
         religion = catholic
-        size = 18493
+        size = 8493
     }
 
     aristocrats = {
@@ -4294,7 +4294,7 @@
     farmers = {
         culture = andalusian
         religion = sunni
-        size = 7925
+        size = 17925
     }
 
     aristocrats = {

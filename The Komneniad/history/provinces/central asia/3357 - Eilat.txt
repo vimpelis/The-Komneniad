@@ -2,5 +2,5 @@ owner = EGY
 controller = EGY
 add_core = EGY
 trade_goods = wool
-life_rating = 10
-terrain = desert
+life_rating = 20
+terrain = semidesert

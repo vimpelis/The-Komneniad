@@ -115,9 +115,11 @@ ENG_260 = { 260 261 262 } #Munster
 
 ENG_263 = { 263 264 265 3378 } #Leinster
 
-ENG_266 = { 253 266 267 268 1724 3478 3479 3477 } #Highlands
+CLT_269 = { 268 269 272 } #Lodainn
 
-ENG_271 = { 271 269 270 272 304 } #Lowlands
+CLT_271 = { 270 271 304 3379 3397 } #Srath Chluaidh
+
+CLT_267 = { 253 266 267 1724 3477 3478 3479 3480 } #脌rd-Th矛rean
 
 ENG_273 = { 273 274 275 276 286 } #Wales
 
@@ -186,7 +188,7 @@ FRA_399 = { 403 402 2570 } #Picardie
 
 FRA_406 = { 406 408 407 2622 } #Champagne
 
-FRA_404 = { 393 394 399 400 401 404 3314 } #Nord-Pas-De-Calais/Artois
+FRA_404 = { 393 394 399 400 401 404 405 } #Nord-Pas-De-Calais/Artois
 
 FRA_411 = { 411 413 414 3409 } #Lorraine
 
@@ -225,27 +227,27 @@ FRA_467 = { 467 469 470 471 3432 608 } #Provence
 
 SPA_474 = { 474 476 518 519 } #Galicia
 
-SPA_477 = { 477 479 480 475 478 } #Le贸n-Castilla
+SPA_477 = { 477 482 475 } #Le贸n
 
-SPA_487 = { 487 488 481 482 483 3433 } #Castilla la Nueva
+SPA_487 = { 494 478 479 480 481 483 } #Castilla
 
-SPA_489 = { 484 485 486 489 491 } #Toledo-Extremadura
+SPA_489 = { 485 487 488 489 491 3433 } #Toledo-Extremadura
 
 SPA_507 = { 490 503 505 506 507 508 } #Murcia
 
-SPA_492 = { 492 493 494 3472 } #Vasconia-Arag贸n
+SPA_492 = { 492 493 3472 } #Vasconia-Arag贸n
 
 SPA_498 = { 496 498 499 500 502 464 3401 } #Catalonia
 
 SPA_503 = { 495 497 501 504 } #Valencia
 
-SPA_512 = { 512 509 510 511 1686 } #Andalucia
+SPA_512 = { 484 512 509 511 526 527 } #Andalucia
 
-SPA_513 = { 513 514 515 516 } #Granada
+SPA_513 = { 510 513 514 515 516 1686 } #Granada
 
-POR_521 = { 521 522 520 3473 } #Estremadura
+POR_521 = { 522 520 3473 } #Estremadura
 
-POR_525 = { 524 525 526 527 } #Alentejo
+POR_525 = { 486 521 524 525 3306 3307 } #Alentejo
 
 POR_2134 = { 2134 2135 2136 } #Macaronesia
 
@@ -292,7 +294,7 @@ SWI_607 = { 3250 3271 3272 605 } #R間ion L閙anique
 
 PRU_682 = { 682 683 684 685 688 689 3336 3337 3418 } #Silesia
 
-PRU_554 = { 554 561 562 563 3365 } #Thuringia
+PRU_554 = { 554 561 562 563 } #Thuringia
 
 PRU_690 = { 690 691 692 694 3469 } #Westpreu脽en
 
@@ -439,17 +441,15 @@ TUR_893 = { 893 2414 3530 3279 899 } #Diyarbakir
 
 TUR_890 = { 890 891 1109 3536 3348 } #Van
 
-EGY_897 = { 897 905 914 3362 } #Aleppo
+EGY_897 = { 897 905 914 3362 3365 } #Aleppo
 
 TUR_3300 = { 3300 3405 924 3325 901 3428 } #Dayr al-Zur
 
-EGY_903 = { 902 903 906 913 912 3361 } #Syria
+EGY_903 = { 902 903 906 913 912 3361 3363 } #Syria
 
 EGY_1156 = { 907 910 911 931 1156 1158 1160 2321 3404 } #Anazzah
 
-EGY_921 = { 915 916 917 918 919 3474 3358 } #Palestine
-
-EGY_908 = { 908 909 922 } #Jordan
+EGY_921 = { 908 909 915 916 917 918 919 922 3474 3358 } #Palestine
 
 TUR_923 = { 923 928 3532 892 3294 3353 3537 3562 } #Mosul
 
@@ -533,7 +533,7 @@ RUS_349 = { 349 350 3617 } #Estonia
 
 RUS_354 = { 354 355 351 352 3424 } #Livonia
 
-RUS_358 = { 357 358 359 3603 } #Courland
+RUS_358 = { 353 357 358 359 } #Courland
 
 RUS_945 = { 707 719 } #Belostok
 
@@ -1104,7 +1104,7 @@ UCA_2191 = { 2191 2192 2193 2194 } #El Salvador
 
 CLM_1723 = { 2204 1723 2206 2208 } #Panama
 
-UCA_2197 = { 2197 2199 2238 3363 } #Nicaragua
+UCA_2197 = { 2197 2199 2238 3483 } #Nicaragua
 
 UCA_2201 = { 2201 2202 2203 2205 3564 3659 } #Costa Rica
 
@@ -1262,7 +1262,7 @@ USA_2543 = { 2543 2544 } #Samoa Islands
 FRA_801 = { 801 2551 2552 2553 } #Tahiti
 
 #Komneniad
-DEBUG_REGION = { 353 405 677 778 781 794 829 831 3303 3306 3307 3343 3379 3397 3400 3480 3483 3556 3569 3606 3614 3653 } #Unused provinces
+DEBUG_REGION = { 677 778 781 794 829 831 3303 3314 3343 3400 3556 3569 3603 3606 3614 3653 } #Unused provinces
 
 tooltip_1 = {} #Each Ayllonian boy...
 tooltip_2 = {}
@@ -1308,8 +1308,9 @@ req_landreform = {}
 req_nolandreform = {}
 req_positivism = {}
 req_nopositivism = {}
-req_money75k = {}
-req_nomoney75k = {}
+req_money50k = {}
+req_nomoney50k = {}
+req_money50k_newline = {}
 req_milscore = {}
 req_nomilscore = {}
 hel_gain_1 = { 3186 }
@@ -1350,6 +1351,14 @@ KDS_empire_activation_tt = {}
 KDS_canformiran_tt = {}
 has_paths_notf = {}
 EGY_wishful_thinking = {}
+req_unitsaleppo = {}
+req_nounitsaleppo = {}
+req_secret_police = {}
+req_nosecret_police = {}
+received_land_tt = {}
+req_nodeal_with_ADU = {}
+req_NOT_deal_with_ADU = {}
+ADU_2infamy_tt = {}
 
 any_sea_province = {
 

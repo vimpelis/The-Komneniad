@@ -338,8 +338,8 @@
 #Edinburgh (480000/120000 POPS)
 269 = {
     aristocrats = {
-        culture = anglo_saxon
-        religion = protestant
+        culture = scottish
+        religion = anglican
         size = 1100
     }
 
@@ -350,14 +350,14 @@
     }
 
     clergymen = {
-        culture = anglo_saxon
-        religion = protestant
+        culture = scottish
+        religion = anglican
         size = 1075
     }
 
     capitalists = {
-        culture = anglo_saxon
-        religion = protestant
+        culture = scottish
+        religion = anglican
         size = 550
     }
 
@@ -418,7 +418,7 @@
     farmers = {
         culture = scottish
         religion = anglican
-        size = 26000
+        size = 16000
     }
 
     artisans = {
@@ -429,7 +429,7 @@
 
     farmers = {
         culture = gypsy
-        religion = reformed
+        religion = anglican
         size = 400
     }
 
@@ -442,6 +442,272 @@
 #Stirling (364000/91000 POPS)
 270 = {
     aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 200
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 400
+    }
+
+    clerks = {
+        culture = scottish
+        religion = anglican
+        size = 2000
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 10000
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 4000
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 1200
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 30000
+    }
+	
+	aristocrats = {
+        culture = irish
+        religion = anglican
+        size = 100
+    }
+
+    clergymen = {
+        culture = irish
+        religion = anglican
+        size = 200
+    }
+	
+	clerks = {
+        culture = irish
+        religion = anglican
+        size = 750
+    }
+	
+	artisans = {
+        culture = irish
+        religion = anglican
+        size = 1000
+    }
+	
+	clergymen = {
+        culture = irish
+        religion = anglican
+        size = 100
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 13850
+    }
+	
+	craftsmen = {
+        culture = irish
+        religion = anglican
+        size = 5000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = anglican
+        size = 150
+    }
+}
+#Glasgow (620000/155000 POPS)
+271 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 500
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 900
+    }
+
+    clerks = {
+        culture = scottish
+        religion = anglican
+        size = 7850
+    }
+
+    craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 21000
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 10000
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 5500
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 17850
+    }
+	
+	craftsmen = {
+        culture = scottish
+        religion = anglican
+        size = 20000
+    }
+	
+	aristocrats = {
+        culture = irish
+        religion = anglican
+        size = 75
+    }
+
+    clergymen = {
+        culture = irish
+        religion = anglican
+        size = 150
+    }
+	
+	clerks = {
+        culture = irish
+        religion = anglican
+        size = 500
+    }
+	
+	artisans = {
+        culture = irish
+        religion = anglican
+        size = 1000
+    }
+	
+	farmers = {
+        culture = irish
+        religion = anglican
+        size = 2500
+    }
+	
+	craftsmen = {
+        culture = irish
+        religion = anglican
+        size = 15000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = anglican
+        size = 200
+    }
+}
+#Dumfries (168000/42000 POPS)
+272 = {
+    aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 100
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 200
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 22500
+    }
+	
+	soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 1100
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 4000
+    }
+}
+
+3379 = {
+	aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 250
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 350
+    }
+
+    artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 1000
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 20000
+    }
+	
+	soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 1100
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = catholic
+        size = 1000
+    }
+
+    farmers = {
+        culture = gypsy
+        religion = reformed
+        size = 200
+    }
+}
+
+3480 = {
+	aristocrats = {
         culture = scottish
         religion = anglican
         size = 150
@@ -499,160 +765,6 @@
         culture = gypsy
         religion = protestant
         size = 105
-    }
-}
-#Glasgow (620000/155000 POPS)
-271 = {
-    aristocrats = {
-        culture = scottish
-        religion = anglican
-        size = 700
-    }
-
-    aristocrats = {
-        culture = irish
-        religion = anglican
-        size = 100
-    }
-
-    clergymen = {
-        culture = scottish
-        religion = anglican
-        size = 1300
-    }
-
-    clergymen = {
-        culture = irish
-        religion = anglican
-        size = 200
-    }
-
-    clerks = {
-        culture = scottish
-        religion = anglican
-        size = 9850
-    }
-
-    clerks = {
-        culture = irish
-        religion = anglican
-        size = 1000
-    }
-
-    craftsmen = {
-        culture = scottish
-        religion = anglican
-        size = 31000
-    }
-
-    artisans = {
-        culture = irish
-        religion = anglican
-        size = 2000
-    }
-
-    artisans = {
-        culture = scottish
-        religion = anglican
-        size = 14000
-    }
-
-    farmers = {
-        culture = irish
-        religion = anglican
-        size = 5000
-    }
-
-    soldiers = {
-        culture = scottish
-        religion = anglican
-        size = 5500
-    }
-
-    farmers = {
-        culture = scottish
-        religion = anglican
-        size = 47850
-    }
-
-    clergymen = {
-        culture = irish
-        religion = anglican
-        size = 100
-    }
-
-    farmers = {
-        culture = irish
-        religion = anglican
-        size = 4850
-    }
-	
-	craftsmen = {
-        culture = scottish
-        religion = anglican
-        size = 20000
-    }
-
-    craftsmen = {
-        culture = irish
-        religion = anglican
-        size = 20000
-    }
-
-    farmers = {
-        culture = gypsy
-        religion = reformed
-        size = 300
-    }
-
-    farmers = {
-        culture = gypsy
-        religion = protestant
-        size = 50
-    }
-}
-#Dumfries (168000/42000 POPS)
-272 = {
-    aristocrats = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 100
-    }
-
-    clergymen = {
-        culture = scottish
-        religion = anglican
-        size = 100
-    }
-
-    artisans = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 2000
-    }
-
-    farmers = {
-        culture = scottish
-        religion = anglican
-        size = 32500
-    }
-	
-	soldiers = {
-        culture = scottish
-        religion = anglican
-        size = 1100
-    }
-
-    farmers = {
-        culture = anglo_saxon
-        religion = catholic
-        size = 5000
-    }
-
-    farmers = {
-        culture = gypsy
-        religion = reformed
-        size = 200
     }
 }
 # Wales Region : 970000
@@ -1436,25 +1548,19 @@
     aristocrats = {
         culture = scottish
         religion = anglican
-        size = 250
+        size = 150
     }
 
     clergymen = {
         culture = scottish
         religion = anglican
-        size = 250
+        size = 200
     }
 
     artisans = {
         culture = scottish
         religion = anglican
-        size = 3500
-    }
-
-    artisans = {
-        culture = anglo_saxon
-        religion = protestant
-        size = 500
+        size = 750
     }
 
     soldiers = {
@@ -1466,25 +1572,81 @@
     farmers = {
         culture = scottish
         religion = anglican
-        size = 42720
+        size = 10000
+    }
+	
+	artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 500
     }
 
     farmers = {
         culture = anglo_saxon
         religion = protestant
-        size = 4100
+        size = 12800
     }
 
     farmers = {
         culture = irish
         religion = anglican
-        size = 1250
+        size = 300
     }
 
     farmers = {
         culture = gypsy
-        religion = protestant
+        religion = anglican
         size = 380
+    }
+}
+
+3397 = {
+	aristocrats = {
+        culture = scottish
+        religion = anglican
+        size = 250
+    }
+
+    clergymen = {
+        culture = scottish
+        religion = anglican
+        size = 300
+    }
+
+    artisans = {
+        culture = scottish
+        religion = anglican
+        size = 2000
+    }
+
+    soldiers = {
+        culture = scottish
+        religion = anglican
+        size = 1100
+    }
+
+    farmers = {
+        culture = scottish
+        religion = anglican
+        size = 22720
+    }
+	
+	artisans = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 500
+    }
+
+    farmers = {
+        culture = anglo_saxon
+        religion = protestant
+        size = 5600
+    }
+
+    farmers = {
+        culture = irish
+        religion = anglican
+        size = 1500
     }
 }
 #Yorkshire-Northumbria Region : 2190000
@@ -1535,13 +1697,13 @@
     labourers = {
         culture = scottish
         religion = anglican
-        size = 62615
+        size = 52615
     }
 
     labourers = {
         culture = anglo_saxon
         religion = protestant
-        size = 32300
+        size = 42300
     }
 
     farmers = {

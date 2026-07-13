@@ -1,5 +1,5 @@
-owner = OMA
-controller = OMA
+owner = MUS
+controller = MUS
 add_core = HND
 add_core = BER
 add_core = MAH

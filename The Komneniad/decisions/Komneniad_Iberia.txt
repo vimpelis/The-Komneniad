@@ -39,6 +39,7 @@ political_decisions = {
 			badboy = 24.5
 			SPA_492 = { add_core = THIS }
 			SPA_474 = { add_core = THIS }
+			SPA_487 = { add_core = THIS }
 			SPA_477 = { add_core = THIS }
 			set_country_flag = ADU_restore_northern_rule
 		}

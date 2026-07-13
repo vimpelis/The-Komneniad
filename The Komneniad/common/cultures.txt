@@ -781,7 +781,7 @@ pan_romanian = {
     union = WAL
 }
 
-polish_culture_group = {
+west_slavic = {
     leader = european
     unit = AustriaHungaryGC
 
@@ -800,28 +800,7 @@ polish_culture_group = {
         Taczaneowski Traugutt Wawrzecki Wieniawa-Dlugoszowski Wybicki Wysocki Zajaczek Zaluski Zamoyski Zeligowski }
         radicalism = 10
     }
-    western_slavic = {
-        color = { 147 63 109 }
-        first_names = { Adam Aleksander Antoni Boleslaw Bonawentura Bronislaw Dezydery Edmund Edward Emil
-        Eustachy Felicjan Franciszek Gustaw Henryk Ignacy Jakub Jan Jedrzej Józef
-        Juliusz Karol Kazimierz Klemens Konstanty Lech Leon Leopold Lucjan Ludwik
-        Maciej Marceli Marian Mariusz Melchior Michal Mieczyslaw Roman Romuald Samuel
-        Stanislaw Stefan Tadeusz Tomasz Waclaw Wilhelm Witold Wladyslaw Wojciech Zygmunt }
-
-        last_names = { Bem Bór-Komorowski Brzóska Chalasinski Chlaposwski Chlopicki Chrzanowski Dabrowski Dembinski Fabryvy
-        Hauke-Boask Iszikowski Jasinski Klicki Konopczynski Krukowiecki Kruszewski Langiewicz Madalinski Mierolawski
-        Mikolajczyk Mokronowski Niepokólczycki Ostrowski Pac Pilsudski Poniatowski Potocki Preadzynski Radziwill
-        Rokossowski Rola-Zymierski Rómmel Rózicky Rybinski Rydz-Smigly Sanguszko Skrzynecki Soltyk Sowinski
-        Taczaneowski Traugutt Wawrzecki Wieniawa-Dlugoszowski Wybicki Wysocki Zajaczek Zaluski Zamoyski Zeligowski }
-    }
-    union = POL
-}
-
-czecho_slovak_culture_group = {
-    leader = european
-    unit = EuropeanGC
-
-    czech = {
+	czech = {
         color = { 120 120 255 }
         first_names = { Abraham Alexander Alfred Alois Antonín August Bedrich Benedikt Borivoj
         Cenek Dávid Drahoslav Edvard Emanuel Emil Evžen František "František Josef" "František Xaver"
@@ -836,9 +815,8 @@ czecho_slovak_culture_group = {
         Tomášek Tyl Vitásek "von Mittrowitz-Nettolitzky" Voríšek Wankel Weber Zíbrt Zívr Zoubek }
         radicalism = 5
     }
-
     moravian = {
-        color = { 120 255 255 }
+        color = { 190 120 200 }
         first_names = { Albín Alexander Andrej Augustín Basil Cyprián Dalibor Dezider Dominik
         Eugen Fedor Ferdinand František Frico Gabriel Gustáv Imrich Ján
         Janko Jozef Juraj Karol Ladislav Levoslav Marián Marko Martin Matej
@@ -851,6 +829,21 @@ czecho_slovak_culture_group = {
         Masaryk Móry Moyses Rázus Rohácek Rudnay Selepcéni Sidor Škultéty-Gábriš Smik
         Sokol Štefánik Suchon Trcka Tuka Turanec Viest Zoch }
     }
+    wendish = {
+        color = { 147 63 109 }
+        first_names = { Adam Aleksander Antoni Boleslaw Bonawentura Bronislaw Dezydery Edmund Edward Emil
+        Eustachy Felicjan Franciszek Gustaw Henryk Ignacy Jakub Jan Jedrzej Józef
+        Juliusz Karol Kazimierz Klemens Konstanty Lech Leon Leopold Lucjan Ludwik
+        Maciej Marceli Marian Mariusz Melchior Michal Mieczyslaw Roman Romuald Samuel
+        Stanislaw Stefan Tadeusz Tomasz Waclaw Wilhelm Witold Wladyslaw Wojciech Zygmunt }
+
+        last_names = { Bem Bór-Komorowski Brzóska Chalasinski Chlaposwski Chlopicki Chrzanowski Dabrowski Dembinski Fabryvy
+        Hauke-Boask Iszikowski Jasinski Klicki Konopczynski Krukowiecki Kruszewski Langiewicz Madalinski Mierolawski
+        Mikolajczyk Mokronowski Niepokólczycki Ostrowski Pac Pilsudski Poniatowski Potocki Preadzynski Radziwill
+        Rokossowski Rola-Zymierski Rómmel Rózicky Rybinski Rydz-Smigly Sanguszko Skrzynecki Soltyk Sowinski
+        Taczaneowski Traugutt Wawrzecki Wieniawa-Dlugoszowski Wybicki Wysocki Zajaczek Zaluski Zamoyski Zeligowski }
+    }
+    union = ZPD
 }
 
 east_slavic = {

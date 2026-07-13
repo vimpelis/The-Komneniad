@@ -183,8 +183,8 @@ political_decisions = {
 					NOT = { 2194 = { trade_goods = coffee } }
 				}
 				AND = {
-					owns = 3363
-					NOT = { 3363 = { trade_goods = coffee } }
+					owns = 3483
+					NOT = { 3483 = { trade_goods = coffee } }
 				}
 				AND = {
 					owns = 2188
@@ -234,7 +234,7 @@ political_decisions = {
 			}
 			any_owned = {
 				limit = {
-					province_id = 3363
+					province_id = 3483
 					NOT = { trade_goods = coffee }
 				}
 				trade_goods = coffee

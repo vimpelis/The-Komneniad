@@ -34,7 +34,7 @@
     soldiers = {
         culture = spanish
         religion = catholic
-        size = 5077
+        size = 5000
     }
 
     farmers = {
@@ -405,9 +405,6 @@
         size = 1421
     }
 }
-#Bragança
-3400 = {
-}
 #Covilha (568000/142000 POPS)
 520 = {
     aristocrats = {
@@ -437,7 +434,7 @@
     farmers = {
         culture = galician
         religion = catholic
-        size = 53116
+        size = 43116
     }
 
     aristocrats = {
@@ -461,7 +458,7 @@
     farmers = {
         culture = andalusian
         religion = sunni
-        size = 26624
+        size = 16624
     }
 
     aristocrats = {
@@ -880,7 +877,7 @@
     farmers = {
         culture = galician
         religion = catholic
-        size = 63483
+        size = 23483
     }
 
     aristocrats = {
@@ -940,7 +937,7 @@
     farmers = {
         culture = andalusian
         religion = sunni
-        size = 22672
+        size = 2672
     }
 
     aristocrats = {
@@ -1003,6 +1000,82 @@
         size = 11594
     }
 }
+3306 = {
+	aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 125
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 150
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 750
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 27800
+    }
+	
+	soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 1200
+    }
+	
+	farmers = {
+        culture = galician
+        religion = catholic
+        size = 2500
+    }
+}
+
+3307 = {
+	aristocrats = {
+        culture = andalusian
+        religion = sunni
+        size = 100
+    }
+
+    clergymen = {
+        culture = andalusian
+        religion = sunni
+        size = 125
+    }
+
+    artisans = {
+        culture = andalusian
+        religion = sunni
+        size = 500
+    }
+
+    farmers = {
+        culture = andalusian
+        religion = sunni
+        size = 23400
+    }
+	
+	soldiers = {
+        culture = andalusian
+        religion = sunni
+        size = 400
+    }
+	
+	farmers = {
+        culture = galician
+        religion = catholic
+        size = 6100
+    }
+}
+
 3473 = {
     aristocrats = {
         culture = galician

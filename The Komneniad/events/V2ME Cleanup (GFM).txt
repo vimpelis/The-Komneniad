@@ -393,6 +393,13 @@ country_event = {
 			}
 			remove_province_modifier = impassable
 		}
+		any_country = {
+			limit = {
+				has_country_flag = DHO_supporter
+				DHO = { exists = yes is_vassal = no war = no }
+			}
+			country_event = 168213
+		}
 		any_land_province = {
 			limit = {
 				owner = {
@@ -1060,7 +1067,7 @@ country_event = {
                 remove_core = ZUL
                 remove_core = SHO
                 remove_core = ZAN
-                remove_core = OMA
+                remove_core = MUS
             }
 			any_owned = {
                 limit = {

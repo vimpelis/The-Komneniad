@@ -335,7 +335,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 10
-			add_accepted_culture = western_slavic
+			add_accepted_culture = wendish
 			LUS = {
 				all_core = {
 					remove_core = GER

@@ -1,6 +1,6 @@
-owner = OMA
-controller = OMA
-add_core = OMA
+owner = MUS
+controller = MUS
+add_core = MUS
 trade_goods = opium
 life_rating = 20
 terrain = coastal_desert

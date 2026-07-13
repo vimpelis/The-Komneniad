@@ -1,9 +1,8 @@
-owner = LEO
-controller = LEO
-add_core = LEO
+owner = ADU
+controller = ADU
+add_core = ADU
 trade_goods = fish
 life_rating = 35
-terrain = lisbon
+terrain = farmlands
 naval_base = 1
 fort = 1
-add_core = ADU

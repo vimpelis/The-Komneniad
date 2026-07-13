@@ -1651,12 +1651,12 @@ country_event = {
 			owner = { SOM_darod_tt = {} }
 		}
 		random_owned = {
-			limit = { owner = { money = 75000 NOT = { has_country_flag = SOM_darod_gone } } }
-			owner = { req_money75k = {} }
+			limit = { owner = { money = 50000 NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = { req_money50k = {} }
 		}
 		random_owned = {
-			limit = { owner = { NOT = { money = 75000 } NOT = { has_country_flag = SOM_darod_gone } } }
-			owner = { req_nomoney75k = {} }
+			limit = { owner = { NOT = { money = 50000 } NOT = { has_country_flag = SOM_darod_gone } } }
+			owner = { req_nomoney50k = {} }
 		}
 		random_owned = {
 			limit = { owner = { military_score = 50 NOT = { has_country_flag = SOM_darod_gone } } }

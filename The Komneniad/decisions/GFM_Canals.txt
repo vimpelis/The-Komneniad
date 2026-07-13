@@ -265,7 +265,7 @@ political_decisions = {
         potential = {
             year = 1860
             OR = {
-                owns = 3314
+                owns = 405
                 owns = 301
             }
             NOT = { is_canal_enabled = 13 }
@@ -289,7 +289,7 @@ political_decisions = {
 			OR = {
 				NOT = { has_global_flag = you_are_playing_mp }
 				AND = {
-					owns = 3314
+					owns = 405
 					owns = 301
 				}
 			}

@@ -142,42 +142,44 @@ party = {
 }
 
 unit_names = {
-    dreadnought = {
-            Independencia Libertad Demуcrata "Porfirio" Dнaz Tampico
-            "Vera Cruz" "Nicolбs Bravo" Blanquet Aguascalientes Florida "Nuevo Leуn" "San Luis Potosн"
-			Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
-    }
-    ironclad = {
-            Guadalupe "Antonio Lуpez de Santa Anna" Victoria
-            Demуcrata Florida Esperanza Fama Fйnix Fidela Flecha Flora Gloria Gusana
-			Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
-    }
-    manowar = {
-            Morales Yucatбn "Vicente Guerrero" Florida "Nuevo Leуn" "Guadalupe Victoria"
-            "Miguel Hidalgo" "Josй Marнa Morelos" "Agustнn de Itъrbide"
-            "Mariano Matamoros"
-			Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
-    }
-    cruiser = {
-            Zaragoza Altamira "San Fernando" "Rнo Bravo" "Los Ramones" "Loma Alta"
-            "El Lobo" Candela Villadama "Santo Domingo" Porter Puigcerdб Rayo Relбmpago Somiedo Tornado Valdйs
-			Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
-    }
-    frigate = {
-            Esperanza Fama Fйnix Fidela Flecha Flora Gloria Gusana
-            "El Tordo" Repulsiуn Valor Porter Puigcerdб Rayo Relбmpago Somiedo Tornado Valdйs
-			Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
-    }
-    monitor = {
-            Navojoa "La Paz" Madera "Salina Cruz"
-            Navolato "Santa Rosalia" Constituciуn Democrбta "Nicolбs Bravo"
-    }
-    clipper_transport = {
-    }
-    steam_transport = {
-    }
-    commerce_raider = {
-		Porter Puigcerdб Rayo Relбmpago Somiedo Tornado Valdйs
+	dreadnought = {
+		Independencia Libertad Demócrata "Porfirio" Díaz
+		"Vera Cruz" "Nicolás Bravo" Blanquet "Nuevo León"
 		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
-    }
+	}
+	ironclad = {
+		Guadalupe Glorioso Victoria Demócrata
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
+	manowar = {
+		Morales Yucatán "Vicente Guerrero" "Nuevo León" "Guadalupe Victoria"
+		"Miguel Hidalgo" "José María Morelos" "Agustín de Itúrbide"
+		"Mariano Matamoros"
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
+	cruiser = {
+		Zaragoza Altamira "San Fernando" "Río Bravo" "Los Ramones" "Loma Alta"
+		"El Lobo" Candela Villadama "Santo Domingo"
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
+	frigate = {
+		California Aldabaran Veracrúz
+		"El Tordo" Repulsión Valor
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
+	monitor = {
+		Navojoa "La Paz" "Salina Cruz"
+		Navolato "Santa Rosalia" Constitución Democráta "Nicolás Bravo"
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
+	clipper_transport = {
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
+	steam_transport = {
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
+	commerce_raider = {
+		Corralero "Rio Grande"
+		Providencia Prueba "San Jorge" "San Josй" "San Juan" "San Miguel" "Santa Ana" "Santa Bбrbara" "Santa Catalina" "Santa Leocadia"
+	}
 }

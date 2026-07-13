@@ -1,7 +1,7 @@
-owner = OMA
-controller = OMA
+owner = MUS
+controller = MUS
 add_core = ZAN
-add_core = OMA
+add_core = MUS
 trade_goods = slave_trading
 life_rating = 40
 terrain = small_island

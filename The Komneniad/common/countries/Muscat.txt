@@ -108,7 +108,7 @@ party = {
 
 unit_names = {
     dreadnought = {
-        "Al Said" Nabhaniyyun "Ahmad ibn Said" "Said ibn Sultan" "Sayf bin Sultan"
+        "al-Harthi" Nabhaniyyun "Faisal al-Harthi" "Akbar al-Harthi" "Sayf al-Harthi"
         }
     ironclad = {
         "Ala al-Din" "Husam al-Din" "Izz al-Din" "Jalal al-Din" "Khayr al-Din" "Majid al-Din" "Nasir al-Din" "Nur al-Din"

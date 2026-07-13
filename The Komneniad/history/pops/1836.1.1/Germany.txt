@@ -1950,7 +1950,7 @@
     }
 
     clergymen = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 300
     }
@@ -1980,13 +1980,13 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 37244
     }
 
     clergymen = {
-        culture = western_slavic
+        culture = wendish
         religion = catholic
         size = 100
     }
@@ -1998,7 +1998,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = catholic
         size = 7100
     }
@@ -2121,106 +2121,52 @@
 ######Jews
 ########
 554 = {
-    aristocrats = {
+	aristocrats = {
         culture = north_german
         religion = protestant
-        size = 210
+        size = 313
     }
 
     bureaucrats = {
         culture = north_german
         religion = protestant
-        size = 90
+        size = 212
     }
 
     officers = {
         culture = north_german
         religion = protestant
-        size = 50
+        size = 195
     }
 
     clergymen = {
         culture = north_german
         religion = protestant
-        size = 230
+        size = 568
     }
 
     artisans = {
         culture = north_german
         religion = protestant
-        size = 700
-    }
-
-    farmers = {
-        culture = north_german
-        religion = protestant
-        size = 9170
-    }
-
-    aristocrats = {
-        culture = north_german
-        religion = protestant
-        size = 1137
-    }
-
-    clergymen = {
-        culture = north_german
-        religion = protestant
-        size = 909
-    }
-
-    artisans = {
-        culture = north_german
-        religion = protestant
-        size = 7618
+        size = 1577
     }
 
     soldiers = {
         culture = north_german
         religion = protestant
-        size = 2774
+        size = 100
     }
 
     farmers = {
         culture = north_german
         religion = protestant
-        size = 90397
-    }
-
-    clergymen = {
-        culture = north_german
-        religion = catholic
-        size = 227
-    }
-
-    artisans = {
-        culture = north_german
-        religion = catholic
-        size = 1705
+        size = 49623
     }
 
     farmers = {
-        culture = north_german
-        religion = catholic
-        size = 20581
-    }
-
-    clergymen = {
-        culture = ashkenazi
-        religion = jewish
-        size = 227
-    }
-
-    artisans = {
-        culture = ashkenazi
-        religion = jewish
-        size = 455
-    }
-
-    farmers = {
-        culture = ashkenazi
-        religion = jewish
-        size = 682
+        culture = gypsy
+        religion = protestant
+        size = 609
     }
 }
 #Halle (445000/111250 POPS)
@@ -2527,7 +2473,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = catholic
         size = 3900
     }
@@ -2687,7 +2633,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = catholic
         size = 27270
     }
@@ -2958,11 +2904,8 @@
         religion = jewish
         size = 191
     }
-}
-######Jews
-########
-3365 = {
-    aristocrats = {
+	
+	aristocrats = {
         culture = north_german
         religion = protestant
         size = 109
@@ -3001,7 +2944,7 @@
     farmers = {
         culture = north_german
         religion = protestant
-        size = 32144
+        size = 12144
     }
 
     aristocrats = {
@@ -3040,49 +2983,103 @@
     aristocrats = {
         culture = north_german
         religion = protestant
-        size = 313
+        size = 210
     }
 
     bureaucrats = {
         culture = north_german
         religion = protestant
-        size = 212
+        size = 90
     }
 
     officers = {
         culture = north_german
         religion = protestant
-        size = 195
+        size = 50
     }
 
     clergymen = {
         culture = north_german
         religion = protestant
-        size = 568
+        size = 230
     }
 
     artisans = {
         culture = north_german
         religion = protestant
-        size = 1577
+        size = 700
+    }
+
+    farmers = {
+        culture = north_german
+        religion = protestant
+        size = 9170
+    }
+
+    aristocrats = {
+        culture = north_german
+        religion = protestant
+        size = 1137
+    }
+
+    clergymen = {
+        culture = north_german
+        religion = protestant
+        size = 909
+    }
+
+    artisans = {
+        culture = north_german
+        religion = protestant
+        size = 7618
     }
 
     soldiers = {
         culture = north_german
         religion = protestant
-        size = 100
+        size = 2774
     }
 
     farmers = {
         culture = north_german
         religion = protestant
-        size = 29623
+        size = 90397
+    }
+
+    clergymen = {
+        culture = north_german
+        religion = catholic
+        size = 227
+    }
+
+    artisans = {
+        culture = north_german
+        religion = catholic
+        size = 1705
     }
 
     farmers = {
-        culture = gypsy
-        religion = protestant
-        size = 609
+        culture = north_german
+        religion = catholic
+        size = 20581
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 227
+    }
+
+    artisans = {
+        culture = ashkenazi
+        religion = jewish
+        size = 455
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 682
     }
 }
 #under the rule of Saxe-Meiningen 1836
@@ -6806,13 +6803,13 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 5000
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = catholic
         size = 17750
     }

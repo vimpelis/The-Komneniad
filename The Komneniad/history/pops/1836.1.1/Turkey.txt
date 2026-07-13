@@ -5393,7 +5393,7 @@
     farmers = {
         culture = mashriqi
         religion = shiite
-        size = 3700
+        size = 3200
     }
 
     aristocrats = {
@@ -5435,7 +5435,7 @@
     farmers = {
         culture = anatolian
         religion = orthodox
-        size = 4150
+        size = 3500
     }
 	
 	aristocrats = {

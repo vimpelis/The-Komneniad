@@ -899,7 +899,7 @@ country_event = {
             limit = {
                 OR = {
                     owns = 301
-                    owns = 3314
+                    owns = 405
                 }
                 NOT = {
                     has_country_flag = chunnel_builder

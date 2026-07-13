@@ -1,7 +1,7 @@
 #Honduras Region (352000)
 #Ruled by Central America 1836
 #Tegucigapa (180000/45000 POPS)
-3363 = {
+3483 = {
     aristocrats = {
         culture = mozarabic
         religion = catholic

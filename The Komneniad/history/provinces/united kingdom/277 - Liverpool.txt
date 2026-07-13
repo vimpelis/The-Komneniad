@@ -1,6 +1,7 @@
 owner = CLT
 controller = CLT
 add_core = CLT
+add_core = ENG
 trade_goods = fish
 life_rating = 40
 terrain = urban

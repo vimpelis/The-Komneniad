@@ -145,13 +145,13 @@
     }
 
     clergymen = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 100
     }
 
     artisans = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 100
     }
@@ -163,7 +163,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 1825
     }
@@ -225,13 +225,13 @@
     }
 
     clergymen = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 120
     }
 
     artisans = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 125
     }
@@ -243,7 +243,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 2275
     }
@@ -291,7 +291,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 5000
     }
@@ -3123,7 +3123,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 540
     }
@@ -3215,13 +3215,13 @@
     }
 
     clergymen = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 100
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = protestant
         size = 3200
     }
@@ -6915,7 +6915,7 @@
     }
 
     farmers = {
-        culture = western_slavic
+        culture = wendish
         religion = catholic
         size = 2000
     }

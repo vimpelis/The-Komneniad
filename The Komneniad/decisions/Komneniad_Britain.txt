@@ -249,8 +249,9 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 15
-			ENG_271 = { add_core = DAN }
-			ENG_266 = { add_core = DAN }
+			CLT_269 = { add_core = DAN }
+			CLT_271 = { add_core = DAN }
+			CLT_267 = { add_core = DAN }
 			set_country_flag = DAN_unify_britain
 		}
 		ai_will_do = {

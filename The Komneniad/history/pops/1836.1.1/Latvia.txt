@@ -838,7 +838,7 @@
         size = 4069
     }
 }
-3603 = {
+353 = {
     clergymen = {
         culture = latvian
         religion = protestant

@@ -814,7 +814,8 @@ country_event = {
 	
 	option = {
         name = "Release Jordan"
-		EGY_908 = { secede_province = THIS secede_province = JOR }
+		908 = { secede_province = THIS secede_province = JOR }
+		909 = { secede_province = THIS secede_province = JOR }
 		910 = { secede_province = THIS secede_province = JOR }
 		country_event = 169012
     }
@@ -1047,6 +1048,11 @@ country_event = {
     }
 	
 	option = {
+        name = "The Yazidi Empire seems interesting."
+		country_event = 169046
+    }
+	
+	option = {
         name = "Back to Information Menu"
 		country_event = 169003
     }
@@ -1055,7 +1061,7 @@ country_event = {
 
 country_event = {
     id = 169040
-    title = "Iran lore: Page 1"
+    title = "Iran lore: Page 1/6"
     desc = "169040DESC"
     picture = "india_map"
 
@@ -1065,11 +1071,15 @@ country_event = {
         name = "Page 2"
 		country_event = 169041
     }
+	option = {
+        name = "Back to the Lore Menu"
+		country_event = 169039
+    }
 }
 
 country_event = {
     id = 169041
-    title = "Iran lore: Page 2"
+    title = "Iran lore: Page 2/6"
     desc = "169041DESC"
     picture = "india_map"
 
@@ -1088,7 +1098,7 @@ country_event = {
 
 country_event = {
     id = 169042
-    title = "Iran lore: Page 3"
+    title = "Iran lore: Page 3/6"
     desc = "169042DESC"
     picture = "india_map"
 
@@ -1107,7 +1117,7 @@ country_event = {
 
 country_event = {
     id = 169043
-    title = "Iran lore: Page 4"
+    title = "Iran lore: Page 4/6"
     desc = "169043DESC"
     picture = "india_map"
 
@@ -1126,7 +1136,7 @@ country_event = {
 
 country_event = {
     id = 169044
-    title = "Iran lore: Page 5"
+    title = "Iran lore: Page 5/6"
     desc = "169044DESC"
     picture = "india_map"
 
@@ -1145,7 +1155,7 @@ country_event = {
 
 country_event = {
     id = 169045
-    title = "Iran lore: Page 6"
+    title = "Iran lore: Page 6/6"
     desc = "169045DESC"
     picture = "india_map"
 
@@ -1154,6 +1164,43 @@ country_event = {
 	option = {
         name = "Back to Page 5"
 		country_event = 169044
+    }
+	
+	option = {
+        name = "That was a lot of text. Take me back to the Lore Menu."
+		country_event = 169039
+    }
+}
+
+country_event = {
+    id = 169046
+    title = "Kurdistan lore: Page 1/2"
+    desc = "169046DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Page 2"
+		country_event = 169047
+    }
+	option = {
+        name = "Back to the Lore Menu"
+		country_event = 169039
+    }
+}
+
+country_event = {
+    id = 169047
+    title = "Kurdistan lore: Page 2/2"
+    desc = "169047DESC"
+    picture = "india_map"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "Back to Page 1"
+		country_event = 169046
     }
 	
 	option = {

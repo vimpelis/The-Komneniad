@@ -248,7 +248,7 @@ army = {
 
 navy = {
     name = "1st Fleet"
-    location = 271
+    location = 270
     ship = {
 		name = "Man'o'war"
         type = manowar

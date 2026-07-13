@@ -1,4 +1,4 @@
-OMA = { value = -100 }
+MUS = { value = -100 }
 EGY = { value = -150 }
 TUR = { value = -100 }
 HAD = { value = -100 }
