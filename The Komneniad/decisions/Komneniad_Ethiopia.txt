@@ -296,7 +296,12 @@ political_decisions = {
 				admin_reform = yes_admin_reform
 				year = 1850
 			}
-			all_core = { owned_by = THIS }
+			all_core = {
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
+			}
 			war = no
 		}
 		effect = {

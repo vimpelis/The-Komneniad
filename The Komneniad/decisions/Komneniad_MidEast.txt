@@ -3,6 +3,7 @@ political_decisions = {
 		picture = map_arabia_color
 		potential = {
 			tag = EGY
+			is_vassal = no
 			NOT = { has_country_flag = EGY_take_mecca }
 		}
 		allow = {
@@ -33,6 +34,7 @@ political_decisions = {
 		picture = map_syria
 		potential = {
 			tag = EGY
+			is_vassal = no
 			any_owned_province = { is_core = LBN }
 			NOT = { has_global_flag = aleppo_massacre }
 		}
@@ -51,9 +53,10 @@ political_decisions = {
 	}
 	
 	EGY_edict_of_damascus = {
-		picture = gtfo
+		picture = guano_act
 		potential = {
 			tag = EGY
+			is_vassal = no
 			has_country_flag = EGY_UPS_formed
 			owns = 902
 			NOT = { has_country_flag = EGY_edict_of_damascus }
@@ -95,6 +98,7 @@ political_decisions = {
 		picture = map_syria
 		potential = {
 			tag = EGY
+			is_vassal = no
 			UQA = { vassal_of = THIS }
 			NOT = { has_country_flag = EGY_annex_uqaydat }
 		}
@@ -385,7 +389,7 @@ political_decisions = {
 	}
 	
 	EGY_integrate_hedjaz = {
-		picture = map_syria
+		picture = map_arabia_color
 		potential = {
 			tag = EGY
 			HDJ = { vassal_of = THIS }
@@ -436,7 +440,7 @@ political_decisions = {
 	}
 	
 	EGY_eat_nubia = {
-		picture = map_syria
+		picture = sudan_map
 		potential = {
 			tag = LEV
 			NOT = { has_country_flag = EGY_eat_nubia }
@@ -444,6 +448,7 @@ political_decisions = {
 		allow = {
 			war = no
 			nationalism_n_imperialism = 1
+			is_vassal = no
 		}
 		effect = {
 			badboy = 10
@@ -469,6 +474,7 @@ political_decisions = {
 				primary_culture = mashriqi
 			}
 			NOT = { exists = ARU }
+			NOT = { tag = LEV }
 		}
 		allow = {
 			war = no
@@ -542,7 +548,7 @@ political_decisions = {
 	}
 	
 	ARU_annex_maghreb = {
-		picture = form_arab_union
+		picture = form_maghreb
 		potential = {
 			tag = ARU
 			NOT = { has_country_flag = ARU_annex_maghreb }
@@ -634,6 +640,34 @@ political_decisions = {
 			capital = 1709
 			TRI_1735 = { add_core = TUN }
 			TUN_1726 = { remove_core = TRI }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	EGY_reinstate_greek_school = {
+		picture = coptic_clergy
+		potential = {
+			tag = EGY
+			year = 1840
+			NOT = { has_country_modifier = EGY_greekschool }
+			NOT = { civilized = yes }
+		}
+		allow = {
+			money = 25000
+			860 = {
+				owner = {
+					relation = {
+						who = THIS value = 50
+					}
+				}
+			}
+		}
+		effect = {
+			treasury = -25000
+			research_points = 1500
+			add_country_modifier = { name = EGY_greekschool duration = -1 }
 		}
 		ai_will_do = {
 			factor = 1

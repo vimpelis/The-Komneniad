@@ -1359,6 +1359,7 @@ received_land_tt = {}
 req_nodeal_with_ADU = {}
 req_NOT_deal_with_ADU = {}
 ADU_2infamy_tt = {}
+EGY_can_revolt_tt = {}
 
 any_sea_province = {
 

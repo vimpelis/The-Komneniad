@@ -5678,19 +5678,25 @@ wartime_recovery = {
 	tax_efficiency = -0.1
     global_pop_militancy_modifier = 0.05
 	war_exhaustion = 0.25
-    icon = 15
+    icon = 6
 }
 
 RUM_new_tribes = {
 	global_population_growth = 0.0005
     pop_consciousness_modifier = 0.01
-    icon = 19
+    icon = 1
 }
 
 OMA_sold_out_country = {
-	research_points_modifier = -0.1
+	research_points_modifier = -0.15
 	education_efficiency_modifier = -0.2
 	tax_efficiency = -0.1
 	global_pop_militancy_modifier = 0.05
     icon = 4
+}
+
+EGY_greekschool = {
+	research_points_modifier = 0.05
+	diplomatic_points_modifier = 0.05
+    icon = 3
 }

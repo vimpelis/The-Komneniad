@@ -386,7 +386,7 @@ country_event = {
     id = 178012
     title = "Hedjaz is vulnerable"
     desc = "178012DESC"
-    picture = "aleppo"
+    picture = "EGY_map"
 
     trigger = {
 		tag = EGY
@@ -415,7 +415,7 @@ country_event = {
     id = 178013
     title = "Egypt demands our sovereignty"
     desc = "178013DESC"
-    picture = "aleppo"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 
@@ -448,7 +448,7 @@ country_event = {
     id = 178014
     title = "The Sultan of Hedjaz accepts"
     desc = "178014DESC"
-    picture = "aleppo"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 
@@ -462,7 +462,7 @@ country_event = {
     id = 178015
     title = "The Sultan of Hedjaz refuses!"
     desc = "178015DESC"
-    picture = "aleppo"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 
@@ -496,7 +496,7 @@ country_event = {
     id = 178016
     title = "Egypt backs down"
     desc = "178016DESC"
-    picture = "aleppo"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 
@@ -1163,7 +1163,7 @@ country_event = {
     id = 178034
     title = "Egypt requests negotiations"
     desc = "178034DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 	
@@ -1183,7 +1183,7 @@ country_event = {
     id = 178035
     title = "Syria offers a deal"
     desc = "178035DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 	
@@ -1206,7 +1206,7 @@ country_event = {
     id = 178036
     title = "Syria refuses to negotiate"
     desc = "178036DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 	
@@ -1237,7 +1237,7 @@ country_event = {
     id = 178037
     title = "Egypt accepts"
     desc = "178037DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 	
@@ -1250,7 +1250,7 @@ country_event = {
     id = 178038
     title = "Egypt refuses"
     desc = "178038DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 	
@@ -1265,13 +1265,14 @@ country_event = {
     id = 178040
     title = "End of the Egyptian Monarchy"
     desc = "178040DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 
     is_triggered_only = yes
 	
 	trigger = {
         tag = EGY
 		has_country_flag = EGY_ready_for_democracy
+		is_vassal = no
     }
 	
 	major = yes
@@ -1285,6 +1286,11 @@ country_event = {
 		add_accepted_culture = syriac
 		add_accepted_culture = copt
 		add_accepted_culture = sephardic
+		political_reform = federalism
+		political_reform = universal_weighted_voting
+		political_reform = secret_ballots
+		political_reform = population_equal_weight
+		political_reform = culture_voting_only
 		capital_scope = { add_province_modifier = { name = war_torn duration = 30 } }
 		capital = 1751
 		any_country = {
@@ -1561,13 +1567,14 @@ country_event = {
     id = 178047
     title = "The Arab Spring"
     desc = "178047DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 	
 	is_triggered_only = yes
 
     trigger = {
 		tag = EGY
 		has_country_flag = EGY_refused_syriac_autonomy
+		is_vassal = no
     }
 	
 	major = yes
@@ -1581,7 +1588,6 @@ country_event = {
 		political_reform = party_appointed
 		ruling_party_ideology = reactionary
 		upper_house = { ideology = reactionary value = 20 }
-		remove_accepted_culture = copt
 		any_country = {
 			limit = {
 				tag = PLS
@@ -1599,6 +1605,28 @@ country_event = {
 		scaled_militancy = { factor = 2 ideology = liberal }
 		scaled_militancy = { factor = 4 ideology = socialist }
 		scaled_militancy = { factor = 4 ideology = radical }
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						owns = 1763
+						owns = 1769
+					}
+				}
+			}
+			owner = { country_event = { id = 178060 days = 30 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						owns = 1763
+						owns = 1769
+					}
+				}
+			}
+			owner = { remove_accepted_culture = copt }
+		}
 		#vanilla westernization effects
 		tech_school = traditional_academic
 		random_owned = {
@@ -1722,7 +1750,7 @@ country_event = {
     id = 178048
     title = "Cairo's Longest Night"
     desc = "178048DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 	
 	is_triggered_only = yes
 
@@ -1730,6 +1758,7 @@ country_event = {
 		tag = EGY
 		NOT = { has_country_flag = EGY_refused_syriac_autonomy }
 		NOT = { has_country_flag = EGY_ready_for_democracy }
+		is_vassal = no
     }
 	
 	option = {
@@ -1741,7 +1770,6 @@ country_event = {
 		political_reform = party_appointed
 		ruling_party_ideology = reactionary
 		upper_house = { ideology = reactionary value = 0.3 }
-		remove_accepted_culture = copt
 		any_country = {
 			limit = {
 				tag = PLS
@@ -1761,6 +1789,28 @@ country_event = {
 		scaled_militancy = { factor = 2 ideology = liberal }
 		scaled_militancy = { factor = 4 ideology = socialist }
 		scaled_militancy = { factor = 4 ideology = radical }
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						owns = 1763
+						owns = 1769
+					}
+				}
+			}
+			owner = { country_event = { id = 178060 days = 30 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = {
+						owns = 1763
+						owns = 1769
+					}
+				}
+			}
+			owner = { remove_accepted_culture = copt }
+		}
 		#vanilla westernization effects
 		tech_school = traditional_academic
 		random_owned = {
@@ -1888,6 +1938,11 @@ country_event = {
 		add_accepted_culture = syriac
 		add_accepted_culture = copt
 		add_accepted_culture = sephardic
+		political_reform = federalism
+		political_reform = universal_weighted_voting
+		political_reform = secret_ballots
+		political_reform = population_equal_weight
+		political_reform = culture_voting_only
 		capital_scope = { add_province_modifier = { name = war_torn duration = 30 } }
 		capital = 1751
 		any_country = {
@@ -2308,7 +2363,7 @@ country_event = {
     id = 178056
     title = "Death of Mahmoud I"
     desc = "178056DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 	
 	trigger = {
 		tag = EGY
@@ -2331,7 +2386,7 @@ country_event = {
     id = 178057
     title = "Death of Muhsin II"
     desc = "178057DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 	
 	trigger = {
 		tag = EGY
@@ -2378,7 +2433,7 @@ country_event = {
     id = 178059
     title = "The Liberation of Iraq"
     desc = "178059DESC"
-    picture = "syria_map"
+    picture = "EGY_map"
 	
 	trigger = {
 		tag = EGY
@@ -2417,5 +2472,817 @@ country_event = {
 	option = {
         name = "Do we really need it that much?"
 		prestige = -5
+	}
+}
+
+country_event = {
+    id = 178060
+    title = "Union for the Protection of the Levant"
+    desc = "178060DESC"
+    picture = "EGY_map"
+	
+	is_triggered_only = yes
+	
+	option = {
+        name = "Send in the Army!"
+		any_pop = {
+			limit = { has_pop_culture = copt }
+			militancy = 3
+			consciousness = 3
+		}
+		LEV = { government = provisional_government }
+		country_event = { id = 178061 days = 30 }
+	}
+}
+
+country_event = {
+    id = 178061
+    title = "The Luxor Revolt"
+    desc = "178061DESC"
+    picture = "EGY_map"
+	
+	is_triggered_only = yes
+	
+	option = {
+        name = "The Treaty of Alexandria is thus declared null and void!"
+		remove_accepted_culture = copt
+		EGY_1745 = { add_core = LEV }
+		EGY_1751 = { add_core = LEV }
+		EGY_1755 = { add_core = LEV }
+		EGY_1758 = { add_core = LEV }
+		EGY_1762 = { add_core = LEV }
+		EGY_1771 = { add_core = LEV }
+		any_owned = {
+			limit = {
+				OR = {
+					region = EGY_1758
+					region = EGY_1762
+					region = EGY_1771
+				}
+			}
+			secede_province = LEV
+		}
+		war = {
+			target = LEV
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = {
+				casus_belli = acquire_all_cores
+				country = LEV
+			}
+		}
+		LEV = {
+			capital = 1767
+			set_country_flag = LEV_uprising
+			add_country_modifier = { name = uprising_10percent_mob_modf duration = 1825 }
+			remove_accepted_culture = misri
+			remove_accepted_culture = bedouin
+			1767 = {
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = 178062
+    title = "Rise of the Senussi"
+    desc = "178062DESC"
+    picture = "EGY_map"
+	
+	trigger = {
+		OR = {
+			tag = EGY
+			tag = LEV
+			AND = {
+				tag = SYR
+				has_country_flag = SYR_wasegypt
+			}
+		}
+		NOT = { owns = 1752 }
+		NOT = { owns = 1759 }
+		war = no
+		year = 1875
+    }
+
+    mean_time_to_happen = {
+        days = 250
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Radicals!"
+		any_owned = {
+			limit = {
+				is_core = CYR
+			}
+			secede_province = CYR
+		}
+		CYR = {
+			government = theocracy
+			1735 = {
+				sub_unit = { 
+					type = infantry
+					value = current 
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = 178063
+    title = "Victory in the Uprising"
+    desc = "178063DESC"
+    picture = "EGY_map"
+	
+	trigger = {
+		tag = LEV
+		has_country_flag = LEV_uprising
+		all_core = {
+			OR = {
+				owned_by = THIS
+				empty = yes
+			}
+		}
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "The Levant will be free!"
+		prestige = 25
+		government = democracy
+		political_reform = federalism
+		political_reform = culture_voting_only
+		capital = 1751
+		remove_country_modifier = uprising_10percent_mob_modf
+		add_accepted_culture = misri
+		add_accepted_culture = bedouin
+		EGY = { all_core = { add_core = THIS } }
+		clr_country_flag = LEV_uprising
+	}
+}
+
+country_event = {
+    id = 178064
+    title = "The Loss of Egypt"
+    desc = "178064DESC"
+    picture = "syria_map"
+	
+	trigger = {
+		tag = EGY
+		NOT = {
+			owns = 1745
+			owns = 1751
+			owns = 1763
+			owns = 1769
+		}
+		OR = {
+			owns = 902
+			owns = 917
+		}
+    }
+
+    mean_time_to_happen = {
+        days = 100
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "We will be avenged in due time."
+		all_core = { remove_core = THIS }
+		change_tag = SYR
+		EGY_897 = { add_core = SYR }
+		EGY_903 = { add_core = SYR }
+		EGY_921 = { add_core = SYR }
+		EGY_1755 = { add_core = SYR }
+		910 = { add_core = SYR }
+		907 = { add_core = SYR }
+		2321 = { add_core = SYR }
+		3405 = { add_core = SYR }
+		924 = { add_core = SYR }
+		3300 = { add_core = SYR }
+		3325 = { add_core = SYR }
+		3428 = { add_core = SYR }
+		900 = { add_core = SYR }
+		EGY_1745 = { add_core = EGY }
+		EGY_1751 = { add_core = EGY }
+		EGY_1755 = { add_core = EGY }
+		EGY_1758 = { add_core = EGY }
+		EGY_1762 = { add_core = EGY }
+		EGY_1771 = { add_core = EGY }
+		TRI_1735 = { add_core = EGY }
+		capital = 902
+		set_country_flag = SYR_wasegypt
+	}
+}
+
+country_event = {
+    id = 178065
+    title = "Reogranization of the Levant"
+    desc = "The Levantine Union is a federal state, though its subdivisions are not based on ethnicity, instead being purely georgaphic regions with autonomy."
+    picture = "EGY_map"
+	
+	trigger = {
+		tag = LEV
+		war = no
+		government = democracy
+    }
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "This will lower ethnic tensions."
+		EGY_897 = { remove_core = EGY add_core = SYR add_core = LBN } #aleppo
+		EGY_903 = { remove_core = EGY add_core = SYR add_core = LBN } #damascus
+		BYZ_894 = { remove_core = EGY } #cilicia
+		EGY_921 = { remove_core = EGY add_core = SYR add_core = PLS } #palestine
+		910 = { remove_core = EGY add_core = SYR add_core = PLS } #palestine desert
+		907 = { remove_core = EGY add_core = SYR } #syria desert
+		2321 = { remove_core = EGY add_core = SYR } #deirezzor desert
+		3405 = { remove_core = EGY add_core = SYR } #deirezzor
+		3300 = { remove_core = EGY add_core = SYR } #deirezzor
+		924 = { remove_core = EGY add_core = SYR } #deirezzor
+		TRI_1735 = { remove_core = EGY }
+		HDJ_1151 = { remove_core = EGY }
+		IRQ = { all_core = { remove_core = EGY } }
+	}
+}
+
+country_event = {
+    id = 178066
+    title = "The Edku Declaration"
+    desc = "178066DESC"
+    picture = "EGY_alwafd"
+	
+	trigger = {
+		year = 1897
+		owns = 1751 #alexandria
+		capital_scope = {
+			NOT = {
+				OR = {
+					continent = africa 
+					continent = east_africa 
+					continent = west_africa 
+					continent = central_africa 
+				}
+			}
+		}
+		NOT = { exists = EGY }
+		NOT = { exists = LEV }
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = { owner = { has_country_flag = hidden_tooltip } }
+			EGY = { all_core = { remove_core = EGY } }
+			EGY_1745 = { add_core = EGY }
+			EGY_1751 = { add_core = EGY }
+			EGY_1755 = { add_core = EGY }
+			EGY_1758 = { add_core = EGY }
+			EGY_1762 = { add_core = EGY }
+			EGY_1771 = { add_core = EGY }
+			TRI_1735 = { add_core = EGY }
+		}
+		clr_country_flag = hidden_tooltip
+	}
+	
+	option = {
+        name = "They are of no threat to us."
+		any_pop = {
+			limit = { OR = { has_pop_culture = misri has_pop_culture = copt } }
+			militancy = 1
+			consciousness = 4
+		}
+		set_global_flag = EGY_edku_declaration
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+        name = "Devolution is beneficial to governance. Better do it now."
+		release_vassal = EGY
+		random_owned = {
+			limit = {
+				owner = {
+					tag = BYZ
+				}
+			}
+			EGY = {
+				government = colonial_company
+				economic_reform = yes_research_reform
+				economic_reform = yes_land_reform
+				economic_reform = finance_reform_two
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					tag = GRE
+				}
+			}
+			EGY = {
+				government = colonial_company_2
+				economic_reform = yes_research_reform
+				economic_reform = yes_land_reform
+				economic_reform = finance_reform_two
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { tag = BYZ }
+					NOT = { tag = GRE }
+				}
+			}
+			EGY = {
+				government = democracy
+				economic_reform = yes_research_reform
+				economic_reform = yes_land_reform
+				economic_reform = finance_reform_two
+				political_reform = universal_weighted_voting
+				political_reform = secret_ballots
+				political_reform = culture_voting_only
+				political_reform = state_equal_weight
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+    id = 178067
+    title = "The El-Sayed Petition"
+    desc = "178067DESC"
+    picture = "EGY_alwafd"
+	
+	trigger = {
+		year = 1912
+		owns = 1751 #alexandria
+		capital_scope = {
+			NOT = {
+				OR = {
+					continent = africa 
+					continent = east_africa 
+					continent = west_africa 
+					continent = central_africa 
+				}
+			}
+		}
+		has_global_flag = EGY_edku_declaration
+		NOT = { exists = EGY }
+		NOT = { exists = LEV }
+		war = no
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Egypt is ready for self-governance."
+		release_vassal = EGY
+		random_owned = {
+			limit = {
+				owner = {
+					tag = BYZ
+				}
+			}
+			EGY = {
+				economic_reform = yes_research_reform
+				economic_reform = yes_land_reform
+				economic_reform = finance_reform_two
+				government = colonial_company
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					tag = GRE
+				}
+			}
+			EGY = {
+				economic_reform = yes_research_reform
+				economic_reform = yes_land_reform
+				economic_reform = finance_reform_two
+				government = colonial_company_2
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					NOT = { tag = BYZ }
+					NOT = { tag = GRE }
+				}
+			}
+			EGY = {
+				government = democracy
+				economic_reform = yes_research_reform
+				economic_reform = yes_land_reform
+				economic_reform = finance_reform_two
+				political_reform = universal_weighted_voting
+				political_reform = secret_ballots
+				political_reform = culture_voting_only
+				political_reform = state_equal_weight
+			}
+		}
+		clr_global_flag = EGY_edku_declaration
+		ai_chance = { factor = 90 }
+	}
+	
+	option = {
+        name = "We will not surrender to threats of violence!"
+		EGY_can_revolt_tt = {}
+		any_pop = {
+			limit = { OR = { has_pop_culture = misri has_pop_culture = copt } }
+			militancy = 4
+			consciousness = 4
+		}
+		any_owned = {
+			limit = { is_core = EGY }
+			add_province_modifier = { name = EGY_syriac_unrest duration = 3650 }
+		}
+		clr_global_flag = EGY_edku_declaration
+		set_country_flag = EGY_refused_petition
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = {
+    id = 178068
+    title = "The Egyptian Uprising"
+    desc = "178068DESC"
+    picture = "EGY_revolt_pic"
+	
+	major = yes
+	
+	trigger = {
+		owns = 1751 #alexandria
+		has_country_flag = EGY_refused_petition
+		has_country_flag = in_great_war
+		NOT = { exists = EGY }
+		NOT = { exists = LEV }
+    }
+
+    mean_time_to_happen = {
+        months = 3
+    }
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = hidden_tooltip
+		random_owned = {
+			limit = { owner = { has_country_flag = hidden_tooltip } }
+			owner = {
+				release = EGY
+				EGY = {
+					capital = 1751
+					government = democracy
+					political_reform = universal_weighted_voting
+					political_reform = secret_ballots
+					political_reform = culture_voting_only
+					political_reform = state_equal_weight
+					economic_reform = yes_research_reform
+					economic_reform = yes_land_reform
+					economic_reform = finance_reform_two
+					country_event = { id = 178069 days = 3 }
+					add_country_modifier = { name = uprising_10percent_mob_modf duration = 1825 }
+					capital_scope = {
+						sub_unit = { 
+							type = infantry
+							value = current 
+						}
+						sub_unit = { 
+							type = infantry
+							value = current 
+						}
+						sub_unit = { 
+							type = infantry
+							value = current 
+						}
+					}
+				}
+			}
+		}
+		clr_country_flag = hidden_tooltip
+	}
+	
+	option = {
+        name = "Crush them!"
+		war = {
+			target = EGY
+			attacker_goal = { casus_belli = conquest_any }
+			call_ally = yes
+		}
+	}
+	
+	option = {
+        name = "178068A"
+		war = {
+			target = EGY
+			attacker_goal = { casus_belli = conquest_any }
+			call_ally = yes
+		}
+		change_tag_no_core_switch = EGY
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+    id = 178069
+    title = "The Uprising"
+    desc = "All Egyptians are equal, say the leaders of the uprising. A republic is thus most suitable for us."
+    picture = "EGY_revolt_pic"
+	
+	is_triggered_only = yes
+	
+	option = {
+        name = "For Egypt!"
+		government = democracy
+		political_reform = universal_weighted_voting
+		political_reform = secret_ballots
+		political_reform = culture_voting_only
+		political_reform = state_equal_weight
+	}
+}
+
+country_event = {
+    id = 178071
+    title = "Egypt in the Modern Age"
+    desc = "We are, unfortunately, a puppet of a foreign nation, and they decide what our government is going to be."
+    picture = "EGY_map"
+	
+	is_triggered_only = yes
+
+    trigger = {
+		tag = EGY
+		is_vassal = yes
+    }
+	
+	option = {
+        name = "Oh well."
+		government = democracy
+		political_reform = universal_weighted_voting
+		political_reform = secret_ballots
+		political_reform = culture_voting_only
+		political_reform = state_equal_weight
+		random_owned = {
+			limit = {
+				owner = {
+					vassal_of = BYZ
+				}
+			}
+			owner = { government = colonial_company }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					vassal_of = GRE
+				}
+			}
+			owner = { government = colonial_company_2 }
+		}
+		#vanilla westernization effects
+		tech_school = traditional_academic
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_advisor_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = military_staff_system
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_army_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = flintlock_rifles
+				activate_technology = muzzle_loaded_rifles
+				activate_technology = bronze_muzzle_loaded_artillery
+				activate_technology = iron_muzzle_loaded_artillery
+				activate_technology = post_napoleonic_thought
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					has_country_flag = give_navy_tech_on_civ
+				}
+			}
+			owner = {
+				activate_technology = steamers
+				activate_technology = clipper_design
+				activate_technology = post_nelsonian_thought
+			}
+		}
+        random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
+		#add techs
+        random_owned = {
+            limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
+            owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_research_tech_on_civ } NOT = { malthusian_thought = 1 } }
+            owner = { activate_technology = malthusian_thought activate_technology = late_enlightenment_philosophy  clr_country_flag = give_research_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_monetary_tech_on_civ } NOT = { no_standard = 1 } }
+            owner = { activate_technology = no_standard  clr_country_flag = give_monetary_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_firearms_tech_on_civ } NOT = { guild_based_production = 1 } }
+            owner = { activate_technology = guild_based_production  clr_country_flag = give_firearms_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_industrial_tech_on_civ } NOT = { piston_steam_engine = 1 } }
+            owner = { activate_technology = piston_steam_engine  clr_country_flag = give_industrial_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_weapons } NOT = { flintlock_rifles = 1 } }
+            owner = { activate_technology = flintlock_rifles  clr_country_flag = using_foreign_weapons }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_constructions_tech_on_civ } NOT = { post_napoleonic_thought = 1 } }
+            owner = { activate_technology = post_napoleonic_thought  clr_country_flag = give_constructions_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = give_armyschools_tech_on_civ } NOT = { army_command_principle = 1 } }
+            owner = { activate_technology = army_command_principle  clr_country_flag = give_armyschools_tech_on_civ }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_shipyards } NOT = { post_nelsonian_thought = 1 } }
+            owner = { activate_technology = post_nelsonian_thought  clr_country_flag = using_foreign_shipyards }
+        }
+		random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_artillery } NOT = { bronze_muzzle_loaded_artillery = 1 } }
+            owner = { activate_technology = bronze_muzzle_loaded_artillery  clr_country_flag = using_foreign_artillery }
+        }
+        # Enable uncivilizsed nations to unlock steamers when having unlocked it in political decisions
+        random_owned = {
+            limit = { owner = { has_country_flag = using_foreign_ships } NOT = { steamers = 1 } }
+            owner = { activate_technology = steamers  clr_country_flag = using_foreign_ships }
+        }
+        random_list = {
+            34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
+            33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
+        }
+        remove_country_modifier = assegai
+        remove_country_modifier = educational_reform
+        remove_country_modifier = military_reform
+        remove_country_modifier = western_influences
+        remove_country_modifier = uncivilized_isolationism
+        remove_country_modifier = trade_restrictions
+        remove_country_modifier = sayings_of_the_dutch
+        remove_country_modifier = rangaku
+        remove_country_modifier = sakoku
+        remove_country_modifier = western_presence
+        remove_country_modifier = isolationist_foreign_naval_officers
+        remove_country_modifier = isolationist_foreign_naval_schools
+        remove_country_modifier = isolationist_foreign_officers
+        remove_country_modifier = isolationist_foreign_training
+        any_owned = {
+            remove_province_modifier = western_presence
+            remove_province_modifier = foreign_smugglers
+            remove_province_modifier = foreign_trading_post
+            remove_province_modifier = local_opium_habit
+            remove_province_modifier = european_military_mission
+            remove_province_modifier = legation_quarter
+            remove_province_modifier = kettler_denkmal
+            remove_province_modifier = extraterritoriality_granted
+            remove_province_modifier = boxer_presence
+            remove_province_modifier = boxer_agitation
+        }
+	}
+}
+
+country_event = {
+    id = 178072
+    title = "Essays on the Functioning of the Egyptian Majlis"
+    desc = "178072DESC"
+    picture = "egypt_majlis"
+	
+	trigger = {
+		OR = {
+			tag = EGY
+			tag = LEV
+		}
+		has_country_modifier = EGY_greekschool
+		year = 1859
+    }
+
+    mean_time_to_happen = {
+        months = 3
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Interesting."
+		any_pop = {
+            dominant_issue = {
+                value = universal_voting
+                factor = 0.1
+            }
+        }
+	}
+}
+
+country_event = {
+    id = 178073
+    title = "End of the Alexandria Greek School"
+    desc = "178073DESC"
+    picture = "egypt_majlis"
+	
+	trigger = {
+		tag = EGY
+		government = absolute_monarchy
+		civilized = yes
+		year = 1865
+		has_country_modifier = EGY_greekschool
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Off you go, rats."
+		prestige = -5
+		remove_country_modifier = EGY_greekschool
+	}
+}
+
+country_event = {
+    id = 178074
+    title = "The Bayrut Catholic University"
+    desc = "178074DESC"
+    picture = "beirutuni"
+	
+	trigger = {
+		owns = 467
+		year = 1851
+    }
+
+    mean_time_to_happen = {
+        months = 12
+    }
+	
+	fire_only_once = yes
+	
+	option = {
+        name = "Maybe we can learn something from the Egyptians?"
+		913 = { owner = { country_event	= 178075 } }
+	}
+}
+
+country_event = {
+    id = 178075
+    title = "The Bayrut Catholic University"
+    desc = "178075DESC"
+    picture = "beirutuni"
+	
+	is_triggered_only = yes
+	
+	option = {
+        name = "Perhaps we could learn something from these curious visitors."
+		prestige = 5
 	}
 }

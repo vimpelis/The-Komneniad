@@ -11,16 +11,17 @@ plurality = 0.0
 nationalvalue = nv_equality
 literacy = 0.06
 civilized = yes
+is_releasable_vassal = no
 
 #Political Reforms
 slavery = no_slavery
 upper_house_composition = appointed
-vote_franschise = none_voting
-public_meetings = no_meeting
-press_rights = state_press
+vote_franschise = universal_weighted_voting
+public_meetings = yes_meeting
+press_rights = censored_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
-political_parties = underground_parties
+political_parties = secret_ballots
 
 #Social Reforms
 wage_reform = no_minimum_wage
@@ -36,9 +37,9 @@ conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
-citizens_rights = primary_culture_only
+citizens_rights = culture_voting_only
 border_policy = open_borders
-centralization = unitary
+centralization = federalism
 colonial_policy = no_colonies
 
 

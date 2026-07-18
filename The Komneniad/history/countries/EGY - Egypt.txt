@@ -75,8 +75,6 @@ basic_chemistry = 1
 small_arms_production = yes
 ammunition_production = yes
 
-
-
 #Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0

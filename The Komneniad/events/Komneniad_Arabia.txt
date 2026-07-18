@@ -185,6 +185,10 @@ country_event = {
 
     option = {
         name = "We do not want it, but we have to."
+		add_country_modifier = {
+			name = ARA_mob_modifier
+			duration = 1825
+		}
 		HDJ = {
 			create_vassal = NAJ
 			create_alliance = NAJ
@@ -389,8 +393,8 @@ country_event = {
 			1145 = { add_core = YEM }
 			war = {
 				target = NAJ
-				attacker_goal = { conquest_any }
-				defender_goal = { conquest_any }
+				attacker_goal = { casus_belli = conquest_any }
+				defender_goal = { casus_belli = conquest_any }
 				call_ally = yes
 			}
 		}

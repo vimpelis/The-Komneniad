@@ -3,7 +3,7 @@ HAD = { value = -100 }
 YEM = { value = -100 }
 
 army = {
-    name = "Sultan's Army"
+    name = "Army of Najran"
     location = 1161
     regiment = {
         name = "1st Irregular Infantry Regiment"
