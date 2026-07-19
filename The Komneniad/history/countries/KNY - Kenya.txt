@@ -1,5 +1,5 @@
 capital = 2024
-primary_culture = kikuyu
+primary_culture = northeast_bantu
 culture = nilotic
 religion = animist
 government = absolute_monarchy

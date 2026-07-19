@@ -571,7 +571,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu #african_minor
+        culture = northeast_bantu #african_minor
         religion = animist
         size = 4000
     }
@@ -622,7 +622,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu #african_minor
+        culture = northeast_bantu #african_minor
         religion = jain
         size = 5000
     }
@@ -672,7 +672,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu #african_minor
+        culture = northeast_bantu #african_minor
         religion = jain
         size = 1000
     }
@@ -7395,7 +7395,7 @@
     }
 
     serfs = {
-        culture = lacustrine_bantu #african_minor
+        culture = northeast_bantu #african_minor
         religion = hindu
         size = 8500
     }

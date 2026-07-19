@@ -1,8 +1,7 @@
 capital = 1818
-primary_culture = sara
+primary_culture = sudanic
 culture = bedouin
 culture = kanuri
-culture = baguirmi
 culture = ubangian
 religion = sunni
 government = absolute_monarchy

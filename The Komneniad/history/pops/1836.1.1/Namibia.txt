@@ -1,39 +1,39 @@
 #Damaraland Region (192000)
-#uncolonized in 1836/dominated by the Herero in 1836
+#uncolonized in 1836/dominated by the southwest_bantu in 1836
 #Windhoek (72000/18000 POPS)
 2078 = {
     aristocrats = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     clergymen = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 300
     }
 
     soldiers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 5175
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = protestant
         size = 300
     }
@@ -77,31 +77,31 @@
 #Swakopmund (52000/13000 POPS)
 2079 = {
     aristocrats = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 450
     }
 
     soldiers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 5700
     }
@@ -137,31 +137,31 @@
     }
 
     aristocrats = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     clergymen = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     farmers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 2650
     }
@@ -169,61 +169,61 @@
 #Tsumeb (24000/6000 POPS)
 2080 = {
     aristocrats = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     clergymen = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 300
     }
 
     soldiers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 7455
     }
 
     aristocrats = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     clergymen = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 300
     }
 
     soldiers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 2695
     }
@@ -261,31 +261,31 @@
 #Otjinene (44000/11000 POPS)
 2082 = {
     aristocrats = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     clergymen = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 300
     }
 
     soldiers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 4980
     }
@@ -321,91 +321,91 @@
     }
 
     aristocrats = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 75
     }
 
     clergymen = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 250
     }
 
     soldiers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     farmers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 2595
     }
 	
 	aristocrats = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 15
     }
 
     clergymen = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 45
     }
 
     soldiers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 10
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 625
     }
 
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 13
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 8
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 35
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 45
 	}
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 208
     }
@@ -469,31 +469,31 @@
     }
 
     aristocrats = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 200
     }
 
     artisans = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 200
     }
 
     farmers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 1690
     }
@@ -591,31 +591,31 @@
     }
 
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 15
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 50
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 10
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 900
     }
@@ -653,31 +653,31 @@
     }
 
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 15
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 50
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 10
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 900
     }

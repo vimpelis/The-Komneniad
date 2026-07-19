@@ -850,7 +850,7 @@ political_decisions = {
 			functionalism = 1
 			inorganic_chemistry = 1
 			late_classical_theory = 1
-			treasury = 50000
+			money = 50000
 		}
 		effect = {
 			prestige = 5

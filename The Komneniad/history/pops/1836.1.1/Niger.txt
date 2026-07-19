@@ -559,7 +559,7 @@
     }
 
     slaves = {
-        culture = baguirmi
+        culture = sudanic
         religion = fetishist
         size = 2000
     }
@@ -598,7 +598,7 @@
     }
 
     slaves = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 1000
     }

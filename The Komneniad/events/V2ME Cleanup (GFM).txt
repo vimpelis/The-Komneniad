@@ -5043,7 +5043,7 @@ country_event = {
 					MLI_1818 = { add_core = ADW }
 					ADW = {
 						all_core = { remove_core = SOK remove_core = KBO }
-						primary_culture = baguirmi
+						primary_culture = sudanic
 						add_accepted_culture = kanuri
 						remove_accepted_culture = hausa
 						remove_accepted_culture = east_kwa
@@ -5452,7 +5452,7 @@ country_event = {
 					LOA = {
 						all_core = { remove_core = KON }
 						add_accepted_culture = chokwe
-						add_accepted_culture = south_forest_bantu
+						add_accepted_culture = southwest_bantu
 						set_country_flag = post_colonial_country
 						tech_school = unciv_tech_school
 						government = democracy
@@ -8643,7 +8643,7 @@ country_event = {
 					ORA_2103 = { add_core = XHO }
 					TRN_2108 = { add_core = XHO }
 					XHO = {
-						add_accepted_culture = sotho
+						add_accepted_culture = sotho_tswana
 						add_accepted_culture = zulu
 						all_core = { remove_core = BSH remove_core = ZUL remove_core = MAT remove_core = SUA }
 						set_country_flag = post_colonial_country

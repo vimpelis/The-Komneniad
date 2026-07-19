@@ -1,7 +1,7 @@
 #========================= H E A D E R =========================
 
 color = { 0  89  0 }
-graphical_culture = NafGC
+graphical_culture = AfricanGC
 
 
 #========================= P A R T I E S =========================

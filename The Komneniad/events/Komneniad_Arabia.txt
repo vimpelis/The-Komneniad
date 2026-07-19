@@ -641,6 +641,7 @@ country_event = {
 		1164 = { add_core = NEJ }
 		1163 = { add_core = NEJ }
 		2586 = { add_core = NEJ }
+		3384 = { add_core = NEJ }
 		release = HAL
 		release = HDJ
 		release = NAJ

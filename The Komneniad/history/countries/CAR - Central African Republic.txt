@@ -1,7 +1,6 @@
 capital = 1965
 primary_culture = ubangian
-culture = sara
-culture = fur
+culture = sudanic
 culture = fulbe
 religion = animist
 government = democracy

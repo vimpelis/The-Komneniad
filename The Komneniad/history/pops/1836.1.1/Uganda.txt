@@ -3,115 +3,115 @@
 #Entebbe (400000/100000 POPS)
 2019 = {
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1000
     }
 
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 350
     }
 
     bureaucrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 130
     }
 
     bureaucrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 20
     }
 
     officers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 80
     }
 
     officers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 10
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 725
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1800
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 500
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1000
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1000
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 55525
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 8000
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 575
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 300
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1500
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 300
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 10325
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 7000
     }
@@ -119,211 +119,211 @@
 #Mbarara (232000/53000 POPS)
 2020 = {
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 300
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 25600
     }
 
     slaves = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1100
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 500
     }
 
     aristocrats = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 125
     }
 
     soldiers = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 550
     }
 	
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 650
     }
 
     bureaucrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 130
     }
 
     officers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 65
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 350
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1650
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1350
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 28620
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 2080
     }
 
     slaves = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 4000
     }
 
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 350
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 175
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 725
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 5550
     }
 	
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     bureaucrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 70
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 35
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 14500
     }
 
     farmers = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 1500
     }
 
     slaves = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 500
     }
@@ -385,13 +385,13 @@
     }
 
     farmers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 3000
     }
 
     farmers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 530
     }
@@ -421,25 +421,25 @@
     }
 
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 375
     }
 
     bureaucrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 80
     }
 
     officers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 35
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
@@ -451,44 +451,44 @@
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1200
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 15000
     }
 }
 3610 = {
     aristocrats = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 550
     }
 
     clergymen = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 300
     }
 
     soldiers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 300
     }
 
     farmers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 700
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 450
     }
@@ -500,7 +500,7 @@
     }
 
     slaves = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1000
     }
@@ -518,31 +518,31 @@
     }
 
     aristocrats = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 4900
     }
@@ -628,13 +628,13 @@
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 105
     }
 
     slaves = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1600
     }
@@ -642,67 +642,67 @@
 #Jinja (208000/52000 POPS)
 2023 = {
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 275
     }
 
     bureaucrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     officers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 75
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 750
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 375
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 575
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1050
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 475
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 51850
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 9000
     }
@@ -720,13 +720,13 @@
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 6000
     }

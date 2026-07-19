@@ -65,13 +65,12 @@
     }
 
     slaves = {
-        culture = mongo
+        culture = forest_bantu
         religion = fetishist
         size = 500
     }
 
 }
-#uncolonized in 1836/under influence of Baguirmi
 #Bouar (28000/7000 POPS)
 1967 = {
     aristocrats = {
@@ -167,61 +166,61 @@
     }
 
     aristocrats = {
-        culture = baguirmi
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     clergymen = {
-        culture = baguirmi
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = baguirmi
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = baguirmi
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = baguirmi
+        culture = sudanic
         religion = sunni
         size = 900
     }
 
     aristocrats = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 100
     }
 
     clergymen = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 100
     }
 
     artisans = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 150
     }
 
     soldiers = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 100
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 2700
     }
@@ -356,31 +355,31 @@
 #Ndele (28000/7000 POPS)
 1971 = {
     aristocrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     clergymen = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 900
     }

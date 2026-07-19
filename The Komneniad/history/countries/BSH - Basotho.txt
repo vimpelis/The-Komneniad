@@ -1,5 +1,5 @@
 capital = 2104
-primary_culture = sotho
+primary_culture = sotho_tswana
 culture = nguni
 religion = animist
 government = absolute_monarchy

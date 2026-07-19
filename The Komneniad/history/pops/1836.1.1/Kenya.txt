@@ -3,67 +3,67 @@
 #Nairobi (260000/65000 POPS)
 2024 = {
     aristocrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 825
     }
 
     bureaucrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 65
     }
 
     officers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 30
     }
 
     clergymen = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 475
     }
 
     artisans = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 2100
     }
 
     soldiers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 1100
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 12345
     }
 
     slaves = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 2000
     }
 	
 	aristocrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 	
 	artisans = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = sunni
         size = 300
     }
 	
 	farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = sunni
         size = 5200
     }
@@ -221,67 +221,67 @@
     }
 
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 50
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 25
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 125
     }
 
     slaves = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 600
     }
 	
     aristocrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     clergymen = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     artisans = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 650
     }
 
     soldiers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 125
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 13875
     }
@@ -317,7 +317,7 @@
     }
 
     slaves = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 875
     }
@@ -325,49 +325,49 @@
 #Nakuru (128000/32000 POPS)
 2027 = {
     aristocrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 300
     }
 
     bureaucrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 40
     }
 
     officers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 20
     }
 
     clergymen = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     artisans = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 800
     }
 
     soldiers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 11650
     }
 
     slaves = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 1100
     }
@@ -424,49 +424,49 @@
 #Kisumu (196000/49000POPS)
 2028 = {
     aristocrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 375
     }
 
     bureaucrats = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 55
     }
 
     officers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 25
     }
 
     clergymen = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     artisans = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 775
     }
 
     soldiers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 1100
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 11060
     }
 
     slaves = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 400
     }
@@ -532,37 +532,37 @@
     }
 	
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 500
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 6300
     }
 
     farmers = {
-        culture = baganda
+        culture = northeast_bantu
         religion = animist
         size = 2650
     }
@@ -614,7 +614,7 @@
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 1015
     }
@@ -774,31 +774,31 @@
 #Garissa (172000/43000 POPS)
 2032 = {
     aristocrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 475
     }
 
     clergymen = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     artisans = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 300
     }
 
     soldiers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 9005
     }
@@ -852,37 +852,37 @@
     }
 	
     aristocrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 300
     }
 
     soldiers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 4400
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = sunni
         size = 4120
     }
@@ -894,7 +894,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 1000
     }
@@ -1042,13 +1042,13 @@
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 1000
     }
 
     slaves = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 2000
     }
@@ -1110,13 +1110,13 @@
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 925
     }
 
     slaves = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 1200
     }
@@ -1164,7 +1164,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 300
     }

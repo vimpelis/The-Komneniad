@@ -3,7 +3,7 @@
 #Douala (328000/82000 POPS)
 1956 = {
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 1675
     }
@@ -33,13 +33,13 @@
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 61225
     }
 
     slaves = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 14000
     }
@@ -83,7 +83,7 @@
     }
 
     slaves = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 1000
     }
@@ -92,31 +92,31 @@
 #Buea (224000/56000 POPS)
 3611 = {
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 675
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 400
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 1000
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 300
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 23575
     }
@@ -130,73 +130,73 @@
 #Kribi (176000/44000 POPS)
 1958 = {
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 500
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 250
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 1050
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 275
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 20925
     }
 
     slaves = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 3000
     }
 
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 325
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 175
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 725
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 175
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 11600
     }
 
     slaves = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 5000
     }
@@ -206,67 +206,67 @@
 #Yaounde (344000/86000 POPS)
 1959 = {
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 525
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 275
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 1125
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 275
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 16800
     }
 
     slaves = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 9000
     }
 
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 1150
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 575
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 2325
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 600
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 39350
     }
@@ -366,37 +366,37 @@
     }
 
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 325
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 175
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 725
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 175
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 10600
     }
 
     slaves = {
-        culture = fang
+        culture = forest_bantu
         religion = fetishist
         size = 6000
     }
@@ -635,31 +635,31 @@
     }
 
     aristocrats = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 700
     }
 
     clergymen = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 400
     }
 
     artisans = {
-        culture = baguirmi
+        culture = sudanic
         religion = fetishist
         size = 1800
     }
 
     soldiers = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 400
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = fetishist
         size = 29100
     }
@@ -677,7 +677,7 @@
     }
 
     slaves = {
-        culture = sara
+        culture = sudanic
         religion = sunni
         size = 6000
     }

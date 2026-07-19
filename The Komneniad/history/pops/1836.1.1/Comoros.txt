@@ -57,7 +57,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1281
     }
@@ -153,7 +153,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 460
     }

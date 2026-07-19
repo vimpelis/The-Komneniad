@@ -1,7 +1,7 @@
 capital = 2048
 primary_culture = swahili
-culture = yao
-culture = kikuyu
+culture = musanbiq_bantu
+culture = northeast_bantu
 religion = sunni
 government = absolute_monarchy
 plurality = 0.0

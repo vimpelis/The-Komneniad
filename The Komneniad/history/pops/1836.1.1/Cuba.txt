@@ -336,7 +336,7 @@
     }
 	
 	farmers = {
-        culture = sotho
+        culture = sotho_tswana
         religion = animist
         size = 500
     }

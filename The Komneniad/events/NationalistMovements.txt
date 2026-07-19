@@ -2353,6 +2353,7 @@ province_event = {
         is_accepted_culture = no
         is_colonial = no
         controlled_by = owner
+		NOT = { owner = { has_country_flag = spectator } }
     }
 
     mean_time_to_happen = {

@@ -839,37 +839,37 @@
     }
 
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 350
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1925
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 5000
     }
@@ -1568,37 +1568,37 @@
     }
 
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 75
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 125
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 650
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 150
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 10200
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 6000
     }
@@ -1661,73 +1661,73 @@
     }
 
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 600
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 800
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 3100
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 21900
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 14000
     }
 
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 150
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 750
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 6750
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 3000
     }
@@ -1837,61 +1837,61 @@
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 650
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 450
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 250
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 1200
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 2350
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 1000
     }
@@ -1945,37 +1945,37 @@
     }
 	
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 300
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 350
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 1200
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 9250
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1000
     }
@@ -1983,73 +1983,73 @@
 #Ibo (208000/52000 POPS)
 3678 = {
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 150
     }
 	
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 350
     }
 	
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 1800
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 	
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 250
     }
 	
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 550
     }
 	
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 13600
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 1300
     }
@@ -2079,61 +2079,61 @@
     }
 	
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 500
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 500
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 2500
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 500
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 20200
     }
 	
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 250
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 3500
     }
@@ -2141,79 +2141,79 @@
 #Nampula (208000/52000 POPS)
 2064 = {
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 250
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 250
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 1250
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 300
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = sunni
         size = 11950
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1100
     }
 
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 900
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 30500
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1000
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 3000
     }
@@ -2221,37 +2221,37 @@
 #Milange (108000/27000 POPS)
 2065 = {
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 250
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 250
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1250
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 300
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 38450
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 3500
     }
@@ -2295,67 +2295,67 @@
 #Mataka (224000/56000 POPS)
 2581 = {
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 1000
     }
 	
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 250
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 400
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 6000
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 2000
     }
@@ -2427,103 +2427,103 @@
     }
 	
 	aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 10000
     }
 	
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 450
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 400
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 2100
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 1100
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 28550
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 5000
     }
 	
     aristocrats = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 450
     }
 
     clergymen = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 400
     }
 
     artisans = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1100
     }
 
     soldiers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1100
     }
 
     farmers = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 13320
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 4000
     }

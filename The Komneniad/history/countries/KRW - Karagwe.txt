@@ -1,6 +1,5 @@
 capital = 2044
-primary_culture = lacustrine_bantu
-culture = baganda
+primary_culture = northeast_bantu
 culture = nilotic
 religion = animist
 government = absolute_monarchy

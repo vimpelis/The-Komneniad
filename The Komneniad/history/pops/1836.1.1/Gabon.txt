@@ -33,31 +33,31 @@
     }
 
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 450
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 8200
     }
@@ -101,7 +101,7 @@
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 900
     }
@@ -109,31 +109,31 @@
 #Moanda (28000/7000 POPS)
 1975 = {
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 125
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 350
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 3215
     }
@@ -154,43 +154,43 @@
 #Makokou (72000/18000 POPS)
 1976 = {
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 400
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 7300
     }
 
     aristocrats = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 175
     }
 
     clergymen = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 100
     }
@@ -202,13 +202,13 @@
     }
 
     soldiers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = fang
+        culture = forest_bantu
         religion = animist
         size = 9125
     }

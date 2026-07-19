@@ -12,6 +12,7 @@ country_event = {
             nationalvalue = nv_autocracy
         }
         average_militancy = 7
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -49,6 +50,7 @@ country_event = {
             nationalvalue = nv_autocracy
         }
         NOT = { prestige = 10 }
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -83,6 +85,7 @@ country_event = {
         }
         war = yes
         NOT = { war_exhaustion = 8 }
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -120,6 +123,7 @@ country_event = {
     trigger = {
 		ai = no
         nationalvalue = nv_liberty
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -148,6 +152,7 @@ country_event = {
 		ai = no
         nationalvalue = nv_liberty
         badboy = 0.7
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -177,6 +182,7 @@ country_event = {
 		ai = no
         average_militancy = 8
         nationalvalue = nv_liberty
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -211,6 +217,7 @@ country_event = {
             nationalvalue = nv_equality
             nationalvalue = nv_productivity
         }
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -242,6 +249,7 @@ country_event = {
         nationalvalue = nv_equality
         war = yes
         war_exhaustion = 4
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -282,6 +290,7 @@ country_event = {
 		ai = no
         nationalvalue = nv_productivity
         war = no
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -407,6 +416,7 @@ country_event = {
         }
         NOT = { government = democracy }
         militancy = 3
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -453,6 +463,7 @@ country_event = {
             government = absolute_monarchy
             government = absolute_empire
         }
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -520,6 +531,7 @@ country_event = {
         nationalvalue = nv_order
         war = no
 		ai = no
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {
@@ -558,6 +570,7 @@ country_event = {
         nationalvalue = nv_tradition
         war = no
         civilized = yes
+		NOT = { has_country_flag = spectator }
     }
 
     mean_time_to_happen = {

@@ -1,33 +1,33 @@
 #Bechuanaland Region (76000) #see South Africa.txt for balance of region
-#uncolonized in 1836/dominated by the Tswana in 1836
+#uncolonized in 1836/dominated by the sotho_tswana in 1836
 #Gaborone (28000/7000 POPS)
 2074 = {
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 125
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 325
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 7336
     }
@@ -41,61 +41,61 @@
 #Nokaneng (12000/3000 POPS)
 2076 = {
     aristocrats = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 15
     }
 
     clergymen = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 45
     }
 
     soldiers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 10
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 817
     }
 
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 25
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 45
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 100
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 25
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 1182
     }
@@ -133,31 +133,31 @@
 #Tshabong (12000/3000 POPS)
 2077 = {
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 25
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 45
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 100
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 25
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 1618
     }
@@ -195,31 +195,31 @@
 #Mochidi (16000/4000 POPS)
 2574 = {
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 45
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 45
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 45
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 2487
     }
@@ -318,61 +318,61 @@
 #Serowe (16000/4000 POPS)
 2075 = {
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 5
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 7
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 10
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 10
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 435
     }
 
     aristocrats = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 25
     }
 
     clergymen = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 15
     }
 
     artisans = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 20
     }
 
     soldiers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 15
     }
 
     farmers = {
-        culture = tswana
+        culture = sotho_tswana
         religion = animist
         size = 324
     }

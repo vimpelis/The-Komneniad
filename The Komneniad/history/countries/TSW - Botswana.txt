@@ -1,7 +1,7 @@
 capital = 2076
-primary_culture = tswana
+primary_culture = sotho_tswana
 culture = nguni
-culture = herero
+culture = southwest_bantu
 culture = khoisan
 religion = animist
 government = absolute_monarchy

@@ -81,7 +81,7 @@
     }
 	
 	slaves = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 500
     }
@@ -298,13 +298,13 @@
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = coptic
         size = 400
     }
 	
     slaves = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1750
     }

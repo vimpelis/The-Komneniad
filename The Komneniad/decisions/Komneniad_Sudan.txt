@@ -165,7 +165,7 @@ political_decisions = {
 		effect = {
 			badboy = 5
 			EGY_1842 = { add_core = SUD }
-			add_accepted_culture = fur
+			add_accepted_culture = sudanic
 			set_country_flag = NUB_annex_darfur
 		}
 		ai_will_do = {
@@ -409,7 +409,7 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 5
-			add_accepted_culture = kikuyu
+			add_accepted_culture = northeast_bantu
 			random_owned = { limit = { 2354 = { empty = yes } } 2354 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			2032 = { add_core = THIS }
 			ENG_2036 = { add_core = THIS }

@@ -149,37 +149,37 @@
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 1950
     }
 	
 	aristocrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 	
     clergymen = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 30
     }
 
     artisans = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1100
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 13900
     }
@@ -843,55 +843,55 @@
 #Abyei
 1834 = {
     aristocrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     bureaucrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 15
     }
 
     officers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 10
     }
 
     clergymen = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 150
     }
 
     artisans = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 2830
     }
 
     slaves = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1100
     }
 
     slaves = {
-        culture = fur
+        culture = sudanic
         religion = animist
         size = 300
     }
@@ -1195,7 +1195,7 @@
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 115
     }
@@ -1203,25 +1203,25 @@
 #1817
 1817 = {
     clergymen = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     artisans = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 50
     }
 
     soldiers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 300
     }
@@ -1337,13 +1337,13 @@
 #Nuhud (164000/41000 POPS)
 1839 = {
     aristocrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 180
     }
 	
 	farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 5800
     }
@@ -1579,13 +1579,13 @@
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 4700
     }
 
     slaves = {
-        culture = fur
+        culture = sudanic
         religion = animist
         size = 3000
     }
@@ -1631,43 +1631,43 @@
 #Fasher (272000/68000 POPS)
 1841 = {
     aristocrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1200
     }
 
     bureaucrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 130
     }
 
     officers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     clergymen = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 200
     }
 
     artisans = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 2600
     }
 
     soldiers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1250
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 26590
     }
@@ -1679,13 +1679,13 @@
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = sunni
         size = 1600
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 1600
     }
@@ -1723,79 +1723,79 @@
 #Junayah (200000/50000 POPS)
 1842 = {
     aristocrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 650
     }
 
     clergymen = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 150
     }
 
     artisans = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 500
     }
 
     soldiers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1100
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 10385
     }
 	
 	farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 2700
     }
 	
     aristocrats = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 650
     }
 
     clergymen = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 250
     }
 
     artisans = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1500
     }
 
     soldiers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 1100
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = sunni
         size = 14200
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = animist
         size = 290
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = sunni
         size = 1200
     }
@@ -1807,37 +1807,37 @@
     }
 	
     aristocrats = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 300
     }
 
     clergymen = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 150
     }
 
     artisans = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 300
     }
 
     soldiers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 300
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 13990
     }
 	
 	slaves = {
-        culture = teda
+        culture = sudanic
         religion = animist
         size = 600
     }
@@ -1983,19 +1983,19 @@
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 1800
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = sunni
         size = 200
     }
 
     slaves = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 3500
     }
@@ -2007,7 +2007,7 @@
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = animist
         size = 1800
     }
@@ -2053,7 +2053,7 @@
     }
 
     slaves = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 1200
     }
@@ -2139,13 +2139,13 @@
     }
 	
     slaves = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 1600
     }
 	
     slaves = {
-        culture = sara
+        culture = sudanic
         religion = sunni
         size = 500
     }
@@ -2153,25 +2153,25 @@
 #Lado (244000/61000 POPS)
 1846 = {
     aristocrats = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 1100
     }
 
     artisans = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 2100
     }
 
     soldiers = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 650
     }
 
     farmers = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 19380
     }
@@ -2201,7 +2201,7 @@
     }
 
     farmers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 600
     }
@@ -2280,19 +2280,19 @@
     }
 
     farmers = {
-        culture = lendu
+        culture = sudanic
         religion = animist
         size = 1710
     }
 
     slaves = {
-        culture = sara
+        culture = sudanic
         religion = animist
         size = 800
     }
 
     slaves = {
-        culture = sara
+        culture = sudanic
         religion = sunni
         size = 175
     }
@@ -2368,19 +2368,19 @@
 #Dunqish, former Kufra (16000/4000 POPS)
 1739 = {
     aristocrats = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 50
     }
 
     officers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 50
     }
 
     clergymen = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 50
     }
@@ -2392,13 +2392,13 @@
     }
 
     soldiers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 400
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 2000
     }
@@ -2758,25 +2758,25 @@
 
 3251 = {
     clergymen = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     artisans = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 50
     }
 
     soldiers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 200
     }

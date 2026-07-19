@@ -76,19 +76,19 @@
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 500
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 800
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2700
     }
@@ -353,13 +353,13 @@
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 1500
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 7950
     }
@@ -597,13 +597,13 @@
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 100
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1200
     }
@@ -615,19 +615,19 @@
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 500
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 1500
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 3000
     }

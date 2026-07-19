@@ -2953,6 +2953,7 @@ central_african = {
     leader = african
 
     unit = AfricanGC
+	#Bakongo
     bakongo = {
         color = { 87 154 62 }
         first_names = { Poaty Loembe M'voudoukousala Pratt N'Gangue M'voumbe Mfutila Kivuzi Nteve Kenje
@@ -2961,23 +2962,7 @@ central_african = {
         last_names = { "Ma Nombo" "Ma N'Sangou" N'Gombi Matou Mvemba Lukeni Mpanzu Nimi Nsindi
         }
     }
-    baguirmi = {
-        color = { 48 192 75 }
-        first_names = { Abdul Abu-Sekkin Burkomanda Ngarmane "Abd al-Rahman" Uthman Muhammad Malam Ngarmaba
-        }
-
-        last_names = { Ermanala Gawrang Qadir as-Saghir Mohammed al-Mahdi al-Kabir Bira
-        }
-        radicalism = 5
-    }
-    fang = {
-        color = { 164 45 180 }
-        first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
-        }
-
-        last_names = { Samba Atangana Tufoyn Kumong Yuh Nggam Ndi
-        }
-    }
+	#Kanuri
     kanuri = {
         color = { 189 142 177 }
         first_names = { Muhammad al-Amin Umar Mustapha Ahmad Dunama Ibrahim Ali Waziri Mamane
@@ -2986,86 +2971,99 @@ central_african = {
         last_names = { al-Kanemi Sayfawa Dalatumi Lefiami Kingibe Imam Gana
         }
     }
-    kuba = { #aka Bashong
-        color = { 166 72 57 }
-        first_names = { Kasongo Umpafu Ilunga Kisula Nday Kitamba Maloba Ndaye Kumwimba Maniema
-        }
-
-        last_names = { Nsungu Kukaya Ngombe Muzinga Kabale Konkola Kalombo Mande Nyembo
-        }
-    }
+	#Luba
     luba = {
-        color = { 87 45 69 }
+        color = { 40 100 75 }
         first_names = { Kasongo Umpafu Ilunga Kisula Nday Kitamba Maloba Ndaye Kumwimba Maniema
         }
 
         last_names = { Nsungu Kukaya Ngombe Muzinga Kabale Konkola Kalombo Mande Nyembo
         }
     }
+	#Lunda
     lunda = {
-        color = { 142 65 188 }
+        color = { 40 130 70 }
         first_names = { Kaumba Muteba Mushidi Mbala Mutand Mudib Kangapu Cimbindu Mbumb Cakasekene Mulay Nawej Cikombe Waranankong
         }
 
         last_names = { Kasang Nambing Kalong Mukaz Ditend Yaava Namwan Naweej Kamong Isot Kat Muteba
         }
     }
-    lendu = {
-        color = { 40 4 60 }
-        first_names = { Mateso Baudouin Katanga Yuda Padiri Dunia Mayele }
+	#Botatwe-Sabi
+	bemba = {
+        color = { 35 150 85 }
+        first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+        }
 
-        last_names = { Vaweka Apuobo Leku Ndjabu Ninga Adirodo Ngudjolo Lubanga Chui Koka Zaba Yakutumba Mudundu }
+        last_names = { Mwale Phiri Mkunkhuntha Mbewe Kalimakudzulu
+        }
     }
-    kingwana = {
-        color = { 211 228 113 }
-        first_names = { Bokobo Bomete Ilitosini Ndjandja }
-
-        last_names = { Taabwa Bwile Bembe Kabwari Buyu Bangubangu Zimba Kwami Tembo Nyanga Bhele Komo Nande }
-    }
+	#Chokwe
     chokwe = {
-        color = { 136 144 120 }
+        color = { 80 175 110 }
         first_names = { Kalembe    Kalembele Kambangaji Lundembe Ndembe Ngulu Tulembele Tumbangaji     }
 
         last_names = { Chokwe Lovale Balovale Nsongo }
     }
-    mongo = {
-        color = { 162 175 65 }
-        first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+	#Forest Bantu
+	forest_bantu = {
+		color = { 50 130 0 }
+        first_names = {
+			Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo
+			Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+			Kasongo Umpafu Ilunga Kisula Nday Kitamba Maloba Ndaye Kumwimba Maniema
+			Bokobo Bomete Ilitosini Ndjandja
         }
 
-        last_names = { Bolia Bokote Bongandu Ekonda Mbole Nkutu Ntomba Sengele Songomeno Dengese Tetela-Kusu
+        last_names = {
+			Bolia Bokote Bongandu Ekonda Mbole Nkutu Ntomba Sengele Songomeno Dengese Tetela-Kusu
+			Nsungu Kukaya Ngombe Muzinga Kabale Konkola Kalombo Mande Nyembo
+			Taabwa Bwile Bembe Kabwari Buyu Bangubangu Zimba Kwami Tembo Nyanga Bhele Komo Nande
         }
-    }
-    sara = {
-        color = { 145 64 125 }
-        first_names = { Nounga Zangabirou Tikima Ikpiro Mbomou Momi Abdul Abu-Sekkin Burkomanda Ngarmane "Abd al-Rahman" Uthman Muhammad Malam Ngarmaba
-        }
-
-        last_names = { Tombalbaye  Odingar Moungar Ermanala Gawrang Qadir as-Saghir Mohammed al-Mahdi al-Kabir Bira
-        }
-    }
-	#Toubou
-    teda = {
-        color = { 156 198 100 }
-        first_names = { Yusuf Raqib Muhammad Adham Ali Ibrahim Ahmad Yakob Kharut Salih Jawda
-        }
-
-        last_names = { "Abd al-Aziz" "Abda al-Karim" "Derret ibn Jawda" Arous as-Sarhir al-Sharif "ibn Yusuf" "ibn Ali"
-        }
-    }
-    ubangian = {
-        color = { 104 17 17 }
-        first_names = { Mahamat Hyacinthe Abdou Nassirou Abdoulaye Noureddine
-        }
-
-        last_names = { Sarandji Kamoun Nzapayeké Tiangaye Touadéra Dologuelé Samba-Panza Wodobodé Bozizé }
-    }
-    south_forest_bantu = {
-        color = { 233 237 16 }
+	}
+	#Mbundu-Kavango
+    southwest_bantu = {
+        color = { 140 190 40 }
         first_names = { Kaumba Muteba Mushidi Mbala Mutand Mudib Kangapu Cimbindu Mbumb Cakasekene Mulay Nawej Cikombe Waranankong
         }
 
         last_names = { Kasang Nambing Kalong Mukaz Ditend Yaava Namwan Naweej Kamong Isot Kat Muteba
+        }
+    }
+	#Northeast Bantu
+	northeast_bantu = {
+        color = { 85 140 70 }
+        first_names = { Mutesa Mwanga Kalema Kiweewa Ssemakookiro Jjunju Kyabaggo Namugala Kikulwe Kabulu
+        }
+
+        last_names = { Njovu Ndiga Ngo Nseenene Mmamba Ngonge Ngabi
+        }
+    }
+	#Swahili
+	swahili = {
+        color = { 84 96 204 }
+        first_names = { Ahmed Jabari Kamari Amiri  Asani Babu Balozi Darweshi Erevu Faraji Fupi Heri Hishima Ibada Huru Husani Imara Issa Jahidi Jalali Juma Jumaane Kafeel Khamisi Kifimbo Kivuli Kondo Lumbwi Machupa Mbwana Mosi Salehe Safi Zuberi
+        }
+
+        last_names = { Ahmed Jabari Kamari Amiri  Asani Babu Balozi Darweshi Erevu Faraji Fupi Heri Hishima Ibada Huru Husani Imara Issa Jahidi Jalali Juma Jumaane Kafeel Khamisi Kifimbo Kivuli Kondo Lumbwi Machupa Mbwana Mosi Salehe Safi Zuberi
+        }
+    }
+	#Beti-Pahuin
+    fang = {
+        color = { 164 45 180 }
+        first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+        }
+
+        last_names = { Samba Atangana Tufoyn Kumong Yuh Nggam Ndi
+        }
+    }
+	#Nyasa
+    chewa = {
+        color = { 100 160 40 }
+        first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+        }
+
+        last_names = { Mwale Phiri Mkunkhuntha Mbewe Kalimakudzulu
         }
     }
 }
@@ -3080,6 +3078,14 @@ east_african = {
 
         last_names = { Selassie Mikael Mariam Melekot Seged Wossen Makonnen Mengitsu Abbaba Dingil Hailu Giorgis }
     }
+	tigray = {
+        color = { 61 49 183 }
+        first_names = { Abraha Atsbaha Gidey "Mitslal Muz" Zenabu Ras Meles Isaias Petros Siye Gebru Abune Zeresenay Miruts Mesfin
+        }
+
+        last_names = { Teklehaymanot Seyoum Woldetinsae Yohannes Sehul Yessous Hagos Alula Mengesha
+        }
+    }
     afar = {
         color = { 198 46 99 }
         first_names = { Mahammad Umar Kedafu Alimirah Amda Baeda Kadhafo
@@ -3088,20 +3094,20 @@ east_african = {
         last_names = { Hanfadhe Yayyo Seyon Maryam Aydahis
         }
     }
-    azande = {
-        color = { 31 89 150 }
-        first_names = { Souau Mwerve Ngabwe Birhenjira Rutanganda Rugema Kabare Rugemaninzi Makome Bigomokero
+	somali = {
+        color = { 226 22 48 }
+        first_names = { Yusuf Mahamud Ahmed Osman Ali Aul Shire Mohamud Naleye Abdikarim Dalmar Ghdi Labaan Roble Taban Erasto Abdi
         }
 
-        last_names = { Nabushi Ntayitunda Muhigirwa
+        last_names = { Ibrahim Adeer Hassan  Gurey Hirsi Doreh Dekiye Afrah Mujahid Kenadid
         }
     }
-    baganda = {
-        color = { 98 155 187 }
-        first_names = { Mutesa Mwanga Kalema Kiweewa Ssemakookiro Jjunju Kyabaggo Namugala Kikulwe Kabulu
+	oromo = {
+        color = { 162 23 199 }
+        first_names = { Ras Debela Alemayehu Dirribi Heile Gobana Tsegaye Tilahun Waqo Ahmad Galasa Hailu Yilma Abadula Abdus
         }
 
-        last_names = { Njovu Ndiga Ngo Nseenene Mmamba Ngonge Ngabi
+        last_names = { Makonnen Dacche Mideksa Dinsa Turnsaa Gemeda Eabisa Demissie Gessesse
         }
     }
     beja = {
@@ -3112,23 +3118,24 @@ east_african = {
         last_names = { "ibn Nul" Likaylik "Ibn Badi" "Ibn Isma´il" Muhammad "Ibn Tabl" Rabihi "wad Rajab"
         }
     }
-    fur = {
-        color = { 84 75 91 }
-        first_names = { Mohammed Abu "Abd al-rahman" Ahmad Hussein Bush Harun Bulad Abdallahi Jussuf Ali
+    nuba = {
+        color = { 70 155 110 }
+        first_names = { Awin Akoc Nyidok Kwadker Ajang Dedunyal Kuikon Yor Kur Fadyet Fafiti Nyadwai Muko Wak Tyelgut Kodit Aney
         }
 
-        last_names = { Tayrab Bakri Badl Madyan al-Mahdi El-Fadl Khalid Ibrahim Dinar
+        last_names = { "wad Nyakwac" "wad Kudit" "wad Akwot" "wad Nyidok" "wad Ajang" "wad Kwadker" "wad Akoc" "wad Yor" "wad Kur"
         }
     }
-    kikuyu = {
-        color = { 145  114  95 }
-        first_names = { Gacoki Kanja Kirimi Kioi Muiru Mukanda Muthengi Nderitu Nyamu Riitho Runo Waitimu Wamungunda Wamwara Warui Kariuki Githinji Gitonga Hiuhu Ikinya Kiara Matu Murathi Mbogo Ngigi Muriu
+	#Nubian
+	sudanese = {
+        color = { 110  90  160 }
+        first_names = { Awin Akoc Nyidok Kwadker Ajang Dedunyal Kuikon Yor Kur Fadyet Fafiti Nyadwai Muko Wak Tyelgut Kodit Aney
         }
 
-        last_names = { Njoroge Maina Mwangi Wairia Njuguna Gitau Kiarie Mbugua Chege Manjiri Mamba Tene Agu Manduti Cuma Ciira Mathathi Ndemi Iregi Kinuthia Karanja Kinyanjui Nganga Gathuru
+        last_names = { "wad Nyakwac" "wad Kudit" "wad Akwot" "wad Nyidok" "wad Ajang" "wad Kwadker" "wad Akoc" "wad Yor" "wad Kur"
         }
     }
-    nilotic = {
+	nilotic = {
         color = { 156 156 89 }
         first_names = { Mbatian Lenana Segi Parasayip Koyati Kakenya Lekuton Olemeeli Meitikini 
 		Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa
@@ -3138,68 +3145,32 @@ east_african = {
 		Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo
         }
     }
-    nuba = {
-        color = { 70 155 110 }
-        first_names = { Awin Akoc Nyidok Kwadker Ajang Dedunyal Kuikon Yor Kur Fadyet Fafiti Nyadwai Muko Wak Tyelgut Kodit Aney
+	sudanic = {
+		color = { 156 198 100 }
+        first_names = {
+			Yusuf Raqib Muhammad Adham Ali Ibrahim Ahmad Yakob Kharut Salih Jawda
+			Mohammed Abu "Abd al-Rahman" Ahmad Hussein Bush Harun Bulad Abdallahi Jussuf Ali
+			Nounga Zangabirou Tikima Ikpiro Mbomou Momi Abdul Abu-Sekkin Burkomanda Ngarmane "Abd al-Rahman" Uthman Muhammad Malam Ngarmaba
+			Mateso Baudouin Katanga Yuda Padiri Dunia Mayele
         }
 
-        last_names = { "wad Nyakwac" "wad Kudit" "wad Akwot" "wad Nyidok" "wad Ajang" "wad Kwadker" "wad Akoc" "wad Yor" "wad Kur"
+        last_names = {
+			"Abd al-Aziz" "Abda al-Karim" "Derret ibn Jawda" Arous as-Sarhir al-Sharif "ibn Yusuf" "ibn Ali"
+			Tayrab Bakri Badl Madyan al-Mahdi El-Fadl Khalid Ibrahim Dinar
+			Ermanala Gawrang Qadir as-Saghir Mohammed al-Mahdi al-Kabir Bira
+			Tombalbaye Odingar Moungar Ermanala Gawrang Qadir as-Saghir Mohammed al-Mahdi al-Kabir Bira
+			Vaweka Apuobo Leku Ndjabu Ninga Adirodo Ngudjolo Lubanga Chui Koka Zaba Yakutumba Mudundu
         }
-    }
-	sudanese = {
-        color = { 110  90  160 }
-        first_names = { Awin Akoc Nyidok Kwadker Ajang Dedunyal Kuikon Yor Kur Fadyet Fafiti Nyadwai Muko Wak Tyelgut Kodit Aney
-        }
-
-        last_names = { "wad Nyakwac" "wad Kudit" "wad Akwot" "wad Nyidok" "wad Ajang" "wad Kwadker" "wad Akoc" "wad Yor" "wad Kur"
-        }
-    }
-    oromo = {
-        color = { 162 23 199 }
-        first_names = { Ras Debela Alemayehu Dirribi Heile Gobana Tsegaye Tilahun Waqo Ahmad Galasa Hailu Yilma Abadula Abdus
+	}
+	#Ubangi
+    ubangian = {
+        color = { 104 17 17 }
+        first_names = { Mahamat Hyacinthe Abdou Nassirou Abdoulaye Noureddine
         }
 
-        last_names = { Makonnen Dacche Mideksa Dinsa Turnsaa Gemeda Eabisa Demissie Gessesse
-        }
+        last_names = { Sarandji Kamoun Nzapayeké Tiangaye Touadéra Dologuelé Samba-Panza Wodobodé Bozizé }
     }
-    ruanda = {
-        color = { 184 21 46 }
-        first_names = { Yuhi Rwabuguri Sentwali Runihura Sebahive Nkundiushuti Kagame Nyillingondo Habimana Hakizimana Gahiji Dukuzumuremyi Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth }
-
-        last_names = { Musinga Gahindiro Rwogera Rutarindwa Mutara Ndahindurwa Rushatsi Ndagushimiye Senyamwisa Mutamo Serushambo Butama Rugamba Gisabo Mbikije }
-    }
-    somali = {
-        color = { 226 22 48 }
-        first_names = { Yusuf Mahamud Ahmed Osman Ali Aul Shire Mohamud Naleye Abdikarim Dalmar Ghdi Labaan Roble Taban Erasto Abdi
-        }
-
-        last_names = { Ibrahim Adeer Hassan  Gurey Hirsi Doreh Dekiye Afrah Mujahid Kenadid
-        }
-    }
-    swahili = {
-        color = { 84 96 204 }
-        first_names = { Ahmed Jabari Kamari Amiri  Asani Babu Balozi Darweshi Erevu Faraji Fupi Heri Hishima Ibada Huru Husani Imara Issa Jahidi Jalali Juma Jumaane Kafeel Khamisi Kifimbo Kivuli Kondo Lumbwi Machupa Mbwana Mosi Salehe Safi Zuberi
-        }
-
-        last_names = { Ahmed Jabari Kamari Amiri  Asani Babu Balozi Darweshi Erevu Faraji Fupi Heri Hishima Ibada Huru Husani Imara Issa Jahidi Jalali Juma Jumaane Kafeel Khamisi Kifimbo Kivuli Kondo Lumbwi Machupa Mbwana Mosi Salehe Safi Zuberi
-        }
-    }
-    tigray = {
-        color = { 61 49 183 }
-        first_names = { Abraha Atsbaha Gidey "Mitslal Muz" Zenabu Ras Meles Isaias Petros Siye Gebru Abune Zeresenay Miruts Mesfin
-        }
-
-        last_names = { Teklehaymanot Seyoum Woldetinsae Yohannes Sehul Yessous Hagos Alula Mengesha
-        }
-    }
-    lacustrine_bantu = {
-        color = { 128 175 93 }
-        first_names = { Mutesa Mwanga Kalema Kiweewa Ssemakookiro Jjunju Kyabaggo Namugala Kikulwe Kabulu
-        }
-
-        last_names = { Njovu Ndiga Ngo Nseenene Mmamba Ngonge Ngabi
-        }
-    }
+	#Ensetic
     ethiopian_minor = {
         color = { 100 0 15 }
         first_names = { Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa
@@ -3214,30 +3185,7 @@ southern_african = {
     leader = african
 
     unit = ZuluGC
-    chewa = {
-        color = { 88 88 88 }
-        first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
-        }
-
-        last_names = { Mwale Phiri Mkunkhuntha Mbewe Kalimakudzulu
-        }
-    }
-    bemba = {
-        color = { 18 88 48 }
-        first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
-        }
-
-        last_names = { Mwale Phiri Mkunkhuntha Mbewe Kalimakudzulu
-        }
-    }
-    herero = {
-        color = { 94 180 42 }
-        first_names = { Samuel Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
-        }
-
-        last_names = { Maharero Witbooi Tjavikwa Tjimba Hakawona vaKuvale vaZemba
-        }
-    }
+	#San
     khoisan = {
         color = { 122 46 133 }
         first_names = { Naresib Gabeb Gorakhab Oasib Na-khom Tsawub Gaob Hanab O-Naib Khaub Khomab Hab
@@ -3254,30 +3202,29 @@ southern_african = {
         last_names = { Tsiranana Ramanantsoa Ratsimandrava Andriamahazo Ratsiraka
         }
     }
+	#Nguni
     nguni = {
-        color = { 165 43 18 }
+        color = { 100 110 70 }
         first_names = { Kinjikitile Fambaltate Songea Ebabruma Mputa Mbemchapa Atepa Matola Magobi Rjoroza Wasesse Rinyizea Chapwanya Chakoma Kapola Kapungu Kindunda Kinjalla Kiwanga Mahengu Mburu Mhavanginonya Namkina Ngosingosi Schabruma Sentambandu Uawula Ulanga
         }
 
         last_names = { Ngwale Farhenga Chimai Amari Kwira Mtemi Hanga Mwanawalifa Mbano
         }
     }
-    southern_bantu = {
-        color = { 165 111 17 }
-        first_names = { Kinjikitile Fambaltate Songea Ebabruma Mputa Mbemchapa Atepa Matola Magobi Rjoroza Wasesse Rinyizea Chapwanya Chakoma Kapola Kapungu Kindunda Kinjalla Kiwanga Mahengu Mburu Mhavanginonya Namkina Ngosingosi Schabruma Sentambandu Uawula Ulanga
+	#Ruvuma-Makua
+	musanbiq_bantu = {
+		color = { 98 134 18 }
+        first_names = {
+			Kinjikitile Fambaltate Songea Ebabruma Mputa Mbemchapa Atepa Matola Magobi Rjoroza Wasesse Rinyizea Chapwanya Chakoma Kapola Kapungu Kindunda Kinjalla
+			Kiwanga Mahengu Mburu Mhavanginonya Namkina Ngosingosi Schabruma Sentambandu Uawula Ulanga
+			Chekandino Chikumbu Chisisi Kapendi Linje Lukongolo Mapira Masibuwa Ndembo Ngolinga Ngombe Thenga Umi Utni Citiwala Kajombo Mbiya
         }
 
-        last_names = { Ngwale Farhenga Chimai Amari Kwira Mtemi Hanga Mwanawalifa Mbano
+        last_names = {
+			Ngwale Farhenga Chimai Amari Kwira Mtemi Hanga Mwanawalifa Mbano
+			Hlatshwayo Ntabeni Mgayi "Gwaza Jere" Mmbelwa Mwamba Cimtunga
         }
-    }
-    ovimbundu = {
-        color = { 91 63 231 }
-        first_names = { Kakembembe Ciponge Cikunyu Kinya Nguvenge Kayangula Kahala Cingi Ngelo Ciasungu Kapoko Vilombo Hungulu Livonge Wambu
-        }
-
-        last_names = { Vasovava Hundungulu Njambayamina Ndunduma Cilemo Kanene Kaneketela Yale Cinene Kiapungo Kacingangu Kapusukusu Cimbungu
-        }
-    }
+	}
     sena = {
         color = { 81 212 142 }
         first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
@@ -3287,35 +3234,33 @@ southern_african = {
         }
     }
     shona = {
-        color = { 98 134 18 }
+        color = { 70 120 100 }
         first_names = { Zuka Sundai Tichawonna Sekayi Runako Petiri Pepukayi Mwanyisa Muchaneta Mashama Mboro Goredenna Gamba Chionesu Chinouyazue Banga
         }
 
         last_names = { Mzilikazi Lobengula Mlimo Soshangane Magaya Kwenda Muhuru Maraire
         }
     }
-    sotho = {
-        color = { 42 121 176 }
-        first_names = { Letsie Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+    sotho_tswana = {
+        color = { 120 150 110 }
+        first_names = {
+			Letsie Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo
+			Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+			Khama Bathoen Sebele Baruti Boipelu Gaone Kabelo Kedikilwe Kefentse Thabo Tale Mothudi Mosegi Mowen Moetapele Molefi Turnelo
         }
 
-        last_names = { Moshoeshoe Lerotholi Masopha Matsaba Leabua Mamohato
+        last_names = {
+			Moshoeshoe Lerotholi Masopha Matsaba Leabua Mamohato
+			Bakgatla Bakwna Balete Bamangwato Bangwaketse Barolong Batawana Batlokwa Batsapong Bakgalakgadi Bakalaka
         }
     }
+	#Tsonga-Chopi
     tonga = {
-        color = { 94 187 36 }
+        color = { 100 140 100 }
         first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
         }
 
         last_names = { Nyondo Muyila Kalagho Malokotela Sibale Chizimu Kayuni Panja
-        }
-    }
-    tswana = {
-        color = { 91 212 36 }
-        first_names = { Khama Bathoen Sebele Baruti Boipelu Gaone Kabelo Kedikilwe Kefentse Thabo Tale Mothudi Mosegi Mowen Moetapele Molefi Turnelo
-        }
-
-        last_names = { Bakgatla Bakwna Balete Bamangwato Bangwaketse Barolong Batawana Batlokwa Batsapong Bakgalakgadi Bakalaka
         }
     }
     xhosa = {
@@ -3324,14 +3269,6 @@ southern_african = {
         }
 
         last_names = { Behle Dosini Dlamini Gqunu Gxarha Hegebe Khawatu Khumalo Kwayi Maduna Qadi Rhadebe Ncuthu Mpemvu Sikhosana Xesibe Zangwa
-        }
-    }
-    yao = {
-        color = { 189 20 31 }
-        first_names = { Chekandino Chikumbu Chisisi Kapendi Linje Lukongolo Mapira Masibuwa Ndembo Ngolinga Ngombe Thenga Umi Utni Citiwala Kajombo Mbiya
-        }
-
-        last_names = { Hlatshwayo Ntabeni Mgayi "Gwaza Jere" Mmbelwa Mwamba Cimtunga
         }
     }
     zulu = {

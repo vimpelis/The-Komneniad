@@ -1,13 +1,11 @@
 capital = 1959
-primary_culture = fang
+primary_culture = forest_bantu
 culture = tiv
 culture = fulbe
 culture = hausa
-culture = baguirmi
+culture = sudanic
 culture = ubangian
-culture = bedouin
 culture = ibibio
-culture = sara
 culture = kanuri
 religion = protestant
 government = democracy

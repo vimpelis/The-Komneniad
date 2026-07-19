@@ -1330,3 +1330,23 @@ country_event = {
 		clr_country_flag = komneniad_menu
 	}
 }
+
+country_event = {
+    id = 169067
+    title = "test"
+    desc = "test"
+	picture = "india_map"
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = "Thanks!"
+		random_owned = {
+			limit = {
+				owner = { money = 30921 }
+			}
+			owner = { treasury = -30920 }
+			any_land_province = { random_pop = { money = 10 } }
+		}
+	}
+}

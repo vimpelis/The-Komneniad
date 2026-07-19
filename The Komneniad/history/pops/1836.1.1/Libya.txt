@@ -823,25 +823,25 @@
     }
 
     aristocrats = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 15
     }
 
     clergymen = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     artisans = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 50
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 1310
     }
@@ -937,31 +937,31 @@
     }
 
     aristocrats = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     clergymen = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     artisans = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 25
     }
 
     farmers = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 900
     }
@@ -973,7 +973,7 @@
     }
 
     slaves = {
-        culture = teda
+        culture = sudanic
         religion = sunni
         size = 500
     }

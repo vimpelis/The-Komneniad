@@ -2,31 +2,31 @@
 #Morogoro
 2354 = {
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 375
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 800
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 9000
     }
@@ -44,31 +44,31 @@
     }
 
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 50
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 50
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 7500
     }
@@ -118,37 +118,37 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 21000
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 50
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 50
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 200
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 50
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 16650
     }
@@ -192,67 +192,67 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 6000
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 50
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 50
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 200
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 50
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 2650
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1000
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 525
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2100
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 500
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 11750
     }
@@ -288,7 +288,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 7000
     }
@@ -332,133 +332,133 @@
     }
 
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 150
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 650
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 350
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 5000
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 5700
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = ibadi
         size = 400
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 275
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 650
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 100
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 250
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 50
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 6200
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 2000
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 5000
     }
@@ -496,19 +496,19 @@
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 650
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 1175
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 13500
     }
@@ -520,7 +520,7 @@
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 3000
     }
@@ -585,37 +585,37 @@
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 650
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 175
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 9000
     }
 	
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 1000
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 1000
     }
@@ -625,145 +625,145 @@
 #Songea (136000/34000 POPS)
 2040 = {
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 375
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 800
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 200
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 3425
     }
 
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 225
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 125
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 600
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 125
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 10925
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 3000
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2000
     }
 	
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 7900
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 500
     }
 
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 150
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 1000
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 9100
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 500
     }
@@ -811,163 +811,163 @@
     }
 	
 	aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 350
     }
 
     bureaucrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     officers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 45
     }
 	
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 500
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 3100
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 32200
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 9700
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 100
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 900
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 300
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2700
     }
 	
 	aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 475
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 250
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 250
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 2125
     }
 
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 400
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 11075
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 400
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 8075
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 1200
     }
@@ -975,121 +975,121 @@
 #Masasi (132000/33000 POPS)
 2041 = {
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 475
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 250
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 1100
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 250
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 11125
     }
 
     aristocrats = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 400
     }
 
     soldiers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 75
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 12575
     }
 
     slaves = {
-        culture = southern_bantu
+        culture = musanbiq_bantu
         religion = animist
         size = 7200
     }
 	
 	aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 350
     }
 	
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 150
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 500
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1100
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 9650
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 13500
     }
 
     farmers = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 7250
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = animist
         size = 3000
     }
 
     slaves = {
-        culture = yao
+        culture = musanbiq_bantu
         religion = sunni
         size = 2000
     }
@@ -1097,91 +1097,91 @@
 #Iringa (300000/75000 POPS)
 2042 = {
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 375
     }
 
     bureaucrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 70
     }
 
     officers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 35
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 800
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 3200
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 18825
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     bureaucrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 70
     }
 
     officers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 35
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 125
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 125
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 19650
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 3050
     }
@@ -1221,31 +1221,31 @@
 #Tabora (260000/65000 POPS)
 2043 = {
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1225
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 650
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2550
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1050
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 43550
     }
@@ -1257,43 +1257,43 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 7000
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2700
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 6000
     }
@@ -1307,37 +1307,37 @@
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1200
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 625
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2950
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1125
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 20320
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 11000
     }
@@ -1345,37 +1345,37 @@
 #Bunda
 2033 = {
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 125
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 125
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 9150
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 3000
     }
@@ -1419,97 +1419,97 @@
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 625
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1950
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 625
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 10100
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 11000
     }
 
     aristocrats = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 10
     }
 
     clergymen = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 50
     }
 
     soldiers = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 15
     }
 
     farmers = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 900
     }
 
     aristocrats = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 50
     }
 
     clergymen = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     soldiers = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 25
     }
 
     farmers = {
-        culture = ruanda
+        culture = northeast_bantu
         religion = animist
         size = 2700
     }
@@ -1517,92 +1517,92 @@
 #Ujiji (336000/84000 POPS)
 2046 = {
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1075
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 550
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2200
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1050
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 29500
     }
 
     aristocrats = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     clergymen = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 2000
     }
 }
 3675 = {
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1075
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 550
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2200
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 550
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 22750
     }
@@ -1644,31 +1644,31 @@
     }
 
     aristocrats = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     clergymen = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 200
     }
 
     soldiers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = south_forest_bantu
+        culture = southwest_bantu
         religion = animist
         size = 1350
     }
@@ -1682,13 +1682,13 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1250
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1500
     }
@@ -1730,37 +1730,37 @@
     }
 
     aristocrats = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 250
     }
 
     clergymen = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     artisans = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 400
     }
 
     soldiers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     farmers = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 7200
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 3800
     }
@@ -1808,31 +1808,31 @@
     }
 	
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 600
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 150
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 3650
     }
@@ -1880,13 +1880,13 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 800
     }
 
     slaves = {
-        culture = kikuyu
+        culture = northeast_bantu
         religion = animist
         size = 2000
     }
@@ -1962,37 +1962,37 @@
     }
 
     aristocrats = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 400
     }
 
     clergymen = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 200
     }
 
     artisans = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 1050
     }
 
     soldiers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 225
     }
 
     farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = sunni
         size = 19125
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 8000
     }
@@ -2036,7 +2036,7 @@
     }
 	
 	farmers = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 2000
     }

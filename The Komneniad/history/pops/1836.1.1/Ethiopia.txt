@@ -57,13 +57,13 @@
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = coptic
         size = 750
     }
 
     slaves = {
-        culture = fur
+        culture = sudanic
         religion = coptic
         size = 1400
     }
@@ -503,7 +503,7 @@
     }
 
     farmers = {
-        culture = fur
+        culture = sudanic
         religion = animist
         size = 3420
     }
@@ -2538,7 +2538,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1000
     }
@@ -2982,7 +2982,7 @@
     }
 
     slaves = {
-        culture = lacustrine_bantu
+        culture = northeast_bantu
         religion = animist
         size = 1500
     }

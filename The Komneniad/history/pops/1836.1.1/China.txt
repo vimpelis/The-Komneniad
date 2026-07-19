@@ -4239,7 +4239,7 @@
     }
 
     slaves = {
-        culture = ovimbundu
+        culture = southwest_bantu
         religion = animist
         size = 250
     }

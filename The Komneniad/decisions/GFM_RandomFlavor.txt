@@ -684,7 +684,7 @@ political_decisions = {
         }
 
         effect = {
-            add_accepted_culture = kuba
+            add_accepted_culture = forest_bantu
 			add_accepted_culture = luba
 			1984 = { add_core = THIS }
 			1986 = { add_core = THIS }

@@ -199,13 +199,13 @@
 #Kasema (136000/34000 POPS)
 2017 = {
     aristocrats = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 200
     }
 
     clergymen = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 100
     }
@@ -217,13 +217,13 @@
     }
 
     soldiers = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 150
     }
 
     farmers = {
-        culture = kingwana
+        culture = forest_bantu
         religion = animist
         size = 3050
     }
@@ -904,31 +904,31 @@
     }
 
     aristocrats = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 10
     }
 
     clergymen = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 50
     }
 
     soldiers = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 15
     }
 
     farmers = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 4500
     }
@@ -940,7 +940,7 @@
     }
 
     farmers = {
-        culture = herero
+        culture = southwest_bantu
         religion = animist
         size = 600
     }
@@ -984,61 +984,61 @@
 #Kasempa (40000/10000 POPS)
 2014 = {
     aristocrats = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 150
     }
 
     clergymen = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 325
     }
 
     soldiers = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = lunda
+        culture = bemba
         religion = animist
         size = 4150
     }
 
     aristocrats = {
-        culture = bemba
+        culture = lunda
         religion = animist
         size = 25
     }
 
     clergymen = {
-        culture = bemba
+        culture = lunda
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = tonga
+        culture = bemba
         religion = animist
         size = 100
     }
 
     soldiers = {
-        culture = bemba
+        culture = lunda
         religion = animist
         size = 25
     }
 
     farmers = {
-        culture = bemba
+        culture = lunda
         religion = animist
         size = 1900
     }
@@ -1058,31 +1058,31 @@
 #Monzo (108000/27000 POPS)
 2015 = {
     aristocrats = {
-        culture = tonga
+        culture = bemba
         religion = animist
         size = 475
     }
 
     clergymen = {
-        culture = tonga
+        culture = bemba
         religion = animist
         size = 250
     }
 
     artisans = {
-        culture = tonga
+        culture = bemba
         religion = animist
         size = 1100
     }
 
     soldiers = {
-        culture = tonga
+        culture = bemba
         religion = animist
         size = 250
     }
 
     farmers = {
-        culture = tonga
+        culture = bemba
         religion = animist
         size = 19000
     }

@@ -1,12 +1,12 @@
 capital = 2012
 primary_culture = lunda
-culture = south_forest_bantu
+culture = southwest_bantu
 culture = chewa
 culture = nguni
 culture = sena
 culture = bemba
 culture = chokwe
-culture = kingwana
+culture = forest_bantu
 culture = luba
 culture = tonga
 religion = protestant

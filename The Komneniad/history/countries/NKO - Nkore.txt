@@ -1,8 +1,6 @@
 capital = 2019
-primary_culture = baganda
-culture = lacustrine_bantu
+primary_culture = northeast_bantu
 culture = nilotic
-culture = ruanda
 religion = animist
 government = absolute_monarchy
 plurality = 0.0
