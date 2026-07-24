@@ -155,11 +155,6 @@ country_event = {
         clr_country_flag = rebels_in_capital
 
         random_owned = {
-            limit = { owner = { tag = XIN } }
-            owner = { remove_accepted_culture = uighur }
-        }
-
-        random_owned = {
             limit = {
                 owner = {
                     NOT = { ruling_party_ideology = fascist }
@@ -2270,7 +2265,7 @@ country_event = {
                 war = {
                     target = FROM
                     attacker_goal = {
-                        casus_belli = make_puppet_no_add_wargoal
+                        casus_belli = make_puppet_no_infamy
                     }
                 }
             }

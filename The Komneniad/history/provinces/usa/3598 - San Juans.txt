@@ -1,7 +1,6 @@
-owner = AYL
-controller = AYL
-trade_goods = cattle
-life_rating = 35
-terrain = staugustine
-add_core = AYL
-add_core = FLU
+owner = SOM
+controller = SOM
+add_core = SOM
+trade_goods = wool
+terrain = semidesert
+life_rating = 20

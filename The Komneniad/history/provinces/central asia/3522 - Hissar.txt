@@ -1,8 +1,6 @@
-owner = MGT
-controller = MGT
-add_core = TAJ
-add_core = KOK
-trade_goods = wool
-life_rating = 32
-terrain = dryhills
-add_core = MGT
+owner = FER
+controller = FER
+add_core = FER
+trade_goods = grain
+life_rating = 35
+terrain = hills

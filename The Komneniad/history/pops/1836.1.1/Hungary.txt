@@ -623,7 +623,7 @@
     farmers = {
         culture = south_german
         religion = catholic
-        size = 3303
+        size = 3300
     }
 
     officers = {

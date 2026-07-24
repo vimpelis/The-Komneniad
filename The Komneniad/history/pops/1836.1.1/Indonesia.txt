@@ -1149,7 +1149,7 @@
 }
 
 #Pematang Siantar (25000 POPS)
-3295 = {
+1412 = {
     clergymen = {
         culture = sumatran
         religion = animist

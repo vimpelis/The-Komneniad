@@ -201,12 +201,12 @@ army = {
     regiment = {
         name = "4th Infantry Regiment"
         type = infantry
-        home = 3269
+        home = 831
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 3604
+        home = 829
     }
     regiment = {
         name = "1st Artillery Regiment"

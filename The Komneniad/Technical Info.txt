@@ -1,0 +1,36 @@
+Event ID ranges:  
+150000 - Iberia  
+151000 - Byzantium  
+152000 - Russia  
+153000 - Carpathia  
+153200 - Hungary  
+154000 - ZPD  
+155000 - Germany  
+156000 - Brabant  
+157000 - British Isles  
+158000 - Northern Colombia  
+159000 - Hispanic Colombia  
+160000 - RUS-BYZ diplo  
+161000 - Ard Alhuriya  
+162000 - Antarctic  
+163000 - Afghanistan  
+164000 - India  
+165000 - China  
+166000 - SEAsia  
+167000 - South Africa  
+168000 - Arabia  
+169000 - Debug  
+170000 - Italy  
+171000 - Arles  
+172000 - France  
+173000 - Arajana
+174000 - Scandi  
+175000 - Ethiopia  
+176000 - Sudan
+177000 - Kurdistan
+178000 - MidEast
+179000 - Blights & Droughts
+180000 - Ideologies & Revolutions
+181000 - African Colonization
+182000 - Caucasus
+183000 - Central Asia 

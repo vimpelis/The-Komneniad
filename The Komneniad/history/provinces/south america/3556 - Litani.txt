@@ -1,3 +1,7 @@
-trade_goods = grain
+owner = IRY
+controller = IRY
+add_core = IRY
+add_core = MGL
+trade_goods = wool
+life_rating = 32 
 terrain = desert
-life_rating = 1

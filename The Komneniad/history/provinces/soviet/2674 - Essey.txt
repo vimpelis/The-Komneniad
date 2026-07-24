@@ -1,8 +1,6 @@
-owner = RUS
-controller = RUS
-add_core = RUS
-add_core = SIB
-add_core = ALT
+owner = URI
+controller = URI
+add_core = URI
 trade_goods = timber
 life_rating = 35
-colonial = 2
+

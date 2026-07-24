@@ -1,0 +1,34 @@
+RUS = { value = -200 }
+FER = { value = -100 }
+IRY = { value = -25 }
+MGT = { value = -50 }
+CHR = { value = -100 }
+URI = { value = -25 }
+
+army = {
+    name = "Argyn Host"
+    location = 2606
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 2606
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1187
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 3603
+    }
+}
+
+leader = {
+    name = "Zhanarys Khan"
+    type = land
+    date = 1818.1.1
+    background = attack_1.1
+    personality = defence_1.1
+}

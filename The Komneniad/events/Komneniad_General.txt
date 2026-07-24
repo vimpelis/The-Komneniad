@@ -490,7 +490,7 @@ country_event = {
 		#Turki Empire
 		TUR = { all_core = { add_core = TUR secede_province = THIS secede_province = TUR } }
 		MGT = { all_core = { add_core = TUR secede_province = THIS secede_province = TUR } }
-		KOK = { all_core = { add_core = TUR } }
+		FER = { all_core = { add_core = TUR } }
 		KAZ = { all_core = { add_core = TUR } }
 		1190 = { remove_core = TUR }
 		1182 = { remove_core = TUR }
@@ -552,19 +552,6 @@ country_event = {
 		1299 = { add_core = HYD secede_province = THIS secede_province = HYD }
 		1301 = { add_core = HYD secede_province = THIS secede_province = HYD }
 		1297 = { add_core = HYD secede_province = THIS secede_province = HYD }
-		#Oirat
-		1187 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		1188 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		1186 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		1067 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		1068 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		2674 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		2691 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		1469 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		1488 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		1535 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		CHI_1600 = { add_core = TNT secede_province = THIS secede_province = TNT }
-		CHI_1468 = { add_core = TNT secede_province = THIS secede_province = TNT }
 		#Ethiopia
 		EGY = { all_core = { add_core = ETH } }
 		SUD = { all_core = { add_core = ETH } }
@@ -583,7 +570,7 @@ country_event = {
 		1828 = { add_core = ETH secede_province = THIS secede_province = ETH }
 		1839 = { add_core = ETH secede_province = THIS secede_province = ETH }
 		ETH_3590 = { add_core = ETH secede_province = THIS secede_province = ETH }
-		3434 = { add_core = ETH secede_province = THIS secede_province = ETH }
+		3598 = { add_core = ETH secede_province = THIS secede_province = ETH }
 		1867 = { add_core = ETH secede_province = THIS secede_province = ETH }
 		1873 = { add_core = ETH secede_province = THIS secede_province = ETH }
 		1872 = { add_core = ETH secede_province = THIS secede_province = ETH }
@@ -712,7 +699,6 @@ country_event = {
 			2096 = { add_core = SAF secede_province = THIS secede_province = SAF }
 			2097 = { add_core = SAF secede_province = THIS secede_province = SAF }
 			2098 = { add_core = SAF secede_province = THIS secede_province = SAF }
-			44 = { add_core = SAF secede_province = THIS secede_province = SAF }
 			#Hausaland
 			SOK = { government = democracy }
 			MLI_1927 = { add_core = SOK secede_province = THIS secede_province = SOK }

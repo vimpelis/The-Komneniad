@@ -1439,8 +1439,6 @@ country_event = {
         name = "Perhaps this day will be tomorrow."
 		prestige = 5
 		any_pop = { militancy = -1 }
-		set_country_flag = KDS_empire_activated
-		KDS_empire_activation_tt = {}
     }
 }
 

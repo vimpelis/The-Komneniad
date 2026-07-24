@@ -3,5 +3,6 @@ controller = MGT
 add_core = KHI
 trade_goods = slave_trading
 life_rating = 35
-terrain = khiva
+terrain = plains
 add_core = MGT
+add_core = FER

@@ -1942,7 +1942,7 @@
         size = 6500
     }
 }
-3604 = {
+829 = {
     aristocrats = {
         culture = pontic
         religion = orthodox
@@ -2009,7 +2009,7 @@
         size = 7500
     }
 }
-3269 = {
+831 = {
     aristocrats = {
         culture = pontic
         religion = orthodox

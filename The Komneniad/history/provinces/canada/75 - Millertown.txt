@@ -2,6 +2,6 @@ owner = FRA
 controller = FRA
 add_core = ACA
 trade_goods = iron
-terrain = portauxbasques
+terrain = forest
 life_rating = 35
 colonial = 2

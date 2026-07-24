@@ -1,0 +1,26 @@
+RUS = { value = 100 }
+FER = { value = -200 }
+IRY = { value = -200 }
+MGT = { value = -50 }
+CHR = { value = -200 }
+KAZ = { value = -25 }
+
+army = {
+    name = "Uriankhai Host"
+    location = 2608
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 2679
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 2679
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 2608
+    }
+}

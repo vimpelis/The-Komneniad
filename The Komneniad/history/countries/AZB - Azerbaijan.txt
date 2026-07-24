@@ -58,7 +58,6 @@ set_country_flag = shiite_country
 foreign_training = yes_foreign_training
 foreign_weapons = yes_foreign_weapons
 foreign_artillery = yes_foreign_artillery
-education_reform = yes_education_reform
 
 #Inventions
 

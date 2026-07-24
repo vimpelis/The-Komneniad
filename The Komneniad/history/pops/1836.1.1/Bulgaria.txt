@@ -1279,8 +1279,6 @@
         size = 6965
     }
 }
-3303 = {
-}
 #Dobruja Region (84000) #see Romania.txt for balance of Region
 #under the rule of the Ottoman Empire in 1836
 #Silistre (84000/21000 POPS) #now part of Bulgaria

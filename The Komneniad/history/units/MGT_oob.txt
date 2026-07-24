@@ -7,6 +7,11 @@ leader = {
     prestige = 0.7
 }
 TUR = { value = -200 }
+FER = { value = -200 }
+KND = { value = -200 }
+AZB = { value = -200 }
+BLC = { value = -100 }
+BDK = { value = -100 }
 
 army = {
     name = "1st Army"
@@ -149,7 +154,7 @@ army = {
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 3522
+        home = 1204
     }
     regiment = {
         name = "2nd Infantry Regiment"

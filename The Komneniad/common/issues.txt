@@ -1075,6 +1075,7 @@ economic_reforms = {
         yes_admin_reform = {
             technology_cost = 12500
             administrative_efficiency_modifier = 0.1
+			mobilisation_size = 0.02
             civilization_progress_modifier = 0.1
 			
             allow = { OR = { NOT = { has_country_flag = lacking_writing_system } ai = yes } OR = { ai = no year = 1860 NOT = { has_country_flag = ETH_regency_lvl_7 has_country_flag = ETH_regency_lvl_6 has_country_flag = ETH_regency_lvl_5 has_country_flag = ETH_regency_lvl_4 } } }
@@ -1443,6 +1444,7 @@ military_reforms = {
             core_pop_militancy_modifier = -0.01
             core_pop_consciousness_modifier = -0.01
             supply_consumption = -0.05
+			mobilisation_size = 0.05
         }
         yes_foreign_weapons = {
             land_defense_modifier = 0.1

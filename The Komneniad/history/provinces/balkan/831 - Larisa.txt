@@ -1,3 +1,8 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+owner = BYZ
+controller = BYZ
+add_core = BYZ
+trade_goods = timber
+life_rating = 35
+terrain = forest_hills
+add_core = ANT
+add_core = PNT

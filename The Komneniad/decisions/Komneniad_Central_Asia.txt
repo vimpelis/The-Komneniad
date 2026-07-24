@@ -16,12 +16,12 @@ political_decisions = {
 					3298 = { empty = yes }
 				}
 				AND = {
-					owns = 1183
-					2702 = { empty = yes }
-				}
-				AND = {
 					owns = 1194
 					2656 = { empty = yes }
+				}
+				AND = {
+					owns = 2606
+					3602 = { empty = yes }
 				}
 			}
 		}
@@ -34,8 +34,330 @@ political_decisions = {
 			random_owned = { limit = { 1205 = { empty = yes } owner = { owns = 3505 } } 1205 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			random_owned = { limit = { 29 = { empty = yes } owner = { owns = 3441 } } 29 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			random_owned = { limit = { 3298 = { empty = yes } owner = { owns = 1193 } } 3298 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
-			random_owned = { limit = { 2702 = { empty = yes } owner = { owns = 1183 } } 2702 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
 			random_owned = { limit = { 2656 = { empty = yes } owner = { owns = 1194 } } 2656 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 3602 = { empty = yes } owner = { owns = 2606 } } 3602 = { secede_province = THIS any_pop = { literacy = -0.99 } } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FER_form_mavarannahr = {
+		picture = samarkand_decispic
+		potential = {
+			tag = FER
+			has_country_flag = FER_demir_pasha
+			NOT = { exists = ATM }
+		}
+		allow = {
+			all_core = { OR = { owned_by = THIS empty = yes } }
+			war = no
+		}
+		effect = {
+			prestige = 25
+			change_tag = ATM
+			country_event = 183001
+			any_country = {
+				limit = { tag = ALT vassal_of = THIS }
+				all_core = { add_core = THIS }
+				annex_to = THIS
+			}
+			KHI_1191 = { remove_core = FER }
+			KHI_1200 = { remove_core = FER }
+			TAJ_1208 = { remove_core = FER }
+			CHI_1594 = { remove_core = FER }
+			29 = { remove_core = FER }
+			clr_country_flag = FER_demir_pasha
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	FER_form_sakarman = {
+		picture = samarkand_decispic
+		potential = {
+			tag = ATM
+			has_country_flag = FER_sakarman_ambition
+		}
+		allow = {
+			all_core = { OR = { owned_by = THIS empty = yes } }
+			owns = 1135
+			NOT = { exists = TUR }
+			war = no
+		}
+		effect = {
+			prestige = 25
+			change_tag = TUR
+			PER_1136 = { add_core = TUR }
+			PER_1127 = { add_core = TUR }
+			PER_1120 = { add_core = TUR }
+			PER_1122 = { add_core = TUR }
+			PER_1112 = { add_core = TUR }
+			PER_1121 = { add_core = TUR }
+			PER_1130 = { add_core = TUR }
+			PER_1148 = { add_core = TUR }
+			AFG_1212 = { add_core = TUR }
+			AFG_1214 = { add_core = TUR }
+			PER_1140 = { add_core = TUR }
+			RUS_1196 = { add_core = TUR }
+			PER_1116 = { add_core = TUR }
+			ATM = { all_core = { remove_core = ATM } }
+			clr_country_flag = FER_sakarman_ambition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ATM_form = {
+		picture = samarkand_decispic
+		potential = {
+			OR = {
+				primary_culture = sart
+				primary_culture = kazak
+			}
+			NOT = { tag = FER has_country_flag = FER_demir_pasha }
+			NOT = { tag = TUR }
+			NOT = { tag = IRA }
+			NOT = { exists = ATM }
+		}
+		allow = {
+			civilized = yes
+			owns = 1191
+			owns = 1198
+			owns = 1202
+			war = no
+		}
+		effect = {
+			prestige = 15
+			change_tag = ATM
+			add_accepted_culture = kazak
+			add_accepted_culture = sart
+			KHI_1191 = { add_core = ATM }
+			KHI_1200 = { add_core = ATM }
+			TAJ_1208 = { add_core = ATM }
+			KHI_1195 = { add_core = ATM }
+			KHI_3298 = { add_core = ATM }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	RUS_gateway_to_central_asia = {
+		picture = samarkand_decispic
+		potential = {
+			tag = RUS
+			owns = 1184
+			NOT = { has_country_flag = RUS_steppe_expansion }
+		}
+		allow = {
+			state_n_government = 1
+			KAZ = {
+				OR = {
+					exists = no
+					in_sphere = THIS
+				}
+			}
+			war = no
+		}
+		effect = {
+			prestige = 5
+			RUS_imperialism_activate_tt = {}
+			any_country = {
+				limit = { tag = KAZ in_sphere = THIS }
+				annex_to = THIS
+			}
+			set_country_flag = RUS_steppe_expansion
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ATM_new_rgos = {
+        picture = commodities_in_central_asia
+        potential = {
+			year = 1850
+            OR = {
+				owns = 1191
+				owns = 3441
+				owns = 1195
+				owns = 1199
+				owns = 1206
+				owns = 1189
+				owns = 1190
+				owns = 1196
+				owns = 1208
+			}
+            NOT = { has_country_flag = ATM_new_rgos }
+        }
+
+        allow = {
+            war = no
+            money = 50000
+            OR = {
+                market_determined_exchange_rates = 1
+                AND = {
+                    year = 1880
+                    economic_policy = planned_economy
+                    modern_central_bank_system = 1
+                    investment_banks = 1
+                }
+                AND = {
+                    year = 1905
+                    business_regulations = 1
+                }
+            }
+        }
+
+        effect = {
+            set_country_flag = ATM_new_rgos
+			ATM_new_rgos_tt = {}
+            treasury = -50000
+			any_owned = {
+				limit = {
+					province_id = 1191
+					NOT = { trade_goods = cotton }
+				}
+				1191 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 3441
+					NOT = { trade_goods = cotton }
+				}
+				3441 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1190
+					NOT = { trade_goods = cotton }
+				}
+				1190 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1196
+					NOT = { trade_goods = cotton }
+				}
+				1196 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1206
+					NOT = { trade_goods = cotton }
+				}
+				1206 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1195
+					NOT = { trade_goods = silk }
+				}
+				1195 = { trade_goods = silk }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1199
+					NOT = { trade_goods = silk }
+				}
+				1199 = { trade_goods = silk }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1189
+					NOT = { trade_goods = coal }
+				}
+				1189 = { trade_goods = coal }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1208
+					NOT = { trade_goods = gold }
+				}
+				1208 = { trade_goods = gold }
+			}
+        }
+        ai_will_do = { factor = 1 }
+    }
+	
+	RUS_integrate_URI = {
+		picture = junggar_pic
+		potential = {
+			tag = RUS
+			has_global_flag = URI_russia_integration_available
+			exists = URI
+		}
+		allow = {
+			URI = {
+				in_sphere = THIS
+				war = no
+			}
+			war = no
+		}
+		effect = {
+			badboy = 4
+			URI = { country_event = 183013 }
+			clr_global_flag = URI_russia_integration_available
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	JUN_form = {
+		picture = junggar_pic
+		potential = {
+			OR = {
+				tag = CHR
+				tag = URI
+			}
+			NOT = { exists = JUN }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			1600 = { owned_by = THIS }
+			1068 = { owned_by = THIS }
+			war = no
+		}
+		effect = {
+			prestige = 10
+			change_tag = JUN
+			add_accepted_culture = tatar
+			CHI_1468 = { add_core = THIS }
+			CHI_1600 = { add_core = THIS }
+			RUS_1185 = { add_core = THIS }
+			1067 = { add_core = THIS }
+			2698 = { add_core = THIS }	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	JUN_unite_mongolia = {
+		picture = junggar_pic
+		potential = {
+			tag = JUN
+			NOT = { has_country_flag = JUN_unite_mongolia }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			prestige = 50
+			war = no
+		}
+		effect = {
+			badboy = 15
+			add_accepted_culture = mongol
+			CHI_1599 = { add_core = THIS }
+			CHI_1465 = { add_core = THIS }
+			CHI_1532 = { add_core = THIS }
+			CHI_1613 = { add_core = THIS }
+			RUS_1079 = { add_core = THIS }
+			set_country_flag = JUN_unite_mongolia
 		}
 		ai_will_do = {
 			factor = 1

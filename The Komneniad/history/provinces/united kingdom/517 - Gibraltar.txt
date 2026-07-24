@@ -1,4 +1,6 @@
-trade_goods = fruit
-life_rating = 15
-terrain = montane_forest
-add_core = KAF
+owner = ADU
+controller = ADU
+add_core = ADU
+trade_goods = wool
+life_rating = 35
+terrain = farmlands

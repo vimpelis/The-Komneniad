@@ -1,0 +1,439 @@
+#Ferghana starting event
+country_event = {
+    id = 183000
+    title = "To Restore the Old"
+    desc = "183000DESC"
+    picture = "samarkand_pic"
+
+    is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = FER_demir_pasha
+	}
+
+    option = {
+        name = "A race against time, a battle with the past!"
+		add_country_modifier = { name = FER_old_stocks duration = 3650 }
+    }
+}
+
+country_event = {
+    id = 183001
+    title = "The Old, Restored"
+    desc = "183001DESC"
+    picture = "samarkand_pic"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "To Shiraz we go!"
+		add_accepted_culture = uighur
+		national_unification_available = {}
+		set_country_flag = FER_sakarman_ambition
+		ai_chance = { factor = 3 }
+    }
+	
+	option = {
+        name = "Actually, we are content with our lot. Long live Mavarannahr!"
+		any_pop = {
+			militancy = -2
+			consciousness = -2
+		}
+		add_accepted_culture = tajik
+		add_accepted_culture = uighur
+		add_country_modifier = { name = FER_inward_perfection duration = 7300 }
+		ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = 183002
+    title = "The Demise of Demir Pasha"
+    desc = "183002DESC"
+    picture = "samarkand_pic"
+
+    trigger = {
+		tag = FER
+		has_country_flag = FER_demir_pasha
+		year = 1838
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 720
+    }
+
+    option = {
+        name = "It can finally be put to rest."
+		prestige = -5
+		add_country_modifier = { name = military_strife duration = 3650 }
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		KHI_1191 = { remove_core = THIS secede_province = KHI }
+		KHI_1200 = { remove_core = THIS secede_province = MGT }
+		TAJ_1208 = { remove_core = THIS secede_province = TAJ }
+		29 = { remove_core = THIS }
+		government = absolute_monarchy
+		clr_country_flag = FER_demir_pasha
+		release_vassal = ALT
+		ALT = { country_event = 183003 }
+    }
+}
+
+country_event = {
+    id = 183003
+    title = "The Demise of Demir Pasha"
+    desc = "183003DESC"
+    picture = "samarkand_pic"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Prepare the defences..."
+		government = absolute_monarchy
+		leave_alliance = FROM
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		random_owned = {
+			limit = {
+				IRY = {
+					neighbour = THIS
+					total_amount_of_divisions = 1
+					NOT = { war_with = THIS }
+				}
+			}
+			IRY = { country_event = { id = 183004 days = 30 } }
+		}
+    }
+}
+
+country_event = {
+    id = 183004
+    title = "Opportunity in Kashgar"
+    desc = "183004DESC"
+    picture = "samarkand_pic"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Let's finally get them."
+		badboy = 4
+		ALT = { all_core = { add_core = THIS } }
+		war = {
+			target = THIS
+			attacker_goal = { casus_belli = conquest_any }
+		}
+		ai_chance = { factor = 1 }
+    }
+	
+	option = {
+        name = "Let them be for now, we've got enough trouble on our hands."
+		prestige = -5
+		ai_chance = {
+			factor = 1
+			modifier = {
+                factor = 0
+				NOT = { badboy = 0.8 }
+            }
+		}
+    }
+}
+
+country_event = {
+    id = 183005
+    title = "Unification of Alash Tribes"
+    desc = "183005DESC"
+    picture = "samarkand_pic"
+
+    trigger = {
+		tag = KAZ
+		government = absolute_empire
+		all_core = { OR = { owned_by = THIS empty = yes } }
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Aqzhol!"
+		prestige = 15
+		government = absolute_monarchy
+		years_of_research = 10
+    }
+}
+
+country_event = {
+    id = 183006
+    title = "Formation of the Steppe Kraj"
+    desc = "183006DESC"
+    picture = "russiavsasia"
+
+    trigger = {
+		tag = RUS
+		NOT = { exists = KAZ }
+		KAZ = { all_core = { OR = { owned_by = THIS empty = yes } } }
+		war = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Wonderful."
+		prestige = 5
+		KAZ = { government = colonial_company }
+		2611 = { change_province_name = "Kostanaj" life_rating = 5 }
+		2612 = { change_province_name = "Akkol" life_rating = 5 }
+		3603 = { change_province_name = "Ulutaj" life_rating = 5 }
+		3603 = { change_province_name = "Aktavskoe" life_rating = 5 }
+		1187 = { change_province_name = "Karkaraly" life_rating = 5 }
+		3601 = { change_province_name = "Kazalinsk" life_rating = 5 }
+    }
+}
+
+country_event = {
+    id = 183007
+    title = "Russian Flag over Central Asia"
+    desc = "183007DESC"
+    picture = "russiavsasia"
+
+    trigger = {
+		tag = RUS
+		has_country_flag = RUS_steppe_expansion
+		owns = 1198
+		owns = 1191
+		owns = 1202
+		war = no
+		NOT = { exists = ATM }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+	
+	immediate = {
+		ATM = { government = colonial_company add_accepted_culture = russian }
+		KHI_1191 = { add_core = ATM }
+		KHI_1200 = { add_core = ATM }
+		TAJ_1208 = { add_core = ATM }
+		KHI_1195 = { add_core = ATM }
+		KHI_3298 = { add_core = ATM }
+		economic_reform = finance_reform_two
+		economic_reform = yes_pre_indust
+		economic_reform = yes_industrial_construction
+		economic_reform = yes_firearms_production
+		economic_reform = yes_research_reform
+		economic_reform = monetary_reform_two
+	}
+
+    option = {
+        name = "Russia will administer those lands directly."
+		prestige = 15
+    }
+	
+	option = {
+        name = "Let's delegate governance to locals."
+		release_vassal = ATM
+		ATM = { government = colonial_company }
+    }
+}
+
+country_event = {
+    id = 183008
+    title = "Anti-Russian Revolt"
+    desc = "183008DESC"
+    picture = "russiavsasia"
+
+    trigger = {
+		tag = KAZ
+		in_sphere = RUS
+		government = absolute_empire
+		is_vassal = no
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Let's do it."
+		add_country_modifier = { name = uprising_10percent_mob_modf duration = 1825 }
+		RUS = {
+			diplomatic_influence  = { who = KAZ value = -400 }
+			relation  = { who = KAZ value = -400 }
+			country_event = 183009
+		}
+    }
+	
+	option = {
+        name = "It's fine."
+		prestige = -5
+    }
+}
+
+country_event = {
+    id = 183009
+    title = "The Alash Revolt"
+    desc = "183009DESC"
+    picture = "russiavsasia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Crush them!"
+		war = {
+			target = KAZ
+			attacker_goal = { casus_belli = conquest_any }
+		}
+    }
+	
+	option = {
+        name = "We are busy right now, let them go."
+		prestige = -5
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 183010
+    title = "Subjugation of the Turgai Steppe"
+    desc = "183010DESC"
+    picture = "russiavsasia"
+
+    trigger = {
+		year = 1839
+		owns = 2606
+		2612 = { empty = yes }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 30
+    }
+
+    option = {
+        name = "Wonderful."
+		2612 = { secede_province = THIS }
+    }
+}
+
+country_event = {
+    id = 183011
+    title = "Russia suggests deeper Integration"
+    desc = "183011DESC"
+    picture = "russiavsasia"
+
+    trigger = {
+		tag = URI
+		year = 1859
+		in_sphere = RUS
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 365
+    }
+
+    option = {
+        name = "The deal is really lucrative."
+		years_of_research = 10
+		economic_reform = yes_pre_indust
+		economic_reform = monetary_reform_two
+		RUS = { country_event = 183012 }
+		set_global_flag = URI_russia_integration_available
+		ai_chance = { factor = 1 }
+    }
+	
+	option = {
+        name = "Thank you, we're fine."
+		any_pop = {
+			militancy = 2
+			consciousness = 2
+		}
+		set_global_flag = URI_russia_integration_available
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 183012
+    title = "Trouble in the Uriankhai"
+    desc = "183012DESC"
+    picture = "russiavsasia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "These goldmines are going to be really useful."
+		create_vassal = URI
+    }
+}
+
+country_event = {
+    id = 183013
+    title = "Russia demands Integration"
+    desc = "183013DESC"
+    picture = "russiavsasia"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "We accept."
+		annex_to = RUS
+    }
+	
+	option = {
+        name = "Out of here, Russian! Tuvans never surrender!"
+		RUS = { country_event = 183014 }
+		add_country_modifier = { name = uprising_10percent_mob_modf duration = 1825 }
+		ammunition = 10
+		define_general = {
+			name = "Zergi Shoigu"
+			personality = defence_3.1
+			background = attack_minus_1.1
+		}
+		ai_chance = { factor = 0 }
+    }
+}
+
+country_event = {
+    id = 183014
+    title = "The Uriankhai Revolt"
+    desc = "183014DESC"
+    picture = "russiavsasia"
+
+    is_triggered_only = yes
+	
+	option = {
+        name = "The March of Justice begins!"
+		war = {
+			target = URI
+			attacker_goal = { casus_belli = conquest_any }
+		}
+		ammunition = -10
+		define_general = {
+			name = "Evgenij Prigozhin"
+			personality = defence_1.1
+			background = attack_4.1
+		}
+    }
+}

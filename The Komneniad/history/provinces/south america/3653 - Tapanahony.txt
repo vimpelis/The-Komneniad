@@ -1,3 +1,6 @@
-trade_goods = grain
-terrain = desert
-life_rating = 1
+owner = FER
+controller = FER
+add_core = FER
+trade_goods = fruit
+life_rating = 35
+terrain = mountain

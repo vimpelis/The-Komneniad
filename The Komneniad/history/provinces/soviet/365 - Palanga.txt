@@ -1,6 +1,7 @@
-owner = MUS
-controller = MUS
-add_core = KUT
-add_core = HND
-trade_goods = cotton
-life_rating = 32
+owner = LIT
+controller = LIT
+add_core = LIT
+add_core = LIT
+trade_goods = cattle
+life_rating = 35 
+terrain = forest

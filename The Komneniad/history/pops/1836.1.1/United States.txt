@@ -176,7 +176,7 @@
     }
 }
 #Dutch Harbor/Unalaska (2000/500 POPS)
-3601 = {
+3400 = {
     clergymen = {
         culture = russian
         religion = orthodox
@@ -314,8 +314,8 @@
         size = 3250
     }
 }
-#San Juan Islands (12000/3000 POPS)
-3598 = {
+#Moscoso
+44 = {
     farmers = {
         culture = fluvialean
         religion = catholic
@@ -372,7 +372,7 @@
         size = 575
     }
 }
-3600 = {
+3434 = {
     artisans = {
         culture = californian
         religion = catholic
@@ -3509,7 +3509,7 @@
         size = 1000
     }
 }
-1862 = {
+45 = {
     clergymen = {
         culture = cree
         religion = animist
@@ -4955,7 +4955,6 @@
 }
 #"ruled" by Texas/de facto under Native Control
 #Fort Parker, Former Dallas (4400/1100 POPS)
-#3599
 134 = {
     clergymen = {
         culture = riograndense
@@ -5018,7 +5017,6 @@
     }
 }
 #Lubbock (8000/2000 POPS)
-#3598
 135 = {
     clergymen = {
         culture = riograndense

@@ -1,7 +1,4 @@
-owner = ADU
-controller = ADU
-add_core = MLD
-add_core = HND
-trade_goods = fish
-life_rating = 32
-terrain = small_island
+add_core = KAZ
+trade_goods = wool
+life_rating = 25
+terrain = desert

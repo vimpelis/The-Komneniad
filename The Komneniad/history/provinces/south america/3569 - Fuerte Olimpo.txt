@@ -1,3 +1,7 @@
+owner = IRY
+controller = IRY
+add_core = IRY
+add_core = MGL
 trade_goods = grain
-terrain = desert
-life_rating = 1
+life_rating = 32
+terrain = dryhills

@@ -15,6 +15,14 @@ political_decisions = {
 				}
 			}
 			NOT = {	exists = IRA }
+			NOT = {
+				tag = TUR
+				OR = {
+					government = absolute_empire
+					government = semi_constitutional_empire
+					government = constitutional_empire
+				}
+			}
 		}
 		allow = {
 			civilized = yes
@@ -45,8 +53,18 @@ political_decisions = {
 	IRA_eat_iraq = {
 		picture = greater_iran
 		potential = {
-			tag = IRA
-			NOT = { 926 = { is_core = IRA } }
+			OR = {
+				tag = IRA
+				AND = {
+					tag = TUR
+					OR = {
+						government = absolute_empire
+						government = semi_constitutional_empire
+						government = constitutional_empire
+					}
+				}
+			}
+			NOT = { 926 = { is_core = THIS } }
 		}
 		allow = {
 			OR = {
@@ -58,7 +76,7 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 10
-			IRQ = { all_core = { add_core = IRA } }
+			IRQ = { all_core = { add_core = THIS } }
 		}
 		ai_will_do = {
 			factor = 1
@@ -72,9 +90,19 @@ political_decisions = {
 	IRA_secure_gulf = {
 		picture = persian_gulf
 		potential = {
-			tag = IRA
-			926 = { is_core = IRA }
-			NOT = { 1167 = { is_core = IRA } }
+			OR = {
+				tag = IRA
+				AND = {
+					tag = TUR
+					OR = {
+						government = absolute_empire
+						government = semi_constitutional_empire
+						government = constitutional_empire
+					}
+				}
+			}
+			926 = { is_core = THIS }
+			NOT = { 1167 = { is_core = THIS } }
 		}
 		allow = {
 			state_n_government = 1
@@ -83,8 +111,8 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 7.5
-			NEJ_1164 = { add_core = IRA }
-			ABU_1162 = { add_core = IRA }
+			NEJ_1164 = { add_core = THIS }
+			ABU_1162 = { add_core = THIS }
 		}
 		ai_will_do = {
 			factor = 1
@@ -98,15 +126,25 @@ political_decisions = {
 	IRA_subdue_pashtuns = {
 		picture = afghan1
 		potential = {
-			tag = IRA
+			OR = {
+				tag = IRA
+				AND = {
+					tag = TUR
+					OR = {
+						government = absolute_empire
+						government = semi_constitutional_empire
+						government = constitutional_empire
+					}
+				}
+			}
 			NOT = { has_country_flag = IRA_subdue_pashtuns }
 		}
 		allow = {
 			OR = {
-				nationalism_n_imperialism = 1
+				breech_loaded_rifles = 1
 				AND = {
 					military_plans = 1
-					1209 = { owner = { OR = { vassal_of = THIS in_sphere = THIS } } }
+					1209 = { owner = { OR = { vassal_of = THIS in_sphere = THIS tag = THIS } } }
 				}
 			}
 			all_core = { OR = { owned_by = THIS empty = yes } }
@@ -117,11 +155,11 @@ political_decisions = {
 			add_accepted_culture = pashtun
 			add_accepted_culture = baluchi
 			add_accepted_culture = pamiri
-			AFG = { all_core = { add_core = IRA } }
-			BLC = { all_core = { add_core = IRA } }
-			AFG_1213 = { add_core = IRA }
-			3524 = { add_core = IRA }
-			1223 = { add_core = IRA }
+			AFG = { all_core = { add_core = THIS } }
+			BLC = { all_core = { add_core = THIS } }
+			AFG_1213 = { add_core = THIS }
+			3524 = { add_core = THIS }
+			1223 = { add_core = THIS }
 			any_country = {
 				limit = {
 					OR = {
@@ -177,9 +215,19 @@ political_decisions = {
 	IRA_integrate_transoxiana = {
 		picture = commodities_in_central_asia
 		potential = {
-			tag = IRA
+			OR = {
+				tag = IRA
+				AND = {
+					tag = TUR
+					OR = {
+						government = absolute_empire
+						government = semi_constitutional_empire
+						government = constitutional_empire
+					}
+				}
+			}
 			owns = 1147
-			NOT = { accepted_culture = uzbek }
+			NOT = { OR = { accepted_culture = sart primary_culture = sart } }
 		}
 		allow = {
 			owns = 1198
@@ -189,15 +237,15 @@ political_decisions = {
 		}
 		effect = {
 			badboy = 7.5
-			add_accepted_culture = uzbek
-			add_accepted_culture = kirgiz
-			KHI_1200 = { add_core = IRA }
-			KHI_1191 = { add_core = IRA }
-			TAJ_1208 = { add_core = IRA }
-			KHI_1195 = { add_core = IRA }
-			KHI_3298 = { add_core = IRA }
-			1189 = { add_core = IRA }
-			1203 = { add_core = IRA }
+			add_accepted_culture = sart
+			add_accepted_culture = kazak
+			KHI_1200 = { add_core = THIS }
+			KHI_1191 = { add_core = THIS }
+			TAJ_1208 = { add_core = THIS }
+			KHI_1195 = { add_core = THIS }
+			KHI_3298 = { add_core = THIS }
+			1189 = { add_core = THIS }
+			1203 = { add_core = THIS }
 		}
 		ai_will_do = {
 			factor = 1
@@ -211,8 +259,18 @@ political_decisions = {
 	IRA_eat_assyria = {
 		picture = greater_assyria
 		potential = {
-			tag = IRA
-			926 = { is_core = IRA }
+			OR = {
+				tag = IRA
+				AND = {
+					tag = TUR
+					OR = {
+						government = absolute_empire
+						government = semi_constitutional_empire
+						government = constitutional_empire
+					}
+				}
+			}
+			926 = { is_core = THIS }
 			NOT = { has_country_flag = IRA_eat_assyria }
 		}
 		allow = {
@@ -224,10 +282,10 @@ political_decisions = {
 			badboy = 15
 			add_accepted_culture = kurdish
 			add_accepted_culture = assyrian
-			ASY = { all_core = { add_core = IRA } }
-			TUR_3300 = { add_core = IRA }
-			TUR_890 = { add_core = IRA }
-			2321 = { add_core = IRA }
+			ASY = { all_core = { add_core = THIS } }
+			TUR_3300 = { add_core = THIS }
+			TUR_890 = { add_core = THIS }
+			2321 = { add_core = THIS }
 			set_country_flag = IRA_eat_assyria
 		}
 		ai_will_do = {
@@ -278,6 +336,13 @@ political_decisions = {
 		picture = herat
 		potential = {
 			tag = TUR
+			NOT = {
+				OR = {
+					government = absolute_empire
+					government = semi_constitutional_empire
+					government = constitutional_empire
+				}
+			}
 			NOT = { has_country_flag = TUR_eastern_frontier }
 		}
 		allow = {

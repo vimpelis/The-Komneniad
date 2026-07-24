@@ -2,6 +2,6 @@ owner = FRA
 controller = FRA
 add_core = ACA
 trade_goods = fish
-terrain = stjohn
+terrain = forest
 life_rating = 35
 colonial = 2

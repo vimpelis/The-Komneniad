@@ -74,17 +74,17 @@ army = {
 
 army = {
     name = "Aden Garrison"
-    location = 1412
+    location = 3295
 
 	regiment = {
         name = "1st Irregular Infantry Brigade"
         type = irregular
-        home = 1412
+        home = 3295
     }
 	regiment = {
         name = "2nd Irregular Infantry Brigade"
         type = irregular
-        home = 1412
+        home = 3295
     }
 }
 

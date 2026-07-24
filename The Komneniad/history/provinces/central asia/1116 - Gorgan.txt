@@ -1,8 +1,7 @@
 owner = MGT
 controller = MGT
-add_core = TKM
 add_core = KHR
+add_core = MGT
 trade_goods = coal
 life_rating = 35
 terrain = montane_forest
-add_core = MGT

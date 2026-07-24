@@ -1,6 +1,5 @@
-owner = SOM
-controller = SOM
-add_core = SOM
-trade_goods = wool
-terrain = semidesert
-life_rating = 20
+owner = CAL
+controller = CAL
+add_core = CAL
+trade_goods = timber
+life_rating = 35 

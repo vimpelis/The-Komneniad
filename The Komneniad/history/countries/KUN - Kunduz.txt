@@ -1,5 +1,5 @@
 capital = 1211
-primary_culture = uzbek
+primary_culture = sart
 culture = tajik
 religion = sunni
 government = absolute_monarchy

@@ -409,7 +409,12 @@ political_decisions = {
             }
             modifier = {
                 factor = 0
-                capital_scope = { continent = asia }
+                capital_scope = {
+					OR = {
+						continent = asia
+						continent = central_asia
+					}
+				}
                 NOT = { month = 3 }
             }
             modifier = {

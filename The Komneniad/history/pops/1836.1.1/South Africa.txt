@@ -958,6 +958,48 @@
 }
 #Graaf Reinet (36000/9000 POPS)
 2097 = {
+    aristocrats = {
+        culture = xhosa
+        religion = animist
+        size = 5
+    }
+
+    clergymen = {
+        culture = xhosa
+        religion = animist
+        size = 5
+    }
+
+    artisans = {
+        culture = xhosa
+        religion = animist
+        size = 25
+    }
+
+    soldiers = {
+        culture = xhosa
+        religion = animist
+        size = 100
+    }
+	
+	farmers = {
+        culture = xhosa
+        religion = animist
+        size = 620
+    }
+	
+	farmers = {
+        culture = sotho_tswana
+        religion = animist
+        size = 500
+    }
+	
+	farmers = {
+        culture = afro_dutch
+        religion = protestant
+        size = 200
+    }
+	
     farmers = {
         culture = afro_dutch
         religion = protestant

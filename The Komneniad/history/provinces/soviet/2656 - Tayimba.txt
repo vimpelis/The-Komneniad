@@ -1,5 +1,4 @@
-add_core = KHI
+add_core = NOG
 trade_goods = wool
 life_rating = 25
 terrain = desert
-add_core = KAZ

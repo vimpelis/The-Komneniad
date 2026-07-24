@@ -135,7 +135,7 @@
     }
 
     slaves = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 17500
     }
@@ -197,31 +197,31 @@
     }
 
     aristocrats = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 1750
     }
 
     clergymen = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 388
     }
 
     artisans = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 900
     }
 
     soldiers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 1825
     }
 
     farmers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 15000
     }
@@ -257,55 +257,55 @@
     }
 
     aristocrats = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 88
     }
 
     artisans = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 500
     }
 
     soldiers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 3162
     }
 
     slaves = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 10000
     }
 
     slaves = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 5000
     }
 
     clergymen = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 130
     }
 
     farmers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 3250
     }
@@ -313,31 +313,31 @@
 #Mazar-e Sharif
 3516 = {
     aristocrats = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 1750
     }
 
     clergymen = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 388
     }
 
     artisans = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 900
     }
 
     soldiers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 1825
     }
 
     farmers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 15000
     }
@@ -373,37 +373,37 @@
     }
 
     aristocrats = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 15
     }
 
     clergymen = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 8
     }
 
     artisans = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 50
     }
 
     soldiers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 162
     }
 
     slaves = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 8000
     }
@@ -435,37 +435,37 @@
     }
 
     farmers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 2900
     }
 
     aristocrats = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 388
     }
 
     artisans = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 1000
     }
 
     soldiers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 3375
     }
 
     farmers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 22000
     }
@@ -489,31 +489,31 @@
     }
 
     aristocrats = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 150
     }
 
     clergymen = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 88
     }
 
     artisans = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 500
     }
 
     soldiers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 100
     }
 
     farmers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 2162
     }
@@ -525,7 +525,7 @@
     }
 
     slaves = {
-        culture = turki
+        culture = persian
         religion = sunni
         size = 1500
     }
@@ -665,21 +665,9 @@
     }
 
     slaves = {
-        culture = uzbek
+        culture = pashtun
         religion = sunni
         size = 6500
-    }
-
-    clergymen = {
-        culture = persian
-        religion = zoroastrian
-        size = 85
-    }
-
-    farmers = {
-        culture = persian
-        religion = zoroastrian
-        size = 1725
     }
 }
 #Ghur (324000/81000 POPS)
@@ -914,7 +902,7 @@
     }
 
     slaves = {
-        culture = uzbek
+        culture = turki
         religion = sunni
         size = 650
     }
@@ -948,7 +936,13 @@
     farmers = {
         culture = turki
         religion = sunni
-        size = 5925
+        size = 1925
+    }
+	
+	farmers = {
+        culture = kazak
+        religion = sunni
+        size = 4000
     }
 	
 	aristocrats = {
@@ -1196,7 +1190,7 @@
     }
 
     slaves = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 4500
     }
@@ -1264,37 +1258,37 @@
     }
 
     aristocrats = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 1050
     }
 
     clergymen = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 500
     }
 
     artisans = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 700
     }
 
     soldiers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 525
     }
 
     farmers = {
-        culture = turki
+        culture = kazak
         religion = sunni
         size = 5225
     }
 
     slaves = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 4500
     }
@@ -1377,30 +1371,6 @@
         culture = pashtun
         religion = sunni
         size = 8000
-    }
-
-    aristocrats = {
-        culture = tajik
-        religion = sunni
-        size = 5
-    }
-
-    clergymen = {
-        culture = tajik
-        religion = sunni
-        size = 23
-    }
-
-    soldiers = {
-        culture = tajik
-        religion = sunni
-        size = 100
-    }
-
-    farmers = {
-        culture = tajik
-        religion = sunni
-        size = 791
     }
 
     aristocrats = {
@@ -1898,43 +1868,43 @@
 #Faizabad (340000/85000 POPS)
 1210 = {
     aristocrats = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 125
     }
 
     clergymen = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 100
     }
 
     bureaucrats = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 300
     }
 
     artisans = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 350
     }
 
     officers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 100
     }
 
     soldiers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 1000
     }
 
     farmers = {
-        culture = uzbek
+        culture = sart
         religion = sunni
         size = 5512
     }
@@ -2068,7 +2038,7 @@
     }
 
     slaves = {
-        culture = kirgiz
+        culture = kazak
         religion = animist
         size = 6000
     }

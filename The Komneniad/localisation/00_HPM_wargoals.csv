@@ -11,7 +11,7 @@ permanent_colonial_claim_short;Reconquer Colony;;;;;;;;;;;;;
 permanent_colonial_claim_desc;Acquire a §Ystate§W that is a §Yrightful colony§W of ours according to the Great Powers Conference.;;;;;;;;;;;;;
 permanent_colonial_claim_setup;Acquire $STATE$ from $RECIPIENT$.;;;;;;;;;;;;;
 AGRESSION_WAR_NAME_REPARATIONS;$ORDER$War of $FIRST$ Aggression;;;;;;;;;;;;;
-colonial_conquest;Colonial Conquest;;;;;;;;;;;;;
+colonial_conquest;Imperialism;;;;;;;;;;;;;
 colonial_conquest_desc;Acquire an enemy §Ystate§W where we have §Ycolonial claims§W, but this will gives us a random amount of §Rinfamy§W from §R0.5 to 2§W.;;;;;;;;;;;;;
 colonial_conquest_short;Acquire $STATE$;;;;;;;;;;;;;
 colonial_conquest_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;

@@ -1,7 +1,7 @@
 owner = RUS
 controller = RUS
 add_core = RUS
-add_core = KAZ
+add_core = NOG
 trade_goods = cattle
 life_rating = 35
 colonial = 2

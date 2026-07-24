@@ -1020,5 +1020,43 @@ political_decisions = {
 			factor = 1
 		}
     }
+	
+	BYZ_develop_kleisourai = {
+        picture = kleisourai
+        potential = {
+			owns = 879
+			NOT = { has_global_flag = develop_kleisourai }
+        }
+        allow = {
+			owns = 879
+			owns = 3345
+			owns = 3533
+			money = 250000
+			collectivist_theory = 1
+			war = no
+        }
+        effect = {
+			treasury = -250000
+			879 = { trade_goods = coal }
+			3345 = { trade_goods = iron }
+			3533 = { trade_goods = dye }
+			BYZ_879 = {
+				life_rating = 5
+				any_pop = { limit = { type = clergymen } reduce_pop = 2 }
+				any_pop = { limit = { type = bureaucrats } reduce_pop = 2 }
+				add_province_modifier = { name = province_development_effort duration = 7300 }
+			}
+			BYZ_894 = {
+				life_rating = 5
+				any_pop = { limit = { type = clergymen } reduce_pop = 2 }
+				any_pop = { limit = { type = bureaucrats } reduce_pop = 2 }
+				add_province_modifier = { name = province_development_effort duration = 7300 }
+			}
+			set_global_flag = develop_kleisourai
+        }
+        ai_will_do = {
+			factor = 1
+		}
+    }
 }
 	

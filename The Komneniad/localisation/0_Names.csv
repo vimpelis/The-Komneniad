@@ -192,8 +192,6 @@ ERI;Erythrea;Érythrée;Erythrea;Erytrea;Eritrea;Eritrea;Eritrea;Eritrea;Eritrea;E
 ERI_ADJ;Erythrean;Érythréen;Erythreisch;Erytrejski;Eritrea;Eritrea;eritreai;Eritrean;eritreai;Eritrese;Eritreia;Ýðèòðåéñê.;Eritrean;
 ETR;Etruria;Étrurie;Etrurien;Etruria;Etruria;Etruria;Etruria;Etruria;Etruria;Etrurië;Etruria;Ýòðóðèÿ;Etruria;
 ETR_ADJ;Etrurian;Étrurien;Etrurisch;Etruski;Etruria;Etrusca;etruszk;mystyckých etruských;etruszk;Etrurisch;Etrusco;Ýòðóññê.;Etrurian;
-FER;Ferrara;Ferrare;Ferrara;Ferrara;Ferrara;Ferrara;Ferrara;Ferrara;Ferrara;Ferrara;Ferrária;Ôåððàðà;Ferrara;
-FER_ADJ;Ferraran;Ferrarais;Ferrara-;Ferrary;Ferrense;Ferrarese;Ferraran;Ferraran;Ferraran;Ferraran;Ferraran;Ôåððàðñê.;Ferraran;
 FEZ;Fez;Fès;Fès;Fez;Fez;Fez;Fez;egyptská cepice;Fez;Fez;Fez;Ôåñ;fetsi;
 FEZ_ADJ;Fez;Fassi;Fès-;Fezu;Fezana;di Fez;Fez;egyptská cepice;Fez;Fez;Fez;Ôåññê.;fetsi;
 FLO;Florence;Florence;Florenz;Florencja;Florencia;Firenze;Firenze;Florence;Firenze;Florence;Florença;Ôëîðåíöèÿ;Firenze;
@@ -298,7 +296,6 @@ JNP;Jaunpur;Jawnpur;Jaunpur;DŸaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jau
 JNP_ADJ;Jaunpur;de Jawnpur;Jaunpur-;DŸaunpuru;Jaunpuri;di Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Jaunpur;Äæàóíïóðñê.;Jaunpur;
 KAC;Kachar;Cachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Êà÷àð;Kachar;
 KAC_ADJ;Kachar;de Cachar;Kachar-;Kacharu;Kachari;di Kachar;Kachar;Kachar;Kachar;Kachar;Kachar;Êà÷àðñê.;Kachar;
-KAZ_proletarian_dictatorship;SSR Kazakhstan;RSS Kazakhstan;SSR Kasachstan;SSR Kazachstan;SSR Kazajstán;RSS Kazaca;SSR Kazahsztán;SSR Kazachstán;SSR Kazahsztán;SSR Kazachstan;SSR Cazaquistão;ÑÑÐ Êàçàõñòàí;SSR Kazakstan;
 KCX;Koch;Kotch;Koch;Kocz;Koch;Koch;Koch;Koch;Koch;Koch;Koch;Êó÷;Koch;
 KCX_ADJ;Koch;du Kotch;Koch-;Koczu;Kochi;di Koch;Koch;Koch;Koch;Koch;Koch;Êó÷ñê.;Koch;
 KGR;Kangra;Kangra;Kangra;Kangra;Kangra;Kangra;Kangra;Kangra;Kangra;Kangra;Kangra;Êàíãðà;Kangra;
@@ -1022,8 +1019,6 @@ CHN_fascist;Fascist Party;Parti Fasciste;Faschistische Partei;Partia Faszystowsk
 CHN_liberal;Liberal Party;Parti Lib0ral;Liberale Partei;Partia Liberalna;Partido Liberal;Partito Liberale;Liber0lis P0rt;Liber0ln0 Strana;Liber0lis P0rt;Liberale Partij;Partido Liberal;;Liberaalipuolue;
 CHN_reactionary;National Party;Parti National;Nationale Partei;Partia Narodowa;Partido Nacional;Partito Nazionale;Nemzeti P0rt;N0rodn0 Strana;Nemzeti P0rt;Nationale Partij;Partido Nacional;;Kansallispuolue;
 CHN_socialist;Socialist Party;Parti Socialiste;Sozialistische Partei;Partia Socjalistyczna;Partido Socialista;Partito Socialista;Szocialista P0rt;Socialistick0 Strana;Szocialista P0rt;Socialistische Partij;Partido Socialista;;Sosialistinenpuolue;
-CHR;Chilean Revolt;;;;;;;;;;;;;
-CHR_ADJ;Chilean;;;;;;;;;;;;;
 CHR_radical;Radical Party;Parti Radical;Radikale Partei;Partia Radykalna;Partido Radical;Partito Radicale;Radik0lis P0rt;Radik0ln0 Strana;Radik0lis P0rt;Radicale Partij;Partido Radical;;Radikaalipuolue;
 CHR_communist;Communist Party;Parti Communiste;Kommunistische Partei;Partia Komunistyczna;Partido Comunista;Partito Comunista;Kommunista P0rt;Komunistick0 Strana;Kommunista P0rt;Communistische Partij;Partido Comunista;;Kommunistinenpuolue;
 CHR_conservative;Conservative Party;Parti Conservateur;Konservative Partei;Partia Konserwatywna;Partido Conservador;Partito Conservatore;Konzervat0v P0rt;Konzervativn0 Strana;Konzervat0v P0rt;Conservatieve Partij;Partido Conservador;;Konservatiivipuolue;

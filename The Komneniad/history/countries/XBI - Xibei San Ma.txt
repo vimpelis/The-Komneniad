@@ -1,8 +1,8 @@
 capital = 1557
-primary_culture = han_chinese
-culture = hanhui
+primary_culture = hanhui
+culture = han_chinese
 religion = sunni
-government = colonial_company
+government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
 literacy = 0.01
@@ -56,13 +56,3 @@ flintlock_rifles = 1
 #Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
-
-govt_flag = {
-    government = presidential_dictatorship
-    flag = absolute_monarchy
-}
-
-govt_flag = {
-    government = colonial_company
-    flag = theocracy
-}

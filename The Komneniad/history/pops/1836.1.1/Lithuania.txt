@@ -684,7 +684,7 @@
     }
 }
 #Palanga (84000/21000 POPS)
-3366 = {
+365 = {
     aristocrats = {
         culture = lithuanian
         religion = catholic

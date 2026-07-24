@@ -274,7 +274,7 @@ political_decisions = {
 		}
 		effect = {
 			random_owned = { limit = { 1864 = { empty = yes } } 1864 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
-			random_owned = { limit = { 517 = { empty = yes } } 517 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
+			random_owned = { limit = { 3599 = { empty = yes } } 3599 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
 			random_owned = { limit = { 2025 = { empty = yes } } 2025 = { add_core = THIS secede_province = THIS any_pop = { literacy = -0.99 } } }
 			set_country_flag = ETH_wild_oromos
 		}

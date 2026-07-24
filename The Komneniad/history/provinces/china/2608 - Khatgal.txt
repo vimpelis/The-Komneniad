@@ -1,6 +1,5 @@
-owner = IRY
-controller = IRY
-add_core = IRY
-add_core = MGL
-trade_goods = iron
+owner = URI
+controller = URI
+add_core = URI
+trade_goods = grain
 life_rating = 32 

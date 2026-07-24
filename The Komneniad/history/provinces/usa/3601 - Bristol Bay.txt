@@ -1,7 +1,7 @@
-owner = RUS
-controller = RUS
-add_core = LSK
-trade_goods = fish
+owner = FER
+controller = FER
+add_core = FER
+add_core = KAZ
+trade_goods = wool
 life_rating = 30
-terrain = kodiak
-colonial = 2
+terrain = steppe

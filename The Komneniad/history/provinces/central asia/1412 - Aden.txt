@@ -1,8 +1,4 @@
-owner = MUS
-controller = MUS
-add_core = MUS
-add_core = HAD
-trade_goods = fish
-life_rating = 32
-naval_base = 1
-terrain = aden
+add_core = ATJ
+trade_goods = sulphur
+life_rating = 30
+terrain = jungle_hills

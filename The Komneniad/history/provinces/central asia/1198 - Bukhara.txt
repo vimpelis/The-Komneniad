@@ -1,7 +1,8 @@
 owner = MGT
 controller = MGT
-trade_goods = wool
-life_rating = 35
-terrain = bukhara
-fort = 1
 add_core = MGT
+add_core = FER
+trade_goods = cotton
+life_rating = 35
+terrain = steppe
+fort = 1

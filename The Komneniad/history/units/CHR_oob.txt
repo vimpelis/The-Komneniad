@@ -1,0 +1,54 @@
+RUS = { value = -100 }
+FER = { value = -200 }
+IRY = { value = -200 }
+MGT = { value = -50 }
+URI = { value = -200 }
+KAZ = { value = -200 }
+
+army = {
+    name = "Choros Host"
+    location = 1600
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1600
+    }
+	regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1600
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 1600
+    }
+	regiment = {
+        name = "2nd Cavalry Regiment"
+        type = cavalry
+        home = 1596
+    }
+	regiment = {
+        name = "3rd Cavalry Regiment"
+        type = cavalry
+        home = 1596
+    }
+	regiment = {
+        name = "4th Cavalry Regiment"
+        type = cavalry
+        home = 1595
+    }
+	regiment = {
+        name = "5th Cavalry Regiment"
+        type = cavalry
+        home = 3605
+    }
+}
+
+leader = {
+    name = "Dodbi Khan"
+    type = land
+    date = 1830.1.1
+    background = attack_2.1
+    personality = defence_1.1
+}

@@ -1,7 +1,7 @@
-owner = DAN
-controller = DAN
-add_core = ENG
-trade_goods = fish
-life_rating = 35
-terrain = farmlands
-add_core = DAN
+owner = CHR
+controller = CHR
+add_core = CHR
+add_core = FER
+trade_goods = sulphur
+life_rating = 30
+terrain = semi_desert_mountains

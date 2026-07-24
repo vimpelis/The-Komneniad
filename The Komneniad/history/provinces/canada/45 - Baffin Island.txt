@@ -1,6 +1,4 @@
-owner = JIM
-controller = JIM
-add_core = JIM
-trade_goods = fruit
-life_rating = 35
-terrain = montane_forest
+trade_goods = grain
+life_rating = 25
+terrain = plains
+colonial = 1

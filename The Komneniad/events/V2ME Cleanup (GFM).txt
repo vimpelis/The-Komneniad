@@ -3259,6 +3259,115 @@ country_event = {
 			}
 		}
 		
+		#central asian rgos change
+		any_country = {
+			limit = {
+				exists = yes
+				has_country_flag = ATM_new_rgos
+				OR = {
+					AND = {
+						owns = 1191
+						NOT = { 1191 = { trade_goods = cotton } }
+					}
+					AND = {
+						owns = 3441
+						NOT = { 3441 = { trade_goods = cotton } }
+					}
+					AND = {
+						owns = 1190
+						NOT = { 1190 = { trade_goods = cotton } }
+					}
+					AND = {
+						owns = 1196
+						NOT = { 1196 = { trade_goods = cotton } }
+					}
+					AND = {
+						owns = 1206
+						NOT = { 1206 = { trade_goods = cotton } }
+					}
+					AND = {
+						owns = 1195
+						NOT = { 1195 = { trade_goods = silk } }
+					}
+					AND = {
+						owns = 1199
+						NOT = { 1199 = { trade_goods = silk } }
+					}
+					AND = {
+						owns = 1189
+						NOT = { 1189 = { trade_goods = coal } }
+					}
+					AND = {
+						owns = 1208
+						NOT = { 1208 = { trade_goods = gold } }
+					}
+				}
+			}
+			any_owned = {
+				limit = {
+					province_id = 1191
+					NOT = { trade_goods = cotton }
+				}
+				1191 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 3441
+					NOT = { trade_goods = cotton }
+				}
+				3441 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1190
+					NOT = { trade_goods = cotton }
+				}
+				1190 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1196
+					NOT = { trade_goods = cotton }
+				}
+				1196 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1206
+					NOT = { trade_goods = cotton }
+				}
+				1206 = { trade_goods = cotton }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1195
+					NOT = { trade_goods = silk }
+				}
+				1195 = { trade_goods = silk }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1199
+					NOT = { trade_goods = silk }
+				}
+				1199 = { trade_goods = silk }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1189
+					NOT = { trade_goods = coal }
+				}
+				1189 = { trade_goods = coal }
+			}
+			any_owned = {
+				limit = {
+					province_id = 1208
+					NOT = { trade_goods = gold }
+				}
+				1208 = { trade_goods = gold }
+			}
+		}
+		
 		#kommeniad: these are tweaked so the player doesnt get a popup
 		#nigeria
 		any_country = {

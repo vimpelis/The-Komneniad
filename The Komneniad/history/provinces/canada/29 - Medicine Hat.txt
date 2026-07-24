@@ -1,4 +1,5 @@
 add_core = MGT
+add_core = FER
 trade_goods = wool
 terrain = desert
 life_rating = 25

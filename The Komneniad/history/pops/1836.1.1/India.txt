@@ -11099,7 +11099,7 @@
         size = 17300
     }
 }
-365 = {
+3366 = {
     aristocrats = {
         culture = bedouin
         religion = sunni
@@ -11327,7 +11327,7 @@
         size = 1000
     }
 }
-3602 = {
+3303 = {
     farmers = {
         culture = malayalam
         religion = hindu

@@ -2,6 +2,6 @@ owner = CLT
 controller = CLT
 trade_goods = fish
 life_rating = 10
-terrain = baffin_island
+terrain = new_world_montane_tundra
 colonial = 2
 add_core = ILD

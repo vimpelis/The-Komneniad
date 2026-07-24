@@ -194,9 +194,6 @@
         size = 552
     }
 }
-#Marigot - Former Baffin Island (4000/1000 POPS)
-45 = {
-}
 #Antigua (25000/6250 POPS) #now independent
 2224 = {
     bureaucrats = {

@@ -353,7 +353,7 @@ province_event = {
     desc = "EVTDESC15030"
 
     trigger = {
-		owner = { ai = no }
+		owner = { ai = no NOT = { has_country_flag = spectator } }
         is_primary_culture = no
         is_accepted_culture = no
         is_colonial = no
@@ -3221,7 +3221,7 @@ province_event = {
     desc = "EVTDESC15280"
 
     trigger = {
-		owner = { ai = no }
+		owner = { ai = no NOT = { has_country_flag = spectator } }
         is_primary_culture = no
         is_accepted_culture = no
         is_colonial = no

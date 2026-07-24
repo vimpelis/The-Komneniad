@@ -4,4 +4,4 @@ add_core = IRY
 add_core = TIB
 trade_goods = grain
 life_rating = 35
-terrain = lhasa
+terrain = himalayan_mountains

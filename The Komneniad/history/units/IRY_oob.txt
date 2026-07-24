@@ -8,6 +8,7 @@ HNN = { value = -200 }
 SZC = { value = -200 }
 SXI = { value = -200 }
 TAI = { value = -200 }
+FER = { value = -200 }
 RUS = { value = 50 }
 BUR = { value = 75 }
 NEP = { value = 100 }
@@ -130,7 +131,7 @@ army = {
 	regiment = {
         name = "1st Irregular Infantry Regiment"
         type = irregular
-        home = 1600
+        home = 3569
     }
     regiment = {
         name = "2nd Irregular Infantry Regiment"
@@ -185,7 +186,7 @@ army = {
     regiment = {
         name = "1st Cavalry Regiment"
         type = cavalry
-        home = 1190
+        home = 3569
     }
 	regiment = {
         name = "2nd Cavalry Regiment"
@@ -195,7 +196,7 @@ army = {
 	regiment = {
         name = "3rd Cavalry Regiment"
         type = cavalry
-        home = 3527
+        home = 1597
     }
 	regiment = {
         name = "4th Cavalry Regiment"

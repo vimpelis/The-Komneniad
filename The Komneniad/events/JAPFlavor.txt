@@ -2836,7 +2836,7 @@ country_event = {
             war = {
                 target = THIS
                 attacker_goal = {
-                    casus_belli = make_puppet_no_add_wargoal
+                    casus_belli = make_puppet_no_infamy
                 }
                 call_ally = yes
             }

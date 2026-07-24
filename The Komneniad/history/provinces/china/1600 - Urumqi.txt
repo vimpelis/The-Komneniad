@@ -1,6 +1,5 @@
-owner = IRY
-controller = IRY
-add_core = IRY
-add_core = XIN
-trade_goods = cotton
+owner = CHR
+controller = CHR
+add_core = CHR
+trade_goods = grain
 life_rating = 32 

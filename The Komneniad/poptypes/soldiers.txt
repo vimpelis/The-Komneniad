@@ -359,14 +359,9 @@ migration_target = {
         factor = 2.5
         OR = {
             is_core = YNN
-            is_core = IMG
             is_core = MCK
-            is_core = MGL
             is_core = XBI
-            is_core = XIN
-            is_core = UYG
             is_core = TIB
-            is_core = TNT
             is_core = KOR
 			continent = east_indies
         }
@@ -479,6 +474,7 @@ promote_to = {
                             continent = west_africa
                             continent = east_africa
                             continent = asia
+							continent = central_asia
                             continent = africa
                         }
                     }
@@ -855,6 +851,7 @@ ideologies = {
                     continent = west_africa
                     continent = east_africa
                     continent = asia
+					continent = central_asia
                     continent = africa
                 }
                 is_overseas = yes
@@ -1032,6 +1029,7 @@ ideologies = {
                     continent = west_africa
                     continent = east_africa
                     continent = asia
+					continent = central_asia
                     continent = africa
                 }
                 is_overseas = yes

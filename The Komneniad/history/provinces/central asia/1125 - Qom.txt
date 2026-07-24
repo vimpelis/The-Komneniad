@@ -2,5 +2,5 @@ owner = MGT
 controller = MGT
 trade_goods = grain
 life_rating = 35
-terrain = qom
+terrain = dryhills
 add_core = TUR

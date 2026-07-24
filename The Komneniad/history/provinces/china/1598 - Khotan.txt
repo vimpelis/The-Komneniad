@@ -1,6 +1,7 @@
 owner = IRY
 controller = IRY
 add_core = IRY
-add_core = XIN
+add_core = ALT
 trade_goods = wool
-life_rating = 25 
+life_rating = 32 
+terrain = desert

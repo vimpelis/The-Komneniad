@@ -2,12 +2,12 @@ From;To;Type;Through;Data;Comment
 #;;;;;
 # American Straits;;;;;
 #;;;;;
-3601;5;sea;3134;0;Vancouver Crossing
+3400;5;sea;3134;0;Alaska Crossing
 232;233;sea;2953;0;Long Island
-3599;15;sea;3011;0;Vancouver Crossing
-3600;3599;sea;3011;0;Vancouver Crossing
-3599;78;sea;3011;0;Vancouver Crossing
-3599;13;sea;3011;0;Vancouver Crossing
+3433;15;sea;3011;0;Vancouver Crossing
+3434;3433;sea;3011;0;Vancouver Crossing
+3433;78;sea;3011;0;Vancouver Crossing
+3433;13;sea;3011;0;Vancouver Crossing
 62;75;sea;2946;0;Straits of Belle Isle
 62;77;sea;2943;0;Straits of Belle Isle
 68;70;sea;2944;0;Cabot Strait
@@ -173,12 +173,12 @@ From;To;Type;Through;Data;Comment
 1226;1592;impassable;0;0;scary mountain #Leh
 1224;1226;impassable;0;0;scary mountain #Leh
 1233;1226;impassable;0;0;scary mountain #Leh
-3299;1592;impassable;0;0;scary mountain #Aksai Chin
-3299;1591;impassable;0;0;scary mountain #Aksai Chin
-3299;3321;impassable;0;0;scary mountain #Aksai Chin
-1225;3321;impassable;0;0;scary mountain #Gilgit
-1225;1594;impassable;0;0;scary mountain #Gilgit
+3299;1598;impassable;0;0;scary mountain #Aksai Chin
+1598;1592;impassable;0;0;scary mountain #Hoten-Ngari
+1598;1591;impassable;0;0;scary mountain #Hoten-Domar
+3321;1591;impassable;0;0;scary mountain #Qakilik-Domar
 1225;3527;impassable;0;0;scary mountain #Gilgit
+3314;1488;impassable;0;0;scary mountain #Xining-Kanchow
 ;;;;;
 ;;;;;
 #Suleyman/Hindu Kush Range;;;;;
@@ -192,13 +192,12 @@ From;To;Type;Through;Data;Comment
 ;;;;;
 #Pamir;;;;;
 3517;1223;impassable;0;0;Pamir   #Wakhan-Chitral
-3517;3527;impassable;0;0;Pamir   #Wakhan-Tashkurgan
+3323;3527;impassable;0;0;Pamir   #Yarkand-Karimabad
 3517;3518;impassable;0;0;Pamir   #Wakhan-Qala-ye Wamar
 3517;1208;impassable;0;0;Pamir   #Wakhan-Khorug
 1210;1223;impassable;0;0;Pamir   #Faizabad-Chitral
 1210;3523;impassable;0;0;Pamir   #Faizabad-Kafirestan
 1210;1216;impassable;0;0;Pamir   #Faizabad-Jalalabad
-1208;1594;impassable;0;0;Pamir   #Khorug-Kashgar
 1208;3527;impassable;0;0;Pamir   #Khorug-Tashkurgan
 ;;;;;
 #Vietnam;;;;;
@@ -209,8 +208,11 @@ From;To;Type;Through;Data;Comment
 #Alay Mountains;;;;;
 ;;;;;
 1207;1201;impassable;0;0;scary mountain
-3522;1201;impassable;0;0;scary mountain
-3522;1203;impassable;0;0;scary mountain
+3522;3519;impassable;0;0;scary mountain
+1202;3519;impassable;0;0;scary mountain
+1202;3521;impassable;0;0;scary mountain
+1203;3521;impassable;0;0;scary mountain
+3519;1201;impassable;0;0;scary mountain
 ;;;;;
 #Iran;;;;;
 ;;;;;
@@ -345,11 +347,16 @@ From;To;Type;Through;Data;Comment
 ;;;;;
 ;;;;;
 #Tienshan Mountains;;;;;
-1190;1594;;impassable;0;0;Tienshan Range  #Naryn-Kashgar
+1190;1594;;impassable;0;0;Tienshan Range  #Qaraqol-Kashgar
+1203;1594;;impassable;0;0;Tienshan Range  #Osh-Kashgar
 1597;1190;impassable;0;0;Tienshan Range  #Aksu-Naryn
-1597;1186;impassable;0;0;Tienshan Range  #Aksu-Alma Ata
 1597;1595;impassable;0;0;Tienshan Range #Aksu-Ili
-1597;1600;impassable;0;0;Tienshan Range #Aksu-Urumqi
+1597;3605;impassable;0;0;Tienshan Range #Aksu-Jarkent
+3322;1600;impassable;0;0;Tienshan Range #Karashar-Urumqi
+#Altai;;;;;
+1068;2679;;impassable;0;0;Altai
+1068;2608;;impassable;0;0;Altai
+1068;1469;;impassable;0;0;Altai
 ;;;;;
 ;;;;;
 #Skands;;;;;

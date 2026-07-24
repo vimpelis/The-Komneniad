@@ -1,7 +1,6 @@
-owner = IRY
-controller = IRY
-add_core = IRY
-add_core = TNT
+owner = URI
+controller = URI
+add_core = URI
 trade_goods = coal
 life_rating = 35
 terrain = mountain

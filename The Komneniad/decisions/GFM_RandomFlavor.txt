@@ -887,7 +887,6 @@ political_decisions = {
                 2220 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
                 2219 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
                 2226 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
-                45 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
                 2224 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
                 2225 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
                 2232 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
@@ -944,7 +943,6 @@ political_decisions = {
                         province_id = 2219
                         province_id = 2220
                         province_id = 2226
-                        province_id = 45
                         province_id = 2224
                         province_id = 2225
                         province_id = 2232

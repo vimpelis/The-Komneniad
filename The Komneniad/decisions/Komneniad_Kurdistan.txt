@@ -168,6 +168,7 @@ political_decisions = {
 				relation = { who = GRE value = 150 }
 			}
 			war = no
+			is_vassal = no
 		}
 		effect = {
 			badboy = 5

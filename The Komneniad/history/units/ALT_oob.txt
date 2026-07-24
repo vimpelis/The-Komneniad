@@ -1,0 +1,34 @@
+IRY = { value = -200 }
+FER = { value = 200 }
+MGT = { value = -200 }
+CHR = { value = -100 }
+URI = { value = -25 }
+BDK = { value = -25 }
+
+army = {
+    name = "Army of the Pasha of Kashgar"
+    location = 1594
+    regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 1594
+    }
+	regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 1594
+    }
+	regiment = {
+        name = "1st Cavalry Regiment"
+        type = cavalry
+        home = 3527
+    }
+}
+
+leader = {
+    name = "Tursun Pasha"
+    type = land
+    date = 1830.1.1
+    background = attack_minus_1.1
+    personality = defence_1.1
+}

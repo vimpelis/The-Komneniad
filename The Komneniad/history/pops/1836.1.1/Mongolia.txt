@@ -255,33 +255,33 @@
 #Khatgal (152000/38000 POPS)
 2608 = {
     aristocrats = {
-        culture = mongol
+        culture = oirat
         religion = gelugpa
-        size = 750
+        size = 1200
     }
 
     clergymen = {
-        culture = mongol
+        culture = oirat
         religion = gelugpa
         size = 375
     }
 
     artisans = {
-        culture = mongol
+        culture = oirat
         religion = gelugpa
         size = 1500
     }
 
     soldiers = {
-        culture = mongol
+        culture = oirat
         religion = gelugpa
-        size = 375
+        size = 2600
     }
 
     farmers = {
-        culture = mongol
+        culture = oirat
         religion = gelugpa
-        size = 31000
+        size = 51000
     }
 
 	farmers = {
@@ -331,85 +331,39 @@
 #Khovd (120000/30000 POPS)
 2679 = {
     aristocrats = {
-        culture = mongol
+        culture = oirat
+        religion = gelugpa
+        size = 1100
+    }
+
+    clergymen = {
+        culture = oirat
         religion = gelugpa
         size = 350
     }
 
-    clergymen = {
-        culture = mongol
-        religion = gelugpa
-        size = 175
-    }
-
     artisans = {
-        culture = mongol
+        culture = oirat
         religion = gelugpa
-        size = 900
+        size = 1200
     }
 
     soldiers = {
-        culture = mongol
+        culture = oirat
         religion = gelugpa
-        size = 175
+        size = 3400
     }
 
-    farmers = {
-        culture = mongol
-        religion = gelugpa
-        size = 10000
-    }
     farmers = {
         culture = oirat
         religion = gelugpa
-        size = 6400
-    }
-    aristocrats = {
-        culture = kazak
-        religion = sunni
-        size = 200
-    }
-
-    clergymen = {
-        culture = kazak
-        religion = sunni
-        size = 100
-    }
-
-    artisans = {
-        culture = kazak
-        religion = sunni
-        size = 600
-    }
-
-    soldiers = {
-        culture = kazak
-        religion = sunni
-        size = 125
-    }
-
-    farmers = {
-        culture = kazak
-        religion = sunni
-        size = 10975
-    }
-
-    slaves = {
-        culture = kazak
-        religion = sunni
-        size = 2000
+        size = 35000
     }
 }
 #Uliatai / Uriankhai (32000/8000 POPS) #now Tuva Republic of Russia  Tatar = Tuvan
 1469 = {
     aristocrats = {
         culture = tatar
-        religion = gelugpa
-        size = 150
-    }
-
-    aristocrats  = {
-        culture = mongol
         religion = gelugpa
         size = 150
     }
@@ -435,7 +389,19 @@
     farmers = {
         culture = tatar
         religion = gelugpa
-        size = 7300
+        size = 5300
+    }
+	
+	farmers = {
+        culture = tatar
+        religion = tengri
+        size = 1200
+    }
+	
+	farmers = {
+        culture = oirat
+        religion = gelugpa
+        size = 2000
     }
 
     slaves = {
@@ -443,5 +409,48 @@
         religion = gelugpa
         size = 1000
     }
+}
 
+3556 = {
+	aristocrats = {
+        culture = oirat
+        religion = sunni
+        size = 1050
+    }
+
+    clergymen = {
+        culture = oirat
+        religion = sunni
+        size = 550
+    }
+
+    artisans = {
+        culture = oirat
+        religion = sunni
+        size = 650
+    }
+
+    soldiers = {
+        culture = oirat
+        religion = sunni
+        size = 550
+    }
+
+    farmers = {
+        culture = oirat
+        religion = sunni
+        size = 12900
+    }
+	
+	farmers = {
+        culture = oirat
+        religion = gelugpa
+        size = 7000
+    }
+
+    farmers = {
+        culture = mongol
+        religion = gelugpa
+        size = 6300
+    }
 }

@@ -33,7 +33,7 @@ country_event = {
     }
 
     option = {
-        name = "text"
+        name = "They will calm down in time."
 		2538 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
 		1110 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
 		1178 = { add_province_modifier = { name = ARA_yemen_resistance duration = 3650 } add_core = ARA }
@@ -422,7 +422,7 @@ country_event = {
 			any_owned = {
 				limit = {
 					is_core = THIS
-					NOT = { province_id = 1412 }
+					NOT = { province_id = 3295 }
 					NOT = { province_id = 3273 }
 					NOT = { province_id = 1175 }
 					NOT = { province_id = 1173 }
@@ -1153,7 +1153,7 @@ country_event = {
 		any_owned = {
 			limit = {
 				is_core = HAD
-				NOT = { province_id = 1412 }
+				NOT = { province_id = 3295 }
 				NOT = { province_id = 1177 }
 			}
 			secede_province = HAD
@@ -1174,7 +1174,7 @@ country_event = {
 	option = {
         name = "Muscat is done for, I'm ragequitting."
 		prestige = -5
-		1412 = { secede_province = HAD }
+		3295 = { secede_province = HAD }
 		ai_chance = { factor = 80 }
 	}
 }
