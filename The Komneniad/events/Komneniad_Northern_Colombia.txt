@@ -260,7 +260,7 @@ country_event = {
 }
 
 country_event = {
-    id = 158028
+    id = 158027
     title = "Calls for Independence"
     desc = "The rapid population growth of our country, spreading literacy and ideas from the south push our citizens to demand independence from Paris. We should formally asak them to grant it."
     picture = "acadie_colony"

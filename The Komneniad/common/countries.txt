@@ -153,7 +153,7 @@ CHI        = "countries/China.txt"
 #New World
 AAL        = "countries/Ard Al-Hurriyah.txt"
 ACA        = "countries/Acadia.txt"
-ALL        = "countries/Allemana.txt"
+ALE        = "countries/Allemana.txt"
 AMB        = "countries/Ambrosia.txt"
 ARJ        = "countries/Arajana.txt"
 ATA        = "countries/Antartida.txt"

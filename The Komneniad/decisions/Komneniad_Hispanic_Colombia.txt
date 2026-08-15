@@ -262,14 +262,14 @@ political_decisions = {
 			add_accepted_culture = ayllonian
 			AYL = { all_core = { add_core = THIS } }
 			FLO = { all_core = { add_core = THIS } }
-			ALL = { all_core = { add_core = THIS } }
+			ALE = { all_core = { add_core = THIS } }
 			CEF = { all_core = { add_core = THIS } }
 			AMB = { all_core = { add_core = THIS } }
 			any_country = {
 				limit = {
 					OR = {
 						tag = FLO
-						tag = ALL
+						tag = ALE
 						tag = CEF
 						tag = AMB
 						tag = AYL

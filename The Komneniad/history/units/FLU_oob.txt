@@ -1,6 +1,6 @@
 RGR = { value = -50 }
 AMB = { value = -50 }
-ALL = { value = -200 truce_until = 1836.7.1 }
+ALE = { value = -200 truce_until = 1836.7.1 }
 FLO = { value = -200 truce_until = 1836.7.1 }
 MEX = { value = -50 }
 YUC = { value = -50 }

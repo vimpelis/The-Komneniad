@@ -659,7 +659,7 @@ country_event = {
 
 	trigger = {
 		OR = {
-			tag = ALL
+			tag = ALE
 			tag = FLO
 		}
 		all_core = { OR = { owned_by = THIS empty = yes } }
@@ -688,7 +688,7 @@ country_event = {
 		year = 1850
 		NOT = { exists = AYL }
 		NOT = { exists = FLO }
-		NOT = { exists = ALL }
+		NOT = { exists = ALE }
 		NOT = { has_global_flag = fragmentation_of_AYL }
 	}
 
@@ -700,12 +700,12 @@ country_event = {
 		name = "The Caudillos will reign supreme."
 		AYL_formation_disabled = {}
 		FLO = { all_core = { remove_core = FLO } }
-		ALL = { all_core = { remove_core = ALL } }
+		ALE = { all_core = { remove_core = ALE } }
 		USA_198 = { add_core = FLO }
 		USA_200 = { add_core = FLO }
-		USA_196 = { add_core = ALL }
-		USA_194 = { add_core = ALL }
-		USA_185 = { add_core = ALL }
+		USA_196 = { add_core = ALE }
+		USA_194 = { add_core = ALE }
+		USA_185 = { add_core = ALE }
 		set_global_flag = fragmentation_of_AYL
 	}
 }
@@ -1159,10 +1159,10 @@ country_event = {
 		tag = AYL
 		nationalism_n_imperialism = 1
 		FLO = { all_core = { owned_by = THIS } }
-		ALL = { all_core = { owned_by = THIS } }
+		ALE = { all_core = { owned_by = THIS } }
 		CEF = { all_core = { owned_by = THIS } }
 		NOT = { exists = FLO }
-		NOT = { exists = ALL }
+		NOT = { exists = ALE }
 		NOT = { exists = CEF }
 	}
 
@@ -1180,7 +1180,7 @@ country_event = {
 			militancy = -2
 		}
 		FLO = { all_core = { remove_core = FLO } }
-		ALL = { all_core = { remove_core = ALL } }
+		ALE = { all_core = { remove_core = ALE } }
 		CEF = { all_core = { remove_core = CEF } }
 		random_owned = {
 			limit = {

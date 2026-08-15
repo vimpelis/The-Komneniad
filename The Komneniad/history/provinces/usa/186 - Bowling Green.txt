@@ -3,5 +3,5 @@ life_rating = 30
 terrain = forest_hills
 add_core = AYL
 add_core = CHE
-add_core = ALL
+add_core = ALE
 add_core = AMB

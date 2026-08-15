@@ -2,7 +2,7 @@ VRI = { value = -50 }
 FEB = { value = -25 }
 IRO = { value = -50 }
 AMB = { value = -200 }
-ALL = { value = -200 }
+ALE = { value = -200 }
 FLU = { value = -200 truce_until = 1836.7.1 }
 LEO = { value = 75 }
 

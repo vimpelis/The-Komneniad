@@ -1,8 +1,8 @@
-owner = ALL
-controller = ALL
+owner = ALE
+controller = ALE
 add_core = AYL
 add_core = CHE
-add_core = ALL
+add_core = ALE
 add_core = AMB
 trade_goods = cotton
 life_rating = 35

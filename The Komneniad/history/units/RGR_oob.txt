@@ -1,6 +1,6 @@
 LEO = { value = -50 }
 FLO = { value = 50 }
-ALL = { value = 50 }
+ALE = { value = 50 }
 CAL = { value = -50 }
 MEX = { value = -200 }
 FLU = { value = -50 }

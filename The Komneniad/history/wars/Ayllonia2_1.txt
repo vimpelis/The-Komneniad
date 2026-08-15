@@ -2,20 +2,20 @@ name = "2nd War of the Confederation"
 
 1818.6.24 = {
 	add_attacker = FLO
-	add_defender = ALL
+	add_defender = ALE
 	war_goal = {
 		casus_belli = make_puppet
 		actor = FLO
-		receiver = ALL
+		receiver = ALE
 	}
 	war_goal = {
 		casus_belli = make_puppet
-		actor = ALL
+		actor = ALE
 		receiver = FLO
 	}
 }
 
 1819.1.30 = {
 	rem_attacker = FLO
-	rem_defender = ALL
+	rem_defender = ALE
 }

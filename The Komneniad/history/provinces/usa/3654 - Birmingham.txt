@@ -1,7 +1,7 @@
-owner = ALL
+owner = ALE
 controller = FLO
 add_core = AYL
-add_core = ALL
+add_core = ALE
 add_core = FLO
 trade_goods = coal
 life_rating = 35

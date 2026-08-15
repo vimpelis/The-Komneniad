@@ -2,22 +2,22 @@ name = "4th War of the Confederation"
 
 1835.8.12 = {
 	add_attacker = FLO
-	add_defender = ALL
+	add_defender = ALE
 	war_goal = {
 		casus_belli = acquire_all_cores
 		country = FLO
 		actor = FLO
-		receiver = ALL
+		receiver = ALE
 	}
 	war_goal = {
 		casus_belli = acquire_all_cores
-		country = ALL
-		actor = ALL
+		country = ALE
+		actor = ALE
 		receiver = FLO
 	}
 }
 
 1837.1.1 = {
 	rem_attacker = FLO
-	rem_defender = ALL
+	rem_defender = ALE
 }

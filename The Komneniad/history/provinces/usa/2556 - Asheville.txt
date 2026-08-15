@@ -1,9 +1,9 @@
-owner = ALL
-controller = ALL
+owner = ALE
+controller = ALE
 add_core = AYL
 add_core = CHE
 add_core = CEF
-add_core = ALL
+add_core = ALE
 add_core = FLO
 trade_goods = tobacco
 terrain = montane_forest
