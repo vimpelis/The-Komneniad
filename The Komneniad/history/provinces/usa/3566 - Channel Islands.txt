@@ -1,6 +1,7 @@
-owner = AYL
-controller = AYL
+owner = FLO
+controller = FLO
+add_core = AYL
+add_core = FLO
 trade_goods = grain
 life_rating = 35
 terrain = staugustine
-add_core = AYL

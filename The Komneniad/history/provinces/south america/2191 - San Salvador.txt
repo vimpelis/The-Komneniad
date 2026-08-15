@@ -1,7 +1,8 @@
 owner = YUC
 controller = YUC
-trade_goods = dye
-life_rating = 39
-naval_base = 1
-terrain = salvador
+add_core = GUA
 add_core = YUC
+trade_goods = dye
+life_rating = 35
+naval_base = 1
+terrain = farmlands

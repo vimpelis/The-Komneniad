@@ -1,7 +1,8 @@
-owner = FRA
-controller = FRA
-add_core = ACA
+owner = FEB
+controller = FEB
+add_core = FEB
 trade_goods = tobacco
 life_rating = 35
-terrain = hartford
-colonial = 2
+terrain = farmlands
+railroad = 1
+fort = 1

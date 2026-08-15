@@ -1,8 +1,7 @@
-owner = BAV
-controller = BAV
-add_core = BAV
-add_core = KRA
-add_core = AUS
-add_core = HUN
+owner = ZPD
+controller = ZPD
+add_core = POL
+add_core = ZPD
+terrain = plains
 trade_goods = grain
 life_rating = 35

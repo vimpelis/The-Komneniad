@@ -1,7 +1,8 @@
-owner = AYL
-controller = AYL
+owner = ALL
+controller = ALL
+add_core = AYL
+add_core = ALL
+add_core = FLO
 trade_goods = cotton
 life_rating = 35
 terrain = atlanta
-add_core = AYL
-state_building = { level = 1 building = ammunition_factory upgrade = yes } 

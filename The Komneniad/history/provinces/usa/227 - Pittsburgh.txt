@@ -1,6 +1,6 @@
-owner = IRO
-controller = IRO
-add_core = IRO
+owner = VRI
+controller = VRI
+add_core = VRI
 trade_goods = coal
 life_rating = 35
 terrain = pittsburgh

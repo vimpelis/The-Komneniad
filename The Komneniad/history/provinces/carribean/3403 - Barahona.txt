@@ -3,5 +3,5 @@ controller = ADU
 add_core = HAI
 trade_goods = sugar
 life_rating = 35
-terrain = montane_forest
+terrain = forest_hills
 colonial = 2

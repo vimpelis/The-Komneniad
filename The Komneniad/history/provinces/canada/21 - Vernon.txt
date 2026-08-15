@@ -1,6 +1,3 @@
-owner = CAL
-controller = CAL
 add_core = CAL
 trade_goods = timber
-life_rating = 32
-colonial = 2
+life_rating = 15

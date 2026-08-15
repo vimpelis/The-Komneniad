@@ -723,35 +723,10 @@
 }
 #Delicias (8000/2000 POPS)
 2144 = {
-    aristocrats = {
-        culture = new_basque
-        religion = catholic
-        size = 19
-    }
-
-    clergymen = {
-        culture = new_basque
-        religion = catholic
-        size = 25
-    }
-
-    artisans = {
-        culture = new_basque
-        religion = catholic
-        size = 25
-    }
-
-    soldiers = {
-        culture = riograndense
-        religion = catholic
-        size = 100
-    }
-
     farmers = {
         culture = new_basque
         religion = catholic
-        size = 187
-        militancy = 9
+        size = 200
     }
 
     clergymen = {
@@ -777,30 +752,11 @@
         religion = animist
         size = 1200
     }
-
-    aristocrats = {
-        culture = riograndense
-        religion = catholic
-        size = 56
-    }
-
-    clergymen = {
-        culture = riograndense
-        religion = catholic
-        size = 75
-    }
-
-    artisans = {
-        culture = riograndense
-        religion = catholic
-        size = 75
-    }
-
+	
     farmers = {
         culture = riograndense
         religion = catholic
-        size = 563
-        militancy = 9
+        size = 250
     }
 }
 #Parral (16000/4000 POPS)
@@ -921,7 +877,7 @@
     farmers = {
         culture = riograndense
         religion = catholic
-        size = 910
+        size = 1500
     }
 
     clergymen = {
@@ -945,7 +901,14 @@
     farmers = {
         culture = native_american_minor
         religion = animist
-        size = 2200
+        size = 1200
+    }
+}
+3692 = {
+	farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 1100
     }
 }
 #Monclova (48000/12000 POPS)
@@ -1192,19 +1155,19 @@
     bureaucrats = {
         culture = riograndense
         religion = catholic
-        size = 70
+        size = 250
     }
 
     officers = {
         culture = riograndense
         religion = catholic
-        size = 15
+        size = 150
     }
 
     clergymen = {
         culture = riograndense
         religion = catholic
-        size = 75
+        size = 400
     }
 
     artisans = {
@@ -1216,13 +1179,13 @@
     soldiers = {
         culture = riograndense
         religion = catholic
-        size = 1075
+        size = 1200
     }
 
     farmers = {
         culture = riograndense
         religion = catholic
-        size = 6115
+        size = 9100
     }
 
     clergymen = {
@@ -1240,14 +1203,19 @@
     soldiers = {
         culture = native_american_minor
         religion = animist
-        size = 2750
+        size = 1700
     }
 
     farmers = {
         culture = native_american_minor
         religion = animist
         size = 2750
-        militancy = 9
+    }
+	
+	slaves = {
+        culture = afro_latino
+        religion = catholic
+        size = 750
     }
 }
 #Ciudad Victoria (24000/6000 POPS)
@@ -3452,113 +3420,42 @@
     }
 }
 3402 = {
-    aristocrats = {
-        culture = mexican
-        religion = catholic
-        size = 225
-    }
-
-    clergymen = {
-        culture = mexican
-        religion = catholic
-        size = 50
-    }
-
-    artisans = {
-        culture = mexican
-        religion = catholic
-        size = 200
-    }
-
-    soldiers = {
-        culture = mexican
-        religion = catholic
-        size = 50
-    }
-
-    farmers = {
-        culture = mexican
-        religion = catholic
-        size = 2075
-    }
-
-    aristocrats = {
-        culture = mexican
-        religion = catholic
-        size = 150
-        militancy = 9
-    }
-
-    clergymen = {
-        culture = mexican
-        religion = catholic
-        size = 50
-        militancy = 9
-    }
-
-    farmers = {
-        culture = mexican
-        religion = catholic
-        size = 1175
-        militancy = 5
-    }
-
-    artisans = {
-        culture = mexican
-        religion = catholic
-        size = 300
-        militancy = 9
-    }
-
     clergymen = {
         culture = mayan
-        religion = catholic
+        religion = animist
         size = 75
     }
 
     farmers = {
         culture = mayan
-        religion = catholic
+        religion = animist
         size = 6250
-        militancy = 9
     }
 }
 3615 = {
-    aristocrats = {
-        culture = mexican
-        religion = catholic
-        size = 125
-    }
-
-    clergymen = {
-        culture = mexican
-        religion = catholic
-        size = 50
-    }
-
-    artisans = {
-        culture = mexican
-        religion = catholic
-        size = 50
-    }
-
-    farmers = {
-        culture = mexican
-        religion = catholic
-        size = 1300
-    }
-
     clergymen = {
         culture = mayan
-        religion = catholic
+        religion = animist
         size = 75
     }
 
     farmers = {
         culture = mayan
-        religion = catholic
-        size = 6300
-        militancy = 9
+        religion = animist
+        size = 4500
+    }
+}
+3660 = {
+    clergymen = {
+        culture = mayan
+        religion = animist
+        size = 25
+    }
+
+    farmers = {
+        culture = mayan
+        religion = animist
+        size = 1050
     }
 }
 #Yucatan Region (440000)

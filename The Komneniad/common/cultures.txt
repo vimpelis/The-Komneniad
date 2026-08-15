@@ -862,6 +862,7 @@ east_slavic = {
                           Nikolaevich Ostrovsky Pavlov Putyatin Romanov Rozhestvensky Skobelev
                           Shuvalov Surkov Tukhachevsky Yegorov Yudenich Vorontsov Voroshilov Zavoyko }
     }
+	#unused currently
     litvine = {
         color = { 100 140 110 }
             first_names = { Rascislau Mikalaj Barys Anatol Zmicier Ihar Alaksandar
@@ -2411,7 +2412,7 @@ neo_european_cultures = {
         }
     }
 	vrijlander = {
-        color = { 170 140 70 }
+        color = { 185 100 65 }
         first_names = { Sarel Rudolf Andries Hendrik Piet Racheltjie Dirkie Siener Koos Danie Christiaan Petrus Paul Eugene Joubert
 			Narcisse René Èdouard Luc Letellier Théodore Louis Francois Auguste Joseph Pierre Luis-Phillippe Jean Gaspard Eugéne Èssioff Huguel Jean-Pierre Gilles
 			Aodh Brian Bearach Cainneach Caolan
@@ -2553,7 +2554,7 @@ latin_american_cultures = {
         }
     }
 	ayllonian = {
-        color = { 19 125 180 }
+        color = { 165 175 100 }
         first_names = { Adrián Agustín Álvaro Anastasio Andrés Ángel Antonio Bernardo Emiliano Emilio
         Enrique Ernesto Felipe Félix Francisco "Francisco Javier" Gabriel Gaspar Gregorio Ignacio
         Jerónimo Joaquín José "José Manuel" "José María" Juan "Juan Bautista" Justo Lázaro Manuel

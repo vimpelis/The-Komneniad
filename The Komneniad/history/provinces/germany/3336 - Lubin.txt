@@ -1,8 +1,8 @@
-add_core = SLS
-trade_goods = grain
-life_rating = 40
-terrain = luben
 owner = ZPD
 controller = ZPD
-add_core = ZPD
+add_core = SLS
 add_core = BOH
+add_core = ZPD
+terrain = forest
+trade_goods = grain
+life_rating = 40

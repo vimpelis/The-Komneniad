@@ -1,7 +1,8 @@
-owner = AYL
-controller = AYL
+owner = RGR
+controller = RGR
 add_core = RGR
+add_core = MEX
+terrain = plains
 trade_goods = fish
 life_rating = 35
 naval_base = 1
-add_core = MEX

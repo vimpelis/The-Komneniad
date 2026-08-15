@@ -6492,37 +6492,25 @@
     aristocrats = {
         culture = polish
         religion = catholic
-        size = 2700
-    }
-
-    soldiers = {
-        culture = polish
-        religion = catholic
-        size = 100
+        size = 700
     }
 
     clergymen = {
         culture = polish
         religion = catholic
-        size = 1100
+        size = 600
     }
 
     artisans = {
         culture = polish
         religion = catholic
-        size = 5250
+        size = 3250
     }
 
     farmers = {
         culture = polish
         religion = catholic
-        size = 46050
-    }
-
-    farmers = {
-        culture = polish
-        religion = catholic
-        size = 42500
+        size = 36050
     }
 
     clergymen = {
@@ -6534,19 +6522,19 @@
     soldiers = {
         culture = polish
         religion = catholic
-        size = 100
+        size = 2200
     }
 
     artisans = {
         culture = ashkenazi
         religion = jewish
-        size = 4675
+        size = 3675
     }
 
     farmers = {
         culture = ashkenazi
         religion = jewish
-        size = 8200
+        size = 6200
     }
 
     farmers = {
@@ -6745,7 +6733,54 @@
         size = 5
     }
 }
-3341 = {
+3282 = {
+	aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 2200
+    }
+	
+	clergymen = {
+        culture = polish
+        religion = catholic
+        size = 1000
+    }
+	
+	artisans = {
+        culture = polish
+        religion = catholic
+        size = 2000
+    }
+	
+	farmers = {
+        culture = polish
+        religion = catholic
+        size = 38500
+    }
+	
+	soldiers = {
+        culture = polish
+        religion = catholic
+        size = 2000
+    }
+	
+	clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 200
+    }
+	
+	artisans = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1200
+    }
+	
+	farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 3400
+    }
 }
 #Wadowice
 3285 = {

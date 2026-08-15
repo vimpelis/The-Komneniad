@@ -1,6 +1,7 @@
 owner = YUC
 controller = YUC
-trade_goods = fruit
-terrain = farmlands
-life_rating = 35
+add_core = GUA
 add_core = YUC
+trade_goods = fruit
+terrain = hills
+life_rating = 35

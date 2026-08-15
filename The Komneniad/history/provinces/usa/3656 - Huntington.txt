@@ -1,7 +1,7 @@
-owner = AYL
-controller = AYL
+owner = AMB
+controller = AMB
+add_core = CHE
+add_core = AMB
 trade_goods = iron
 life_rating = 35
-terrain = montane_forest
-add_core = AYL
-add_core = CHE
+terrain = forest_hills

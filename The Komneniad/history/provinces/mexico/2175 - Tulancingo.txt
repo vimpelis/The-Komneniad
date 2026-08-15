@@ -1,5 +1,6 @@
 owner = MEX
 controller = MEX
 add_core = MEX
+terrain = forest_hills
 trade_goods = precious_metal
 life_rating = 35

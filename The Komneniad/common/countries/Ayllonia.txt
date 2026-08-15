@@ -1,5 +1,6 @@
 graphical_culture = MexicanGC
-color = { 100 145 180 }
+color = { 205 180 170 }
+radical_republic = { 200 200 130 }
 
 party = {
     name = "MEX_conservative"

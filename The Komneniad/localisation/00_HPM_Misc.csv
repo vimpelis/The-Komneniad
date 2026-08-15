@@ -151,7 +151,7 @@ MAPMODE_22;Naval Mapmode;;;;;;;;;;;;;
 PV_POP_NATIONALITY;Culture;;;;;;;;;;;;;
 POPV_SORT_BY_RR;Rebel Faction;;;;;;;;;;;;;
 NATIONALITY_DISTTITLE;Culture;;;;;;;;;;;;;
-TERM_FOR_LIFE;No Elections in this form of government.;;;;;;;;;;;;;
+TERM_FOR_LIFE;No Elections in this government form.;;;;;;;;;;;;;
 HAVE_LESS_BADBOY_THAN;Have less infamy than ;;;;;;;;;;;;;
 HAVE_AT_LEAST_ONE_OWNED_NEIGHBORING_PROVINCE;Have at least one owned neighboring province such that:;;;;;;;;;;;;;
 DONT_HAVE_THE_PROVINCE_MODIFIER;Do NOT have the province modifier ;;;;;;;;;;;;;

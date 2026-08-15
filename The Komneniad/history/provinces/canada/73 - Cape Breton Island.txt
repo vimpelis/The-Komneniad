@@ -1,7 +1,6 @@
-owner = FRA
-controller = FRA
+owner = ACA
+controller = ACA
 add_core = ACA
 trade_goods = coal
 life_rating = 35
 terrain = cape_brenton_island
-colonial = 2

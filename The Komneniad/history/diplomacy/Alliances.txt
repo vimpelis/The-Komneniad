@@ -212,8 +212,15 @@ alliance = {
 }
 
 alliance = {
-    first = AYL
-    second = CAL
+    first = YUC
+    second = RGR
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+alliance = {
+    first = VRI
+    second = FEB
     start_date = 1836.1.1
     end_date = 1936.1.1
 }

@@ -1,2 +1,76 @@
 ### Home province should have enough population to ensure rebels' size or rebels just won't be created at the game start.
 ### Don't forget to add rebel_type = in the history/pops as well as some militancy to create more rebels at the game start.
+army = {
+	name = "Abu Yahya al-Asghar's Revolt"
+	leader = {
+		name = "Abu Yahya al-Asghar"
+		date = 1830.1.1
+		type = land
+		personality = defence_4.1
+		background = attack_2.1
+		prestige = 0.5
+	}
+	location = 2215
+	regiment = {
+		name = "Zanj Rebels"
+		type = infantry
+		home = 2215
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = infantry
+		home = 2215
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = irregular
+		home = 2215
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = irregular
+		home = 3309
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = cavalry
+		home = 2216
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = cavalry
+		home = 2216
+	}
+}
+army = {
+	name = "Abu Yahya al-Akbar's Revolt"
+	leader = {
+		name = "Abu Yahya al-Akbar"
+		date = 1830.1.1
+		type = land
+		personality = defence_2.1
+		background = attack_2.1
+		prestige = 0.2
+	}
+	location = 3319
+	regiment = {
+		name = "Zanj Rebels"
+		type = infantry
+		home = 3319
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = irregular
+		home = 3319
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = irregular
+		home = 3320
+	}
+	regiment = {
+		name = "Zanj Rebels"
+		type = cavalry
+		home = 3320
+	}
+}

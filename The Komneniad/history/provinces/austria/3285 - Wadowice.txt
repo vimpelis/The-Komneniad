@@ -1,7 +1,8 @@
-add_core = POL
-trade_goods = coal
-life_rating = 35
 owner = ZPD
 controller = ZPD
+add_core = POL
 add_core = ZPD
+terrain = mountain
+trade_goods = coal
+life_rating = 35
 state_building = { level = 1 building = liquor_distillery upgrade = yes } 

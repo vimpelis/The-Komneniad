@@ -1,5 +1,6 @@
 color = { 139  107  255 }
-graphical_culture = Generic
+colonial_company = { 32 77 124 }
+graphical_culture = EuropeanGC
 
 party = {
     name = "RUT_conservative"

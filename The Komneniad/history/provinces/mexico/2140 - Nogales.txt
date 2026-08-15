@@ -2,5 +2,5 @@ owner = NBS
 controller = NBS
 trade_goods = grain
 life_rating = 35
-terrain = hermosillo
+terrain = semidesert
 add_core = NBS

@@ -1,14 +1,14 @@
 #Starting event
 country_event = {
     id = 154000
-    title = "A State That Hates Itself"
+    title = "Between Revolution and Reaction"
     desc = "154000DESC"
-    picture = "ZPD"
+    picture = "bohemia_revolutionaries"
 
     is_triggered_only = yes
 
     option = {
-        name = "A bomb to be defused."
+        name = "But in the end, 'If God is with us, then who is against us?'"
     }
 }
 
@@ -17,7 +17,7 @@ country_event = {
     id = 154001
     title = "Wedding to the Sea"
     desc = "154001DESC"
-    picture = "ZPD"
+    picture = "bohemia_revolutionaries"
 
     trigger = {
 		tag = ZPD
@@ -45,7 +45,7 @@ country_event = {
     id = 154002
     title = "An alliance against Bavaria"
     desc = "We should kill Bavaria with hammers."
-    picture = "ZPD"
+    picture = "bohemia_revolutionaries"
 
     trigger = {
 		tag = ZPD
@@ -69,5 +69,118 @@ country_event = {
 		any_greater_power = { leave_alliance = THIS }
 		BRB = { any_greater_power = { leave_alliance = THIS } }
 		create_alliance = BRB
+    }
+}
+
+country_event = {
+    id = 154003
+    title = "End of $COUNTRY$"
+    desc = "We have lost Bohemia, the heart of the West Slavic state. With the loss of Prague, so is lost $COUNTRY$."
+    picture = "bohemia_revolutionaries"
+
+    trigger = {
+		tag = ZPD
+		NOT = {
+			any_owned_province = {
+				is_core = BOH
+			}
+		}
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    option = {
+        name = "Ok."
+		change_tag = POL
+		release = MRV
+		BOH = { all_core = { remove_core = THIS } }
+		MRV = { all_core = { remove_core = THIS } }
+    }
+}
+
+country_event = {
+    id = 154004
+    title = "The 1848 Lviv Slavic Congress"
+    desc = "154004DESC"
+    picture = "slavic_congress"
+
+    trigger = {
+		year = 1848
+		owns = 702
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+	
+	major = yes
+
+    option = {
+        name = "Interesting."
+		any_country = {
+			limit = {
+				capital_scope = { continent = europe }
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_culture_group = west_slavic
+						is_culture_group = east_slavic
+						is_culture_group = south_slavic
+					}
+					literacy = 0.3
+				}
+				consciousness = 1
+			}
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					tag = RUT
+					vassal_of = ZPD
+					ZPD = { OR = { government = absolute_monarchy government = prussian_constitutionalism } }
+				}
+			}
+			ZPD = { country_event = { id = 154005 days = 14 } }
+		}
+    }
+}
+
+country_event = {
+    id = 154005
+    title = "Supreme Ruthenian Council decrees Integration"
+    desc = "154005DESC"
+    picture = "slavic_congress"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Pan-Slavism donned with the Crown of St. Wenceslaus is the future!"
+		government = hms_government
+		political_reform = universal_weighted_voting
+		political_reform = gerrymandering
+		political_reform = state_equal_weight
+		scaled_militancy = {
+			ideology = reactionary
+			factor = 4
+		}
+		scaled_militancy = {
+			ideology = conservative
+			factor = 2
+		}
+		scaled_militancy = {
+			ideology = liberal
+			factor = -2
+		}
+		scaled_militancy = {
+			ideology = radical
+			factor = -4
+		}
     }
 }

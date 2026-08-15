@@ -1010,7 +1010,7 @@ submarine_warfare = {
     leadership_modifier = 0.1
     naval_organisation = 0.15
     navy_tech_research_bonus = 0.1
-    icon = 17
+    icon = 29
 }
 
 exemplary_troops = {
@@ -5116,25 +5116,25 @@ SPA_bureaucratic_mess = {
 
 SPA_reverse_arabization = {
     global_assimilation_rate = 1
-    icon = 17
+    icon = 27
 }
 
 espanian_cultural_unity = {
     global_assimilation_rate = 3
-    icon = 17
+    icon = 27
 }
 
 ADU_arabization = {
     global_assimilation_rate = 1.5
 	education_efficiency_modifier = 0.15
-    icon = 17
+    icon = 27
 }
 
 espanian_cultural_unity_2 = {
     global_assimilation_rate = 1
 	education_efficiency_modifier = 0.20
 	administrative_efficiency_modifier = 0.1
-    icon = 17
+    icon = 27
 }
 
 BRB_feudalism = {
@@ -5157,7 +5157,7 @@ celtification = {
 	assimilation_rate = 1
 	pop_militancy_modifier = 0.05
 	pop_consciousness_modifier = 0.05
-    icon = 3
+    icon = 27
 }
 
 dysfunctional_state = {
@@ -5192,12 +5192,12 @@ giant_of_the_south = {
 	global_immigrant_attract = 0.1
 	land_organisation = 0.1
 	naval_organisation = 0.1 
-    icon = 7
+    icon = 29
 }
 
 setup_leadership_buff = {
 	leadership_modifier = 1000
-    icon = 5
+    icon = 23
 }
 
 slavic_revolt = {
@@ -5222,7 +5222,7 @@ reiszakers = {
 }
 
 reiszakers_moved_in = {
-    icon = 19
+    icon = 26
 }
 
 post_zemene_mesafint = {
@@ -5258,7 +5258,7 @@ ETH_demographic_crisis = {
 }
 
 ai_event_cooldown = {
-    icon = 16
+    icon = 24
 }
 
 religious_effort = {
@@ -5275,7 +5275,7 @@ NUB_taxation = {
 }
 
 ETH_5y_cooldown = {
-    icon = 16
+    icon = 24
 }
 
 ETH_verylow_modf = {
@@ -5379,14 +5379,13 @@ KDS_more_mob = {
 }
 
 KDS_tribute_cooldown = {
-    icon = 16
+    icon = 24
 }
 
 EGY_beirut = {
 	pop_consciousness_modifier = 0.1
 	local_RGO_output = -0.9
 	local_artisan_output = -0.9
-	goods_demand = -0.9
     icon = 8
 }
 
@@ -5516,7 +5515,7 @@ severe_drought = {
 impassable = {
 	movement_cost = 99.99
     supply_limit = -16
-    icon = 10
+    icon = 28
 }
 
 ETH_regency_lvl_1 = {
@@ -5568,7 +5567,7 @@ uprising_10percent_mob_modf = {
     war_exhaustion = -0.5
     tax_efficiency = 0.25
     tariff_efficiency_modifier = 0.1
-    icon = 18
+    icon = 21
 }
 
 BRB_states_resistance = {
@@ -5605,13 +5604,13 @@ ASY_nestorian_isolation = {
 ASY_university_1 = {
 	research_points_modifier = 0.1
 	education_efficiency_modifier = 0.15
-    icon = 3
+    icon = 27
 }
 
 ASY_university_2 = {
 	research_points_modifier = 0.1
 	education_efficiency_modifier = 0.15
-    icon = 3
+    icon = 27
 }
 
 ASY_resitance_to_conversion = {
@@ -5668,7 +5667,7 @@ exceptional_willpower = {
 	diplomatic_points_modifier = -0.75
 	education_efficiency_modifier = -0.75
 	global_population_growth = -0.005
-    icon = 15
+    icon = 21
 }
 
 wartime_recovery = {
@@ -5678,7 +5677,7 @@ wartime_recovery = {
 	tax_efficiency = -0.1
     global_pop_militancy_modifier = 0.05
 	war_exhaustion = 0.25
-    icon = 6
+    icon = 22
 }
 
 RUM_new_tribes = {
@@ -5698,14 +5697,14 @@ OMA_sold_out_country = {
 EGY_greekschool = {
 	research_points_modifier = 0.05
 	diplomatic_points_modifier = 0.05
-    icon = 3
+    icon = 27
 }
 
 province_development_effort = {
 	population_growth = 0.002
 	immigrant_attract = 0.25
 	local_RGO_output = 0.05
-    icon = 3
+    icon = 27
 }
 
 FER_old_stocks = {
@@ -5718,5 +5717,45 @@ FER_inward_perfection = {
     core_pop_militancy_modifier = -0.01
     research_points_modifier = 0.2
     education_efficiency_modifier = 0.2
-    icon = 3
+    icon = 27
+}
+
+slave_revolt = {
+    local_RGO_output = -1
+    life_rating = -0.25
+    pop_militancy_modifier = 0.1
+    icon = 18
+}
+
+MEX_resistance_to_centralization = {
+    mobilisation_size = -0.05
+	land_organisation = -0.05
+	tax_efficiency = -0.1
+    icon = 2
+}
+
+MEF_federalist_fervour = {
+    mobilisation_size = 0.05
+	land_organisation = 0.15
+	tax_efficiency = 0.1
+    icon = 17
+}
+
+military_rule = {
+    org_regain = 0.25
+    leadership_modifier = 0.2
+    land_organisation = 0.1
+    cb_generation_speed_modifier = 0.2
+    icon = 15
+}
+
+cimarronia = {
+    movement_cost = 0.5
+    supply_limit = -10
+	max_attrition = 5
+    icon = 24
+}
+
+revzeal_just_won_war = {
+    icon = 24
 }

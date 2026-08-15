@@ -1,7 +1,6 @@
-owner = AYL
-controller = AYL
-trade_goods = cotton
-life_rating = 35
-terrain = baton_rouge
-add_core = AYL
+owner = FLU
+controller = FLU
 add_core = FLU
+trade_goods = dye
+life_rating = 35
+terrain = forest

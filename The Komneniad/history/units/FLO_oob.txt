@@ -1,0 +1,90 @@
+VRI = { value = -50 }
+FEB = { value = -25 }
+IRO = { value = -50 }
+AMB = { value = -200 }
+ALL = { value = -200 }
+FLU = { value = -200 truce_until = 1836.7.1 }
+LEO = { value = 75 }
+
+leader = {
+    name = "Miguel Bustamante"
+    date = 1835.1.1
+    type = land
+    personality = defence_1.1
+    background = attack_2.76
+    prestige = 0.4
+}
+
+leader = {
+    name = "Juan Montero"
+    date = 1835.1.1
+    type = land
+    personality = defence_3.1
+    background = attack_minus_1.1
+    prestige = 0.1
+}
+
+army = {
+    name = "1st Army"
+    location = 3654
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 194
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 197
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 195
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 196
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 198
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 3566
+    }
+	regiment = {
+        name = "5th Artillery Regiment"
+        type = artillery
+        home = 199
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 200
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+}

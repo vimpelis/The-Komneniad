@@ -1,6 +1,6 @@
-owner = FRA
-controller = FRA
+owner = ACA
+controller = ACA
 add_core = ACA
+add_core = FEB
 trade_goods = timber
 life_rating = 35
-colonial = 2

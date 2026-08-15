@@ -198,7 +198,7 @@
 197;128;112;0;Mobile;x
 198;160;48;0;Tallahassee;x
 199;192;240;64;St Augustine;x
-200;64;112;192;Tampa;x
+200;64;112;192;Miami;x
 201;64;112;64;Atlanta;x
 202;192;112;64;Valdosta;x
 203;22;158;45;Bermuda;x
@@ -3687,6 +3687,15 @@
 3686;82;126;221;Lake Päijänne;x
 3687;170;197;255;Lake Nasijarv;x
 3688;66;105;201;Lake Ilmen;x
+3689;1;100;200;Boavista;x
+3690;2;100;200;San Jose;x
+3691;100;100;200;San Elisario;x
+3692;200;100;200;Alarcon;x
+3693;3;100;200;Hopi;x
+3694;4;100;200;Hernando;x
+3695;5;100;200;Carmelo;x
+3696;6;100;200;Tampa;x
+3697;101;100;200;Central Florida;x
 ;111;17;245;Lake of the Woods;x
 ;111;17;246;Lake Nipissing;x
 ;111;17;247;Lake Simcoe;x

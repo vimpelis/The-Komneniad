@@ -1,4 +1,163 @@
 political_decisions = {
+	unify_selwand = {
+		picture = columbia_personification
+		potential = {
+			OR = {
+				tag = VRI
+				tag = FEB
+			}
+			NOT = { has_global_flag = unified_selwand }
+		}
+		allow = {
+			rank = 12
+			all_core = { owned_by = THIS }
+			FEB = {
+				OR = {
+					tag = THIS
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			VRI = {
+				OR = {
+					tag = THIS
+					vassal_of = THIS
+					in_sphere = THIS
+				}
+			}
+			war = no
+		}
+		effect = {
+			prestige = 15
+			badboy = 10
+			random_owned = {
+				limit = {
+					owner = {
+						tag = VRI
+					}
+				}
+				FEB = { country_event = 158031 }
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						tag = FEB
+					}
+				}
+				VRI = { country_event = 158031 }
+			}
+			FEB = { all_core = { add_core = THIS } }
+			VRI = { all_core = { add_core = THIS } }
+			set_global_flag = unified_selwand
+			set_country_flag = selwand
+		}
+		ai_will_do = {
+            factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+        }
+	}
+	
+	SEL_great_lakes = {
+		picture = columbia_personification
+		potential = {
+			OR = {
+				tag = VRI
+				tag = FEB
+			}
+			owns = 178
+			OR = {
+				has_country_flag = selwand
+				year = 1845
+			}
+			NOT = { is_core = 172 }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			state_n_government = 1
+			war = no
+		}
+		effect = {
+			badboy = 10
+			USA_170 = { add_core = THIS }
+			USA_176 = { add_core = THIS }
+			CAN_46 = { add_core = THIS }
+			165 = { add_core = THIS }
+			171 = { add_core = THIS }
+		}
+		ai_will_do = {
+            factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.6
+            }
+        }
+	}
+	
+	SEL_smash_ambrosia = {
+		picture = columbia_personification
+		potential = {
+			OR = {
+				tag = VRI
+				tag = FEB
+			}
+			owns = 213
+			OR = {
+				has_country_flag = selwand
+				year = 1848
+			}
+			NOT = { is_core = 172 }
+		}
+		allow = {
+			all_core = { owned_by = THIS }
+			nationalism_n_imperialism = 1
+			war = no
+		}
+		effect = {
+			badboy = 15
+			USA_211 = { add_core = THIS }
+			USA_205 = { add_core = THIS }
+			USA_3657 = { add_core = THIS }
+			USA_185 = { add_core = THIS }
+		}
+		ai_will_do = {
+            factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.4
+            }
+        }
+	}
+	
+	FLU_claim_great_plains = {
+		picture = great_plains
+		potential = {
+			tag = FLU
+			NOT = { is_core = 131 }
+		}
+		allow = {
+			OR = {
+				medicine = 1
+				year = 1845
+			}
+			war = no
+		}
+		effect = {
+			badboy = 5
+			USA_129 = { add_core = THIS }
+			USA_124 = { add_core = THIS }
+		}
+		ai_will_do = {
+            factor = 1
+			modifier = {
+                factor = 0
+                badboy = 0.8
+            }
+        }
+	}
+	
 	CLT_ildathach_autonomy = {
 		picture = canada
 		potential = {
@@ -104,470 +263,11 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	IRO_overlord_annex = {
-		picture = organize_indian_territory
-		potential = {
-			is_our_vassal = IRO
-			has_country_flag = IRO_overlord_decline
-			NOT = { has_global_flag = IRO_overlord_annex }
-		}
-		allow = {
-			nationalism_n_imperialism = 1
-			war = no
-		}
-		effect = {
-			badboy = 7.5
-			inherit = IRO
-			IRO = { all_core = { add_core = ILD } }
-			set_country_flag = IRO_overlord_annex
-			set_global_flag = IRO_overlord_annex
-		}
-		ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                NOT = { year = 1861 }
-            }
-			modifier = {
-				factor = 0
-				badboy = 0.7
-			}
-        }
-	}
-	
-	CLN_IRO_demand = {
-		picture = organize_indian_territory
-		potential = {
-			tag = CLN
-			has_global_flag = IRO_overlord_annex
-			NOT = { has_country_flag = CLN_IRO_demand }
-		}
-		allow = {
-			exists = yes
-		}
-		effect = {
-			if = {
-				limit = {
-					AYL = {
-						exists = yes
-						owns = 184
-						owns = 185
-						NOT = { owns = 172 }
-					}
-				}
-				AYL = {
-					country_event = 158003
-				}
-			}
-			if = {
-				limit = {
-					VRI = {
-						exists = yes
-						owns = 225
-						owns = 221
-						NOT = { owns = 236 }
-					}
-				}
-				VRI = {
-					country_event = 158004
-				}
-			}
-			set_country_flag = CLN_IRO_demand
-		}
-		ai_will_do = {
-            factor = 1
-        }
-	}
-	
-	IRO_overlord_release = {
-		picture = organize_indian_territory
-		potential = {
-			is_our_vassal = IRO
-			has_country_flag = IRO_overlord_decline
-		}
-		allow = {
-			war = no
-			nationalism_n_imperialism = 1
-		}
-		effect = {
-			badboy = -3
-			release_vassal = IRO
-			relation = { who = IRO value = 400 }
-			IRO = {
-				government = democracy
-			}
-			clr_country_flag = IRO_overlord_decline
-			set_global_flag = IRO_free
-		}
-		ai_will_do = {
-            factor = 0
-        }
-	}
-	
-	VRI_rally_the_betrodden = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			NOT = { has_country_flag = VRI_rally_the_betrodden }
-		}
-		allow = {
-			war_with = AYL
-			all_core = { owned_by = THIS }
-		}
-		effect = {
-			tooltip_1 = {}
-			prestige = 15
-			badboy = 10
-			country_event = 158007
-			USA_201 = { add_core = VRI }
-			USA_3657 = { add_core = VRI }
-			set_country_flag = VRI_rally_the_betrodden
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.6
-            }
-		}
-	}
-	
-	VRI_kill_ayllonia = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_rally_the_betrodden
-			NOT = { has_country_flag = VRI_kill_ayllonia }
-		}
-		allow = {
-			state_n_government = 1
-			all_core = { owned_by = THIS }
-			war = no
-		}
-		effect = {
-			badboy = 20
-			USA_185 = { add_core = VRI }
-			USA_196 = { add_core = VRI }
-			USA_200 = { add_core = VRI }
-			USA_194 = { add_core = VRI }
-			set_country_flag = VRI_kill_ayllonia
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.2
-            }
-		}
-	}
-	
-	VRI_take_AYL_borderlands = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_kill_ayllonia
-			178 = { is_core = AYL }
-			NOT = { has_country_flag = VRI_take_AYL_borderlands }
-		}
-		allow = {
-			state_n_government = 1
-			all_core = { owned_by = THIS }
-			war = no
-		}
-		effect = {
-			badboy = 5
-			USA_178 = { add_core = VRI }
-			USA_170 = { add_core = VRI }
-			set_country_flag = VRI_take_AYL_borderlands
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.8
-            }
-		}
-	}
-	
-	VRI_accept_ayllonians = {
-		picture = blackfoot_treaty
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_kill_ayllonia
-			NOT = { has_country_flag = VRI_accept_ayllonians }
-		}
-		allow = {
-			nationalism_n_imperialism = 1
-			all_core = { owned_by = THIS }
-			war = no
-		}
-		effect = {
-			prestige = 10
-			add_accepted_culture = ayllonian
-			set_country_flag = VRI_accept_ayllonians
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	VRI_expand_frontier = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_kill_ayllonia
-			NOT = { OR = { has_country_flag = VRI_expand_frontier 178 = { is_core = AYL } } }
-		}
-		allow = {
-			nationalism_n_imperialism = 1
-			all_core = { owned_by = THIS }
-			war = no
-		}
-		effect = {
-			badboy = 10
-			USA_178 = { add_core = VRI }
-			USA_170 = { add_core = VRI }
-			USA_2556 = { add_core = VRI }
-			set_country_flag = VRI_expand_frontier
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.6
-            }
-		}
-	}
-	
-	VRI_manifest_destiny = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_kill_ayllonia
-			NOT = { has_country_flag = VRI_manifest_destiny }
-		}
-		allow = {
-			nationalism_n_imperialism = 1
-			war = no
-		}
-		effect = {
-			badboy = 5
-			prestige = 20
-			set_country_flag = VRI_manifest_destiny
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.8
-            }
-		}
-	}
-	
-	VRI_liberate_acadia = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_manifest_destiny
-			NOT = { has_country_flag = VRI_liberate_acadia }
-		}
-		allow = {
-			all_core = { owned_by = THIS }
-			war = no
-		}
-		effect = {
-			badboy = 18
-			ACA = { all_core = { add_core = VRI } }
-			add_accepted_culture = acadian
-			set_country_flag = VRI_liberate_acadia
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.28
-            }
-		}
-	}
-	
-	VRI_great_lakes = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_manifest_destiny
-			NOT = { has_country_flag = VRI_great_lakes }
-		}
-		allow = {
-			revolution_n_counterrevolution = 1
-			all_core = { owned_by = THIS }
-			war = no
-		}
-		effect = {
-			badboy = 20
-			IRO = { all_core = { add_core = VRI } }
-			set_country_flag = VRI_great_lakes
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.2
-            }
-		}
-	}
-	
-	VRI_ildathach = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_great_lakes
-			NOT = { has_country_flag = VRI_ildathach }
-		}
-		allow = {
-			military_directionism = 1
-			all_core = { owned_by = THIS }
-			war = no
-		}
-		effect = {
-			badboy = 24.5
-			ILD = { all_core = { add_core = VRI } }
-			add_accepted_culture = ildathach
-			set_country_flag = VRI_ildathach
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.95
-            }
-		}
-	}
-	
-	VRI_liberate_antillean = {
-		picture = spain_slavery_abolition
-		potential = {
-			tag = VRI
-			has_country_flag = VRI_kill_ayllonia
-			owns = 200
-			NOT = { has_country_flag = VRI_liberate_antillean }
-		}
-		allow = {
-			nationalism_n_imperialism = 1
-			owns = 2209
-			owns = 2217
-			owns = 2222
-			war = no
-		}
-		effect = {
-			add_accepted_culture = afro_latino
-			add_accepted_culture = afro_caribbean
-			add_accepted_culture = afro_dutch
-			add_accepted_culture = afro_french
-			add_accepted_culture = afro_occitan
-			set_country_flag = VRI_liberate_antillean
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	DES_beachan = {
-		picture = mormons
-		potential = {
-			tag = DES
-			115 = { empty = yes }
-		}
-		allow = {
-			OR = {
-				state_n_government = 1
-				AND = {
-					ai = yes
-					year = 1850
-				}
-			}
-			war = no
-		}
-		effect = {
-			prestige = 5
-			all_core = {
-				limit = {
-					empty = yes
-					region = ENG_22
-				}
-				secede_province = THIS
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	DES_ciseachachan = {
-		picture = mormons
-		potential = {
-			tag = DES
-			32 = { empty = yes }
-		}
-		allow = {
-			owns = 115
-			OR = {
-				inorganic_chemistry = 1
-				AND = {
-					ai = yes
-					year = 1855
-				}
-			}
-			war = no
-		}
-		effect = {
-			prestige = 5
-			all_core = {
-				limit = {
-					empty = yes
-					region = ENG_30
-				}
-				secede_province = THIS
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	DES_move_south = {
-		picture = mormons
-		potential = {
-			tag = DES
-			owns = 115
-			116 = { empty = yes }
-		}
-		allow = {
-			OR = {
-				nationalism_n_imperialism = 1
-				AND = {
-					ai = yes
-					year = 1860
-				}
-			}
-			war = no
-		}
-		effect = {
-			prestige = 5
-			badboy = 2
-			USA_121 = {
-				add_core = THIS
-				secede_province = THIS
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-                factor = 0
-                badboy = 0.9
-            }
-		}
-	}
-	
 	DES_secure_bhinnepeg = {
 		picture = mormons
 		potential = {
 			tag = DES
-			owns = 32
-			30 = { empty = yes }
+			NOT = { has_country_flag = DES_expand }
 		}
 		allow = {
 			OR = {
@@ -588,6 +288,9 @@ political_decisions = {
 			CAN_23 = {
 				add_core = THIS
 			}
+			USA_121 = {
+				add_core = THIS
+			}
 			all_core = {
 				limit = {
 					empty = yes
@@ -606,6 +309,7 @@ political_decisions = {
 				name = america_new_world
 				duration = 3650
 			}
+			set_country_flag = DES_expand
 		}
 		ai_will_do = {
 			factor = 1
@@ -614,32 +318,5 @@ political_decisions = {
                 badboy = 0.8
             }
 		}
-	}
-	
-	ACA_independence = {
-		picture = organize_acadia
-		potential = {
-			any_owned_province = { is_core = ACA }
-			has_country_flag = ACA_rush_over
-			NOT = { exists = ACA }
-		}
-		allow = {
-			war = no
-		}
-		effect = {
-			prestige = 5
-			badboy = -4
-			release = ACA
-			create_alliance = ACA
-			relation = {
-				who = ACA
-				value = 400
-			}
-			diplomatic_influence = {
-				who = ACA
-				value = 400
-			}
-		}
-		ai_will_do = { factor = 1 modifier = { factor = 0 government = absolute_monarchy } }
 	}
 }

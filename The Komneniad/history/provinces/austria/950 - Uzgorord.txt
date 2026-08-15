@@ -1,8 +1,8 @@
-owner = GLM
-controller = GLM
-add_core = GLM
+owner = RUT
+controller = RUT
+add_core = RUT
 add_core = HUN
+add_core = ZPD
 trade_goods = timber
 life_rating = 35
 terrain = ungvar
-add_core = ZPD

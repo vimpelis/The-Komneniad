@@ -1,6 +1,5 @@
-owner = AYL
-controller = AYL
+owner = FLU
+controller = FLU
+add_core = FLU
 trade_goods = cotton
 life_rating = 35
-add_core = AYL
-add_core = FLU

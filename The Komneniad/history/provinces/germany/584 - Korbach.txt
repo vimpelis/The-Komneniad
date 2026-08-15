@@ -3,5 +3,5 @@ controller = ZPD
 add_core = ZPD
 add_core = POL
 trade_goods = iron
-life_rating = 40
-terrain = korbach
+life_rating = 35
+terrain = forest

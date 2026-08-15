@@ -1,8 +1,7 @@
-owner = VRI
-controller = VRI
+owner = AMB
+controller = AMB
+add_core = AMB
+add_core = VRI
 trade_goods = coal
 life_rating = 35
 terrain = montane_forest
-add_core = VRI
-party_loyalty = { ideology = conservative loyalty_value = 10 } 
-party_loyalty = { ideology = liberal loyalty_value = 20 } 

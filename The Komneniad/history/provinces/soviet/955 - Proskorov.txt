@@ -1,7 +1,7 @@
-owner = GLM
-controller = GLM
-add_core = GLM
+owner = RUT
+controller = RUT
+add_core = RUT
+add_core = ZPD
 trade_goods = cattle
 life_rating = 35
 terrain = kamenets
-add_core = ZPD

@@ -1,5 +1,6 @@
 owner = NBS
 controller = NBS
+add_core = NBS
+terrain = forest
 trade_goods = cattle
 life_rating = 35
-add_core = NBS

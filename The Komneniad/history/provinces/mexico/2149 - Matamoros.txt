@@ -1,7 +1,7 @@
-owner = AYL
-controller = AYL
-terrain = monterrey
+owner = RGR
+controller = RGR
 add_core = RGR
+add_core = MEX
+terrain = steppe
 trade_goods = iron
 life_rating = 35
-add_core = MEX

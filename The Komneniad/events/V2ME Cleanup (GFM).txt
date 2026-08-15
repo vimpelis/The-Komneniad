@@ -296,6 +296,77 @@ country_event = {
 			}
 			clr_country_flag = colony_exemption
 		}
+		#####Komneniad systems#####
+		#####Revolutionary zeal system#####
+		any_country = {
+			limit = {
+				NOT = { government = radical_republic }
+			}
+			plurality = -100
+			clr_country_flag = sister_republic
+			clr_country_flag = revzeal_initialized
+		}
+		any_country = {
+			limit = {
+				government = radical_republic
+				NOT = { has_country_flag = revzeal_initialized }
+			}
+			set_country_flag = revzeal_initialized
+			country_event = 180004
+			plurality = 50
+		}
+		###monthly change
+		any_country = {
+			limit = {
+				government = radical_republic
+				war = no
+			}
+			plurality = -1
+		}
+		any_country = {
+			limit = {
+				government = radical_republic
+				war = yes
+			}
+			plurality = -0.5
+		}
+		any_country = {
+			limit = {
+				government = radical_republic
+				ruling_party_ideology = liberal
+			}
+			plurality = -0.5
+		}
+		any_country = {
+			limit = {
+				government = radical_republic
+				ruling_party_ideology = socialist
+			}
+			plurality = -0.25
+		}
+		any_country = {
+			limit = {
+				government = radical_republic
+				ruling_party_ideology = liberal
+			}
+			plurality = -0.5
+		}
+		any_country = {
+			limit = {
+				vassal_of = THIS
+				has_country_flag = sister_republic
+			}
+			THIS = { plurality = 0.1 }
+		}
+		any_country = {
+			limit = {
+				government = radical_republic
+				NOT = { vassal_of = THIS }
+				NOT = { tag = THIS }
+			}
+			THIS = { plurality = 0.05 }
+		}
+		#####End of Revolutionary zeal system#####
 		any_country = {
 			limit = {
 				government = league
@@ -319,6 +390,7 @@ country_event = {
 			}
 			clr_country_flag = ASY_iran_available
 		}
+		#Komneniad systems end
 		#KOMNENIAD: reused GFM colonial gov system
 		#Alaska
 		any_country = {

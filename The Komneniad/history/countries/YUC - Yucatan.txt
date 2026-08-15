@@ -5,8 +5,8 @@ religion = catholic
 government = democracy
 plurality = 0.0
 nationalvalue = nv_liberty
-literacy = 0.09
-non_state_culture_literacy = 0.06
+literacy = 0.21
+non_state_culture_literacy = 0.05
 civilized = yes
 prestige = 5
 
@@ -36,11 +36,11 @@ military_plans = 1
 steam_powered_sugar_mills = yes
 
 #Political Reforms
-slavery = yes_slavery
+slavery = no_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = wealth_voting
 public_meetings = yes_meeting
-press_rights = state_press
+press_rights = censored_press
 trade_unions = no_trade_unions
 voting_system = first_past_the_post
 political_parties = harassment
@@ -55,13 +55,13 @@ pensions = no_pensions
 school_reforms = no_schools
 
 #New Reforms
-conscription = no_draft
+conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
-centralization = unitary
+centralization = federalism
 colonial_policy = no_colonies
 
 set_country_flag = catholic_country

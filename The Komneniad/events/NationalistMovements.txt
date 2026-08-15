@@ -6,7 +6,7 @@ province_event = {
     picture = "geronimo"
 
     trigger = {
-		owner = { ai = no }
+		owner = { ai = no NOT = { has_country_flag = spectator } }
         is_primary_culture = no
         is_accepted_culture = no
         is_colonial = no
@@ -116,7 +116,7 @@ province_event = {
     desc = "EVTDESC15010"
 
     trigger = {
-		owner = { ai = no }
+		owner = { ai = no NOT = { has_country_flag = spectator } }
         is_primary_culture = no
         is_accepted_culture = no
         average_militancy = 2
@@ -232,7 +232,7 @@ province_event = {
     desc = "EVTDESC15020"
 
     trigger = {
-		owner = { ai = no }
+		owner = { ai = no NOT = { has_country_flag = spectator } }
         is_primary_culture = no
         is_accepted_culture = no
         is_colonial = no

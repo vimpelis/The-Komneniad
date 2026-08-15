@@ -42,7 +42,7 @@ country_event = {
     mean_time_to_happen = { days = 90 }
 
     option = {
-        name = "Accept! A Colombian ally would be useful."
+        name = "A Colombian ally would be useful."
 		release_vassal = IRO
 		badboy = -5
 		relation = { who = IRO value = 400 }
@@ -51,13 +51,6 @@ country_event = {
 		}
 		set_global_flag = IRO_free
 		ai_chance = { factor = 70 }
-    }
-	
-	option = {
-        name = "Decline! Who do they think they are?!"
-		prestige = 5
-		set_country_flag = IRO_overlord_decline
-		ai_chance = { factor = 30 }
     }
 }
 
@@ -81,74 +74,6 @@ country_event = {
         name = "About time."
 		prestige = 5
 		government = democracy
-    }
-}
-
-country_event = {
-    id = 158003
-    title = "The Lacustrine Confederacy is annexed!"
-    desc = "158003DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Unacceptable! Send the demand!"
-		172 = { owner = { country_event = 158005 } }
-		badboy = 5
-		ai_chance = { factor = 90 modifier = { factor = 0 badboy = 0.8 } }
-    }
-	
-	option = {
-        name = "I don't think we're strong enough."
-		prestige = -5
-		ai_chance = { factor = 10 }
-    }
-}
-
-country_event = {
-    id = 158004
-    title = "The Lacustrine Confederacy is annexed!"
-    desc = "158003DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Unacceptable! Send the demand!"
-		236 = { owner = { country_event = 158024 } }
-		badboy = 5
-		ai_chance = { factor = 90 modifier = { factor = 0 badboy = 0.8 } }
-    }
-	
-	option = {
-        name = "I don't think we're strong enough."
-		prestige = -5
-		ai_chance = { factor = 10 }
-    }
-}
-
-country_event = {
-    id = 158005
-    title = "158005TITLE"
-    desc = "158005DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "We accept."
-		FROM = { country_event = 158020 }
-		badboy = -2
-		ai_chance = { factor = 60 }
-    }
-	
-	option = {
-        name = "Why is the option to accept even on the table?!"
-		FROM = { country_event = 158022 }
-		prestige = 5
-		badboy = 2.5
-		ai_chance = { factor = 40 modifier = { factor = 0 badboy = 0.88 } }
     }
 }
 
@@ -178,647 +103,6 @@ country_event = {
 			secede_province = IRO
 		}
 		add_accepted_culture = dakota
-    }
-}
-
-#This should be turned into a province event (if possible)
-#its not.
-country_event = {
-    id = 158007
-    title = "The Freedmen's Cause"
-    desc = "158007DESC"
-	picture = "slaves_freed"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Freedom is non-negotiable!"
-		214 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		primary_culture = freedman
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 214 }
-		}
-		60 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 60 }
-		}
-		211 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 211 }
-		}
-		207 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 207 }
-		}
-		208 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 208 }
-		}
-		210 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 210 }
-		}
-		209 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 209 }
-		}
-		205 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 205 }
-		}
-		216 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 216 }
-		}
-		218 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 218 }
-			secede_province = CLN
-		}
-		primary_culture = vrijlander
-    }
-}
-
-#Ayllonia
-country_event = {
-    id = 158008
-    title = "The Freedmen's Cause"
-    desc = "158008DESC"
-	picture = "slaves_freed"
-
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_rally_the_betrodden
-		USA_201 = { owned_by = VRI }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 180 }
-
-    option = {
-        name = "Freedom is non-negotiable!"
-		204 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		primary_culture = freedman
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 204 }
-		}
-		202 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 202 }
-		}
-		2555 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 2555 }
-		}
-		206 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 206 }
-		}
-		3655 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 3655 }
-			secede_province = CLN
-		}
-		primary_culture = vrijlander
-    }
-}
-
-#Chalaques
-country_event = {
-    id = 158009
-    title = "The Freedmen's Cause"
-    desc = "158009DESC"
-	picture = "slaves_freed"
-
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_rally_the_betrodden
-		owns = 190
-		USA_3657 = { owned_by = VRI }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 180 }
-
-    option = {
-        name = "Freedom is non-negotiable!"
-		191 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		primary_culture = freedman
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 191 }
-		}
-		190 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 190 }
-		}
-		2556 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 2556 }
-		}
-		3657 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 3657 }
-		}
-		3656 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 3656 }
-		}
-		185 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 185 }
-			secede_province = CLN
-		}
-		primary_culture = vrijlander
-    }
-}
-
-#Florida
-country_event = {
-    id = 158010
-    title = "The Freedmen's Cause"
-    desc = "158010DESC"
-	picture = "slaves_freed"
-
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_rally_the_betrodden
-		USA_200 = { owned_by = VRI }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 180 }
-
-    option = {
-        name = "Freedom is non-negotiable!"
-		200 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		primary_culture = freedman
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 200 }
-		}
-		199 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 199 }
-		}
-		3566 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 3566 }
-		}
-		198 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 198 }
-			secede_province = CLN
-		}
-		primary_culture = vrijlander
-    }
-}
-
-#Garay
-country_event = {
-    id = 158011
-    title = "The Freedmen's Cause"
-    desc = "158011DESC"
-	picture = "slaves_freed"
-
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_rally_the_betrodden
-		USA_196 = { owned_by = VRI }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 180 }
-
-    option = {
-        name = "Freedom is non-negotiable!"
-		196 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		primary_culture = freedman
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 196 }
-		}
-		3654 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 3654 }
-		}
-		201 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 201 }
-		}
-		195 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 195 }
-		}
-		3310 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 3310 }
-			secede_province = CLN
-		}
-
-		primary_culture = vrijlander
-    }
-}
-
-#Chicaetas
-country_event = {
-    id = 158012
-    title = "The Freedmen's Cause"
-    desc = "158012DESC"
-	picture = "slaves_freed"
-
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_rally_the_betrodden
-		USA_194 = { owned_by = VRI }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 180 }
-
-    option = {
-        name = "Freedom is non-negotiable!"
-		197 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		primary_culture = freedman
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 197 }
-		}
-		194 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 194 }
-		}
-		140 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 140 }
-		}
-		192 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 192 }
-		}
-		193 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 193 }
-		}
-		3311 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 3311 }
-			secede_province = CLN
-		}
-
-		primary_culture = vrijlander
-    }
-}
-
-#N. Aragon
-country_event = {
-    id = 158013
-    title = "The Freedmen's Cause"
-    desc = "158013DESC"
-	picture = "slaves_freed"
-
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_rally_the_betrodden
-		USA_185 = { owned_by = VRI }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 180 }
-
-    option = {
-        name = "Freedom is non-negotiable!"
-		186 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		primary_culture = freedman
-		3544 = {
-			secede_province = THIS
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 186 }
-		}
-		184 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 184 }
-		}
-		187 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 187 }
-		}
-		188 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 188 }
-		}
-		189 = {
-			any_pop = {
-				limit = { has_pop_culture = afro_latino }
-				move_pop = 3544
-			}
-		}
-		3544 = {
-			assimilate = yes
-			any_pop = { pop_type = slaves move_pop = 189 }
-			secede_province = CLN
-		}
-		primary_culture = vrijlander
-    }
-}
-
-#Ayllonia gets turned into Fluviales
-#This probably shouldn't be in this file but whatever
-country_event = {
-    id = 158014
-    title = "Ayllonian Malaise"
-    desc = "158014DESC"
-	picture = "taiping_defeated"
-	
-	major = yes
-
-    trigger = {
-		tag = AYL
-		ai = yes
-		war = no
-		owns = 139
-		NOT = { 
-			owns = 197
-			owns = 189
-			owns = 190
-			owns = 195
-			owns = 198
-			owns = 204
-			owns = 216
-			owns = 205
-			owns = 207
-			exists = FLU
-		}
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 3 }
-
-    option = {
-        name = "You are going to Fluvial."
-		change_tag = FLU
-		primary_culture = fluvialean
-		add_accepted_culture = ayllonian
-		all_core = {
-			remove_core = THIS
-		}
-		USA_139 = { add_core = FLU }
-		USA_144 = { add_core = FLU }
-		USA_124 = { add_core = FLU }
-		USA_129 = { add_core = FLU }
-		140 = { add_core = FLU }
-		192 = { add_core = FLU }
-		prestige = -10
-		capital = 139
     }
 }
 
@@ -903,8 +187,6 @@ country_event = {
 		any_owned_province = { is_core = ILD }
     }
 
-    fire_only_once = yes
-
     mean_time_to_happen = { days = 1 }
 
     option = {
@@ -978,201 +260,28 @@ country_event = {
 }
 
 country_event = {
-    id = 158020
-    title = "158020TITLE"
-    desc = "158020DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Great!"
-		USA_178 = { secede_province = AYL add_core = AYL remove_core = ILD }
-		USA_170 = { secede_province = AYL add_core = AYL remove_core = ILD }
-    }
-}
-
-country_event = {
-    id = 158021
-    title = "158020TITLE"
-    desc = "158020DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Great!"
-		USA_2556 = { secede_province = VRI add_core = VRI remove_core = ILD }
-    }
-}
-
-country_event = {
-    id = 158022
-    title = "158022TITLE"
-    desc = "158022DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Oh well."
-		USA_178 = { add_core = AYL }
-		USA_170 = { add_core = AYL }
-    }
-}
-
-country_event = {
-    id = 158023
-    title = "158022TITLE"
-    desc = "158022DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Oh well."
-		USA_2556 = { add_core = VRI }
-    }
-}
-
-country_event = {
-    id = 158024
-    title = "158005TITLE"
-    desc = "158005DESC"
-    picture = "great_lakes"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "We accept."
-		FROM = { country_event = 158021 }
-		badboy = -2
-		ai_chance = { factor = 60 }
-    }
-	
-	option = {
-        name = "Why is the option to accept even on the table?!"
-		FROM = { country_event = 158023 }
-		prestige = 5
-		badboy = 2.5
-		ai_chance = { factor = 40 modifier = { factor = 0 badboy = 0.88 } }
-    }
-}
-
-#wow gfm had a perfect picture for this event, and it's event called accordingly
-country_event = {
-    id = 158025
-    title = "The Freedman Revolt"
-    desc = "158025DESC"
-    picture = "NAF_slave_revolt"
+    id = 158028
+    title = "Calls for Independence"
+    desc = "The rapid population growth of our country, spreading literacy and ideas from the south push our citizens to demand independence from Paris. We should formally asak them to grant it."
+    picture = "acadie_colony"
 
     trigger = {
-		tag = VRI
-		owns = 60
-		NOT = {
-			government = radical_republic
-			government = democracy
-			government = proletarian_dictatorship
-			has_global_flag = VRI_freedman_revolt
+		tag = ACA
+		year = 1848
+		vassal_of = FRA
+		OR = {
+			total_pops = 600000
+			year = 1856
 		}
     }
 
     fire_only_once = yes
 
     mean_time_to_happen = { days = 30 }
-	
-	major = yes
 
     option = {
-        name = "Curses!"
-		tooltip_2 = {}
-		set_global_flag = VRI_freedman_revolt
-		any_pop = {
-			limit = { has_pop_culture = freedman }
-			militancy = 8
-			consciousness = 8
-		}
-		any_owned = {
-			limit = {
-				OR = {
-				province_id = 215
-				province_id = 213
-				province_id = 212
-				province_id = 220
-				province_id = 2146
-				province_id = 216
-				province_id = 2556
-				province_id = 191
-				region = USA_211
-				region = USA_205
-				region = USA_201
-				region = USA_200
-				region = USA_196
-				region = USA_194
-				}
-			}
-			add_core = NAF
-		}
-		NAF = { government = democracy }
-    }
-}
-
-country_event = {
-    id = 158026
-    title = "The Acadian Rush"
-    desc = "158026DESC"
-    picture = "acadie_colony"
-
-    trigger = {
-		tag = FRA
-		owns = 243
-		any_owned_province = { is_core = ACA }
-		NOT = { has_country_flag = ACA_rush }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 60 }
-
-    option = {
-        name = "Interesting."
-		set_country_flag = ACA_rush
-		any_pop = {
-			limit = { has_pop_culture = acadian }
-			consciousness = 1
-		}
-		ACA = {
-			all_core = {
-				add_province_modifier = { name = acadian_rush duration = 3600 }
-			}
-		}
-    }
-}
-
-country_event = {
-    id = 158027
-    title = "The Acadian Rush is over"
-    desc = "158027DESC"
-    picture = "acadie_colony"
-
-    trigger = {
-		tag = FRA
-		has_country_flag = ACA_rush
-		any_owned_province = { is_core = ACA }
-		NOT = { any_owned_province = { has_province_modifier = acadian_rush } has_country_flag = ACA_rush_over }
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 10 }
-
-    option = {
-        name = "About time."
-		set_country_flag = ACA_rush_over
-		any_pop = {
-			limit = { has_pop_culture = acadian }
-			consciousness = 3
-		}
+        name = "Acadie is ready."
+		FRA = { country_event = 158029 }
     }
 }
 
@@ -1196,7 +305,7 @@ country_event = {
     option = {
         name = "Acadie is ready. Independence it is"
 		badboy = -4
-		release = ACA
+		release_vassal = ACA
 		create_alliance = ACA
 		relation = {
 			who = ACA
@@ -1210,12 +319,14 @@ country_event = {
 	
 	option = {
         name = "Huh? You're staying with us."
-		any_pop = {
-			limit = {
-				has_pop_culture = acadian
-			}
-			militancy = 4
-			consciousness = 4
+		release_vassal = ACA
+		war = {
+			target = ACA
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = become_independent }
+		}
+		ACA = {
+			add_country_modifier = { name = uprising_10percent_mob_modf duration = 1825 }
 		}
 		ai_chance = {
             factor = 1
@@ -1349,64 +460,30 @@ country_event = {
 
 country_event = {
     id = 158031
-    title = "The Antillean Project"
-    desc = "158031DESC"
-    picture = "spain_loses_cuba"
+    title = "Unification of the Selwand"
+    desc = "$FROMCOUNTRY$ has gathered enough influence to proclaim the unification of the Selwand. We are invited to join the new union."
+    picture = "reiszaker"
 
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_liberate_antillean
-		NOT = { exists = CRB }
-		government = radical_republic
-		war = no
-		any_owned_province = {
-			OR = {
-				is_core = CUB
-				is_core = CRB
-				is_core = HAI
-			}
-		}
-    }
-
-    mean_time_to_happen = { days = 90 }
-	fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
-        name = "Let us establish a sister repbulic."
-		badboy = 2
-		tooltip_8 = {}
-		CUB = { all_core = { add_core = CRB } }
-		HAI = { all_core = { add_core = CRB } }
-		release_vassal = CRB
-		CRB = { all_core = { limit = { NOT = { owned_by = CRB } } add_core = THIS } capital = 2209 }
-		set_country_flag = VRI_antillean_project
+        name = "Unity of Selwand is of utmost importance."
+		annex_to = FROM
     }
 	
 	option = {
-        name = "We will control the Antillean directly."
-		prestige = 5
-    }
-}
-
-country_event = {
-    id = 158032
-    title = "The Antillean Project"
-    desc = "With the reconquest of another part of the Antillean, we may transfer the respective region to our Sister Republic."
-    picture = "spain_loses_cuba"
-
-    trigger = {
-		tag = VRI
-		has_country_flag = VRI_antillean_project
-		CRB = { vassal_of = THIS }
-		any_owned_province = {
-			is_core = CRB
+        name = "Division is preferable to a $FROMCOUNTRY_ADJ$-led Selwand!"
+		leave_alliance = FROM
+		relation = {
+			who = FROM
+			value = -400
 		}
-    }
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "Ok"
-		any_owned = { limit = { is_core = CRB } secede_province = CRB remove_core = VRI }
+		FROM = {
+			diplomatic_influence = {
+				who = THIS
+				value = -400
+			}
+		}
+		ai_chance = { factor = 0 }
     }
 }

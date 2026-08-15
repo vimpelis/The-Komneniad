@@ -253,7 +253,7 @@
 }
 
 #Murska Sobota
-3282 = {
+778 = {
     aristocrats = {
         culture = slovene
         religion = catholic

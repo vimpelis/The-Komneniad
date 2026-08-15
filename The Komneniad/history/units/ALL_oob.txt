@@ -1,0 +1,78 @@
+VRI = { value = 50 }
+FEB = { value = 25 }
+IRO = { value = -50 }
+AMB = { value = -200 }
+FLO = { value = -200 }
+FLU = { value = -200 truce_until = 1836.7.1 }
+
+leader = {
+    name = "Ramon Martin Chavez"
+    date = 1835.1.1
+    type = land
+    personality = defence_2.1
+    background = attack_2.1
+    prestige = 0.3
+}
+
+army = {
+    name = "1st Army"
+    location = 3310
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 3310
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 201
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 188
+    }
+    regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 189
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 193
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 202
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 204
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 204
+    }
+	regiment = {
+        name = "4th Artillery Regiment"
+        type = artillery
+        home = 2555
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 204
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+}

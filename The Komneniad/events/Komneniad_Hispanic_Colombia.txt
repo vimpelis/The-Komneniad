@@ -1,101 +1,179 @@
-#CLM remove mexican cores
+#159xxx
+#000 - MEX-YUC-RGR starting event
+#001 - MEF formation event
+#002 - Guatemala secedes from MEF
+#003 - Guatemala secedes from MEX
+#004 - Cuba purchase
+#005 - Cuba purchase
+#006 - Cuba purchase
+#007 - New Basque gets called in if CAL is at war with MEX
+#008 - AI CLM annexes hawaii
+#009 - CLM formation event
+#010 - MEX civil war end - core removal
+#011 - MEX loses to MEF - dictatorship or martletism?
+#012 - MEF tag switch to MEX if unitary
+#013 - Iturbide appears during an election
+#014 - Iturbide wins the election
+#015 - triggered in decisions/Komneniad_Hispanic_Colombia
+#016 - Cimarronia expedition - the other country event (triggered in decisions)
+#017 - Dominant Ayllonian state gets cores on all AYL cores
+#018 - AYL dies if divided for too long
+#019 - colonization event
+#020 - AYL state cores get removed if unified for a while
+#021 - Invitation to join CLM
+
+#Mexico and YUC/RGR starting events
 country_event = {
-    id = 159000
-    title = "Proclamation of the Colombian Republic"
-    desc = "159000DESC"
-    picture = "mexico-us-treaty"
+	id = 159000
+	title = "The Prodigal Son"
+	desc = "159000DESC"
+	picture = "mexico"
 
-    is_triggered_only = yes
-	
-	major = yes
+	is_triggered_only = yes
 
-    option = {
-        name = "159000A"
-		YUC = { all_core = { limit = { OR = { is_core = MEX is_core = RGR is_core = CAL } } remove_core = YUC } }
-		MEX = { all_core = { remove_core = MEX } }
-    }
-}
-
-#Mexico and Yucatan starting events
-country_event = {
-    id = 159001
-    title = "The Prodigal Son"
-    desc = "159001DESC"
-    picture = "mexico"
-
-    is_triggered_only = yes
-
-    option = {
-        name = "Thy brother was dead, and is alive again; and was lost, and is found."
-		set_country_flag = MEX_YUC_war
-		tooltip_3 = {}
-    }
-}
-
-#Mexico or Yucatan get Rio Grande
-country_event = {
-    id = 159002
-    title = "Victory on the Rio Grande"
-    desc = "159002DESC"
-    picture = "mexico-us-treaty"
-
-    trigger = {
-        OR = {
-			tag = MEX
-			AND = {
-				tag = YUC
-				has_country_flag = YUC_integrate_MEX
+	option = {
+		name = "One Mexican commited a sin, but every Mexican suffers the penitence."
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						tag = RGR
+						tag = YUC
+					}
+				}
+			}
+			owner = {
+				set_country_flag = MEF_civilwar
+				add_country_modifier = { name = MEF_federalist_fervour duration = 3650 }
 			}
 		}
-		owns = 137
-		owns = 2151
-    }
-
-    fire_only_once = yes
-
-    mean_time_to_happen = { days = 10 }
-
-    option = {
-        name = "We shall be a Federation"
-		add_accepted_culture = riograndense
-		political_reform = federalism
-    }
+		random_owned = {
+			limit = {
+				owner = {
+					tag = MEX
+				}
+			}
+			owner = { add_country_modifier = { name = MEX_resistance_to_centralization duration = 3650 } }
+		}
+	}
 }
 
-#ayllonia starting event
 country_event = {
-    id = 159003
-    title = "The Ambrosian Republic"
-    desc = "159003DESC"
-    picture = "new_orleans"
+	id = 159001
+	title = "Proclamation of the Federal Republic"
+	desc = "159001DESC"
+	picture = "mexico"
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = "Alis Volat Propriis"
-		tooltip_4 = {}
-    }
+	option = {
+		name = "Great!"
+		clr_country_flag = MEF_civilwar
+		change_tag_no_core_switch = MEF
+		THIS = { annex_to = MEF }
+	}
+}
+
+country_event = {
+	id = 159002
+	title = "Guatemala secedes"
+	desc = "159002DESC"
+	picture = "mexico"
+
+	trigger = {
+		OR = {
+			tag = MEF
+			tag = YUC
+		}
+		NOT = { year = 1860 }
+		has_recently_lost_war = yes
+		any_owned_province = { is_core = GUA }
+		NOT = { exists = GUA }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "It's quite incredible that you've stayed with us for that long."
+		prestige = -5
+		badboy = -5
+		release = GUA
+		GUA = { all_core = { remove_core = THIS } }
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = "You will be dragged screaming into the Federation."
+		badboy = 5
+		release = GUA
+		war = {
+			target = GUA
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = 159003
+	title = "Guatemala secedes"
+	desc = "159003DESC"
+	picture = "mexico"
+
+	trigger = {
+		tag = MEX
+		year = 1845
+		any_owned_province = { is_core = GUA }
+		NOT = { exists = GUA }
+	}
+
+	mean_time_to_happen = { days = 365 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Take it."
+		badboy = -3
+		release_vassal = GUA
+		GUA = { all_core = { remove_core = THIS } }
+		ai_chance = { factor = 3 }
+	}
+	
+	option = {
+		name = "Haha, very funny. Kill."
+		badboy = 5
+		release = GUA
+		war = {
+			target = GUA
+			attacker_goal = { casus_belli = conquest_any }
+			defender_goal = { casus_belli = status_quo }
+		}
+		ai_chance = { factor = 1 }
+	}
 }
 
 #SPA: sell cuba?
 country_event = {
-    id = 159004
-    title = "Ayllonia asks to buy Cuba"
-    desc = "Our friends in Ayllonia have asked us if they could buy Cuba for 150,000. Considering the strength of the resistance on the island, it seems like we would earn much more from simply selling it instead of trying to keep it."
-    picture = "us_cuba"
+	id = 159004
+	title = "Ayllonia asks to buy Cuba"
+	desc = "Our friends in Ayllonia have asked us if they could buy Cuba for 150,000. Considering the strength of the resistance on the island, it seems like we would earn much more from simply selling it instead of trying to keep it."
+	picture = "us_cuba"
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = "Cuba has outlived its usefulness."
+	option = {
+		name = "Cuba has outlived its usefulness."
 		treasury = 150000
 		remove_accepted_culture = caribeno
-		CUB = { all_core = { add_core = AYL } }
+		CUB = { all_core = { add_core = FROM } }
 		any_owned = {
 			limit = {
 				is_core = CUB
 			}
-			secede_province = AYL
+			secede_province = FROM
 		}
 		FROM = { country_event = 159005 }
 		ai_chance = {
@@ -109,12 +187,12 @@ country_event = {
 				rank = 6
 			}
 		}
-    }
+	}
 	
 	option = {
-        name = "Hmm.. I think we'll keep it."
+		name = "Hmm.. I think we'll keep it."
 		relation = {
-			who = AYL
+			who = FROM
 			value = -100
 		}
 		FROM = { country_event = 159006 }
@@ -129,98 +207,1031 @@ country_event = {
 				rank = 6
 			}
 		}
-    }
+	}
 }
 
 #SPA says yes
 country_event = {
-    id = 159005
-    title = "$FROMCOUNTRY$ agrees!"
-    desc = "$FROMCOUNTRY$ has agreed to sell us Cuba. With that, our former Metropole no longer ownes any substantial land in the New World, and we are left as the sole the inheritors of Spanish colonial legacy."
-    picture = "us_cuba"
+	id = 159005
+	title = "$FROMCOUNTRY$ agrees!"
+	desc = "$FROMCOUNTRY$ has agreed to sell us Cuba. With that, our former Metropole no longer ownes any substantial land in the New World, and we are left as the sole the inheritors of Spanish colonial legacy."
+	picture = "us_cuba"
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = "Great!"
+	option = {
+		name = "Great!"
 		treasury = -150000
 		add_accepted_culture = caribeno
-    }
+	}
 }
 
 #SPA says no
 country_event = {
-    id = 159006
-    title = "$FROMCOUNTRY$ refuses!"
-    desc = "Unexpectedly, $FROMCOUNTRY$ said no. It seems like friendship is over with our Metropole - clearly, war is the only option left."
-    picture = "us_cuba"
+	id = 159006
+	title = "$FROMCOUNTRY$ refuses!"
+	desc = "Unexpectedly, $FROMCOUNTRY$ said no. It seems like friendship is over with our Metropole (who could've thought) - clearly, war is the only option left."
+	picture = "us_cuba"
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 
-    option = {
-        name = "Ugh..."
+	option = {
+		name = "Ugh..."
 		prestige = -5
 		set_country_flag = AYL_cuba_refused
-    }
+	}
 }
 
 #NBS gets called in if CAL if at war with MEX
 country_event = {
-    id = 159007
-    title = "The Mexican Threat"
-    desc = "Mexico has finally acted on their revanchist intentions. California is in an official state of war with Mexico - and our allies in Nueva Vasconia will assist us!"
-    picture = "mexico-us-treaty"
+	id = 159007
+	title = "The Mexican Threat"
+	desc = "Mexico has finally acted on their revanchist intentions. California is in an official state of war with Mexico - and our allies in Nueva Vasconia will assist us!"
+	picture = "mexico-us-treaty"
 
-    trigger = {
+	trigger = {
 		tag = CAL
 		NBS = { vassal_of = CAL war = no }
 		ai = yes
-        war_with = MEX
-    }
+		war_with = MEX
+	}
 
-    mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { days = 1 }
 
-    option = {
-        name = "To battle!"
+	option = {
+		name = "To battle!"
 		random_country = {
-            limit = {
-                tag = NBS
-            }
-            THIS = {
-                war = {
-                    attacker_goal = { casus_belli = call_allies_cb }
-                    call_ally = yes
-                }
-            }
-        }
-    }
+			limit = {
+				tag = NBS
+			}
+			THIS = {
+				war = {
+					attacker_goal = { casus_belli = call_allies_cb }
+					call_ally = yes
+				}
+			}
+		}
+	}
+}
+
+#CLM remove mexican cores
+country_event = {
+	id = 159009
+	title = "Proclamation of the Colombian Republic"
+	desc = "159009DESC"
+	picture = "colombia_event"
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	option = {
+		name = "159000A"
+		prestige = 50
+	}
 }
 
 country_event = {
-    id = 159008
-    title = "AI: Take Hawaii"
-    desc = "Hey AI, did you know you have a core on Hawaii that blocks your expansion? Yeah, go get it."
-    picture = "mexico-us-treaty"
+	id = 159010
+	title = "End of the Mexican Civil War"
+	desc = "The protracted Civil War between the Centralists and the Federalists is finally over, and it is time to mend the rifts in Mexican society."
+	picture = "mexico-us-treaty"
 
-    trigger = {
-        tag = CLM
-		ai = yes
-		658 = { owned_by = HAW is_core = THIS }
-		HAW = { is_vassal = no part_of_sphere = no }
-        war = no
-		has_recently_lost_war = no
-    }
-
-    mean_time_to_happen = { days = 1 }
-
-    option = {
-        name = "Yeah alright."
-		war = {
-			target = HAW
-			attacker_goal = {
-				casus_belli = acquire_core_state
-				state_province_id = 658
+	trigger = {
+		OR = {
+			AND = {
+				tag = MEX
+				any_owned_province = { is_core = MEF }
+				NOT = { exists = MEF }
+			}
+			AND = {
+				tag = MEF
+				any_owned_province = { is_core = MEX }
+				NOT = { exists = MEX }
 			}
 		}
-    }
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "We can celebrate."
+		prestige = 5
+		any_pop = { militancy = -2 consciousness = -2 }
+		random_owned = {
+			limit = {
+				owner = {
+					tag = MEX
+				}
+			}
+			MEF = { all_core = { remove_core = MEF } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					tag = MEF
+				}
+			}
+			MEX = { all_core = { remove_core = MEX } }
+		}
+	}
+}
+
+country_event = {
+	id = 159011
+	title = "Rejuvenation of the Centralist movement"
+	desc = "159011DESC"
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		tag = MEX
+		OR = {
+			AND = {
+				truce_with = YUC
+				YUC = { has_country_flag = MEF_civilwar }
+			}
+			AND = {
+				truce_with = YUC
+				YUC = { has_country_flag = MEF_civilwar }
+			}
+		}
+		has_recently_lost_war = yes
+		OR = {
+			NOT = {
+				owns = 2159
+				owns = 2162
+				owns = 2179
+				owns = 2166
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Santa Ana seizes power."
+		ruling_party_ideology = reactionary
+		add_country_modifier = { name = military_rule duration = 3650 }
+		any_pop = { militancy = 2 consciousness = 2 }
+		government = presidential_dictatorship
+		political_reform = none_voting
+		political_reform = underground_parties
+		ai_chance = { factor = 2 }
+	}
+	
+	option = {
+		name = "The Martletists succeed in their coup."
+		ruling_party_ideology = radical
+		any_pop = { militancy = 2 consciousness = 2 }
+		government = radical_republic
+		political_reform = universal_voting
+		political_reform = harassment
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = 159012
+	title = "The End of Federalism"
+	desc = "The Parliament has recently decided to end federalism in Mexico. The states have been forcefully reorganized into provinces, and their autonomy ended."
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		tag = MEF
+		centralization = unitary
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "The centralists won in the end."
+		all_core = { add_core = MEX remove_core = MEF }
+		change_tag = MEX
+	}
+}
+
+country_event = {
+	id = 159013
+	title = "Return of the Iturbide"
+	desc = "159013DESC"
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		tag = MEX
+		government = democracy
+		year = 1850
+		NOT = { year = 1860 }
+		election = yes
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Agustin will be the Conservative candidate."
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			ideology = {
+				value = conservative
+				factor = 0.15
+			}
+			scaled_consciousness = {
+				ideology = liberal
+				factor = 2
+			}
+			scaled_consciousness = {
+				ideology = radical
+				factor = 4
+			}
+		}
+		set_country_flag = MEX_iturbide_return
+	}
+	
+	option = {
+		name = "Why was he even allowed to step on Mexican soil again?"
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 159014
+	title = "Agustin Jeronimo de Iturbide wins the election!"
+	desc = "159014DESC"
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		tag = MEX
+		has_country_flag = MEX_iturbide_return
+		NOT = { year = 1862 }
+		election = no
+		ruling_party_ideology = conservative
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Agustin II restores his father's Empire."
+		government = constitutional_empire
+		political_reform = universal_voting
+		political_reform = non_secret_ballots
+		MEX_cant_form_CLM = {}
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -4
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = radical
+				factor = 4
+			}
+		}
+		clr_country_flag = MEX_iturbide_return
+	}
+	
+	option = {
+		name = "Agustin II devotes his rule to Colombia."
+		government = hms_government
+		political_reform = universal_voting
+		political_reform = non_secret_ballots
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -1
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -1
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 1
+			}
+			scaled_militancy = {
+				ideology = radical
+				factor = 1
+			}
+		}
+		clr_country_flag = MEX_iturbide_return
+		set_country_flag = MEX_iturbide_colombia
+	}
+	
+	option = {
+		name = "The Republic is sacred!"
+		prestige = 15
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = radical
+				factor = -4
+			}
+		}
+		clr_country_flag = MEX_iturbide_return
+	}
+}
+
+country_event = {
+	id = 159015
+	title = "Return of the Prodigal Son"
+	desc = "159015DESC"
+	picture = "mexico-us-treaty"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "The struggle for unity begins anew."
+		MEX_new_cb_tt = {}
+		set_country_flag = MEX_clm_ambition_cb
+	}
+	
+	option = {
+		name = "Colombian unity - today or never!"
+		badboy = 15
+		random_owned = {
+			limit = {
+				CAL = { exists = yes is_vassal = no }
+			}
+			owner = {
+				war = {
+					target = CAL
+					attacker_goal = { casus_belli = conquest_any }
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				FLU = { exists = yes is_vassal = no }
+			}
+			owner = {
+				war = {
+					target = FLU
+					attacker_goal = { casus_belli = conquest_any }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 159016
+	title = "$FROM$ launches an Expedition to Cimarronia"
+	desc = "159016DESC"
+	picture = "mexico-us-treaty"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Relieving."
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 185
+					3657 = { empty = yes }
+				}
+			}
+			3657 = { secede_province = THIS any_pop = { literacy = -0.99 reduce_pop = 0.8 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 184
+					186 = { empty = yes }
+				}
+			}
+			186 = { secede_province = THIS any_pop = { literacy = -0.99 reduce_pop = 0.8 } }
+		}
+	}
+}
+
+country_event = {
+	id = 159017
+	title = "Domination of Ayllonia"
+	desc = "159017DESC"
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		OR = {
+			tag = ALL
+			tag = FLO
+		}
+		all_core = { OR = { owned_by = THIS empty = yes } }
+		owns = 198
+		owns = 204
+	}
+
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "Clear off the dust from the maps of old, Ayllonia is on the horizon."
+		AYL = { all_core = { add_core = THIS } }
+	}
+}
+
+country_event = {
+	id = 159018
+	title = "Fragmentation of Ayllonia"
+	desc = "159018DESC"
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		any_owned_province = { is_core = AYL }
+		year = 1850
+		NOT = { exists = AYL }
+		NOT = { exists = FLO }
+		NOT = { exists = ALL }
+		NOT = { has_global_flag = fragmentation_of_AYL }
+	}
+
+	mean_time_to_happen = { days = 720 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "The Caudillos will reign supreme."
+		AYL_formation_disabled = {}
+		FLO = { all_core = { remove_core = FLO } }
+		ALL = { all_core = { remove_core = ALL } }
+		USA_198 = { add_core = FLO }
+		USA_200 = { add_core = FLO }
+		USA_196 = { add_core = ALL }
+		USA_194 = { add_core = ALL }
+		USA_185 = { add_core = ALL }
+		set_global_flag = fragmentation_of_AYL
+	}
+}
+
+country_event = {
+	id = 159019
+	title = "Colonization of the Indian Lands"
+	desc = "If there is land to claim nearby, the borders of our nation will expand. More people need more land to live in - this is not Europe, where they have to live jam-packed."
+	picture = "manifest_destiny_pic"
+
+	trigger = {
+		capital_scope = { continent = north_america }
+		OR = {
+			#Fluviales
+			AND = {
+				owns = 3689
+				149 = { empty = yes }
+				year = 1838
+			}
+			AND = {
+				owns = 149
+				147 = { empty = yes }
+				year = 1840
+			}
+			AND = {
+				owns = 128
+				3340 = { empty = yes }
+				year = 1842
+			}
+			AND = {
+				owns = 147
+				130 = { empty = yes }
+				year = 1844
+			}
+			AND = {
+				owns = 130
+				126 = { empty = yes }
+				year = 1846
+			}
+			#Florida
+			AND = {
+				owns = 3696
+				3697 = { empty = yes }
+				year = 1845
+			}
+			#Indiana
+			AND = {
+				owns = 170
+				169 = { empty = yes }
+				year = 1840
+			}
+			#RGR south
+			AND = {
+				owns = 2147
+				3692 = { empty = yes }
+				year = 1841
+			}
+			AND = {
+				owns = 2145
+				2144 = { empty = yes }
+				year = 1841
+			}
+			#RGR north
+			AND = {
+				owns = 137
+				14 = { empty = yes }
+				year = 1839
+			}
+			AND = {
+				owns = 133
+				134 = { empty = yes }
+				year = 1841
+			}
+			AND = {
+				owns = 14
+				136 = { empty = yes }
+				year = 1845
+			}
+			#Yucatan
+			AND = {
+				owns = 2181
+				3660 = { empty = yes }
+				year = 1843
+			}
+			AND = {
+				owns = 2183
+				3402 = { empty = yes }
+				year = 1846
+			}
+			#California
+			AND = {
+				owns = 3464
+				82 = { empty = yes }
+				107 = { empty = yes }
+				year = 1842
+			}
+			AND = {
+				owns = 97
+				99 = { empty = yes }
+				year = 1842
+			}
+			AND = {
+				owns = 80
+				91 = { empty = yes }
+				year = 1846
+			}
+			AND = {
+				owns = 13
+				3695 = { empty = yes }
+				year = 1848
+			}
+			AND = {
+				owns = 3694
+				15 = { empty = yes }
+				year = 1848
+			}
+			#Great Plains South
+			AND = {
+				owns = 126
+				127 = { empty = yes }
+				year = 1850
+			}
+			AND = {
+				owns = 127
+				125 = { empty = yes }
+				year = 1850
+			}
+			#Mormons
+			AND = {
+				owns = 27
+				115 = { empty = yes }
+				year = 1850
+			}
+			AND = {
+				owns = 115
+				35 = { empty = yes }
+				year = 1855
+			}
+			AND = {
+				owns = 35
+				116 = { empty = yes }
+				year = 1860
+			}
+		}
+	}
+
+	mean_time_to_happen = { days = 200 }
+
+	option = {
+		name = "This land is ours by right."
+		#Fluviales
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 3689
+					149 = { empty = yes }
+					year = 1838
+				}
+			}
+			149 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 149
+					147 = { empty = yes }
+					year = 1840
+				}
+			}
+			147 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 128
+					3340 = { empty = yes }
+					year = 1842
+				}
+			}
+			3340 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 147
+					130 = { empty = yes }
+					year = 1844
+				}
+			}
+			130 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 130
+					126 = { empty = yes }
+					year = 1846
+				}
+			}
+			126 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#Florida
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 3696
+					3697 = { empty = yes }
+					year = 1845
+				}
+			}
+			3697 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#Indiana
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 170
+					169 = { empty = yes }
+					year = 1840
+				}
+			}
+			168 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			169 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#RGR south
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 2147
+					3692 = { empty = yes }
+					year = 1841
+				}
+			}
+			3692 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 2145
+					2144 = { empty = yes }
+					year = 1841
+				}
+			}
+			2143 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			2144 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#RGR north
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 137
+					14 = { empty = yes }
+					year = 1839
+				}
+			}
+			14 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 133
+					134 = { empty = yes }
+					year = 1841
+				}
+			}
+			134 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 14
+					136 = { empty = yes }
+					year = 1845
+				}
+			}
+			135 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			136 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3588 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#Yucatan
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 2181
+					3660 = { empty = yes }
+					year = 1843
+				}
+			}
+			3660 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 2183
+					3402 = { empty = yes }
+					year = 1846
+				}
+			}
+			2189 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3402 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3615 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#California
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 3464
+					82 = { empty = yes }
+					107 = { empty = yes }
+					year = 1842
+				}
+			}
+			82 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3463 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			80 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			107 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 97
+					99 = { empty = yes }
+					year = 1842
+				}
+			}
+			99 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			108 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			109 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			110 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			111 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 80
+					91 = { empty = yes }
+					year = 1846
+				}
+			}
+			91 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			92 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			93 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3466 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			114 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			21 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 13
+					3695 = { empty = yes }
+					year = 1848
+				}
+			}
+			3695 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 3694
+					15 = { empty = yes }
+					year = 1848
+				}
+			}
+			15 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			16 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			17 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			19 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#Great Plains South
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 126
+					127 = { empty = yes }
+					year = 1850
+				}
+			}
+			127 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			129 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			131 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			103 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			105 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 127
+					125 = { empty = yes }
+					year = 1850
+				}
+			}
+			125 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			106 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			3317 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			124 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			123 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		#Mormons
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 27
+					115 = { empty = yes }
+					year = 1850
+				}
+			}
+			28 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			25 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			115 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			2584 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 115
+					35 = { empty = yes }
+					year = 1855
+				}
+			}
+			35 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			45 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			32 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			34 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			41 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			118 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					owns = 35
+					116 = { empty = yes }
+					year = 1860
+				}
+			}
+			116 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			119 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			112 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			122 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+		}
+	}
+}
+
+country_event = {
+	id = 159020
+	title = "Ayllonian Unity Solidifed"
+	desc = "159020DESC"
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		tag = AYL
+		nationalism_n_imperialism = 1
+		FLO = { all_core = { owned_by = THIS } }
+		ALL = { all_core = { owned_by = THIS } }
+		CEF = { all_core = { owned_by = THIS } }
+		NOT = { exists = FLO }
+		NOT = { exists = ALL }
+		NOT = { exists = CEF }
+	}
+
+	mean_time_to_happen = { days = 720 }
+	
+	fire_only_once = yes
+
+	option = {
+		name = "E Pluribus Unum."
+		prestige = 10
+		any_pop = {
+			limit = {
+				has_pop_culture = ayllonian
+			}
+			militancy = -2
+		}
+		FLO = { all_core = { remove_core = FLO } }
+		ALL = { all_core = { remove_core = ALL } }
+		CEF = { all_core = { remove_core = CEF } }
+		random_owned = {
+			limit = {
+				owner = { owns = 60 }
+				NOT = { exists = AMB }
+			}
+			AMB = { all_core = { remove_core = AMB } }
+		}
+	}
+}
+
+country_event = {
+	id = 159021
+	title = "Invitation to join Colombia"
+	desc = "Colombian Union has been formed, considered fairly legitimate by the international community. We are invited to join as a part of it."
+	picture = "colombia_event"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We accept."
+		FROM = { badboy = 4 }
+		annex_to = FROM
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_vassal = yes
+				NOT = { vassal_of = FROM }
+			}
+			modifier = {
+				factor = 0
+				rank = 8
+			}
+		}
+	}
+	
+	option = {
+		name = "We will not surrender our independence to an abstact idea of unity."
+		prestige = 10
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = FROM
+				NOT = { rank = 8 }
+			}
+			modifier = {
+				factor = 0
+				vassal_of = FROM
+			}
+		}
+	}
 }

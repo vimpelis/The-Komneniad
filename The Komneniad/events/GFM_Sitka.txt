@@ -65,8 +65,8 @@ country_event = {
 }
 country_event = {
     id = 191337
-    title = "The Radical Takeover"
-    desc = "The radicals have won. The ancien regime has been replaced with ultra-liberal rule. While many mourn the old system, others look forward to an new era for $COUNTRY$."
+    title = "Martletist Takeover"
+    desc = "The martletists have won. The ancien regime has been replaced with nationalist rule. While many mourn the old system, others look forward to an new era for $COUNTRY$."
     fire_only_once = yes
     picture = "sister_republics"
 	is_triggered_only = yes
@@ -109,19 +109,21 @@ country_event = {
 }
 country_event = {
     id = 191336
-    title = "A new Sister Republic"
+    title = "Victory in $FROMCOUNTRY$"
     desc = "NEWSISTERREPUBLIC"
     fire_only_once = yes
     picture = "sister_republics"
 	is_triggered_only = yes
 	allow_multiple_instances = yes
     option = {
-        name = "We must control $FROMCOUNTRY$ directly. §RGain 3 infamy§W"
+        name = "Let us install a new Sister Republic. §RGain 3 infamy§W"
 		badboy = 3
 		create_vassal = FROM
+		FROM = { set_country_flag = sister_republic }
     }
     option = {
         name = "They shall simply remain under our influence."
+		prestige = 1
     }
 }
 

@@ -99,7 +99,6 @@ INVENTION_BTN2;OK;D'accord;OK;OK;;Aceptar;OK;;;;;;;
 INVENTION_BTN3;Details;Détails;Details;;Detalles;Dettagli;;;;;;;;
 INVENTION_MAP;*;*;*;;*;*;;;;;;;;
 revanchism;Revanchism;Revanchisme;Revanchismus;;Revanchismo;;;;;;;;;
-plurality;Plurality;Pluralité;Pluralität;;Pluralidad;;;;;;;;;
 TOPBAR_LEADERSHIP_GAIN_TOOLTIP;We gain §Y$CURR$§W leadership from our officers each month.;Nos officiers nous permettent de gagner §Y$CURR$§W points de commandement par mois.;Wir erhalten von unseren Offizieren monatlich §Y$CURR$§W Anführerschaft.;;Obtenemos §Y$CURR$§W de liderazgo de nuestros oficiales cada mes.;;;;;;;;;
 UW_AASIGN;Autoassign Leaders;Attribution automatique des officiers;Anführer autom. zuteilen;;Asignación automática de líderes;;;;;;;;;
 ATTR_SAFE_RANGE;A Fleet in range of supply ships, and near a coast will not take any attrition.;Une flotte à portée de navires ravitailleurs et à proximité d'une côte, ne subit aucune attrition.;Eine Flotte innerhalb der Reichweite von Versorgungsschiffen und nahe einer Küste erleidet keine Verluste.;;Una flota dentro del alcance de los barcos de suministro y cerca de una costa no sufrirá desgaste alguno.;;;;;;;;;

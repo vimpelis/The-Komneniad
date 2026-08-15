@@ -123,7 +123,6 @@ conquest_minuscule
 annex_africa
 colonial_conquest
 china_annex
-mex_yuc_war
 ethiopian_somalian_cb
 ogaden_war_cb
 ethiopian_somalian2_cb
@@ -231,6 +230,7 @@ dismantle_cb = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 		##default dismantlement flag
 		set_country_flag = dismantling_treaty
@@ -281,6 +281,7 @@ great_war_penalty_cb = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         political_reform = no_draft
     }
@@ -363,6 +364,7 @@ acquire_core_state = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         country_event = 2650    # Territorial Loss event
     }
@@ -449,6 +451,7 @@ acquire_all_cores = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 		random_owned = {
 			limit = {
@@ -736,6 +739,7 @@ unification_casus_belli = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -984,6 +988,7 @@ add_to_sphere = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         random_owned = {
             limit = {
@@ -1073,6 +1078,7 @@ unification_humiliate_cb = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         prestige_factor = -0.2
         country_event = 99996
@@ -1152,6 +1158,7 @@ unification_GP_humiliate = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         prestige_factor = -0.2
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -1222,6 +1229,7 @@ unification_release_puppet_cb = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -1289,6 +1297,7 @@ unification_add_to_sphere = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -1393,6 +1402,7 @@ take_from_sphere = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -1641,6 +1651,7 @@ free_peoples = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = { remove_country_modifier = disable_conquest_cb }
         country_event = 2651    # Territorial Loss event
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
@@ -1930,6 +1941,7 @@ liberate_country = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = { remove_country_modifier = disable_conquest_cb }
         country_event = 2651    # Territorial Loss event
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
@@ -2038,6 +2050,7 @@ free_allied_cores = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         country_event = 2651    # Territorial Loss event
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -2112,6 +2125,7 @@ release_puppet = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -2193,6 +2207,7 @@ release_puppet_AI = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -2255,6 +2270,7 @@ gunboat = {
 
     war_name = WAR_GUNBOAT_NAME
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -2334,6 +2350,7 @@ cut_down_to_size = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         random_owned = {
             limit = {
                 owner = {
@@ -2492,6 +2509,7 @@ humiliate = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         prestige_factor = -0.2
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -2685,6 +2703,7 @@ place_in_the_sun = {
     }
 
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -2975,6 +2994,7 @@ acquire_state = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -3244,6 +3264,7 @@ acquire_state_mid = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -3513,6 +3534,7 @@ acquire_state_late = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -3575,7 +3597,10 @@ china_annex = {
             value = 0.1
         }
     }
-    on_po_accepted = { any_pop = { militancy = -1 } }
+    on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
+		any_pop = { militancy = -1 }
+	}
 }
 
 china_acquire_state = {
@@ -3654,6 +3679,7 @@ china_acquire_state = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -3726,6 +3752,7 @@ mauretanian_crusade = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -3810,6 +3837,7 @@ sahel_jihad_cb = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -4035,6 +4063,7 @@ demand_concession_casus_belli = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }
@@ -4272,6 +4301,7 @@ demand_concession_NI_casus_belli = {
 
 
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -4494,6 +4524,7 @@ demand_concession_BC_casus_belli = {
 
 
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -4575,6 +4606,7 @@ rude_boy = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -4898,6 +4930,7 @@ annex_africa = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -4995,6 +5028,7 @@ annex_africa_full = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = { add_country_modifier = { name = claimed_africa duration = 120 } }
         tech_school = unciv_tech_school
     }
@@ -5170,7 +5204,10 @@ establish_protectorate_casus_belli = {
             value = 0.1
         }
     }
-    on_po_accepted = { tech_school = unciv_tech_school }
+    on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
+		tech_school = unciv_tech_school
+	}
 }
 
 establish_protectorate_NI_casus_belli = {
@@ -5336,7 +5373,10 @@ establish_protectorate_NI_casus_belli = {
             value = 0.1
         }
     }
-    on_po_accepted = { tech_school = unciv_tech_school }
+    on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
+		tech_school = unciv_tech_school
+	}
 }
 
 establish_protectorate_BC_casus_belli = {
@@ -5505,7 +5545,10 @@ establish_protectorate_BC_casus_belli = {
             value = 0.1
         }
     }
-    on_po_accepted = { tech_school = unciv_tech_school }
+    on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
+		tech_school = unciv_tech_school
+	}
 }
 
 #Negotiated Transfer
@@ -5592,6 +5635,7 @@ cut_down_to_size_no_infamy = {
 
 
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -5633,6 +5677,7 @@ make_puppet_no_infamy = {
 	}
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         prestige_factor = -0.2
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
@@ -5730,6 +5775,7 @@ make_puppet = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         country_event = 19370
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -5818,6 +5864,7 @@ make_puppet_small = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         country_event = 19370
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -5906,6 +5953,7 @@ make_puppet_tiny = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         country_event = 19370
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -5993,6 +6041,7 @@ make_puppet_minuscule = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         country_event = 19370
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -6057,6 +6106,7 @@ become_independent = {
         release_vassal = THIS
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -6118,6 +6168,7 @@ uninstall_communist_gov_cb = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -6177,6 +6228,7 @@ great_war_install_democracy = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = { set_country_flag = friendly_democracy }
         country_event = 96085
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
@@ -6231,6 +6283,7 @@ great_war_install_fascism = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = { set_country_flag = friendly_fascist }
         country_event = 96086
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
@@ -6286,6 +6339,7 @@ great_war_install_communism = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = { set_country_flag = friendly_communist }
         country_event = 96087
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
@@ -6361,6 +6415,7 @@ install_democracy = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = {
             set_country_flag = friendly_democracy
             any_country = {
@@ -6439,6 +6494,7 @@ install_fascism = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = {
             set_country_flag = friendly_fascist
             any_country = {
@@ -6520,6 +6576,7 @@ install_communism = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = {
             set_country_flag = friendly_communist
             any_country = {
@@ -6572,6 +6629,7 @@ colonial_competition = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -6659,6 +6717,7 @@ dismantle_forts = {
 
 
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -6817,6 +6876,7 @@ acquire_any_state = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         random_owned = {
             limit = {
@@ -6881,6 +6941,7 @@ conquest_any = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		any_country = {
 			limit = { primary_culture = kurdish has_country_flag = KDS_kurdish_uprising exists = yes NOT = { exists = ASY } }
 			country_event = 177005
@@ -6991,6 +7052,7 @@ treaty_port_casus_belli = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         random_owned = {
             limit = {
@@ -7116,6 +7178,7 @@ end_radicals = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		set_country_flag = i_am_being_unradicaled
 		THIS = {
 			random_owned = {
@@ -7339,7 +7402,6 @@ guillotine_cb = {
     can_use = {
 		THIS = { government = radical_republic }
 		NOT = {
-			government = democracy
 			government = radical_republic
 		}
 		is_vassal = no
@@ -7376,7 +7438,8 @@ guillotine_cb = {
     }
 
     on_po_accepted = {
-		THIS = { set_country_flag = sister_republic_boss }
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } set_country_flag = sister_republic_boss }
+		any_owned = { limit = { is_core = THIS } secede_province = THIS }
 		country_event = 191337
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
@@ -7430,6 +7493,7 @@ war_reparations = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }
@@ -7523,6 +7587,7 @@ steal_puppet = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         THIS = { set_country_flag = new_overlord }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
@@ -7733,6 +7798,7 @@ take_capital = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -7910,6 +7976,7 @@ demand_concession_capital_late = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -8100,6 +8167,7 @@ demand_concession_capital = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -8278,6 +8346,7 @@ demand_concession_capital_early = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -8498,6 +8567,7 @@ liberate_puppet = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         country_event = 2651    # Territorial Loss event
         THIS = { country_event = 19369 } # Starts puppeting event chain
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
@@ -8710,6 +8780,7 @@ liberate_puppet_no_infamy = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         country_event = 2651    # Territorial Loss event
         THIS = { country_event = 19369 } # Starts puppeting event chain
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
@@ -8750,6 +8821,7 @@ humiliate_no_infamy = {
 	}
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
         prestige_factor = -0.2
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
@@ -8810,7 +8882,10 @@ establish_protectorate_casus_belli_no_infamy = {
             value = 0.1
         }
     }
-    on_po_accepted = { tech_school = unciv_tech_school }
+    on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
+		tech_school = unciv_tech_school
+	}
 }
 
 demand_concession_casus_belli_no_infamy = {
@@ -8918,6 +8993,7 @@ demand_concession_casus_belli_no_infamy = {
 
 
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }
@@ -8955,6 +9031,7 @@ BYZ_crimean_war = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		random_owned = {
 			limit = {
 				RUS = { has_country_flag = RUS_crimea }
@@ -9053,6 +9130,7 @@ german_unification = {
         }
     }
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 		any_owned = {
 			limit = {
@@ -9061,54 +9139,6 @@ german_unification = {
 			secede_province = THIS
 		}
 	}
-}
-
-mex_yuc_war = {
-    sprite_index = 22
-    is_triggered_only = yes
-    months = 12
-    crisis = no
-
-    badboy_factor = 0
-    prestige_factor = 0
-    peace_cost_factor = 0.95
-    penalty_factor = 0.5
-
-    break_truce_prestige_factor = 1
-    break_truce_infamy_factor = 0
-    break_truce_militancy_factor = 0
-    truce_months = 6
-
-    good_relation_prestige_factor = 1
-    good_relation_infamy_factor = 1
-    good_relation_militancy_factor = 1
-
-    always = yes
-
-    can_use = {
-        NOT = { is_our_vassal = THIS }
-        THIS = {
-            has_country_flag = MEX_YUC_war
-        }
-		has_country_flag = MEX_YUC_war
-        OR = {
-            war_with = THIS
-            THIS = { NOT = { has_country_modifier = no_more_war } }
-        }
-    }
-	
-	po_annex = yes
-
-    war_name = WAR_MEXYUC
-
-    on_add = {
-        move_issue_percentage = {
-            from = jingoism
-            to = pro_military
-            value = 0.1
-        }
-    }
-    on_po_accepted = { any_pop = { militancy = -1 } }
 }
 
 ethiopian_somalian_cb = {
@@ -9143,6 +9173,7 @@ ethiopian_somalian_cb = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		any_owned = {
 			limit = { is_core = ETH }
 			secede_province = ETH
@@ -9197,6 +9228,7 @@ ethiopian_somalian2_cb = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		set_country_flag = lost_ethiopian_somalian
 		ETH_3590 = { remove_core = ETH }
 		SOM_1868 = { remove_core = ETH }
@@ -9254,6 +9286,7 @@ ogaden_war_cb = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		any_owned = {
 			limit = { is_core = ETH }
 			secede_province = ETH
@@ -9299,6 +9332,7 @@ syriac_crisis = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		any_owned = {
 			limit = {
 				OR = {
@@ -9420,6 +9454,7 @@ colonial_conquest = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
         THIS = {
             random_list = {
@@ -9442,7 +9477,7 @@ national_unification = {
 
     badboy_factor = 0
     prestige_factor = 0.5
-    peace_cost_factor = 1.2
+    peace_cost_factor = 0.9
     penalty_factor = 1
     always = yes
 
@@ -9457,28 +9492,71 @@ national_unification = {
 
     can_use = {
 		THIS = {
-			has_country_flag = FER_sakarman_ambition
 			NOT = { has_country_modifier = no_more_war }
 			NOT = { has_country_modifier = neutrality_modifier }
 			NOT = { has_country_modifier = punitive_effects }
 			is_disarmed = no
 			NOT = { war_policy = pacifism }
         }
-		any_owned_province = {
-			OR = {
-				region = PER_1136 
-				region = PER_1120 
-				region = PER_1122 
-				region = PER_1127 
-				region = PER_1112 
-				region = PER_1121 
-				region = PER_1130 
-				region = PER_1148 
-				region = AFG_1212 
-				region = AFG_1214 
-				region = PER_1140 
-				region = RUS_1196 
-				region = PER_1116 
+		OR = {
+			AND = {
+				THIS = {
+					tag = ATM
+					has_country_flag = FER_sakarman_ambition
+				}
+				any_owned_province = {
+					OR = {
+						region = PER_1136 
+						region = PER_1120 
+						region = PER_1122 
+						region = PER_1127 
+						region = PER_1112 
+						region = PER_1121 
+						region = PER_1130 
+						region = PER_1148 
+						region = AFG_1212 
+						region = AFG_1214 
+						region = PER_1140 
+						region = RUS_1196 
+						region = PER_1116 
+					}
+				}
+			}
+			AND = {
+				THIS = {
+					OR = {
+						tag = RGR
+						tag = YUC
+					}
+					has_country_flag = MEF_civilwar
+				}
+				any_owned_province = {
+					OR = {
+						region = TEX_132 
+						region = MEX_100 
+						region = MEX_2149 
+						region = MEX_2142 
+						region = MEX_2151 
+						region = MEX_2161 
+						region = MEX_2170 
+						region = MEX_2172 
+						region = MEX_2159 
+						region = MEX_2181 
+						region = MEX_2183 
+					}
+				}
+			}
+			AND = {
+				THIS = {
+					tag = MEX
+					has_country_flag = MEX_clm_ambition_cb
+				}
+				any_owned_province = {
+					OR = {
+						is_core = FLU
+						is_core = CAL
+					}
+				}
 			}
 		}
         exists = yes
@@ -9525,6 +9603,42 @@ national_unification = {
 					}
 				}
 			}
+			AND = {
+				THIS = {
+					OR = {
+						tag = RGR
+						tag = YUC
+					}
+					has_country_flag = MEF_civilwar
+				}
+				any_owned_province = {
+					OR = {
+						region = TEX_132 
+						region = MEX_100 
+						region = MEX_2149 
+						region = MEX_2142 
+						region = MEX_2151 
+						region = MEX_2161 
+						region = MEX_2170 
+						region = MEX_2172 
+						region = MEX_2159 
+						region = MEX_2181 
+						region = MEX_2183 
+					}
+				}
+			}
+			AND = {
+				THIS = {
+					tag = MEX
+					has_country_flag = MEX_clm_ambition_cb
+				}
+				any_owned_province = {
+					OR = {
+						is_core = FLU
+						is_core = CAL
+					}
+				}
+			}
 		}
     }
 
@@ -9533,13 +9647,7 @@ national_unification = {
     war_name = WAR_TAKE_NAME
 
     on_add = {
-        random_list = {
-            25 = { badboy = 1 }
-            25 = { badboy = 2 }
-            25 = { badboy = 3 }
-            25 = { badboy = 4 }
-        }
-
+        badboy = 4
         move_issue_percentage = {
             from = jingoism
             to = pro_military
@@ -9548,6 +9656,7 @@ national_unification = {
     }
 
     on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
     }
 }
@@ -9586,6 +9695,7 @@ status_quo = {
 
     war_name = WAR_NAME
 	on_po_accepted = {
+		THIS = { random_owned = { limit = { owner = { government = radical_republic NOT = { has_country_modifier = revzeal_just_won_war } } } owner = { plurality = 15 add_country_modifier = { name = revzeal_just_won_war duration = 1 } } } }
 		add_country_modifier = { name = recently_lost_war duration = 1825 }
 	}
 }

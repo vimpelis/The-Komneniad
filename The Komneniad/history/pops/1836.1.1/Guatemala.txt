@@ -237,58 +237,28 @@
 }
 #Sayaxche (16000/4000 POPS)
 2189 = {
-    aristocrats = {
-        culture = mexican
-        religion = catholic
-        size = 15
-    }
-
-    clergymen = {
-        culture = mexican
-        religion = catholic
-        size = 25
-    }
-
-    artisans = {
-        culture = mexican
-        religion = catholic
-        size = 50
-    }
-
-    soldiers = {
-        culture = mexican
-        religion = catholic
-        size = 100
-    }
-
-    farmers = {
-        culture = mexican
-        religion = catholic
-        size = 900
-    }
-
     clergymen = {
         culture = mayan
-        religion = catholic
+        religion = animist
         size = 25
     }
 
     artisans = {
         culture = mayan
-        religion = catholic
+        religion = animist
         size = 150
     }
 
     soldiers = {
         culture = mayan
-        religion = catholic
+        religion = animist
         size = 25
     }
 
     farmers = {
         culture = mayan
-        religion = catholic
-        size = 2800
+        religion = animist
+        size = 6700
     }
 }
 #Ocos - formerly Attawapiskat (5600/1600 POPS)
@@ -357,5 +327,52 @@
         culture = mayan
         religion = catholic
         size = 23725
+    }
+}
+
+#Guatemala Region (7200)
+#Ruled by Britain 1836
+#Belize (7200/1800 POPS)
+2190 = {
+    aristocrats = {
+        culture = mexican
+        religion = catholic
+        size = 200
+    }
+
+    bureaucrats = {
+        culture = mexican
+        religion = catholic
+        size = 50
+    }
+
+    clergymen = {
+        culture = mexican
+        religion = catholic
+        size = 150
+    }
+
+    artisans = {
+        culture = mayan
+        religion = catholic
+        size = 300
+    }
+
+    soldiers = {
+        culture = mexican
+        religion = catholic
+        size = 200
+    }
+
+    farmers = {
+        culture = mayan
+        religion = catholic
+        size = 2600
+    }
+
+    farmers = {
+        culture = mexican
+        religion = catholic
+        size = 4300
     }
 }

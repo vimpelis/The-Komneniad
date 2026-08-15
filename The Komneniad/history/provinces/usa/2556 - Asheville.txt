@@ -1,9 +1,10 @@
-owner = AYL
-controller = AYL
+owner = ALL
+controller = ALL
+add_core = AYL
+add_core = CHE
+add_core = CEF
+add_core = ALL
+add_core = FLO
 trade_goods = tobacco
 terrain = montane_forest
 life_rating = 35
-add_core = AYL
-add_core = CHE
-party_loyalty = { ideology = conservative loyalty_value = 5 } 
-party_loyalty = { ideology = liberal loyalty_value = 20 } 

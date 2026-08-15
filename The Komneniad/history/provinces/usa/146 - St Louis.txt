@@ -1,7 +1,6 @@
+owner = FLU
+controller = FLU
+add_core = FLU
 trade_goods = cattle
 life_rating = 35
-terrain = stlouis
-owner = AYL
-controller = AYL
-add_core = AYL
-add_core = FLU
+terrain = forest

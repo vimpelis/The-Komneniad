@@ -1,0 +1,46 @@
+CLT = { value = -50 }
+VRI = { value = -100 }
+FEB = { value = -100 }
+FRA = { value = 200 }
+
+army = {
+    name = "Acadian Home Army"
+    location = 68
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 249
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 248
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 68
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 71
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 71
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+        name = "Transport Flotilla"
+        type = clipper_transport
+    }
+}

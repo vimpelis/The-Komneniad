@@ -299,46 +299,7 @@
     farmers = {
         culture = native_american_minor
         religion = animist
-        size = 2460
-    }
-}
-#Vancouver Island (8000/2000 POPS)
-#Vancouver Island (8000/2000 POPS)
-14 = {
-    aristocrats = {
-        culture = riograndense
-        religion = catholic
-        size = 81
-    }
-
-    aristocrats = {
-        culture = native_american_minor
-        religion = catholic
-        size = 50
-    }
-
-    clergymen = {
-        culture = riograndense
-        religion = catholic
-        size = 81
-    }
-
-    soldiers = {
-        culture = riograndense
-        religion = catholic
-        size = 81
-    }
-
-    farmers = {
-        culture = riograndense
-        religion = catholic
-        size = 405
-    }
-
-    farmers = {
-        culture = native_american_minor
-        religion = animist
-        size = 600
+        size = 2060
     }
 }
 3433 = {
@@ -356,6 +317,13 @@
 }
 #Prince Rupert (8000/2000 POPS)
 15 = {
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 2000
+    }
+}
+3694 = {
     clergymen = {
         culture = californian
         religion = catholic
@@ -383,7 +351,14 @@
     farmers = {
         culture = native_american_minor
         religion = animist
-        size = 2500
+        size = 500
+    }
+}
+3695 = {
+    farmers = {
+        culture = native_american_minor
+        religion = animist
+        size = 1100
     }
 }
 #Haida Gwaii (8000/2000 POPS)
@@ -420,30 +395,6 @@
 }
 #Glenora (4000/1000 POPS)
 16 = {
-    clergymen = {
-        culture = californian
-        religion = catholic
-        size = 14
-    }
-
-    artisans = {
-        culture = californian
-        religion = catholic
-        size = 14
-    }
-
-    soldiers = {
-        culture = californian
-        religion = catholic
-        size = 14
-    }
-
-    farmers = {
-        culture = californian
-        religion = catholic
-        size = 50
-    }
-
     farmers = {
         culture = native_american_minor
         religion = animist
@@ -452,24 +403,6 @@
 }
 #Atlin (4000/1000 POPS)
 17 = {
-    clergymen = {
-        culture = californian
-        religion = catholic
-        size = 14
-    }
-
-    soldiers = {
-        culture = californian
-        religion = catholic
-        size = 14
-    }
-
-    farmers = {
-        culture = californian
-        religion = catholic
-        size = 50
-    }
-
     farmers = {
         culture = native_american_minor
         religion = animist
@@ -510,30 +443,6 @@
 }
 #Prince George (8000/2000 POPS)
 19 = {
-    clergymen = {
-        culture = californian
-        religion = catholic
-        size = 24
-    }
-
-    artisans = {
-        culture = californian
-        religion = catholic
-        size = 24
-    }
-
-    soldiers = {
-        culture = californian
-        religion = catholic
-        size = 24
-    }
-
-    farmers = {
-        culture = californian
-        religion = catholic
-        size = 74
-    }
-
     farmers = {
         culture = native_american_minor
         religion = animist
@@ -545,59 +454,35 @@
     clergymen = {
         culture = californian
         religion = catholic
-        size = 120
+        size = 70
     }
 
     artisans = {
         culture = californian
         religion = catholic
-        size = 120
+        size = 100
     }
 
     soldiers = {
         culture = californian
         religion = catholic
-        size = 120
+        size = 50
     }
 
     farmers = {
         culture = californian
         religion = catholic
-        size = 370
+        size = 300
     }
 
     farmers = {
         culture = native_american_minor
         religion = animist
-        size = 1950
+        size = 1250
     }
 }
 #Vernon (8000/2000 POPS)
 21 = {
-    clergymen = {
-        culture = californian
-        religion = catholic
-        size = 24
-    }
-
-    artisans = {
-        culture = californian
-        religion = catholic
-        size = 24
-    }
-
-    soldiers = {
-        culture = californian
-        religion = catholic
-        size = 24
-    }
-
-    farmers = {
-        culture = californian
-        religion = catholic
-        size = 74
-    }
-
     farmers = {
         culture = native_american_minor
         religion = animist
@@ -2723,7 +2608,7 @@
     soldiers = {
         culture = acadian
         religion = reformed
-        size = 150
+        size = 1400
     }
 
     farmers = {
@@ -2744,12 +2629,6 @@
         size = 504
     }
 
-    soldiers = {
-        culture = acadian
-        religion = reformed
-        size = 100
-    }
-
     farmers = {
         culture = acadian
         religion = reformed
@@ -2757,44 +2636,44 @@
     }
 
     bureaucrats = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 20
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 76
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 210
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 4768
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 42
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 98
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 2986
     }
 }
@@ -2865,20 +2744,20 @@
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 88
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 2640
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 11176
     }
 }
@@ -2907,7 +2786,7 @@
     soldiers = {
         culture = acadian
         religion = reformed
-        size = 200
+        size = 1600
     }
 
     farmers = {
@@ -2929,32 +2808,32 @@
     }
 
     bureaucrats = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 142
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 142
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 5720
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 20878
     }
 
     labourers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 1572
     }
 }
@@ -2991,26 +2870,26 @@
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 72
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 1080
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 13068
     }
 
     labourers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 1584
     }
 }
@@ -3041,20 +2920,20 @@
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 104
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 524
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 9764
     }
 }
@@ -3147,74 +3026,74 @@
     }
 
     aristocrats = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 72
     }
 
     bureaucrats = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 72
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 106
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 2860
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 3610
     }
 
     aristocrats = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 72
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 72
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 72
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 142
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 142
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 2860
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 9866
     }
 }
@@ -3287,56 +3166,56 @@
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 168
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 564
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 9956
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 224
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 224
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 1800
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 114
     }
 
     artisans = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 114
     }
 
     farmers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 114
     }
 }
@@ -3428,64 +3307,76 @@
 #Saint Pierre (2000/500 POPS)
 77 = {
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 40
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 0
     }
 
     labourers = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 100
     }
 
     clergymen = {
-        culture = new_breton
-        religion = protestant
+        culture = acadian
+        religion = reformed
         size = 10
     }
 }
 #Edmundston
 3280 = {
-    artisans = {
+    aristocrats = {
         culture = acadian
         religion = reformed
-        size = 800
+        size = 50
     }
 
-    artisans = {
+    bureaucrats = {
         culture = acadian
         religion = reformed
-        size = 140
+        size = 25
     }
 
     clergymen = {
         culture = acadian
         religion = reformed
-        size = 60
+        size = 100
+    }
+
+    artisans = {
+        culture = acadian
+        religion = reformed
+        size = 400
     }
 
     farmers = {
         culture = acadian
         religion = reformed
+        size = 5700
+    }
+
+    clergymen = {
+        culture = vrijlander
+        religion = protestant
+        size = 125
+    }
+
+    artisans = {
+        culture = vrijlander
+        religion = protestant
+        size = 550
+    }
+
+    farmers = {
+        culture = vrijlander
+        religion = protestant
         size = 6700
-    }
-
-    farmers = {
-        culture = acadian
-        religion = reformed
-        size = 1000
-    }
-
-    farmers = {
-        culture = acadian
-        religion = reformed
-        size = 4700
     }
 }

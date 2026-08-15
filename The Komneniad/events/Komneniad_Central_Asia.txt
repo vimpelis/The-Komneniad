@@ -126,7 +126,7 @@ country_event = {
 		badboy = 4
 		ALT = { all_core = { add_core = THIS } }
 		war = {
-			target = THIS
+			target = FROM
 			attacker_goal = { casus_belli = conquest_any }
 		}
 		ai_chance = { factor = 1 }

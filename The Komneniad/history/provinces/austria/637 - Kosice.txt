@@ -3,6 +3,7 @@ controller = ZPD
 add_core = ZPD
 add_core = MRV
 add_core = HUN
+terrain = montane_forest
 trade_goods = coal
 life_rating = 35
-terrain = mountain
+

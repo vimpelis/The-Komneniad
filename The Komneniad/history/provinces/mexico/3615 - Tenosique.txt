@@ -1,6 +1,5 @@
-owner = YUC
-controller = YUC
-trade_goods = tropical_wood
-terrain = jungle
-life_rating = 30
 add_core = YUC
+add_core = MEX
+terrain = jungle_mountains
+trade_goods = tropical_wood
+life_rating = 25

@@ -1,10 +1,8 @@
-AYL = { value = -200 }
-IRO = { value = -50 }
-MEX = { value = 50 }
-YUC = { value = 50 }
-CAL = { value = -100 }
+AMB = { value = -200 }
+IRO = { value = -100 }
 CLT = { value = -150 }
 FRA = { value = -100 }
+FEB = { value = 200 }
 
 army = {
     name = "1st Army"
@@ -12,68 +10,76 @@ army = {
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 223
+        home = 220
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 231
+        home = 226
     }
 	regiment = {
         name = "3rd Infantry Regiment"
         type = infantry
-        home = 229
+        home = 223
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 219
+        home = 222
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 226
+        home = 219
     }
 	regiment = {
         name = "2nd Artillery Regiment"
         type = artillery
-        home = 222
+        home = 231
     }
 }
 
 army = {
-    name = "The Freedmen's Corps"
-    location = 208
+    name = "2nd Army"
+    location = 228
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 212
+        home = 229
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 213
+        home = 237
     }
     regiment = {
         name = "1st Cavalry Regiment"
         type = hussar
-        home = 211
+        home = 236
     }
     regiment = {
         name = "1st Artillery Regiment"
         type = artillery
-        home = 210
+        home = 228
     }
 	regiment = {
         name = "2nd Artillery Regiment"
         type = artillery
-        home = 60
+        home = 178
     }
 }
 
 navy = {
     name = "1st Fleet"
-    location = 214
+    location = 231
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
 	ship = {
 		name = "Frigate"
         type = frigate

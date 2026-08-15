@@ -2,7 +2,7 @@
 
 USA_1 = { 2 3 4 5 6 2599 2631 3400 } #Alaska (Russia)
 
-CAN_13 = { 15 19 16 17 1 368 } #Nutka north (California)
+CAN_13 = { 15 19 16 17 1 368 3694 } #Nutka north (California)
 
 ENG_22 = { 27 26 22 25 28 115 2584 } #Alberta
 
@@ -24,13 +24,13 @@ CAN_58 = { 51 52 56 57 58 63 64 65 } #Quebec
 
 CAN_61 = { 61 62 9 59 2593 2626 2592 2625 3612 76 } #Northern Quebec
 
-ENG_68 = { 68 69 3280 249 250 67 } #Maritimes
+ENG_68 = { 68 69 249 250 67 } #Maritimes
 
 ENG_74 = { 70 71 72 73 74 75 77 } #Newfoundland
 
 ### United States
 
-USA_78 = { 78 79 81 82 3461 3464 3465 83 3462 3463 13 20 3433 3434 } #Nutka proper
+USA_78 = { 78 79 81 82 3461 3464 3465 83 3462 3463 13 20 3433 3434 3695 } #Nutka proper
 
 MEX_85 = { 104 84 85 86 3448 3452 3453 3454 3455 89 87 88 3449 3450 } #California
 
@@ -38,9 +38,9 @@ MEX_90 = { 90 2138 2139 3451 } #Southern California
 
 MEX_94 = { 94 95 96 3457 3458 98 3459 } #Nevada
 
-MEX_97 = { 97 99 108 109 110 111 3560 } #Utah
+MEX_97 = { 97 99 108 109 110 111 3560 3693 } #Utah
 
-MEX_100 = { 135 136 3588 } #Comancheria
+MEX_100 = { 135 136 3588 3690 3691 134 14 } #Comancheria
 
 MEX_103 = { 2148 3589 100 101 3460 } #New Mexico
 
@@ -50,17 +50,17 @@ USA_111 = { 107 80 3466 21 92 114 91 93 } #Nutka east
 
 USA_121 = { 112 116 119 122 } #South Dakota
 
-USA_3657 = { 185 190 191 216 218 2556 3656 3657 }
+USA_3657 = { 185 190 216 3656 3657 }
 
 USA_124 = { 123 124 125 3317 106 } #Uncolonized Ayllonia North
 
-TEX_132 = { 133 43 132 134 137 138 3647 14 } #Texas
+TEX_132 = { 133 43 132 137 138 3647 } #Texas
 
-USA_129 = { 131 128 129 127 105 103 } #Uncolonized Ayllonia South
+USA_129 = { 131 129 127 105 103 } #Uncolonized Ayllonia South
 
-USA_139 = { 139 141 142 143 144 3340 44 } #Fluviales
+USA_139 = { 139 140 141 142 143 144 3340 44 128 192 } #Fluviales
 
-USA_144 = { 145 146 147 148 149 130 126 } #Vimisoria
+USA_144 = { 145 146 147 148 149 130 126 3689 } #Vimisoria
 
 USA_151 = { 150 151 152 153 154 166 } #Sioux South
 
@@ -72,17 +72,19 @@ USA_168 = { 163 164 165 171 } #Illinois
 
 USA_170 = { 167 168 169 170 172 2392 2590 } #Indiana
 
-USA_176 = { 173 174 175 176 } #Michigan
+USA_176 = { 173 174 175 176 180 } #Michigan
 
-USA_185 = { 184 186 187 188 189 } #Kentucky
+USA_185 = { 184 186 187 188 } #Kentucky
 
-USA_194 = { 140 192 193 194 197 3311 } #Mississippi
+USA_194 = { 193 3311 189 } #Mississippi
 
-USA_196 = { 195 196 3310 3654 201 } #Alabama
+USA_196 = { 3310 201 191 } #Alabama
 
-USA_200 = { 200 199 198 3566 } #Florida
+USA_200 = { 200 199 3566 3696 3697 } #Florida East
 
-USA_201 = { 202 204 2555 206 3655 } #Georgia
+USA_198 = { 194 195 196 197 198 3654 } #Florida West
+
+USA_201 = { 202 204 2555 2556 206 3655 } #Georgia
 
 USA_2556 = { 236 237 227 228 2627 } #North Carolina
 
@@ -90,19 +92,19 @@ USA_205 = { 205 209 210 } #South Carolina
 
 USA_211 = { 60 211 214 207 208 } #Virginia
 
-USA_178 = { 178 179 180 183 182 181 } #Ohio
+USA_178 = { 178 179 183 182 181 } #Ohio
 
-USA_219 = { 221 212 213 215 217 } #Maryland
+USA_219 = { 221 212 213 215 217 218 } #Maryland
 
-USA_223 = { 2146 220 225 226 } #Pennsylvania
+USA_223 = { 2146 220 224 225 226 } #Pennsylvania
 
-USA_231 = { 219 222 223 224 229 231 230 } #New Jersey
+USA_231 = { 219 222 223 229 231 230 } #New Jersey
 
-USA_232 = { 235 238 239 240 } #New York
+USA_232 = { 235 238 246 247 3280 } #New York
 
 USA_243 = { 243 244 245 241 242 232 233 234 } #Massachusetts
 
-USA_247 = { 247 246 248 66 } #New England
+USA_247 = { 248 66 239 240 } #New England
 
 
 ### United Kingdom
@@ -292,7 +294,7 @@ SWI_603 = { 603 604 606 611 614 } #Swiss Mittelland
 
 SWI_607 = { 3250 3271 3272 605 } #Région Lémanique
 
-PRU_682 = { 682 683 684 685 688 689 3336 3337 3418 } #Silesia
+PRU_682 = { 682 683 684 685 3336 3337 3418 } #Silesia
 
 PRU_554 = { 554 561 562 563 } #Thuringia
 
@@ -317,7 +319,7 @@ AUS_623 = { 639 640 642 643 644 } #Transdanubia
 
 AUS_625 = { 625 626 3333 3334 627 628 629 630 3332 3417 } #Bohemia
 
-AUS_626 = { 631 3335 632 633 3426 } #Moravia
+AUS_626 = { 631 632 633 688 689 3426 3335 } #Moravia
 
 AUS_633 = { 634 635 636 637 638 3420 3421 3423 } #Slovakia
 
@@ -339,13 +341,13 @@ AUS_657 = { 657 659 655 656 } #Southern Transylvania
 
 AUS_662 = { 702 951 952 953 } #East Galicia
 
-RUS_715 = { 715 711 713 716  } #West Galicia
+RUS_715 = { 711 713 715 716 3282 } #West Galicia
 
 PAP_741 = { 741 742 743 739 738 740 } #Emilia-Romagna
 
 AUS_729 = { 729 730 731 732 733 3262 734 } #Venetia
 
-AUS_768 = { 767 768 3282 } #Slovenia
+AUS_768 = { 767 768 778 } #Slovenia
 
 AUS_736 = { 769 770 736 } #Istria
 
@@ -1079,7 +1081,7 @@ MEX_2138 = { 2137 2140 2141 3456 2157 2662 102 } #Sonora
 
 MEX_2142 = { 2142 2143 2144 2145 2153 2154 2156 } #Chihuahua - Durango
 
-MEX_2149 = { 2149 2150 2151 2147 2152 2155 } #Cohauila
+MEX_2149 = { 2149 2150 2151 2147 2152 2155 3692 } #Cohauila
 
 MEX_2151 = { 2158 2160 2159 } #Zacatecas - SLP
 
@@ -1093,7 +1095,7 @@ MEX_2170 = { 2170 2171 2177 2178 2179 2180 } #Guerrero
 
 MEX_2183 = { 2183 2185 2184 3402 2189 2190 3615 } #Yucatan
 
-MEX_2181 = { 2181 2182 2165 } #Chiapas & Tabasco
+MEX_2181 = { 2181 2182 2165 3660 } #Chiapas & Tabasco
 
 
 ### Central America
@@ -1113,11 +1115,11 @@ UCA_2193 = { 2195 2196 2198 2200 3492 } #Honduras (Moskito Coast)
 
 ### Caribbean
 
-SPA_2209 = { 2209 2210 2211 2212 3660 } #Cuba
+SPA_2209 = { 2209 2210 2211 2212 2218 } #Cuba
 
 HAI_2213 = { 2213 2215 3284 3319 3320 2214 2216 3309 3403 } #Haiti
 
-ENG_203 = { 2217 203 2219 2218 2220 } #Caribbean Islands
+ENG_203 = { 2217 203 2219 2220 } #Caribbean Islands
 
 ENG_2224 = { 2224 2225 2226 2230 2222 2232 } #West Indies
 
@@ -1262,7 +1264,7 @@ USA_2543 = { 2543 2544 } #Samoa Islands
 FRA_801 = { 801 2551 2552 2553 } #Tahiti
 
 #Komneniad
-DEBUG_REGION = { 778 781 794 } #Unused provinces
+DEBUG_REGION = { 781 794 } #Unused provinces
 
 tooltip_1 = {} #Each Ayllonian boy...
 tooltip_2 = {}
@@ -1362,6 +1364,12 @@ EGY_can_revolt_tt = {}
 national_unification_available = {}
 RUS_imperialism_activate_tt = {}
 ATM_new_rgos_tt = {}
+MEX_cant_form_CLM = {}
+up_to_15_infamy_tt = {}
+MEX_new_cb_tt = {}
+AYL_formation_disabled = {}
+revzeal_zero_tt = {}
+revzeal_gain_50 = {}
 
 any_sea_province = {
 
@@ -4484,4 +4492,13 @@ any_land_province = {
 3682
 3683
 3684
+3689
+3690
+3691
+3692
+3693
+3694
+3695
+3696
+3697
 }

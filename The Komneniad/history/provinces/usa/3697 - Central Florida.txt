@@ -1,0 +1,5 @@
+add_core = AYL
+add_core = FLO
+trade_goods = tropical_wood
+life_rating = 25
+terrain = marsh

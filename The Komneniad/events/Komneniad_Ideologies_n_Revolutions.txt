@@ -109,3 +109,67 @@ country_event = {
 		set_global_flag = const_accords_gone
     }
 }
+
+country_event = {
+    id = 180004
+    title = "Martletism in $COUNTRY$"
+    desc = "180004DESC"
+    picture = "martletism"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "Liberty, Egality, Fraternity!"
+		revzeal_gain_50 = {}
+    }
+}
+
+country_event = {
+    id = 180005
+    title = "End of the Revolution in $COUNTRY$"
+    desc = "180005DESC"
+    picture = "martletism"
+
+	trigger = {
+		government = radical_republic
+		NOT = { plurality = 1 }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = {
+        days = 10
+    }
+
+    is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = "A healthy society always gravitates towards political pluralism."
+		revzeal_zero_tt = {}
+		prestige = -10
+		government = democracy
+		ruling_party_ideology = liberal
+		any_pop = {
+			limit = {
+				location = { is_colonial = no }
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -4
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = -2
+			}
+			scaled_militancy = {
+				ideology = radical
+				factor = 4
+			}
+		}
+    }
+}

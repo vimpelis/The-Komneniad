@@ -80,6 +80,12 @@ political_decisions = {
 			1860 = { add_province_modifier = { name = impassable duration = -1 } }
 			3594 = { add_province_modifier = { name = impassable duration = -1 } }
 			1887 = { add_province_modifier = { name = penal_colony duration = -1 } }
+			#Haiti revolts
+			3320 = { add_province_modifier = { name = war_torn duration = 365 } }
+			2215 = { add_province_modifier = { name = war_torn duration = 365 } }
+			2216 = { add_province_modifier = { name = war_torn duration = 365 } }
+			3309 = { add_province_modifier = { name = war_torn duration = 365 } }
+			HAI = { all_core = { add_province_modifier = { name = slave_revolt duration = 720 } } }
 			any_country = {
 				set_country_flag = you_can_rename
 				relation = {
@@ -744,9 +750,9 @@ political_decisions = {
 			MOL = { country_event = 153000 }
 			SIE = { country_event = 153000 }
 			HUN = { country_event = 153000 }
-			MEX = { country_event = 159001 }
-			YUC = { country_event = 159001 }
-			AYL = { country_event = 159003 }
+			MEX = { country_event = 159000 }
+			YUC = { country_event = 159000 }
+			RGR = { country_event = 159000 }
 			LOM = { country_event = 170000 }
 			ARE = { country_event = 171000 }
 			FRA = { country_event = 172000 }
@@ -777,6 +783,10 @@ political_decisions = {
 			3608 = { add_province_modifier = { name = celtification duration = -1 } }
 			285 = { add_province_modifier = { name = celtification duration = -1 } }
 			1827 = { add_province_modifier = { name = recently_built_city duration = 3650 } }
+			3657 = { add_province_modifier = { name = cimarronia duration = -1 } }
+			186 = { add_province_modifier = { name = cimarronia duration = -1 } }
+			168 = { add_province_modifier = { name = cimarronia duration = -1 } }
+			169 = { add_province_modifier = { name = cimarronia duration = -1 } }
 			BZD = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
 			any_country = {
 				limit = {

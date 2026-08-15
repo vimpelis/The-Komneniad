@@ -1,3 +1,8 @@
+owner = BAV
+controller = BAV
+add_core = BAV
+add_core = KRA
+add_core = AUS
+add_core = HUN
 trade_goods = grain
-terrain = desert
-life_rating = 1
+life_rating = 35

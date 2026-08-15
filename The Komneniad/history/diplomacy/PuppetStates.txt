@@ -7,7 +7,7 @@ vassal = {
 
 vassal = {
     first = ZPD
-    second = GLM
+    second = RUT
     start_date = 1836.1.1
     end_date = 1936.1.1
 }
@@ -292,6 +292,13 @@ vassal = {
 vassal = {
     first = FER
     second = ALT
+    start_date = 1836.1.1
+    end_date = 1936.1.1
+}
+
+vassal = {
+    first = FRA
+    second = ACA
     start_date = 1836.1.1
     end_date = 1936.1.1
 }

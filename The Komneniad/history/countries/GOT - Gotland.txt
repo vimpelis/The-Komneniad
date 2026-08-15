@@ -81,9 +81,4 @@ basic_chemistry = 1
 #Inventions
 steam_powered_sugar_mills = yes
 
-govt_flag = {
-	government = radical_republic
-	flag = colonial_company
-}
-
 oob = "GOT_oob.txt"

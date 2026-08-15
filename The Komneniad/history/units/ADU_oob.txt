@@ -249,6 +249,26 @@ army = {
     }
 }
 
+army = {
+    name = "al-Kubra Garrison"
+    location = 3284
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 3284
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 2214
+    }
+    regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 2213
+    }
+}
+
 navy = {
     name = "1st Fleet"
     location = 527

@@ -1,9 +1,9 @@
-owner = AYL
-controller = AYL
+owner = FLU
+controller = FLU
+add_core = FLU
 trade_goods = sugar
 life_rating = 35
-terrain = neworleans
+terrain = marsh
 naval_base = 1
-add_core = AYL
-add_core = FLU
+state_building = { level = 1 building = fabric_factory upgrade = yes } 
 state_building = { level = 1 building = clipper_shipyard upgrade = yes } 

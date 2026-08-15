@@ -1,0 +1,21 @@
+name = "3rd War of the Confederation"
+
+1820.5.1 = {
+	add_attacker = ALL
+	add_defender = FLO
+	war_goal = {
+		casus_belli = conquest
+		actor = ALL
+		receiver = FLO
+	}
+	war_goal = {
+		casus_belli = status_quo
+		actor = FLO
+		receiver = ALL
+	}
+}
+
+1822.9.11 = {
+	rem_attacker = ALL
+	rem_defender = FLO
+}

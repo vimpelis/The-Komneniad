@@ -42,7 +42,7 @@ LIT = {
     level = 0
     influence_value = 0
 }
-GLM = {
+RUT = {
     value = -50
     level = 2
     influence_value = 25

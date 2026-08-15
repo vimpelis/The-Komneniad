@@ -1,7 +1,7 @@
-owner = AYL
-controller = AYL
+owner = RGR
+controller = RGR
+add_core = RGR
 add_core = MEX
 trade_goods = cattle
 life_rating = 35
-terrain = austin
-add_core = RGR
+terrain = plains

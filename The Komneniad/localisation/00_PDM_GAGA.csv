@@ -1200,7 +1200,6 @@ RESEARCH_POINTS_EFFECT;* Gain 佈$VALUE$劬 Research Points.\n;;;;;;;;;;;;;
 RENAME_PROV_EFF;* $OLD$ renamed to 即$NEW$劬.\n;;;;;;;;;;;;;
 RENAME_REGION_EFF;* $OLD$ renamed to 即$NEW$劬.\n;;;;;;;;;;;;;
 LITERACY_EFFECT;* $DIRECTION$ $VALUE$ (x100) literacy\n;;;;;;;;;;;;;
-PLURALITY_EFFECT;* $DIRECTION$ $VALUE$ Plurality.\n;;;;;;;;;;;;;
 CONSCIOUSNESS_EFFECT;* $DIRECTION$ $VALUE$ Consciousness.\n;;;;;;;;;;;;;
 MILITANCY_EFFECT;* $DIRECTION$ $VALUE$ Militancy.\n;;;;;;;;;;;;;
 CREATE_VASSAL_EFFECT;* 即$TARGET_COUNTRY$劬 becomes a puppet of 即$COUNTRY$劬.\n;;;;;;;;;;;;;

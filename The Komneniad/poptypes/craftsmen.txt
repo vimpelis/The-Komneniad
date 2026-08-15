@@ -1249,10 +1249,6 @@ ideologies = {
             factor = 1.2
             NOT = { literacy = 0.30 }
         }
-        modifier = {
-            factor = 1.2
-            country = { NOT = { plurality = 30 } }
-        }
 
         modifier = {
             factor = 1.2

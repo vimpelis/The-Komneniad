@@ -2,5 +2,5 @@ owner = VRI
 controller = VRI
 trade_goods = grain
 life_rating = 35
-terrain = dc
+terrain = forest_hills
 add_core = VRI

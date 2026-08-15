@@ -1,7 +1,4 @@
-owner = AYL
-controller = AYL
-trade_goods = grain
-life_rating = 35
-terrain = topeka
-add_core = AYL
 add_core = FLU
+trade_goods = grain
+life_rating = 30
+terrain = forest_hills

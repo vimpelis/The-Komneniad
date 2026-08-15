@@ -1,16 +1,14 @@
 capital = 204
 primary_culture = ayllonian
-culture = fluvialean
 religion = catholic
-government = democracy
+government = radical_republic
 plurality = 25.1
 nationalvalue = nv_liberty
 literacy = 0.3
 civilized = yes
-prestige = 20
 
 #Political Reforms
-slavery = yes_slavery
+slavery = no_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = universal_weighted_voting
 public_meetings = yes_meeting
@@ -35,14 +33,13 @@ penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
-centralization = regionalism
+centralization = confederalism
 colonial_policy = settlement
 
 set_country_flag = catholic_country
 set_country_flag = new_world_nation
 
 ruling_party = MEX_conservative
-last_election = 1834.5.3
 upper_house = {
     fascist = 0
     liberal = 37
@@ -90,6 +87,7 @@ steam_powered_sugar_mills = yes
 #Starting Consciousness
 nonstate_consciousness = 1
 
-schools = commerce_tech_school
-
-oob = "AYL_oob.txt"
+govt_flag = {
+    government = radical_republic
+    flag = theocracy
+}

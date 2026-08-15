@@ -1,6 +1,7 @@
 owner = YUC
 controller = YUC
-trade_goods = cotton
-terrain = tapachula
-life_rating = 35
 add_core = YUC
+add_core = MEX
+trade_goods = cotton
+terrain = jungle_hills
+life_rating = 35

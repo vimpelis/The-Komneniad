@@ -1,8 +1,7 @@
-capital = 243
+capital = 71
 primary_culture = acadian
-culture = new_breton
 religion = reformed
-government = democracy
+government = colonial_company
 plurality = 0.2
 nationalvalue = nv_liberty
 literacy = 0.6
@@ -74,3 +73,5 @@ upper_house = {
     socialist = 0
     communist = 0
 }
+
+oob = "ACA_oob.txt"

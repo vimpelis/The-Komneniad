@@ -1,6 +1,6 @@
 owner = ADU
-controller = ADU
+controller = REB
 add_core = HAI
 trade_goods = sugar
-terrain = cap_haitien
+terrain = farmlands
 life_rating = 35 

@@ -246,7 +246,11 @@ average_literacy = {
 }
 
 plurality = {
-    research_points_modifier = 0.01
+    war_exhaustion = -0.02
+	land_organisation = 0.002
+	naval_organisation = 0.002
+	import_cost = 0.01
+	ruling_party_support = 0.01
 }
 
 generalised_debt_default = {

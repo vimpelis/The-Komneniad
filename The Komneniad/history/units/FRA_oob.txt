@@ -37,13 +37,9 @@ LOM = {
 
 SIC = { value = -30 }
 AFR = { value = 30 }
-
-CLT = {
-    value = 20
-}
-
-AYL = { value = 50 }
+CLT = { value = 20 }
 VRI = { value = -100 }
+FEB = { value = -100 }
 
 leader = {
     name = "Jacques Achard"
@@ -234,31 +230,6 @@ army = {
         name = "1st Engineer Regiment"
         type = engineer
         home = 460
-    }
-}
-
-army = {
-    name = "Acadian Colonial Army"
-    location = 243
-	regiment = {
-        name = "1st Infantry Regiment"
-        type = infantry
-        home = 243
-    }
-    regiment = {
-        name = "2nd Infantry Regiment"
-        type = infantry
-        home = 247
-    }
-    regiment = {
-        name = "1st Cavalry Regiment"
-        type = hussar
-        home = 238
-    }
-    regiment = {
-        name = "1st Artillery Regiment"
-        type = artillery
-        home = 232
     }
 }
 

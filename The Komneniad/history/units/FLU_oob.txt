@@ -1,0 +1,82 @@
+RGR = { value = -50 }
+AMB = { value = -50 }
+ALL = { value = -200 truce_until = 1836.7.1 }
+FLO = { value = -200 truce_until = 1836.7.1 }
+MEX = { value = -50 }
+YUC = { value = -50 }
+CAL = { value = 50 }
+
+leader = {
+    name = "Mariano Abreu"
+    date = 1835.1.1
+    type = land
+    personality = defence_1.1
+    background = attack_minus_3.1
+    prestige = 0.1
+}
+
+army = {
+    name = "1st Army"
+    location = 139
+	regiment = {
+        name = "1st Infantry Regiment"
+        type = infantry
+        home = 139
+    }
+    regiment = {
+        name = "2nd Infantry Regiment"
+        type = infantry
+        home = 139
+    }
+	regiment = {
+        name = "3rd Infantry Regiment"
+        type = infantry
+        home = 140
+    }
+	regiment = {
+        name = "4th Infantry Regiment"
+        type = infantry
+        home = 192
+    }
+    regiment = {
+        name = "1st Artillery Regiment"
+        type = artillery
+        home = 142
+    }
+	regiment = {
+        name = "2nd Artillery Regiment"
+        type = artillery
+        home = 144
+    }
+	regiment = {
+        name = "3rd Artillery Regiment"
+        type = artillery
+        home = 128
+    }
+	regiment = {
+        name = "1st Cavalry Regiment"
+        type = hussar
+        home = 146
+    }
+}
+
+navy = {
+    name = "1st Fleet"
+    location = 139
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+	ship = {
+		name = "Frigate"
+        type = frigate
+    }
+}

@@ -1,7 +1,7 @@
-owner = GLM
-controller = GLM
-add_core = GLM
+owner = RUT
+controller = RUT
 add_core = RUT
+add_core = ZPD
 add_core = WAL
 add_core = MOL
 trade_goods = fruit

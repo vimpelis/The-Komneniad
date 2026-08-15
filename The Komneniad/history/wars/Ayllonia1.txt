@@ -1,0 +1,16 @@
+name = "1st War of the Confederation"
+
+1817.2.10 = {
+	add_attacker = AYL
+	add_defender = FLO
+	war_goal = {
+		casus_belli = annex_core_country
+		actor = AYL
+		receiver = FLO
+	}
+}
+
+1818.6.17 = {
+	rem_attacker = AYL
+	rem_defender = FLO
+}

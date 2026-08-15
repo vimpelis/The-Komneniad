@@ -1,0 +1,21 @@
+name = "2nd War of the Confederation"
+
+1818.6.24 = {
+	add_attacker = CEF
+	add_defender = ALL
+	war_goal = {
+		casus_belli = make_puppet
+		actor = CEF
+		receiver = ALL
+	}
+	war_goal = {
+		casus_belli = make_puppet
+		actor = ALL
+		receiver = CEF
+	}
+}
+
+1819.1.30 = {
+	rem_attacker = CEF
+	rem_defender = ALL
+}

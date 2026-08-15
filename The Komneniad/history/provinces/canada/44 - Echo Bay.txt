@@ -1,7 +1,6 @@
-owner = AYL
-controller = AYL
+owner = FLU
+controller = FLU
+add_core = FLU
 trade_goods = cattle
 life_rating = 35
-terrain = staugustine
-add_core = AYL
-add_core = FLU
+terrain = forest

@@ -3,4 +3,4 @@ controller = TGZ
 add_core = TGZ
 trade_goods = coffee
 life_rating = 39
-terrain = managua
+terrain = farmlands

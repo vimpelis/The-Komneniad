@@ -1,9 +1,10 @@
 LEO = { value = -50 }
-AYL = { value = -50 }
+FLO = { value = 50 }
+ALL = { value = 50 }
 CAL = { value = -50 }
 MEX = { value = -200 }
-VRI = { value = 50 }
 TGZ = { value = -50 }
+RGR = { value = 200 }
 
 army = {
     name = "1st Army"
@@ -78,6 +79,10 @@ army = {
 navy = {
 	name = "1st Fleet"
 	location = 2183
+	ship = {
+		name = "Man'o'war"
+        type = manowar
+    }
 	ship = {
 		name = "Frigate"
 		type = frigate

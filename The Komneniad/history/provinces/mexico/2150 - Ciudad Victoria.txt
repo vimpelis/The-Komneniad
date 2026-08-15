@@ -1,7 +1,7 @@
-owner = AYL
-controller = AYL
+owner = RGR
+controller = RGR
 add_core = RGR
+add_core = MEX
 trade_goods = grain
 life_rating = 35
-terrain = ciudadvictoria
-add_core = MEX
+terrain = forest

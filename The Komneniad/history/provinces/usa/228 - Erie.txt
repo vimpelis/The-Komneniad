@@ -1,5 +1,5 @@
-owner = IRO
-controller = IRO
-add_core = IRO
+owner = VRI
+controller = VRI
+add_core = VRI
 trade_goods = timber
 life_rating = 35 
