@@ -2603,7 +2603,7 @@
     serfs = {
         culture = russian
         religion = orthodox
-        size = 37800
+        size = 20800
     }
 
     clergymen = {
@@ -2633,7 +2633,7 @@
     serfs = {
         culture = ruthene
         religion = orthodox
-        size = 4200
+        size = 21200
     }
 }
 3419 = {

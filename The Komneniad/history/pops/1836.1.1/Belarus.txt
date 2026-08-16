@@ -1277,7 +1277,7 @@
     soldiers = {
         culture = lithuanian
         religion = catholic
-        size = 250
+        size = 2050
     }
 
     farmers = {
@@ -1304,12 +1304,6 @@
         size = 130
     }
 
-    soldiers = {
-        culture = ruthene
-        religion = catholic
-        size = 100
-    }
-
     farmers = {
         culture = ruthene
         religion = catholic
@@ -1320,6 +1314,126 @@
         culture = ruthene
         religion = catholic
         size = 5000
+    }
+	
+	clergymen = {
+        culture = lithuanian
+        religion = catholic
+        size = 550
+    }
+
+    artisans = {
+        culture = lithuanian
+        religion = catholic
+        size = 2000
+    }
+
+    serfs = {
+        culture = lithuanian
+        religion = catholic
+        size = 3162
+    }
+
+    clergymen = {
+        culture = ruthene
+        religion = orthodox
+        size = 81
+    }
+
+    artisans = {
+        culture = ruthene
+        religion = orthodox
+        size = 390
+    }
+
+    soldiers = {
+        culture = ruthene
+        religion = orthodox
+        size = 2047
+    }
+
+    farmers = {
+        culture = ruthene
+        religion = orthodox
+        size = 6110
+    }
+
+    serfs = {
+        culture = ruthene
+        religion = orthodox
+        size = 12025
+    }
+
+    aristocrats = {
+        culture = polish
+        religion = catholic
+        size = 1800
+    }
+
+    clergymen = {
+        culture = polish
+        religion = catholic
+        size = 50
+    }
+
+    artisans = {
+        culture = polish
+        religion = catholic
+        size = 250
+    }
+
+    farmers = {
+        culture = polish
+        religion = catholic
+        size = 850
+    }
+
+    clergymen = {
+        culture = ashkenazi
+        religion = jewish
+        size = 100
+    }
+
+    artisans = {
+        culture = ashkenazi
+        religion = jewish
+        size = 1500
+    }
+
+    farmers = {
+        culture = ashkenazi
+        religion = jewish
+        size = 4325
+    }
+
+    serfs = {
+        culture = ashkenazi
+        religion = jewish
+        size = 4000
+    }
+
+    clergymen = {
+        culture = lithuanian
+        religion = catholic
+        size = 44
+    }
+
+    artisans = {
+        culture = lithuanian
+        religion = catholic
+        size = 210
+    }
+
+    farmers = {
+        culture = lithuanian
+        religion = catholic
+        size = 3290
+    }
+
+    serfs = {
+        culture = lithuanian
+        religion = catholic
+        size = 6475
     }
 }
 #Baranovichi (196000/49000 POPS)
@@ -1927,49 +2041,7 @@
     serfs = {
         culture = ruthene
         religion = orthodox
-        size = 47860
-    }
-
-    aristocrats = {
-        culture = russian
-        religion = orthodox
-        size = 900
-    }
-
-    bureaucrats = {
-        culture = russian
-        religion = orthodox
-        size = 200
-    }
-
-    officers = {
-        culture = russian
-        religion = orthodox
-        size = 350
-    }
-
-    clergymen = {
-        culture = russian
-        religion = orthodox
-        size = 50
-    }
-
-    artisans = {
-        culture = russian
-        religion = orthodox
-        size = 250
-    }
-
-    soldiers = {
-        culture = russian
-        religion = orthodox
-        size = 50
-    }
-
-    farmers = {
-        culture = russian
-        religion = orthodox
-        size = 3200
+        size = 37860
     }
 
     aristocrats = {
@@ -2049,7 +2121,7 @@
     clergymen = {
         culture = ruthene
         religion = orthodox
-        size = 1102
+        size = 800
     }
 
     artisans = {
@@ -2067,13 +2139,13 @@
     farmers = {
         culture = ruthene
         religion = orthodox
-        size = 39780
+        size = 29780
     }
 
     serfs = {
         culture = ruthene
         religion = orthodox
-        size = 63000
+        size = 43000
     }
 
     aristocrats = {
@@ -2296,89 +2368,41 @@
 }
 3621 = {
     clergymen = {
-        culture = lithuanian
-        religion = catholic
-        size = 550
-    }
-
-    artisans = {
-        culture = lithuanian
-        religion = catholic
-        size = 2000
-    }
-
-    soldiers = {
-        culture = lithuanian
-        religion = catholic
-        size = 600
-    }
-
-    serfs = {
-        culture = lithuanian
-        religion = catholic
-        size = 3162
-    }
-
-    clergymen = {
         culture = ruthene
         religion = orthodox
-        size = 81
+        size = 700
     }
 
     artisans = {
         culture = ruthene
         religion = orthodox
-        size = 390
+        size = 1400
     }
 
     soldiers = {
         culture = ruthene
         religion = orthodox
-        size = 2047
+        size = 800
     }
-
-    farmers = {
+	
+	farmers = {
         culture = ruthene
         religion = orthodox
-        size = 6110
+        size = 10000
     }
 
     serfs = {
         culture = ruthene
         religion = orthodox
-        size = 12025
+        size = 30000
     }
 
     aristocrats = {
-        culture = polish
-        religion = catholic
-        size = 1800
+        culture = russian
+        religion = orthodox
+        size = 900
     }
-
-    clergymen = {
-        culture = polish
-        religion = catholic
-        size = 50
-    }
-
-    artisans = {
-        culture = polish
-        religion = catholic
-        size = 250
-    }
-
-    soldiers = {
-        culture = polish
-        religion = catholic
-        size = 50
-    }
-
-    farmers = {
-        culture = polish
-        religion = catholic
-        size = 850
-    }
-
+	
     clergymen = {
         culture = ashkenazi
         religion = jewish
@@ -2394,43 +2418,49 @@
     farmers = {
         culture = ashkenazi
         religion = jewish
-        size = 4325
+        size = 3500
+    }
+	
+	bureaucrats = {
+        culture = russian
+        religion = orthodox
+        size = 200
     }
 
-    serfs = {
-        culture = ashkenazi
-        religion = jewish
-        size = 4000
+    officers = {
+        culture = russian
+        religion = orthodox
+        size = 350
     }
 
     clergymen = {
-        culture = lithuanian
-        religion = catholic
-        size = 44
+        culture = russian
+        religion = orthodox
+        size = 50
     }
 
     artisans = {
-        culture = lithuanian
-        religion = catholic
-        size = 210
+        culture = russian
+        religion = orthodox
+        size = 250
     }
 
     soldiers = {
-        culture = lithuanian
-        religion = catholic
-        size = 1103
+        culture = russian
+        religion = orthodox
+        size = 50
     }
 
     farmers = {
-        culture = lithuanian
-        religion = catholic
-        size = 3290
+        culture = russian
+        religion = orthodox
+        size = 3200
     }
 
     serfs = {
-        culture = lithuanian
-        religion = catholic
-        size = 6475
+        culture = russian
+        religion = orthodox
+        size = 6000
     }
 }
 #Mogilev (392000/98000 POPS)
