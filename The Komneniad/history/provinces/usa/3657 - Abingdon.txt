@@ -1,5 +1,5 @@
-trade_goods = iron
-life_rating = 30
 add_core = CHE
 add_core = AMB
 terrain = forest_hills
+trade_goods = iron
+life_rating = 30

@@ -1,7 +1,7 @@
-trade_goods = tobacco
-life_rating = 30
-terrain = forest_hills
 add_core = AYL
 add_core = CHE
 add_core = ALE
 add_core = AMB
+trade_goods = tobacco
+life_rating = 30
+terrain = forest_hills

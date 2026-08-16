@@ -617,6 +617,7 @@ political_decisions = {
 		potential = {
 			primary_culture = ayllonian
 			NOT = { tag = AMB }
+			NOT = { tag = CLM }
 			NOT = {	exists = AYL }
 			NOT = { has_global_flag = fragmentation_of_AYL }
 		}
