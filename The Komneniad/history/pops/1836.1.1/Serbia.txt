@@ -910,13 +910,7 @@
         size = 1006
     }
 }
-#Serbia Region (180310) - 721.240 people
-#under the rule of Serbia in 1836
-#Belgrade (328000/82000 POPS)
-######Jews
-########
-794 = {
-}
+#Serbia Region
 #Bor (220400/55000 POPS) #Romanian has to be 32%
 795 = {
     aristocrats = {
@@ -1297,7 +1291,7 @@
         size = 100
     }
 }
-3374 = {
+794 = {
     aristocrats = {
         culture = serb
         religion = orthodox

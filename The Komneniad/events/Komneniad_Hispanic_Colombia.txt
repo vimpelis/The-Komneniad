@@ -21,6 +21,7 @@
 #019 - colonization event
 #020 - AYL state cores get removed if unified for a while
 #021 - Invitation to join CLM
+#022 - MEF capital change to Mexico City
 
 #Mexico and YUC/RGR starting events
 country_event = {
@@ -1233,5 +1234,24 @@ country_event = {
 				vassal_of = FROM
 			}
 		}
+	}
+}
+
+country_event = {
+	id = 159022
+	title = "Capital of the Federation"
+	desc = "We have reclaimed Mexico City, which means that our government can move into it."
+	picture = "mexico-us-treaty"
+
+	trigger = {
+		tag = MEF
+		NOT = { capital = 2172 }
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "Wonderful."
+		capital = 2172
 	}
 }

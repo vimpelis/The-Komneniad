@@ -1,6 +1,7 @@
 owner = BYZ
 controller = BYZ
+add_core = SER
 add_core = BYZ
+terrain = montane_forest
 trade_goods = wool
 life_rating = 35
-add_core = SER

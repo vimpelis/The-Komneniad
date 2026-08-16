@@ -355,7 +355,7 @@ AUS_771 = { 771 772 773 775 776 } #Croatia
 
 AUS_777 = { 779 793 777 791 } #Slavonia
 
-AUS_780 = { 780 782 774 } #Dalmatia
+AUS_780 = { 780 781 782 774 } #Dalmatia
 
 ### Italy
 
@@ -388,7 +388,7 @@ MOL_676 = { 676 678 673 } #Bessarabia
 
 TUR_788 = { 783 787 789 788 786 785 784 } #Bosnia
 
-SER_794 = { 797 796 3374 3346 802 804 } #Northern Serbia
+SER_794 = { 794 797 796 3346 802 804 } #Northern Serbia
 
 MON_2582 = { 850 803 2583 2569 2577 800 2582 } #Montenegro
 
@@ -1264,7 +1264,7 @@ USA_2543 = { 2543 2544 } #Samoa Islands
 FRA_801 = { 801 2551 2552 2553 } #Tahiti
 
 #Komneniad
-DEBUG_REGION = { 781 794 } #Unused provinces
+DEBUG_REGION = { 3374 } #Unused provinces
 
 tooltip_1 = {} #Each Ayllonian boy...
 tooltip_2 = {}

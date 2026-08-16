@@ -1,9 +1,9 @@
 owner = BYZ
 controller = BYZ
-add_core = BYZ
+add_core = CRO
 add_core = DLM
-terrain = dubrovnik
+add_core = BYZ
+terrain = hills
 trade_goods = fish
 life_rating = 35
 naval_base = 1
-add_core = CRO

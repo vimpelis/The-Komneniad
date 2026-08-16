@@ -127,16 +127,16 @@ army = {
 
 army = {
     name = "2nd Army"
-    location = 3374
+    location = 794
 	regiment = {
         name = "1st Infantry Regiment"
         type = infantry
-        home = 3374
+        home = 794
     }
     regiment = {
         name = "2nd Infantry Regiment"
         type = infantry
-        home = 3374
+        home = 794
     }
 	regiment = {
         name = "3rd Infantry Regiment"

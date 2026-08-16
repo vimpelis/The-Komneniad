@@ -3,6 +3,7 @@ controller = SIE
 add_core = SIE
 add_core = HUN
 add_core = BAN
+terrain = forest_hills
 trade_goods = coal
 life_rating = 35
 add_core = WAL
